@@ -1,0 +1,11 @@
+fastapi_idempotent/__init__.py,sha256=aqWdFxf45G79uJEs5M-4CqpYwGOfcwWjMNqjPLdQ1Do,45
+fastapi_idempotent/idempotent.py,sha256=rkYoGYIX3gnHOmdP4IaVl4Hb9t4TObZI4hOmISdSVtI,7974
+fastapi_idempotent/kvstorage/__init__.py,sha256=rzAjnuOpZ9OHq2wsraVPbo2CWhqUBq89a_GKo1GwKYk,502
+fastapi_idempotent/kvstorage/base.py,sha256=gv0eJXRvu1cT_MJhLMyRgk26Z4i5GSn3g_MrL2Uef48,727
+fastapi_idempotent/kvstorage/memory.py,sha256=LCTMjML24IZZ-U_vVAitSEEgyVEiRd9SQFOGl6ImSDw,1645
+fastapi_idempotent/kvstorage/redis.py,sha256=Mh-R2SADXDGAX_aaQgeOMcrZa4tkmKAZC1jzSQK_NCM,1750
+fastapi_idempotent-0.0.3.dist-info/LICENCE.txt,sha256=8w3Jr2wYkv7AvEkwNC1mPep4KZy1ys_QNsOcP9_bP0s,1062
+fastapi_idempotent-0.0.3.dist-info/METADATA,sha256=O-cvBltyUUmqKEbx1I50Hb4FRCbeFeJ6MYdDn7Eymaw,2026
+fastapi_idempotent-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastapi_idempotent-0.0.3.dist-info/top_level.txt,sha256=sgwBr5YTVflKmYqnDB0lFVEOPedpF_uGfqocUxVwVxM,19
+fastapi_idempotent-0.0.3.dist-info/RECORD,,
