@@ -1,0 +1,12 @@
+git_ripper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_ripper/__main__.py,sha256=TzlNuMm6eGzUcie0LKEkUfZTTs_BkZUyWUVIFJfHV6M,57
+git_ripper/cli.py,sha256=PLH4sIFzhIboEomMrQ6r5HLr37Zb5Z6bErb5ORasBs0,2839
+git_ripper/defaults.py,sha256=Rdi39-6nMMSADTLX-wcAO_b0mWor2gDQyDCfrimQdhw,211
+git_ripper/git_ripper.py,sha256=YvbptvCF70VTPCAqk_B7gXPD4GHZVMtrh65S-vjCqww,10279
+git_ripper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_ripper/utils/colorlog.py,sha256=xys5Wk6iqC0sC_Bdg8FNLeJKyzP8VflNIsAIwvGQH3o,1027
+git_ripper/utils/git.py,sha256=EoDrUV0e4qx6g09rfyATq7xovODLZT-Qdahc_IP4nMM,2560
+git_ripper-0.1.9.dist-info/entry_points.txt,sha256=ojgfI8weUlCkt0ivkT3jZ0zMc3tWQ59mta37pFRt_EM,50
+git_ripper-0.1.9.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+git_ripper-0.1.9.dist-info/METADATA,sha256=vmHfYhnliWO_oWu_C83c-aVXbxLLQQMvR9_G5LQXAfA,2016
+git_ripper-0.1.9.dist-info/RECORD,,
