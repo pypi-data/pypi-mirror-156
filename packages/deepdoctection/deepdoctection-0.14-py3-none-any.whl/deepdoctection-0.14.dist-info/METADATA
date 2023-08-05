@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: deepdoctection
+Version: 0.14
+Summary: Repository for Document AI
+Home-page: https://github.com/deepdoctection/deepdoctection
+Author: Dr. Janis Meyer
+License: Apache License 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: catalogue (==2.0.7)
+Requires-Dist: importlib-metadata (>=4.11.2)
+Requires-Dist: huggingface-hub (>=0.4.0)
+Requires-Dist: jsonlines (==3.0.0)
+Requires-Dist: mock (==4.0.3)
+Requires-Dist: networkx (>=2.7.1)
+Requires-Dist: numpy (>=1.21)
+Requires-Dist: opencv-python (==4.5.4.60)
+Requires-Dist: packaging (>=20.0)
+Requires-Dist: pypdf2 (>=1.27.5)
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: types-PyYAML
+Requires-Dist: types-termcolor (==1.1.3)
+Requires-Dist: types-tabulate
+Requires-Dist: python-prctl
+Provides-Extra: dev
+Requires-Dist: click (==8.0.4) ; extra == 'dev'
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pylint (==2.13.4) ; extra == 'dev'
+Requires-Dist: mypy (==0.942) ; extra == 'dev'
+Provides-Extra: full-tf
+Requires-Dist: catalogue (==2.0.7) ; extra == 'full-tf'
+Requires-Dist: importlib-metadata (>=4.11.2) ; extra == 'full-tf'
+Requires-Dist: huggingface-hub (>=0.4.0) ; extra == 'full-tf'
+Requires-Dist: jsonlines (==3.0.0) ; extra == 'full-tf'
+Requires-Dist: mock (==4.0.3) ; extra == 'full-tf'
+Requires-Dist: networkx (>=2.7.1) ; extra == 'full-tf'
+Requires-Dist: numpy (>=1.21) ; extra == 'full-tf'
+Requires-Dist: opencv-python (==4.5.4.60) ; extra == 'full-tf'
+Requires-Dist: packaging (>=20.0) ; extra == 'full-tf'
+Requires-Dist: pypdf2 (>=1.27.5) ; extra == 'full-tf'
+Requires-Dist: pyyaml (==6.0) ; extra == 'full-tf'
+Requires-Dist: types-PyYAML ; extra == 'full-tf'
+Requires-Dist: types-termcolor (==1.1.3) ; extra == 'full-tf'
+Requires-Dist: types-tabulate ; extra == 'full-tf'
+Requires-Dist: python-prctl ; extra == 'full-tf'
+Requires-Dist: lxml ; extra == 'full-tf'
+Requires-Dist: pycocotools (>=2.0.2) ; extra == 'full-tf'
+Requires-Dist: scikit-learn ; extra == 'full-tf'
+Requires-Dist: tensorpack ; extra == 'full-tf'
+Requires-Dist: protobuf (==3.20.1) ; extra == 'full-tf'
+Provides-Extra: pt
+Requires-Dist: catalogue (==2.0.7) ; extra == 'pt'
+Requires-Dist: importlib-metadata (>=4.11.2) ; extra == 'pt'
+Requires-Dist: huggingface-hub (>=0.4.0) ; extra == 'pt'
+Requires-Dist: jsonlines (==3.0.0) ; extra == 'pt'
+Requires-Dist: mock (==4.0.3) ; extra == 'pt'
+Requires-Dist: networkx (>=2.7.1) ; extra == 'pt'
+Requires-Dist: numpy (>=1.21) ; extra == 'pt'
+Requires-Dist: opencv-python (==4.5.4.60) ; extra == 'pt'
+Requires-Dist: packaging (>=20.0) ; extra == 'pt'
+Requires-Dist: pypdf2 (>=1.27.5) ; extra == 'pt'
+Requires-Dist: pyyaml (==6.0) ; extra == 'pt'
+Requires-Dist: types-PyYAML ; extra == 'pt'
+Requires-Dist: types-termcolor (==1.1.3) ; extra == 'pt'
+Requires-Dist: types-tabulate ; extra == 'pt'
+Requires-Dist: python-prctl ; extra == 'pt'
+Requires-Dist: lxml ; extra == 'pt'
+Requires-Dist: pycocotools (>=2.0.2) ; extra == 'pt'
+Requires-Dist: scikit-learn ; extra == 'pt'
+Requires-Dist: transformers ; extra == 'pt'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Provides-Extra: tf
+Requires-Dist: tensorpack ; extra == 'tf'
+Requires-Dist: protobuf (==3.20.1) ; extra == 'tf'
+
