@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+asgarde/__init__.py
+asgarde/collection_composer.py
+asgarde/failure.py
+asgarde.egg-info/PKG-INFO
+asgarde.egg-info/SOURCES.txt
+asgarde.egg-info/dependency_links.txt
+asgarde.egg-info/top_level.txt
+asgarde/tests/__init__.py
+asgarde/tests/player.py
+asgarde/tests/team.py
+asgarde/tests/test_collection_composer.py
+asgarde/tests/testing_helper.py
+asgarde/transforms/__init__.py
+asgarde/transforms/do_fns_error_handling.py
