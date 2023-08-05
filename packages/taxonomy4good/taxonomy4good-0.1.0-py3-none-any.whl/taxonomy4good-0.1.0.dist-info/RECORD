@@ -1,0 +1,16 @@
+images/gooddatahub-logo.svg,sha256=gmGOeU1l9u9QWZtMttZyUeHHJT0E75G4D3ZTesUhpaM,13363
+images/taxonomy_example.png,sha256=HVmRgz3R_pu6iOvGuFt7AlT7IWYXBo7EOkBk4Iee2ZU,279215
+taxonomy4good/__init__.py,sha256=qjDlUKHcb2XvRSh5j376WsS2Y_NsJRvreITibBOpWkU,203
+taxonomy4good/errors.py,sha256=8tadOGuJGty695BNcYTwYAM2ymI0Ou0MI9SpT5hE2kw,146
+taxonomy4good/sustainabilityItem.py,sha256=QxUqy-HXTi81_rNS8icfoFa5fawCm_zzgt3B9Pax0eg,2140
+taxonomy4good/sustainabilityTaxonomy.py,sha256=JmmnpvaVqmCgOyqw_JW4Fl1iuWnsS1pByhSGTn2v6vs,27223
+taxonomy4good/taxonomies/china_taxonomy.xlsx,sha256=GJeTWaGoPdgScRGdS_ta_w8RA2_6SmzOf8ZMi1EZtUU,9941
+taxonomy4good/taxonomies/en_master_lexicon.xlsx,sha256=7ApGQ9naccfMfUiGMZr--xo-0675euQv51vEgdvliPI,30157
+taxonomy4good/taxonomies/esg_taxonomy.xlsx,sha256=aOkIS0mgpNj85lH9oflKBaBryZAfOpjBrmwmPS_VfWs,13510
+taxonomy4good/taxonomies/eu_taxonomy.xlsx,sha256=ZLUmvHBC4NuzDF0O6W2s_ZS5WX2oaYGMxllBmUdksgg,12453
+taxonomy4good/taxonomies/ftse_fsgi.xlsx,sha256=eVm4YXJNkV08I7xBD1IOimQSJ_u-CiuXFZW8-wS9f0A,11500
+taxonomy4good/taxonomies/world_bank_taxonomy.xlsx,sha256=EHOXS60kPEJ0Zx18AIwrdreJnX_oJFInEqa5gw4QTB0,27769
+taxonomy4good-0.1.0.dist-info/METADATA,sha256=7OwM55h48Md5dANeJhCcQXCcWucjZjS-u8ma6ipHme8,16232
+taxonomy4good-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+taxonomy4good-0.1.0.dist-info/top_level.txt,sha256=93IDx2AE0VAq-ragiU4J6lfTj3VDHn-p5lKONMEYsdg,21
+taxonomy4good-0.1.0.dist-info/RECORD,,
