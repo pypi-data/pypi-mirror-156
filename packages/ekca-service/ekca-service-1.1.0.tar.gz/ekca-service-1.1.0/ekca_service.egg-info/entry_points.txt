@@ -1,0 +1,6 @@
+[ekca_service.plugins.otp]
+dummy = ekca_service.plugins.otp.base:Dummy
+
+[ekca_service.plugins.password]
+dummy = ekca_service.plugins.password.base:Dummy
+
