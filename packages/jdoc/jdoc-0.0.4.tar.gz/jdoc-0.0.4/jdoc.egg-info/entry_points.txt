@@ -1,0 +1,2 @@
+[console_scripts]
+jdoc = app.app:cli

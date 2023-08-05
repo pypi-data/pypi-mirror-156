@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jdoc
+Version: 0.0.4
+Summary: java document search engine
+Home-page: https://github.com/sheng-kai-wang/java-doc-search-engine
+Author: ['sheng-kai-wang', 'Chung-Chieh-Li', 'hsih-min-tang', 'chun-kai-yang']
+Author-email: nssh94879487@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This is a system for retrieving java 8 document.
+In order to use this system, you need to prepare 4 java doc files, namely JAVA_DOC.json, Java_Doc_Function_Similarity.json, Java_Doc_Similarity.csv and Java_Doc_Weights.csv, then place them under the java_doc path.
+
+
