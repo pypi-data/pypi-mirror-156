@@ -1,0 +1,12 @@
+MoDE_embeddings/MoDE.py,sha256=wwMobjgWDqW0wJSd4r0HBWih63SyDhMrJLVVriJXKkc,14385
+MoDE_embeddings/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+MoDE_embeddings/benchmark_MoDE.py,sha256=29zhi7rNn7Hr9tanewhso_UhQXckq6J_xmW3L4NJF_Y,2544
+MoDE_embeddings/metrics.py,sha256=rosSXFcRYdOXVT3O-Y8MedVlPyRhKrS_nEJhfewOE1c,8814
+MoDE_embeddings/waterfilling_compression.py,sha256=YK1ailoy0t2r5binHkwAdl1vonEMNfOUTlq-rGCmGBE,12286
+MoDE_embeddings/fast_mat_mul/setup.py,sha256=aCLtf8sYONbCMOR1xJ3Mgzj5uGGPot9iQGLPLCKRMlw,508
+MoDE_embeddings/fast_mat_mul/fastgd/__init__.py,sha256=RW_7YvIi66Vb-qB5h3TP8E-7K_CEcjZxKDFDEuveBws,63
+MoDE_embeddings-0.0.8.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+MoDE_embeddings-0.0.8.dist-info/METADATA,sha256=ocuNsx-yH0b7q5jHoWW6UOiGIItEAanEWxMX-GRXmjE,4148
+MoDE_embeddings-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+MoDE_embeddings-0.0.8.dist-info/top_level.txt,sha256=YunKCr3Y2rH23J6-VHvExtjDWRz7WBilH7XunEGiUJE,16
+MoDE_embeddings-0.0.8.dist-info/RECORD,,
