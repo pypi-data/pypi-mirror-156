@@ -1,0 +1,127 @@
+name: liquidity_provision_abci
+author: valory
+version: 0.1.0
+type: skill
+description: This skill implements liquidity rebalancing capacities to move into and
+  out of Uniswap-V2-based liquidity pools.
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  README.md: QmR5sLQeLggNn5gZ1kDWrqpkz5NzMdUZuWNkaQDpaMC85C
+  __init__.py: QmNuC15NDuuzyfhdpYLpoVajvPGXN3EKR9GdBHDdM1mzgM
+  behaviours.py: QmX3UPYYFNB2UTT8zFiMchAA6Ejjpzp7xjEVeLaMNXSbzH
+  composition.py: QmXdsJZJJPba243WZ2jcoiJz4vFuw5ujFUXuEjoTkxY81H
+  dialogues.py: QmfDThV4WCRzK88XDpW2hKDYCuEH4RxoHCoAkWpkBRGRPv
+  fsm_specification.yaml: QmPCSHySLcTURs7dHcYpiCc6B6w7pfkc8JLJ77axvmhNFX
+  handlers.py: QmRbhnYTWnUPsWHYg9CbLhWQTFfw9faRZwjbTD6BGv7YtD
+  models.py: Qmdb5Dve5jFq5UvYLALfXeXSxrQa3tifYWeTjo6iSqttmJ
+fingerprint_ignore_patterns: []
+connections:
+- valory/abci:0.1.0:QmYWiaxokWBsbpwzZwPSYtrDrecE7A6ttz6kuZkUEWegVX
+- valory/http_client:0.1.0:QmXBBMS5g4kyyE3mzFcpieoDMKWFf9naaCM3QNSjP2mxDt
+- valory/ledger:0.1.0:Qmcd32eJaDbWFFgqTzKf3Lqhshj37ndhrdtYiNnED2ULqB
+contracts:
+- valory/gnosis_safe:0.1.0:QmRNdXGRRQBMFXh5ZvtJeYvHt7559kV5r5EYU5JNUdRBKJ
+- valory/gnosis_safe_proxy_factory:0.1.0:QmVkZtrgZ2ievXAonq9z33qbrxHi8piVGptuCGaGJYS1iM
+- valory/uniswap_v2_erc20:0.1.0:QmWSouBEXuGQdiTmu1ytZnHApDr3Xn4ByopPNTx7Gw9bNj
+- valory/uniswap_v2_router_02:0.1.0:QmaBYScH7PfzcU5qw5mgzNW5a59R7pRCWQCSNxr1zACpZt
+protocols:
+- open_aea/signing:1.0.0:QmYVxA8smnK8LQ2B4z5BVFvEwo3szQeBosUesycb8By1ZT
+- valory/abci:0.1.0:QmY42cX49Jb1dmHGbiDE7SEAW9YJc1FYJQA2U4i1mNYtBz
+- valory/contract_api:1.0.0:QmZRa6S342MT1oSQjLoyEDitjK6nivypC78DKipvg9JpF1
+- valory/http:1.0.0:QmRQYhYWbGSNHb152dp2L1P9EtZRZZqgvZAaNat5qxfQqK
+- valory/ledger_api:1.0.0:QmNfowyB8rGWr53wuNPYK5BEAnA8AehgipVdYXt8LC5uR6
+skills:
+- valory/abstract_round_abci:0.1.0:QmWvxu1DMtfSJiFe5jnhdtKerNvCNZL58g1uAVjsjP3vPr
+- valory/liquidity_rebalancing_abci:0.1.0:Qmf7aai1yyWxtx51wECvPoQSRqfohqSAkrzTUPhC5qKeKx
+- valory/registration_abci:0.1.0:QmTg5MiPNSKJs3DFSpByESWBfRaTTc27gRMxCapaMjuHPc
+- valory/reset_pause_abci:0.1.0:QmbQyZFpmtqx2183HRvqHqwW15RznM5vj25DADo3CgQrrN
+- valory/safe_deployment_abci:0.1.0:QmdKrWGPgokLfB5nGqm4EChLHtwwV3CxnLBcaprFFbevzc
+- valory/transaction_settlement_abci:0.1.0:Qmab8zZvrrNnwrxAifaDqK4sXtEACspWBezFCpT4VevJ9A
+behaviours:
+  main:
+    args: {}
+    class_name: LiquidityProvisionConsensusBehaviour
+handlers:
+  abci:
+    args: {}
+    class_name: ABCILiquidityRebalancing
+  contract_api:
+    args: {}
+    class_name: ContractApiHandler
+  http:
+    args: {}
+    class_name: HttpHandler
+  ledger_api:
+    args: {}
+    class_name: LedgerApiHandler
+  signing:
+    args: {}
+    class_name: SigningHandler
+models:
+  abci_dialogues:
+    args: {}
+    class_name: AbciDialogues
+  benchmark_tool:
+    args:
+      log_dir: /logs
+    class_name: BenchmarkTool
+  contract_api_dialogues:
+    args: {}
+    class_name: ContractApiDialogues
+  http_dialogues:
+    args: {}
+    class_name: HttpDialogues
+  ledger_api_dialogues:
+    args: {}
+    class_name: LedgerApiDialogues
+  params:
+    args:
+      cleanup_history_depth: 1
+      consensus:
+        max_participants: 1
+      drand_public_key: 868f005eb8e6e4ca0a47c8a77ceaa5309a47978a7c71bc5cce96366b5d7a569937c529eeda66c7293784a9402801af31
+      finalize_timeout: 60.0
+      history_check_timeout: 1205
+      keeper_allowed_retries: 3
+      keeper_timeout: 30.0
+      max_healthcheck: 120
+      observation_interval: 10
+      rebalancing:
+        chain: Ethereum
+        token_base_address: '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9'
+        token_base_ticker: WETH
+        token_a_address: '0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82'
+        token_a_ticker: TKA
+        token_b_address: '0x9A676e781A523b5d0C0e43731313A708CB607508'
+        token_b_ticker: TKB
+        lp_token_address: '0x50CD56fb094F8f06063066a619D898475dD3EedE'
+        default_minter: '0x0000000000000000000000000000000000000000'
+        ab_pool_address: '0x86A6C37D3E868580a65C723AAd7E0a945E170416'
+        max_allowance: 1.1579209e+77
+        deadline: 300
+        sleep_seconds: 1
+      reset_tendermint_after: 2
+      retry_attempts: 400
+      retry_timeout: 3
+      round_timeout_seconds: 30.0
+      service_id: liquidity_rebalancing
+      setup: {}
+      sleep_time: 1
+      tendermint_check_sleep_delay: 3
+      tendermint_com_url: http://localhost:8080
+      tendermint_max_retries: 5
+      tendermint_url: http://localhost:26657
+      validate_timeout: 1205
+    class_name: Params
+  requests:
+    args: {}
+    class_name: Requests
+  signing_dialogues:
+    args: {}
+    class_name: SigningDialogues
+  state:
+    args: {}
+    class_name: SharedState
+dependencies: {}
+is_abstract: false

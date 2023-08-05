@@ -1,0 +1,30 @@
+agent_name: counter_client
+author: valory
+version: 0.1.0
+description: The ABCI Counter example as an AEA
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  README.md: Qmd6kpFoSEus3Aw2ggLTELLybBrmfvUmja6dktrjypMViK
+fingerprint_ignore_patterns: []
+connections:
+- valory/http_client:0.1.0:QmXBBMS5g4kyyE3mzFcpieoDMKWFf9naaCM3QNSjP2mxDt
+contracts: []
+protocols:
+- open_aea/signing:1.0.0:QmYVxA8smnK8LQ2B4z5BVFvEwo3szQeBosUesycb8By1ZT
+- valory/http:1.0.0:QmRQYhYWbGSNHb152dp2L1P9EtZRZZqgvZAaNat5qxfQqK
+skills:
+- valory/counter_client:0.1.0:QmUgbMaxHicd3unozj33LEHpxmqDsu1p4c9SrXCVvsCDfs
+default_ledger: ethereum
+required_ledgers:
+- ethereum
+default_routing: {}
+connection_private_key_paths: {}
+private_key_paths:
+  ethereum: ethereum_private_key.txt
+logging_config:
+  disable_existing_loggers: false
+  version: 1
+dependencies:
+  open-aea-ledger-ethereum: {}
+default_connection: null

@@ -1,0 +1,57 @@
+agent_name: hello_world
+author: valory
+version: 0.1.0
+license: Apache-2.0
+description: Hello World ABCI example.
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  README.md: QmaoCKHmEGdUKt6UZXScV39MvU9yt34y2TAcJB9HiNMTq6
+fingerprint_ignore_patterns: []
+connections:
+- valory/abci:0.1.0:QmYWiaxokWBsbpwzZwPSYtrDrecE7A6ttz6kuZkUEWegVX
+- valory/http_client:0.1.0:QmXBBMS5g4kyyE3mzFcpieoDMKWFf9naaCM3QNSjP2mxDt
+contracts: []
+protocols:
+- open_aea/signing:1.0.0:QmYVxA8smnK8LQ2B4z5BVFvEwo3szQeBosUesycb8By1ZT
+- valory/abci:0.1.0:QmY42cX49Jb1dmHGbiDE7SEAW9YJc1FYJQA2U4i1mNYtBz
+- valory/http:1.0.0:QmRQYhYWbGSNHb152dp2L1P9EtZRZZqgvZAaNat5qxfQqK
+skills:
+- valory/abstract_abci:0.1.0:QmPL3nc94U6VmfJcokmbRK9vvQJsXzMLVtHeGxiQnSQTCi
+- valory/abstract_round_abci:0.1.0:QmWvxu1DMtfSJiFe5jnhdtKerNvCNZL58g1uAVjsjP3vPr
+- valory/hello_world_abci:0.1.0:QmPWpKk2LGoaBWFTyAJgrmUrXe7jGmat3u9dumrzCspEnh
+default_ledger: ethereum
+required_ledgers:
+- ethereum
+default_routing: {}
+connection_private_key_paths: {}
+private_key_paths: {}
+logging_config:
+  version: 1
+  disable_existing_loggers: false
+  formatters:
+    standard:
+      format: '[%(asctime)s] [%(levelname)s] %(message)s'
+  handlers:
+    logfile:
+      class: logging.FileHandler
+      formatter: standard
+      filename: ${LOG_FILE:str:log.txt}
+      level: INFO
+    console:
+      class: logging.StreamHandler
+      formatter: standard
+      stream: ext://sys.stdout
+  loggers:
+    aea:
+      handlers:
+      - logfile
+      - console
+      propagate: false
+dependencies:
+  open-aea-ledger-ethereum: {}
+default_connection: null
+---
+public_id: valory/abci:0.1.0
+type: connection
+config:
+  target_skill_id: valory/hello_world_abci:0.1.0
