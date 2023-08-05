@@ -1,0 +1,15 @@
+FocusRecorder/FocusRecorder.py,sha256=_kbJ85FdLovGBEu7yV3c8quOae28fRwtAdsZ53TQHF4,1414
+FocusRecorder/__init__.py,sha256=yUFBcxQxSIcwCA1OF34AZc0EwANxTjllFM-OHjPegYc,77
+FocusRecorder/command.py,sha256=CwDhDWmaJ183Gd-guCpBft5JMa8jjRpuFOWgd67Fb3E,872
+FocusRecorder/default.py,sha256=vZ0gbto6v2WUVaKowWxRAsaP2frpE8jjvJobciR2En8,1826
+FocusRecorder/init.py,sha256=IkaNvssP4VoW1EEXeWTmMIDeEA-OZztEkdU2xaoawFs,2328
+FocusRecorder/record.py,sha256=TSoPqgPAxAaoSu2_c5fJZ1rhKmI8X3dpMdKbeOt9q9k,1061
+FocusRecorder/status.py,sha256=vbnpy9smdw0jozt2LMeSkgaRm3yFz_czhuyJjecATEw,576
+FocusRecorder/tags.py,sha256=xd2REwJicqxAbsDNTgDP2slbWv0u97ThOmO4osp2XkQ,1740
+FocusRecorder/utls.py,sha256=t-_qyfUV8Rf-zgypfS41dNHBIvNWl7qnP6wVFIZFFow,3190
+FocusRecorder-1.0.16.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+FocusRecorder-1.0.16.dist-info/METADATA,sha256=hKPODgcM4u4_-uZXR_p_058eqdxctjLuyicVEFjTv6I,3214
+FocusRecorder-1.0.16.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+FocusRecorder-1.0.16.dist-info/entry_points.txt,sha256=rw5HF-XoEsIH8of7N2VnqsffX6UNPPOXmH3IX2x_gsY,68
+FocusRecorder-1.0.16.dist-info/top_level.txt,sha256=zYvIxE7kIIJ91Spl9gmNBVPVSCGnIJ3DUvQwejjKx2A,14
+FocusRecorder-1.0.16.dist-info/RECORD,,
