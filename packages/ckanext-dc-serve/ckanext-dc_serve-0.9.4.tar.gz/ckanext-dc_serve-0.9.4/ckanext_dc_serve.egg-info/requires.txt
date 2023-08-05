@@ -1,0 +1,2 @@
+dclab>=0.43.0
+dcor_shared>=0.2.0
