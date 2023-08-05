@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyglider/__init__.py
+pyglider/example_data.py
+pyglider/ncprocess.py
+pyglider/seaexplorer.py
+pyglider/slocum.py
+pyglider/utils.py
+pyglider.egg-info/PKG-INFO
+pyglider.egg-info/SOURCES.txt
+pyglider.egg-info/dependency_links.txt
+pyglider.egg-info/requires.txt
+pyglider.egg-info/top_level.txt
+pyglider.egg-info/zip-safe
