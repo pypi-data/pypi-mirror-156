@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: google-console
+Version: 0.0.4
+Home-page: 
+Requires-Python: >=3.7
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+
+.. -*- mode: rst -*-
+
+|PythonVersion|_ |PyPi|_
+
+.. |PythonVersion| image:: https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-blue?style=flat-square&logo=Python
+.. _PythonVersion: https://pypi.org/
+
+.. |PyPi| image:: https://img.shields.io/pypi/v/google-console?style=flat-square&label=pypi%20package&logo=PyPI
+.. _PyPi: https://pypi.org/
+
+
+**Documentation**
+
+There is no official documents about **google-console** but you can use **Google** official reference documents. The official documents will release in a sort period of time.
+
+
+|Gmail|_ |Photos|_ |Drive|_ |YouTube|_
+
+.. |Gmail| image:: https://shields.io/badge/-Gmail-blue?style=flat-square&logo=Gmail&labelColor=gray
+.. _Gmail: https://developers.google.com/gmail/api/reference/rest
+
+.. |Photos| image:: https://shields.io/badge/-Photos-blue?style=flat-square&logo=Google%20Photos&labelColor=gray
+.. _Photos: https://developers.google.com/photos/library/reference/rest
+
+.. |Drive| image:: https://shields.io/badge/-Drive-blue?style=flat-square&logo=Google%20Drive&labelColor=gray
+.. _Drive: https://developers.google.com/drive/api/v3/reference
+
+.. |YouTube| image:: https://shields.io/badge/-YouTube-blue?style=flat-square&logo=YouTube&labelColor=gray
+.. _YouTube: https://developers.google.com/youtube/v3/docs
+
+
+~~~~~~~~~~~~~~~~~
+
+**google-console** is a Python module for Google Cloud Console.
+
+
+User installation
+~~~~~~~~~~~~~~~~~
+
+The easiest way to install google-console is using ``pip``::
+
+    pip install -U google-console
+
