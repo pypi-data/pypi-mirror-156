@@ -1,0 +1,173 @@
+#!python
+
+# Gery Casiez
+# 2021
+
+import re
+import sys
+import os
+from subprocess import DEVNULL, STDOUT, check_call
+import shutil
+import argparse
+from tqdm import tqdm
+import urllib.request
+
+# packages listed here: https://www.acm.org/publications/taps/accepted-latex-packages 
+
+allowedPackages = ['amsmath.sty', 'array.sty', 'bbold.sty', 'booktabs.sty', 'caption.sty', 'colortbl.sty', 'enumitem.sty', 'epstopdf.sty',\
+ 'fancyvrb.sty', 'graphicx.sty', 'hypdoc.sty', 'mathtool.sty', 'mathtools.sty', 'microtype.sty', 'rotating.sty', 'subfig.sty',\
+ 'libertine.sty', 'longtable.sty', 'newtxmath.sty', 'tabularx.sty', 'zi4.sty', 'abstract.sty', 'curves.sty', 'kvoptions.sty',\
+ 'acronym.sty', 'datenumber.sty', 'listings.sty', 'algorithm.sty', 'dcolumn.sty', 'makeidx.sty', 'algorithm2e.sty', 'decimal.sty', \
+ 'maple2e.sty', 'algorithmic.sty', 'delarray.sty', 'mapleenv.sty', 'alltt.sty', 'dirtytalk.sty', 'mapleplots.sty', 'amsbsy.sty', \
+ 'draftwatermark.sty', 'maplestyle.sty', 'amscd.sty', 'epigraph.sty', 'mapletab.sty', 'amsfonts.sty', 'esdiff.sty', 'mapleutil.sty', \
+ 'amsgen.sty', 'etex.sty', 'mathabx.sty', 'amsmath.sty', 'eucal.sty', 'mciteplus.sty', 'amsmidx.sty', 'eufrak.sty', 'multirow.sty', \
+ 'amsopn.sty', 'fancybox.sty', 'natbib.sty', 'amssymb.sty', 'fancyhdr.sty', 'newlfont.sty', 'amstext.sty', 'fancyvrb.sty', 'nomencl.sty', \
+'amsthm.sty', 'fix-cm.sty', 'nopageno.sty', 'amsxtra.sty', 'fixfoot.sty', 'oldlfont.sty', 'apacite.sty', 'fixltx2e.sty', 'overword.sty', \
+ 'appendix.sty', 'fixme.sty', 'physics.sty', 'auxhook.sty', 'flafter.sty', 'SIunits.sty', 'balance.sty', 'float.sty', 'shortvrb.sty', 'bbding.sty', \
+'fontenc.sty', 'showidx.sty', 'bm.sty', 'forloop.sty', 'stfloats.sty', 'bold-braces.sty', 'fp.sty', 'stmaryrd.sty', 'braket.sty', 'gb4e.sty', \
+'soul.sty', 'calc.sty', 'geometry.sty', 'subfigure.sty', 'cancel.sty', 'graphics.sty', 'suffix.sty', 'ccicons.sty', 'graphicx.sty', 'tabular.sty', \
+'centernot.sty', 'graphpap.sty', 'textcase.sty', 'cgloss4e.sty', 'harmony.sty', 'textcomp.sty', 'checkend.sty', 'html.sty', 'tfrupee.sty', 'CJK.sty', \
+'hyperref.sty', 'tipa.sty', 'clean.sty', 'ifpdf.sty', 'tipx.sty', 'cmap.sty', 'ifthen.sty', 'titlepage.sty', 'color.sty', 'index.sty', 'tloop.sty', \
+'comma.sty', 'inputenc.sty', 'totpages.sty', 'coollist.sty', 'iopams.sty', 'trimspaces.sty', 'coolstr.sty', 'keyval.sty', 'units.sty', 'upmath.sty',\
+'url.sty', 'breakurl.sty', 'verbatim.sty', 'wrapfig.sty', 'xcolor.sty', 'xspace.sty', 'subcaption.sty', 'pifont.sty']
+
+# Packages not listed above but imported by some packages listed above
+
+additionnalPackages = ['xkeyval.sty', 'xstring.sty', 'iftex.sty', 'etoolbox.sty', 'refcount.sty', 'ltxcmds.sty', \
+     'infwarerr.sty', 'everyshi-ltx.sty', 'environ.sty', 'pdftexcmds.sty', 'kvsetkeys.sty', 'kvdefinekeys.sty', 'pdfescape.sty', \
+     'hycolor.sty', 'letltxmacro.sty', 'intcalc.sty', 'etexcmds.sty', 'bitset.sty', 'bigintcalc.sty', 'atbegshi-ltx.sty', \
+     'atveryend-ltx.sty', 'rerunfilecheck.sty', 'uniquecounter.sty', 'hyperxmp.sty', 'stringenc.sty', 'ifmtarg.sty', 'ifdraft.sty', \
+     'ifluatex.sty', 'trig.sty', 'ifvtex.sty', 'manyfoot.sty', 'nccfoots.sty', 'ifxetex.sty', 'fontaxes.sty', 'caption3.sty', \
+     'comment.sty', 'nameref.sty', 'epstopdf-base.sty', 'upquote.sty', 'gettitlestring.sty', 'everyshi.sty', 'setspace.sty']
+
+# Additional packages, not listed above but authorized following discussions with ACM by e-mail
+
+additionalPackagesNotPubliclyListed = ['eurosym.sty', 'silence.sty'] 
+
+def findIndex(listOfDict, key, val):
+    return next((index for (index, d) in enumerate(listOfDict) if d[key] == val), None)
+
+def displayPackages(packages, permittedPackages, showAll = False, showSubpackages = False):
+    packages = sorted(packages, key = lambda i: i['name'])
+
+    for p in packages:
+        if p['supported']:
+            if showAll:
+                print("{:<20} => ok".format(p['name']))
+        else:
+            print("{:<20} => NOT SUPPORTED".format(p['name']))
+
+        if showSubpackages and len(p['subpackages']) > 0:
+            for sp in p['subpackages']:
+                if sp not in permittedPackages:
+                    print("   {:<20} => NOT SUPPORTED".format(sp))
+                elif showAll:
+                    print("   {:<20} => ok".format(sp))
+
+def getStyFilesFromLog(file):
+    packages = []
+    try:
+        f = open(file, "r")
+    except:
+        print("File %s does not exist"%file)
+        sys.exit(-1)
+
+    text = f.read()
+
+    pattern = re.compile(r"([^ \n/\t]*\.sty)")
+
+    for package in re.findall(pattern, text):
+        if package not in packages:
+            packages.append(package)
+    return packages
+
+def getPackagesOfficallySupported():
+    res = []
+    fp = urllib.request.urlopen("https://www.acm.org/publications/taps/accepted-latex-packages")
+    s = fp.read().decode("utf8")
+    fp.close()
+    s2 = s.replace('<br />', ' ').replace('\n', '')
+    packages = re.findall(r"<p style=\"margin-left: 40px;\">([^<]*)",s2)
+    for g in packages:
+        packs = re.split(" |/",g)
+        for p in packs:
+            res.append("%s.sty"%p)
+    res += ['amsmath.sty', 'array.sty', 'booktabs.sty', 'caption.sty', 'fancyvrb.sty', 'graphicx.sty',\
+          'hypdoc.sty', 'libertine.sty', 'longtable.sty', 'newtxmath.sty', 'tabularx.sty', 'zi4.sty']
+
+    res = list(filter(lambda p: p != '&nbsp;.sty', res))
+
+    return res
+
+def diff():
+    official = getPackagesOfficallySupported()
+    new = []
+    for p in official:
+        if p not in allowedPackages:
+            new.append(p)
+    print("New packages supported: %s"%new)
+
+    deleted = []
+    for p in allowedPackages:
+        if p not in official:
+            deleted.append(p)
+    print("Packages no longer supported: %s"%deleted)
+
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='Check used packages')
+    parser.add_argument('logfile', help = 'latex log file')
+    parser.add_argument('--all', help = 'shows all packages', action="store_true")
+    parser.add_argument('--expand', help = 'shows packages used by a package', action="store_true")
+    parser.add_argument('--diff', help = 'shows packages newly supported or no longer supported from TAPS', action="store_true")
+    args = parser.parse_args()
+
+    if args.diff:
+        diff()
+        sys.exit(0)
+
+    print("You must first compile you tex document by adding \\listfiles below the \\documentclass")
+
+    allowedPackages.extend(additionnalPackages) 
+    allowedPackages.extend(additionalPackagesNotPubliclyListed)
+
+    packages = getStyFilesFromLog(args.logfile)
+
+    everyThingOK = True
+    allpackages = []
+
+    for p in packages:
+        if p not in allowedPackages:
+            everyThingOK = False
+            allpackages.append({'name': p, 'supported': False, 'subpackages': []})
+        else:
+            allpackages.append({'name': p, 'supported': True, 'subpackages': []})
+
+    if args.expand:
+        tmpfile = "xzadphrvix"
+        
+        for p in tqdm(allpackages):
+            f = open("%s.tex"%tmpfile, "w")
+            f.write("""\\documentclass{article} \\listfiles \\usepackage{%s} \\begin{document} \\end{document}"""%p['name'][:-4])
+            f.close()
+
+            try:
+                check_call(['pdflatex', '-interaction', 'nonstopmode', "%s.tex"%tmpfile], stdout=DEVNULL, stderr=STDOUT)
+            except:
+                print("Some troubles finding packages in %s (some additional packages may be required to use it)"%p['name'])
+                next
+
+            usedpackages = getStyFilesFromLog("%s.log"%tmpfile)
+            if p['name'] in usedpackages:
+                usedpackages.remove(p['name'])
+            index = findIndex(allpackages, 'name', p['name'])
+            allpackages[index]['subpackages'].extend(usedpackages)
+
+
+    if everyThingOK:
+        print("Congratulations, everything appears in order.")
+    else:
+        displayPackages(allpackages, allowedPackages, args.all, args.expand)
+        print("Note that the packages listed above can include personal packages that are not a problem as long as they use authorized packages.")
+
