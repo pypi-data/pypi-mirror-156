@@ -1,0 +1,4 @@
+
+[all]
+Markdown>=3
+Jinja2>=3

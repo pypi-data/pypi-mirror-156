@@ -1,0 +1,734 @@
+img {
+	max-width: 100%;
+}
+
+/* light mode */
+:root {
+   --body-bg: #ffffff;
+   --body-bg1: #dedede;
+   --body-bg2: #aaa;
+   --body-bg3: #eee;
+   --body-bg4: #cecece;
+   --body-colour: #000000;
+   --body-secondary-colour: #6a6a6a;
+   --link-colour: #1976d2;
+   --svg-link-colour: invert(44%) sepia(62%) saturate(6300%) hue-rotate(196deg) brightness(91%) contrast(81%);
+   --svg-colour-filter: none;
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+   :root {
+	   --body-bg: #161616;
+	   --body-bg1: #262626;
+	   --body-bg2: #363636;
+	   --body-bg3: #464646;
+	   --body-bg4: #565656;
+       --body-color: rgba(255,255,255,0.87);
+	   --body-secondary-colour: rgba(255,255,255,0.6);
+	   --link-colour: #64b5f6;
+	   --svg-link-colour: invert(59%) sepia(78%) saturate(454%) hue-rotate(178deg) brightness(100%) contrast(93%);
+	   --svg-colour-filter: invert(87%);
+   }
+   img {
+	   filter: brightness(.8) contrast(1.2);
+   }
+}
+
+:root.dark {
+   --body-bg: #161616;
+   --body-bg1: #262626;
+   --body-bg2: #363636;
+   --body-bg3: #464646;
+   --body-bg4: #565656;
+   --body-colour: rgba(255,255,255,0.87);
+   --body-secondary-colour: rgba(255,255,255,0.6);
+   --link-colour: #64b5f6;
+   --svg-link-colour: invert(59%) sepia(78%) saturate(454%) hue-rotate(178deg) brightness(100%) contrast(93%);
+   --svg-colour-filter: invert(87%);
+}
+
+.dark img {
+	filter: brightness(.8) contrast(1.2);
+}
+
+/*
+ * Utility class to hide content visually while keeping it screen reader-accessible.
+ * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
+ */
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Fix scroll bar jumping issue */
+html {
+	overflow-y: scroll;
+}
+
+/* Set base fonts */
+html {
+	/* System Fonts as used by GitHub */
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+	font-size: 18px;
+	color: var(--body-colour);
+	background: var(--body-bg);
+	line-height: 1.5;
+}
+
+a {
+	color: var(--link-colour);
+}
+
+.article-excerpt,
+.article-content {
+	font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	line-height: 1.6;
+}
+
+code, pre {
+	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+	color: initial;
+}
+
+.main-and-sidebar-wrapper > aside {
+	font-size: .9rem;
+}
+
+body > footer {
+	font-size: .8em;
+	color: var(--body-secondary-colour);
+}
+
+body > footer a:visited,
+body > footer a:link,
+body > footer a:active,
+body > footer a {
+	color: var(--body-colour);
+}
+
+@media screen and (max-width: 767px) {
+	html {
+		font-size: 16px;
+	}
+	.main-and-sidebar-wrapper > aside {
+		font-size: inherit;
+	}
+}
+
+
+/* Beginning of main layout for a desktop screen */
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-and-sidebar-wrapper {
+	flex: 1;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: flex-start;
+	column-gap: 50px;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.main-and-sidebar-wrapper > *,
+body > footer {
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.main-and-sidebar-wrapper > header {
+	flex: 1 100%;
+	min-height: 80px;
+}
+
+.main-and-sidebar-wrapper > nav.breadcrumbs {
+	flex: 1 100%;
+	padding-bottom: 0;
+}
+
+.main-and-sidebar-wrapper > main {
+	margin-top: 1em;
+	flex: 2 0 0;
+	overflow: hidden;
+}
+
+.main-and-sidebar-wrapper.no-sidebar > main {
+	max-width: 800px;
+}
+
+@media screen and (max-width: 1200px) {
+	.main-and-sidebar-wrapper {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.main-and-sidebar-wrapper.no-sidebar > main {
+		max-width: 100%;
+	}
+}
+
+.main-and-sidebar-wrapper > aside {
+	margin-top: 1em;
+	flex: 0.9 0 0;
+	overflow: hidden;
+}
+
+body > footer {
+	width: 100%;
+	max-width: 1200px;
+}
+/* End of main layout for a desktop screen */
+
+/* Beginning of main layout for a tablet screen */
+@media screen and (max-width: 1024px) {
+}
+/* End of main layout for a tablet screen */
+
+/* Beginning of main layout for a mobile screen */
+@media screen and (max-width: 767px) {
+	.main-and-sidebar-wrapper > main,
+	.main-and-sidebar-wrapper > aside {
+		flex: 1 100%;
+	}
+}
+/* End of main layout for a mobile screen */
+
+/* 1. Header */
+.main-and-sidebar-wrapper > header {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-and-sidebar-wrapper > header a:link,
+.main-and-sidebar-wrapper > header a:visited,
+.main-and-sidebar-wrapper > header a:active {
+	color: var(--body-colour);
+	text-decoration: none;
+}
+
+.main-and-sidebar-wrapper > header {
+	border-bottom: 1px solid var(--body-bg1);
+}
+
+@media screen and (max-width: 767px) {
+	.main-and-sidebar-wrapper > header {
+		padding: 0;
+		flex-wrap: wrap;
+		/*justify-content: flex-start;*/
+		align-items: center;
+	}
+}
+
+/* 1.1 Logo */
+.main-and-sidebar-wrapper > header > section > a {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+.main-and-sidebar-wrapper > header > section > p {
+	margin: 0;
+	font-size: .8rem;
+	color: var(--body-secondary-colour);
+}
+
+.main-and-sidebar-wrapper > header > button {
+	display: none;
+	min-width: 60px;
+	min-height: 60px;
+}
+
+#theme-switch {
+	flex-grow: 1;
+	margin-left: 1em;
+}
+
+#theme-switch button {
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+#theme-switch #dark-button {
+	color: #464646;
+	filter: invert(26%) sepia(1%) saturate(0%) hue-rotate(331deg) brightness(94%) contrast(90%);
+}
+
+#theme-switch #light-button {
+	color: #aaa;
+	filter: invert(78%) sepia(17%) saturate(0%) hue-rotate(221deg) brightness(93%) contrast(98%);
+}
+
+@media screen and (max-width: 767px) {
+	.main-and-sidebar-wrapper > header > section {
+		padding: 10px;
+		position: relative;
+		/*width: 100%;*/
+		box-sizing: border-box;
+		/*flex: 1 0 0;*/
+	}
+}
+
+/* 1.2 Navigation */
+header nav {
+	clear: both;
+}
+header nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+header nav li {
+	float: left;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	cursor: default;
+}
+
+header nav li ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: var(--body-bg1);
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+header nav li ul li {
+	width: 100%;
+}
+
+header nav li ul ul {
+	top: 0;
+	right: 100%;
+	left: auto;
+}
+
+.main-and-sidebar-wrapper header nav > ul > li > a:hover {
+	text-decoration: underline;
+	color: var(--body-secondary-colour);
+}
+
+.main-and-sidebar-wrapper header nav > ul ul li:hover {
+	background: var(--body-bg2);
+}
+
+.main-and-sidebar-wrapper > header > button img {
+	filter: var(--svg-colour-filter);
+}
+
+@media screen and (max-width: 767px) {
+	.main-and-sidebar-wrapper > header > button {
+		display: block;
+		border: none;
+		cursor: pointer;
+		background: none;
+		flex: 0 auto;
+		align-self: center;
+		width: 80px;
+		height: 80px;
+	}
+
+	.main-and-sidebar-wrapper > header > button:hover {
+		background: var(--body-bg3);
+	}
+
+	.main-and-sidebar-wrapper > header > button > img {
+		width: 100%;
+		height: auto;
+		max-width: 50px;
+	}
+
+	.main-and-sidebar-wrapper header nav {
+		flex: 1 100%;
+	}
+
+	.main-and-sidebar-wrapper header nav > ul > li > a:hover {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.main-and-sidebar-wrapper header nav > ul > li:hover,
+	.main-and-sidebar-wrapper header nav > ul ul li:hover {
+		background: none;
+	}
+
+	.main-and-sidebar-wrapper header nav a:hover,
+	.main-and-sidebar-wrapper header nav span:hover {
+		background: var(--body-bg2);
+	}
+}
+
+header nav > ul li       > ul { display: none; }
+header nav > ul li:hover > ul,
+header nav > ul li:active > ul,
+li.open > ul {
+	display: block;
+}
+
+/* Caret icon */
+header nav li img {
+	height: 0.8rem;
+	width: auto;
+	max-width: none;
+	filter: var(--svg-colour-filter) !important;
+}
+
+header nav > ul > li > img {
+	margin-right: -0.4rem;
+}
+
+@media screen and (max-width: 767px) {
+	.main-and-sidebar-wrapper > header > nav {
+		width: 100%;
+	}
+
+	header nav ul {
+		width: 100%;
+		background: var(--body-bg4);
+	}
+
+	header nav ul li ul,
+	header nav ul li ul li ul {
+		position: relative;
+		top: unset;
+		left: unset;
+		right: unset;
+		box-shadow: none;
+	}
+
+	header nav ul li {
+		float: unset;
+		width: 100%;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	header nav ul li > a,
+	header nav ul li > span {
+		width: 100%;
+		padding: 15px 10px;
+		border-bottom: 1px solid var(--body-bg2);
+	}
+
+	header nav ul li ul li > a,
+	header nav ul li ul li > span {
+		padding-left: 30px;
+	}
+
+	header nav ul li ul li ul li > a,
+	header nav ul li ul li ul li > span {
+		padding-left: 50px;
+	}
+
+	header nav ul li ul li ul li ul li > a,
+	header nav ul li ul li ul li ul li > span {
+		padding-left: 70px;
+	}
+
+	header nav > ul li > ul {
+		display: block;
+	}
+
+	header nav ul li img {
+		display: none;
+	}
+}
+
+/* end 1.2 */
+/* end 1. */
+
+/* 2. Sidebar */
+.main-and-sidebar-wrapper > aside dl {
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+
+.main-and-sidebar-wrapper > aside > section:first-child > p,
+.main-and-sidebar-wrapper > aside > section:first-child > dl {
+	/* if the first thing is a <p> tag remove it's upper margin */
+	margin-top: 0;
+}
+
+.main-and-sidebar-wrapper > aside #sidebar-social-links {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.main-and-sidebar-wrapper > aside #sidebar-social-links img {
+	height: 1.0rem;
+	width: auto;
+	max-width: none;
+	display: block;
+	float: left;
+	filter: var(--svg-link-colour);
+}
+
+.main-and-sidebar-wrapper > aside #sidebar-social-links > *:after {
+	content: " \B7\00a0";
+}
+.main-and-sidebar-wrapper > aside #sidebar-social-links > *:last-child:after {
+	content: "\00a0";
+}
+
+.main-and-sidebar-wrapper > aside ul {
+	list-style: none;
+	padding: 0;
+}
+
+.main-and-sidebar-wrapper > aside ul li a {
+	color: var(--link-colour);
+	border-bottom: 1px solid var(--link-colour);
+	text-decoration: none;
+}
+.main-and-sidebar-wrapper > aside ul li {
+	margin-top: .2em;
+}
+
+.main-and-sidebar-wrapper > aside > section#archive-links ul li {
+	width: 100%;
+	border-bottom: 1px solid var(--body-bg1);
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.main-and-sidebar-wrapper > aside > section#archive-links ul li a {
+	border: none;
+}
+
+aside > section#sidebar-image {
+    text-align: center;
+}
+
+aside > section#sidebar-image > img {
+    width: 100%;
+	max-width: 200px;
+}
+
+/* end 2. */
+
+/* 3. Post */
+main > article > header > h1 {
+	margin-top: 0;
+}
+
+main article header time,
+main article header > section > a {
+	font-size: .8em;
+	color: var(--body-secondary-colour);
+}
+
+main article header > section > a:hover,
+main article header > section > a:active,
+main article header > section > a:focus {
+	color: var(--body-colour);
+}
+
+main article header section > span:after,
+main article header section > time:after {
+	content: " \B7 ";
+}
+main article header section > span:last-child:after,
+main article header section > time:last-child:after {
+	content: "\00a0";
+}
+
+article > header > h1,
+article > header > h2,
+article > header > h3,
+article > header > h4 {
+	margin-bottom: 0;
+}
+
+/* end 3. */
+
+/* 4. List */
+main > ol {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+.grouped-posts-list > li > ol { /* grouped lists, as in categories and archive */
+	list-style: none;
+	padding-left: 40px;
+	margin-top: 0;
+}
+
+main > h2 {
+	font-weight: 400;
+	margin-top: 0;
+	border-bottom: 1px solid var(--body-bg1);
+	padding-bottom: .2em;
+}
+
+main > ol > li > article > header > h2 a:link,
+main > ol > li > article > header > h2 a:visited,
+main > ol > li > article > header > h2 a:active,
+main > ol > li > article > header > h2 a,
+main article > header > h3 a:link,
+main article > header > h3 a:visited,
+main article > header > h3 a:active,
+main article > header > h3 a {
+	color: var(--link-colour);
+	text-decoration: none;
+}
+
+.grouped-posts-list h2 {
+	font-weight: 400;
+	padding-bottom: .2em;
+	border-bottom: 1px solid var(--body-bg1);
+}
+
+.grouped-posts-list > li:first-child h2 {
+	margin-top: 0;
+}
+
+main > ol > li:first-of-type > article > header > h2 {
+	margin: 0;
+	padding: 0;
+}
+
+main > ol > li > article {
+	border-bottom: 1px solid var(--body-bg1);
+}
+/* end 4. */
+
+/* 5. Content */
+pre {
+	max-width: 100%;
+	white-space: pre;
+	overflow-x: auto;
+}
+
+.codehilite {
+	padding: 10px;
+	font-size: 0.9em;
+}
+
+.codehilite > pre {
+	margin-top: 0;
+}
+
+.article-content > h1:first-child
+.article-content > h2:first-child,
+.article-content > h3:first-child,
+.article-content > h4:first-child,
+.article-content > h5:first-child,
+.article-content > h6:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
+/* end 5. */
+
+/* 6. Pagination */
+nav.pagination {
+	width: 100%;
+}
+
+nav.pagination ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav.pagination ul li a[aria-current="true"] {
+	background: var(--body-bg1);
+}
+
+nav.pagination ul li a:hover {
+	background: var(--body-bg3);
+}
+
+nav.pagination ul li a {
+	padding: .25em .5em;
+	text-decoration: none;
+	color: var(--body-colour);
+	border: 1px solid var(--body-bg1);
+	border-right: none;
+}
+nav.pagination ul li:last-child a {
+	border-right: 1px solid var(--body-bg1);
+}
+
+@media screen and (max-width: 767px) {
+	nav.pagination {
+		font-size: 1.1em;
+	}
+	nav.pagination ul li a {
+		padding: .5em 1em;
+	}
+	nav.pagination {
+		border-bottom: 1px solid var(--body-bg1);
+	}
+}
+/* end 6. */
+
+/* 7. Breadcrumbs */
+.breadcrumbs ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	width: 100%;
+}
+
+.breadcrumbs ol li a:visited,
+.breadcrumbs ol li a:active,
+.breadcrumbs ol li a:focus,
+.breadcrumbs ol li a {
+	text-decoration: none;
+	color: var(--body-secondary-colour);
+	font-size: .9em;
+}
+
+.breadcrumbs ol li a.existing_breadcrumb:hover {
+	border-bottom: 1px solid var(--body-colour);
+	color: var(--body-colour);
+}
+
+.breadcrumbs ol li {
+	margin-left: .2em;
+}
+
+.breadcrumbs ol li:first-child {
+	margin-left: 0;
+}
+
+.breadcrumbs ol li:after {
+	content: " \00BB ";
+	color: var(--body-secondary-colour);
+}
+
+.breadcrumbs ol li:last-child:after {
+	content: "\00a0";
+}
+/* end 7. */
