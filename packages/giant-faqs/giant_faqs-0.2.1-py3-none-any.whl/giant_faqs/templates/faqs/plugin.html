@@ -1,0 +1,4 @@
+{% for faq in instance.faqs.all %}
+    {{ faq.question }}
+    {{ faq.answer|safe }}
+{% endfor %}
