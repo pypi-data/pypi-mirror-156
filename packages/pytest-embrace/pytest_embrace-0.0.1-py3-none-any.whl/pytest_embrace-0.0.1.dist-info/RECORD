@@ -1,0 +1,12 @@
+pytest_embrace/__init__.py,sha256=Y27CdQZsNvc7mEAb5TpcW45s_SJZ0aS7UHUZdXmk8Tw,143
+pytest_embrace/case.py,sha256=1ftI7WYlbhkAvyrSGhNOyvNlSG3TIWRZi2YWYcE2Bgc,489
+pytest_embrace/embrace.py,sha256=VZ69AFf4cKQgS3BdBOQjTNP6cQm0v249gC1qQaZEb9Y,2765
+pytest_embrace/exc.py,sha256=bADT8X07llXyiuyq4jLzH5l4AoA4yJpFwRTiHDoFc4E,156
+pytest_embrace/gen.py,sha256=ooJRwBDvUuPhvMM11UwuIpFiMpaL2Zr9gEa0XsZX_oo,1073
+pytest_embrace/loader.py,sha256=q3CJdfRZT0j9t200CvefzDXiiJbZSZw3EXPosR-6f0c,3537
+pytest_embrace/plugin.py,sha256=oAeYHVoShybwEAL0FBwsWYM2joRzj6wWGJRG2ZIDKD4,1574
+pytest_embrace/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_embrace-0.0.1.dist-info/entry_points.txt,sha256=k-8SPKHXCjLSU-YOjoI1LzYZ6y4Q4d48fZYEa_3p7OU,100
+pytest_embrace-0.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pytest_embrace-0.0.1.dist-info/METADATA,sha256=Wu2iOQ2-nsc51TOsD_dGNczqRWe8OBQSu9Mg55kDLEg,6473
+pytest_embrace-0.0.1.dist-info/RECORD,,
