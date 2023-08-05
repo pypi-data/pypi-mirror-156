@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyston-lite
+Version: 2.3.4.2
+Summary: A JIT for Python
+Home-page: https://www.github.com/pyston/pyston
+Author: The Pyston Team
+Description-Content-Type: text/markdown
+
+pyston-lite is the JIT part of [Pyston](https://github.com/pyston/pyston),
+a faster implementation of Python. pyston-lite does not contain all of the
+optimizations of full Pyston, but it is still 10-25% faster on many workloads.
+
+pyston-lite is currently only available for Python 3.8
