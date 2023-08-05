@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+version.conf
+src/django_model_observer/__init__.py
+src/django_model_observer/observer.py
+src/django_model_observer/utils.py
+src/django_model_observer.egg-info/PKG-INFO
+src/django_model_observer.egg-info/SOURCES.txt
+src/django_model_observer.egg-info/dependency_links.txt
+src/django_model_observer.egg-info/requires.txt
+src/django_model_observer.egg-info/top_level.txt
