@@ -1,0 +1,9 @@
+perftester/__init__.py,sha256=x9O2UW8vfTuF7uKzPUeZ397FEzjcv42X2H26je9cyOI,273
+perftester/__main__.py,sha256=aX_J60lLY2yoz5jXtNoqTnAE_wm_s4llQHeR3z2Mx68,5119
+perftester/perftester.py,sha256=fQoXi9jS6dRIGFRGVyK-GVeOq2_jhyzQMLvh6azEObU,30874
+perftester-0.3.2.dist-info/LICENSE,sha256=mZFAdfuYFAyBYiir4m3CTQu151mpXbMbh7Mm5M1bZAE,1063
+perftester-0.3.2.dist-info/METADATA,sha256=KTYI12f7i3UTJvGXHO1w1POsnIkNZd4lXSbn_jK-e30,24456
+perftester-0.3.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+perftester-0.3.2.dist-info/entry_points.txt,sha256=gM6Vf1BEeLY-1X9IQlO1TPAO3lJ5vToKfnJHT4MruIk,57
+perftester-0.3.2.dist-info/top_level.txt,sha256=i1-4oWlkta2MsNKlZwJCibhn7aBexQfxncoPy2a6dfA,11
+perftester-0.3.2.dist-info/RECORD,,
