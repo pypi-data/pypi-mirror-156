@@ -1,0 +1,10 @@
+gtkspellcheck/__init__.py,sha256=To__zZ4PTjVghtUb2R0UYcF7nICOYOCJo8e5LCV432s,2332
+gtkspellcheck/_oxt_extract.py,sha256=uX-cnj8JmxscqLDZyUO43AYunLCcwsmpsns8jyd7Y1E,13052
+gtkspellcheck/_pylocales/__init__.py,sha256=66Ygs61cKqnqkAPP7xwgbaYKVjL4g_5d1Ij3pCm9T3Q,2143
+gtkspellcheck/_pylocales/locales.db,sha256=Ujwc-YJYbYASkpwysSSUp_GnK-pzWck9UTiixh69rXw,29696
+gtkspellcheck/_pylocales/locales.py,sha256=1c59RpFSsAZQoO8izO90HdV6ST-rbAGDMq7HPLgvs0k,5411
+gtkspellcheck/spellcheck.py,sha256=xOeTXOSBZmCu9tsqpnuGyk1ZTViaPJ6vuvJQWlaHGqU,33913
+pygtkspellcheck-5.0.0rc0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pygtkspellcheck-5.0.0rc0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pygtkspellcheck-5.0.0rc0.dist-info/METADATA,sha256=PMtv4VRowqp7X66plYgWnHpJUV-reCHuxn-vn_bTJRk,5177
+pygtkspellcheck-5.0.0rc0.dist-info/RECORD,,
