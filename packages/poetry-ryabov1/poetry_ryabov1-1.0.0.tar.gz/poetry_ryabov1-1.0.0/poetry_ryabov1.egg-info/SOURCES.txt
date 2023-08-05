@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+poetry_ryabov1/__init__.py
+poetry_ryabov1/poetry_ryabov.py
+poetry_ryabov1.egg-info/PKG-INFO
+poetry_ryabov1.egg-info/SOURCES.txt
+poetry_ryabov1.egg-info/dependency_links.txt
+poetry_ryabov1.egg-info/top_level.txt
