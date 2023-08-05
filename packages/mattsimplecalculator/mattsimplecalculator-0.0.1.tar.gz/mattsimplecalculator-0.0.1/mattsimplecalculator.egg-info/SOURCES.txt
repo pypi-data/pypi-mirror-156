@@ -1,0 +1,10 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+license.txt
+setup.py
+mattsimplecalculator/__init__.py
+mattsimplecalculator.egg-info/PKG-INFO
+mattsimplecalculator.egg-info/SOURCES.txt
+mattsimplecalculator.egg-info/dependency_links.txt
+mattsimplecalculator.egg-info/top_level.txt

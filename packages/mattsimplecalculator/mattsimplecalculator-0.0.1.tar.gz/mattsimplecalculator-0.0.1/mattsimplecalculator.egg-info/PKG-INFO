@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: mattsimplecalculator
+Version: 0.0.1
+Summary: Basic calculator
+Home-page:  
+Author: Matt Meyer
+Author-email: matt.meyer3@gmail.com
+License: MIT
+Description: This is a simple calculator program.
+        Features: Add, Subtract, multiply, divide
+        
+        
+        
+        CHANGELOG
+        ==================
+        0.0.1 (2022/06/21)
+        ---------------------
+        - First Release
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
