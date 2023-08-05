@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+npycvx/__init__.py
+npycvx.egg-info/PKG-INFO
+npycvx.egg-info/SOURCES.txt
+npycvx.egg-info/dependency_links.txt
+npycvx.egg-info/requires.txt
+npycvx.egg-info/top_level.txt
+tests/__init__.py
+tests/test_npycvx.py

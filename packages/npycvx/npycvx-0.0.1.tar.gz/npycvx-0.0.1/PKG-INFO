@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: npycvx
+Version: 0.0.1
+Summary: Converter from numpy to cvxopt.
+Author: ourstudio
+Author-email: rikard@ourstudio.se
+License-File: LICENSE
