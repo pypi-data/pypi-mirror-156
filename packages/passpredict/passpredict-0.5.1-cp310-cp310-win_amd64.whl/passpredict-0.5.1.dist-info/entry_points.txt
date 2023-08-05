@@ -1,0 +1,2 @@
+[console_scripts]
+passpredict = passpredict.cli:main
