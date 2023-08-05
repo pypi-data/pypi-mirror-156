@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: JuMonC-LogParser
+Version: 0.1.0
+Summary: LogParser plugin for JuMonC
+Home-page: https://gitlab.jsc.fz-juelich.de/coec/jumonc-logparser
+Author: Christian Witzler
+Author-email: c.witzler@fz-juelich.de
+License: BSD 3-Clause License
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: JuMonC (>=0.8)
+Requires-Dist: ply
+
+# JuMonC-LogParser
+
+Plugin for JuMonC that allows to parse logs and pass information on to the REST-API of JuMonC from logfiles. By changing the logfile parsing information this plugin can parse different logfiles.
+
+## Getting help
+
+Open an [issue](https://gitlab.jsc.fz-juelich.de/coec/jumonc-logparser/-/issues/new)
+
+
+## Acknowledgment
+ JuMonC-LogParser has been developed as part of the [Center of Excellence in Combustion (CoEC)](https://coec-project.eu/). The CoEC project has received funding from the European Union’s Horizon 2020 research and innovation programm under grant agreement No 952181.
+
+[<img src="https://gitlab.jsc.fz-juelich.de/coec/jumonc/-/raw/main/doc/Logo/COEC_LOGO.png"  width="200" title="The Center of Excellence in Combustion" alt="CoEC Logo">](https://coec-project.eu/) [<img src="https://gitlab.jsc.fz-juelich.de/coec/jumonc/-/raw/main/doc/Logo/EU_Horizon.png"  width="200" title="Horizon Europe: Research and innovation funding programme until 2027" alt="Horizon Europe">](https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en)
