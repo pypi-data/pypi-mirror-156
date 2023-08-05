@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: 9ja
+Version: 0.0.1
+Summary: An API for 9ja
+Home-page: UNKNOWN
+Author: Odeyemi Increase Ayobami
+Author-email: odeyemiincrease@yahoo.com
+License: MIT
+Keywords: 9ja,Nigeria
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This Library will help you get information about a 9ja
+
+Change Log
+==========
+
+
+
+0.0.1 (22/06/2022)
+------------------
+- Initial Codebase
+
