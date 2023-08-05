@@ -1,0 +1,12 @@
+data_diff/__init__.py,sha256=1hu6eBHCYG681s9BEpUfhAAym0gBMKcGK9e67S753hI,2866
+data_diff/__main__.py,sha256=UKabQ6s4-lV8pbXagfsTR57UCpZiNoRSbfau4GrpdLk,6332
+data_diff/base.py,sha256=MX1ux-FKlQtGq7qOtkdP_XdmM2W9m9y96QKd63J1II8,2233
+data_diff/database.py,sha256=ZXPzEAyAevHsZhvWC6MnRrE-rl2Vnxq9wbPmN8Bfij0,36675
+data_diff/diff_tables.py,sha256=MdYx_Fm1czvPSreXb47pr73pxv1FT7lSqWf_f2tpRfs,19005
+data_diff/parse_time.py,sha256=34qMsxf_FJfDtj9L1uH8H-b32kYY1Y4Ym_V8RjdtYEo,1847
+data_diff/sql.py,sha256=qs1Tez1s3Zc7c4XizR1fW2sHri_ha9oXWUQp8YK4wtk,4252
+data_diff-0.2.0.dist-info/entry_points.txt,sha256=-_bx6OX7JgaMQh0Zy2LxnxCX-YxEKDpu5MyiQ5nhhSM,53
+data_diff-0.2.0.dist-info/LICENSE,sha256=lTVLmqmQSIrf7Jc9O3KfCkxxMQpRi5dovOV-pXT-k4Q,1071
+data_diff-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+data_diff-0.2.0.dist-info/METADATA,sha256=Yvk1enKNT-ytrujzyF3nXqdYsmO5_m0H5NPp5JA5hbE,26587
+data_diff-0.2.0.dist-info/RECORD,,
