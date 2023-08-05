@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pm20_5
+Version: 0.17
+Summary: For cheating
+Home-page: https://github.com/user/reponame
+Author: Ivan Ivanov
+Author-email: your.email@domain.com
+License: MIT
+Download-URL: https://github.com/ffufcok/pm20_5/archive/refs/tags/0.8.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
