@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mp3stego/__init__.py
+mp3stego/steganography.py
+mp3stego_lib.egg-info/PKG-INFO
+mp3stego_lib.egg-info/SOURCES.txt
+mp3stego_lib.egg-info/dependency_links.txt
+mp3stego_lib.egg-info/requires.txt
+mp3stego_lib.egg-info/top_level.txt
