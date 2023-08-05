@@ -1,0 +1,8 @@
+neat_ml_schema/__init__.py,sha256=ZlI67Vs3ZYhEZKTf0z4_Z5QUHu-z7YW6tH-XfMWEDPw,40
+neat_ml_schema/datamodel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neat_ml_schema/datamodel/neat_ml_schema.py,sha256=F6w3_b8r817aNCw2x9b7h8gTYcoXptQ_ciGWUjbUwYA,101100
+neat_ml_schema/schema/neat_ml_schema.yaml,sha256=w-_CLybd0mYvWEuOv7S2FzDQc-8ocWzkj9GsQiXRVTI,28965
+neat_ml_schema-0.1.11.dist-info/LICENSE,sha256=UIKxon-WuRgGHy5UreJMsUxQXdZJGZ3rh_IoYgx8nJI,1071
+neat_ml_schema-0.1.11.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+neat_ml_schema-0.1.11.dist-info/METADATA,sha256=G6isEayFN1qcGjgCZa0Wk6yyAyxqkn8TsWIX5LzRONc,1370
+neat_ml_schema-0.1.11.dist-info/RECORD,,
