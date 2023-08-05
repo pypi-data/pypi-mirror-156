@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: comanda-daunov
+Version: 1.0.0
+Summary: rabotay plz
+Author: NuatStanskiy
+Author-email: smiril13@mail.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
