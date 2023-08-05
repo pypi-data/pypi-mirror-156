@@ -1,0 +1,7 @@
+README.md
+setup.py
+afloat.egg-info/PKG-INFO
+afloat.egg-info/SOURCES.txt
+afloat.egg-info/dependency_links.txt
+afloat.egg-info/requires.txt
+afloat.egg-info/top_level.txt
