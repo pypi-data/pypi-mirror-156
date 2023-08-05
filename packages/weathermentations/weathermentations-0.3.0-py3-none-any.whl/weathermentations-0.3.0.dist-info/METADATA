@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: weathermentations
+Version: 0.3.0
+Summary: Weather augmentation routines for Albumentations
+Home-page: http://github.com/desmoteo/weathermentations
+Author: Matteo Ferrabone
+Author-email: matteo.ferrabone@gmail.com
+License: MIT
+Keywords: blur
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Multimedia :: Graphics
+Requires-Dist: numpy
+
+# weathermentations
+
+
