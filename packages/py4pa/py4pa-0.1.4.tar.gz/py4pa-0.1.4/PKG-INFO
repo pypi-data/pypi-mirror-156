@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: py4pa
+Version: 0.1.4
+Summary: Package of various helper modules to support various People Analytics projects
+Home-page: https://py4pa.readthedocs.io/en/latest/
+Author: Kevin Metherell
+Author-email: kevindickens@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/kammetherell/py4pa/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Python for People Analytics
+
+## Documentation
+https://py4pa.readthedocs.io/en/latest/py4pa.html
+
+
+## Installation
+
+Download and install the package on your machine:
+```
+pip install py4pa
+```
+
+If you need to bypass SSL verification on your machine (if you are behind a proxy for example), you can use the following install command:
+```
+pip install py4pa --trusted-host pypi.org --trusted-host files.pythonhosted.org
+```
+
+Import the package into your Python script:
+```
+import py4pa
+# or
+from py4pa import [arm]
+```
+
