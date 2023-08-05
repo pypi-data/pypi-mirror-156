@@ -1,0 +1,4 @@
+Adafruit-Blinka
+Adafruit_CircuitPython_ESP32SPI
+adafruit-circuitpython-esp-atcontrol
+adafruit_circuitpython_requests
