@@ -1,0 +1,16 @@
+
+[dev]
+pytest==7.1.2
+pytest-sugar==0.9.4
+pytest-cov==3.0.0
+pytest-mock==3.7.0
+pylint==2.14.1
+mypy==0.961
+
+[tests]
+pytest==7.1.2
+pytest-sugar==0.9.4
+pytest-cov==3.0.0
+pytest-mock==3.7.0
+pylint==2.14.1
+mypy==0.961
