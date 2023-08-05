@@ -1,0 +1,8 @@
+educs/__init__.py,sha256=gTZLpCmCMXEVs4lOL4W8u5bPEAHCgP90uyhuFkl1mE4,1698
+educs/color.py,sha256=7pUXJJUMKjs1BRwMzmmkNt-JMMeDT3Ua35pAfRsFKoc,824
+educs/constants.py,sha256=n5Nd_9tlkbHbE3Va6gZr0FUL3Oluqlnj42oM36cNoE0,335
+educs/math.py,sha256=OhC5aOle9bFzsOrGD8Q5eJnKB9usHuTUDQUGNsJKRVQ,1507
+educs/pygame_wrapper.py,sha256=4zCklpbbHX-EPPPNqRSdPBQUCTlWR6vF13D1CccCQsw,8379
+educs-0.0.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+educs-0.0.4.dist-info/METADATA,sha256=58oi9WMJndYt7G_q7uT1x1y6wThCZPmrP2OCVrbxpOM,1237
+educs-0.0.4.dist-info/RECORD,,
