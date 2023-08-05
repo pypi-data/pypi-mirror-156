@@ -1,0 +1,7 @@
+gerbonara
+numpy
+python-slugify
+lxml
+click
+resvg-wasi>=0.23.0
+svg-flatten-wasi[resvg-wasi]
