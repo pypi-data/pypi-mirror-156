@@ -1,0 +1,7 @@
+README.md
+scoped_singleton.py
+setup.py
+scoped_singleton.egg-info/PKG-INFO
+scoped_singleton.egg-info/SOURCES.txt
+scoped_singleton.egg-info/dependency_links.txt
+scoped_singleton.egg-info/top_level.txt
