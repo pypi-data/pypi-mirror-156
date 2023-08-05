@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "word_embedding_cli"
+authors = [{name = "Martim Bento", email = "martimbento@gmail.com"}, {name = "Gustavo Lourenço", email = "pg47229@alunos.uminho.pt"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = ["typer","typing","gensim","colorama"]
+
+[project.scripts]
+wembcli = "word_embedding_cli:__main__"
+
+[tool.flit.external-data]
+directory = "model"
