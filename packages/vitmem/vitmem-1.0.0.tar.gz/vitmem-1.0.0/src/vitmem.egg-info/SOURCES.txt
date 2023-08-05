@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/vitmem/__init__.py
+src/vitmem.egg-info/PKG-INFO
+src/vitmem.egg-info/SOURCES.txt
+src/vitmem.egg-info/dependency_links.txt
+src/vitmem.egg-info/top_level.txt
