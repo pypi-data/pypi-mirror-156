@@ -1,0 +1,16 @@
+chlt/Chinese_learn.py,sha256=pxU3_2y6DDu60_qwqZNlAWvZYYLPTmI09hv4_mQ5e-Y,11210
+chlt/QGUI_widget.py,sha256=41VZwrnIlpPOSFTzMgSNOw90ojMKvmEmTtvIsqj-Cx0,14696
+chlt/__init__.py,sha256=hRukl8YVU1WiiAOY4ifQ875O-F9cJPF63cs34xsqwzc,288
+chlt/gif_play.py,sha256=FpCmQWPaOz4NPcXUTOgKgBuTyajGu0ejYaPSCFST-uE,1462
+chlt/playsound.py,sha256=yYVswioKE0JRgPAY-bOUu5q8LohrI3jBzaC6noRqeiY,4376
+chlt/source/夏.gif,sha256=JGD7OnKWZ8Q27hku2NaCMIpU-OeCR2_X6YxFmlLn6DY,17455
+chlt/source/夏.mp3,sha256=czcO1Sf_fx0p4VEEzM3BxPnu6rZX1cohVokl-eddT1I,3264
+chlt/source/大.gif,sha256=l6VgbeVY99teMNrhW0Se5q0i2wLuuW1U5r_sFF7o8E0,13489
+chlt/source/大.mp3,sha256=IFZwK741_AlBhxJG95Mx1FdqbbGt55-_3zb8-1ZJuO4,2688
+chlt/source/玩.gif,sha256=3-w0F5MpYWORtScfsGR4HziNM9rNyB4hejGn8Tl300c,17736
+chlt/source/玩.mp3,sha256=sOs0SB_kHobuC1MROvUN26xXjorZyvHToVKKRbiysPA,3072
+chlt-0.0.1.1.dist-info/METADATA,sha256=umWBFdY79QvoNm2JUmK1cf9wjO9Rrl588CrKPZYwoHw,635
+chlt-0.0.1.1.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+chlt-0.0.1.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chlt-0.0.1.1.dist-info/license_files/LICENSE,sha256=4595zpXhG8LEFPwh3rTSXQrUrsJVWu9zLp0AyoebCkU,1086
+chlt-0.0.1.1.dist-info/RECORD,,
