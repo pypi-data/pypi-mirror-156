@@ -1,0 +1,9 @@
+README.md
+setup.py
+dev_nhentai/__init__.py
+dev_nhentai_build.egg-info/PKG-INFO
+dev_nhentai_build.egg-info/SOURCES.txt
+dev_nhentai_build.egg-info/dependency_links.txt
+dev_nhentai_build.egg-info/not-zip-safe
+dev_nhentai_build.egg-info/requires.txt
+dev_nhentai_build.egg-info/top_level.txt
