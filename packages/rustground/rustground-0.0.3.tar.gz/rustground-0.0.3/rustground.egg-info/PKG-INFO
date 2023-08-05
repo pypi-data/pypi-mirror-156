@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: rustground
+Version: 0.0.3
+Summary: My short description for my project.
+Home-page: https://github.com/franceme/rustground
+Author: Miles Frantz
+Author-email: frantzme@vt.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RustGround  - A way to run Rust without having Rust
+
+> Q: Would you like to compile a rust file without being able to install rust?
+> A: This!!
+
+This is a simple script that wraps the [Rust Playground](https://play.rust-lang.org) API via Python.
+Thus allowing you to upload the contents of a single Rust file to the playground, and grabbing the output whatever it may be.
+
+The need for this is only if you would like to run Rust files or Rust programs without being able to install Rust itself.
+
+
