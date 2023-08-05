@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sitepop
+Version: 0.0.1
+Summary: Generates html, css, and js files through python. Mostly a novelty, but can be used for rapid template generation.
+Author-email: Byron Himes <byro93@live.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# HTMLGen
+Make HTML and CSS files with Python. Use this to create reusable components and spend more time putting out content, less time formatting and consolidating your CSS.

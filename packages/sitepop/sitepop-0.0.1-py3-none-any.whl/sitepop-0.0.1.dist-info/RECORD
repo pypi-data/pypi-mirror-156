@@ -1,0 +1,12 @@
+sitepop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sitepop/customs.py,sha256=IkbvfGVysskn_QacVbfHSyQjv8jeUfnScuN0EETDSzo,467
+sitepop/predefcomponents.py,sha256=b3CgXo3t9l1jibXVxM6pPmnHizCLCmuX-Fp7KpU8irc,1028
+sitepop/predefcss.py,sha256=-deo09Ybe2NSnG-iBwhl6qYXhDjkMGnfA4qskmct_dA,2286
+sitepop/setup.py,sha256=DOe_c0fGMGv7aci0UHQBEF_v6D-GoYZ0cbGP1eO2EWA,41
+sitepop/sitepop.py,sha256=kjy-S1aJeQV8UXSvahr4hM9AeFhM5Qy-5UsXRn14Nlk,18476
+sitepop/tester.py,sha256=cChGifvYWityDY4bbO0_OFmH3XeTRci6hQ1aFYCcz9M,898
+sitepop-0.0.1.dist-info/METADATA,sha256=69pPmV7Ai2al19q5ig6ZZqWgboOLqziLI6AblSpRLbA,631
+sitepop-0.0.1.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+sitepop-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sitepop-0.0.1.dist-info/license_files/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+sitepop-0.0.1.dist-info/RECORD,,
