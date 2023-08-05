@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: steel-seal
+Version: 0.0.1
+Summary: 简单、易用且支持防重放的签名工具
+Home-page: UNKNOWN
+Author: afeyer
+Author-email: afeyer@h5base.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# steel_seal
+简单、易用且支持防重放的签名工具。
+
+### 安装模块
+
+> pip install steel_seal
+
+### 快速开始
+
+TODO：待补充
+
