@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: babel-heureka-code
+Version: 0.1.0
+Requires-Python: >=3.9
+Provides-Extra: dev
+Requires-Dist: commitizen ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: hypothesis ; extra == 'test'
+
