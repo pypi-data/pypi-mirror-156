@@ -1,0 +1,13 @@
+mangadlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mangadlp/__main__.py,sha256=uZDLieIshl4jEtcafC0HeQa-_gw368bx8Zw1mJ3F670,49
+mangadlp/app.py,sha256=xA9MrfN4I697unMskXE6hAXeFFqhGR68HbN8FSGwnUg,11356
+mangadlp/downloader.py,sha256=leJuM8TdVd1zUoe-1Zd_nsfQBjYMLy3QorpaQ86eqw4,1762
+mangadlp/input.py,sha256=SAuo1F4U5BYKEapYtnEZPc0oaB1dwUhlhRYW38L4EGg,3691
+mangadlp/utils.py,sha256=JorJKGDhZOMQxAcnOkCDrVBwdf6wb52y46O97n9Kbsk,4621
+mangadlp/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mangadlp/api/mangadex.py,sha256=KTj8NZDyL0Aw4Q0GMA4DcKraVSzhbz7uM6Mt-Tdzxmc,9501
+manga_dlp-2.1.6.dist-info/METADATA,sha256=7MzJRZzAJjJCgitrioXCoWsWOQiUXvYwyMUOeH-iGy4,9069
+manga_dlp-2.1.6.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+manga_dlp-2.1.6.dist-info/entry_points.txt,sha256=Gcey8RIcMhAlLVVShaTXr8X1qRbS6Wibq4glx6-DZZw,50
+manga_dlp-2.1.6.dist-info/license_files/LICENSE,sha256=5Q8GAVcvvRDsV6AaceOlgoBQpQGY5LNLGgAcSPqpBXg,1070
+manga_dlp-2.1.6.dist-info/RECORD,,
