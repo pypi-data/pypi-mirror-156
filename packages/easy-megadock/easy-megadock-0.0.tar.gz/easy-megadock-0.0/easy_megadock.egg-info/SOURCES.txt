@@ -1,0 +1,8 @@
+setup.py
+easy_megadock.egg-info/PKG-INFO
+easy_megadock.egg-info/SOURCES.txt
+easy_megadock.egg-info/dependency_links.txt
+easy_megadock.egg-info/requires.txt
+easy_megadock.egg-info/top_level.txt
+megadock/__init__.py
+megadock/dock.py
