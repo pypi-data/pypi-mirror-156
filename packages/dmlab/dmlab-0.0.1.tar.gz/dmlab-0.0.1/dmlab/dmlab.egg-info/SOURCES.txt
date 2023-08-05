@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+dmlab/dmlab.egg-info/PKG-INFO
+dmlab/dmlab.egg-info/SOURCES.txt
+dmlab/dmlab.egg-info/dependency_links.txt
+dmlab/dmlab.egg-info/top_level.txt
