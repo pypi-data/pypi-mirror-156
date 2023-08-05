@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: transmap
+Version: 0.3.0
+Summary: API for Transmap Hub
+Author: Christopher C Angel, PhD
+License: MIT
+License-File: LICENSE
+Requires-Dist: xmltodict
+Requires-Dist: pytest
+Requires-Dist: requests
+Requires-Dist: geojson
+Requires-Dist: pydantic
+Requires-Dist: census
+Requires-Dist: numpy (==1.19.3)
+Requires-Dist: pandas
+
