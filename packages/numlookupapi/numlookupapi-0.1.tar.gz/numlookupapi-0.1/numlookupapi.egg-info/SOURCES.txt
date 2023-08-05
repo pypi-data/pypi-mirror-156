@@ -1,0 +1,9 @@
+README.md
+setup.py
+numlookupapi/__init__.py
+numlookupapi/client.py
+numlookupapi.egg-info/PKG-INFO
+numlookupapi.egg-info/SOURCES.txt
+numlookupapi.egg-info/dependency_links.txt
+numlookupapi.egg-info/requires.txt
+numlookupapi.egg-info/top_level.txt
