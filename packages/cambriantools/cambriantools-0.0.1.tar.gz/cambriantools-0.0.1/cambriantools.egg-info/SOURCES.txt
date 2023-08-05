@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+environment.yml
+requirements.txt
+setup.py
+cambriantools/__init__.py
+cambriantools/dicts.py
+cambriantools/files.py
+cambriantools/lists.py
+cambriantools/strings.py
+cambriantools.egg-info/PKG-INFO
+cambriantools.egg-info/SOURCES.txt
+cambriantools.egg-info/dependency_links.txt
+cambriantools.egg-info/requires.txt
+cambriantools.egg-info/top_level.txt
