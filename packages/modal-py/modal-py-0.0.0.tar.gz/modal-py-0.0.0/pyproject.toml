@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modal-py"
+version = "0.0.0"
+authors = [
+  { name="Modal Labs", email="erik@modal.com" },
+]
+description = "Python client library for Modal"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+	"Topic :: System :: Distributed Computing",
+]
+
+[project.urls]
+"Homepage" = "https://modal.com"
+"Bug Tracker" = "https://github.com/modal-labs/modal-py/issues"

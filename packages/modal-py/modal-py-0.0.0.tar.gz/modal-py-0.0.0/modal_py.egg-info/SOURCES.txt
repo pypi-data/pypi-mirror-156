@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+modal/__init__.py
+modal_py.egg-info/PKG-INFO
+modal_py.egg-info/SOURCES.txt
+modal_py.egg-info/dependency_links.txt
+modal_py.egg-info/top_level.txt
