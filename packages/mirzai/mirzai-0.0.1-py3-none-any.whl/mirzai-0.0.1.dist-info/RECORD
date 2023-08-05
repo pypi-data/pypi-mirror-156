@@ -1,0 +1,14 @@
+mirzai/__init__.py,sha256=XoppFCWM_8XsGAbynKKKg7C3Mca0Kzf_ueJ_7U-l9SE,42
+mirzai/_nbdev.py,sha256=caPJ2vaYuqUixHlQ_eSmRsUl-SbQa57PiAFxcRc_y6g,451
+mirzai/core.py,sha256=X7D3eTz9nOxLSu5lZPi_2iXYdcq7GYMWUt7L3UK8dcw,197
+mirzai/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mirzai/data/core.py,sha256=QPVYnt9kHzmuisQ7JJZzzMp9h8KKxmC0LKJLDlc4kDs,696
+mirzai/data/loading.py,sha256=5j9LuFHauj-fWtJ70lcASd3sPbyLukKIGmUihAsH-YA,1628
+mirzai/paper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mirzai/paper/loading.py,sha256=tGF8V6lcJBB7jRbWRU4KragbM4NKYQCb_eRIzYyFtRc,114
+mirzai-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mirzai-0.0.1.dist-info/METADATA,sha256=tv_ZV77NDDjVmne3bpI40beiu4-ZllDxaSFja9702aw,1308
+mirzai-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mirzai-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+mirzai-0.0.1.dist-info/top_level.txt,sha256=itK52QdwUFYil6SXSKJoLyUEujmqDsGqAP2lEWhUr_I,7
+mirzai-0.0.1.dist-info/RECORD,,

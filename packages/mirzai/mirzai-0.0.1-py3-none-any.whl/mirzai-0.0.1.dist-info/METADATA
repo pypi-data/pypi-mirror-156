@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: mirzai
+Version: 0.0.1
+Summary: Prediction of Exchangeable Potassium in Soil through Mid-Infrared and Deep Learning paper code
+Home-page: https://github.com/franckalbinet/mirzai/tree/{branch}/
+Author: Franck Albinet
+Author-email: franckalbinet@gmail.com
+License: Apache Software License 2.0
+Keywords: high-throuput soil characterization remediation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pip
+Requires-Dist: packaging
+Requires-Dist: numpy
+Requires-Dist: fastcore (<1.5,>=1.3.27)
+Provides-Extra: dev
+
+# mirzai
+> Reproducible research code for: "Prediction of Exchangeable Potassium in Soil through Mid-Infrared Spectroscopy and Deep Learning: from Prediction to Explainability", Albinet et al., 2022
+
+
+## Install
+
+`pip install mirzai`
+
+## How to use
+
+Link to tutorials nbs...
+
+
