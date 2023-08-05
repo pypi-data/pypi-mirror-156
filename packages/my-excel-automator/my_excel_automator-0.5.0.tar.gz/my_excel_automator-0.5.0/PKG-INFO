@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: my-excel-automator
+Version: 0.5.0
+Summary: Generalized operations for automating excel.
+Author-email: Jordan Porter <jordan@geostrategies.com>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# my_excel_automator
+All the generalized operations for excel automation

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling", "pandas", "numpy", "logging"]
+build-backend = "hatchling.build"
+[project]
+name = "my_excel_automator"
+version = "0.5.0"
+authors = [
+	{name = "Jordan Porter", email="jordan@geostrategies.com"}
+]
+description="Generalized operations for automating excel."
+readme="README.md"
+requires-python = ">=3.8"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Operating System :: OS Independent"
+]
