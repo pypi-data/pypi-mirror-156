@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+bepr/__init__.py
+bepr/bepr.py
+bepr.egg-info/PKG-INFO
+bepr.egg-info/SOURCES.txt
+bepr.egg-info/dependency_links.txt
+bepr.egg-info/not-zip-safe
+bepr.egg-info/top_level.txt
