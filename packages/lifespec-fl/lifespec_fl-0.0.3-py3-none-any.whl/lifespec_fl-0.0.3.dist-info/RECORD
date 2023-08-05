@@ -1,0 +1,13 @@
+lifespec_fl/__init__.py,sha256=HrfXsN6w6b9rVKajBUI07wODmuV0M7szDuWWtL2GYJs,78
+lifespec_fl/__main__.py,sha256=O8he9OfVAouqtCgW4dZDTSoVusMbMD9YK5fgEdTsXhM,90
+lifespec_fl/_version.py,sha256=fepcQ-ushTOyZmOAnh-I77CBAwaQv9XVU1BiwWWG5qQ,82
+lifespec_fl/cli.py,sha256=JdA8ltCcH4-1au0siBhCNsnaAhWX-bpXML3RKnQT_8k,3961
+lifespec_fl/data_types.py,sha256=sye2YWLSL6rxQcRgpC1oDxx8sKHT2t2BcNB8y2tb3FE,76
+lifespec_fl/parser.py,sha256=h4UpuNTmkeYuQhrF7lyeXylCb3beLSyhOi7WJSaN-e4,3148
+lifespec_fl/data/fl_descriptor.yaml,sha256=oH5m41B4eLD-MlN1ec2hiu6bNPEr8xhuVRJFXbPAQtU,2996
+lifespec_fl-0.0.3.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+lifespec_fl-0.0.3.dist-info/METADATA,sha256=adxNsiyetNjDlGfND90Na3B-7fk8P45dRb9-OTlIF7s,5336
+lifespec_fl-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+lifespec_fl-0.0.3.dist-info/entry_points.txt,sha256=HLITQv5z3yddkd5Swd4sp7lau3PJz3OMGvvwqftildg,60
+lifespec_fl-0.0.3.dist-info/top_level.txt,sha256=RNz_NiDAQVrMSzitz5oRU59kd5CyN6Xgwh7nfvpRcnE,12
+lifespec_fl-0.0.3.dist-info/RECORD,,

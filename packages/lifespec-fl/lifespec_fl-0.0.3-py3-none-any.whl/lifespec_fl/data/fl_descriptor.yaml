@@ -1,0 +1,196 @@
+# File description of .FL file
+info:
+  byte_order: 'little'
+  encoding: 'latin-1'
+
+default_options:
+  str:
+    terminator: "\x00"
+
+fields:
+  # line 0, header
+  - type: 'str'
+    name: 'header'
+    value: "EAI Multiple Scans\x00"
+
+  - type: 'str'
+    description: 'line break'
+    value: "\r\n"
+
+  # line 1
+  # head
+  - value: "\xdc\x05"
+  - value: "\x00\x00\x00\x33"
+  - value: "\x00\x00\x00\x96"
+
+  - size: 7
+    is_null: true
+
+  - type: 'float'
+    name: 'stop_time'
+
+  - name: 'x_axis'
+    type: 'str'
+
+  - type: 'str'
+    name: 'time_scale'
+
+  - is_null: true
+    size: 4
+
+  - size: 4
+    description: 'Unknown field'
+
+  - name: 'y_axis'
+    type: 'str'
+
+  - type: 'str'
+    description: 'Possibly version number.'
+
+  # body
+  - value: "\x64\x00\x00\x00\x01\x00\x00\x00"
+
+  - name: 'type'
+    type: 'str'
+    description: 'Scan type.'
+
+  - type: 'str'
+    value: "\r\n"
+    description: 'line break'
+
+  # line 2
+  # head
+  - value: "\x88\x13"
+
+  - type: 'float'
+    description: 'Unknown field.'
+
+  - value: "\x01\x00\x00\x96"
+
+  - size: 7
+    is_null: true
+
+  - type: 'float'
+    name: 'stop_time'
+
+  - name: 'x_axis'
+    type: 'str'
+
+  - type: 'str'
+    name: 'time_scale'
+
+  - size: 8
+    is_null: true
+
+  - name: 'y_axis'
+    type: 'str'
+
+  - type: 'str'
+    description: 'Possibly version number.'
+
+  # body
+  - type: 'str'
+    name: 'labels'
+
+  - value: "\x2c"
+  - value: "\x01\x00\x00\x00"
+  - value: "\x04\x00"
+
+  - terminator: "\x40\x90"
+    description: 'Unknown field'
+
+  - value: "\x01\x00\x00\x00"
+
+  - size: 4
+
+  - size: 7
+    is_null: true
+
+  - value: "\xf4\x01\x00\x00"
+
+  - type: 'str'
+    value: "TCSPC Diode\x00"
+
+  - size: 11
+    is_null: true
+
+  - type: 'str'
+    value: "Reference\x00"
+
+  - size: 2
+    is_null: true
+
+  - type: 'str'
+    value: "HC\x00"
+
+  - value: "\xf6\xff\xff\xff"
+  - value: "\x10\x00"
+
+  - size: 3
+    is_null: true
+
+  - value: "\x00\x0c"
+
+  - type: 'str'
+    value: "TCSPC Diode\x00"
+
+  - size: 5
+    is_null: true
+
+  - value: "\x00\xfe"
+
+  - type: 'str'
+    value: "K B\x00"
+
+  - size: 1
+    is_null: true
+
+  - type: 'str'
+    value: "HS PMT920\x00"
+
+  - type: 'float'
+    description: 'Unknown field'
+
+  - value: "\x00\xf6\xff\xff\xff\x0d\x00"
+
+  - size: 3
+    is_null: true
+
+  - type: 'str'
+    name: 'wavelength_range'
+
+  - value: "\x05"
+
+  - type: 'str'
+    name: 'detector'
+
+  - value: "\x00\x01"
+
+  - size: 22
+    is_null: true
+
+  - value: "\x00\x2c\x01\x00\x00\x01\x00\x00\x00"
+      
+  - type: 'float'
+    description: 'Unknown field'
+
+  - type: 'float'
+    description: 'Unknown field'
+
+  - value: "\xc2\x20\xb0\x43\x20\x00\x00\x00"
+
+  - type: 'str'
+    name: 'time_scale_string'
+
+  - size: 1
+    name: 'data_buffer_head'
+    description: |-
+      Value indicates action to align to data.
+      `30`: skip next byte
+      `31`: check next 2 bytes for alignment
+      `2e39`: skip next byte
+      `392e`: skip next 2 bytes
+
+  - name: 'data'
+    size: -1
+    description: 'data. May contiain header info. See `data_buffer_head` for info.'
