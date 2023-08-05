@@ -1,0 +1,2 @@
+puan/logicfunc.cpython-38-darwin.so
+puan/npufunc.cpython-38-darwin.so
