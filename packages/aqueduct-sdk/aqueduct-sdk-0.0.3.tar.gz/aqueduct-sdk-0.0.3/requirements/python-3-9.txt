@@ -1,0 +1,12 @@
+setuptools
+cloudpickle
+numpy
+requests
+pandas
+IPython
+croniter
+pydantic
+ipynbname
+plotly
+pyyaml
+great_expectations
