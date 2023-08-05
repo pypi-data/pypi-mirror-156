@@ -1,0 +1,26 @@
+sgp4>=2.12
+numpy>=1.22
+scipy
+orbit-predictor
+click
+rich
+httpx
+timezonefinder
+
+[:platform_system == "Windows"]
+tzdata
+
+[:python_version < "3.9"]
+backports.zoneinfo
+
+[dev]
+Cython>=0.29.24
+pytest>=6.2.5
+pytest-html
+pytest-cov
+flake8
+
+[docs]
+mkdocs-material
+mkdocstrings
+pytkdocs[numpy-style]

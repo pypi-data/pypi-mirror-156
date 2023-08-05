@@ -1,0 +1,3 @@
+include src/passpredict/*.pyx
+include src/passpredict/sgp4/*.h
+include src/passpredict/sofa/*.h
