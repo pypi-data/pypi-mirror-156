@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: transfreq
+Version: 1.1
+Summary: Python package to compute the transition frequency from theta to alpha band from MEEG data
+Author: Elisabetta Vallarino, Sara Sommariva
+Author-email: vallarino@dima.unige.it
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Python package for computing the transition frequency from theta to alpha band from MEEG data
