@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: pyproteininference
+Version: 1.0.0
+Summary: Python Package for running custom protein inference algorithms on tab-formatted tandem MS/MS search results.
+Home-page: https://github.com/thinkle12/pyproteininference
+Author: Trent Hinkle
+Author-email: hinklet@gene.com
+License: Apache-2
+Keywords: proteininference
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (<2.0.0,>=1.19.2)
+Requires-Dist: pyteomics (<4.0.0,>=3.5.1)
+Requires-Dist: pulp (<3.0.0,>=2.6)
+Requires-Dist: PyYAML (<6.0.0,>=5.3)
+Requires-Dist: matplotlib (<4.0.0,>=3.3.4)
+
+﻿# Py Protein Inference
+
+# Requirements
+
+ 1. __Python 3.7__ or greater. This package was created using __Python 3.7__
+ 2. __Python Packages__:
+	__numpy__, __pyteomics__, __pulp__, __PyYAML__, __matplotlib__. These should be installed automatically during installation.
+
+# Quick Start Guide
+1. Install the package using pip:
+```shell
+pip install pyproteininference
+```
+
+2. Run the Heuristic method with tab delimited results directly from percolator to generate results for peptide centric, parsimony, inclusion, and exclusion:
+```shell
+protein_inference_heuristic_cli.py \
+-t /path/to/target/file1.txt \
+-d /path/to/decoy/file1.txt \
+-db /path/to/database/file.fasta 
+```
+
+3. Run the standard commandline tool with tab delimited results directly from percolator to run a particular inference method. By default, peptide centric inference is selected if a parameter file is not specified:
+```shell
+protein_inference_cli.py \
+-t /path/to/target/file.txt \
+-d /path/to/decoy/file.txt \
+-db /path/to/database/file.fasta 
+```
+
+4. Specifying Parameters. 
+The two most common parameters to change are the inference type, and the decoy symbol (for identifying decoy proteins vs target proteins).
+The parameters can be quickly altered by creating a file called params.yaml as follows:
+```yaml
+parameters:
+  inference:
+    inference_type: parsimony
+  identifiers:
+    decoy_symbol: "decoy_"
+```
+The inference type can be one of: `parsimony`, `peptide_centric`, `inclusion`, `exclusion`, or `first_protein`.
+All parameters are optional, so you only need to define the ones you want to alter. Parameters that are not defined are set to default values.
+See the package documentation for the default parameters.
+
+5. Run the standard commandline tool again, this time specifying the parameters as above:
+```shell
+protein_inference_cli.py \
+-t /path/to/target/file.txt \
+-d /path/to/decoy/file.txt \
+-db /path/to/database/file.fasta \
+-y /path/to/params.yaml
+```
+
+6. Running with docker
+	- Either Pull the image from docker hub:
+		- `docker pull hinklet/pyproteininference:latest`
+	- Or Build the image with the following command (After having cloned the repository):
+	  	- `git clone REPOSITORY_URL`
+	  	- `cd pyproteininference`
+		- `docker build -t pyproteininference:latest .`
+	- Run the tool, making sure to volume mount in the directory with your input data and parameters. In the case below, that local directory would be `/path/to/local/directory` and the path in the container is `/data`
+	  ```shell
+			docker run -v /path/to/local/directory/:/data \
+			-it hinklet/pyproteininference:latest \
+			python /usr/local/bin/protein_inference_cli.py \
+			-f /data/input_file.txt \
+			-db /data/database.fasta \
+			-y /data/parameters.yaml \
+			-o /data/
+	  ```
+
+# Documentation
+For more information please see the full package documentation (https://thinkle12.github.io/pyproteininference/).
+
+
+
