@@ -1,0 +1,9 @@
+svd2py
+rich
+
+[tests]
+pyyaml
+pytest
+pytest-sugar
+pytest-cov
+pytest-clarity
