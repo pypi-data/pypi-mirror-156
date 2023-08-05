@@ -1,0 +1,5 @@
+colorama
+future
+pykeepass_cache
+pynput
+pyotp
