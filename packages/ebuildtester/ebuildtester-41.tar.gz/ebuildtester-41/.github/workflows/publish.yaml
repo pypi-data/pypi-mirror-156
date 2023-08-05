@@ -1,0 +1,40 @@
+---
+
+name: Publish PyPI Package
+
+on:
+  release:
+    types: [created]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    name: Publish PyPI Package
+    steps:
+
+    - name: Check out sources
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Get tox environment
+      run: |
+        tox_environment="py310"
+        echo "tox_environment=${tox_environment}" >> $GITHUB_ENV
+
+    - name: Install tox
+      run: sudo apt install --yes tox
+
+    - name: Publish PyPI Package
+      env:
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      run: |
+        tox -e pypi
+        .tox/pypi/bin/twine upload .tox/pypi/dist/*
