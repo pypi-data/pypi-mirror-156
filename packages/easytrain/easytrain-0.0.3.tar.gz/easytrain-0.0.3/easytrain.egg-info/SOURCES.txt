@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+easytrain/__init__.py
+easytrain/base.py
+easytrain/callbacks.py
+easytrain/data.py
+easytrain.egg-info/PKG-INFO
+easytrain.egg-info/SOURCES.txt
+easytrain.egg-info/dependency_links.txt
+easytrain.egg-info/top_level.txt
