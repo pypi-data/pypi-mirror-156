@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: distanceclosure
+Version: 0.4.1
+Summary: Distance Closure on Complex Networks
+Home-page: http://github.com/rionbr/distanceclosure
+Author: Rion Brattig Correia
+Author-email: rionbr@gmail.com
+License: MIT
+Keywords: networks distance closure graph
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: networkx
+Requires-Dist: pandas
+Requires-Dist: cython
+
+Methods to calculate distance closure on complex networks as defined in T. Simas and L.M. Rocha [2015]."Distance Closures on Complex Networks". Network Science, 3(2):227-268. doi:10.1017/nws.2015.11
+
