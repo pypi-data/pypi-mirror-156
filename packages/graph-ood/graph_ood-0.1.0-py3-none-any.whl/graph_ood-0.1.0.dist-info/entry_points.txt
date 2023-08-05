@@ -1,0 +1,2 @@
+[console_scripts]
+goodtg = GOOD.kernel.pipeline:main
