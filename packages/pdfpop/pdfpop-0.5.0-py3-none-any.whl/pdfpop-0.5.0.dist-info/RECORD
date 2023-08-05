@@ -1,0 +1,13 @@
+pdfpop/__init__.py,sha256=-HsGdfI8Igmhju6EwLujG2Qz179GAdbLEBZ4LMPh1Ks,53
+pdfpop/__main__.py,sha256=A4Vb29Nf4N7o_pwZ9nkAJhde_0_50Pqa498ZDE76c2g,150
+pdfpop/cli.py,sha256=u88TN94KrwCbIxEZBA7roKJqAVslDcX2PFlKFgR2dtg,1404
+pdfpop/commands.py,sha256=85kJEdaIz173zhdpqM5a2aBZNrnJ6sI1vlIQa0LSF5w,2969
+pdfpop/form_config.py,sha256=1oPGa6qG2lybhMsXT07OUJvnH9SkCmmfj8BI14gFzxY,2724
+pdfpop/pdf.py,sha256=tDnQx7Fl0NuJuxrTK-z1ZqEAmCVGkIre5oIqL3hUBBI,5360
+pdfpop-0.5.0.dist-info/LICENSE-THIRD-PARTY.txt,sha256=FqpG78XULngIJt-C7kin9Pl6ny8rAKQ44KYaD27JFAU,6653
+pdfpop-0.5.0.dist-info/LICENSE.txt,sha256=-2iNEXpctAnSWJ-vPOagclriQthYGurQVzE7KmWrkkw,35183
+pdfpop-0.5.0.dist-info/METADATA,sha256=MvBM_oC63a--esZCgnu8l_15ALWzKmDVw4iVOIwncPI,3366
+pdfpop-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pdfpop-0.5.0.dist-info/entry_points.txt,sha256=nKhiLm4j-arf9yqO1v1QcUTb5RzXkWH254JcXwFmII4,48
+pdfpop-0.5.0.dist-info/top_level.txt,sha256=nJhoLae8Fh8snZPwz_uAG7QD0gF4xSYPTASVRh4VPm0,7
+pdfpop-0.5.0.dist-info/RECORD,,
