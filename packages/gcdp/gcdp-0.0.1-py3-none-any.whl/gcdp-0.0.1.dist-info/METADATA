@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gcdp
+Version: 0.0.1
+Summary: gcdp
+Home-page: https://github.com/ojjy/gcdp
+Author: GC
+Author-email: yejinjo@gccorp.com
+Project-URL: Bug Tracker, https://github.com/ojjy/gcdp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gcdp
