@@ -1,0 +1,3 @@
+[flake8.extension]
+PRO=flake8_pep518.main:PyprojectExtension
+
