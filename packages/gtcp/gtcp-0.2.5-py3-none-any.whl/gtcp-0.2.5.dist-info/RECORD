@@ -1,0 +1,8 @@
+gtcp/__init__.py,sha256=x3bt43jy8GjhSkOj-sVBflxW3SjAI43yMav1zZTIcmY,62
+gtcp/client.py,sha256=eg8fM9EjB2ka_-D3P4XdQgpCxhcsQsERMCm7xYW8wAo,2441
+gtcp/server.py,sha256=4m4jK2FY_7DBZ2OTPPB2uXKh9QZv4U1Us73iGI2anek,6350
+gtcp-0.2.5.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+gtcp-0.2.5.dist-info/METADATA,sha256=0I3_4WF7_1l06lkbTwyvh-CmbWJ_BCO0m2CPgMv3tr0,5665
+gtcp-0.2.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gtcp-0.2.5.dist-info/top_level.txt,sha256=dLB5DzXJuntqCMD1qmwVGQMNUbjFOmSmSK7qP1ptm88,5
+gtcp-0.2.5.dist-info/RECORD,,
