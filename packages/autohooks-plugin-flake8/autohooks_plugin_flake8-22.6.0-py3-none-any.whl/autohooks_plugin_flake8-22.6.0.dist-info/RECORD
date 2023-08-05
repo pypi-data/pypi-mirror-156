@@ -1,0 +1,7 @@
+autohooks/plugins/flake8/__init__.py,sha256=4y16W6nKddsloIfBP0SaC0x0jbcgAfVEwSBgwJ4Bxn8,817
+autohooks/plugins/flake8/__version__.py,sha256=qxchvvH9Uv984wYYmu-LI_4ZusGuWoq-t08u-5frZ0U,103
+autohooks/plugins/flake8/flake8.py,sha256=mkuRyloT_kVwT1f3dIDWgsQKXr7Lc1EqgRbarGCUZmA,3218
+autohooks_plugin_flake8-22.6.0.dist-info/LICENSE,sha256=QHUK-LHzWeZoqIPaK-0KJKQoHxQ8BJWqx3K1FMEwGr8,35209
+autohooks_plugin_flake8-22.6.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+autohooks_plugin_flake8-22.6.0.dist-info/METADATA,sha256=9z6fjT8GkicFpGEvlWscsHt1l9-_tRmMgfMw8oSK3vE,706
+autohooks_plugin_flake8-22.6.0.dist-info/RECORD,,

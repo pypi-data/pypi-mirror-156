@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: autohooks-plugin-flake8
+Version: 22.6.0
+Summary: An autohooks plugin for python code linting via flake8.
+License: AGPL-3.0-or-later
+Author: Greenbone Networks GmbH
+Author-email: info@greenbone.net
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: autohooks (>=21.3.0,<22.0.0)
+Requires-Dist: flake8 (==4.0.1)
+Requires-Dist: pylint (==2.13.9)
