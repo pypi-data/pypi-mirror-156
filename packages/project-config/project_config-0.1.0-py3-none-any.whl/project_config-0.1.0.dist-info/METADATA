@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: project-config
+Version: 0.1.0
+Summary: Reproducible configuration across projects.
+Home-page: https://github.com/mondeja/project-config
+License: BSD-3-License
+Author: Álvaro Mondéjar Rubio
+Author-email: mondejar1994@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: appdirs (>=1,<2)
+Requires-Dist: colored
+Requires-Dist: diskcache (>=5,<6)
+Requires-Dist: identify (>=2,<3)
+Requires-Dist: importlib-metadata-argparse-version
+Requires-Dist: importlib-metadata; python_version < "3.10"
+Requires-Dist: jmespath (>=1,<2)
+Requires-Dist: pyjson5
+Requires-Dist: ruamel.yaml (>=0.17,<0.18)
+Requires-Dist: tabulate (>=0.8,<0.9)
+Requires-Dist: tomli (>=2,<3); python_version < "3.11"
+Requires-Dist: tomli-w (>=1,<2)
+Requires-Dist: typing-extensions (>=4,<5)
+Project-URL: Bug tracker, https://github.com/mondeja/project-config/issues
+Project-URL: Documentation, https://github.com/mondeja/project-config#documentation
+Project-URL: Repository, https://github.com/mondeja/project-config
+Description-Content-Type: text/markdown
+
+# project-config
+
