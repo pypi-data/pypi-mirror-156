@@ -1,0 +1,3 @@
+[console_scripts]
+watch-bus = powerful_pipes_watch_bus.__main__:main
+
