@@ -1,0 +1,13 @@
+pynams/__init__.py,sha256=o5OcJ_cM2sSZTleSPxmpU0ZrHC0E9jOxENffKhMYAyw,633
+pynams/blocks.py,sha256=RnpxIrNhC-zVPEWvGlPs5pJN-podtBZYMxDXPK6lnkY,41991
+pynams/experiments.py,sha256=DwFxAI-R6mWYRKUoGlyJZKlanyuKv5k1-OcbGKjpWls,25341
+pynams/profiles.py,sha256=zEjT9FqKMw7zBhmaVr-hDBoAVZkSeRjcYU8M6b8_4F0,80137
+pynams/pynams.py,sha256=nF0H5vZtKbipnvQmnCyCkAQQPEFbhw8veeVf6DuHARk,3110
+pynams/samples.py,sha256=k_tJtstgV9YwjH0fKGikQ_zpg4T_sLi-njlg-TST9qk,4694
+pynams/spectra.py,sha256=lUpPNpG9UZZz7fjv03hdMIoUIUPlplreN6BzjF7oLmk,64537
+pynams/styles.py,sha256=GSMOgZFAZdGQ_Q4TOF4ZGBRaLgGDfr3uaw-WmkXWeGo,13168
+pynams-0.2.0.dist-info/LICENSE,sha256=CWLkXN_ty15K4xOUrklQj-GZwZeDBqeq7O12vTjNAW0,1040
+pynams-0.2.0.dist-info/METADATA,sha256=TNNcYRTNKyl1_Pcty6GJWfsHvEnkS2XxHDfGJYLMAgE,328
+pynams-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pynams-0.2.0.dist-info/top_level.txt,sha256=wpmsFrfDcTMGvB2rNIKvz72pgbhImLqrDmJ67ZbG5to,7
+pynams-0.2.0.dist-info/RECORD,,

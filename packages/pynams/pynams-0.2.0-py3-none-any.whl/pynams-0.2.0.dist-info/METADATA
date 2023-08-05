@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pynams
+Version: 0.2.0
+Summary: python for water in nominally anhydrous minerals
+Home-page: https://github.com/EFerriss/Pynams
+Author: Elizabeth Ferriss
+Author-email: elizabeth.ferriss@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: lmfit (==0.8.0)
+Requires-Dist: uncertainties (>=3.1.3)
+
