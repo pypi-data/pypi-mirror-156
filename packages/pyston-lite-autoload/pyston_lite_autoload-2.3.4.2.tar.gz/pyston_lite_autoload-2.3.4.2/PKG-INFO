@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: pyston_lite_autoload
+Version: 2.3.4.2
+Summary: Automatically loads and enables pyston_lite
+Home-page: https://www.github.com/pyston/pyston
+Author: The Pyston Team
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: pyston-lite-autoload is a small package that simply imports and enables
+        [pyston-lite](https://pypi.org/project/pyston-lite/). It is possible
+        to use pyston-lite without this autoload package, but it is generally
+        recommended to install the autoloader to automatically get the performance
+        benefits
+Platform: UNKNOWN
