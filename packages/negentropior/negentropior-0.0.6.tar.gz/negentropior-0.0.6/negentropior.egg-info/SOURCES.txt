@@ -1,0 +1,7 @@
+README.md
+setup.py
+negentropior.egg-info/PKG-INFO
+negentropior.egg-info/SOURCES.txt
+negentropior.egg-info/dependency_links.txt
+negentropior.egg-info/requires.txt
+negentropior.egg-info/top_level.txt
