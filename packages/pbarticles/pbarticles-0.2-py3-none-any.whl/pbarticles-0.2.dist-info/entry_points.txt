@@ -1,0 +1,3 @@
+[console_scripts]
+pbarticles=pbarticles.__main__:main
+
