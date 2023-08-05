@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/minimist/__init__.py
+src/minimist/example.py
+src/minimist.egg-info/PKG-INFO
+src/minimist.egg-info/SOURCES.txt
+src/minimist.egg-info/dependency_links.txt
+src/minimist.egg-info/top_level.txt
