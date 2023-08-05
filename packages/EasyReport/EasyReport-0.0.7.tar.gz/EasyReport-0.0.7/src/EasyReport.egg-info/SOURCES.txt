@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/EasyReport/__init__.py
+src/EasyReport/easy_report.py
+src/EasyReport.egg-info/PKG-INFO
+src/EasyReport.egg-info/SOURCES.txt
+src/EasyReport.egg-info/dependency_links.txt
+src/EasyReport.egg-info/requires.txt
+src/EasyReport.egg-info/top_level.txt
