@@ -1,0 +1,85 @@
+# Common python library for CCCS
+
+This is a common library that will be use by our different project so we can re-use as much code as possible. It includes the following:
+
+- [Utility functions](./cccs/common/README.md)
+  - Classification engine
+  - String manipulation
+  - Date manipulation
+  - Dictionary flattening/un-flatening/merging
+  - Logging setup
+  - Networking validation (IP/Domain)
+  - Security related operations (Generating password/username/API keys...)
+  - Generate random ID
+- [Elastic datastore support](./cccs/datastore/README.md)
+  - Maintain connection with Elasticsearch
+  - Easy to use lucene base search/add/remove documents functions
+  - Maintain indexes fields using predefined data model
+  - Perform bulk operations
+  - Perform index repair/re-shard/replication/reindex operations
+- [Filestore support](./cccs/filestore/README.md)
+  - Provides easy to use file storage for your project with multiple backends
+    - HTTP (read only)
+    - FTP/SFTP
+    - Amazon S3
+    - Azure Blob storage
+    - Local storage
+  - Has the concept of multiple levels of storage
+- [Object data model (ODM) support](./cccs/odm/README.md)
+  - Validate the data of your project
+  - Keep the datastore index fields in sync with the model
+- [Remote datatypes](./cccs/remote/datatypes/README.md)
+  - Provide datastructures accessible to multiple processes running of different machines for distributed high availability environments
+  - Supported data structures are the following:
+    - Counters
+    - Event dispatcher/handlers
+    - Hash
+    - Global Locks
+    - Sets
+    - Quota trackers
+    - Queues (Pubsub/Fifo/Priority)
+
+## Installation
+
+This library is public and distributed via Pypi:
+
+    pip install cccs
+
+## Development
+
+If you which to participate to the development of this library, you can setup your environment the folowing way.
+
+### Install python 3.9+
+
+We only support newer version of python and will not support older versions. This library was meant to end up running in a container anyway.
+
+    sudo apt update
+    sudo apt install software-properties-common
+    sudo add-apt-repository ppa:deadsnakes/ppa
+    sudo apt install python3.9
+
+### Install VSCode
+
+This is our prefered IDE and the repo is already preconfigured for it.
+
+    sudo snap install code
+
+### Clone the cccs_common_python repo into your git folder
+
+    cd ~/git/
+    git clone git@github.com:CybercentreCanada/cccs_common_python.git
+
+### Create a virtual env in the cccs_common_python folder
+
+    cd ~/git/cccs_common_python/
+    python3.9 -m venv venv
+
+### Install required packages and library in your virtual environement
+
+    cd ~/git/cccs_common_python/
+    source ./venv/bin/activate
+    pip install -e .
+
+## Currently used by
+
+- Assemblyline [https://github.com/CybercentreCanada/assemblyline]
