@@ -1,0 +1,2 @@
+[console_scripts]
+boiler = boiler.cli.boiler:cli
