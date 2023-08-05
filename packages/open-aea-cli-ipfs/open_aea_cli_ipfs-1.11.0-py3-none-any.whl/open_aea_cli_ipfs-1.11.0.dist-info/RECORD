@@ -1,0 +1,11 @@
+aea_cli_ipfs/__init__.py,sha256=DhDky9WuGClisvLok56l2q8W6u7gAmfNOsjCfr97nm0,869
+aea_cli_ipfs/core.py,sha256=EDCEwNsjp4aX2fqYqgi6OBcfFXNLNSkJ8cvlO4mkTOo,5859
+aea_cli_ipfs/exceptions.py,sha256=aVfXJu2tjkMZ3PrOzGK5KzurLrO5fwXINn8-zv24SXM,1450
+aea_cli_ipfs/ipfs_utils.py,sha256=eUgwtlYrd3_WlWDw5BFy3JOY0rMiopiv75w4j6IN6ao,11308
+aea_cli_ipfs/registry.py,sha256=FWVfnJdcBJWLPnKIjoHIQdB6PqicPQfzuBe-d58dEhQ,6089
+open_aea_cli_ipfs-1.11.0.dist-info/LICENSE,sha256=NAK0--cg0i8kV1wD4kuUa3UxQgIxC8CvOgZiwVQwV1U,11374
+open_aea_cli_ipfs-1.11.0.dist-info/METADATA,sha256=t_FRRFDnvVJjAq5hDA3IE98ZNJXyGvms5JRZKrPF-08,1033
+open_aea_cli_ipfs-1.11.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+open_aea_cli_ipfs-1.11.0.dist-info/entry_points.txt,sha256=APPRQyBj2qboIntCo0ifFQmTa69Zev1QYzq8Ry2Bjqc,53
+open_aea_cli_ipfs-1.11.0.dist-info/top_level.txt,sha256=OJKwPcD3XzJVU6Zbt3x7qgpHHqEjiGgZhDIGEZoD-Lo,13
+open_aea_cli_ipfs-1.11.0.dist-info/RECORD,,
