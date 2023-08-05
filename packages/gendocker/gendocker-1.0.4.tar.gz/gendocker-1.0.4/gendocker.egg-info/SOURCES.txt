@@ -1,0 +1,8 @@
+README.md
+setup.py
+gendocker/__init__.py
+gendocker/gendocker.py
+gendocker.egg-info/PKG-INFO
+gendocker.egg-info/SOURCES.txt
+gendocker.egg-info/dependency_links.txt
+gendocker.egg-info/top_level.txt
