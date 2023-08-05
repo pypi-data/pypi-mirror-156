@@ -1,0 +1,4 @@
+libsass
+mako
+requests
+sphinx<5.1,>=4.5.0
