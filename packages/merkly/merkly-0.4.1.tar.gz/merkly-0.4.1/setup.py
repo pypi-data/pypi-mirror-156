@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['merkly', 'merkly.utils']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['pysha3>=1.0.2,<2.0.0']
+
+setup_kwargs = {
+    'name': 'merkly',
+    'version': '0.4.1',
+    'description': '🌳 The simple and easy implementation of Merkle Tree',
+    'long_description': '# 🌳 Merkly\n\nThe **simple and easy** implementation of **Python Merkle Tree**\n\n---\n\n[![Test](https://github.com/olivmath/merkly/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/olivmath/merkly/actions/workflows/test.yml)\n![GitHub last commit](https://img.shields.io/github/last-commit/olivmath/merkly)\n![GitHub commit activity](https://img.shields.io/github/commit-activity/m/olivmath/merkly)\n\n[![PyPI](https://img.shields.io/pypi/v/merkly)](https://pypi.org/project/merkly/)\n[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/merkly)](https://pypi.org/project/merkly/)\n[![PyPI - Downloads](https://img.shields.io/pypi/dm/merkly)](https://pypi.org/project/merkly/)\n![PyPI - License](https://img.shields.io/pypi/l/merkly)\n\n## CREDITS\n\n[![GitHub Contributors Image](https://contrib.rocks/image?repo=olivmath/merkly)](https://github.com/olivmath/merkly/graphs/contributors)\n\n## HOW TO INSTALL\n\n```\npoetry add merkly\n```\n\n```\npip install merkly\n```\n\n## HOW IT WORKS\n\nThis library provides a clean and easy to use implementation of the Merkle Tree with the following features:\n\n- [x] Create Leaf\n- [x] Create Root\n- [ ] Create Proof\n- [ ] Validate Leafs\n\n## CONTRIBUTING\n\n- Before read a code of conduct: **[CODE_OF_CONDUCT](CODE_OF_CONDUCT.md)**\n- Follow the guide of development: **[CONTRIBUTING](CONTRIBUTING.md)**\n\n## LICENSE\n\n[MIT](LICENSE)\n',
+    'author': 'Lucas Oliveira',
+    'author_email': 'olivmath@protonmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/olivmath/merkly.git',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
