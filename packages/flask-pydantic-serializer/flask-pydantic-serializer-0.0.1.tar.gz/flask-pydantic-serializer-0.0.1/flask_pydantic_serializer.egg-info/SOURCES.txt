@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+flask_pydantic_serializer.egg-info/PKG-INFO
+flask_pydantic_serializer.egg-info/SOURCES.txt
+flask_pydantic_serializer.egg-info/dependency_links.txt
+flask_pydantic_serializer.egg-info/requires.txt
+flask_pydantic_serializer.egg-info/top_level.txt
+pydantic_serialize/VERSION
+pydantic_serialize/__init__.py
+pydantic_serialize/encoders.py
+pydantic_serialize/main.py
+tests/__init__.py
+tests/create_test_db.py
+tests/test_json_encoder.py
+tests/test_main.py

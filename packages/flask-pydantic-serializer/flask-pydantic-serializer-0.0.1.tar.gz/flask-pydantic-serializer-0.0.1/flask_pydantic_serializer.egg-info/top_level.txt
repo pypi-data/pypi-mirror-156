@@ -1,0 +1,2 @@
+pydantic_serialize
+tests
