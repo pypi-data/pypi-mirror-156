@@ -1,0 +1,9 @@
+mpipy/__init__.py,sha256=6D1lrBCZZC0zBySt_4Ao2pkglVl-DABCobxMirQrajQ,25
+mpipy/bcast_test.py,sha256=P6U_9JSpb6e5psaqOw-6jU66lt2qyHxP-xKEDbZFv2k,861
+mpipy/mpi_pyLib.py,sha256=xNygqKdq4YvAZQ6AG8uE8jbGOYVw2Hw5MpF55MMj5Og,2982
+mpipy/send_recv.py,sha256=gA_rtZpRn26fLKFWfrc0Y2LwqCcDkrvzlgv492lbPDE,1019
+mpipy/sr.py,sha256=7vjuKyVgj7mIkKO0mpUtLqcRYeYFP4vDCrN_FFBoEpI,1195
+mpipythonpkg-0.1.0.dist-info/METADATA,sha256=O5OR1ETQfiAjKhnRlPuhq7j5UhD2xnYDIYramJqaskA,210
+mpipythonpkg-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mpipythonpkg-0.1.0.dist-info/top_level.txt,sha256=x-yPR5m-j9AY-xcKLE2MbSW0ITcBLRk5OUXGHpBKmlo,6
+mpipythonpkg-0.1.0.dist-info/RECORD,,
