@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: Mopidy-FM
+Version: 0.1.0
+Summary: Mopidy extension for pifmadv Radio
+Home-page: https://github.com/jrsmile/mopidy-fm
+Author: JRSmile
+Author-email: mopidy-fm@behead.de
+License: Apache License, Version 2.0
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: Mopidy (>=3.0.0)
+Requires-Dist: Pykka (>=2.0.1)
+Requires-Dist: setuptools
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-black ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-isort ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: check-manifest ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: flake8-black ; extra == 'lint'
+Requires-Dist: flake8-bugbear ; extra == 'lint'
+Requires-Dist: flake8-isort ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+****************************
+Mopidy-FM
+****************************
+
+.. image:: https://img.shields.io/pypi/v/Mopidy-FM
+    :target: https://pypi.org/project/Mopidy-FM/
+    :alt: Latest PyPI version
+
+.. image:: https://img.shields.io/github/workflow/status/jrsmile/mopidy-fm/CI
+    :target: https://github.com/jrsmile/mopidy-fm/actions
+    :alt: CI build status
+
+.. image:: https://img.shields.io/codecov/c/gh/jrsmile/mopidy-fm
+    :target: https://codecov.io/gh/jrsmile/mopidy-fm
+    :alt: Test coverage
+
+Mopidy extension for pifmadv Radio
+
+
+Installation
+============
+
+Install by running::
+
+    python3 -m pip install Mopidy-FM
+
+See https://mopidy.com/ext/fm/ for alternative installation methods.
+
+
+Configuration
+=============
+
+Before starting Mopidy, you must add configuration for
+Mopidy-FM to your Mopidy configuration file::
+
+    [fm]
+    # TODO: Add example of extension config
+
+
+Project resources
+=================
+
+- `Source code <https://github.com/jrsmile/mopidy-fm>`_
+- `Issue tracker <https://github.com/jrsmile/mopidy-fm/issues>`_
+- `Changelog <https://github.com/jrsmile/mopidy-fm/blob/master/CHANGELOG.rst>`_
+
+
+Credits
+=======
+
+- Original author: `JRSmile <https://github.com/jrsmile>`__
+- Current maintainer: `JRSmile <https://github.com/jrsmile>`__
+- `Contributors <https://github.com/jrsmile/mopidy-fm/graphs/contributors>`_
