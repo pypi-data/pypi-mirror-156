@@ -1,0 +1,14 @@
+zuulclient/__init__.py,sha256=f6BxgkyYt4C_ApVDYOgEkoj8k3XIAcgzCc0TRWkpPos,577
+zuulclient/version.py,sha256=i0RvsR8VuroHbRiKgZhcPQzVml0rrcyZ13rAWXFygJ8,1021
+zuulclient/api/__init__.py,sha256=WpouqGpvqj51zvkIrpewZ_PRRtc7eg9-VttPJ-SuC7k,10379
+zuulclient/cmd/__init__.py,sha256=IJTBs-Sk-NSRSgf2vFlBSF8i-qI-AC4pyfpb5iQRijU,33660
+zuulclient/utils/__init__.py,sha256=HItC8ecDi9OsQdM9KObIHu_AwXAt-Aw_408HRYtAqj8,3612
+zuulclient/utils/formatters.py,sha256=Um1a4HMzlaKve5NXICyLHdKNQh9B3VAUAcND_Ulv0LM,9898
+zuul_client-0.1.0.dist-info/AUTHORS,sha256=MPc_nLdty_HeMIp8Px04OCKv-FWxiLWzk1V6HVjpDyI,316
+zuul_client-0.1.0.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+zuul_client-0.1.0.dist-info/METADATA,sha256=Wf_fUzSuHMmCCm9nIp8gJoZqZo6NkH7mPpBoIbGSbYM,3608
+zuul_client-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+zuul_client-0.1.0.dist-info/entry_points.txt,sha256=pBHZ_Z_MaLtG8LO-897z_Ixl_2Lqfk3jsbp7FCppnNw,53
+zuul_client-0.1.0.dist-info/pbr.json,sha256=3_ZUEcW5LNIhTufEITsihm7OX_gByUOq9Y8OSoH0-gA,46
+zuul_client-0.1.0.dist-info/top_level.txt,sha256=NwuewWfsHk4xMZqlEJhO4iDpxEc5KdreW-oXqtz5CHI,11
+zuul_client-0.1.0.dist-info/RECORD,,
