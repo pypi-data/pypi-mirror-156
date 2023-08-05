@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+stdeb.cfg
+./ekca_service/plugins/password/aedir/__about__.py
+./ekca_service/plugins/password/aedir/__init__.py
+ekca_plugin_aedir.egg-info/PKG-INFO
+ekca_plugin_aedir.egg-info/SOURCES.txt
+ekca_plugin_aedir.egg-info/dependency_links.txt
+ekca_plugin_aedir.egg-info/entry_points.txt
+ekca_plugin_aedir.egg-info/not-zip-safe
+ekca_plugin_aedir.egg-info/requires.txt
+ekca_plugin_aedir.egg-info/top_level.txt

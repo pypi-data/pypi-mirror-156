@@ -1,0 +1,3 @@
+setuptools
+ekca-service>=1.0.0
+aedir>=1.4.0

@@ -1,0 +1,3 @@
+[ekca_service.plugins.password]
+aedir = ekca_service.plugins.password.aedir:AEDirPasswordChecker
+
