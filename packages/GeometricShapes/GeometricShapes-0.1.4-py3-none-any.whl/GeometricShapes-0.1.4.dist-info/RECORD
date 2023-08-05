@@ -1,0 +1,15 @@
+shapes/__init__.py,sha256=5y5n_46GfHNCKK8zgLE7NZHEy7Ok2l36p7ZYYj6TLJY,2045
+shapes/circled.py,sha256=FRWqNWOSHpWCe9OReN2Jh_vlxpIEMHL-olXIpWky9l4,283
+shapes/cylindered.py,sha256=WFDi_x59x_oxU8VA3uXI8ZJSvyh5F05adt-Sq0zo4dY,610
+shapes/ellipsed.py,sha256=dNHrpnK5wdpG1T2g2cw-WgYeO8yVEiw2Yk9Vslb7uhU,673
+shapes/ellipsoid.py,sha256=_lIwsjjKjbULDE4gIl04mxjAXN4R0nfvEI7sO-kzCWI,959
+shapes/rectangled.py,sha256=4kvG-euuoxEvLTcXa9v8ZN74URiE7wgHks3cXDA45zM,429
+shapes/sphered.py,sha256=Z5eLhdYNYMu6YAQJxQD7VNDrP6SHPv2s_lKDatPPCII,289
+shapes/spheroid.py,sha256=MABpKZEUbuMsnAj8UEtHv0VS8uzY4eDhBe6mT6tl5-Q,1010
+shapes/squared.py,sha256=maUTQthjjMCRHM6zmBBqgDiFCLqKjURKzmckJbYaxLQ,333
+shapes/triangled.py,sha256=2gRJ6JyDU6Fj1q3FtWg-k1eOtl0_HRkG6d2B2lTyMM8,1106
+GeometricShapes-0.1.4.dist-info/LICENSE,sha256=wdiY5Xjkt_bCzImEMDeHBnqHkXyZyAGX4atdKKVF9nw,1069
+GeometricShapes-0.1.4.dist-info/METADATA,sha256=4S9fuei0XP4qOtVJisMup9Nyt21lFfQtyz8VGmH7AJg,2569
+GeometricShapes-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+GeometricShapes-0.1.4.dist-info/top_level.txt,sha256=EIv_QfabiYhrrdf51A0U9qr2-SWEMm1F5tisQJ68Uns,7
+GeometricShapes-0.1.4.dist-info/RECORD,,
