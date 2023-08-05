@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyfeasst
+Version: 0.0.1
+Summary: Analyze FEASST simulation results: https://doi.org/10.18434/M3S095.
+Home-page: https://doi.org/10.18434/M3S095
+Author: Harold Hatch
+Author-email: harold.hatch@nist.gov
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
