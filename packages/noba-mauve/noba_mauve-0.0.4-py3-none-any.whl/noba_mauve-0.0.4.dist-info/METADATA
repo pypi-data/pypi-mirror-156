@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: noba-mauve
+Version: 0.0.4
+Summary: Unit test your writing
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.5
+Requires-Dist: flashtext
+Requires-Dist: transformers
+Requires-Dist: torch (==1.8.0)
+Requires-Dist: datasets (==1.5.0)
+Requires-Dist: faiss-cpu
+Requires-Dist: compress-pickle (<2.0.0)
+Requires-Dist: pandas
+Requires-Dist: scapy
+Requires-Dist: textacy (==0.10.1)
+Requires-Dist: nltk
+Requires-Dist: cached-property
+Requires-Dist: fast-json
+Requires-Dist: bs4
+Requires-Dist: boto3
+Requires-Dist: gender-guesser
+Requires-Dist: langdetect
+Requires-Dist: tqdm
+Requires-Dist: textstat
+Requires-Dist: vaderSentiment
+Requires-Dist: EbookLib
+Requires-Dist: tika
+Requires-Dist: spacy-wordnet
+Requires-Dist: gensim
+Requires-Dist: protobuf
+Requires-Dist: sklearn-pandas
+
+UNKNOWN
+
