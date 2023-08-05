@@ -1,0 +1,8 @@
+poetry_deps_scanner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_deps_scanner/comment_gitlab.py,sha256=0ioVgT16VNwMP69CsLWQ4nSC3EnrHYa-AHXUMFaihI4,1254
+poetry_deps_scanner/scan_deps.py,sha256=KEV69RlQSJ2q8QSrBboSHqj3mOLQEscNb4g79sus5cA,5836
+poetry_deps_scanner-2.0.0.dist-info/entry_points.txt,sha256=IdGm5vLRuwmcVlRpeuqM-9RKSiMyEWYkZ06h9Cth3wU,119
+poetry_deps_scanner-2.0.0.dist-info/LICENSE,sha256=MTW5uDVOtCEK4Bb90u9zdpPP-WXO50T5C_9gUnQVc3s,1077
+poetry_deps_scanner-2.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+poetry_deps_scanner-2.0.0.dist-info/METADATA,sha256=JstBfFHpNmMdkQ1Dm5ETUCQiSpO-syUbtL1nLiuIqpg,4798
+poetry_deps_scanner-2.0.0.dist-info/RECORD,,
