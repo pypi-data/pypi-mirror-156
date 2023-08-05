@@ -1,0 +1,10 @@
+gh_utils/__init__.py,sha256=rl7zczmd6oQ-hHHXrCyVTsCplL53azNqS3gK7u1YOtc,90
+gh_utils/config.py,sha256=x-xsEdFx6mIjekOixLyPnjVFi2w3ei01wFO4tDBxYrU,182
+gh_utils/gh_create_repo_and_add_to_remote.py,sha256=VkK6bEqt-BYKxP4j4jQOCxHr9VKV5yeDp-E7CTGYCrA,3625
+gh_utils/types.py,sha256=scXn8dYT53Ny8So3nu9f9oB-8itBuKrcrWg6u9rj-K0,115
+gh_utils/utils.py,sha256=oYxCmb3HhnM4bxhGbhznJQFz5apxxRc9hpwzk0J1Huk,1501
+gh_utils-0.2.0.dist-info/entry_points.txt,sha256=PHWVnbt4kS8a4resmgahyNhWpuH_XnwQ3Rkq3rnu6co,73
+gh_utils-0.2.0.dist-info/LICENSE,sha256=iDPU2JFPtGTxMtJ4js-KodAQR-IHm4NPaG5m8cRoutA,1100
+gh_utils-0.2.0.dist-info/WHEEL,sha256=FWzWAvOOsDP6aqtZj_z3pIhVEk8S9F03Xwafa0tLqIY,90
+gh_utils-0.2.0.dist-info/METADATA,sha256=j_11p2xe0itE1-60dwW-AZh-5guyFyaH5u-SfGNs7N8,2159
+gh_utils-0.2.0.dist-info/RECORD,,
