@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: fastertransformer
+Version: 4.0.0.116
+Summary: fastertransformer: fastertransformer tf op
+Home-page: https://github.com/ssbuild
+Author: ssbuild
+Author-email: 9727464@qq.com
+License: Apache 2.0
+Keywords: fastertransformer,bert
+Platform: linux_x86_64
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3, <4
+Description-Content-Type: text/markdown
+
+fastertransformer: fastertransformer tf op
+
+```py
+
+https://github.com/NVIDIA/FasterTransformer <br>
+In NLP, encoder and decoder are two important components, with the transformer layer becoming a popular architecture for both components. 
+FasterTransformer implements a highly optimized transformer layer for both the encoder and decoder for inference. On Volta, Turing and Ampere GPUs, 
+the computing power of Tensor Cores are used automatically when the precision of the data and weights are FP16.
+
+FasterTransformer is built on top of CUDA, cuBLAS, cuBLASLt and C++. We provide at least one API of the following frameworks: TensorFlow, PyTorch and Triton backend. 
+Users can integrate FasterTransformer into these frameworks directly.
+For supporting frameworks, we also provide example codes to demonstrate how to use, and show the performance on these frameworks.
+
+```
