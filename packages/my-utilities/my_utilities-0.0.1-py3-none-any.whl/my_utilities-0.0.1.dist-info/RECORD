@@ -1,0 +1,13 @@
+my_utilities/__init__.py,sha256=Zz2-gw1Y9XWwzfcn9oNE6bPhZLio21tiVMSuMgDoEVA,62
+my_utilities/iterables/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_utilities/iterables/chunk.py,sha256=zz-H9DHO-AObLVH9cESj2wh33ViLIBtFLAOxNY7qvmk,1129
+my_utilities/iterables/split.py,sha256=_18QAr59Wcm9D08qXKmaZL9Spk0GKlyeEd_49qlRKII,2221
+my_utilities/probability/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_utilities/probability/probability_event_occurring.py,sha256=hVxS-MQ_2UfD8VLXz1odeZ3G0j94I7pQk4K6ViVjeDk,1165
+my_utilities/view/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_utilities/view/converter_size_to_pretty_view.py,sha256=zXbG28Iq-1QsnyFtwpCqrA0auWY3eProB4Msj-iE2sA,8865
+my_utilities-0.0.1.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+my_utilities-0.0.1.dist-info/METADATA,sha256=qep5Wj5JHEU54pLUANG--j-uikJ8hoGKj0-sar5lYWY,445
+my_utilities-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+my_utilities-0.0.1.dist-info/top_level.txt,sha256=iju375CSkv8OVp1pANNrsPt5MOChFzHvBAw5kDxumsU,13
+my_utilities-0.0.1.dist-info/RECORD,,

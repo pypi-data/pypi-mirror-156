@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: my-utilities
+Version: 0.0.1
+Summary: Library with helper functions and classes
+Home-page: https://github.com/Shchusia/MyUtils
+Author: Denis Shchutkiy
+Author-email: denisshchutskyi@gmail.com
+License: UNKNOWN
+Keywords: pip,my_utilities
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic (==1.9.0)
+
+
+Library with helper functions and classes
+
+
