@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fink-tns
+Version: 0.9
+Summary: Push Fink candidates to TNS.
+Home-page: UNKNOWN
+Author: JulienPeloton
+Author-email: peloton@lal.in2p3.fr
+License: UNKNOWN
+Project-URL: Documentation, https://fink-broker.org
+Project-URL: Source, https://github.com/astrolabsoftware/fink-tns
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Fink TNS
+
+This repository hosts scripts to define a TNS bot to push early SN candidates from Fink.
+
+
