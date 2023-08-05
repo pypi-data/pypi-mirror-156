@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nodejs-cmd
+Version: 0.0.1a0
+Summary: Additional Standard Command Line Commands For nodejs-bin
+Home-page: https://github.com/samwillis/nodejs-pypi
+Author: Sam Willis
+License: UNKNOWN
+Description: # Additional Standard Command Line Commands For "nodejs-bin"
+        
+        This package provides the `node`, `npm` and `npx` commands for the (nodejs-bin project)[https://pypi.org/project/nodejs-bin/].
+        
+        It should not be installed directly, but rather as an option when installing the `nodejs-bin` package:
+        
+        ```shell
+        pip install 'nodejs-bin[cmd]'
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.5
+Description-Content-Type: text/markdown

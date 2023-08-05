@@ -1,0 +1,8 @@
+README.md
+nodejs_cmd.py
+setup.py
+nodejs_cmd.egg-info/PKG-INFO
+nodejs_cmd.egg-info/SOURCES.txt
+nodejs_cmd.egg-info/dependency_links.txt
+nodejs_cmd.egg-info/entry_points.txt
+nodejs_cmd.egg-info/top_level.txt
