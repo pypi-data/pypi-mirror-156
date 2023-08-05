@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: svg-flatten-wasi
+Version: 3.0.9
+Summary: svg-flatten SVG downconverter
+Author: jaseg
+Author-email: pypi@jaseg.de
+License: AGPLv3+
+Project-URL: Source Code, https://git.jaseg.de/gerbolyze
+Project-URL: Bug Tracker, https://github.com/jaseg/gerbolyze/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: appdirs (~=1.4)
+Requires-Dist: wasmtime (>=0.28)
+Requires-Dist: click (>=4.0)
+Requires-Dist: importlib-resources ; python_version < "3.9"
+Provides-Extra: resvg-wasi
+Requires-Dist: resvg-wasi ; extra == 'resvg-wasi'
+
+UNKNOWN
+
