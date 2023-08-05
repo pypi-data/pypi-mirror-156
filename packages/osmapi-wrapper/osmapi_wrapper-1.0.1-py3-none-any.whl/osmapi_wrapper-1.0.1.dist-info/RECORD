@@ -1,0 +1,9 @@
+osm_api/__init__.py,sha256=xk0QpCrhYWklQpj0-3Ixe52t1zwKVnHWzeGZnFujpTc,183
+osm_api/api.py,sha256=SGEg4UFhF6BHH2axTUkJi6CpUwiC6C6wDBx3eOM-x-0,460
+osm_api/core.py,sha256=w5NwMu_TXyimDZdorCmI2BifXyMfjiiOMHUWFSaizlc,2040
+osm_api/parser.py,sha256=0RQ92N4N_F_RgxYrGjzKpHH247DsfmJUapTvpU4b3MI,205
+osmapi_wrapper-1.0.1.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+osmapi_wrapper-1.0.1.dist-info/METADATA,sha256=rcZMNdQlC7SHM2W1Q3OIUDT_Nl9rMBJy5ih_gemMM2w,1652
+osmapi_wrapper-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+osmapi_wrapper-1.0.1.dist-info/top_level.txt,sha256=UnjTJSPr_o8DpIxPAN_yPiNOYhzibVk1eyjrBB3MxQs,8
+osmapi_wrapper-1.0.1.dist-info/RECORD,,
