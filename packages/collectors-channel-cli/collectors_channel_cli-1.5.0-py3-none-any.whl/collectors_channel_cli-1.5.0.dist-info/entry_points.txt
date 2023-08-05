@@ -1,0 +1,3 @@
+[console_scripts]
+colcha=collectors_channel_cli.main:setup
+
