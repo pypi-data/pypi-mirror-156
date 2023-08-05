@@ -1,0 +1,14 @@
+certifi
+charset-normalizer
+fastavro
+idna
+networkx
+numpy
+pandas
+pulsar-client
+python-dateutil
+pytz
+requests
+six
+urllib3
+py4j
