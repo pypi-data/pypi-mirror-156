@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+browser_cookie3.license
+setup.py
+tests.py
+mscookies/__init__.py
+mscookies/__main__.py
+mscookies/__version__.py
+mscookies/cookies.py
+msookies.egg-info/PKG-INFO
+msookies.egg-info/SOURCES.txt
+msookies.egg-info/dependency_links.txt
+msookies.egg-info/requires.txt
+msookies.egg-info/top_level.txt
