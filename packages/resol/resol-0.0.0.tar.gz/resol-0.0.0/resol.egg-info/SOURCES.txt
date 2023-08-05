@@ -1,0 +1,8 @@
+MANIFEST.in
+requirements.txt
+setup.py
+lambler/__init__.py
+resol.egg-info/PKG-INFO
+resol.egg-info/SOURCES.txt
+resol.egg-info/dependency_links.txt
+resol.egg-info/top_level.txt
