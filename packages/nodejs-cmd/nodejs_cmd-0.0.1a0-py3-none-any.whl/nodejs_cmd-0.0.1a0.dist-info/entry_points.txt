@@ -1,0 +1,5 @@
+[console_scripts]
+node = nodejs_cmd:node_main
+npm = nodejs_cmd:npm_main
+npx = nodejs_cmd:npx_main
+
