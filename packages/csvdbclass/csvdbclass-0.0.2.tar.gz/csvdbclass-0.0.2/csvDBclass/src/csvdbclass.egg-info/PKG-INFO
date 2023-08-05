@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: csvdbclass
+Version: 0.0.2
+Summary: Python Database Testing Tool
+Author: Sandeep Bajamahal
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## CSV DB CLASS
+
+A python package for easy python database usage through CSVs.
+
+Usage:
+
+
+```
+>>> from csvdbclass import csvDB
+>>> data = csvDB("data")
+>>> data.show()
+data
+Empty DataFrame
+Columns: []
+Index: []
+>>> data.db = pandas.DataFrame({
+...     "Name" : ['joe', 'joe2', 'joe3']
+... })
+>>> data.show()
+data
+   Name
+0   joe
+1  joe2
+2  joe3
+```
+
