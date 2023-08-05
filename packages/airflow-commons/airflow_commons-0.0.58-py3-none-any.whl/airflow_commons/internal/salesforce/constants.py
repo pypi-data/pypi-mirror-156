@@ -1,0 +1,6 @@
+ASYNC_PATH = "data/v1/async"
+ASYNC_JOB_RESULT_PATH = "/{request_id}/results"
+AUTH_URL = "https://{subdomain}.auth.marketingcloudapis.com/"
+DATA_EXTENSION_KEY_PATH = "/dataextensions/key:{key}/rows"
+TOKEN_PATH = "v2/token"
+GRANT_TYPE = "client_credentials"
