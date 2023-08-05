@@ -1,0 +1,4 @@
+jrdb-model>=0.1.0
+beautifulsoup4>=4.11.1
+scikit-learn>=1.1.1
+lxml>=4.9.0
