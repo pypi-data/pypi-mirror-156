@@ -1,0 +1,10 @@
+datasetsforecast/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+datasetsforecast/_nbdev.py,sha256=5zD0vKKXskO2XqJCYtJ7kVIFwet9WmpkzltTvt4Oipg,735
+datasetsforecast/core.py,sha256=wRRqvi-xL2iHDGGL_30k1EHDmlhOkTK-YewJOcOWrrU,105
+datasetsforecast/hierarchical.py,sha256=K-GqywhP5KnEywYuq2z5HxCATRHFEWItI8oI8WDPe9k,786
+datasetsforecast/utils.py,sha256=tjqCTNJvyftqu1VhtvzTG8nqP4GVKnPlS-5K1gkfwMU,3212
+datasetsforecast-0.0.1.dist-info/LICENSE,sha256=gQY2j5ooBqxtVjRaG-4thmZSAVfv4TgWzXwovI9hxps,1063
+datasetsforecast-0.0.1.dist-info/METADATA,sha256=d-n3oadw3RDNsFn6IBPzspQ954rfMuZKZayOTFPpRJ4,929
+datasetsforecast-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datasetsforecast-0.0.1.dist-info/top_level.txt,sha256=9-FuVdwrcjYwXFaGkgY-oZjuTTFJPLD4wCFzLYVSJxo,17
+datasetsforecast-0.0.1.dist-info/RECORD,,
