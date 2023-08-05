@@ -1,0 +1,7 @@
+word_embedding_cli.py,sha256=eM1mnyw2pAWmMAnFOEFLLKLBgJIAlDZZD5jQmHObVYQ,7131
+word_embedding_cli-0.0.1.data/data/wembcli_data/animals_300_50.model,sha256=RMviAFzE9dI1H76qqsVuGHYa2io6OK7jRCJxorb0WZA,20986268
+word_embedding_cli-0.0.1.dist-info/entry_points.txt,sha256=0C4erZW8HyY9fPxWaM53UzRybUDvbA6TXq9XZsujcS0,55
+word_embedding_cli-0.0.1.dist-info/LICENSE,sha256=DQJtCuPmXPLGf5yLaNHC2GkPFP0xyKsdgQ4Md9o1VQE,1079
+word_embedding_cli-0.0.1.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+word_embedding_cli-0.0.1.dist-info/METADATA,sha256=59TXPcCKelPUGOy-cPUY-t8SCtS2FeO8Qk2G8DZOQjU,328
+word_embedding_cli-0.0.1.dist-info/RECORD,,

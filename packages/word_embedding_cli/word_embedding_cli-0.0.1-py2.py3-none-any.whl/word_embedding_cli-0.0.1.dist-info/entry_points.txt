@@ -1,0 +1,3 @@
+[console_scripts]
+wembcli=word_embedding_cli:__main__
+
