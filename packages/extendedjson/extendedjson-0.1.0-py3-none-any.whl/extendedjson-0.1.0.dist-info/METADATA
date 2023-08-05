@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: extendedjson
+Version: 0.1.0
+Summary: 
+Author: Rodrigo Girão Serrão
+Author-email: 5621605+RodrigoGiraoSerrao@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
