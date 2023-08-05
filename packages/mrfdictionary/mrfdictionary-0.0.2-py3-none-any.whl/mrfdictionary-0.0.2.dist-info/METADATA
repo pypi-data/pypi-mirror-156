@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mrfdictionary
+Version: 0.0.2
+Summary: Tools for MRF dictionary simulation
+Home-page: 
+Author: Andrew Dupuis
+Author-email: andrewpdupuis@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jsonpickle
+Requires-Dist: numba
+Requires-Dist: scipy
+Requires-Dist: h5py
+
+# MRFDictionary
+
+MRF Dictionary simulation tools
