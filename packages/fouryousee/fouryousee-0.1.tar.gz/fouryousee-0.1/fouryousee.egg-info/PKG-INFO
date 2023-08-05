@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fouryousee
+Version: 0.1
+Summary: A Python library to interact with the 4YouSee REST API.
+Home-page: https://github.com/Alfareiza/4yousee
+Author: Alfonso Areiza Guerra
+Author-email: alfareiza@gmail.com
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+Description: # 4yousee
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
