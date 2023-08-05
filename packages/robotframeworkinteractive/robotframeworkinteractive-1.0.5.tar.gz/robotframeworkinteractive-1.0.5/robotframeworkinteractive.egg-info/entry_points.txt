@@ -1,0 +1,2 @@
+[console_scripts]
+robotframeworkinteractive = robotframeworkinteractive.robotframeworkinteractive:main
