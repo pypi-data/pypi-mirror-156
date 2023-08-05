@@ -1,0 +1,9 @@
+odd_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odd_models/api_client/__init__.py,sha256=jWHDXs_VYDi0187OZSfuOxsrl2lt8mUlSYPvlmYfNcA,59
+odd_models/api_client/http_client.py,sha256=DGwu-7rcMBsc2Ne8UwOkUy2QqibS_Usmgm3HNfb9ByQ,3469
+odd_models/api_client/open_data_discovery_ingestion_api.py,sha256=kC2FY6y-QeQbo0vdAvQ5pPOTCoxcP_9dAiLHy3fF0Ko,1203
+odd_models/models.py,sha256=Ces0tKjabaufc0zrE-VfjFk34xs7Nses1OKMfjHZiGk,6744
+odd_models/utils.py,sha256=QFIXlR1gG5WKnDTUd04LUZGUHPIOXVkO9JsHuER57ZU,4248
+odd_models-2.0.4.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+odd_models-2.0.4.dist-info/METADATA,sha256=bkA6hg_7x5yS9BQL_dWwUoMhmJ0NrYb9r1jt3-983V4,1217
+odd_models-2.0.4.dist-info/RECORD,,
