@@ -1,0 +1,10 @@
+nextdns/__init__.py,sha256=UvcItgDDLYh2ahTW1Kc01FkTeud6UV1ZIDEDOgs3-OI,10378
+nextdns/const.py,sha256=A0_PPFFI4UkEdNMwyo41kQBXIKD8-4XcTU4BIR7hpQQ,6297
+nextdns/exceptions.py,sha256=cTh0gOu57egFKMv0ZsOAyaUnKpQJpfbv1f_x-f5wTSY,716
+nextdns/model.py,sha256=rq0YcOQiIZ1rtaImt13XWxD1CL5ewGs5M3xaW6r4OWc,4955
+nextdns/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nextdns-0.1.0.dist-info/LICENSE,sha256=KQVvKizzhWsQb0eGMCGPzbPkFQm2Zh5OevBihqVL_x4,11344
+nextdns-0.1.0.dist-info/METADATA,sha256=6ODCEEV4jYJR9fSgxWj-j7zAk43fQnoGEkWSSZsFlDE,3181
+nextdns-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nextdns-0.1.0.dist-info/top_level.txt,sha256=V-pBw1fPUClE8qyaVA0s5dueI5Cw-i2la0So8s3TQAU,8
+nextdns-0.1.0.dist-info/RECORD,,
