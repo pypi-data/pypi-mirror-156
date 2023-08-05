@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/apigateway_sdk_python/__init__.py
+src/apigateway_sdk_python/signer.py
+src/apigateway_sdk_python.egg-info/PKG-INFO
+src/apigateway_sdk_python.egg-info/SOURCES.txt
+src/apigateway_sdk_python.egg-info/dependency_links.txt
+src/apigateway_sdk_python.egg-info/requires.txt
+src/apigateway_sdk_python.egg-info/top_level.txt
