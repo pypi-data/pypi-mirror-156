@@ -1,0 +1,11 @@
+drf_payload_customizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_payload_customizer/mixins/__init__.py,sha256=IspTsTTZyAKpHRvQD4njU0HFg9uGvnNLrZwwK3JXw-0,259
+drf_payload_customizer/mixins/payload_converter_mixin.py,sha256=LHgW2LSDJunNfMqvnoEqY5pr9UbxBBLCeahPdCsef4o,813
+drf_payload_customizer/mixins/payload_no_null_or_none_mixin.py,sha256=hkfnTMzenTw4iy96RIZD5ybIC-O1wNS-hbu52r80B-s,1443
+drf_payload_customizer/mixins/payload_transformation_mixin.py,sha256=qd0Rm-g8EAvOZVmQvN61qQzb_-WRLQyw50viTUi2Wac,2474
+drf_payload_customizer/mixins/payload_translation_mixin.py,sha256=_7vNuw_2e8530Ja4zHT30pUZFspHA0FOxxVJEKJrMG4,1685
+drf_payload_customizer-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+drf_payload_customizer-0.1.1.dist-info/METADATA,sha256=1lT9FkKMG3iwF-KXu5k7mqMa7FCRucFiVNefR-cCeHI,4359
+drf_payload_customizer-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+drf_payload_customizer-0.1.1.dist-info/top_level.txt,sha256=Sg_alVhxtY9oFF2BEXVQIoxALucQ4fr77YLD3riq1J0,23
+drf_payload_customizer-0.1.1.dist-info/RECORD,,
