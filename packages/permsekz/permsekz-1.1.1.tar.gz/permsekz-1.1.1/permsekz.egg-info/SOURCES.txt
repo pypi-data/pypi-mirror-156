@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+permsekz/__init__.py
+permsekz/permsekz.py
+permsekz.egg-info/PKG-INFO
+permsekz.egg-info/SOURCES.txt
+permsekz.egg-info/dependency_links.txt
+permsekz.egg-info/top_level.txt
