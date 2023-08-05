@@ -1,0 +1,16 @@
+systemstoolkit/__init__.py,sha256=QMF1wQ5JX9g-qcsV4ZgZRGUndckjy71D9ssrXeJku8I,156
+systemstoolkit/typing.py,sha256=UGZoNreuGn7SbJ7tnJYZzWYhONAoujKgYYekK_vGaTA,188
+systemstoolkit/utils.py,sha256=xcBT_5HgNgwsNZ8W1RJwVFNzJJ2spvewQMqARxJov7Y,1391
+systemstoolkit/files/__init__.py,sha256=XcKW2rFsIP4qtc47jneMRxHwVDkXOsHALb_4A9D1hsE,112
+systemstoolkit/files/builders.py,sha256=rihKpAF5jrUpI-FvRCxZnI1Y_izcUzG6kvKZFj9leAk,9400
+systemstoolkit/files/files.py,sha256=c7wRD0wlga4vcUjq9CBdw5-c1DGzRDwdTmvHGxijtm0,3263
+systemstoolkit/files/formats.py,sha256=5o8jb1pEbv5HhGOXFM2ElqsMShWWAvNhEBw70qHiodM,1912
+systemstoolkit/files/keywords.py,sha256=x0cYwnx2Q0-HL2UCm1yFMsEzPov4MNIaKJk99K8N93Y,4229
+systemstoolkit/files/validators.py,sha256=9iqQhzS-2NBRyNuYLHPy8l-mFsi8zClqoxUK6duT2SA,2004
+systemstoolkit/units/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+systemstoolkit/units/time.py,sha256=X6IyjAOZZ-YtdhtmG3Y7O6OwiDCJKGVDJ8T-VlWA8nA,2901
+systemstoolkit-0.0.2.dist-info/LICENSE,sha256=vlZAJmHo3uBob5880pP-miPNHrzXa2RPEnzjq1UK5qI,1078
+systemstoolkit-0.0.2.dist-info/METADATA,sha256=3hWa2DlnvaxwzPO8mhTl1g-Xej9FPQQ6zLD5EngMwFo,2273
+systemstoolkit-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+systemstoolkit-0.0.2.dist-info/top_level.txt,sha256=rYGfGCjYa7axo3rWHi5TF9PJExZS1I2iuwYSf3ZXqrQ,15
+systemstoolkit-0.0.2.dist-info/RECORD,,
