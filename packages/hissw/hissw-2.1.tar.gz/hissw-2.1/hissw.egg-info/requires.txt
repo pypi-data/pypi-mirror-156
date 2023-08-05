@@ -1,0 +1,13 @@
+jinja2
+scipy
+
+[astropy]
+astropy
+
+[docs]
+mkdocs
+mkdocs-material
+
+[test]
+pytest
+astropy
