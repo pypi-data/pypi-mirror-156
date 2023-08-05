@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: bergamot
+Version: 0.4.5
+Summary: Translate text-content locally in your machine across langauges.
+Home-page: https://github.com/browsermt/bergamot-translator/
+Author: Jerin Philip
+Author-email: jerinphilip@live.in
+Project-URL: Bug Reports, https://github.com/browsermt/bergamot-transator/issues
+Project-URL: Source, https://github.com/browsermt/bergamot-translator/
+Project-URL: Documentation, https://browser.mt/docs/main/python.html
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: appdirs
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
+
+# bergamot-translator
+
+The [Bergamot project](https://browser.mt/) adds and improves client-side
+machine translation in a web browser.
+
+This package provides Python bindings to bergamot-translator developed as part
+of the Bergamot Project and extras assorted in a package to enable further use
+of the library developed for local-translation on the consumer machine.
+
+Bergamot is a consortium coordinated by the University of Edinburgh with
+partners Charles University in Prague, the University of Sheffield, University
+of Tartu, and Mozilla.
+
+
