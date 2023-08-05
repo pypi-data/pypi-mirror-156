@@ -1,0 +1,11 @@
+galmask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galmask/galmask.py,sha256=fK4DwEHKiiWjS1HTvH1p60mIvMllWSVlIAckFVJRBfY,6178
+galmask/utils.py,sha256=EJ1hiBp7nYFLmywBQPm5-m_ndQwEX87JGPbs9W-b8C8,2874
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_galmask.py,sha256=bbCtTnWvCp4xoYO_8l51DSWfVu2vpqvkEky-F28rKRA,1964
+tests/test_utils.py,sha256=avfAjXX7dZFe-phLxIQOu3tXijQKS-knWV4cgDYVNHY,3338
+galmask-0.2.0.dist-info/LICENSE,sha256=xOdr1kK22y3_ChWr93JCvCmub8zN9QuWKIiLMLI5gKU,1072
+galmask-0.2.0.dist-info/METADATA,sha256=bbA-tSnlloYx780oG7UYTdjjyi3HO8Mew8yLrO5Dtx8,5789
+galmask-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+galmask-0.2.0.dist-info/top_level.txt,sha256=6et_JxD-NP0woG29-vgziai2Bfy3_N0lVFMwaKX8K04,14
+galmask-0.2.0.dist-info/RECORD,,
