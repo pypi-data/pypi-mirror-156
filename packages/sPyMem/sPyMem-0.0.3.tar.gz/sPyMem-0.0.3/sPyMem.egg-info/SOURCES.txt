@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+sPyMem/__init__.py
+sPyMem/hippocampus_with_forgetting.py
+sPyMem.egg-info/PKG-INFO
+sPyMem.egg-info/SOURCES.txt
+sPyMem.egg-info/dependency_links.txt
+sPyMem.egg-info/top_level.txt
+sPyMem/config/hippocampus_with_forgetting_network_config.json
