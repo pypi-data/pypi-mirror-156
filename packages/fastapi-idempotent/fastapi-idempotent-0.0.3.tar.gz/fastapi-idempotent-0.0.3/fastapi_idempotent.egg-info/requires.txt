@@ -1,0 +1,3 @@
+starlette>=0.19.1
+pydantic
+aioredis
