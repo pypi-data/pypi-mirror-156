@@ -1,0 +1,3 @@
+[console_scripts]
+onemodel-cli=onemodel_cli.cli:main
+
