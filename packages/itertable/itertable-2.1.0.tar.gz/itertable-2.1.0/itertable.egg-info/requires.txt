@@ -1,0 +1,14 @@
+requests
+openpyxl
+click
+
+[gis]
+Fiona
+geopandas
+
+[oldexcel]
+xlrd
+xlwt
+
+[pandas]
+pandas
