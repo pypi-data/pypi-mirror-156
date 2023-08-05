@@ -1,0 +1,16 @@
+fseg/__init__.py,sha256=idJ6n6hwAaj-W0-IyUZHwcI7ypIO-DrKteMaHD38gyo,273
+fseg/_analyzer.py,sha256=eSb1NycDBwnr5Pj8n0HACE73axBdRjfEYYug-JL7t7s,6313
+fseg/_data.py,sha256=-gHjdaaNMcXUfSXT0BKaNx_bsuyJQyoan0-lLu9qLHU,1862
+fseg/_fseg.cp310-win_amd64.pyd,sha256=FW1IEJtw1W4FnthJ2_fMYiUnbJ22TuxvmTD6anYxgr4,152064
+fseg/_fseg.exp,sha256=RWN5TfVBr4QolY4RRgt-LTVdrTPLqezkVVAXsOpw1hY,26845
+fseg/_fseg.lib,sha256=wmrkQVH-2U23wrKoiR5chE3myD4GI5XYV5k6bVAbgXc,45858
+fseg/_version.py,sha256=CejPpKHlJ8OX6YYP6EiiHRNvxDI8M3ejtFcD3sVoKiA,23
+fseg/spa.dll,sha256=jQk57CCbuB6vOVvPGss9Tv9a0wRa8I3iss4JpsmN108,45568
+fseg/spa.exp,sha256=USK7YvN0S26pZH_r3yrLaKWHKtRoEdkD65vF5EHUFsE,9580
+fseg/spa.lib,sha256=AeirZQrgVfMrhsh-ta69JQ1VC8br6Q2f9H0RsYnRpAc,15628
+fseg-0.7.4.dist-info/AUTHORS.md,sha256=LDL__kkpO_h_xwi7VubnF1IN8Yf8DegDeqnxxGmfOKQ,85
+fseg-0.7.4.dist-info/LICENSE,sha256=nXZg5n_FnmPV8Ui2DXHXYrKN3u6qXS1EzO_kkUlIvZU,27021
+fseg-0.7.4.dist-info/METADATA,sha256=ULeaH5y5nbqoP71t2_Qle8RpRL5fksrdqsOvW-DtYxw,4443
+fseg-0.7.4.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+fseg-0.7.4.dist-info/top_level.txt,sha256=aAfwY3Nx6sGs7WkPrNdcbI7f3v3gcP00z1BrAU5Jkbo,11
+fseg-0.7.4.dist-info/RECORD,,
