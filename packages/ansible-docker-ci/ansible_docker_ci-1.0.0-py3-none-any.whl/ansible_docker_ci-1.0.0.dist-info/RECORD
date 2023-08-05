@@ -1,0 +1,10 @@
+ansible_docker_ci/__init__.py,sha256=Y9Km3d6Ce93DYOxnhujwWZDaO1BnRLuoiJClIlrPh_A,85
+ansible_docker_ci/image/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ansible_docker_ci/image/connection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ansible_docker_ci/image/connection/plugin.py,sha256=6RujoQiL_6zyrGDY4dnCNbNmTbOcRM7e3zJ5IAhwAY4,8549
+ansible_docker_ci/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ansible_docker_ci/version.py,sha256=HDkBHTrFIMKo_PNWGUvuJPY9WIU8KGKefAAnoOpGAq0,328
+ansible_docker_ci-1.0.0.dist-info/LICENSE,sha256=UeHLSyOl4Ou8x8IgaKDPcuWO8JSWw-0W0TDYyyx3VAQ,1057
+ansible_docker_ci-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+ansible_docker_ci-1.0.0.dist-info/METADATA,sha256=bYnIOkMpvy-rOiMYP7yIUTbvZBVG8hIHUxH9zAazr3Y,1067
+ansible_docker_ci-1.0.0.dist-info/RECORD,,
