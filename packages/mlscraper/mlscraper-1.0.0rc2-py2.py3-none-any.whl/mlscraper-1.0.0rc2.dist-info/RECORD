@@ -1,0 +1,13 @@
+mlscraper/__init__.py,sha256=0sPeaXzchYpEjubqtykCY8g3xvmD6h7arYx7QxJx-iw,87
+mlscraper/html.py,sha256=b7arGuMXShFcjp5nu00oygam7IoyMu1de9QVHbqTO0w,5494
+mlscraper/matches.py,sha256=DzhaKpXv2Ef9_8giJ_O5RktcpADq_jK4rSYcO1bgkbo,4357
+mlscraper/samples.py,sha256=EAf5EE41asiKGdZ5z_iabUCxVmZV6NLkHKaFuWf0kU8,4443
+mlscraper/scrapers.py,sha256=4cK3CfeQkmEmmPWsl8aDmhiXSo98UUwFFA-T5lD6LI0,1401
+mlscraper/selectors.py,sha256=2zizwloEFkPvIby5n7N3xZFHlfkXF-f5EDKSvrmtfbE,3988
+mlscraper/training.py,sha256=FFsz0SVKEGCoaRTYxat76gNAhukJzqYsH4Z7Ja1lGGw,7592
+mlscraper/util.py,sha256=otxhM8HIYaolq3O8b19RTCw-CbQuVNd1hg9aJH4QkYQ,403
+mlscraper-1.0.0rc2.dist-info/AUTHORS.rst,sha256=CEY_L6-_H5t9GfCI67wNOCgkORtH_80mTUP_3qbcbBI,153
+mlscraper-1.0.0rc2.dist-info/METADATA,sha256=D4RUkKrEP5FWgCF3WQ43qtMGi2tbmU72dXziQaUTETs,3701
+mlscraper-1.0.0rc2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+mlscraper-1.0.0rc2.dist-info/top_level.txt,sha256=65MI-QNUdfQHulbcB8JWYn6OKnsIOuGKZNKbxkoEDws,10
+mlscraper-1.0.0rc2.dist-info/RECORD,,
