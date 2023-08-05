@@ -1,0 +1,9 @@
+easytrain/__init__.py,sha256=OGGScLEVggqY3-lIGh-ur8GzxVyfDJ2rRUI7pbRMJdM,38
+easytrain/base.py,sha256=jmiemDEDznFkWiNk_uBvE2eTjuuuy_NZX6gqHK6Ilg8,6382
+easytrain/callbacks.py,sha256=8YC2tPj7XltJGb-UDQWIieQAleYrwMtqOC7TXCXLYuQ,1020
+easytrain/data.py,sha256=-_u6mxcxRsmfP9D1zK8Q0eUCzgi0U3EVhzWutFg_Weo,449
+easytrain-0.0.1.dist-info/LICENSE,sha256=3GZv0suN1_xcUKUG753MBfwaWEOOv2t9jQ7f0V2JrRE,1063
+easytrain-0.0.1.dist-info/METADATA,sha256=pkcwtBg5cyn0Qh8I1uuymaRLeq9g6smO-_UkYGh1dOA,428
+easytrain-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+easytrain-0.0.1.dist-info/top_level.txt,sha256=tujmYqTw-Avob3ePgTGvxIdaYvSiN7v9s3azhr7r7vk,10
+easytrain-0.0.1.dist-info/RECORD,,
