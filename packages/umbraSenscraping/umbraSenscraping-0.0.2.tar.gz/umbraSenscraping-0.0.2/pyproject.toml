@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0",
+        'requests[socks]',
+        'lxml',
+        'beautifulsoup4',
+        'pytz; python_version < "3.9.0"',
+        'filelock']
+build-backend = "setuptools.build_meta"
+[project]
+name = "umbraSenscraping"
+version = "0.0.2"
+authors = [
+  { name="Ahmed Emad", email="ahmad.emad@umbrasys.com" },
+]
+description='A social networking service scraper'
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+        'Development Status :: 4 - Beta',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+    ]
+#entry_points={ console_scripts = ['umbraSnscrpe = umbraSnscrpe._cli:main']}
+
+#[project.urls]
+#"Homepage" = ""
+#"Bug Tracker" = ""
