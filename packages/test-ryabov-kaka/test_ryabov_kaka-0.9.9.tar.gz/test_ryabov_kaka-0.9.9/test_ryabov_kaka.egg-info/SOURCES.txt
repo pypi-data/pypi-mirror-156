@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+test_ryabov_kaka/__init__.py
+test_ryabov_kaka/comanda_daunov.py
+test_ryabov_kaka.egg-info/PKG-INFO
+test_ryabov_kaka.egg-info/SOURCES.txt
+test_ryabov_kaka.egg-info/dependency_links.txt
+test_ryabov_kaka.egg-info/top_level.txt
