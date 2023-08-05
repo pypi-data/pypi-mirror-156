@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mdade
+Version: 0.0.1
+Summary: 'mdade' offers a lightweight PyTorch toolbox for Masked Autoregressive models
+Home-page: https://github.com/vahidzee/made
+Author: Vahid Zehtab
+Author-email: vdzehtab@gmail.com
+License: MIT
+Download-URL: https://github.com/vahidzee/mdade
+Keywords: deep learning,pytorch,AI,density estimation,masked autoencoders,pixelcnn,autoregressive models
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=1.7.*)
+Provides-Extra: tools
+Requires-Dist: torchvision ; extra == 'tools'
+Requires-Dist: pytorch-lightning ; extra == 'tools'
+
+# made
+PyTorch Masked Autoregressive Networks for Density Estimation
+
+
