@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: VirtuousUmami
+Version: 0.1.1
+Summary: The Virtuous Umami tool predict the umami/non-umami taste of query molecules based on their molecular structures.
+Home-page: UNKNOWN
+Author: Lorenzo Pallante, Aigli Korfiati, Lampros Androutsos
+Author-email: lorenzo.pallante@polito.it, a.korfiati@insybio.com, l.androutsos@insybio.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
