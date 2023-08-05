@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Fliicoin/__init__.py
+Fliicoin/fliicoin.py
+Fliicoin.egg-info/PKG-INFO
+Fliicoin.egg-info/SOURCES.txt
+Fliicoin.egg-info/dependency_links.txt
+Fliicoin.egg-info/requires.txt
+Fliicoin.egg-info/top_level.txt
