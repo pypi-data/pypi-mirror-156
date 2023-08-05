@@ -1,0 +1,11 @@
+README.md
+setup.py
+mrftools/__init__.py
+mrftools/dictionary.py
+mrftools/sequence.py
+mrftools/simulation.py
+mrftools.egg-info/PKG-INFO
+mrftools.egg-info/SOURCES.txt
+mrftools.egg-info/dependency_links.txt
+mrftools.egg-info/requires.txt
+mrftools.egg-info/top_level.txt
