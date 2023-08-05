@@ -1,0 +1,3 @@
+[console_scripts]
+prettierjson=prettierjson.__main__:main
+
