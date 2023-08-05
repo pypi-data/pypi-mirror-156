@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pys3tower/pys3tower.egg-info/PKG-INFO
+pys3tower/pys3tower.egg-info/SOURCES.txt
+pys3tower/pys3tower.egg-info/dependency_links.txt
+pys3tower/pys3tower.egg-info/requires.txt
+pys3tower/pys3tower.egg-info/top_level.txt
