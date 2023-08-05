@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pypi_resolver/__init__.py
+pypi_resolver/entrypoint.py
+pypi_resolver.egg-info/PKG-INFO
+pypi_resolver.egg-info/SOURCES.txt
+pypi_resolver.egg-info/dependency_links.txt
+pypi_resolver.egg-info/entry_points.txt
+pypi_resolver.egg-info/requires.txt
+pypi_resolver.egg-info/top_level.txt
