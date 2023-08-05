@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: seg2link_unet2d
+Version: 0.1.2
+Summary: A compact tool for training 2D U-Net and making predictions
+Home-page: https://github.com/WenChentao/seg2link_unet2d
+Author: Chentao Wen
+Author-email: chintou.on@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
