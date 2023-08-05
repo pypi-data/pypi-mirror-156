@@ -1,0 +1,12 @@
+transfreq/TopoObj_mod.py,sha256=36ntLfBm9ksF510BDGsc9Tm9D_IegmnXqVVDbvISXZo,22135
+transfreq/__init__.py,sha256=FXeR_0omEJhsV2ZgGcJK38TU4TI-laXHmzVETe0pKeI,153
+transfreq/functions.py,sha256=3ImQPGbiMrn0NEUEqulxJkpEUMNYIThIZ7j2naHGPw0,18643
+transfreq/utils.py,sha256=aTBaJTM6V-rs8BFpsb7WJ092Cp0edoWn167YDcfd9Bg,225
+transfreq/viz.py,sha256=f8tOb6ynFACiu9-dGIeNLcH38oa7tfpcT4Sm9jRDQSY,24911
+transfreq/data/transfreq_sample_evoked.fif,sha256=8zjPfQKpeMEklhLsRVUr4Qo7PoZRSRN0Sz25lwFGUVE,14436231
+transfreq/data/transfreq_sample_resting.fif,sha256=zxQOdX-_tb6-8VoLFHHPN3KY9RKP1v8Jx3jD8elxNKQ,6986355
+transfreq-1.1.dist-info/LICENSE,sha256=HvtxUIyeg6V1mzoixYLGd_c1LhNhI2HbZEtXIdnLuoE,1495
+transfreq-1.1.dist-info/METADATA,sha256=8y3VQVL-RBt3Nn-tdE4rrKXfe_0qTd0cSf1jGo1qBMc,607
+transfreq-1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+transfreq-1.1.dist-info/top_level.txt,sha256=gv0A7gxJu7SoMurZuAFwHnQTAeVei7PhtdFvF_oZnHo,10
+transfreq-1.1.dist-info/RECORD,,
