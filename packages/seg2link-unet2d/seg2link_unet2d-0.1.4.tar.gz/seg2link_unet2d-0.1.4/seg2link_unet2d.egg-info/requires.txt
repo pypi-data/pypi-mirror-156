@@ -1,0 +1,5 @@
+tqdm==4.63.0
+
+[local]
+notebook==6.4.12
+matplotlib==3.5.1
