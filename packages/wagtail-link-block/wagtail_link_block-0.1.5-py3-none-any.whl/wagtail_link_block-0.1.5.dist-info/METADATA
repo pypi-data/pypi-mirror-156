@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: wagtail-link-block
+Version: 0.1.5
+Summary: Wagtail LinkBlock
+Home-page: https://github.com/developersociety/wagtail-link-block
+Maintainer: The Developer Society
+Maintainer-email: studio@dev.ngo
+License: BSD
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.2
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Django (>=1.11)
+
+Wagtail LinkBlock
+=================
+
+A link block to use as part of other StructBlocks which
+lets the user choose a link either to a Page, Document,
+external URL, Email, telephone or anchor within the current page
+and whether or not they want the link to open in a new window.
+
+It hides the unused fields, making the admin clearer and less cluttered.
+
+Usage
+-----
+
+To install:
+
+.. code-block:: console
+
+    $ pip install wagtail-link-block
+
+Edit your Django project's settings module, and add the application to ``INSTALLED_APPS``:
+
+.. code-block:: python
+
+    INSTALLED_APPS = [
+        # ...
+        "wagtail_link_block",
+        # ...
+    ]
+
+To use in a block
+
+.. code-block:: python
+
+    from wagtail_link_block.blocks import LinkBlock
+
+    class MyButton(StructBlock):
+        text = CharBlock()
+        link = LinkBlock()
+
+        class Meta:
+            template = "blocks/my_button_block.html"
+
+And the blocks/my_button_block.html
+
+.. code-block:: HTML
+
+    <a href="{{ self.link.get_url }}" {% if self.link.new_window %}target="_blank"{% endif %}>{{ self.text }}</a>
+
+
