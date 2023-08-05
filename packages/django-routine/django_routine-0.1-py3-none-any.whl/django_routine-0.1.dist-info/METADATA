@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: django-routine
+Version: 0.1
+Summary: A Django app for managing routines.
+Author: Daniel Cuznetov
+Author-email: danielcuznetov04@gmail.com
+Requires-Dist: djangorestframework
+Requires-Dist: django
+Requires-Dist: django-rest-swagger
+Requires-Dist: drf-yasg
+Requires-Dist: djangorestframework-simplejwt
+
