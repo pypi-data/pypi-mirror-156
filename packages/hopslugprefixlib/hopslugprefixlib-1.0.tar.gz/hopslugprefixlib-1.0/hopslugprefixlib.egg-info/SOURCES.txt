@@ -1,0 +1,6 @@
+hopslugprefixlib.py
+setup.py
+hopslugprefixlib.egg-info/PKG-INFO
+hopslugprefixlib.egg-info/SOURCES.txt
+hopslugprefixlib.egg-info/dependency_links.txt
+hopslugprefixlib.egg-info/top_level.txt
