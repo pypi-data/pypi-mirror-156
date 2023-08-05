@@ -1,0 +1,15 @@
+pippackagelist/__init__.py,sha256=7FzmUPOSd7y3TYlbt7FBpXWq_hBkscPW6K9bdEbz4C0,850
+pippackagelist/__main__.py,sha256=dYfbrxeK0iyXlXe3M83gYn367tlFVSPfKKp4IBgKyN4,3289
+pippackagelist/entry.py,sha256=JK-TEhGuKzm04a5AwGaAdYY-US-c9xfx2uvO4xNDobg,4282
+pippackagelist/error.py,sha256=Ry5iqqFNK11gC9_teiSVkXg0Sb8RVheyVex-9Q25Cqc,228
+pippackagelist/identify_package_list_file_type.py,sha256=ebGnUTkeGGM4h-oUOL4lg0gcoVbmJ-bjbB0rzmJZZyU,330
+pippackagelist/list_packages_from_files.py,sha256=Frztxk4O-2OCz2nuOBQ76eL4u36Oqfb7DtN-i9jdvg0,7363
+pippackagelist/parse_requirements_list.py,sha256=I8GhuZokXzuE92cRdH_Y89IkczjmW4qQO89TrX2wJr4,11104
+pippackagelist/parse_requirements_txt.py,sha256=TsAnGy2F5Byo2oz0bRIyjv6pbOJgbn12lgcFXic72Qg,519
+pippackagelist/parse_setup_py.py,sha256=g9Q2i5D4c4aHE7NMBXGEgxF4RVQzbvsr21x-7nx9hmA,1160
+pip_package_list-0.0.11.dist-info/LICENSE,sha256=_rkLbyno7lyftN88x88IEHLLVL1kbS7XzIxfTeg4eDk,1067
+pip_package_list-0.0.11.dist-info/METADATA,sha256=wtaraW0yQ-xfN8TnNuLkKcRFJyBgX8ZX0qzY5kgsD4g,3475
+pip_package_list-0.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pip_package_list-0.0.11.dist-info/entry_points.txt,sha256=4xf05ExufkGl0gKTpxqh9fopIQx7Jm5Aa2xQaeQiMj0,66
+pip_package_list-0.0.11.dist-info/top_level.txt,sha256=pAVft7ogNVAv5C0CDNgmIBQ5BTYOruP8FRoS-jNU0sk,15
+pip_package_list-0.0.11.dist-info/RECORD,,
