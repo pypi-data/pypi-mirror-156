@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-error-reporter = napari_error_reporter:napari.yaml
