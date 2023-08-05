@@ -1,0 +1,8 @@
+README.md
+setup.py
+preconfig/__init__.py
+preconfig/preconfig.py
+preconfig.egg-info/PKG-INFO
+preconfig.egg-info/SOURCES.txt
+preconfig.egg-info/dependency_links.txt
+preconfig.egg-info/top_level.txt
