@@ -1,0 +1,2 @@
+[console_scripts]
+cli = synthmap.app.cli:cli
