@@ -1,0 +1,8 @@
+setup.py
+nidhi.egg-info/PKG-INFO
+nidhi.egg-info/SOURCES.txt
+nidhi.egg-info/dependency_links.txt
+nidhi.egg-info/entry_points.txt
+nidhi.egg-info/not-zip-safe
+nidhi.egg-info/requires.txt
+nidhi.egg-info/top_level.txt
