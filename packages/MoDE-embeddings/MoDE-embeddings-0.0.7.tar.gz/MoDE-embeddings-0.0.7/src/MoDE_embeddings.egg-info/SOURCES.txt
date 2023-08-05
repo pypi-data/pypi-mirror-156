@@ -1,0 +1,17 @@
+LICENSE
+pyproject.toml
+src/MoDE_embeddings/MoDE.py
+src/MoDE_embeddings/__init__.py
+src/MoDE_embeddings/benchmark_MoDE.py
+src/MoDE_embeddings/metrics.py
+src/MoDE_embeddings/waterfilling_compression.py
+src/MoDE_embeddings.egg-info/PKG-INFO
+src/MoDE_embeddings.egg-info/SOURCES.txt
+src/MoDE_embeddings.egg-info/dependency_links.txt
+src/MoDE_embeddings.egg-info/top_level.txt
+src/MoDE_embeddings/fast_mat_mul/setup.py
+src/MoDE_embeddings/fast_mat_mul/fastgd/__init__.py
+src/MoDE_embeddings_old/MoDE.py
+src/MoDE_embeddings_old/__init__.py
+src/MoDE_embeddings_old/metrics.py
+src/MoDE_embeddings_old/waterfilling_compression.py
