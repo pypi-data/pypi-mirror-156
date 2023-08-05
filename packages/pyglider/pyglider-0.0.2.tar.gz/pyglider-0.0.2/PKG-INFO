@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyglider
+Version: 0.0.2
+Summary: Glider data to netCDF translation in python
+Home-page: https://pyglider.readthedocs.io
+Author: Jody Klymak
+Author-email: jklymak@gmail.com
+License: Apache
+Requires-Python: >=3.6
+Provides-Extra: code_style
+Provides-Extra: testing
+Provides-Extra: docs
+License-File: LICENSE
