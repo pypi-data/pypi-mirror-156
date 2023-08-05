@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+cellshape_voxel/cellshape_voxel.egg-info/PKG-INFO
+cellshape_voxel/cellshape_voxel.egg-info/SOURCES.txt
+cellshape_voxel/cellshape_voxel.egg-info/dependency_links.txt
+cellshape_voxel/cellshape_voxel.egg-info/not-zip-safe
+cellshape_voxel/cellshape_voxel.egg-info/requires.txt
+cellshape_voxel/cellshape_voxel.egg-info/top_level.txt
