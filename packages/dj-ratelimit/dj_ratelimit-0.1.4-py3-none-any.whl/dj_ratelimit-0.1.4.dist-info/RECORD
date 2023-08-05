@@ -1,0 +1,9 @@
+dj_ratelimit/__init__.py,sha256=cxTuO6UN5Zud1nGiiYt7VvN9WQ06G0n3INa-EiDXCW8,153
+dj_ratelimit/tst/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_ratelimit/tst/settings_default.py,sha256=dsJHvlbsF0OQLdAi6WWqZ_5mIYCkUdf5sUzLHdo3yDM,139
+dj_ratelimit/tst/test_ratelimit.py,sha256=KeYh7bbXmKZeuFADwRxYAJUcNWZI_Yjqwstd0sAy5pc,6551
+dj_ratelimit-0.1.4.dist-info/LICENSE,sha256=vcExdlJK1vdlT-Kg8CGrlFQ4uklfHtD0I7w8Yf_a9c8,1052
+dj_ratelimit-0.1.4.dist-info/METADATA,sha256=Z9vd6uPBXKeRQeiKX66RMaWNNNg-Nm1tF9ttkn_OOXo,1013
+dj_ratelimit-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dj_ratelimit-0.1.4.dist-info/top_level.txt,sha256=TmZKrmUGgG83rHVWcM5WwjSXOIVrsLMfM1-R95vjFS0,13
+dj_ratelimit-0.1.4.dist-info/RECORD,,
