@@ -1,0 +1,11 @@
+napari_error_reporter/__init__.py,sha256=PDso7t-9xrjxi_EP4YH3cqC113a5ghMs9tOcnXr_TFc,4418
+napari_error_reporter/_opt_in_widget.py,sha256=Z99tNfr2OynBxoUGlGe4ocq8HdkDCbA_A2-xkJcI_7Y,4345
+napari_error_reporter/_util.py,sha256=xfk8Pk8gKta1TQYzLyGWIRrLIyUnmhIgHOjfqMHUgfA,7945
+napari_error_reporter/_version.py,sha256=56WwOPv-d8e44F7v4kBRqHfVcnK0UZTh2j5uL4kUa3g,142
+napari_error_reporter/napari.yaml,sha256=daMXB_VWxuN4C1k0Kig4HnnJZ0fVgzpS7Iu364hdAnI,64
+napari_error_reporter-0.3.1.dist-info/LICENSE,sha256=5ROkwWmgWgWYR1n7JOpLBcB__r_aiUDT8YpW7kaqOa8,1514
+napari_error_reporter-0.3.1.dist-info/METADATA,sha256=0MJXWpSNrPikntIkXHd_oS44NNt63_d8J9xoVrTVgXs,18387
+napari_error_reporter-0.3.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+napari_error_reporter-0.3.1.dist-info/entry_points.txt,sha256=hW5iG9gdKNVLuAiWm8GEGMO80p7mQZCTF6dhKHwLUr8,76
+napari_error_reporter-0.3.1.dist-info/top_level.txt,sha256=SWZhWQyj3tqs-xLB8G0qOLwPoSJd81eEgocsSsboVPI,22
+napari_error_reporter-0.3.1.dist-info/RECORD,,
