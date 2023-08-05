@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tilelog
+Version: 0.4.0
+Home-page: https://github.com/openstreetmap/tilelog
+Author: Paul Norman
+Author-email: osm@paulnorman.ca
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: ~=3.6
+License-File: LICENSE
+Requires-Dist: Click
+Requires-Dist: pyathena
+
