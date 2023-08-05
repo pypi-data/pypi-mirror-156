@@ -1,0 +1,6 @@
+darker>=1.3.0
+
+[test]
+pytest
+pytest-black
+pytest-isort
