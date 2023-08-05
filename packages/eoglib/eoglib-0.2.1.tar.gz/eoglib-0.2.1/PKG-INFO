@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: eoglib
+Version: 0.2.1
+Summary: Electrooculography (EOG) signals processing package
+Project-URL: Bug Tracker, https://gitlab.com/eyeres/eoglib/-/issues
+Project-URL: Homepage, https://gitlab.com/eyeres/eoglib
+Author-email: Roberto Antonio Becerra García <idertator@gmail.com>
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Electrooculography Processing Library
