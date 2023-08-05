@@ -1,0 +1,13 @@
+deformation/__init__.py,sha256=pXrAHyqv1zEoYIr1qj7O4tNAkCR15FOmkNFmdA1mj1g,2374
+deformation/affine.py,sha256=BWo8O3X7tx_rIars0rOdAH4pN1fyEAwFeDAER2FDXeM,4210
+deformation/base.py,sha256=pW8xO4XXdfJ40rGnoFrcaJIt5-vs87Zp0VxTOkm3R6Y,24459
+deformation/doc.py,sha256=KxkB2wQDfDkd9VJLs2bLu75fy0glWyST7Ryhw3T2dMs,2078
+deformation/perspective.py,sha256=cqM7NF6q3DUGXGkBTg002lzv5bD40lmvcsW8cqIJ4Ek,7493
+deformation/poly.py,sha256=gVuvlseCXC2q_7nMOjZ2ULJozPJjh_rEpj2wdnDZXhA,20509
+deformation/rotation.py,sha256=dMkLRQf1s1NEsFcSvb-4W0x5mYCpcL1JeXx9110-ddo,4174
+deformation/test.py,sha256=9-oLKMS8RO24Cu5jOdD32dAnAIiWVyPG0rPjO2qnqgk,7374
+deformation-1.0.1.dist-info/LICENSE,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+deformation-1.0.1.dist-info/METADATA,sha256=kH2FvLcWxkUEIv-Ge9vXA9Me9VI85guWGlleRN-m-eQ,2271
+deformation-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deformation-1.0.1.dist-info/top_level.txt,sha256=hPCMIeGuZEde94ow0au8xQUziR4K5b3U9FuoVtwkW6s,12
+deformation-1.0.1.dist-info/RECORD,,
