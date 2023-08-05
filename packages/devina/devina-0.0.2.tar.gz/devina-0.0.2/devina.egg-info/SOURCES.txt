@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+devina.egg-info/PKG-INFO
+devina.egg-info/SOURCES.txt
+devina.egg-info/dependency_links.txt
+devina.egg-info/top_level.txt
+devina_functions/__init__.py
