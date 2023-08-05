@@ -1,0 +1,3 @@
+[console_scripts]
+calculate-anls=anls.cli.run:run
+
