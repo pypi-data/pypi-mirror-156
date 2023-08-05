@@ -1,0 +1,11 @@
+dataplate-lab/__init__.py,sha256=KMV0XIkomXuwF1_qzVhIveb--rJOXbb9q2QvwMS4S0U,4896
+dataplate-lab/_version.py,sha256=pXetK2rngmW1_VMJl-T6MNIun5PRWT0HABWkc4WORE8,1299
+dataplate-lab/handlers.py,sha256=hJkgMkESVsIRYwAO1bC_veIoF16e0qbaHgHxyNimXAo,29100
+dataplate_lab-0.1.0.data/data/etc/jupyter/jupyter_notebook_config.d/dataplate-lab.json,sha256=oSGhGOb4oaK4_n7DYJegIRYeuLeUhzsJAGFhVAkF6Yw,90
+dataplate_lab-0.1.0.data/data/etc/jupyter/jupyter_server_config.d/dataplate-lab.json,sha256=7IW80QDBMOz1y6hgGajO4fCRFdTCLbbfFpjd1jHYQ1I,88
+setupbase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataplate_lab-0.1.0.dist-info/LICENSE,sha256=J8U6qNEfmIPKg4dzgQlpeO_JJWneh6T2DNWzmJgZQIs,1517
+dataplate_lab-0.1.0.dist-info/METADATA,sha256=TyEStEC3-3bVLbIBktJcZnCVk0s4LaPBZ1QV4oQDcG0,4809
+dataplate_lab-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dataplate_lab-0.1.0.dist-info/top_level.txt,sha256=esLqoEr_1giyn-5zRg9D2vIG0NN2oHVj7ZTaFU47c2g,24
+dataplate_lab-0.1.0.dist-info/RECORD,,
