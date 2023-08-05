@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "autohooks-plugin-flake8"
+version = "22.6.0"
+description = "An autohooks plugin for python code linting via flake8."
+authors = ["Greenbone Networks GmbH <info@greenbone.net>"]
+license = "AGPL-3.0-or-later"
+packages = [
+  { include = "autohooks" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flake8 = "4.0.1"
+pylint = "2.13.9"
+autohooks = "^21.3.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "4.0.1"
+pylint = "2.13.9"
+autohooks-plugin-black = "^21.12.0"
+pontos = "^22.5.0"
+black = "22.3.0"
+isort = "^5.8.0"
+autohooks-plugin-isort = "^22.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+target-version = ["py37", "py38"]
+exclude = '''
+/(
+    \.git
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.autohooks]
+mode = "poetry"
+pre-commit = [
+  "autohooks.plugins.black",
+  "autohooks.plugins.isort",
+  "autohooks.plugins.flake8",
+]
+
+[tool.pontos.version]
+version-module-file = "autohooks/plugins/flake8/__version__.py"
