@@ -1,0 +1,48 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pin-pink"
+readme = "README.md"
+authors = [
+    {name = "Stéphane Caron", email = "stephane.caron@normalesup.org"},
+]
+maintainers = [
+    {name = "Stéphane Caron", email = "stephane.caron@normalesup.org"},
+]
+dynamic = ['version', 'description']
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "numpy >=1.20.0",
+    "pin >=2.6.3",
+    "qpsolvers >=1.8.0",
+]
+
+[project.optional-dependencies]
+doc = [
+    "sphinx",
+]
+
+[project.urls]
+Documentation = "https://tasts-robots.org/doc/pink/"
+Source = "https://github.com/tasts-robots/pink"
+Tracker = "https://github.com/tasts-robots/pink/issues"
+Changelog = "https://github.com/tasts-robots/pink/blob/master/CHANGELOG.md"
+
+[tool.black]
+line-length = 79
+
+[tool.flit.module]
+name = "pink"
