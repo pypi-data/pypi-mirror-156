@@ -1,0 +1,13 @@
+mara_superset/__init__.py,sha256=_pzTM9S6XFVe-uE6hKW4BGHEO-6RijxF0YnKJ9FkzoE,467
+mara_superset/cli.py,sha256=7ExO0BROfbAMZuScqZVZ6MV5783D6k34fGBNDsRdA0c,168
+mara_superset/client.py,sha256=qXPHExKdDlMHKH5W9R-t8NEVJ5aG2QvOy-Ux-ZORtE4,2251
+mara_superset/config.py,sha256=qo-CqsVf4RUfVVrp6i73t5FfhwrHle8emv96MlU1uqA,1263
+mara_superset/metadata.py,sha256=06kBqLP8w456-xwzt6ry1xa8AAoPG6isfKS28Vz0o1Y,13005
+mara_superset/views.py,sha256=T8_iX141eYsKtQuq-BZywHdADFqWAmoThhxM-JhYQM4,548
+mara_superset/.scripts/README.md,sha256=msZKWTdISRZEVyKppl2USCWTAzGX1PJQEaR9sicf08o,128
+mara_superset/.scripts/superset.mk,sha256=dD3cKBa3YXm4SrxNdN6RPJ-gipzwPaZbmLN0T21dkaA,2034
+mara_superset-1.0.4.dist-info/LICENSE,sha256=KeM9XNGjdgYYC3zRLyrjU8zW3mckxcakWrvMMtFL-4o,1065
+mara_superset-1.0.4.dist-info/METADATA,sha256=qsviQuTiJoy2r3lDMF8Xp9mQDAew2BAfIyJAc0D2p5w,2181
+mara_superset-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mara_superset-1.0.4.dist-info/top_level.txt,sha256=Hh1HV4f7b3-seVJF6Eqy6CtLBEFd02DbgyXMGBbltB4,14
+mara_superset-1.0.4.dist-info/RECORD,,
