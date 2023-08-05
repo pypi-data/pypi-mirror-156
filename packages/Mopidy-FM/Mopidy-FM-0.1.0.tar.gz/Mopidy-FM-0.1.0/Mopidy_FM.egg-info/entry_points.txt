@@ -1,0 +1,2 @@
+[mopidy.ext]
+fm = mopidy_fm:Extension
