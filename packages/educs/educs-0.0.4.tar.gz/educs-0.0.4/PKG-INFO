@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: educs
+Version: 0.0.4
+Summary: A package wrapping pygame functionality in p5.js calling conventions. Used in computer science highschool course
+Home-page: https://github.com/JBas/educs
+License: MIT
+Author: Joshua Bas
+Author-email: joshua.n.bas@gmail.com
+Requires-Python: >=3.8.0,<3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: multipledispatch (>=0.6.0,<0.7.0)
+Requires-Dist: numpy (>=1.22.2,<2.0.0)
+Requires-Dist: pygame (>=2.1.2,<3.0.0)
+Project-URL: Repository, https://github.com/JBas/educs
+Description-Content-Type: text/markdown
+
+# educs - Education in CS
+
+I built this repl for use in my AP Computer Science Principles course. I wanted my students to be able to learn Python and to program graphical applications. Pygame is suitable for beginner graphics projects, but might be overwhelming for some students to learn while also learning Python. educs wraps Pygame and attempts to follow the more intuitive p5js naming conventions.
+
+Hopefully this repl is helpful for other AP CSP teachers or students, or anyone else that might be familiar with p5.js but want to program in Python!

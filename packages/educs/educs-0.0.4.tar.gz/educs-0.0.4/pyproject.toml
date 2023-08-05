@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "educs"
+version = "0.0.4"
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/JBas/educs"
+repository = "https://github.com/JBas/educs"
+description = "A package wrapping pygame functionality in p5.js calling conventions. Used in computer science highschool course"
+authors = ["Joshua Bas <joshua.n.bas@gmail.com>"]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8.0,<3.9"
+pygame = "^2.1.2"
+numpy = "<2.0.0,>=1.22.2"
+multipledispatch = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
