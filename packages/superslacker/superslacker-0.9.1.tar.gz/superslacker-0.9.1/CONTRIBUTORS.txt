@@ -1,0 +1,26 @@
+Contributors
+------------
+
+- Chris McDonough, 2008-09-18
+
+- Tres Seaver, 2009-02-11
+
+- Roger Hoover, 2010-07-30
+
+- Joaquín Cuenca Abela, 2011-06-23
+
+- Harald Friessnegger, 2012-11-01
+
+- Mikhail Lukyanchenko, 2013-12-23
+
+- Patrick Gerken, 2014-01-27
+
+- Sebastian Lara, 2015-10-30
+
+- Roman Zhuzha, 2016-22-09
+
+- Ifiok Idiang, 2018-08-26
+
+- David Guillot, 2019-01-30
+
+- Aleksei Safonov 2020-09-29
