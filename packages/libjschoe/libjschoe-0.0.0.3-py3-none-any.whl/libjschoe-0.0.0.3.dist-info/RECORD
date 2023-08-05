@@ -1,0 +1,9 @@
+libjschoe/3dplot.py,sha256=tH-VRBoB7d3WVT4J2VYZgg2pjeMGDhEYILp0I8mmwXA,457
+libjschoe/__init__.py,sha256=vJDCgNw5GaItmfBmuEIgPg-m7JACeEnVRR_g-U5FeeU,25
+libjschoe/contour.py,sha256=TWx_jgbCDrhX2xDdN8YbXe2XVS8FuCJo5NkoMaUwDPU,2277
+plot/3dplot.py,sha256=tH-VRBoB7d3WVT4J2VYZgg2pjeMGDhEYILp0I8mmwXA,457
+plot/contour.py,sha256=a7W33BoQeCS-7XfG7N49yBhTUMPrxAi8rxRC5g6FQRk,2275
+libjschoe-0.0.0.3.dist-info/METADATA,sha256=9O6UAylDGEKAeMnr0-8xlYxmeLF3um32tFqgFxhy1ss,311
+libjschoe-0.0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+libjschoe-0.0.0.3.dist-info/top_level.txt,sha256=uRqGwr-ZGLsZX21M26uR0qbjGcIHBQuDwx-1FBHK66w,18
+libjschoe-0.0.0.3.dist-info/RECORD,,
