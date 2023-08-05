@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lomino
+Version: 0.0.1
+Summary: Amino library
+Home-page: https://github.com/L0Rd5/lomino
+Author: Lord
+Author-email: lordzero106@gmail.com
+License: MIT
+Download-URL: https://github.com/L0Rd5/lomino/archive/refs/heads/main.zip
+Keywords: amino,python,lomino,python3.x,lord,L0Rd5
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: JSON-minify
+Requires-Dist: setuptools
+Requires-Dist: requests
+
+## installation
+python3 setup.py install
+
+pip3 install -U lomino
+
