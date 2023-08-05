@@ -1,0 +1,9 @@
+ods_tools/OpenExposureData_Spec.csv,sha256=RONDvm3vE3hAhBWOCQr1mWYz_gQUxbm1uhTzU0tsvms,53943
+ods_tools/README.md,sha256=praFs6dg8nTP7ID85VEDNwAnmdSB1tY2lvaLywm_-CE,924
+ods_tools/__init__.py,sha256=NO3XL9qnd-8bY0FE5tMU70tfrusZVrcN8_fjXco5FFU,139
+ods_tools/oed.py,sha256=C7sUYCyLxjxH5qGhkM8b527H6UcPp5te5j3ABYyVUwo,12719
+ods_tools-2.3.0.dist-info/METADATA,sha256=XexcyFoB746SajcVbpaqlsdtdBWosZAPlIkOxVKxU_o,1223
+ods_tools-2.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ods_tools-2.3.0.dist-info/entry_points.txt,sha256=aJMtJliRHyHg3vr8mfxwAUyGQu2cq4LxMVwJAvS9wdI,46
+ods_tools-2.3.0.dist-info/top_level.txt,sha256=YqnaxnZs1MizOdjEuLGg47o5-2UCraFx07wOTY5coeU,10
+ods_tools-2.3.0.dist-info/RECORD,,
