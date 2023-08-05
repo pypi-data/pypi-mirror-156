@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: devina
+Version: 0.0.1
+Summary: A python library that allows you to query various databases related to toxicology and gennomics
+Home-page: UNKNOWN
+Author: Benjamin R. Holmes
+Author-email: benrholmes@outlook.com
+License: MIT
+Keywords: ecotoxicology
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+A python library that allows you to query various databases related to toxicology and gennomics
+
+Change Log
+==========
+
+0.0.1 (21/06/2022)
+------------------
+- First release
+
