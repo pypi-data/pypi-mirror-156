@@ -1,0 +1,13 @@
+pretext/__init__.py,sha256=U0cnyqu2cMjs2FYh_orF_fUAqyug-RoVMzV-lB1Zt7M,875
+pretext/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+pretext/build.py,sha256=iRC9Ow3ONj26OyVymYWSMgUB-894_VtO5xlSBhgJAhc,1773
+pretext/cli.py,sha256=964HmxbDNnE4LBrR35FmuOXUPieXsoU9r2hUGbqas0g,19694
+pretext/generate.py,sha256=c9lgcjPoMLeLezQmUKO8gkPjw1krEMSfPmPE2JY-ddo,8964
+pretext/project.py,sha256=kpltqfauEyDvQafKyvJJL8SLDuJQUaWRPZ3BTowBmdE,20603
+pretext/static/__init__.py,sha256=ukLJyrZ5aiqEUMKQoiVg60iDOrdVNYSKJ_YQYWxrZoQ,722
+pretext/utils.py,sha256=vmpX-lmxq1nshH39XlirNynPyUQVAw5_LjDJaS6xH8Y,13297
+pretextbook-0.7.4a1.dist-info/entry_points.txt,sha256=L-rrQFUIWZhdOdu-XBQ9iuFK3X1cMVOtC-0I7T87II8,44
+pretextbook-0.7.4a1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+pretextbook-0.7.4a1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pretextbook-0.7.4a1.dist-info/METADATA,sha256=rSClb-4ZACZxS6V3dLa0mv71PNm4wvj4bb_1396tjbA,871
+pretextbook-0.7.4a1.dist-info/RECORD,,
