@@ -1,0 +1,12 @@
+vk_url_scraper/__init__.py,sha256=5cwqgMEAWmYADzkXhPJvGNesglgZ_PgAPw3J2Dn7Yls,85
+vk_url_scraper/__main__.py,sha256=D1DmFKBFayoJh06O9p9GRNBh_MNdsQEASw0w9dANHbw,1945
+vk_url_scraper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vk_url_scraper/scraper.py,sha256=jjDLApkEwQDEW3cQIgb3TbG5pgpe67qQ5gIukDSFcr8,13766
+vk_url_scraper/utils.py,sha256=lBVgbZDQMJgQufJQEcNKhV3U8aaOva9UoXHZwREFWb4,1038
+vk_url_scraper/version.py,sha256=jrh9wv4_CjRMX2rAIHDdKG0xVj6nH4PyK70iIZ93OqM,407
+vk_url_scraper-0.3.5.dist-info/LICENSE,sha256=3GSs5Cs0J9qSS_pMqhcBwuXKGH5vJ5oCOqoxOKFtCDA,1076
+vk_url_scraper-0.3.5.dist-info/METADATA,sha256=gDl3zJSOcgAkxralhwCMsSt57nalyDoL8BStyQ9lhJk,6017
+vk_url_scraper-0.3.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vk_url_scraper-0.3.5.dist-info/entry_points.txt,sha256=TOhSFzESmKLmgWHBKLHgP35QC4L_rJLlIJP_NMGe6Qw,64
+vk_url_scraper-0.3.5.dist-info/top_level.txt,sha256=nzqz1R4fRzVc0avyOsTEvSQrxBra2hXehNah9jfVvI4,15
+vk_url_scraper-0.3.5.dist-info/RECORD,,
