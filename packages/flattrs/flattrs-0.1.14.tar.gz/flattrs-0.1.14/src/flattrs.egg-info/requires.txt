@@ -1,0 +1,9 @@
+attrs
+flatbuffers==1.9
+numpy
+
+[dev]
+pytest
+hypothesis
+cython
+coverage
