@@ -1,0 +1,8 @@
+README.md
+setup.py
+lightningdata/__init__.py
+lightningdata_modules.egg-info/PKG-INFO
+lightningdata_modules.egg-info/SOURCES.txt
+lightningdata_modules.egg-info/dependency_links.txt
+lightningdata_modules.egg-info/requires.txt
+lightningdata_modules.egg-info/top_level.txt
