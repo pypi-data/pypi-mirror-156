@@ -1,0 +1,16 @@
+numpy
+platformdirs>=2.2.0
+pytools>=2021.2.7
+
+[:python_version < "3.7"]
+dataclasses
+
+[oclgrind]
+oclgrind_binary_distribution>=18.3
+
+[pocl]
+pocl_binary_distribution>=1.2
+
+[test]
+Mako
+pytest>=7.0.0
