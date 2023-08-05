@@ -1,0 +1,33 @@
+<h1>PyGame Video Injection</h1>
+<h2>You are probably looking on how to make it so you can easily 
+play videos inside of your pygame project without facing any huge troubles
+and reinstalling old pygame versions. So here is a great solution for you!
+only compatable with mp4 files</h2>
+<h2>Now, you can easily create a 'video surface' and simply blit it onto your screen</h2>
+<pre>from video_pygame.video import VideoSurface</pre>
+<pre>vs = VideoSurface(
+    video_path='example.mp4',
+    position=pygame.Vector2(0, 0,),
+    size=(1000, 500)
+)</pre>
+<h2>You can move it by changing it's position parameter - vs.position.x = 123</h2>
+<h2>You can check if it is playing or not by checking vs.playing</h2>
+<h2>and to get current frame, just call the object it self - vs()<h2>
+<h2>here are some function the library also has</h2>
+<pre>VideoSurface().play() -> None: start playing video (audio included)
+VideoSurface().stop() -> None: stop playing video and reset frame to zero (audio included)
+VideoSurface().get_position() -> list: get current position of the video surface</pre>
+<h2>Here is some deeper explanation you dont really have to know</h2>
+<h4>So there is a data folder in the library, when you create a new video surface object
+it should create a folder inside of this data called what your .mp4 file is named, if it already
+exists we just leave it as it is. Next we add all of the frames of the video as .jpg files into this new
+folder, if it was done before already we just leave it as it is again. And last but not least we check if 
+the final result is corrupted, what that means is if all of the frames are in place. If the video has
+730 frames, then you can only finish vs' initialization when there is a 'frame730.jpg' file in the folder, if there is not
+then we clear all of the files currently being there and start initialization all over again and repeat the proccess
+of creating .jpg files. So thats why it might take some time when creating a new vs object for the first time, but after
+it has initialized for once, its going to be Way more faster next time you run your code. I am not going to explain how
+video is being synced with its sound, which is stored as a .wav and converted to pygame.mixer.Sound object, and
+everything i said is pretty much everything you have to know, though you can also go through the code - i left some notes there
+but not much really</h4>
+<h1>Thank you for choosing PyGame Video Injection :))</h1>
