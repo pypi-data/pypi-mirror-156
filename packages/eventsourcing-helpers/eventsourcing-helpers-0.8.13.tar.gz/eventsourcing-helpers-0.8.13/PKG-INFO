@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: eventsourcing-helpers
+Version: 0.8.13
+Summary: Helpers for practicing the Event sourcing pattern
+Home-page: https://github.com/fyndiq/eventsourcing_helpers
+Author: Fyndiq AB
+Author-email: support@fyndiq.com
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: mongo
+Provides-Extra: redis
+Provides-Extra: cnamedtuple
+
+UNKNOWN
+
