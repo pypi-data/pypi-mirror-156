@@ -1,0 +1,8 @@
+poetry_demo_thomas_cleary/__init__.py,sha256=Q7Vp-7OlpP_OP4he0Ep2SDby5tTNYJQEandNiBXKR-E,49
+poetry_demo_thomas_cleary/cli.py,sha256=oPDtQEflsObP7OWaPLykT28cW5k7QKrTfOUojBPb65I,449
+poetry_demo_thomas_cleary/data/data.txt,sha256=HAU4NrrtYpkSRHzNyA90HmMJm4aB8prnT9SID120Gio,35
+poetry_demo_thomas_cleary/example_functions.py,sha256=9-yhfrAJUqhTL8wWa3wVWanBJ5fG2YX6ALlpNGZWwks,397
+poetry_demo_thomas_cleary-0.5.3.dist-info/entry_points.txt,sha256=xUXHjtY3cA67ZERpDXoPMjA1tLLVbPTUF4t59_e3EXs,65
+poetry_demo_thomas_cleary-0.5.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+poetry_demo_thomas_cleary-0.5.3.dist-info/METADATA,sha256=lWYOCg-ROoqAWkqlP_9KK9z3-2R3dbotyleTRvlIz1M,549
+poetry_demo_thomas_cleary-0.5.3.dist-info/RECORD,,
