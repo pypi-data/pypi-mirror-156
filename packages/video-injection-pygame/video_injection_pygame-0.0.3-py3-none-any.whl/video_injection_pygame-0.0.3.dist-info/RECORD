@@ -1,0 +1,9 @@
+video_pygame/__init__.py,sha256=VAYVLSSP6eWWmYH1Bi0bcgFOtwFv_eZbyit9lK11fJU,47
+video_pygame/data_control.py,sha256=3379U4j4yqf6wf62TBDvHmcvOjEeQAAFxcz0GrMBPXI,1314
+video_pygame/main.py,sha256=Pvf_U4gfahypA2pb1JQvmP0OYAVICK6n9vuFvJVks9M,1184
+video_pygame/video.py,sha256=1Et-qSZ9gtYrob4xHLORArcoSw-O3oQIFeZdPezB9t8,5574
+video_injection_pygame-0.0.3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+video_injection_pygame-0.0.3.dist-info/METADATA,sha256=iw2OIxvrcNMWBo74GRngFrqf9R61QyLT8k0s3_PQ0ZQ,2993
+video_injection_pygame-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+video_injection_pygame-0.0.3.dist-info/top_level.txt,sha256=uIBze6cNGmaAcn_Fwf5ZVjEI1LP8SZAB7EUG3RkwHjw,13
+video_injection_pygame-0.0.3.dist-info/RECORD,,
