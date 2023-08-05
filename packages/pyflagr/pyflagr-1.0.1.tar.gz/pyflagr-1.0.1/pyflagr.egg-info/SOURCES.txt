@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+pyflagr.egg-info/PKG-INFO
+pyflagr.egg-info/SOURCES.txt
+pyflagr.egg-info/dependency_links.txt
+pyflagr.egg-info/requires.txt
+pyflagr.egg-info/top_level.txt
+src/Comb.py
+src/Majoritarian.py
+src/MarkovChains.py
+src/RAM.py
+src/Weighted.py
+src/__init__.py
+src/flagr.dll
+src/flagr.so
+src/test_local.py
