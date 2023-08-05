@@ -1,0 +1,5 @@
+---
+features:
+  - |
+    Add the **build-info** subcommand, allowing a user to fetch the details of
+    a given build by its UUID.

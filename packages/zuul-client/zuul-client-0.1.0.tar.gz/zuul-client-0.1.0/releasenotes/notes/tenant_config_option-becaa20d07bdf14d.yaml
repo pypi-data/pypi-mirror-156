@@ -1,0 +1,5 @@
+---
+features:
+  - |
+    Add a "tenant" field in the configuration file, so that a user doesn't have
+    to specify this argument in the CLI when using a predefined configuration.

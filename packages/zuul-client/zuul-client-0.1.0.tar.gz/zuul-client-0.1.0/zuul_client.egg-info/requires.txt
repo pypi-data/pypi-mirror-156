@@ -1,0 +1,7 @@
+PrettyTable
+pbr>=1.1.0
+python-dateutil>=2.7.0
+pyyaml
+requests
+setuptools
+urllib3!=1.25.4,!=1.25.5
