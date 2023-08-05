@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: todo-extract
+Version: 0.2.1
+Summary: Extract TODO items from the text file
+License: MIT
+Author: Krystian Safjan
+Author-email: ksafjan@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9

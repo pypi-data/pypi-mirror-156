@@ -1,0 +1,9 @@
+todo_extract/__init__.py,sha256=ORU5tv3KD_ieH2fsxGtbReiNP5frKBFcDUZiK1Fp8Js,112
+todo_extract/__main__.py,sha256=I7ZdYkfJF5mlJ2yI83osyMnVIImFXo70kKftYr9AKdA,63
+todo_extract/main.py,sha256=7cP0zRSfGlhDPURwipjYd9FnGYtdV70p0WZGtKjVukU,827
+todo_extract/todo_extract.py,sha256=hEWs1Yx8SQLZvNSMQNEKRURsNGCWiPBs4H3fb59aOZY,4463
+todo_extract/version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+todo_extract-0.2.1.dist-info/LICENSE,sha256=T-kBtUTgPk6GpFZ4y1Zew4xAugQvYzTSHFV5YvxpG1k,1072
+todo_extract-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+todo_extract-0.2.1.dist-info/METADATA,sha256=824t2iLHLtt5zWoaq0jUddK1hLJpHc9qHAtKrhNRMco,550
+todo_extract-0.2.1.dist-info/RECORD,,
