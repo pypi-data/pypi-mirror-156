@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pypi-resolver
+Version: 0.0.1
+Summary: Fasten Dependency Resolver for PyPI packages
+Author: Vitalis Salis, Giorgos Drosos
+Author-email: vitsalis@gmail.com, t8180024@aueb.gr
+License: Apache Software License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
