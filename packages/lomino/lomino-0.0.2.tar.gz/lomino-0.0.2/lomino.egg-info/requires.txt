@@ -1,0 +1,3 @@
+JSON_minify
+setuptools
+requests
