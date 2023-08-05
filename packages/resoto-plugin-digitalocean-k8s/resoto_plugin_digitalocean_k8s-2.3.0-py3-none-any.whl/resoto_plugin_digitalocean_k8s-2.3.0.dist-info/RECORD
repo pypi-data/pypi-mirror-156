@@ -1,0 +1,8 @@
+resoto_plugin_digitalocean_k8s/__init__.py,sha256=3-hg5e0rdrnBiICGOtc-PNQYpU7gTeddovHo4oEAYfA,2285
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_collector.py,sha256=VwlCoWtsL-9ipkueguOH3kbWBO93MeH99Q-GCFSoaZw,653
+resoto_plugin_digitalocean_k8s-2.3.0.dist-info/METADATA,sha256=YDYR2uZ0eLbKHi-VWhlWCt498QicIYvCHLSuxMdpVPw,874
+resoto_plugin_digitalocean_k8s-2.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+resoto_plugin_digitalocean_k8s-2.3.0.dist-info/entry_points.txt,sha256=MtLK9EtQfiB_CRdLUI8pWKUILHkbGLu_O4_RDIpQU1E,108
+resoto_plugin_digitalocean_k8s-2.3.0.dist-info/top_level.txt,sha256=OuAJZrpL_DpLqoBW9z1Kq0T_C0G1ollf0cs_YMNu1pM,36
+resoto_plugin_digitalocean_k8s-2.3.0.dist-info/RECORD,,
