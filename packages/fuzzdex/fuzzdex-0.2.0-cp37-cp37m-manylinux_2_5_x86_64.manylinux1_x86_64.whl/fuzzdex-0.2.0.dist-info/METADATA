@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: fuzzdex
+Version: 0.2.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Author: Tomasz bla Fortuna <bla@thera.be>
+Author-email: Tomasz bla Fortuna <bla@thera.be>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# FuzzDex
+
+Fuzzy Index for Python, written in Rust. Works like an error-tolerant dict,
+keyed by a human input.
+
+## Usecases
+
+I use it for matching parts of user supplied physical addresses to data
+extracted from OSM map to find streets and cities. Original solution used
+Elasticsearch database with a fuzzy query, which worked - but was 21x slower.
+
