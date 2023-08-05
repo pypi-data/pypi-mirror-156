@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pydeen
+Version: 0.1.0
+Summary: Python Data Engineer Enterprise Notebook
+Author: MDJoerg (Joerg Mueller)
+Author-email: <mdjoerg@joomp.de
+License: UNKNOWN
+Keywords: python,data,data science,enterprise,analysis,toolbox,notebook
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# PYDEEN
+
+
+
+Python Data Engineer Enterprise Notebook
+
+
+
+(work in progress)
+
