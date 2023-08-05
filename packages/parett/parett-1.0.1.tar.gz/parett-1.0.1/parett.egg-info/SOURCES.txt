@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+parett.egg-info/PKG-INFO
+parett.egg-info/SOURCES.txt
+parett.egg-info/dependency_links.txt
+parett.egg-info/requires.txt
+parett.egg-info/top_level.txt

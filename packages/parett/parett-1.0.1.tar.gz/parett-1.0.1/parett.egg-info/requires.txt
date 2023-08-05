@@ -1,0 +1,5 @@
+pandas
+splinter
+numpy
+Bio
+selenium
