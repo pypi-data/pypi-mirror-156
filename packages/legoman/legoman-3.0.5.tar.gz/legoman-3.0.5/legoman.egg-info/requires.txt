@@ -1,0 +1,9 @@
+click
+colorama
+ghp-import
+httpwatcher
+jinja2
+markdown
+markdown_captions
+mdx_include
+python-markdown-math
