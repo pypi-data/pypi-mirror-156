@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: apclib
+Version: 0.0.3
+Summary: apc modules for design and simulation
+Project-URL: Bug Tracker, https://github.com/MarnusOlivier/apcsim
+Project-URL: Homepage, https://github.com/MarnusOlivier/apcsim
+Author-email: Marnus Olivier <mo@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Description-Content-Type: text/markdown
+
+# apcsim
+apc simulation setup

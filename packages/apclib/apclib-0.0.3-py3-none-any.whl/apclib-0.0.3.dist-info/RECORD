@@ -1,0 +1,13 @@
+apclib/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+apclib/controllers.py,sha256=ulgkTy7oWV9VejxJR3KcacqQm32RsJDzzH4uDVZ7x2Q,7725
+apclib/datagen.py,sha256=1HD2VKD2hI3QZzN0-pWnioNKX8l6edFgQOl9p02C2hE,946
+apclib/io.py,sha256=-vL0h1IspaUCGJQbO68o6HnZNLA_UXJX5jkmuh9FsX4,953
+apclib/models.py,sha256=A7etwUCxjYCUNFA8ya0wJI-SPSZp2wDJJRVVCw83Rqg,3518
+apclib/plotting.py,sha256=HzO5L2DFeFbmpb9xAYPl989ALDLjyZfSsE3aOqjvh4U,11180
+apclib/signalprocessing.py,sha256=0Iuc1Nmb_auc_SQhwCC60AxwrKVDIRznu0SVtLGmBd8,5203
+apclib/systemid.py,sha256=SWteg1yqhetlYXh1HkNEjARC9s0ONZPtQ_tByuBA-MY,8513
+apclib-0.0.3.dist-info/METADATA,sha256=awBXHDqyetEw9xXN3hz1bw8BinWJQtgxtqnvvDf86F4,623
+apclib-0.0.3.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+apclib-0.0.3.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apclib-0.0.3.dist-info/license_files/LICENSE,sha256=SbqNm4gZM6Ncun51KhtSxt4EQyciW4xfkvRcMLb5N0c,1092
+apclib-0.0.3.dist-info/RECORD,,
