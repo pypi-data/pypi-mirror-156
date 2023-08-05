@@ -1,0 +1,8 @@
+pbarticles/__init__.py,sha256=upfkadxovJANm_KRV4fIeWGIN7z5VgCMy12GMHwtMC8,73
+pbarticles/__main__.py,sha256=3indFUpVhswD16dDk1KSe8RT0V4ibyjKorCbnPOqA34,1522
+pbarticles/article_parser.py,sha256=RemRHfZnuO22pe1g2GKZhvMjA0cIQg3E_P3CF8lBhSA,908
+pbarticles/downloader.py,sha256=22pboPP15vRrNECVS9Vn-hZoK4f2lTgvobGE2WPLJUM,1330
+pbarticles/pdf.py,sha256=9N0TJVyw8JufgU2TciAN2M9NCCg0LTfoEFWTCIiYf6U,2824
+pbarticles-0.1.dist-info/WHEEL,sha256=3tm2ZG-oRLlcavA1Wig9g4cIO0hV_ajg2xEhQivkwx4,99
+pbarticles-0.1.dist-info/METADATA,sha256=hfSbGCh30jnDElSozqbVOuVVkRbZ2P2Y7udMUD02TZQ,211
+pbarticles-0.1.dist-info/RECORD,,

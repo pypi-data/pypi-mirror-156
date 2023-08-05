@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pbarticles
+Version: 0.1
+Summary: A package to make a PDF from Pybites articles
+Author-email: Bob Belderbos <bob@pybit.es>
+Project-URL: Home, https://github.com/bbelderbos/pb_articles
