@@ -1,0 +1,9 @@
+numpy
+pandas
+importlib_resources
+re
+nltk
+nltk.corpus
+matplotlib.pyplot
+wordcloud
+PIL
