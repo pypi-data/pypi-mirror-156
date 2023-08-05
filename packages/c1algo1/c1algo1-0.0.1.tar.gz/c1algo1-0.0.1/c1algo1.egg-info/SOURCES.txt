@@ -1,0 +1,13 @@
+LICENSE.TXT
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+c1algo1/__init__.py
+c1algo1/scheduler.py
+c1algo1/scheduler_tools.py
+c1algo1.egg-info/PKG-INFO
+c1algo1.egg-info/SOURCES.txt
+c1algo1.egg-info/dependency_links.txt
+c1algo1.egg-info/requires.txt
+c1algo1.egg-info/top_level.txt

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: c1algo1
+Version: 0.0.1
+Summary: scheduler algo
+Home-page: https://github.com/seng499-company1/algorithm-1
+Author: SENG499 Company 1 - Algo 1
+Author-email: SENG499 Company 1 <benjaminaustin@uvic.ca>
+License: MIT
+Project-URL: Homepage, https://github.com/seng499-company1/algorithm-1
+Project-URL: Bug Tracker, https://github.com/seng499-company1/algorithm-1/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.TXT
+
+# algorithm-1
+
+Branch and bound demo: Run test_assign_professors... whatever its called.
+
+Pass in a year to generate_schedule to use historical data (WARNING: will run for 24 hours and eat all your memory before crashing)
+
+Output is the tree structure with each path to a leaf being an optimal solution.
+
+Number of solutions returned can be changed using the solution_limit variable, currently 10.
