@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: trade-utils
+Version: 0.0.1
+Summary: Small package for algo trading
+Home-page: https://github.com/darnes/algo
+Author: darnes
+Author-email: darnesmeister@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# algo
+Set of tools for algorithmic trading
+
+# Building
+```python -m build```
+
+build on local
+``` obsoleting it now :) python -m build -o ../algo-release ```
+
+Libs are in dist
+
+TODO: 
+ * make the config lazy, so user can access constants without config 
+  Constants should be available are:
+   * list of instruments
+   * list of currently implemented strategies
