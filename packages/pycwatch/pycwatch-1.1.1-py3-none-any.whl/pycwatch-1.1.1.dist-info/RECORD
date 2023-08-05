@@ -1,0 +1,10 @@
+pycwatch/__init__.py,sha256=-x6Ay0J6_FYQ7HB8Hs6aqBxH0v1ZcL2A6cBZ3MKNCTk,61
+pycwatch/client.py,sha256=jF34z7wsWQSAfjqf9h5Y7JyVgUqzqxkh8MCug_OSuCw,6629
+pycwatch/config.py,sha256=wBxoyZESBOTuJwgAI_mi3oO5YMpmmOcGPHNd-2ZOxR8,156
+pycwatch/endpoints.py,sha256=DxDVxGz6TcejSdclMq3CucabWPyfOaV5KbrLErwBPuQ,987
+pycwatch/models.py,sha256=XvsEk5xZJbJsg_zuxvXF-R2zkm0BMa4tlDRVXKyLqr8,6849
+pycwatch/utils.py,sha256=mcnizVqeuRsk_N45Vxm5qDesZUdWt8Vp4WjYm9hq93E,1455
+pycwatch-1.1.1.dist-info/LICENSE,sha256=kIcJrSoo23CZkByuuu12DfS8yhpxS87CQqzmKfAPg20,1050
+pycwatch-1.1.1.dist-info/WHEEL,sha256=FWzWAvOOsDP6aqtZj_z3pIhVEk8S9F03Xwafa0tLqIY,90
+pycwatch-1.1.1.dist-info/METADATA,sha256=L2tnt8FaD2TzVlDHdbgJxAQQM0jKPCQXl2RaPWWyeTk,2835
+pycwatch-1.1.1.dist-info/RECORD,,
