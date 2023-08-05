@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+Optim-meth-anar/All.py
+Optim-meth-anar/__init__.py
+Optim_meth_anar.egg-info/PKG-INFO
+Optim_meth_anar.egg-info/SOURCES.txt
+Optim_meth_anar.egg-info/dependency_links.txt
+Optim_meth_anar.egg-info/not-zip-safe
+Optim_meth_anar.egg-info/top_level.txt
