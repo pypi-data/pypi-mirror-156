@@ -1,0 +1,17 @@
+irisml/tasks/evaluate_accuracy.py,sha256=T7BOcxtM9JWqZSCoMHEBFmGGmPpBgq3jS-FHMcjPAx8,1311
+irisml/tasks/export_onnx.py,sha256=jPLKvEEh890ZU4cxkvh5nRwjBOy10cNAPugUpUWsi68,722
+irisml/tasks/predict.py,sha256=8lQUtgTFMhkOMLqVSqhc2Q8eNdCYNr4zdPDIo7IHVQo,2005
+irisml/tasks/train/__init__.py,sha256=w8B6R6HQJFwmfGgdbb4KUKX6_g50cKEaynUOrEK5FGw,44
+irisml/tasks/train/build_dataloader.py,sha256=lwWUQPq4QZo8C6uCabzqWhf5zHyrD4xXpdBsSw6CqZc,843
+irisml/tasks/train/build_lr_scheduler.py,sha256=c6W0l9EuvMvpKY2Qn6Ul5VmYA2H-_MNybCI6rDbix4Y,581
+irisml/tasks/train/build_optimizer.py,sha256=30NH9TvaQ4Tw6lhJbSc2NZDIPnI1cIAyOS6Y7raneoI,660
+irisml/tasks/train/plugin_list.py,sha256=kZPBz90lKXT-9DQg_BnaFENDHsPEl7JLCCxBb_uqIMo,2649
+irisml/tasks/train/task.py,sha256=i9atfA_cFI2TlWTezRWA0uyBuDOZbSLaRqkMvsMol_k,3382
+irisml/tasks/train/trainer.py,sha256=9dA07_Hn2dCMkJn2n5wVCsfbApDY-d3jlRUMIMZyyLE,3916
+irisml/tasks/train/plugins/log_summary.py,sha256=99i4qATz9otXTH3X40mU4JS7htcEooJ4iSnvbuJaZ7E,1306
+irisml/tasks/train/plugins/plugin_base.py,sha256=_BQqhp61ffIWPRRPIiCsJfD50ai6PxDVa7QGhrbYmaM,879
+irisml/tasks/train/plugins/progressbar.py,sha256=AqC15eJI6954bV-MwZPSiSjSzXJ8ITjBrF83irlEJHw,1645
+irisml_tasks_training-0.0.1.dist-info/METADATA,sha256=kUdQq_B4fpsf-Lavx9w2VGEvCovDm02j_ABTzQ3D3jQ,878
+irisml_tasks_training-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+irisml_tasks_training-0.0.1.dist-info/top_level.txt,sha256=-O6mZvBaJ0q2Xuea9BVCfU8n5tO5UO5aLoPn_Eos3Ao,7
+irisml_tasks_training-0.0.1.dist-info/RECORD,,
