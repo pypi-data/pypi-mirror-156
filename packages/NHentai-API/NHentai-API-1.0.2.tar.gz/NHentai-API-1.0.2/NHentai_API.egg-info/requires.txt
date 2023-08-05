@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+aiohttp
+expiringdict
+google-cloud-pubsub
+google-auth
