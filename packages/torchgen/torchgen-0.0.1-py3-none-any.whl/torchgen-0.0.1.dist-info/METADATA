@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: torchgen
+Version: 0.0.1
+Summary: Ready to use implementations of state-of-the-art generative models in PyTorch
+Home-page: https://github.com/mbarbetti/torchgen
+Author: Matteo Barbetti
+Author-email: matteo.barbetti@fi.infn.it
+Maintainer: Matteo Barbetti
+Maintainer-email: matteo.barbetti@fi.infn.it
+License: MIT
+Keywords: machine-learning,deep-learning,pytorch,generative-models,gan
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+  <img alt="torchgen logo" src="https://raw.githubusercontent.com/mbarbetti/torchgen/main/.github/images/torchgen-logo.png" width="400"/>
+</div>
+
+<h3 align="center">
+  <em>Ready to use implementations of state-of-the-art generative models in PyTorch</em>
+</h3>
+
+<p align="center">
+  <a href="https://pypi.python.org/pypi/torchgen/"><img alt="PyPI - Python versions" src="https://img.shields.io/pypi/pyversions/torchgen"></a>
+  <a href="https://pypi.python.org/pypi/torchgen/"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/torchgen"></a>
+  <a href="https://pypi.python.org/pypi/torchgen/"><img alt="PyPI - Status" src="https://img.shields.io/pypi/status/torchgen"></a>
+  <a href="https://pypi.python.org/pypi/torchgen/"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/torchgen"></a>
+  <!--
+  <a href="https://github.com/mbarbetti/torchgen/issues"><img alt="GitHub - Issues" src="https://img.shields.io/github/issues/mbarbetti/torchgen"></a>
+  <a href="https://github.com/mbarbetti/torchgen/pulls"><img alt="GitHub - Pull-requests" src="https://img.shields.io/github/issues-pr/mbarbetti/torchgen"></a>
+  -->
+  <a href="https://github.com/mbarbetti/torchgen/network/members"><img alt="GitHub - Forks" src="https://badgen.net/github/forks/mbarbetti/torchgen"></a>
+  <a href="https://github.com/mbarbetti/torchgen/stargazers/"><img alt="GitHub - Stars" src="https://img.shields.io/github/stars/mbarbetti/torchgen"></a>
+  <a href="https://zenodo.org/badge/latestdoi/506190348"><img alt="DOI" src="https://zenodo.org/badge/506190348.svg"></a>
+</p>
+
+
