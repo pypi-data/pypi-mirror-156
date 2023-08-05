@@ -1,0 +1,14 @@
+sentenceLabel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentenceLabel/sentenceLabel.py,sha256=3zI92SRxysWsKjUwR8Vj8AFm53lyoHEyH4PLZMTh9EY,17562
+sentenceLabelLib/LeftRightLabel.py,sha256=a6aZq_zC9aG2F-Jr9rYITlhsiw9a50Ys7_kgjizGVEU,1661
+sentenceLabelLib/MainPanel.py,sha256=xnkIkjAKJ8cVwflTEVhtUZ470NOZ73KlXUI9rI-9Dxk,2230
+sentenceLabelLib/ScrollPanel.py,sha256=bMqOgrXaObDp0vfoA1paokE4SL6TJflJxHwXOhhKvdI,4375
+sentenceLabelLib/__init__.py,sha256=PN8WUT6iuwlGcnEZHSbEIojE9N-az6A3WP8bTZ_f5ek,76
+sentenceLabelLib/resources.py,sha256=aftru_92Ux1gzXDdJDsBlMpZODSelCXLgyg3HNTVeEo,2214744
+sentenceLabelLib/utils.py,sha256=el97_Pw1F1_l7FQQoHJcn9vry-vTGxfS6rQUPO3xM3s,4370
+sentenceLabel-1.0.3.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+sentenceLabel-1.0.3.dist-info/METADATA,sha256=enmetOKNOXla53p0OxR43ex0R7YJ-PdSCf3WBll_Whc,957
+sentenceLabel-1.0.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+sentenceLabel-1.0.3.dist-info/entry_points.txt,sha256=640HMO8M18BQ4PMUEHxKRlpqMhgk1PreLOWLGRvlHRA,68
+sentenceLabel-1.0.3.dist-info/top_level.txt,sha256=PNDvxCgFqaZ1nbIhINqeVuk_sv9qVGgCj1E0KB6OXIQ,31
+sentenceLabel-1.0.3.dist-info/RECORD,,
