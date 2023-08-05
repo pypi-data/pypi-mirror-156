@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/events/__init__.py
+src/events/base_listener.py
+src/events/base_publisher.py
+src/events/subjects.py
+src/theartisans_shared_python.egg-info/PKG-INFO
+src/theartisans_shared_python.egg-info/SOURCES.txt
+src/theartisans_shared_python.egg-info/dependency_links.txt
+src/theartisans_shared_python.egg-info/top_level.txt
