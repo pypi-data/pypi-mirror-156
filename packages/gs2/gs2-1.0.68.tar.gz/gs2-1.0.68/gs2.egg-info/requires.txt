@@ -1,0 +1,4 @@
+websocket_client>=0.59.0
+pycrypto>=2.6.1
+simplejson>=3.17.2
+requests>=2.25.1
