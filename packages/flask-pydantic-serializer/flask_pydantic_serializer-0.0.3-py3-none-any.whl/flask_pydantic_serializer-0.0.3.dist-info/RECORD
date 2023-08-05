@@ -1,0 +1,12 @@
+pydantic_serializer/__init__.py,sha256=SyKTnfdvVtyij0PF-mLQSUovxTI1wt-CyDmiI3Evm6w,229
+pydantic_serializer/encoders.py,sha256=AtmrLsTy-BoquSvO_U9hEaHQvLnHcV6FCbKVAEPX_3c,5474
+pydantic_serializer/main.py,sha256=BRLpEAzacL1SAlmVfm7WNZ-_KOFY0-u-zI6k8N-t1O0,2025
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/create_test_db.py,sha256=xXabKtdgTJnYy_o3T_ubzVR2qtWS-PfvC1aKUwk28Rc,626
+tests/test_json_encoder.py,sha256=N09ZU62Mddg5VzbRzLtwPFELzR_WZnH73kHoJuwB-hc,4549
+tests/test_main.py,sha256=DT2ceESKm3Nt0gNICeu7rKbkRsqAcaBO49rl2Mb_GGA,2632
+flask_pydantic_serializer-0.0.3.dist-info/LICENSE,sha256=Tc6oLLlr50nhjO6ogNe6u3HQjP_BP3Vwjh7hvOTuDwk,1070
+flask_pydantic_serializer-0.0.3.dist-info/METADATA,sha256=CR96CiU2DfjdmmxoR7jA9FsRqvop2udn4wln8ykLE9E,4169
+flask_pydantic_serializer-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flask_pydantic_serializer-0.0.3.dist-info/top_level.txt,sha256=sYxpY9lVOgrSZ6u7lXdj1UK41RB94jlg5Q5xLWH19Lo,26
+flask_pydantic_serializer-0.0.3.dist-info/RECORD,,
