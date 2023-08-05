@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "apclib"
+version = "0.0.4"
+authors = [
+  { name="Marnus Olivier", email="mo@gmail.com" },
+]
+description = "apc modules for design and simulation"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'matplotlib','numpy','pandas','scipy','seaborn',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/MarnusOlivier/apcsim"
+"Bug Tracker" = "https://github.com/MarnusOlivier/apcsim"
