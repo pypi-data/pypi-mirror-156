@@ -1,0 +1,4 @@
+jsonpickle
+numba
+scipy
+h5py

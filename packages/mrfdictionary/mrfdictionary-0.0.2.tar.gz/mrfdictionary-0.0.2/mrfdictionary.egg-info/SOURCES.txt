@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+mrfdictionary/__init__.py
+mrfdictionary/dictionary.py
+mrfdictionary/sequence.py
+mrfdictionary/simulation.py
+mrfdictionary.egg-info/PKG-INFO
+mrfdictionary.egg-info/SOURCES.txt
+mrfdictionary.egg-info/dependency_links.txt
+mrfdictionary.egg-info/requires.txt
+mrfdictionary.egg-info/top_level.txt
