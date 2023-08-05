@@ -1,0 +1,8 @@
+xmltodict
+pytest
+requests
+geojson
+pydantic
+census
+numpy==1.19.3
+pandas
