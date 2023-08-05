@@ -1,0 +1,12 @@
+bulk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bulk/__main__.py,sha256=I5ju5_TgYQ0qW7xmKjPeJEnS0lRozBtU1W0m2XDjvJY,937
+bulk/text.py,sha256=b62e9_L4GgWwhlhTi7tVoBkFYG8ZQR6u7eOtF2CiJgg,2657
+bulk/utils.py,sha256=sgL0Az_SMGugKVuaq1n8uoi1N3Gt9jMa4ZhonzFMY68,1458
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_base_ui.py,sha256=Va0FbIr59pfJdsvb9ZPIZVBdXsMnmBN8l2flL-q3uOE,356
+bulk-0.0.4.dist-info/LICENSE,sha256=I-h54hQhK7CZRPQ8cqSpH3-O-U2vRPlazp6JXdV-VGA,1077
+bulk-0.0.4.dist-info/METADATA,sha256=gzUUGMT5Hs-hLiNft5aBz68v92n-jWNImzNwQe-o9hA,304
+bulk-0.0.4.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+bulk-0.0.4.dist-info/entry_points.txt,sha256=lxVz415pOSrLI-jr8zfWfzJsjPSX6qXoriP4KoeDHHw,44
+bulk-0.0.4.dist-info/top_level.txt,sha256=GDabd4iYxsNE_lcvoaLtH7_MNJ5KoR-RrEh9Cpbh7Dc,11
+bulk-0.0.4.dist-info/RECORD,,
