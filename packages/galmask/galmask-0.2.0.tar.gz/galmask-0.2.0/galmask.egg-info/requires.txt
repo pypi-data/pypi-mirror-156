@@ -1,0 +1,6 @@
+numpy>=1.18
+astropy>=5.0
+photutils>=1.4.0
+scikit-image>=0.15.0
+opencv-python<4.5.5.62,>=4.5.4.0
+scipy>=1.6.0

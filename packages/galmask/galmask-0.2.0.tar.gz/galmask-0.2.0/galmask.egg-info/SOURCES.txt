@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+galmask/__init__.py
+galmask/galmask.py
+galmask/utils.py
+galmask.egg-info/PKG-INFO
+galmask.egg-info/SOURCES.txt
+galmask.egg-info/dependency_links.txt
+galmask.egg-info/requires.txt
+galmask.egg-info/top_level.txt
+tests/__init__.py
+tests/test_galmask.py
+tests/test_utils.py
