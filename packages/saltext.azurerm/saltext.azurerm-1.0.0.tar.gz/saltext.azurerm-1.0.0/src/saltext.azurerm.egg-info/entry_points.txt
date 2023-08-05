@@ -1,0 +1,3 @@
+[salt.loader]
+saltext.azurerm = saltext.azurerm
+
