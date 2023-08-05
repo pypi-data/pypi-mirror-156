@@ -1,0 +1,6 @@
+aircot
+pytak>=5.0.0
+aiohttp
+
+[with_pymodes]
+pymodes>=2.8
