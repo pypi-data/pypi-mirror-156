@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: TeraAppPhone
+Version: 0.0.1
+Summary: A very simple phone app creator
+Home-page: 
+Author: oren
+Author-email: orennadle@gmail.com
+License: MIT
+Keywords: app phoneapps iosapps iosapp
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This package is for creating simple phone applications.
+Platforms - Ios,Android
+
+``from TeraAppPhone import *``
+
+``app = TeraAppPhone(R,G,B,Icon)``
+

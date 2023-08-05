@@ -1,0 +1,15 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+TeraAppPhone/__init__.py
+TeraAppPhone/test2.py
+TeraAppPhone/test3.py
+TeraAppPhone.egg-info/PKG-INFO
+TeraAppPhone.egg-info/SOURCES.txt
+TeraAppPhone.egg-info/dependency_links.txt
+TeraAppPhone.egg-info/requires.txt
+TeraAppPhone.egg-info/top_level.txt
+TeraAppPhone/Phone/__init__.py
+TeraAppPhone/Phone/phone.py
