@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: crispyn
+Version: 0.0.1
+Summary: CRIteria Significance determining in PYthoN - The Python 3 Library for determining criteria weights for MCDA methods.
+Home-page: https://github.com/energyinpython/crispyn
+Author: Aleksandra Bączkiewicz
+Author-email: aleksandra.baczkiewicz@phd.usz.edu.pl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# crispyn
+CRIteria Significance determining in PYthoN - The Python 3 Library for determining criteria weights for MCDA methods.
