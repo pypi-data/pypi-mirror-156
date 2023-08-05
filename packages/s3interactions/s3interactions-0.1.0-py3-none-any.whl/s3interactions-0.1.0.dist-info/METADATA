@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: s3interactions
+Version: 0.1.0
+Summary: Some most important interactions with S3 AWS
+License: MIT
+Author: barbara73
+Author-email: barbara.jesacher@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: boto3 (>=1.24.14,<2.0.0)
+Requires-Dist: logdecoratorandhandler (>=0.1.4,<0.2.0)
+Requires-Dist: moto (>=3.1.14,<4.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: pydicom (>=2.3.0,<3.0.0)
+Requires-Dist: pytest (>=7.1.2,<8.0.0)

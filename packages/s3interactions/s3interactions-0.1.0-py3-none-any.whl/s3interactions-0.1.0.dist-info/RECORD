@@ -1,0 +1,7 @@
+s3interactions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3interactions/s3_download.py,sha256=1g_lvxETob_WI7elEPY4YPEakHQctsNRcsBo1OhlIlo,2552
+s3interactions/s3_interactions.py,sha256=HoW8nyJhnKXHV0ttmXRkUy9XaDbyqFzEsuRRBx0gQps,3624
+s3interactions/s3_storage.py,sha256=oXGccsOCohbkThFgaD_GCJVaoqmXSYOSEhU-tueX4Gg,2300
+s3interactions-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+s3interactions-0.1.0.dist-info/METADATA,sha256=bO0jBZL0ePfePOCtlH_2W-s3hAZ0733F2E9E9Qjp7kM,614
+s3interactions-0.1.0.dist-info/RECORD,,
