@@ -1,0 +1,7 @@
+pip
+packaging
+numpy
+pandas
+tqdm
+
+[dev]

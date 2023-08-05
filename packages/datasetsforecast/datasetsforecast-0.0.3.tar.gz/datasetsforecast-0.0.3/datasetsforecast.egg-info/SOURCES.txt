@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+datasetsforecast/__init__.py
+datasetsforecast/_nbdev.py
+datasetsforecast/hierarchical.py
+datasetsforecast/utils.py
+datasetsforecast.egg-info/PKG-INFO
+datasetsforecast.egg-info/SOURCES.txt
+datasetsforecast.egg-info/dependency_links.txt
+datasetsforecast.egg-info/not-zip-safe
+datasetsforecast.egg-info/requires.txt
+datasetsforecast.egg-info/top_level.txt
