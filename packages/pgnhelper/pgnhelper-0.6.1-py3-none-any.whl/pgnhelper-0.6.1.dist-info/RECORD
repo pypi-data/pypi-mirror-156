@@ -1,0 +1,14 @@
+pgnhelper/__init__.py,sha256=9YUgRU_vJwozZOPutgQOtTtynJolbWCxEB4I9gYVepE,134
+pgnhelper/__main__.py,sha256=cb4yG4AsW8InMcdwb048iroMSOBPIr5arEnhsZl9FT0,5515
+pgnhelper/addeco.py,sha256=JTY5nboFE6KTUiMjf18POTz4WlQPOjXff_ukgRYTWxw,4539
+pgnhelper/app.py,sha256=tDSdccbgjs1Her4zyOtu1fHpUGmQLkLhxXBP1e4qoEc,2765
+pgnhelper/roundrobin.py,sha256=30A-I7tLphKTX-qq6DnLkouh02GtJz1wQp81MvWapd8,10639
+pgnhelper/sortgames.py,sha256=qg2r2cKhq_0FlwPis9xlWZNFSvnwOJ8vrlzNic1wZiw,3286
+pgnhelper/tiebreak.py,sha256=NLmxzYKuIS23AbXQklNpfDqcATFijibtZy5gK-adTg8,4462
+pgnhelper/utility.py,sha256=Z3afNrqn4tNlpgD3MYWi74b620kxmE1KvX-VLT46CXc,4924
+pgnhelper-0.6.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pgnhelper-0.6.1.dist-info/METADATA,sha256=nUdicqAAzJBNcwQSzglLS1j6Nomsvn3g04GsRPKqISo,14507
+pgnhelper-0.6.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pgnhelper-0.6.1.dist-info/entry_points.txt,sha256=TOqQckkf3Ptq9Bif0NHNd3VmbYGDCZfPszKufSrUi30,45
+pgnhelper-0.6.1.dist-info/top_level.txt,sha256=1FZvypUbzIkj3A8J_yteYK06Lr3Zz71XaRdM47KePrQ,10
+pgnhelper-0.6.1.dist-info/RECORD,,
