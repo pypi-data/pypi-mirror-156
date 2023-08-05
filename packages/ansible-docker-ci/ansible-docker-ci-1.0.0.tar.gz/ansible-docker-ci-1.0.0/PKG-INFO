@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ansible-docker-ci
+Version: 1.0.0
+Summary: Docker image-based dynamic hosts CI utilites for ansible
+Home-page: https://github.com/reartnew/ansible-docker-ci
+License: MIT
+Author: Artem Novikov
+Author-email: artnew@list.ru
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Dist: class-interference (>=1.1.0,<2.0.0)
+Requires-Dist: docker (>=5.0.3,<6.0.0)
+Project-URL: Repository, https://github.com/reartnew/ansible-docker-ci
+Description-Content-Type: text/markdown
+
+# ansible-docker-ci
+
+Docker image-based dynamic hosts for ansible.
+
+## Installation
+
+```shell
+# Install python package
+pip install ansible-docker-ci
+# Add plugin file it your connection plugins directory
+echo "from ansible_docker_ci.image.connection.plugin import *" > ./connection_plugins/docker_image.py
+```
+
