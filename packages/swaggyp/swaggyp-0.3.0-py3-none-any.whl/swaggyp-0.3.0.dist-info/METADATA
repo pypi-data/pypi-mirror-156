@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: swaggyp
+Version: 0.3.0
+Summary: Python library for generating Swagger templates based on valley
+License: Apache-2.0
+Author: Brian Jinwright
+Author-email: bjinwright@qwigo.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: valley (>=1.5.6,<2.0.0)
