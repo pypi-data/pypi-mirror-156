@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+xtractmime/__init__.py
+xtractmime/_patterns.py
+xtractmime/_utils.py
+xtractmime/mimegroups.py
+xtractmime.egg-info/PKG-INFO
+xtractmime.egg-info/SOURCES.txt
+xtractmime.egg-info/dependency_links.txt
+xtractmime.egg-info/top_level.txt
