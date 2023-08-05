@@ -1,0 +1,5 @@
+tqdm==4.63.0
+matplotlib==3.5.1
+
+[notebook]
+notebook==6.4.12
