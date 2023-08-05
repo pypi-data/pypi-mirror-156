@@ -1,0 +1,1287 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* Update LICENSE
+* Fix documentation to pull from proper dockerhub image location
+* Update deploy.yml
+* Update deploy.yml
+* Create deploy.yml
+* Update main.yml
+* Added python shebang lines to the top of script files to be executable on mac and linux/docker
+* Update main.yml
+* Update main.yml
+* added a build-dist command to tox
+* Update main.yml
+* Update main.yml
+* upping pytest version in tox.ini to fix python 3.10 build error
+* Update main.yml
+* Create main.yml
+* Upped pulp requirement to greater than or equal to 2.6 and reformatted setup.py with black
+* Applied changes to README, setup.cfg, and setup.py for deployment to pypi
+* minor change
+* Create LICENSE
+* minor documentation change
+* Fixed lint error due to unused imports in inference.py
+* Altered the Heuristic method to have the ability to recommend multiple result types if thresholds are passed for multiple methods
+* Update version to 0.9.8
+* Added tox.ini
+* Cleaned up setup.cfg
+* Feature/remove alternative parsimony method
+* Added bypass to lint error (E203), as fixing the lint error caused black format to fail
+* Fixed white space lint error ./pyproteininference/reader.py:386: [E203] whitespace before ':'
+* Update version to 0.9.6 and altered alternative protein reading to make sure the proteins get read in the same alphabetical order every time. This ensures the same proteins get read in when alternative proteins are limited to a number IE 50. Also implemented a test case
+* Fixed mino logging issues in various modules
+* Fixed format of test data with no alternative proteins
+* Updated version and swapped dashes in setup.cfg with underscores
+* Added indentations to cli code blocks
+* Minor changes to docs around decoy files and symbols
+* Added slightly more information to documentation
+* Added more explanation for the heuristic method in supplementary.md
+* Fixed a slight bug in isoform override for parsimony inference
+* fixed typo in docs and heuristic cli script help prompt
+* Added documentation with mkdocs. Documentation site can readily be built from the repo
+* Updated the code and made changes as suggested from the code review
+
+0.9.3
+-----
+
+* Updated README by fixing typos, split the file into a quick start and advanced section, added a quick start section so users can jump right in quickly, and updated the help text in the scripts to read better
+* Added slim parameter file for new test
+* Updated parameters so that parameter files can be incomplete. Parameters not defined in the yaml get set to default options. Also updated to version 0.9.3
+* Changed GenericReader to use DictReader and fixed its ability to actually get the alternative proteins from percolator input files (This was broken). Updated test data which was formatted incorrectly with tabs purposefully put in in the header. This made it seem like the old reader was getting alternative proteins but real percolator files are not formatted with these empty tabs in the header. Also added a test to ensure that reading alternative proteins from input works properly
+* Added method to recover proteins that dont exist in the database digestions but that do exist in the psm data. Certain edge cases such as using the improper database as input can create issues here. This method circumvents these issues
+* Added newline="" to export methods to fix blank lines in windows export
+* Minor change to figure legend of the heuristic plot
+* Updated to version 0.9.0, added an output type option to heuristic method, added internal methods for result export to the heuristic and added a protein id validation method for reader class to make sure there is at least some overlap between the database proteins and the input file proteins
+* Changed help text for skip\_append\_alt so that it makes more sense
+* Added extra documentation for running the heuristic method in README
+* Added an escape symbol to fix markdown table in README
+* Pull request #55: Changed name of package and main module from py\_protein\_inference to pyproteininference and updated version from 0.7.9 to 0.8.0
+* Pull request #54: Changed name of package and main module from py\_protein\_inference to pyproteininference and updated version from 0.7.9 to 0.8.0
+* Changed name of package and main module from py\_protein\_inference to pyproteininference and updated version from 0.7.9 to 0.8.0
+* Updated readme version and added long format export information
+* Added long export to export test
+* Added long export type to main export method
+* Swap decoy checking methods to be if in instead of startswith
+* Updated version to 0.7.9
+* Changing version for PyYaml in requirements.txt
+* Removed deprecated methods and renamed an export method to be more accurate
+* Added docs to methods without docs
+* Updated to version 0.7.8
+* Remove qvality import in module init
+* Removed old unused module qvality
+* Removed TODOs
+* Fixed issue where under certain condition roc plot filepath was not properly set
+* Updated cli scripts for standard and heuristic pipelines by fixing help text, putting parser args inside of main(), and fixing the boolean flag options to work with store\_true
+* Added some helper methods to heuristic and pipeline for logging and to bypass errors when certain combinations of parameters were set
+* Updated README with version and new help text from cli tools
+* Raised version to 0.7.7
+* Removed old and unused MANIFEST.in file
+* Lowering the matplotlib requirement version in requirements.txt
+* Changed some logger.info and logger.warning messages to logger.debug messages
+* Added minimum version numbers for all dependencies in requirements.txt
+* Removed ChangeLog and AUTHORS
+* Removing old unused code
+* Removed biopython dependency which is no longer needed for fasta database digestion
+* Removed SeqIO import
+* Ran black to reformat
+* Made slight test changes to work with pyteomics digest
+* Propagated changes to heuristic, pipeline, and parameters
+* Removed old digest and fixed a slight issue with the Pyteomics Digest
+* Raised to version 0.7.6
+* Fixed flake8 errors, reformatted with Black, and ran isort on all python files in package
+* Added output filename option to cli tools
+* Updated Export code to be able to use an output filename to override internally generated filename. Also propagated changes to heuristic and pipeline
+* Updated README with new information about output filename override
+* Upgrade to version 0.7.4
+* Reformatted files with black
+* Moved all logging to module level
+* Ran black reformatter on the code base
+* Raised version to 0.7.2 and added in necessary files and changes to modernize the jenkins build
+* Altered variable names including digest\_class, data\_class, and reader\_class. Removed \_class from variable names. Altered some variable names in heuristic and added a ratio constant in place of hard coded value
+* Increment version to 0.7.1
+* Made yaml params optional and mad the fdr max into a float type in the heuristic cli tool
+* Adding logger message to writing roc plot and removing plt.show()
+* Adding more spacing in README
+* Fixing formatting in README
+* Updated version to 0.7.0 in setup.py
+* Removed pandas req from README.md
+* Added skip plot argument for heuristic execution in the heuristic test
+* Added command line script to run the heuristic method
+* Added ROC plot to heuristic method
+* Added datastore method for generating fdr vs target hits to be used in ROC plot in heuristic instance
+* Added matplotlib requirement
+* Updated README.md to indicate the current version 0.7.0 and also added in a description of the heuristic and how to execute the heuristic method
+* Fixed missing parameter filepath passing
+* Fixed docs
+* Added the ability to pass parameters to heuristic. Can still leave these blank
+* Updated to version 0.7.0
+* Added a test for the heuristic pipeline
+* Added a new heuristic module which runs inclusion, exclusion, parsimony, and peptide-centric and then runs an algorithm based on similarity between number of target hits at a specified FDR cutoff that ultimately selects the optimal inference method
+* Updating version to 0.6.4
+* Changing [files] packages = py\_protein\_inference
+* Upping version to 0.6.3
+* Added a test for new validations
+* Updated scoring error message for validator
+* Updated Reader validation
+* Added validations to inference
+* Added validations to datastore
+* Adding a faulty shape parameter test to test\_023\_malformed\_parameters.py
+* Adding parameter shape validation and creating constants for all parameter keys
+* Updating to v 0.6.2
+* Adding test to check the ability of the parameter object to properly error out when improper parameters are passed
+* Updating parameters validation to correctly error out when incorrect params are in file
+* Updating to version 0.6.1
+* Changes to README for docker
+* Slight change to Dockerfile to run python setup.py develop instead of install. As install was not actually installing the package
+* Updating README.md to call the current version of 0.6.0
+* Updating tests to call py\_protein\_inference instead of protein\_inference
+* Propagating module name change to protein\_inference\_cli.py script
+* Updating package name and version to py\_protein\_inference and v 0.6.0
+* Propagating name change of folder within Dockerfile to be py\_protein\_inference
+* Propagating module name change of protein\_inference to py\_protein\_inference
+* Deleting old Digest module
+* Renaming main python module to py\_protein\_inference
+* Adding new alternative protein test
+* Removing unused code from old test
+* Update to version 0.5.7
+* Adding \_assign\_shared\_peptides method to Parsimony class object
+* Adding validation to shared\_peptides parameter to the Parameter class
+* Adding shared peptide parsimony peptide assignment test
+* Propagating changes to test for parameter file renaming
+* Updating all example and test yaml parameter files to include new "shared\_peptides" parameter
+* Updating README.md to reflect new "shared\_peptides" parsimony parameter option and update version
+* Updating to version 0.5.6
+* Renaming improperly named test parameter file
+* Swapping string concat with .format() in qvality module
+* Swapping string concat with .format() in inference module
+* Swapping string concat with .format() in in\_silico\_digest module
+* Swapping string concat with .format() in datastore module
+* Up to version 0.5.5
+* renamed variables in reader module
+* renamed variables in inference module
+* Renamed variables in export module
+* Renamed variables in datastore module
+* Up version to 0.5.4
+* Removing set\_based\_fdr calls from tests
+* Removing set\_based\_fdr calls from tests
+* Removing set\_based\_fdr call from pipeline
+* Removing set\_based\_fdr call from pipeline
+* Swapping old export methods that used the datastore fdr\_restricted\_grouped\_scored\_proteins variable to now calling get\_protein\_objects method from datastore class
+* Swapping old export methods that used the datastore fdr\_restricted\_grouped\_scored\_proteins variable to now calling get\_protein\_objects method from datastore class
+* Adding new method that retrieves protein objects either fdr restricted or standard
+* Adding new method that retrieves protein objects either fdr restricted or standard
+* merging set\_based\_fdr datastore method into calculate\_q\_values datastore method
+* merging set\_based\_fdr datastore method into calculate\_q\_values datastore method
+* Removing fdr\_restricted\_grouped\_scored\_proteins variable
+* Removing fdr\_restricted\_grouped\_scored\_proteins variable
+* Updating to version 0.5.3
+* Updating to version 0.5.3
+* Fixing tests to work with new reader and pipeline defaults for append\_alt\_from\_db variable. Previously this was False and now it is True. Tests are set to work with it set to False
+* Fixing tests to work with new reader and pipeline defaults for append\_alt\_from\_db variable. Previously this was False and now it is True. Tests are set to work with it set to False
+* Adding \_\_name\_\_ == "\_\_main\_\_" call in cli script
+* Adding \_\_name\_\_ == "\_\_main\_\_" call in cli script
+* Updating argparse help for protein\_inference\_cli.py
+* Updating argparse help for protein\_inference\_cli.py
+* Setting append\_alt\_from\_db to default True  in the reader classes
+* Setting append\_alt\_from\_db to default True  in the reader classes
+* Setting append\_alt\_from\_db to default be True in the Pipeline module and adding some logging
+* Setting append\_alt\_from\_db to default be True in the Pipeline module and adding some logging
+* Adding a new class method to pipeline that validates bool input
+* Adding a new class method to pipeline that validates bool input
+* Update version to 0.5.2
+* Update version to 0.5.2
+* Update id splitting help within cli
+* Update id splitting help within cli
+* Updating README that showcases the new implementations in the commandline script and description of flags
+* Updating README that showcases the new implementations in the commandline script and description of flags
+* Adding sorting by score to \_create\_protein\_groups Inference instance method
+* Adding sorting by score to \_create\_protein\_groups Inference instance method
+* Adding docs to sort\_protein\_sub\_groups classmethod of datastore class
+* Adding docs to sort\_protein\_sub\_groups classmethod of datastore class
+* Removing float call in sorting methods
+* Removing float call in sorting methods
+* Adding logging to q value calc
+* Adding logging to q value calc
+* Fixed an issue which caused memory issues where we were re defining a set in nested for loops. This caused the code to slow down a lot. Removed this by defining the set up front outside of the for loops in the inference methods
+* Fixed an issue which caused memory issues where we were re defining a set in nested for loops. This caused the code to slow down a lot. Removed this by defining the set up front outside of the for loops in the inference methods
+* Applying renaming to the rest of the inference module
+* Applying renaming to the rest of the inference module
+* add comment for glpk setup
+* add comment for glpk setup
+* Updating parsimony reassignment methods
+* Updating parsimony reassignment methods
+* Updating call to higher\_or\_lower
+* Updating call to higher\_or\_lower
+* updating doc
+* updating doc
+* Removing/Moving old methods
+* Removing/Moving old methods
+* Updating Parsimony \_create\_protein\_groups method
+* Updating Parsimony \_create\_protein\_groups method
+* Updated exclusion infer\_proteins method
+* Updated exclusion infer\_proteins method
+* Updated Inclusion inference methods. infer\_protein method updated and created an \_apply\_protein\_group\_ids specialized method
+* Updated Inclusion inference methods. infer\_protein method updated and created an \_apply\_protein\_group\_ids specialized method
+* added generic \_create\_protein\_groups and \_apply\_protein\_group\_ids methods for Inference classes that do not need a specialized method
+* added generic \_create\_protein\_groups and \_apply\_protein\_group\_ids methods for Inference classes that do not need a specialized method
+* rename \_group\_by\_peptides to \_create\_protein\_groups
+* rename \_group\_by\_peptides to \_create\_protein\_groups
+* Updating run\_inference call in pipeline to use the new class method
+* Updating run\_inference call in pipeline to use the new class method
+* Updated run\_inference method of Inference object to being a class method of Inference object
+* Updated run\_inference method of Inference object to being a class method of Inference object
+* Updating inference doc
+* Updating inference doc
+* Adding an if else statement to high\_or\_lower datastore method
+* Adding an if else statement to high\_or\_lower datastore method
+* Renaming variables in datastore methods
+* Renaming variables in datastore methods
+* deleting old .pyc file
+* Update to version 0.5.1
+* Update to version 0.5.1
+* Updating README.md with some information on when it is useful to use which inference methods
+* Updating README.md with some information on when it is useful to use which inference methods
+* Uncommenting unittest.skip for pulp tests
+* Uncommenting unittest.skip for pulp tests
+* Upadting README.md to reflect changes to parameter input
+* Upadting README.md to reflect changes to parameter input
+* Upping to version 0.5.0
+* Upping to version 0.5.0
+* Updating test and example parameters to reflect updated score parameter names
+* Updating test and example parameters to reflect updated score parameter names
+* Updating tests to reflect variable name change from parameters
+* Updating tests to reflect variable name change from parameters
+* Altering datastore object variable assignment in the Score class. Variables names updated
+* Altering datastore object variable assignment in the Score class. Variables names updated
+* Propagating score parameter name changes to reader
+* Propagating score parameter name changes to reader
+* Propagating score parameter name changes to pipeline
+* Propagating score parameter name changes to pipeline
+* Propagating score parameter name changes to export
+* Propagating score parameter name changes to export
+* Propagating score parameter name changes to datastore
+* Propagating score parameter name changes to datastore
+* Changing score parameter names in ProteinInferenceParameter object
+* Changing score parameter names in ProteinInferenceParameter object
+* Adding validation of identifier param types to parameters module. This also sets them to None type properly if defined as None
+* Adding validation of identifier param types to parameters module. This also sets them to None type properly if defined as None
+* Adding bypass for reviewed identifier replacement in parsimony if the variable is None we skip
+* Adding bypass for reviewed identifier replacement in parsimony if the variable is None we skip
+* Adding bypass in inference swissprot and isoform override that bypasses the isoform code if there is no isoform symbol
+* Adding bypass in inference swissprot and isoform override that bypasses the isoform code if there is no isoform symbol
+* Adding bypass in in silico digest if reviewed\_identifier\_symbol is None. Our sp\_set variable will kept as an empty set
+* Adding bypass in in silico digest if reviewed\_identifier\_symbol is None. Our sp\_set variable will kept as an empty set
+* Adding bypass in datastore validation if isoform symbol is None
+* Adding bypass in datastore validation if isoform symbol is None
+* Upping to version 0.4.8
+* Upping to version 0.4.8
+* Added new test and parameter file to test parsimony without the use of an isoform symbol or reviewed identifier symbol
+* Added new test and parameter file to test parsimony without the use of an isoform symbol or reviewed identifier symbol
+* Altering parameters module to include new class constants and removing unnecessary logic
+* Altering parameters module to include new class constants and removing unnecessary logic
+* Propagating change to class method from datastore (Protein and ProteinGroup sorting methods) and fixed typo
+* Propagating change to class method from datastore (Protein and ProteinGroup sorting methods) and fixed typo
+* Updated Inference methods by calling to class constants as opposed to statically typing strings
+* Updated Inference methods by calling to class constants as opposed to statically typing strings
+* Remove unnecessary call to if==True
+* Remove unnecessary call to if==True
+* Swapped statically typing "higher" and "lower" with the DataStore constants
+* Swapped statically typing "higher" and "lower" with the DataStore constants
+* Changed statically typed score\_type to the Score class constants
+* Changed statically typed score\_type to the Score class constants
+* Renamed sort\_protein\_lists to sort\_protein\_group\_objects and sort\_protein\_groups to sort\_protein\_objects
+* Renamed sort\_protein\_lists to sort\_protein\_group\_objects and sort\_protein\_groups to sort\_protein\_objects
+* Added a new score attribute constant to Psm class
+* Added a new score attribute constant to Psm class
+* Propagated new class constants for Reader and Score classes into the reader methods where appropriate
+* Propagated new class constants for Reader and Score classes into the reader methods where appropriate
+* Propagated new class constants into the Score class methods and replaced old string declarations
+* Propagated new class constants into the Score class methods and replaced old string declarations
+* Created a class constant for every score method, short score method, and score type for Score class
+* Created a class constant for every score method, short score method, and score type for Score class
+* Swapped index constants in PercolatorReader from instance variables to class variables
+* Swapped index constants in PercolatorReader from instance variables to class variables
+* Propagated class constant declarations into digest methods and removed string declarations
+* Propagated class constant declarations into digest methods and removed string declarations
+* Defined trypsin and lysc as class constants in Digest as well as the variable amino acid X
+* Defined trypsin and lysc as class constants in Digest as well as the variable amino acid X
+* Swapped string declarations for class constant calls in Export methods
+* Swapped string declarations for class constant calls in Export methods
+* Created class constant variables for each export type in Export class
+* Created class constant variables for each export type in Export class
+* Moving DataStore constant instance variables to become class variables
+* Moving DataStore constant instance variables to become class variables
+* Upping to version 0.4.7
+* Upping to version 0.4.7
+* Updating pulp test parameter validation
+* Updating pulp test parameter validation
+* Updating tests to work with lp solver as None type as opposed to none strings
+* Updating tests to work with lp solver as None type as opposed to none strings
+* Updating the ability for lp solver to get transformed from none strings to None type in the parameter object
+* Updating the ability for lp solver to get transformed from none strings to None type in the parameter object
+* Updating Parameter class docs
+* Updating Parameter class docs
+* Updating lp solver logic slightly and removing None and none strings from LP\_SOLVERS class constant
+* Updating lp solver logic slightly and removing None and none strings from LP\_SOLVERS class constant
+* Updating psm\_score description in README.md
+* Updating psm\_score description in README.md
+* Updating all tests to call class constants for inference type as opposed to using statically typed strings
+* Updating all tests to call class constants for inference type as opposed to using statically typed strings
+* Updating no\_inference yaml params to call the inference method properly as first\_protein
+* Updating no\_inference yaml params to call the inference method properly as first\_protein
+* Updating params to properly handle None type vs "none" and "None" strings. All params that have the ability to be None will be transformed from strings to None type
+* Updating params to properly handle None type vs "none" and "None" strings. All params that have the ability to be None will be transformed from strings to None type
+* Updating Inference class methods by removing statically typed inference\_type variables and replacing with class Inference class constants
+* Updating Inference class methods by removing statically typed inference\_type variables and replacing with class Inference class constants
+* Updating Pipeline class method execute by removing statically typed exclusion inference\_type variable and replacing with class constant
+* Updating Pipeline class method execute by removing statically typed exclusion inference\_type variable and replacing with class constant
+* Updating Reader class methods by removing statically typed none inference\_type variable and replacing with class constant
+* Updating Reader class methods by removing statically typed none inference\_type variable and replacing with class constant
+* Updating DataStore class method create\_scoring\_input by removing statically typed peptide\_centric variable and replacing with class constant
+* Updating DataStore class method create\_scoring\_input by removing statically typed peptide\_centric variable and replacing with class constant
+* Updating constants to the Inference object by splitting out every inference type, grouping type, and lp solver into its own constant
+* Updating constants to the Inference object by splitting out every inference type, grouping type, and lp solver into its own constant
+* Updating to version 0.4.6
+* Updating to version 0.4.6
+* Updating README.md to include changes from no inference type to first protein type
+* Updating README.md to include changes from no inference type to first protein type
+* Upping to version 0.4.5
+* Upping to version 0.4.5
+* Updating tests to reflect the changes made in DataStore and Digest objects
+* Updating tests to reflect the changes made in DataStore and Digest objects
+* Updated pipeline to reflect changes in the input of in silico digest and datastore methods that no longer require variable input and instead pull values from the parameter object that is stored as an instance variable in DataStore
+* Updated pipeline to reflect changes in the input of in silico digest and datastore methods that no longer require variable input and instead pull values from the parameter object that is stored as an instance variable in DataStore
+* Fixing variable name from score to psm\_score in reader
+* Fixing variable name from score to psm\_score in reader
+* Variable name change in parameter object from score to psm\_score and added a method to fix params from the data object
+* Variable name change in parameter object from score to psm\_score and added a method to fix params from the data object
+* Updated export object to pull refactored variable name from data object
+* Updated export object to pull refactored variable name from data object
+* Updated in silico digest module to not take a parameter object but to take values from the parameter object
+* Updated in silico digest module to not take a parameter object but to take values from the parameter object
+* Refactored DataStore object and methods to not pass any parameter specific values as method inputs
+* Refactored DataStore object and methods to not pass any parameter specific values as method inputs
+* Removing old module headers from inference and physical
+* Removing old module headers from inference and physical
+* Updated documentation in the scoring module
+* Updated documentation in the scoring module
+* Updated documentation in the reader module
+* Updated documentation in the reader module
+* Applied changes to pipeline method and updated all documentation
+* Applied changes to pipeline method and updated all documentation
+* Added all docs to physical classes and methods including Psm, Protein, ProteinGroup
+* Added all docs to physical classes and methods including Psm, Protein, ProteinGroup
+* Updated tests to work with new changes to get\_sorted\_identifiers method of the DataStore class
+* Updated tests to work with new changes to get\_sorted\_identifiers method of the DataStore class
+* Removed header in pi cli script
+* Removed header in pi cli script
+* removing variable declaration for qvality
+* removing variable declaration for qvality
+* Updating all docs for parameters module including classes and methods
+* Updating all docs for parameters module including classes and methods
+* Removing unnecessary variable passing in inference methods/classes and updating all docs for all methods and classes/sub classes
+* Removing unnecessary variable passing in inference methods/classes and updating all docs for all methods and classes/sub classes
+* Added all docs to in\_silico\_digest module. This includes the classes and methods
+* Added all docs to in\_silico\_digest module. This includes the classes and methods
+* Updated all docs for export module. This includes documenting the Export class and all methods
+* Updated all docs for export module. This includes documenting the Export class and all methods
+* Updating all docs for datastore class for all methods. Also removed a few unnecessary instance variable declarations
+* Updating all docs for datastore class for all methods. Also removed a few unnecessary instance variable declarations
+* propagating changes to get\_sorted\_identifiers
+* propagating changes to get\_sorted\_identifiers
+* Altering get\_sorted\_identifiers method of datastore class by deleting input of digest\_class. Also added docs
+* Altering get\_sorted\_identifiers method of datastore class by deleting input of digest\_class. Also added docs
+* Adding docs to DataStore class and deleting old unused instance variables
+* Adding docs to DataStore class and deleting old unused instance variables
+* deleting header from datastore module
+* deleting header from datastore module
+* Deleting header from module init
+* Deleting header from module init
+* Updating to version 0.4.4
+* Updating to version 0.4.4
+* Update to README.md to indicate how to run via docker
+* Update to README.md to indicate how to run via docker
+* Upping version to 0.4.3
+* Upping version to 0.4.3
+* Adding Dockerfile for building pyproteininference docker image
+* Adding Dockerfile for building pyproteininference docker image
+* Updating pylint.cfg
+* Updating pylint.cfg
+* Fixing indentation mistake
+* Fixing indentation mistake
+* Refactoring to fix high priority pylint warnings
+* Refactoring to fix high priority pylint warnings
+* Ran black to reformat all files in repo
+* Ran black to reformat all files in repo
+* Fix typo in validation error
+* Fix typo in validation error
+* Fix comment typo in datastore
+* Fix comment typo in datastore
+* Assert that restrict\_custom param gets parsed to None in glpk parsimony test
+* Assert that restrict\_custom param gets parsed to None in glpk parsimony test
+* Adding a new test to test the ability to restrict custom scores and to not fail when params have been defined incorrectly
+* Adding a new test to test the ability to restrict custom scores and to not fail when params have been defined incorrectly
+* Adding custom\_threshold restriction to the end of the main data restrict function. This provides the ability to restrict based on a custom score column
+* Adding custom\_threshold restriction to the end of the main data restrict function. This provides the ability to restrict based on a custom score column
+* Adding the running of the override restriction methods to the param object and adding custom\_threshold restriction as well as fixing comments
+* Adding the running of the override restriction methods to the param object and adding custom\_threshold restriction as well as fixing comments
+* Adding datastore instance methods to check whether or not q/pep/custom values exist in the input
+* Adding datastore instance methods to check whether or not q/pep/custom values exist in the input
+* Adding parameter instance methods to override q/pep/custom restriction variables if it is determined that the value was defined in the params but the score value does not exist in the input
+* Adding parameter instance methods to override q/pep/custom restriction variables if it is determined that the value was defined in the params but the score value does not exist in the input
+* Adding logic in parameter class to validate the custom restriction value from param file
+* Adding logic in parameter class to validate the custom restriction value from param file
+* Upping version to 0.4.2
+* Upping version to 0.4.2
+* Adding new database and input files for the new tests on malformed data types
+* Adding new database and input files for the new tests on malformed data types
+* Removing TODO from test
+* Removing TODO from test
+* Adding Try/Except blocks to recover peptide/protein map for digest from input files. And adding logger messages
+* Adding Try/Except blocks to recover peptide/protein map for digest from input files. And adding logger messages
+* Adding option to pipeline.execute() to skip running database digest if the database is not supplied
+* Adding option to pipeline.execute() to skip running database digest if the database is not supplied
+* Updating pipeline to take as an option "append\_alt\_from\_db" to give the option of using the db to recover missing protein identifiers for psms. This will default to false but will default to true in CLI
+* Updating pipeline to take as an option "append\_alt\_from\_db" to give the option of using the db to recover missing protein identifiers for psms. This will default to false but will default to true in CLI
+* Adding 3 new tests to test incorrect databases, missing databases, and recovering alternative proteins from the DB
+* Adding 3 new tests to test incorrect databases, missing databases, and recovering alternative proteins from the DB
+* Updating cli script to be able to pass append\_alt on cli. This gives user the option to append alternative proteins from the DB to PSMs that may not be present in result files
+* Updating cli script to be able to pass append\_alt on cli. This gives user the option to append alternative proteins from the DB to PSMs that may not be present in result files
+* Changing \_\_slots\_\_ from list to set in physical objects
+* Changing \_\_slots\_\_ from list to set in physical objects
+* Changing logger.info to logger.warning in parameter init if param filepath is not given. And updating default params if param filepath is not given
+* Changing logger.info to logger.warning in parameter init if param filepath is not given. And updating default params if param filepath is not given
+* Setting internal variables in digest to empty dictionaries and sets in \_\_int\_\_
+* Setting internal variables in digest to empty dictionaries and sets in \_\_int\_\_
+* Updating version to 0.4.1 in setup.py and setup.cfg
+* Updating version to 0.4.1 in setup.py and setup.cfg
+* Updating README
+* Updating README
+* Adding missing testing output files for parsimony
+* Adding missing testing output files for parsimony
+* adding .sol files for glpk test
+* adding .sol files for glpk test
+* Adding unittest skips to pulp pipeloine
+* Adding unittest skips to pulp pipeloine
+* Adding more testing to the multiplicative pipeline to account for other output types
+* Adding more testing to the multiplicative pipeline to account for other output types
+* Adding more testing to the additive pipeline to account for other output types
+* Adding more testing to the additive pipeline to account for other output types
+* Adding more testing to the peptide centric pipeline to account for other output types
+* Adding more testing to the peptide centric pipeline to account for other output types
+* Adding more testing to the no inference pipeline to account for other output types
+* Adding more testing to the no inference pipeline to account for other output types
+* Adding more testing to the exclusion pipeline to account for other output types as well as other grouping types
+* Adding more testing to the exclusion pipeline to account for other output types as well as other grouping types
+* Adding more testing to the inclusion pipeline to account for other output types as well as other grouping types
+* Adding more testing to the inclusion pipeline to account for other output types as well as other grouping types
+* Adding more testing to the pulp parsimony pipeline to account for other output types as well as other grouping types
+* Adding more testing to the pulp parsimony pipeline to account for other output types as well as other grouping types
+* Adding more testing to the glpk parsimony pipeline to account for other output types as well as other grouping types
+* Adding more testing to the glpk parsimony pipeline to account for other output types as well as other grouping types
+* Adding new output files for all pipeline tests
+* Adding new output files for all pipeline tests
+* Moved original test output files to leads/ sub directory and removed old unused output files
+* Moved original test output files to leads/ sub directory and removed old unused output files
+* Fixing issue in exclusion model where we used stripped\_peptide instead of non\_flanking\_peptide
+* Fixing issue in exclusion model where we used stripped\_peptide instead of non\_flanking\_peptide
+* Update to scoring to work with new changes to Protein object
+* Update to scoring to work with new changes to Protein object
+* Edits to export to work with new Protein object
+* Edits to export to work with new Protein object
+* Changing exclusion function to work with newly updated Protein object
+* Changing exclusion function to work with newly updated Protein object
+* Changing using split\_peptide class method to just pulling the non\_flainking\_peptide variable in psm object
+* Changing using split\_peptide class method to just pulling the non\_flainking\_peptide variable in psm object
+* Changing create\_scoring\_input function to not create a psm\_score\_dictionary and to instead just assign the psm objects to the corresponding protein objects
+* Changing create\_scoring\_input function to not create a psm\_score\_dictionary and to instead just assign the psm objects to the corresponding protein objects
+* Swapping logic from calling split\_peptide class method to just calling the variable from psm object
+* Swapping logic from calling split\_peptide class method to just calling the variable from psm object
+* Adding new slots and methods to physical Psm object
+* Adding new slots and methods to physical Psm object
+* Adding new methods and and swapping out variables for the physical protein object
+* Adding new methods and and swapping out variables for the physical protein object
+* Upping to version 0.4.0
+* Upping to version 0.4.0
+* Upping version to 0.3.4
+* Upping version to 0.3.4
+* Adding a test to test in silico digest for 0,1,2, and 3 missed cleavages
+* Adding a test to test in silico digest for 0,1,2, and 3 missed cleavages
+* Adding a test to test all relevant scoring methods
+* Adding a test to test all relevant scoring methods
+* Adding a test to test the datastore methods
+* Adding a test to test the datastore methods
+* Adding pipeline method to additive and multiplicative tests
+* Adding pipeline method to additive and multiplicative tests
+* Altering two datastore methods
+* Altering two datastore methods
+* Adding datastore class methods to sort protein lists and protein groups
+* Adding datastore class methods to sort protein lists and protein groups
+* Changing all repeated code that sorts the list of proteins and the protein groups to call two DataStore class methods. This removes repeated code
+* Changing all repeated code that sorts the list of proteins and the protein groups to call two DataStore class methods. This removes repeated code
+* Adding pipetide centric inference to run\_inference method of Inference class
+* Adding pipetide centric inference to run\_inference method of Inference class
+* Changing logic in pipeline.execute to hide the logic of the inference step behind the Inference method run\_inference
+* Changing logic in pipeline.execute to hide the logic of the inference step behind the Inference method run\_inference
+* Adding id\_splitting option to \_\_init\_\_ of ProteinInferencePipeline object to be able to pass to digest
+* Adding id\_splitting option to \_\_init\_\_ of ProteinInferencePipeline object to be able to pass to digest
+* Adding id\_splitting option to all tests that use Pipeline class
+* Adding id\_splitting option to all tests that use Pipeline class
+* Updating README to reflect new changes to the protein inference command line script
+* Updating README to reflect new changes to the protein inference command line script
+* Adding pipeline validation test
+* Adding pipeline validation test
+* Updating tests to work with new changes to reader and ProteinInferencePipeline
+* Updating tests to work with new changes to reader and ProteinInferencePipeline
+* Updating protein inference cli script to allow multiple new input types that include directories and lists of files. Either target/decoy separate or combined
+* Updating protein inference cli script to allow multiple new input types that include directories and lists of files. Either target/decoy separate or combined
+* Updating reader methods to account for changes to ProteinInferencePipeline to be able to handle the new input types appropriately and to account for variable name changes
+* Updating reader methods to account for changes to ProteinInferencePipeline to be able to handle the new input types appropriately and to account for variable name changes
+* Updating reader call to reflect changes and updating execute logging
+* Updating reader call to reflect changes and updating execute logging
+* Adding logic to \_validate\_input internal method as well as creating \_transform\_directory\_to\_files method and \_set\_output\_directory method
+* Adding logic to \_validate\_input internal method as well as creating \_transform\_directory\_to\_files method and \_set\_output\_directory method
+* Setting up logger information in \_\_init\_\_ of ProteinInferencePipeline
+* Setting up logger information in \_\_init\_\_ of ProteinInferencePipeline
+* Defining new class input in init
+* Defining new class input in init
+* Adding new options to ProteinInferencePipeline to include input directories
+* Adding new options to ProteinInferencePipeline to include input directories
+* Adding os and sys import to pipeline.py
+* Adding os and sys import to pipeline.py
+* Adding Loader=yaml.Loader to yaml.load. As per suggestion in warning messages
+* Adding Loader=yaml.Loader to yaml.load. As per suggestion in warning messages
+* Updating some datastore logger reports
+* Updating some datastore logger reports
+* Removing old unused logic for Bioplex/SearchIDs
+* Removing old unused logic for Bioplex/SearchIDs
+* Upping version to 0.3.3
+* Upping version to 0.3.3
+* Adding a combined data file to repo
+* Adding a combined data file to repo
+* Deleting old scripts
+* Deleting old scripts
+* Renaming the protein inference runner script
+* Renaming the protein inference runner script
+* Updating version to 0.3.2
+* Updating version to 0.3.2
+* Adding pipeline method to pipeline tests
+* Adding pipeline method to pipeline tests
+* Moving pylint.cfg to proper directory
+* Moving pylint.cfg to proper directory
+* Adding pylint.cfg to repo
+* Adding pylint.cfg to repo
+* Removing handle.close() because updates to biopython from version 1.72 to 1.77 removes the need to run .close() and errors out code
+* Removing handle.close() because updates to biopython from version 1.72 to 1.77 removes the need to run .close() and errors out code
+* Adding export tests
+* Adding export tests
+* Removing pandas requirement to attempt to get build to work
+* Removing pandas requirement to attempt to get build to work
+* Updating the README to include markdown table examples of all export types
+* Updating the README to include markdown table examples of all export types
+* Removing out-dated docs and adding peptide sorting to all export methods that did not have it
+* Removing out-dated docs and adding peptide sorting to all export methods that did not have it
+* Changing string checks to be == from in
+* Changing string checks to be == from in
+* Adding running of new export methods to overall export method
+* Adding running of new export methods to overall export method
+* Adding export type names to constant
+* Adding export type names to constant
+* Adding in new export types
+* Adding in new export types
+* Altering example params to use peptides instead of q\_value as export type
+* Altering example params to use peptides instead of q\_value as export type
+* upping version in setup.py to 0.3.1
+* upping version in setup.py to 0.3.1
+* Upping version in setup.cfg to 0.3.1
+* Upping version in setup.cfg to 0.3.1
+* Updating README to discuss in detail the export types and adding in the new types
+* Updating README to discuss in detail the export types and adding in the new types
+* Adding space to try and get main header to show large
+* Adding space to try and get main header to show large
+* Update to sizing of headers in README.md
+* Update to sizing of headers in README.md
+* Testing in document link change
+* Testing in document link change
+* Changes to README.md to make the tables work within bitbucket
+* Changes to README.md to make the tables work within bitbucket
+* Renaming inclusion.png making the i lowercase
+* Renaming inclusion.png making the i lowercase
+* Updating the README.md file
+* Updating the README.md file
+* Adding images for updated README.md
+* Adding images for updated README.md
+* Upping version to 0.3.0
+* Upping version to 0.3.0
+* Upping version to 0.3.0
+* Upping version to 0.3.0
+* Updating tests to reflect changes made in test param files
+* Updating tests to reflect changes made in test param files
+* Updating parameters for all tests
+* Updating parameters for all tests
+* Adding \_override\_inference\_none method to init of Parameter class
+* Adding \_override\_inference\_none method to init of Parameter class
+* Adding an internal helper function that sets inferece\_type to "none" if the user sets it to "None", "none", or None
+* Adding an internal helper function that sets inferece\_type to "none" if the user sets it to "None", "none", or None
+* Swapping out some default parameters
+* Swapping out some default parameters
+* Changing how params are accessed from yaml dictionary in parameters module
+* Changing how params are accessed from yaml dictionary in parameters module
+* Updating inference constants to include "none" None and "None" as input
+* Updating inference constants to include "none" None and "None" as input
+* Updating the example parameter file to new format
+* Updating the example parameter file to new format
+* Removing old parameter file
+* Removing old parameter file
+* Adding a skip decorator to the pulp pipeline test
+* Adding a skip decorator to the pulp pipeline test
+* Changing custom additive and custom multiplicative pipeline tests to use peptide centric inference as opposed to pulp
+* Changing custom additive and custom multiplicative pipeline tests to use peptide centric inference as opposed to pulp
+* Switching from yaml to PyYAML in requirements.txt
+* Switching from yaml to PyYAML in requirements.txt
+* Adding yaml package to requirements.txt
+* Adding yaml package to requirements.txt
+* Removing benchmark and entrapment imports from \_\_init\_\_.py
+* Removing benchmark and entrapment imports from \_\_init\_\_.py
+* Removing the matplotlib dependency
+* Removing the matplotlib dependency
+* Removing benchmark.py and entrapment.py. Non necessary modules within protein inference that were only used early in development of the package. This will remove the matplotlib dependency
+* Removing benchmark.py and entrapment.py. Non necessary modules within protein inference that were only used early in development of the package. This will remove the matplotlib dependency
+* Adding specific version requirement for matplotlibb version 3.1.1
+* Adding specific version requirement for matplotlibb version 3.1.1
+* Adding matplotlib requirement
+* Adding matplotlib requirement
+* Setting static pandas version
+* Setting static pandas version
+* deleting packages from setup.py
+* deleting packages from setup.py
+* Editing setup.py for build
+* Editing setup.py for build
+* Upping to version 0.2.5
+* Upping to version 0.2.5
+* Adding AUTHORS file
+* Adding AUTHORS file
+* Adding filepath to init of Export class and to export\_to\_csv function so filepath can be passed outside of method/class
+* Adding filepath to init of Export class and to export\_to\_csv function so filepath can be passed outside of method/class
+* Fixing Qvalue calculation to be the minimum current FDR seen
+* Fixing Qvalue calculation to be the minimum current FDR seen
+* Upping setup.cfg to version 0.2.4
+* Upping setup.cfg to version 0.2.4
+* Updated version in setup.cfg to 0.2.3
+* Updated version in setup.cfg to 0.2.3
+* Added input and output files for the new additive and multiplicative custom pipeline tests
+* Added input and output files for the new additive and multiplicative custom pipeline tests
+* Changed PSM Ids in the test perc data decoy file for completedness
+* Changed PSM Ids in the test perc data decoy file for completedness
+* Added a test to run a multiplicative custom score pipeline with all other score types removed from file input
+* Added a test to run a multiplicative custom score pipeline with all other score types removed from file input
+* Added a test to run an additive custom score pipeline with all other score types removed from file input
+* Added a test to run an additive custom score pipeline with all other score types removed from file input
+* Added a test to test various types of input reading with percolator and generic readers
+* Added a test to test various types of input reading with percolator and generic readers
+* changed test name for peptide centric
+* changed test name for peptide centric
+* changed test name for parsimony pulp
+* changed test name for parsimony pulp
+* changed test name for no inference
+* changed test name for no inference
+* changed test name for exclusion
+* changed test name for exclusion
+* changed test name for inclusion
+* changed test name for inclusion
+* changed test name for parsimony glpk
+* changed test name for parsimony glpk
+* Changed the section of code that handled alternative proteins to use the newly made class methods and internal methods for read\_psms of GenericReader class
+* Changed the section of code that handled alternative proteins to use the newly made class methods and internal methods for read\_psms of GenericReader class
+* changed comment
+* changed comment
+* Added try/excepts to loading certain scores that may not be avaliable... Percolator score, qvalue, posterior error prob. And removed commented code
+* Added try/excepts to loading certain scores that may not be avaliable... Percolator score, qvalue, posterior error prob. And removed commented code
+* moved peptide to protein dictionary loading down
+* moved peptide to protein dictionary loading down
+* Changed psm sorting to either be by posterior error probability or if that does not exist then to sort by the user specified scoring variable
+* Changed psm sorting to either be by posterior error probability or if that does not exist then to sort by the user specified scoring variable
+* changed read\_psms method to reflect the similar changes to be able to read from a variety of input types
+* changed read\_psms method to reflect the similar changes to be able to read from a variety of input types
+* Changed init of generic reader to account for new input types
+* Changed init of generic reader to account for new input types
+* Swapped alt protein code with the internal methods to remove duplicated code
+* Swapped alt protein code with the internal methods to remove duplicated code
+* removed constant
+* removed constant
+* Swapped out alternative proteins code to use the internal Reader class method \_fix\_alternative\_proteins
+* Swapped out alternative proteins code to use the internal Reader class method \_fix\_alternative\_proteins
+* Swapped out alternative protein sorting with the sort\_protein\_strings class method from DataStore
+* Swapped out alternative protein sorting with the sort\_protein\_strings class method from DataStore
+* Changed the read\_psms method of PercolatorReader to either read target/decoy files or list of these files separately, or to read from a list of concatenated files, or to read from a directory of concatenated files
+* Changed the read\_psms method of PercolatorReader to either read target/decoy files or list of these files separately, or to read from a list of concatenated files, or to read from a directory of concatenated files
+* Changed init of percolator reader by adding a files and directory variable and running validate input method
+* Changed init of percolator reader by adding a files and directory variable and running validate input method
+* Added an internal class method to the parent reader class that fixes the alternative proteins list for each PSM that is read in from file. This can then be used in the 3 reader methods without repeating code
+* Added an internal class method to the parent reader class that fixes the alternative proteins list for each PSM that is read in from file. This can then be used in the 3 reader methods without repeating code
+* Added a validate input internal method to the parent reader class
+* Added a validate input internal method to the parent reader class
+* Added some init options to parent Reader class
+* Added some init options to parent Reader class
+* Made MAX\_ALLOWED\_ALTERNATIVE\_PROTEINS a parent reader class constant
+* Made MAX\_ALLOWED\_ALTERNATIVE\_PROTEINS a parent reader class constant
+* Added import of os and DataStore into reader module
+* Added import of os and DataStore into reader module
+* Fixed bug in additive scoring that had improper score method and short score method name
+* Fixed bug in additive scoring that had improper score method and short score method name
+* Updated parameters module to set pep and q value restriction to None if it is set as string None in params
+* Updated parameters module to set pep and q value restriction to None if it is set as string None in params
+* Propagated change to sort\_protein\_strings into Datastore methods
+* Propagated change to sort\_protein\_strings into Datastore methods
+* Made sort\_protein\_strings a class method of class Datastore and added decoy symbol to as a variable input
+* Made sort\_protein\_strings a class method of class Datastore and added decoy symbol to as a variable input
+* Adding check to restricting posterior\_error\_prob. If param file value is None we do not restrict
+* Adding check to restricting posterior\_error\_prob. If param file value is None we do not restrict
+* Updating setup.cfg version to 0.2.2
+* Updating setup.cfg version to 0.2.2
+* Added a test for peptide parsing which includes splitting of flanked residues and removing mods of various peptide formats from various industry standard tools
+* Added a test for peptide parsing which includes splitting of flanked residues and removing mods of various peptide formats from various industry standard tools
+* Replaced string splitting with split\_peptide class method of Psm object in the reader module
+* Replaced string splitting with split\_peptide class method of Psm object in the reader module
+* Replaced string splitting with split\_peptide class method of Psm object in the datastore module and methods
+* Replaced string splitting with split\_peptide class method of Psm object in the datastore module and methods
+* Added Psm import to datastore module
+* Added Psm import to datastore module
+* Replaced string splitting with split\_peptide class method of Psm object in the inference module
+* Replaced string splitting with split\_peptide class method of Psm object in the inference module
+* Added two class methods to split flanking residues off of peptides with a given delimiter which defaults to "."
+* Added two class methods to split flanking residues off of peptides with a given delimiter which defaults to "."
+* within remove\_peptide\_mods class method we swapped AMINO\_ACID\_SYMBOLS regex with MOD\_REGEX regex
+* within remove\_peptide\_mods class method we swapped AMINO\_ACID\_SYMBOLS regex with MOD\_REGEX regex
+* Added Back and Front flanking regexes to remove flanking residues and the delimiter
+* Added Back and Front flanking regexes to remove flanking residues and the delimiter
+* Changed the AMINO\_ACID\_SYMBOLS regex to a MOD\_REGEX which removes anything between and including brackets/parentheses, as well as anything that is not A-Z
+* Changed the AMINO\_ACID\_SYMBOLS regex to a MOD\_REGEX which removes anything between and including brackets/parentheses, as well as anything that is not A-Z
+* Upping to version 0.2.1
+* Upping to version 0.2.1
+* Same changes for the pyteomics digest. Switched to dictionaries from default dictionaries and swithced to using regex.sub for id splitting. Also, we are now using the min\_length arg in parser.cleave
+* Same changes for the pyteomics digest. Switched to dictionaries from default dictionaries and swithced to using regex.sub for id splitting. Also, we are now using the min\_length arg in parser.cleave
+* Removed pickle file logic as this is never used and changed how ID splitting is done. We changed to using a regex.sub and changed to using dictionaries as storage as opposed to default dictionaries
+* Removed pickle file logic as this is never used and changed how ID splitting is done. We changed to using a regex.sub and changed to using dictionaries as storage as opposed to default dictionaries
+* Added peptide length restriction but it is currently commented out as this breaks the code
+* Added peptide length restriction but it is currently commented out as this breaks the code
+* Added max peptide length variable to InSilicoDigest
+* Added max peptide length variable to InSilicoDigest
+* Removal of unnecessary instance variables
+* Removal of unnecessary instance variables
+* Created a parent Digest class and used this class as parent of the two child classes
+* Created a parent Digest class and used this class as parent of the two child classes
+* Fixing bug in reader if our inference type is none we still need to make poss\_proteins variable a list
+* Fixing bug in reader if our inference type is none we still need to make poss\_proteins variable a list
+* Added an If statement within inference.py. This If statement avoids grouping if our inference type is none or inclusion. We should not be doing grouping in this case and this speeds up inclusion dramatically
+* Added an If statement within inference.py. This If statement avoids grouping if our inference type is none or inclusion. We should not be doing grouping in this case and this speeds up inclusion dramatically
+* inclusion results updated to account for sorting done within \_group\_by\_peptides to provide consistency
+* inclusion results updated to account for sorting done within \_group\_by\_peptides to provide consistency
+* Updating parsimony test output to work for updated version of glpk parsimony and pulp parsimony
+* Updating parsimony test output to work for updated version of glpk parsimony and pulp parsimony
+* updating mod file for glpk test
+* updating mod file for glpk test
+* Removing unnecessary details from pulp test
+* Removing unnecessary details from pulp test
+* Updating all test parameter files
+* Updating all test parameter files
+* Adding a parsimony pulp test
+* Adding a parsimony pulp test
+* Renaming parsimony pipeline to parsimony\_pipeline\_glpk
+* Renaming parsimony pipeline to parsimony\_pipeline\_glpk
+* Updating tests to test for reading in new lp\_solver param
+* Updating tests to test for reading in new lp\_solver param
+* Adding the lp\_solver variable to the parameter class
+* Adding the lp\_solver variable to the parameter class
+* Altering the infer\_proteins method of Parsimony class to have split logic for either running with pulp or glpk based on param input
+* Altering the infer\_proteins method of Parsimony class to have split logic for either running with pulp or glpk based on param input
+* Adding the \_pulp\_grouper function when runs parsimony with pulp python package
+* Adding the \_pulp\_grouper function when runs parsimony with pulp python package
+* removing commented code
+* removing commented code
+* sorting proteins alphabetically in \_setup\_glpk to be constistenct to \_pulp\_grouper
+* sorting proteins alphabetically in \_setup\_glpk to be constistenct to \_pulp\_grouper
+* Changinng sorting to being on the length of peptides and then alphabetically by identifiern in the function \_group\_by\_peptides
+* Changinng sorting to being on the length of peptides and then alphabetically by identifiern in the function \_group\_by\_peptides
+* Adding LP\_SOLVERS constant to inference class
+* Adding LP\_SOLVERS constant to inference class
+* Adding pulp import to inference module
+* Adding pulp import to inference module
+* Adding LP solver as an option to param file
+* Adding LP solver as an option to param file
+* Adding pulp as a new requirement
+* Adding pulp as a new requirement
+* Changing the commandline runner to use the pipeline class
+* Changing the commandline runner to use the pipeline class
+* Adding data and digest as instance variables and defining them so user can see the data and digest objects after inference pipeline has been completed
+* Adding data and digest as instance variables and defining them so user can see the data and digest objects after inference pipeline has been completed
+* fixing bug where we do not define the full path to ProteinInferenceParameter class
+* fixing bug where we do not define the full path to ProteinInferenceParameter class
+* Adding logic to export class. If directory is null then write to cwd
+* Adding logic to export class. If directory is null then write to cwd
+* Adding pipeline import to \_\_init\_\_.py
+* Adding pipeline import to \_\_init\_\_.py
+* Adding ProteinInferencePipeline class with execute method which will replace the current runner
+* Adding ProteinInferencePipeline class with execute method which will replace the current runner
+* Adding pipeline module
+* Adding pipeline module
+* Updating peptide centric results from test to account for new sorting of the identifiers
+* Updating peptide centric results from test to account for new sorting of the identifiers
+* Updating tests to test for loading of new param "max\_identifiers\_peptide\_centric"
+* Updating tests to test for loading of new param "max\_identifiers\_peptide\_centric"
+* Adding "max\_identifiers\_peptide\_centric" to example param file
+* Adding "max\_identifiers\_peptide\_centric" to example param file
+* Adding new param "max\_identifiers\_peptide\_centric" to all test parameter files
+* Adding new param "max\_identifiers\_peptide\_centric" to all test parameter files
+* Adding a method to validate the max\_identifiers\_peptide\_centric parameter as an int from the parameter file
+* Adding a method to validate the max\_identifiers\_peptide\_centric parameter as an int from the parameter file
+* Adding a new parameter to the parameter file called max\_identifiers\_peptide\_centric which sets the maximum number of identifiers to be in one peptide centric group for a peptide centric inference run
+* Adding a new parameter to the parameter file called max\_identifiers\_peptide\_centric which sets the maximum number of identifiers to be in one peptide centric group for a peptide centric inference run
+* Adding identifier sorting and number of identifier restriction to peptide centric inference set up
+* Adding identifier sorting and number of identifier restriction to peptide centric inference set up
+* Adding a class method of the datastore object that sorts proteins based on reviewed/unreviewed status, decoy/target status, and then finally alphabetically
+* Adding a class method of the datastore object that sorts proteins based on reviewed/unreviewed status, decoy/target status, and then finally alphabetically
+* Adding digest\_class as an object variable to the datastore object
+* Adding digest\_class as an object variable to the datastore object
+* Adding test 006 which is a test for the peptide centric pipeline
+* Adding test 006 which is a test for the peptide centric pipeline
+* Adding peptide centric output file to tests/output/ for testing
+* Adding peptide centric output file to tests/output/ for testing
+* Adding peptide centric test params to tests/data/
+* Adding peptide centric test params to tests/data/
+* Adding the class PeptideCentric which creates sorted protein groups in a peptide centric fashion
+* Adding the class PeptideCentric which creates sorted protein groups in a peptide centric fashion
+* Adding a new internal function \_apply\_group\_ids\_peptide\_centric. To create protein groups based on peptide centric scored proteins
+* Adding a new internal function \_apply\_group\_ids\_peptide\_centric. To create protein groups based on peptide centric scored proteins
+* Fixing typo in Inference logger
+* Fixing typo in Inference logger
+* Adding peptide\_centric to INFERENCE\_TYPES class constant for Inference class
+* Adding peptide\_centric to INFERENCE\_TYPES class constant for Inference class
+* Forking datastore method create\_scoring\_input to create the scoring input differently if inference type is peptide\_centric
+* Forking datastore method create\_scoring\_input to create the scoring input differently if inference type is peptide\_centric
+* Adding to .gitignore
+* Adding to .gitignore
+* Updating test output files to include new results
+* Updating test output files to include new results
+* Updating GLPK input file and solution file for parsimony test to include new peptides
+* Updating GLPK input file and solution file for parsimony test to include new peptides
+* Updating target percolator test data
+* Updating target percolator test data
+* Updating inclusion params
+* Updating inclusion params
+* Updating test fasta database with new protein
+* Updating test fasta database with new protein
+* Updating test 004 no inference pipeline to work with newly updated data
+* Updating test 004 no inference pipeline to work with newly updated data
+* Updating test 003 exclusion pipeline to work with newly updated data
+* Updating test 003 exclusion pipeline to work with newly updated data
+* Updating test 002 inclusion pipeline to work with newly updated data
+* Updating test 002 inclusion pipeline to work with newly updated data
+* Updating test 001 parsimony pipeline to work with newly updated data
+* Updating test 001 parsimony pipeline to work with newly updated data
+* Altering readers to not store extra possible proteins if running inference\_type as "none". Code is edited in this case for a peptide to map to only one protein. In this case it is the first alphabetical swissprot identifier, followed by trembl if no swissprot identifier exists for that peptide
+* Altering readers to not store extra possible proteins if running inference\_type as "none". Code is edited in this case for a peptide to map to only one protein. In this case it is the first alphabetical swissprot identifier, followed by trembl if no swissprot identifier exists for that peptide
+* Changing Q value calculation to just being equal to the current FDR. This changes the previous calculation of taking the current minimum FDR as the q value
+* Changing Q value calculation to just being equal to the current FDR. This changes the previous calculation of taking the current minimum FDR as the q value
+* Propagating the changes to make it variable to append alternative proteins from the database while simultaneously adding logic to restrict the number of possible proteins to less than the class constant Maximum amount
+* Propagating the changes to make it variable to append alternative proteins from the database while simultaneously adding logic to restrict the number of possible proteins to less than the class constant Maximum amount
+* Adding an option to append alternative proteins from the database. This was previously set default to yes/True
+* Adding an option to append alternative proteins from the database. This was previously set default to yes/True
+* minor tweaks
+* minor tweaks
+* Adding a new class function to datastore
+* Adding a new class function to datastore
+* Adding option to restrict\_psm\_data to either remove or not remove data with a pep value of 1
+* Adding option to restrict\_psm\_data to either remove or not remove data with a pep value of 1
+* Adding option to skip validation in datastore object
+* Adding option to skip validation in datastore object
+* Fixing logic issue in inference that was caused if picker wasnt ran
+* Fixing logic issue in inference that was caused if picker wasnt ran
+* Changes to reader by taking max alternative proteins and making it a class constant
+* Changes to reader by taking max alternative proteins and making it a class constant
+* Adding an option to not do grouping for inference. We simply apply a group ID for every identified Protein
+* Adding an option to not do grouping for inference. We simply apply a group ID for every identified Protein
+* Adding option to skip validation of parameters
+* Adding option to skip validation of parameters
+* Sorting Peptide input to glpkinput creation. This makes creating glpkin file deterministic. If the input is the same from run to run then we can reproduce glpkinput
+* Sorting Peptide input to glpkinput creation. This makes creating glpkin file deterministic. If the input is the same from run to run then we can reproduce glpkinput
+* Committing glpkin/out files to test if creating of files can be deterministic
+* Committing glpkin/out files to test if creating of files can be deterministic
+* COMPPROT-2223: Adding logging config to command line runner
+* COMPPROT-2223: Adding logging config to command line runner
+* COMPPROT-2223: Adding logger config to tests
+* COMPPROT-2223: Adding logger config to tests
+* COMPPROT-2223: Converting print statements to logging statements in the scoring module
+* COMPPROT-2223: Converting print statements to logging statements in the scoring module
+* COMPPROT-2223: Converting print statements to logging statements in the reader module
+* COMPPROT-2223: Converting print statements to logging statements in the reader module
+* COMPPROT-2223: Converting print statements to logging statements in the qvality module
+* COMPPROT-2223: Converting print statements to logging statements in the qvality module
+* COMPPROT-2223: Converting print statements to logging statements in the parameters module
+* COMPPROT-2223: Converting print statements to logging statements in the parameters module
+* COMPPROT-2223: Converting print statements to logging statements in the inference module
+* COMPPROT-2223: Converting print statements to logging statements in the inference module
+* COMPPROT-2223: Converting print statements to logging statements in the in\_silico\_digest module
+* COMPPROT-2223: Converting print statements to logging statements in the in\_silico\_digest module
+* COMPPROT-2223: Adding Logging messages to the export module
+* COMPPROT-2223: Adding Logging messages to the export module
+* COMPPROT-2223: Converting print statements to logging statements in the entrapment module
+* COMPPROT-2223: Converting print statements to logging statements in the entrapment module
+* COMPPROT-2223: Swapping print statements with a logging statement for DataStore module
+* COMPPROT-2223: Swapping print statements with a logging statement for DataStore module
+* COMPPROT-2223: Swapping print statements with a logging statement for Benchmark module
+* COMPPROT-2223: Swapping print statements with a logging statement for Benchmark module
+* Updating .gitignore to ignore a few directories
+* Updating .gitignore to ignore a few directories
+* Added score method and score type class constants to the Scoring class
+* Added score method and score type class constants to the Scoring class
+* Added a file name print to the generic reader
+* Added a file name print to the generic reader
+* Added parameter file validation to the init of creating a parameter object. If improper parameters are supplied proper errors get thrown
+* Added parameter file validation to the init of creating a parameter object. If improper parameters are supplied proper errors get thrown
+* Added two class constants (Inference types and grouping types) and created a run\_inference function that dispatches to the various inference methods
+* Added two class constants (Inference types and grouping types) and created a run\_inference function that dispatches to the various inference methods
+* Swapped instance variables to being class constants for downstream validation purposes
+* Swapped instance variables to being class constants for downstream validation purposes
+* Added an export type class constant and created an export to csv function that internalizes all of the export options
+* Added an export type class constant and created an export to csv function that internalizes all of the export options
+* Added validation and check functions to the datastore class to look for inconsistencies and issues with the data, IE peptides/proteins found in input data but absent from digest, the ability for decoys to be identified in the digest and input files, finding isoforms, and finding reviewed vs unreviewed identifiers
+* Added validation and check functions to the datastore class to look for inconsistencies and issues with the data, IE peptides/proteins found in input data but absent from digest, the ability for decoys to be identified in the digest and input files, finding isoforms, and finding reviewed vs unreviewed identifiers
+* Adding a unit test for the no inference (FirstProtein) workflow pipeline
+* Adding a unit test for the no inference (FirstProtein) workflow pipeline
+* Adding support for FirstProtein inference method (no inference) to the reader class
+* Adding support for FirstProtein inference method (no inference) to the reader class
+* Added a new inference type called "FirstProtein" It essentially does not do Protein Inference and only uses the first protein listed in the Peptide to Protein mapping. Essentially a peptide can only map to one protein in this case... No groups are greated. This is similar to Protein Sieve in GFY
+* Added a new inference type called "FirstProtein" It essentially does not do Protein Inference and only uses the first protein listed in the Peptide to Protein mapping. Essentially a peptide can only map to one protein in this case... No groups are greated. This is similar to Protein Sieve in GFY
+* glpkin glpkout
+* glpkin glpkout
+* Adding glpk input file changes
+* Adding glpk input file changes
+* adding all output file for parsimony from test
+* adding all output file for parsimony from test
+* Sorting flat peptides before writing to glpkinput file
+* Sorting flat peptides before writing to glpkinput file
+* Change to parsimony test
+* Change to parsimony test
+* Updating test glpkin glpkout files
+* Updating test glpkin glpkout files
+* Edited the glpk setup function to give deterministic output. IE if the input files are the same for PI then we should get the same input to glpk and output from glpk
+* Edited the glpk setup function to give deterministic output. IE if the input files are the same for PI then we should get the same input to glpk and output from glpk
+* Change to example params to provide an actual grouping type
+* Change to example params to provide an actual grouping type
+* Adding change to commandline runner datastore init now requires digest class
+* Adding change to commandline runner datastore init now requires digest class
+* Updated Tests to make BRAF have no unique peptides. Thus changing the Results generated from the various methods
+* Updated Tests to make BRAF have no unique peptides. Thus changing the Results generated from the various methods
+* Updating .gitignore to ignore the output/ directory
+* Updating .gitignore to ignore the output/ directory
+* Committing previous result files for tests
+* Committing previous result files for tests
+* Adding new PSM to test input data
+* Adding new PSM to test input data
+* Adding changes to glpk parsimony files... Need to be able to generate the same input file every time Currently that doesnt work
+* Adding changes to glpk parsimony files... Need to be able to generate the same input file every time Currently that doesnt work
+* Adding glpk files for parsimony test
+* Adding glpk files for parsimony test
+* Adding Testing parameter files
+* Adding Testing parameter files
+* Adding init to tests directory
+* Adding init to tests directory
+* Updating function names for unit tests
+* Updating function names for unit tests
+* Adding exclusion pipeline test
+* Adding exclusion pipeline test
+* adding inclusion pipeline test
+* adding inclusion pipeline test
+* Adding parsimony pipeline test
+* Adding parsimony pipeline test
+* Add option to skip running glpk
+* Add option to skip running glpk
+* Add sorting of peptides to output
+* Add sorting of peptides to output
+* Adding files to be used for testing including fasta file, and target/decoy input files (percolator)
+* Adding files to be used for testing including fasta file, and target/decoy input files (percolator)
+* updating version from 0.1.0 to 0.2.0 to account for new features to read in custom scores from input, run additive scoring, and to apply different grouping types
+* updating version from 0.1.0 to 0.2.0 to account for new features to read in custom scores from input, run additive scoring, and to apply different grouping types
+* Added a generic reader function that can parse customized columns from the input file by inputing the column header as the Score parameter in the parameter file
+* Added a generic reader function that can parse customized columns from the input file by inputing the column header as the Score parameter in the parameter file
+* Added a line to percolator reader to make sure that the possible protein is not an empty string
+* Added a line to percolator reader to make sure that the possible protein is not an empty string
+* Added a remap function to remap blank column headers to alternative\_proteins headers
+* Added a remap function to remap blank column headers to alternative\_proteins headers
+* Added itertools import to reader
+* Added itertools import to reader
+* Propagated changes to runner
+* Propagated changes to runner
+* Added a new slot to the PSM object called custom\_score
+* Added a new slot to the PSM object called custom\_score
+* Added new parameter imports and changed old names in parameter class
+* Added new parameter imports and changed old names in parameter class
+* Change peptide grouping internal function and added an option for grouping\_type while changing old group\_type to inference\_type
+* Change peptide grouping internal function and added an option for grouping\_type while changing old group\_type to inference\_type
+* Removed hard coded isoform string
+* Removed hard coded isoform string
+* Added two instance variable defs
+* Added two instance variable defs
+* removed hard coded decoy symbol
+* removed hard coded decoy symbol
+* Altered score input to work with custom scores from input files
+* Altered score input to work with custom scores from input files
+* Added a score mapper constant and changed score\_type to score
+* Added a score mapper constant and changed score\_type to score
+* fix init to load parameters
+* fix init to load parameters
+* Updated parameters to change score\_type to score, add a score\_type, and add a grouping\_type
+* Updated parameters to change score\_type to score, add a score\_type, and add a grouping\_type
+* Created an additive scoring feature
+* Created an additive scoring feature
+* COMPPROT-2226: Refactored The commandline script to use the newly refactored classes and methods
+* COMPPROT-2226: Refactored The commandline script to use the newly refactored classes and methods
+* COMPPROT-2226: Refactored the Scoring module from separate Classes for every scoring method to one Scoring class with separate instance methods for the scoring methods
+* COMPPROT-2226: Refactored the Scoring module from separate Classes for every scoring method to one Scoring class with separate instance methods for the scoring methods
+* COMPPROT-2226: Moved digest from its own Digest module and put it into the protein\_inference module
+* COMPPROT-2226: Moved digest from its own Digest module and put it into the protein\_inference module
+* COMPPROT-2226: Changes to example parameters to include decoy symbol, isoform symbol, reviewed identifier symbol, and a filenaming tag
+* COMPPROT-2226: Changes to example parameters to include decoy symbol, isoform symbol, reviewed identifier symbol, and a filenaming tag
+* COMPPROT-2226: Switching to use the decoy symbol from the parameter object as opposed to a hard coded decoy symbol for protein sorting
+* COMPPROT-2226: Switching to use the decoy symbol from the parameter object as opposed to a hard coded decoy symbol for protein sorting
+* COMPPROT-2226: Changing removing mods from peptide strings to use the PSM class method
+* COMPPROT-2226: Changing removing mods from peptide strings to use the PSM class method
+* COMPPROT-2226: Changing Reader function names from execute to read\_psms
+* COMPPROT-2226: Changing Reader function names from execute to read\_psms
+* COMPPROT-2226: Changing the way swissprot dictionary is accessed
+* COMPPROT-2226: Changing the way swissprot dictionary is accessed
+* COMPPROT-2226: Changing init of the Reader classes to take a parameter object instead of a parameter file
+* COMPPROT-2226: Changing init of the Reader classes to take a parameter object instead of a parameter file
+* COMPPROT-2226: Change of PercolatorReader class name
+* COMPPROT-2226: Change of PercolatorReader class name
+* COMPPROT-2226: Removed the grouping code as it was changed to inference
+* COMPPROT-2226: Removed the grouping code as it was changed to inference
+* COMPPROT-2226: Changed the grouping module's name to inference and changed the parsimony classes to be internal functions of the parsimony object
+* COMPPROT-2226: Changed the grouping module's name to inference and changed the parsimony classes to be internal functions of the parsimony object
+* COMPPROT-2226: Removed the fdr calculation sub module as its functionality was moved to the datastore object
+* COMPPROT-2226: Removed the fdr calculation sub module as its functionality was moved to the datastore object
+* COMPPROT-2226: Remove the picker import from the init
+* COMPPROT-2226: Remove the picker import from the init
+* COMPPROT-2226: Removed picker sub module because its functionality was moved to the datastore object
+* COMPPROT-2226: Removed picker sub module because its functionality was moved to the datastore object
+* COMPPROT-2226: Refactored parsing/removing peptide mods from peptides strings to being a class method of the psm object
+* COMPPROT-2226: Refactored parsing/removing peptide mods from peptides strings to being a class method of the psm object
+* COMPPROT-2226: Refactored Export functionality to having one Export class with various instance methods for the export type
+* COMPPROT-2226: Refactored Export functionality to having one Export class with various instance methods for the export type
+* COMPPROT-2226: Refactored Entrapment FDR to being an instance method of the DataStore object
+* COMPPROT-2226: Refactored Entrapment FDR to being an instance method of the DataStore object
+* COMPPROT-2226: Refactored Q Value Calculations to being an instance method of the DataStore object
+* COMPPROT-2226: Refactored Q Value Calculations to being an instance method of the DataStore object
+* COMPPROT-2226: Refactored Set based FDR to being an instance method of the DataStore object
+* COMPPROT-2226: Refactored Set based FDR to being an instance method of the DataStore object
+* COMPPROT-2226: Refactored the protein picker functionality to be an instance method of the DataStore object
+* COMPPROT-2226: Refactored the protein picker functionality to be an instance method of the DataStore object
+* Refactored the Exclusion class to being a method of a DataStore instance called exclude\_non\_distinguishing\_peptides
+* Refactored the Exclusion class to being a method of a DataStore instance called exclude\_non\_distinguishing\_peptides
+* COMPPROT-2226: Changed Swissprot dict from default dict to set
+* COMPPROT-2226: Changed Swissprot dict from default dict to set
+* COMPPROT-2226: Removed Decoy symbol from init and added a score mapper
+* COMPPROT-2226: Removed Decoy symbol from init and added a score mapper
+* COMPPROT-2226: Changed variable from yaml\_params to parameter\_file\_object
+* COMPPROT-2226: Changed variable from yaml\_params to parameter\_file\_object
+* COMPPROT-2226: Added import of SeqIO
+* COMPPROT-2226: Added import of SeqIO
+* COMPPROT-2226: Added a function to get protein data
+* COMPPROT-2226: Added a function to get protein data
+* COMPPROT-2226: Refactored init to account for renaming and removing of sub modules
+* COMPPROT-2226: Refactored init to account for renaming and removing of sub modules
+* COMPPROT-2252: Created a Parameter class to store parameters for easy access
+* COMPPROT-2252: Created a Parameter class to store parameters for easy access
+* Applying changes on how we assign possible proteins from the database in the proteologic reader section of the code
+* Applying changes on how we assign possible proteins from the database in the proteologic reader section of the code
+* Applying changes to proteologic import of psms
+* Applying changes to proteologic import of psms
+* Applying changes to creating psm objects, specifically how we get alternative proteins from the database
+* Applying changes to creating psm objects, specifically how we get alternative proteins from the database
+* Adding swissprot dictionary
+* Adding swissprot dictionary
+* changing reading functions in reader class from .read() to using the csv module
+* changing reading functions in reader class from .read() to using the csv module
+* Adding regex filter for mods and decoy symbol
+* Adding regex filter for mods and decoy symbol
+* Changing imports. Adding re and csv
+* Changing imports. Adding re and csv
+* Adding support for an Exclusion Inference Model and removing commented code
+* Adding support for an Exclusion Inference Model and removing commented code
+* Added support for an Inclusion Inference Model
+* Added support for an Inclusion Inference Model
+* Changes to parsimony grouping to use internal functions from parent Grouper class
+* Changes to parsimony grouping to use internal functions from parent Grouper class
+* Changes to print statements to work with python3
+* Changes to print statements to work with python3
+* Applying changes to glpksetup to try to order the proteins that go into the linear model so we can have a deterministic output of lead proteins
+* Applying changes to glpksetup to try to order the proteins that go into the linear model so we can have a deterministic output of lead proteins
+* Changing init for glpk setup
+* Changing init for glpk setup
+* Adding a secondary internal function to reassign protein leads based on peptide subsets and score
+* Adding a secondary internal function to reassign protein leads based on peptide subsets and score
+* Adding an internal function to apply group ids, create protein groups, perform swissprot override, and isoform override for parsimony inference
+* Adding an internal function to apply group ids, create protein groups, perform swissprot override, and isoform override for parsimony inference
+* Adding an internal function to apply protein group ids and to create protein group objects
+* Adding an internal function to apply protein group ids and to create protein group objects
+* Adding function return for internal peptide grouping function
+* Adding function return for internal peptide grouping function
+* finishing the peptide grouping internal function
+* finishing the peptide grouping internal function
+* Adding an internal function that groups proteins into a list of lists based on shared peptides
+* Adding an internal function that groups proteins into a list of lists based on shared peptides
+* Changed imports for grouping code
+* Changed imports for grouping code
+* Added a function to remove non distinguishing peptides from proteins in the dataset (exclusion method)
+* Added a function to remove non distinguishing peptides from proteins in the dataset (exclusion method)
+* Altering print statements in datastore to work with python3
+* Altering print statements in datastore to work with python3
+* Changing pre scoring functions in datastore to loop over proteins after they have been sorted alphabetically and to sort raw peptides alphabetically
+* Changing pre scoring functions in datastore to loop over proteins after they have been sorted alphabetically and to sort raw peptides alphabetically
+* Added an instance method to the datastore class to sort scored/picked protein identifiers (strings) by swissprot proteins, decoy swissprot proteins, trembl proteins, and decoy trembl proteins
+* Added an instance method to the datastore class to sort scored/picked protein identifiers (strings) by swissprot proteins, decoy swissprot proteins, trembl proteins, and decoy trembl proteins
+* Added a decoy symbol hard coded for now
+* Added a decoy symbol hard coded for now
+* Changed imports to datastore module and added a Ordered Dict import
+* Changed imports to datastore module and added a Ordered Dict import
+* Made scoring module python3 compatible
+* Made scoring module python3 compatible
+* made qvality module python3 compatible
+* made qvality module python3 compatible
+* Made picker module python3 compatible
+* Made picker module python3 compatible
+* Changed physical protein group\_identification and raw\_peptides to sets
+* Changed physical protein group\_identification and raw\_peptides to sets
+* Made FDR module python3 compatible
+* Made FDR module python3 compatible
+* Making export module compatible and changing Qvalue Lead export to have its peptides sorted
+* Making export module compatible and changing Qvalue Lead export to have its peptides sorted
+* Making entrapment module python3 compatible
+* Making entrapment module python3 compatible
+* Making the Benchmark module compatible with python3
+* Making the Benchmark module compatible with python3
+* Altering example parameter file to include inference\_type, decoy\_symbol, and isoform\_symbol
+* Altering example parameter file to include inference\_type, decoy\_symbol, and isoform\_symbol
+* Adding N-term methionine cleavage to pyteomics insilico digest
+* changing the way swissprot proteins are identified in an insilico digest
+* Making insilicodigest compatible with python3
+* Update to requirements.txt to drop bluecopper related dependencies
+* Update to requirements.txt to drop bluecopper related dependencies
+* Removing unnecessary data and files from repo and setting more files and directories to ignore in the .gitignore
+* Removing unnecessary data and files from repo and setting more files and directories to ignore in the .gitignore
+* adding in .gitignore
+* adding in .gitignore
+* resetting version number in setup.cfg/py
+* resetting version number in setup.cfg/py
+* changes to some pi modules
+* changes to some pi modules
+* adding a few parameter files, changing digest to allow for lysc digestion, and applying a small change to grouping
+* adding a few parameter files, changing digest to allow for lysc digestion, and applying a small change to grouping
+* COMPPROT-1919: changes to datastore and grouping, as well as changes to the reader class - we now restrict the possible proteins a peptide can belong to to a maximum of 50 - This being the first 50 proteins in the percolator results
+* COMPPROT-1919: changes to datastore and grouping, as well as changes to the reader class - we now restrict the possible proteins a peptide can belong to to a maximum of 50 - This being the first 50 proteins in the percolator results
+* COMPPROT-1919: Added a step to be able to run the command line tool 'qvality' on protein inference results. This returns Q values and Posterior Error Probabilities for grouped proteins on the protein group level
+* COMPPROT-1919: Added a step to be able to run the command line tool 'qvality' on protein inference results. This returns Q values and Posterior Error Probabilities for grouped proteins on the protein group level
+* COMPPROT-1919: Added some code optimizations in an attempt to get PI to work on larger data (fractionated workflows)
+* COMPPROT-1919: Added some code optimizations in an attempt to get PI to work on larger data (fractionated workflows)
+* changing name in setup.cfg
+* changing name in setup.cfg
+* cleaning up directories and changing name from py\_protein\_inference to protein\_inference
+* cleaning up directories and changing name from py\_protein\_inference to protein\_inference
+* adding requirements.txt and changing setup.py
+* adding requirements.txt and changing setup.py
+* changed name to py\_protein\_inference
+* changed name to py\_protein\_inference
+* changing import names in some files
+* changing import names in some files
+* changing name from ProteinInference to py\_protein\_inference
+* changing name from ProteinInference to py\_protein\_inference
+* Making code more efficient by adding generators and changing some list checks to set checks
+* Making code more efficient by adding generators and changing some list checks to set checks
+* simplifying entrapment fdr calculation
+* simplifying entrapment fdr calculation
+* hopefully final commit
+* hopefully final commit
+* change to fdr calculation for entrapment proteins
+* change to fdr calculation for entrapment proteins
+* change to fdr calculation for entrapment proteins
+* change to fdr calculation for entrapment proteins
+* final change to entrapment fdr calc
+* final change to entrapment fdr calc
+* fixing entrapment FDR calculation..
+* fixing entrapment FDR calculation..
+* changes to allow removing non unique peptides
+* changes to allow removing non unique peptides
+* changes to entrapment runners
+* changes to entrapment runners
+* changes to some example runners
+* changes to some example runners
+* changes to command line runner and changes to reader to be able to work without alternative proteins
+* changes to command line runner and changes to reader to be able to work without alternative proteins
+* Fixes to in silico digest for 3 missed cleavages
+* Fixes to in silico digest for 3 missed cleavages
+* added support for long lead q value output
+* added support for long lead q value output
+* added support for 3 missed cleavages, fixed isoform issue, and various other changes
+* added support for 3 missed cleavages, fixed isoform issue, and various other changes
+* changes to Protein Inference including the ability to handle Percolator Output that is ALL PSMS... Currently PI will take the best PSM given an identical peptide..
+* changes to Protein Inference including the ability to handle Percolator Output that is ALL PSMS... Currently PI will take the best PSM given an identical peptide..
+* added support for Yaml parameter file for selecting options..
+* added support for Yaml parameter file for selecting options..
+* added isoform override, which overrides isoform group lead proteins if the canonical form is in the same protein group and if the isoforms peptides are a subset of the canonical forms peptides - isoform would potentially get listed first due to glpk. If they have the same peptides it is random which one will get output as a lead
+* added isoform override, which overrides isoform group lead proteins if the canonical form is in the same protein group and if the isoforms peptides are a subset of the canonical forms peptides - isoform would potentially get listed first due to glpk. If they have the same peptides it is random which one will get output as a lead
+* added isoform override, which overrides isoform group lead proteins if the canonical form is in the same protein group and if the isoforms peptides are a subset of the canonical forms peptides - isoform would potentially get listed first due to glpk. If they have the same peptides it is random which one will get output as a lead
+* added isoform override, which overrides isoform group lead proteins if the canonical form is in the same protein group and if the isoforms peptides are a subset of the canonical forms peptides - isoform would potentially get listed first due to glpk. If they have the same peptides it is random which one will get output as a lead
+* added MANIFEST.in, setup.py changed, moved some example runners to scripts/
+* added MANIFEST.in, setup.py changed, moved some example runners to scripts/
+* changes to README.md
+* changes to README.md
+* more changes to runner.py
+* more changes to runner.py
+* changes to runner.py
+* changes to runner.py
+* changing runner to run on rescomp3..
+* changing runner to run on rescomp3..
+* change command line runner name, add feature to close plot in benchmark so multiple pages on the pdf are created
+* change command line runner name, add feature to close plot in benchmark so multiple pages on the pdf are created
+* added markdown text file
+* added markdown text file
+* removing readme
+* removing readme
+* readme
+* readme
+* trying to add a README.md
+* trying to add a README.md
+* changes to test files and removing unnecessary files
+* changes to test files and removing unnecessary files
+* added a PureDecoyFdr class to fdrcalc. This does decoys/total instead of 2\*decoys/total, this is useful when running entrapment and entrap runner because we want decoy fdr not 2\*decoy fdr
+* added a PureDecoyFdr class to fdrcalc. This does decoys/total instead of 2\*decoys/total, this is useful when running entrapment and entrap runner because we want decoy fdr not 2\*decoy fdr
+* small clr change
+* small clr change
+* removed fdr type from commmand line runner, instead both qvalue and set based will be run every time
+* removed fdr type from commmand line runner, instead both qvalue and set based will be run every time
+* changes to export, added Q value export for all, leads, and comma sep. Also made peptide export the same across all exporters in the csv. Also changed Decoy FDR to be 2\*decoys/total as opposed to decoys/total - this well effect Entrapment as entrapment needs decoys/total to be compared to entrapment/total... change back if we need to do more entrapment work
+* changes to export, added Q value export for all, leads, and comma sep. Also made peptide export the same across all exporters in the csv. Also changed Decoy FDR to be 2\*decoys/total as opposed to decoys/total - this well effect Entrapment as entrapment needs decoys/total to be compared to entrapment/total... change back if we need to do more entrapment work
+* final fixes on CLR
+* final fixes on CLR
+* added option for multiple output files in command line runner... - this is temporary for bioplex analysis
+* added option for multiple output files in command line runner... - this is temporary for bioplex analysis
+* try/except when creating glpkinout directory
+* try/except when creating glpkinout directory
+* fixing glpk writing file path
+* fixing glpk writing file path
+* changes to runner
+* changes to runner
+* changes to command line runner
+* changes to command line runner
+* command line runner
+* command line runner
+* reorganizing directories and files
+* reorganizing directories and files
+* secondary commit... adding glpkinout, data, output, plots, scripts directories... also adding Digest which is in silico digest code... and adding entrapment data as well as entrap\_runner which is used to test performance of the PI tool
+* secondary commit... adding glpkinout, data, output, plots, scripts directories... also adding Digest which is in silico digest code... and adding entrapment data as well as entrap\_runner which is used to test performance of the PI tool
+* Initial
