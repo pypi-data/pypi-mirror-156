@@ -1,0 +1,17 @@
+invenio_subjects_mesh/__init__.py,sha256=tAVn2VLWL5QUIvi0lpp0W1hNkc31QpnEiR0U50XyQN0,308
+invenio_subjects_mesh/cli.py,sha256=ufEi12cHs4aK6a15Iw7OyVBBSHI2FzeDSwb_O_8dXeE,942
+invenio_subjects_mesh/converter.py,sha256=P_JXjy7SDN5bRHeQFOddqrOJ2mK7n0Ydwr9r9hN_Pxw,1364
+invenio_subjects_mesh/downloader.py,sha256=qrHVZSQvoPWNsw4Wb7mZZhsqUz-SHNLFvGsboDQ67rM,1235
+invenio_subjects_mesh/reader.py,sha256=6vSQq6eDrIYfcl-Jl4XOCgZWrpBxVKT0hOQvD1vK_zg,1760
+invenio_subjects_mesh/writer.py,sha256=qGxfsiP_Pf_1LEX0a-M4INMhuowhHNBKz4lPvTIMdqk,646
+invenio_subjects_mesh/downloads/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+invenio_subjects_mesh/vocabularies/__init__.py,sha256=Jan6XCvJwfPkOh2K9HsMvKN2aL3uNbfYaGyWcesfwHI,251
+invenio_subjects_mesh/vocabularies/subjects_mesh.jsonl,sha256=jIH4zAYKu6Iq-mcwPj8ijDgpQUX9eMT__YcUoin-Whs,75633901
+invenio_subjects_mesh/vocabularies/vocabularies.yaml,sha256=ZjmSgI17uajrj9vPcHmiUJdmm4uA3goXr5wAfxIXI2g,182
+invenio_subjects_mesh-2022.6.21.dist-info/AUTHORS.rst,sha256=UvKl-v9lcuaD639hXT0GQxP8bAAshuO46GJWsmobL9k,330
+invenio_subjects_mesh-2022.6.21.dist-info/LICENSE,sha256=VvMGg1sN8IqzzzRa_ZraLkZR9I6iEQsSy9nKNMdaj-c,1081
+invenio_subjects_mesh-2022.6.21.dist-info/METADATA,sha256=k1lVpm_NuXKrVJJR7xstACgBf5scuK3CCvJv-Y1GWJI,3258
+invenio_subjects_mesh-2022.6.21.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+invenio_subjects_mesh-2022.6.21.dist-info/entry_points.txt,sha256=sQ-cPnJ0Nz2ABbL7XMJ9r5CUERcqvbDZiVxb2fwkkjU,165
+invenio_subjects_mesh-2022.6.21.dist-info/top_level.txt,sha256=SpHNrufleAPuIRn9EavLDoK-RPlNWBgvCeVj7EC-VzA,22
+invenio_subjects_mesh-2022.6.21.dist-info/RECORD,,
