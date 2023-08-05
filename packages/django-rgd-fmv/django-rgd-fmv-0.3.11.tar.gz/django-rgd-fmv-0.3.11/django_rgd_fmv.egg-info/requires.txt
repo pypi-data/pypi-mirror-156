@@ -1,0 +1,7 @@
+django-rgd==0.3.11
+
+[worker]
+numpy
+kwiver
+opencv-python-headless
+pyproj
