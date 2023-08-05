@@ -1,0 +1,9 @@
+verbosemanager/__init__.py,sha256=pZ72xDX80gGN4FacOlso1v3I063tI7gXtrDZmkqzKKw,105
+verbosemanager/counter.py,sha256=fPs7KFqRbDpM8Os26C8oggmkTjgjrRQ6Rzk0ZkLxj3A,2504
+verbosemanager/decorator.py,sha256=8alCFycBfqFhDMQdMfW5gPGuBSOQpNJ7bdN9D6dzTx8,988
+verbosemanager/manager.py,sha256=n0wN8ZugnsX5mHXIa3soEEiZpQ6vzaLmSEOAgVNFmW4,12617
+verbosemanager-1.3.0.dist-info/LICENSE,sha256=f5y0erbdSDGGQleRudbmq2sUmU_WF6LHXUoAV9iIXZU,1066
+verbosemanager-1.3.0.dist-info/METADATA,sha256=Pbdsvy8FxU_a8QSrV0ULSDxioFEY7fNpHCO4H2EIgS4,789
+verbosemanager-1.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+verbosemanager-1.3.0.dist-info/top_level.txt,sha256=r6m_ybKhgm-JVAppjuWDYyMeIF40j-pCio8tkm7VZl4,15
+verbosemanager-1.3.0.dist-info/RECORD,,
