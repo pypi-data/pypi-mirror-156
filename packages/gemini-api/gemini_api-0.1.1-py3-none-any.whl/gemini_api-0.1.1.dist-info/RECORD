@@ -1,0 +1,14 @@
+LICENSE,sha256=NlNlmaK1QMsEcDnb1q0GhPCj-bEJEtVOoncChuvufR8,1079
+gemini_api/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+gemini_api/authentication.py,sha256=oNgQMr8UGeOTyld_QykzHQTlD5Fc9p36BlDUgF2LmwM,2467
+gemini_api/endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gemini_api/endpoints/fee_volume.py,sha256=YpULeQjqdv0L6sFW55akPvbm6hQrz-mRdwGqhQuZfVQ,15313
+gemini_api/endpoints/fund_management.py,sha256=R_yG5JfCRAoVMed1NxRjfBwLs0ClklyQK2OZFXg5bu0,26119
+gemini_api/endpoints/fx_rate.py,sha256=Em8KDZ3N16useqU3I9KaFcxnb6bM6hZpZk1nZ5eOKzc,2472
+gemini_api/endpoints/order.py,sha256=3Vj14FGOUoNryI_lnmPhohJQMNJ63rJPPWlalZVFL8w,22973
+gemini_api/endpoints/public.py,sha256=GtWTE5Enc8V2XXF7dUsAFL_FfZQfq2pK-cElxPUoTok,11537
+gemini_api/utils.py,sha256=JTgROHkpda7e9VTUybRKFfwyx3_juTy9EjlrRGK6JKQ,215
+gemini_api-0.1.1.dist-info/LICENSE,sha256=NlNlmaK1QMsEcDnb1q0GhPCj-bEJEtVOoncChuvufR8,1079
+gemini_api-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+gemini_api-0.1.1.dist-info/METADATA,sha256=0wuQ2vboYAaZC_DpIr0KCVzXoKCvu1KnzwlB6WG0Hu4,9692
+gemini_api-0.1.1.dist-info/RECORD,,
