@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/video_injection_pygame.egg-info/PKG-INFO
+src/video_injection_pygame.egg-info/SOURCES.txt
+src/video_injection_pygame.egg-info/dependency_links.txt
+src/video_injection_pygame.egg-info/top_level.txt
+src/video_pygame/__init__.py
+src/video_pygame/main.py
+src/video_pygame/video.py

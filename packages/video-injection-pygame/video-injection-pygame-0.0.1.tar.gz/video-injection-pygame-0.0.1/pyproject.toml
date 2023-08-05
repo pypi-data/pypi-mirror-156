@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "pygame",
+    "opencv-python",
+    "moviepy",
+    "ffmpeg",
+    "numpy"
+]
+build-backend = "setuptools.build_meta"
