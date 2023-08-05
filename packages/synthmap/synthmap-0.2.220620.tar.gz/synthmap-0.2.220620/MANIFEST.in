@@ -1,0 +1,2 @@
+include synthmap/app/config.json
+include synthmap/log/config.json
