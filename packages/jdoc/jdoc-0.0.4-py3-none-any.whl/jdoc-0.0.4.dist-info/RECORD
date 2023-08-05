@@ -1,0 +1,12 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/app.py,sha256=DmIyFGPUwe6O5TtSjRw0cTTuGV7n9gaf9n6tU_DVQ5w,2161
+app/function/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/function/function_code.py,sha256=ECIcSkSzeeZAO09j2I8LG2qiTxVuzil_s61aih2EeKo,11670
+app/resource/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/resource/config.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+jdoc-0.0.4.dist-info/LICENSE.txt,sha256=SkImu3nE954Q3D_1amTvUc0QIPYLZPYJ4y2pPuBZlwY,1074
+jdoc-0.0.4.dist-info/METADATA,sha256=lZdF2fsbIphPJQUiCuJu5aInuz5DeMi0Adxfhagj3fk,1034
+jdoc-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jdoc-0.0.4.dist-info/entry_points.txt,sha256=PMnEbSPi9pXvNPiLpH4SWYD1qmvElY4vgwwGoES-LkQ,37
+jdoc-0.0.4.dist-info/top_level.txt,sha256=bT7tGKqoTy-FpbMzCk7Xa91SbKR2TwdlpfnaIMcGHBY,9
+jdoc-0.0.4.dist-info/RECORD,,
