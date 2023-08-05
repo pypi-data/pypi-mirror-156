@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mailadm
+Version: 0.11.0
+Summary: web API and CLI tool for automatic e-mail user creation/deletion
+Home-page: https://github.com/deltachat/mailadm
+Author: holger, missytake
+Author-email: holger@merlinux.eu, missytake@systemli.org
+License-File: LICENSE
+Requires-Dist: deltachat
+Requires-Dist: click (>=6.0)
+Requires-Dist: flask
+Requires-Dist: pillow
+Requires-Dist: qrcode
+Requires-Dist: gunicorn
+Requires-Dist: requests
+Requires-Dist: imapclient
+
+mailadm tool (beta)
+======================
+
+mailadm is the reference administration tool for creating
+and removing e-mail accounts ("burner accounts"). It can
+generate QR codes and URLs to be used for performing
+account creation.
+
+The https://delta.chat messenger (on all platforms)
+has support to scan QR codes and setup e-mail accounts
+easily.
+
+See the `docs/index.rst` file or https://mailadm.readthedocs.io for more info.
