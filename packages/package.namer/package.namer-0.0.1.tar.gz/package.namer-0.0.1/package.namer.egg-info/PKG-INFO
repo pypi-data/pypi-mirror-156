@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: package.namer
+Version: 0.0.1
+Summary: Simple example of using Python toolchain
+Home-page: http://github.com/dave-shawley/setup-example/
+Author: Dave bond
+Author-email: someonewhocares@gmail.com
+License: BSD
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+
+no one will care when you die
+

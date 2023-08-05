@@ -1,0 +1,7 @@
+README.txt
+setup.py
+package.namer.egg-info/PKG-INFO
+package.namer.egg-info/SOURCES.txt
+package.namer.egg-info/dependency_links.txt
+package.namer.egg-info/not-zip-safe
+package.namer.egg-info/top_level.txt
