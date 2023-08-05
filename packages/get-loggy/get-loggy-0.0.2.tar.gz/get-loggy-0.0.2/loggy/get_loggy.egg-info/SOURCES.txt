@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+loggy/get_loggy.egg-info/PKG-INFO
+loggy/get_loggy.egg-info/SOURCES.txt
+loggy/get_loggy.egg-info/dependency_links.txt
+loggy/get_loggy.egg-info/top_level.txt
+test/test_exceptions.py
+test/test_loggy.py
