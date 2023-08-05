@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: azure-transcribe
+Version: 0.3.1
+Summary: A Python library for interacting with Azure Transcription API
+Home-page: https://github.com/DCDie/azure-transcribe
+Author: Daniel Cuznetov
+Author-email: danielcuznetov04@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/DCDie/azure-transcribe/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Project Description
+
+Azure-Transcribe is a service that transcribes speech from audio files to text using Microsoft Azure Cognitive Services.
+
+## Requirements
+
+* Python (3.6 or higher)
+* azure-storage-blob
+
+## Installation
+Install using pip
+
+`pip install azure-transcribe`
+
+## P.S.
+
+If you find bugs, need help, or want to talk to the developers, please write an issue on [GitHub](https://github.com/DCDie/azure-transcribe/issues).
+
+
