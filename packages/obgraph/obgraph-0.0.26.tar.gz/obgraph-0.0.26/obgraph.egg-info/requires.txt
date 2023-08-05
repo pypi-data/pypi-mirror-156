@@ -1,0 +1,7 @@
+bionumpy
+cython
+npstructures
+numpy
+pathos
+shared_memory_wrapper>=0.0.7
+tqdm
