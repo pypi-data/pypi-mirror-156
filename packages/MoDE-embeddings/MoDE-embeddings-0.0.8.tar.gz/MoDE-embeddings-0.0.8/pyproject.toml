@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MoDE-embeddings"
+version = "0.0.8"
+authors = [
+  { name="Ahmad Ajalloeian", email="ajal.ahmad@gmail.com" },
+]
+description = "Source code for Multi-objective n-dimensional embeddings"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ahmadajal/MoDE/tree/master/Python_implementation"
+"Bug Tracker" = "https://github.com/ahmadajal/MoDE/issues"
