@@ -1,0 +1,16 @@
+LICENSE-THIRD-PARTY.txt
+LICENSE.txt
+README.md
+pyproject.toml
+src/pdfpop/__init__.py
+src/pdfpop/__main__.py
+src/pdfpop/cli.py
+src/pdfpop/commands.py
+src/pdfpop/form_config.py
+src/pdfpop/pdf.py
+src/pdfpop.egg-info/PKG-INFO
+src/pdfpop.egg-info/SOURCES.txt
+src/pdfpop.egg-info/dependency_links.txt
+src/pdfpop.egg-info/entry_points.txt
+src/pdfpop.egg-info/requires.txt
+src/pdfpop.egg-info/top_level.txt

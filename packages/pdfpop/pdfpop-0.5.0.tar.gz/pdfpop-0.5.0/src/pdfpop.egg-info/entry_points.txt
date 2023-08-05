@@ -1,0 +1,2 @@
+[console_scripts]
+pdfpop = pdfpop.__main__:main
