@@ -1,0 +1,11 @@
+huscy/pseudonyms/__init__.py,sha256=cZkkaOhSVTPqET7969YKIhlkDwm1XtoA5O28idXLHAQ,89
+huscy/pseudonyms/apps.py,sha256=Rng8XO9AToLnTwUeufynQuRQzlDLXUI-X3eFp_EVKQE,131
+huscy/pseudonyms/models.py,sha256=NAQF5LQPQ_352hVh2q7wDP33a4RocJ71W8RlXuuZcTs,423
+huscy/pseudonyms/services.py,sha256=RBxphqg-Hv-oXmmPWrGQykiRMjUwaq0fQQrfH3Qe9dQ,1873
+huscy/pseudonyms/migrations/0001_initial.py,sha256=xXC9EgWBPOxCVirPDV3y3P3bbHBMZcuQN8DvDgI1JfE,805
+huscy/pseudonyms/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+huscy.pseudonyms-1.2.0.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+huscy.pseudonyms-1.2.0.dist-info/METADATA,sha256=C7ecuQbkU3WiNBqboVFmj7fbkWo5OBXzc8YQfQ7N1Xc,2995
+huscy.pseudonyms-1.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+huscy.pseudonyms-1.2.0.dist-info/top_level.txt,sha256=yP1xCBOAxbmweO3NrSrdrgzzsSyrcuj2pA4XvOekNAM,6
+huscy.pseudonyms-1.2.0.dist-info/RECORD,,
