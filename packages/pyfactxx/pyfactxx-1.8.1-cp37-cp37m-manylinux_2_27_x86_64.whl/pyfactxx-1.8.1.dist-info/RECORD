@@ -1,0 +1,14 @@
+pyfactxx-1.8.1.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pyfactxx-1.8.1.dist-info/WHEEL,sha256=KUfKYB-Vd2Eq697QN9I_4lEG4aBjMWHM3kLUNLqg3sQ,107
+pyfactxx-1.8.1.dist-info/RECORD,,
+pyfactxx-1.8.1.dist-info/METADATA,sha256=zAgsuaLqfCNY0rCFp8wf_fcDSkH3xiaz-Cz7VnQDJOM,4297
+pyfactxx-1.8.1.dist-info/top_level.txt,sha256=3RVCZM1mMpZaxjtzTC_qoNvVerZq7EdVKXnHxKh14WM,9
+pyfactxx/__init__.py,sha256=LuwhI3X-_D0DAd3KAXx1VnudCaiQTjq8DZp__8QEj88,897
+pyfactxx/lib_factxx.cpython-37m-x86_64-linux-gnu.so,sha256=LK5fOn74sLjFv651VLWvXueAsrUWRK0CbJqTKTE7qvc,2018416
+pyfactxx/coras/query.py,sha256=HLrmpYuOaFpsid3PA10o97z8azmAoiZbom2Y2o_rQ_U,5746
+pyfactxx/coras/__init__.py,sha256=I_dqJw9-b9GCYr91R9wFwy7IG6qipgYI24-E2OZkXtU,779
+pyfactxx/coras/debug.py,sha256=2IROON3aeftjkyBxYIye-pp-sld8xCjzW1EAlkWAqn8,2037
+pyfactxx/coras/parser.py,sha256=jYDqPggXSL83tTwmK3tc4DSjm5ZD6Fr7z2cvnHcIUJQ,12922
+pyfactxx/coras/cli.py,sha256=ucxnMRp-mxP-WSPKkd_v47G7cWDr2SyhjiKK748GAxQ,1116
+pyfactxx/coras/util.py,sha256=SEalQguW4iJhDOjY0E_8ULJl0Ae8k4U2RxGQYSDv678,1168
+pyfactxx/coras/core.py,sha256=unDLUBkSjJ0n5b_5tB1T4A3jnioJGS6HSM96RzwfQRA,3173
