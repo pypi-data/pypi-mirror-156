@@ -1,0 +1,3 @@
+global-include *manange.py
+graft tests
+global-exclude *.pyc
