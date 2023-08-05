@@ -1,0 +1,14 @@
+resoto_plugin_aws/__init__.py,sha256=IIkD_tBkBJoH6UAJRbE7jfcVib6r2h4krw31Z_AyYjw,7351
+resoto_plugin_aws/accountcollector.py,sha256=J0opfT3-dz7T6qR7NODIPVdQD54CTy27Cca8Z4cDHXk,119346
+resoto_plugin_aws/config.py,sha256=3QEc-atx2A851CoikMIEQLe8n1bcqbZXDiOo6BFwrUc,2494
+resoto_plugin_aws/resources.py,sha256=tvK78yYv2nMOQMRlTjoBOJH_V6nNp6WGbNjxdv82CEc,49100
+resoto_plugin_aws/utils.py,sha256=tm4bYyMtDOywj4q1VsKktFbIEACcX3_U6jSXdl5-Hws,3220
+resoto_plugin_aws/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resoto_plugin_aws/cmd/delete.py,sha256=Fc4Jn5ucLRFjs7Ha5_0Pr4SxYYjosW8r5xZv6aoL_8Y,5684
+resoto_plugin_aws/cmd/org_list.py,sha256=XVAeWekyoVD4Gqd1ZwG9h7An0x72vrGkkUPiizPp4VU,1262
+resoto_plugin_aws/cmd/s3.py,sha256=oGmTWOVHpcTSQyuLbtlzFt7Dw1rNQNGjS8QlMkY5B_0,18690
+resoto_plugin_aws-2.3.0.dist-info/METADATA,sha256=kEUeN_hMpLDArQaUgbBYc84IVjjKdg4gLK4d7UvNlqU,3080
+resoto_plugin_aws-2.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+resoto_plugin_aws-2.3.0.dist-info/entry_points.txt,sha256=Lfh_R9tKtAsByREMM4TfOYgAmkkEn4Z4c2vwkMW2XR8,60
+resoto_plugin_aws-2.3.0.dist-info/top_level.txt,sha256=YOEauQktyhFbq8fA31jmLsOurkNcugds6QfgbhlziBo,18
+resoto_plugin_aws-2.3.0.dist-info/RECORD,,
