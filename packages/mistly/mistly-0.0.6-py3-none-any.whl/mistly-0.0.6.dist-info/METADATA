@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mistly
+Version: 0.0.6
+Summary: Search for songs and fetch lyrics in your terminal
+Author: Saba Umikashvili, Lasha Loria
+Project-URL: Homepage, https://github.com/Graphity/Mistly
+Project-URL: Bug Tracker, https://github.com/Graphity/Mistly/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: rich
+Requires-Dist: textual
+
+# Mistly
+Search for songs and fetch lyrics in your terminal.
+
+![demo](./media/demo.gif)
+
+## Usage
+Mistly expects `GENIUS_TOKEN` env variable to be set, otherwise it will crash.
+Absolutely brilliant error handling I know.
+
+To get Genius API `CLIENT ACCESS TOKEN` sign up here: https://genius.com/signup_or_login
+And just **Generate Access Token**.
+Check out their documentation if needed.
+
+## Installation
+```
+pip install mistly
+```

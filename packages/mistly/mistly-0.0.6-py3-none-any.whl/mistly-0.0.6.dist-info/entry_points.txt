@@ -1,0 +1,2 @@
+[console_scripts]
+mistly = mistly.__main__:Mistly.run
