@@ -1,0 +1,2 @@
+dbt-core~=1.1
+clickhouse-connect>=0.1.4
