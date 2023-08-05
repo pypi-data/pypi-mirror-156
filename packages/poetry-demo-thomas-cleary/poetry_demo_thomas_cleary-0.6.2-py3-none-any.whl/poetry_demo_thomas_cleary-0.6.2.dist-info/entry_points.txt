@@ -1,0 +1,3 @@
+[console_scripts]
+poetry-demo=poetry_demo_thomas_cleary.cli:run
+
