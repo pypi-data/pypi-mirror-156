@@ -1,0 +1,2 @@
+[console_scripts]
+mycli = bibtex2word.__main__:main
