@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: MoDE-embeddings
+Version: 0.0.7
+Summary: Source code for Multi-objective n-dimensional embeddings
+Author-email: Ahmad Ajalloeian <ajal.ahmad@gmail.com>
+Project-URL: Homepage, https://github.com/ahmadajal/MoDE/tree/master/Python_implementation
+Project-URL: Bug Tracker, https://github.com/ahmadajal/MoDE/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
