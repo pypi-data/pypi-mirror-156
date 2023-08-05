@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: modal-py
+Version: 0.0.0
+Summary: Python client library for Modal
+Author-email: Modal Labs <erik@modal.com>
+Project-URL: Homepage, https://modal.com
+Project-URL: Bug Tracker, https://github.com/modal-labs/modal-py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Modal Python Library
+
+This package is currently a stub.
+
