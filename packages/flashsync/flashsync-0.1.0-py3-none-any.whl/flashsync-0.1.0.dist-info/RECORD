@@ -1,0 +1,17 @@
+fastsync/__init__.py,sha256=uvIxXwqivm5adAzso73fvhu4OSJh1wRb2hC633we5mY,21
+fastsync/app.py,sha256=9pciz5b5cVWMa610ba_dswaQc2UiYdLRr5Cymov4kGQ,3244
+fastsync/fastsync.py,sha256=nm03ujsWQfYb79phLpr-CJOH1lKjzNhEeFh_h984c0s,11828
+fastsync/loader.py,sha256=NpQ7kn8xfy3-tDZXKH1kivwCi7pXQGmZgZXmfOAR3kE,3458
+fastsync/static/favicon.png,sha256=heu1tsoIHK626lk7RABsD-56kudgm1N2J9nNtNp93wc,718
+fastsync/static/index.html,sha256=u7k2fPLEFnNTAf_Dv1muaBydt1CTjoXt72cONf_bPEo,627
+fastsync/static/assets/index.845b2b46.js,sha256=fvG1-BKOMIG0iZayIkWnAkI14VFQMOuwVXCaTV92ck4,4698446
+fastsync/static/assets/index.914ee9cf.css,sha256=yUPnb6AUE4yG-8GMSyzqIgARmwSDY9Yavvm6DuUIx2A,41343
+flashsync/__init__.py,sha256=uvIxXwqivm5adAzso73fvhu4OSJh1wRb2hC633we5mY,21
+flashsync/app.py,sha256=9pciz5b5cVWMa610ba_dswaQc2UiYdLRr5Cymov4kGQ,3244
+flashsync/flashsync.py,sha256=nm03ujsWQfYb79phLpr-CJOH1lKjzNhEeFh_h984c0s,11828
+flashsync/loader.py,sha256=NpQ7kn8xfy3-tDZXKH1kivwCi7pXQGmZgZXmfOAR3kE,3458
+flashsync-0.1.0.dist-info/METADATA,sha256=R6VYm-TFznGBwNe-9nPNgSRnxjtBSx3y4ySxRKueKUU,942
+flashsync-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flashsync-0.1.0.dist-info/entry_points.txt,sha256=b7aUWRO-iRiJz1VxodRSXJooLTzWwA15yzQ8BmhcBmY,53
+flashsync-0.1.0.dist-info/top_level.txt,sha256=RpUtY-WxMfWVj87Phq_hIi4efbdflYUkF8IcqFVG4U0,10
+flashsync-0.1.0.dist-info/RECORD,,
