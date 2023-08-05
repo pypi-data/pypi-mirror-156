@@ -1,0 +1,1 @@
+This package can scrape data from java script and other things to java script

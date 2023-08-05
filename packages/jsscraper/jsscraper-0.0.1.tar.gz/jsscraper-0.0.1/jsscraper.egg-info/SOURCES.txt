@@ -1,0 +1,8 @@
+LICENSES.txt
+README.md
+setup.py
+jsscraper/__init__.py
+jsscraper.egg-info/PKG-INFO
+jsscraper.egg-info/SOURCES.txt
+jsscraper.egg-info/dependency_links.txt
+jsscraper.egg-info/top_level.txt
