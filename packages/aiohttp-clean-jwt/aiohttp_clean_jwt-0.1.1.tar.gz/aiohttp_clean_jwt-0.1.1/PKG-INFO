@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: aiohttp_clean_jwt
+Version: 0.1.1
+Summary: jwt authentication for aiohttp
+Home-page: https://gitflic.ru/project/vlakir/aiohttp-clean-jwt.git
+Author: Vladimir Kirievskiy
+Author-email: vladimir@kirievskiy.ru
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# aiohttp-clean-jwt
+**Простая аутентификация по JWT-токену для aiohttp**
+
+Источник вдохновения - [aiohttp-jwt](https://github.com/hzlmn/aiohttp-jwt)
+
+К сожалению, оригинальная библиотека плохо документирована, перегружена малопонятным функционалом и уже несколько лет выглядит заброшенной.
+
+____
+## Установка:
+```
+pip install aiohttp_clean_jwt
+```
+
+## Пример использования:
+
+```python
+from aiohttp import web
+from aiohttp.web import Application, Request, Response
+from aiohttp_clean_jwt import get_token, json_response, middleware_factory
+
+JWT_SECRET = 'top_secret_word'
+JWT_ALGORITHM = 'HS256'
+JWT_EXP_DELTA_SECONDS = 360
+JWT_AUTH_SCHEME = 'Bearer'
+
+
+async def get_user_id(login: str, password: str) -> int:
+    """ Проверка ID пользователя. В реальном приложении должна сходить в базу."""
+    if login == 'vasya' and password == 'qwerty':
+        return 12345
+
+
+async def sign_in(request: Request) -> Response:
+    """ Ручка авторизации """
+    try:
+        login = request.rel_url.query['login']
+        password = request.rel_url.query['password']
+    except KeyError:
+        raise web.HTTPUnauthorized(reason='Missing credentials')
+
+    user_id = await get_user_id(login=login, password=password)
+    if user_id is not None:
+        jwt_token = get_token({'user_id': str(user_id)},
+                              expiration_s=JWT_EXP_DELTA_SECONDS,
+                              algorithm=JWT_ALGORITHM,
+                              secret=JWT_SECRET)
+
+        return json_response({'token': jwt_token})
+    else:
+        raise web.HTTPUnauthorized(reason='Wrong credentials')
+
+# Все ручки по умолчанию считаются приватными.
+# Чтобы сделать ручку публичной, ее нужно явным образом перечислить в whitelist.
+# Для доступа к приватным ручкам необходимо передавать полученный в /login токен через
+# HTTP HEADER "Authorization: Bearer"
+
+
+async def stub1(request: Request) -> Response:
+    """ Приватная ручка 1"""
+    user_id = request.rel_url.query['user_id']
+    result = {'user_id': user_id, 'handler': 'stub1'}
+
+    return json_response(result)
+
+
+async def stub2(request: Request) -> Response:
+    """ Приватная ручка 2"""
+    user_id = request.rel_url.query['user_id']
+    result = {'user_id': user_id, 'handler': 'stub2'}
+
+    return json_response(result)
+
+
+async def public(request: Request) -> Response:
+    """ Публичная ручка"""
+    result = {'user_id': 'anonymous', 'handler': 'public'}
+
+    return json_response(result)
+
+
+if __name__ == '__main__':
+    app = Application(middlewares=middleware_factory(
+        whitelist=['/login', '/public'],
+        secret=JWT_SECRET,
+        algorithm=JWT_ALGORITHM,
+        auth_scheme=JWT_AUTH_SCHEME,
+    ))
+
+    app.add_routes([web.get('/login', sign_in), web.get('/public', public),
+                    web.get('/stub1', stub1), web.get('/stub2', stub2)])
+
+    web.run_app(app=app)
+```
+

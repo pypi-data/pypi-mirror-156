@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aiohttp_clean_jwt/__init__.py
+aiohttp_clean_jwt/middleware.py
+aiohttp_clean_jwt.egg-info/PKG-INFO
+aiohttp_clean_jwt.egg-info/SOURCES.txt
+aiohttp_clean_jwt.egg-info/dependency_links.txt
+aiohttp_clean_jwt.egg-info/top_level.txt
