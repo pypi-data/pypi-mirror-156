@@ -1,0 +1,63 @@
+Metadata-Version: 1.1
+Name: emoji.gg-tako
+Version: 0.0.2
+Summary: Unofficial API Wrapper for emoji.gg
+Home-page: https://github.com/kayano-bot/EmojiGG-Wrapper
+Author: Pukima
+Author-email: pukima@pukima.site
+License: MIT
+Description: # (Unofficial) emoji.gg API Wrapper for Python | Documentation
+        
+        ## Installation:
+        To install with PIP, run this in your console:
+        ```
+        pip install emoji.gg-tako
+        ```
+        ## Fetch Stats:
+        
+        To fetch stats from [emoji.gg](https://emoji.gg):
+        ```py
+        from emoji-gg import stats
+        ...
+        await stats.fetch(endpoint)
+        ```
+        Available Endpoints:
+        - emoji
+        - users
+        - faves
+        - pending
+        
+        ## Fetch Emoji:
+        
+        To fetch emojis from [emoji.gg](https://emoji.gg):
+        ```py
+        from emoji-gg import emoji
+        ...
+        await emoji.fetch(option, query, endpoint) # endpoint is optional. if not provided, will return the whole JSON response.
+        ```
+        Options:
+        - title
+        - id
+        - slug
+        
+        Available Endpoints:
+        - title
+        - id
+        - slug
+        - image
+        - category
+        - license
+        - source
+        - faves
+        - author
+        
+Keywords: apiwrapper,emojigg
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
