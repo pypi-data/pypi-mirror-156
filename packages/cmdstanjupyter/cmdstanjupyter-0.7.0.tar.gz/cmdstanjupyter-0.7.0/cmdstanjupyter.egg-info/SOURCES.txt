@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+cmdstanjupyter/__init__.py
+cmdstanjupyter.egg-info/PKG-INFO
+cmdstanjupyter.egg-info/SOURCES.txt
+cmdstanjupyter.egg-info/dependency_links.txt
+cmdstanjupyter.egg-info/requires.txt
+cmdstanjupyter.egg-info/top_level.txt
