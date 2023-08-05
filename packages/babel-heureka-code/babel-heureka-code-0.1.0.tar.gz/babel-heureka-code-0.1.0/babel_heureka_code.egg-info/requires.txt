@@ -1,0 +1,7 @@
+
+[dev]
+commitizen
+pre-commit
+
+[test]
+hypothesis

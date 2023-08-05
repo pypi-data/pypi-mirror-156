@@ -1,0 +1,17 @@
+pyproject.toml
+setup.cfg
+setup.py
+Babel_heureka_code/__init__.py
+Babel_heureka_code/_babel_basis_sprach_version.py
+Babel_heureka_code/_babel_basis_verwalter.py
+Babel_heureka_code/_babel_code.py
+Babel_heureka_code/_babel_code_meta.py
+Babel_heureka_code/_babel_verwalter.py
+Babel_heureka_code/_dict_sprache.py
+Babel_heureka_code/_sprach_config.py
+Babel_heureka_code/exceptions.py
+babel_heureka_code.egg-info/PKG-INFO
+babel_heureka_code.egg-info/SOURCES.txt
+babel_heureka_code.egg-info/dependency_links.txt
+babel_heureka_code.egg-info/requires.txt
+babel_heureka_code.egg-info/top_level.txt
