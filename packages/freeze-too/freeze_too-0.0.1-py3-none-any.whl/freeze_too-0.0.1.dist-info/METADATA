@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: freeze-too
+Version: 0.0.1
+Home-page: 
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+.. -*- mode: rst -*-
+
+|PythonVersion|_ |PyPi|_
+
+.. |PythonVersion| image:: https://img.shields.io/badge/python-3-blue?style=flat-square&logo=Python
+.. _PythonVersion: https://pypi.org/
+
+.. |PyPi| image:: https://img.shields.io/pypi/v/freeze?style=flat-square&label=pypi%20package&logo=PyPI
+.. _PyPi: https://pypi.org/
+
+
+**Documentation**
+
+There is no official documents yet about **freeze**.
+
+
+~~~~~~~~~~~~~~~~~
+
+**freeze** is a Python module for export requirement file with simple and fast way.
+
+
+User installation
+~~~~~~~~~~~~~~~~~
+
+The easiest way to install freeze is using ``pip``::
+
+    pip install -U freeze
+

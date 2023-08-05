@@ -1,0 +1,2 @@
+[console_scripts]
+freeze = freeze.__main__:main

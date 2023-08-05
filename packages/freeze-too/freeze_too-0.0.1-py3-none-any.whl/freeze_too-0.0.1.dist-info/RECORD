@@ -1,0 +1,10 @@
+freeze/__init__.py,sha256=ry5O5SW74ugwOUMKSV2_LbWjYa8B0IEvUm7S-lHPA2c,23
+freeze/__main__.py,sha256=EyJqpOX3vd3PJXa1mohsqDpWVkknzgTvMyC8s87VbY4,110
+freeze/_argparse.py,sha256=tCJkiWFGiGNxR38SfGHmuIhI-Wy0EZtI1yMrXuwtqls,1911
+freeze/_base.py,sha256=pxomVDvjdM2Wn6CsXo7EyHRs41ierdo0cB17L1fvf-M,328
+freeze/_getopt.py,sha256=SbZXmiV3FojYF-s7SF3JHAHrH5o_mIo3H7kx5T3ZzeY,2042
+freeze_too-0.0.1.dist-info/METADATA,sha256=dMiDNlpoGTDZYPqVm4TGGpK5tetbKrImDKZzX2T62bo,779
+freeze_too-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+freeze_too-0.0.1.dist-info/entry_points.txt,sha256=8ZdxiqoYpuz_8NQks1BKo3MGOewuk8fBL3tgRJXMo0Y,48
+freeze_too-0.0.1.dist-info/top_level.txt,sha256=IldHutA4VR8rWraeKMy7qXajZoNwqexuqr-xojyK_cU,7
+freeze_too-0.0.1.dist-info/RECORD,,
