@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+atomic_operator_art.egg-info/PKG-INFO
+atomic_operator_art.egg-info/SOURCES.txt
+atomic_operator_art.egg-info/dependency_links.txt
+atomic_operator_art.egg-info/entry_points.txt
+atomic_operator_art.egg-info/requires.txt
+atomic_operator_art.egg-info/top_level.txt
