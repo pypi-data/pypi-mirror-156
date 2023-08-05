@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: sweetconnect-api
+Version: 0.0.1
+Summary: A SweetConnect API library for Python
+Home-page: https://gitlab.com/sweetconnect/public/sweetconnect-api
+License: GPL-3.0
+Author: Kai CLauss
+Author-email: kc@sweetconnect.io
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1)
+Project-URL: Repository, https://gitlab.com/sweetconnect/public/sweetconnect-api
+Description-Content-Type: text/markdown
+
+# SweetConnect API Library
+
+<!-- Uncomment if implemented!
+[![PyPI](https://img.shields.io/pypi/v/sweetconnect-api.svg)][pypi_]
+[![Read the documentation at https://sweetconnect-api.readthedocs.io/](https://img.shields.io/readthedocs/sweetconnect-api/latest.svg?label=Read%20the%20Docs)][read the docs]
+[![Tests](https://gitlab.com/sweetconnect/public/sweetconnect-api/workflows/Tests/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/cjolowicz/sweetconnect-api/branch/main/graph/badge.svg)][codecov]
+ -->
+[![Status](https://img.shields.io/badge/status-Alpha-orange)][status]
+[![License](https://img.shields.io/badge/license-GPL_3.0-green)][license]
+[![Python Version](https://img.shields.io/badge/python-%3E%3D%203.7-blue)][python version]
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+
+<!-- [pypi_]: https://pypi.org/project/sweetconnect-api/
+[read the docs]: https://sweetconnect-api.readthedocs.io/
+[tests]: https://gitlab.com/sweetconnect/public/sweetconnect-api/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/cjolowicz/sweetconnect-api
+ -->
+
+[status]: https://pypi.org/project/sweetconnect-api/
+[python version]: https://pypi.org/project/sweetconnect-api
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[black]: https://github.com/psf/black
+
+## Features
+
+- TODO
+
+## Requirements
+
+- TODO
+
+## Installation
+
+You can install _SweetConnect API Library_ via [pip] from [PyPI]:
+
+```console
+$ pip install sweetconnect-api
+```
+
+## Usage
+
+Please see the [Command-line Reference] for details.
+
+## Contributing
+
+Contributions are very welcome.
+To learn more, see the [Contributor Guide].
+
+This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter] template. For more details see [Hypermodern Python documantation]
+
+## License
+
+Distributed under the terms of the [GPL 3.0 license][license],
+_SweetConnect API Library_ is free and open source software.
+
+## Issues
+
+If you encounter any problems,
+please [file an issue] along with a detailed description.
+
+
+[@cjolowicz]: https://github.com/cjolowicz
+[pypi]: https://pypi.org/
+[hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+[hypermodern python documantation]: https://cookiecutter-hypermodern-python.readthedocs.io/
+[file an issue]: https://gitlab.com/sweetconnect/public/sweetconnect-api/issues
+[pip]: https://pip.pypa.io/
+
+<!-- github-only -->
+
+[license]: https://gitlab.com/sweetconnect/public/sweetconnect-api/blob/main/LICENSE
+[contributor guide]: https://gitlab.com/sweetconnect/public/sweetconnect-api/blob/main/CONTRIBUTING.md
+[command-line reference]: https://sweetconnect-api.readthedocs.io/en/latest/usage.html
+
