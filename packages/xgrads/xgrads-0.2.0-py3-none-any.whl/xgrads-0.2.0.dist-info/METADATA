@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xgrads
+Version: 0.2.0
+Summary: Parse and read ctl file commonly used by GrADS.
+Home-page: https://github.com/miniufo/xgrads
+Author: miniufo
+Author-email: miniufo@163.com
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: xarray
+Requires-Dist: dask
+Requires-Dist: pyproj
+
+# xgrads
+
+
