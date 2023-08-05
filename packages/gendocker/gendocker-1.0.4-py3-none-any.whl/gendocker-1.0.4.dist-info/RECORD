@@ -1,0 +1,6 @@
+gendocker/__init__.py,sha256=Y-czy6AEYkWdmzYv9X1FKENgBFGnNqgCfD7t-IvKsPE,33
+gendocker/gendocker.py,sha256=BGU4TxNXCY_U8e5ZeCMPL6AnQCrXF5udF8ree11EQag,4011
+gendocker-1.0.4.dist-info/METADATA,sha256=YBH45eErBDWP7t5_N3pMvCosKSwfrO8c4zUu6QG6mTg,310
+gendocker-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gendocker-1.0.4.dist-info/top_level.txt,sha256=niJH63TlYwTB4MzivFWgJSs-R9bkB9IFPx6mgRCh1ag,10
+gendocker-1.0.4.dist-info/RECORD,,
