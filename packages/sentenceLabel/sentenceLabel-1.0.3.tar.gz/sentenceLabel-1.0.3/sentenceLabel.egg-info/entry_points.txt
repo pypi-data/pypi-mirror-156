@@ -1,0 +1,2 @@
+[console_scripts]
+sentence-label = sentenceLabel.sentenceLabel:main

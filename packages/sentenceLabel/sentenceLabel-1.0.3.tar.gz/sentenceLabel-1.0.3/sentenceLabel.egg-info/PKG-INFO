@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sentenceLabel
+Version: 1.0.3
+Summary: 多项选择文章打标软件
+Home-page: https://github.com/ncdhz/sentenceLabel
+Author: ncdhz
+Author-email: 1137436221@qq.com
+License: Apache license
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.0.0
+License-File: LICENSE
+
+`更多信息请关注 Github <https://github.com/ncdhz/sentenceLabel>`
