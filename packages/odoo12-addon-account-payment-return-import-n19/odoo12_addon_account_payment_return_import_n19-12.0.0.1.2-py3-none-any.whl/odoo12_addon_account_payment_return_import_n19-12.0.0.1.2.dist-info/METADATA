@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: odoo12-addon-account-payment-return-import-n19
+Version: 12.0.0.1.2
+Summary: This addon allows to import payment returns from Cuaderno/Norma 19 files
+Home-page: https://github.com/OCA/l10n-spain/tree/12.0/account_payment_return_import_n19
+Author: Odoo Community Association (OCA),Coopdevs SCCL
+Author-email: support@odoo-community.org
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 12.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.5
+Requires-Dist: odoo12-addon-account-banking-mandate
+Requires-Dist: odoo12-addon-account-payment-return-import-iso20022
+Requires-Dist: odoo (<12.1dev,>=12.0a)
+
+UNKNOWN
+
+
