@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0","ImageHash>=4.2.1","numpy>=1.22.4","pandas>=1.4.1","Pillow>=9.1.1","scikit_image>=0.19.3","Wand>=0.6.7"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prepareImage"
+version = "0.0.5"
+authors = [
+  { name="Khang Nguyen", email="duncannguyen2k@gmail.com" },
+]
+description = "Flexible and Easy. We perform a package that help you build your own image dataset. Specially, it's easy to add your own prepare function"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Khoa-Hoc-Du-Lieu/PrepareImage-Custom-Your-Our-Image-Dataset"
+"Bug Tracker" = "https://github.com/Khoa-Hoc-Du-Lieu/PrepareImage-Custom-Your-Our-Image-Dataset/issues"
