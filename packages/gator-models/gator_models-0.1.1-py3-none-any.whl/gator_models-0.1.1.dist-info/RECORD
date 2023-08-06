@@ -1,0 +1,8 @@
+gator/models/__init__.py,sha256=fXtLsB92AT3mj00mqpGmXHvZoZD68xUuEMvbbO2zYQU,138
+gator/models/base_types.py,sha256=ogYEYFWrhX9TUrGGNcRQQOKmQxH9cdBU9OgBV-FaS7M,267
+gator/models/common.py,sha256=oyj1NUQIpqQ0dV-NzR6uPDbDy__7HSgsmuHMsuCFzJw,2269
+gator/models/timetable.py,sha256=uI1DkRhHmFMHCD1Z6Zyk0mqdDaZmFSxdnNJAPRlNrOY,11395
+gator_models-0.1.1.dist-info/LICENSE,sha256=hEtu5RTp3uygL9g9FC9Ib0dNh-0g-JKh363Ax_0i5eg,1082
+gator_models-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+gator_models-0.1.1.dist-info/METADATA,sha256=hpWwbbo5iGE3I-p69CXGrmxuEYodfr5nZ-TPYxXHu7E,1341
+gator_models-0.1.1.dist-info/RECORD,,
