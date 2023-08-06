@@ -1,0 +1,5 @@
+skipping 'jsbsim.cpp' Cython extension (up-to-date)
+building 'jsbsim' extension
+creating build/temp.linux-x86_64-pypy37
+gcc -pthread -DNDEBUG -O2 -fPIC -Isrc -I/tmp/build-env-ywa9d_2g/include -I/opt/python/pp37-pypy37_pp73/include -c jsbsim.cpp -o build/temp.linux-x86_64-pypy37/jsbsim.o -std=c++11
+g++ -pthread -shared build/temp.linux-x86_64-pypy37/jsbsim.o -L../src -lJSBSim -lm -o build/lib.linux-x86_64-pypy37/jsbsim.pypy37-pp73-x86_64-linux-gnu.so
