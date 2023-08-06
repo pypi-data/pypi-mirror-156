@@ -1,0 +1,11 @@
+typer[all]>=0.4
+emojis>=0.6
+
+[build]
+build
+twine
+
+[dev]
+black
+bumpver
+isort
