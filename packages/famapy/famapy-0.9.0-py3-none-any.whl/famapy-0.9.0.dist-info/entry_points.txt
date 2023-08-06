@@ -1,0 +1,3 @@
+[console_scripts]
+famapy-admin = famapy.commands:famapy_admin
+
