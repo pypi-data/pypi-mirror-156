@@ -1,0 +1,12 @@
+[tshistory.subcommands]
+formula-init-db = tshistory_formula.cli:init_db
+ingest-formulas = tshistory_formula.cli:ingest_formulas
+migrate-to-content-cache = tshistory_formula.cli:migrate_to_content_hash
+migrate-to-dependants = tshistory_formula.cli:migrate_to_dependants
+migrate-to-formula-groups = tshistory_formula.cli:migrate_to_groups
+rename-operators = tshistory_formula.cli:rename_operators
+shell = tshistory_formula.cli:shell
+test-formula = tshistory_formula.cli:test_formula
+typecheck-formula = tshistory_formula.cli:typecheck_formula
+update-formula-metadata = tshistory_formula.cli:update_metadata
+
