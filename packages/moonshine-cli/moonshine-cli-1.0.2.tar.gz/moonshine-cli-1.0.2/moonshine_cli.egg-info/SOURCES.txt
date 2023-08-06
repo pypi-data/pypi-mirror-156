@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+moonshine_cli.egg-info/PKG-INFO
+moonshine_cli.egg-info/SOURCES.txt
+moonshine_cli.egg-info/dependency_links.txt
+moonshine_cli.egg-info/entry_points.txt
+moonshine_cli.egg-info/requires.txt
+moonshine_cli.egg-info/top_level.txt
+src/moonshine/__init__.py
+src/moonshine/doomsday.py
+src/moonshine/data/__init__.py
+src/moonshine/data/flash.dat

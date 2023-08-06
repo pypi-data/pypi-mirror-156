@@ -1,0 +1,269 @@
+Metadata-Version: 2.1
+Name: moonshine-cli
+Version: 1.0.2
+Summary: moonshine Package extends main framework functionalities
+Home-page: https://github.com/phantom-xyz/moonshine
+Author: Phantom-X
+Author-email: 0x01.phantom@gmail.com
+Project-URL: Bug Reports, https://github.com/phantom-xyz/moonshine/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Say Thanks!, http://saythanks.io/to/phantom-xyz
+Keywords: moonshine Python development environment
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Software Development :: Bug Tracking
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+
+
+[![Build Status](https://travis-ci.com/phantom-xyz/moonshine.svg?branch=master)](https://travis-ci.com/phantom-xyz/moonshine)
+[![codecov](https://codecov.io/gh/phantom-xyz/moonshine/branch/master/graph/badge.svg)](https://codecov.io/gh/phantom-xyz/moonshine)
+[![GitHub version](https://badge.fury.io/gh/phantom-xyz%2Fmoonshine.svg)](https://badge.fury.io/gh/phantom-xyz%2Fmoonshine)
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/master@samabusiness.sa)
+![PyPI - Downloads](https://img.shields.io/pypi/dd/moonshine?color=red&logo=moonshine&style=plastic)
+![GitHub All Releases](https://img.shields.io/github/downloads/phantom-xyz/moonshine/total?color=blue&label=Total%20Downloads)
+
+
+![GitHub language count](https://img.shields.io/github/languages/count/phantom-xyz/moonshine?style=plastic)
+
+![GitHub Pipenv locked Python version (branch)](https://img.shields.io/github/pipenv/locked/python-version/phantom-xyz/moonshine/master?style=plastic)
+![GitHub top language](https://img.shields.io/github/languages/top/phantom-xyz/moonshine?style=plastic)
+
+![GitHub](https://img.shields.io/github/license/phantom-xyz/moonshine?style=plastic)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/moonshine?style=plastic)
+
+
+![Keybase BTC](https://img.shields.io/keybase/btc/microbot?style=plastic)
+![Twitter Follow](https://img.shields.io/twitter/follow/sama_b_s?style=social)
+
+![GitHub followers](https://img.shields.io/github/followers/sama-master?label=Follow&style=social)
+![GitHub stars](https://img.shields.io/github/stars/phantom-xyz/moonshine?style=social)
+
+![GitHub watchers](https://img.shields.io/github/watchers/phantom-xyz/moonshine?style=social)
+
+
+.. image:: https://img.shields.io/pypi/dd/moonshine?color=red&logo=moonshine&style=plastic   :alt: PyPI - Downloads
+.. image:: https://img.shields.io/github/downloads/phantom-xyz/moonshine/total?color=blue&label=Total%20Downloads   :alt: GitHub All Releases
+
+
+
+<img alt="GitHub Pipenv locked Python version (branch)" src="https://img.shields.io/github/pipenv/locked/python-version/phantom-xyz/moonshine/master?style=plastic">
+
+<img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/moonshine?style=plastic">
+
+## moonshine
+python Bot + CLI
+
+usage:
+
+LinuxOS & MacOS
+
+```markdown
+$ pip install moonshine
+$ moonshine
+
+```
+
+Win
+
+```markdown
+pip install moonshine
+
+exec
+
+C:\Users\a7med>moonshine
+Call your main application code here
+
+```
+
+### DEV & DEBUG
+
+```bash
+python -m pip install .
+python setup.py sdist bdist_wheel
+twine upload dist/* --verbose 
+
+```
+
+Distro & DevOps:
+
+clone repo & init env
+
+
+### Codecov setup
+
+```markdown
+export CODECOV_TOKEN="<token>"
+bash <(curl -s https://codecov.io/bash)
+
+coverage run ./src/xocli/test.py
+coverage xml
+codecov
+
+python -m pip install --upgrade pip setuptools wheel
+
+```
+
+::DEBUG::
+
+```markdown
+# activate dev env
+$ source /usr/lib/python/venv/scripts/common/activate
+
+# install dependencies
+$ sudo -H pip install -r requirements.txt
+
+# debug app after installing pylint from req.txt
+$ sudo pylint src/xocli/
+
+```
+
+::INSTALL::
+
+```markdown
+# on current working directory
+$ pip install -e .
+
+# pkgs will be stored @io.smasystems.sa
+$ pip install --index-url https://io.smasystems.sa/core/moonshine-1.0.2.tar.gz moonshine
+
+```
+
+::DIST::
+
+```markdown
+# this will pkg the project into build/ dist/ folders
+$ python setup.py sdist bdist_wheel
+
+# you need to install twine as it's not inc in req.txt
+$ python -m pip install --user --upgrade twine
+$ python -m twine upload --repository moonshine dist/*
+
+
+```
+
+For Developers:
+
+gen tar+wheel - install gen pkg - upload
+
+```markdown
+
+$ python setup.py sdist bdist_wheel
+$ sudo -H pip install -e .
+$ python -m twine upload --repository moonshine dist/* --verbose --skip-existing
+
+#python setup.py install
+
+```
+You can use the [editor on GitHub](https://github.com/phantom-xyz/moonshine/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+# PyLib
+Python pckg
+
+Usage:
+
+```sh
+
+$ sudo apt-get install python python-pip
+$ sudo pip install -r requirements.txt
+$ sudo pip install -e .
+$ sudo python setup.py sdist bdist_wheel
+$ sudo twine upload --skip-existing dist/*
+
+```
+
+```cmd
+
+C:\> pip install -r requirements.txt
+C:\> pip install -e .
+C:\> python setup.py sdist
+C:\> twine upload --skip-existing dist/*
+
+```
+
+> cmd commands history
+
+```sh
+┌────────────────────────────────────────┐
+│0: pip install -e .                     │
+│1: python setup.py sdist                │
+│2: pip install -e .                     │
+│3: twine upload --skip-existing dist/*  │
+└────────────────────────────────────────┘
+
+
+```
+
+Description: This project provides powerful math functions
+        |For example, you can use `sum()` to sum numbers:
+        |
+        |Example::
+        |
+        |    >>> sum(1, 2)
+        |    3
+        |
+
+
+
+## Python Virtual Env
+python -m venv moonshine
+
+On Windows, run:
+
+moonshine\Scripts\activate.bat
+
+On Unix or MacOS, run:
+
+source moonshine/bin/activate
+source moonshine/bin/deactivate
+
+
+
+
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/phantom-xyz/moonshine/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and weÃ¢â‚¬â„¢ll help you sort it out.
+
