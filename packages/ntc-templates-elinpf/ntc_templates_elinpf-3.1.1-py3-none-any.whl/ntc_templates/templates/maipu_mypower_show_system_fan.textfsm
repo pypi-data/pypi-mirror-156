@@ -1,0 +1,35 @@
+Value Required FAN_ID (\d+)
+Value FAN_NAME (\S+)
+Value STATUS (\S+)
+Value DESCRIPTION (\S+)
+Value SN (\S+)
+Value WORK_STATUS (\S+)
+Value SPEED_RATE (\d+)
+Value CMM_SOFTWARE_VERSION (\S+)
+Value Fillup STATISTICS_IN (\d+)
+Value Fillup STATISTICS_OUT (\d+)
+Value Fillup STATISTICS_IERR (\d+)
+Value Fillup STATISTICS_OERR (\d+)
+
+Start
+  ^System\s+Fan\s+Information\s+\(Fan\s+${FAN_ID}\s.* -> Long_Fan_Info
+  ^\s+System\s+FAN\s+Information\(Fan\s+${FAN_ID}\s.* -> Short_Fan_Info
+
+Long_Fan_Info
+  ^\s+Fan\s+Name:\s+${FAN_NAME}
+  ^\s+Status:\s+${STATUS}
+  ^\s+Description:\s+${DESCRIPTION}
+  ^\s+Serial\s+No:\s+${SN}
+  ^\s+Fan\s+Rate:\s+${SPEED_RATE}\s+RPM
+  ^\s+Work\s+Status:\s+${WORK_STATUS}}
+  ^\s+CMM\s+Software\s+Version:\s+${CMM_SOFTWARE_VERSION}
+  ^STATISTICS:\s+${STATISTICS_IN}\s+IN,\s+${STATISTICS_IERR}\s+IERR,\s+${STATISTICS_OUT}\s+OUT,\s+${STATISTICS_OERR}\s+OERR
+  ^$$ -> Record Start
+  
+
+Short_Fan_Info
+  ^\s+Status:\s+${STATUS}
+  ^\s+Description:\s+${DESCRIPTION}
+  ^\s+Speed\s+Rate:\s+${SPEED_RATE}%
+  ^\s+STATISTICS:\s+${STATISTICS_IN}\s+IN,\s+${STATISTICS_OUT}\s+OUT,\s+${STATISTICS_IERR}\s+IERR,\s+${STATISTICS_OERR}\s+OERR
+  ^$$ -> Record Start
