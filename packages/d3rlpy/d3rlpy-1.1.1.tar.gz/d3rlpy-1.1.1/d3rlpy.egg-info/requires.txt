@@ -1,0 +1,11 @@
+torch
+scikit-learn
+tensorboardX
+tqdm
+h5py
+gym
+click
+typing-extensions
+scipy
+structlog
+colorama
