@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: kpra-covid
+Version: 0.0.1
+Summary: Covid count tracker
+Author: Kiran Prasannadas
+Author-email: kiranpdas123@gmail.com
+Keywords: covid
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# Covid Tracker
+
+This package gives information about covid19 cases reported and deaths around the world
+
+## To run
+```
+Run via docker:
+    1. Clone this repo
+    2. Run below commands from root directory of the project:
+        - sh bin/build_docker.sh
+        - sh bin/exe_docker.sh
+```
+
+```
+Run without docker:
+Clone this repo and run the below command from root directory (COVID)
+    - sh bin/exe_covid.sh
+```
