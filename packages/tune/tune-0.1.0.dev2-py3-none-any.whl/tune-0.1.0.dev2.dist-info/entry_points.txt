@@ -1,0 +1,3 @@
+[tune.plugins]
+mlflow = tune_mlflow:register
+
