@@ -1,0 +1,5 @@
+colorama
+funcparserlib~=1.0
+
+[:python_version < "3.9"]
+astor>=0.8
