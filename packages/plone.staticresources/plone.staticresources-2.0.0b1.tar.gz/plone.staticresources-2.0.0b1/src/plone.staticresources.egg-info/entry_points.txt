@@ -1,0 +1,7 @@
+
+    [console_scripts]
+    plone-register-icons = plone.staticresources._scripts.register_icons:main
+    plone-register-flags = plone.staticresources._scripts.register_flag_icons:main
+    [z3c.autoinclude.plugin]
+    target = plone
+    
