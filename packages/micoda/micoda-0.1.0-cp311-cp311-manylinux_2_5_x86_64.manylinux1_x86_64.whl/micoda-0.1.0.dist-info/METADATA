@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: micoda
+Version: 0.1.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: A Python module to parse Markdown. Powered by `PyO3` and `pulldown-cmark`.
+Home-Page: https://github.com/cyanbell/micoda
+Author: shengurun
+Author-email: shengurun@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/cyanbell/micoda
+
+# Micoda
+
+A Python module to parse Markdown. Powered by `PyO3` and `pulldown-cmark`.
+
+## Install
+
+```bash
+pip install micoda
+```
+
+## Usage
+
+Convert Markdown to HTML:
+
+```python
+import micoda
+
+micoda.convert(your_markdown_text)
+```
+
+Convert Markdown file to HTML:
+
+```python
+import micoda
+
+micoda.convert_file(your_markdown_file_path)
+```
+
