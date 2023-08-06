@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fripy
+Version: 1.5.0
+Summary: Shhhhh, it is a secret.
+Home-page: UNKNOWN
+Author: EAIiub
+Author-email: zenoexploits@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Requires-Dist: pyotp
+Requires-Dist: psutil
+Requires-Dist: pypiwin32
+Requires-Dist: pycryptodome
+Requires-Dist: PIL-tools
+
+It is that sometimes you just have to play along. :)
+
+
