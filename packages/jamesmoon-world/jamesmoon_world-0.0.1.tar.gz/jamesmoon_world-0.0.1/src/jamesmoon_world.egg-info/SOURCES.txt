@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/helloworld.py
+src/jamesmoon_world.egg-info/PKG-INFO
+src/jamesmoon_world.egg-info/SOURCES.txt
+src/jamesmoon_world.egg-info/dependency_links.txt
+src/jamesmoon_world.egg-info/requires.txt
+src/jamesmoon_world.egg-info/top_level.txt

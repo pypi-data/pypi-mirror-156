@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: jamesmoon-world
+Version: 0.0.1
+Summary: Say hello!
+Home-page: https://github.com/moonchangin/helloworld_pypi
+Author: Chang In Moon
+Author-email: changin.moon@bcm.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Hello World
+
+This is an tutorial project demonstrating how to publish a python module to PyPI.
+
+## Developing Hello World
+To install helloworld, along with the tools you need to develop and run tests, run the following in your virtualenv:
+```bash
+$ pip install -e .
+```
+
+## Usage
+```python
+from helloworld import say_hello
+# Generate "Hello, World!"
+say_hello()
+
+# Generate "Hello, James!"
+say_hello("James")
+```
+
