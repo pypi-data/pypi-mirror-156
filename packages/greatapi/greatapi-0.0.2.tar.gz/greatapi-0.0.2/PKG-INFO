@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: greatapi
+Version: 0.0.2
+Summary: GreatAPI Framework, FastAPI with admin panel
+Home-page: https://github.com/greatapi/greatapi
+Author: Sahaj Raj Malla
+Author-email: mallasahajraj@gmail.com
+License: MIT
+Description: # greatapi
+        
+        
+        ## Installation
+        
+        ```bash
+        pip install greatapi
+        ```
+Keywords: fastapi,api,django,admin,web-framework
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev

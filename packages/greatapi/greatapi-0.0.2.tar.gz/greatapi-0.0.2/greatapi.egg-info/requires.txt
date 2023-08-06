@@ -1,0 +1,6 @@
+numpy
+fastapi
+uvicorn
+
+[dev]
+pytest>=3.7
