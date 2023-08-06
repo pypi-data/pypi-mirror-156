@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+qtneat/__init__.py
+qtneat/main.py
+qtneat.egg-info/PKG-INFO
+qtneat.egg-info/SOURCES.txt
+qtneat.egg-info/dependency_links.txt
+qtneat.egg-info/requires.txt
+qtneat.egg-info/top_level.txt
