@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tgback
+Version: 5.0
+Summary: tgback — a program for backing and restoring Telegram accounts
+Home-page: https://github.com/NotStatilko/tgback
+Author-email: thenonproton@pm.me
+License: MIT
+Download-URL: https://github.com/NotStatilko/tgback/archive/refs/tags/v5.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: QR
