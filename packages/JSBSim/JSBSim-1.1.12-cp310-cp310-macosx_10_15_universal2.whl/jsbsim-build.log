@@ -1,0 +1,5 @@
+cythoning jsbsim.pyx to jsbsim.cpp
+building 'jsbsim' extension
+creating build/temp.macosx-10.15-universal2-cpython-310
+gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -arch x86_64 -isysroot /Applications/Xcode_12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -I/usr/local/opt/sqlite/include -I/usr/local/opt/sqlite/include -Isrc -I/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/build-env-1vbq0cjy/include -I/Users/runner/hostedtoolcache/Python/3.10.5/x64/include/python3.10 -c jsbsim.cpp -o build/temp.macosx-10.15-universal2-cpython-310/jsbsim.o -std=c++11
+g++ -bundle -undefined dynamic_lookup -arch x86_64 -isysroot /Applications/Xcode_12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -L/usr/local/opt/sqlite/lib -L/usr/local/opt/sqlite/lib build/temp.macosx-10.15-universal2-cpython-310/jsbsim.o -L../src -L/Users/runner/hostedtoolcache/Python/3.10.5/x64/lib -lJSBSim -lm -o build/lib.macosx-10.15-universal2-cpython-310/jsbsim.cpython-310-darwin.so
