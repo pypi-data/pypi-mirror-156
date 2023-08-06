@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: hkw
+Version: 1.1.5
+Summary: hkwarray.
+Author: hkw
+Author-email: kkhwer@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+================
+ Document Title
+================
+----------
+ Subtitle
+----------
+
+Hkw Title
+=============
+* 첫째 
+
+  - a sub-list using "-"
+
+    + yet another sub-list
+
+  - another item
+  
+* rdata 추가 
+
+
+
