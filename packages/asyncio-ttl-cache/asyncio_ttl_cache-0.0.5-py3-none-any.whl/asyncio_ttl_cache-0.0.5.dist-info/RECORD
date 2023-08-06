@@ -1,0 +1,5 @@
+asyncio_ttl_cache/__init__.py,sha256=o4WKHJ7qvwScL0QJLKbHXx-eh4J_GNNBmjOHlPeIONo,33
+asyncio_ttl_cache/asyncio_ttl_cache.py,sha256=xfh9jh_G5ONmPyAvHIwHghW64zg_KwdQZOJ8J15Ke3g,1100
+asyncio_ttl_cache-0.0.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+asyncio_ttl_cache-0.0.5.dist-info/METADATA,sha256=wqa-hSk6pywxYGv0X1fHqIDDBHkI4_nK9Ts_fiTO5Zg,390
+asyncio_ttl_cache-0.0.5.dist-info/RECORD,,
