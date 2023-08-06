@@ -1,0 +1,11 @@
+README.md
+doppler_env.pth
+pyproject.toml
+setup.cfg
+setup.py
+src/doppler_env/__init__.py
+src/doppler_env.egg-info/PKG-INFO
+src/doppler_env.egg-info/SOURCES.txt
+src/doppler_env.egg-info/dependency_links.txt
+src/doppler_env.egg-info/requires.txt
+src/doppler_env.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+pip
+python-dotenv
+
+[dev]
+check-manifest
+
+[test]
