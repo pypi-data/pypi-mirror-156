@@ -1,0 +1,87 @@
+'\" t
+.\"     Title: veld-paired_ttest
+.\"    Author: Gerrit J.J. van den Burg
+.\" Generator: Wilderness <https://pypi.org/project/wilderness>
+.\"      Date: 2022-06-19
+.\"    Manual: veld Manual
+.\"    Source: veld 0.1.2
+.\"  Language: English
+.\"
+.TH "VELD-PAIRED_TTEST" "1" "2022\-06\-19" "Veld 0\&.1\&.2" "Veld Manual"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting *
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+veld-paired_ttest \- Perform a paired t-test on two-dimensional data
+.SH "SYNOPSIS"
+.sp
+.nf
+\fIveld paired_ttest [\-e ENCODING | \-\-encoding=ENCODING] [\-f | \-\-flatten]
+                  [\-i | \-\-ignore] [\-s SEPARATOR | \-\-separator=SEPARATOR]
+                  [\-\-nan={raise,propagate,omit}] [\-j | \-\-json] [file]
+.fi
+.sp
+.SH "DESCRIPTION"
+.sp
+This command can be used to run a paired differences t\-test on a two\-dimensional stream of input data. This is used when two sets of observations are made on the same collection of objects. The observations for each object must be on the same line (that is, they must be paired). An example application could be to test if a change in an algorithm significantly improved its runtime on a set of test cases.
+.SH "OPTIONS"
+.sp
+.sp
+.sp
+\-h, \-\-help
+.RS 4
+show this help message and exit
+.RE
+.PP
+\-e, \-\-encoding
+.RS 4
+Specify the encoding of the input stream.
+.RE
+.PP
+\-f, \-\-flatten
+.RS 4
+With multidimensional input (more than one value per line) the operation is normally conducted on each dimension independently. With the \-\-flatten option, the input is flattened line\-wise (RowMajor order) and the operation is conducted on the resulting one\-dimensional stream.
+.RE
+.PP
+\-i, \-\-ignore
+.RS 4
+Ignore non\-numeric values in the input stream
+.RE
+.PP
+\-s, \-\-separator
+.RS 4
+Some of the Veld commands have support for multidimensional input data. The values on each line of the input stream are expected to be separated by this separator. By default, the tab character will be used as a separator.
+.RE
+.PP
+\-\-nan
+.RS 4
+It can happen that nan values are present in the data stream (either because they're created by the process or when using the \-i / \-\-ignore\-invalid option). With this option the user can decide what should happen when these values are encountered. The default behavior is to 'raise' an error when a NaN value is found. Alternatively, the user can choose to 'propagate' nan values, or 'omit' rows in the data stream that contain them.
+.RE
+.PP
+\-j, \-\-json
+.RS 4
+Print structured output in JSON format
+.RE
+.PP
+[file]
+.RS 4
+Veld is primarily designed for processing input streams, but it can also be applied on a file of data, which can be supplied with this argument. By default Veld will read the input data from stdin.
+.RE
+.PP
+.sp

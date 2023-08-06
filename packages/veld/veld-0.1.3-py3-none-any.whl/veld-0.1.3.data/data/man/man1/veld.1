@@ -1,0 +1,263 @@
+'\" t
+.\"     Title: veld
+.\"    Author: Gerrit J.J. van den Burg
+.\" Generator: Wilderness <https://pypi.org/project/wilderness>
+.\"      Date: 2022-06-26
+.\"    Manual: veld Manual
+.\"    Source: veld 0.1.3
+.\"  Language: English
+.\"
+.TH "VELD" "1" "2022\-06\-26" "Veld 0\&.1\&.3" "Veld Manual"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting *
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+veld \- Easy command line analytics
+.SH "SYNOPSIS"
+.sp
+.nf
+\fIveld [\-h | \-\-help] [\-V | \-\-version] [\-\-debug] <command \&...>
+.fi
+.sp
+.SH "DESCRIPTION"
+.sp
+Veld is a command line processor for (multi\-dimensional) numeric data streams. It can compute basic univariate statistics such as the mean or the variance of a stream of numbers, process the stream by computing logarithms or rounding, or create a histogram or scatter plot of the data (among other functionality).
+.sp
+Veld can be used for quick exploration of a data stream or can be integrated in a command line data processing pipeline.
+.sp
+Detailed information on Veld commands can be obtained using: veld help <command>. Online documentation of Veld can be found via the GitHub page [1].
+.SH "OPTIONS"
+.sp
+.sp
+.sp
+\-h, \-\-help
+.RS 4
+show this help message and exit
+.RE
+.PP
+\-V, \-\-version
+.RS 4
+show version information and exit
+.RE
+.PP
+\-\-debug
+.RS 4
+Debug mode disables the default exception handling, which can be useful for debugging.
+.RE
+.PP
+.sp
+.SH "COMMANDS"
+.sp
+We list the available Veld commands by use case.
+.sp
+Univariate statistics
+.RS 4
+veld\-sum(1)
+.RE
+.RS 8
+Sum the values in the data stream
+.RE
+.sp
+.RS 4
+veld\-mean(1)
+.RE
+.RS 8
+Find the mean (average) of the values in the data stream
+.RE
+.sp
+.RS 4
+veld\-mode(1)
+.RE
+.RS 8
+Find the mode of the values in the data stream
+.RE
+.sp
+.RS 4
+veld\-median(1)
+.RE
+.RS 8
+Find the median of the values in the data stream
+.RE
+.sp
+.RS 4
+veld\-stdev(1)
+.RE
+.RS 8
+Compute the standard deviation of the input stream
+.RE
+.sp
+.RS 4
+veld\-variance(1)
+.RE
+.RS 8
+Compute the variance of the input stream
+.RE
+.sp
+.RS 4
+veld\-quantile(1)
+.RE
+.RS 8
+Find the given quantile for the data in the stream
+.RE
+.sp
+Extreme values and counts
+.RS 4
+veld\-min(1)
+.RE
+.RS 8
+Find the minimum of the values in the data stream
+.RE
+.sp
+.RS 4
+veld\-max(1)
+.RE
+.RS 8
+Find the maximum of the values in the data stream
+.RE
+.sp
+.RS 4
+veld\-count(1)
+.RE
+.RS 8
+Count the number of values in the data stream
+.RE
+.sp
+Filtering values
+.RS 4
+veld\-lt(1)
+.RE
+.RS 8
+Keep only inputs that are less than a given threshold
+.RE
+.sp
+.RS 4
+veld\-le(1)
+.RE
+.RS 8
+Keep only inputs that are less than or equal to a given threshold
+.RE
+.sp
+.RS 4
+veld\-gt(1)
+.RE
+.RS 8
+Keep only inputs that are greater than a given threshold
+.RE
+.sp
+.RS 4
+veld\-ge(1)
+.RE
+.RS 8
+Keep only inputs that are greater than or equal to a given threshold
+.RE
+.sp
+.RS 4
+veld\-eq(1)
+.RE
+.RS 8
+Keep only inputs that equal a given value
+.RE
+.sp
+.RS 4
+veld\-ne(1)
+.RE
+.RS 8
+Keep only inputs that are not equal to a given value
+.RE
+.sp
+Math operators
+.RS 4
+veld\-log(1)
+.RE
+.RS 8
+Compute the logarithm of the input stream
+.RE
+.sp
+.RS 4
+veld\-round(1)
+.RE
+.RS 8
+Round the floating point values in the input stream
+.RE
+.sp
+.RS 4
+veld\-cumsum(1)
+.RE
+.RS 8
+Compute the cumulative sum of the input stream
+.RE
+.sp
+Plotting
+.RS 4
+veld\-lines(1)
+.RE
+.RS 8
+Show line plots of the input data
+.RE
+.sp
+.RS 4
+veld\-scatter(1)
+.RE
+.RS 8
+Show a scatterplot of two\-dimensional data
+.RE
+.sp
+.RS 4
+veld\-histogram(1)
+.RE
+.RS 8
+Plot a histogram of the values in the data stream
+.RE
+.sp
+.RS 4
+veld\-barcount(1)
+.RE
+.RS 8
+Create a histogram with bars for all unique values in the stream
+.RE
+.sp
+Hypothesis testing
+.RS 4
+veld\-paired\-ttest(1)
+.RE
+.RS 8
+Perform a paired t\-test on two\-dimensional data
+.RE
+.sp
+For more information about each command, use: veld help <command>, or: man veld <command> from the command line.
+.SH "AUTHOR"
+.sp
+Veld was created by Gertjan van den Burg [2]. See the GitHub project page at [3] for an up\-to\-date list of contributors.
+.SH "REPORTING BUGS"
+.sp
+Any bugs that you encounter can be reported at the GitHub page for Veld [1]. Please do not hesitate, you're helping to make this project better for everyone!
+.SH "NOTES"
+.sp
+\fB1. \fRVeld page on GitHub
+.br
+   https://github.com/GjjvdBurg/Veld
+.sp
+\fB2. \fRMore about Gertjan van den Burg
+.br
+   https://gertjan.dev
+.sp
+\fB3. \fRContributors to Veld
+.br
+   https://github.com/GjjvdBurg/Veld/graphs/contributors
+.sp
