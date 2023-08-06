@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: fuzzdex
+Version: 0.3.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Author: Tomasz bla Fortuna <bla@thera.be>
+Author-email: Tomasz bla Fortuna <bla@thera.be>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# FuzzDex
+
+Fuzzy Index for Python, written in Rust. Works like an error-tolerant dict,
+keyed by a human input.
+
+## Usecases
+
+I use it for matching parts of user supplied physical addresses to data
+extracted from OSM map to find streets and cities. Original solution used
+Elasticsearch database with a fuzzy query, which worked - but was 21x slower.
+
+## Example
+
+```python
+import fuzzdex
+cities = fuzzdex.FuzzDex(max_distance=2)
+cities.add_phrase("Warsaw", 1, constraints={1, 2, 3})
+cities.add_phrase("Wrocław", 2, constraints={4})
+
+streets = fuzzdex.FuzzDex()
+streets.add_phrase("Czerniakowska", 1, constraints={1})
+streets.add_phrase("Nowy Świat", 2, constraints={1})
+streets.add_phrase("Wawelska", 3, constraints={1})
+
+streets.add_phrase("Czerniawska", 4, constraints={2})
+
+cities.finish()
+streets.finish()
+
+cities.search("Warszawa", [], max_distance=3, limit=60)
+#    [{'origin': 'Warsaw', 'index': 1, 'token': 'warsaw', 
+#      'distance': 3, 'score': 100000.0, 'should_score': 0.0}]
+ 
+streets.search("Nowy", ["świat"], max_distance=2, constraint=1)
+#    [{'origin': 'Nowy Świat', 'index': 2, 'token': 'nowy', 
+#      'distance': 1, 'score': 1.4999924898147583, 
+#      'should_score': 7.499962329864502}]
+
+streets.search("Nowy", ["świat"], constraint=2)
+#    []
+```
+
