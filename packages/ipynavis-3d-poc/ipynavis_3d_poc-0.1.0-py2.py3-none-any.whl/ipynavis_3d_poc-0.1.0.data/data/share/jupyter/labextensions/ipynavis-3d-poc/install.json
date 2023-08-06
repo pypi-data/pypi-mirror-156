@@ -1,0 +1,5 @@
+{
+  "packageManager": "python",
+  "packageName": "ipynavis_3d_poc",
+  "uninstallInstructions": "Use your Python package manager (pip, conda, etc.) to uninstall the package ipynavis_3d_poc"
+}

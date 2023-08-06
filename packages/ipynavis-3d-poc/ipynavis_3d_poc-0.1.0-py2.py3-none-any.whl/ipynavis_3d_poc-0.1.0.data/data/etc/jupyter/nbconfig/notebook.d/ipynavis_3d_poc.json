@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "ipynavis_3d_poc/extension": true
+  }
+}
