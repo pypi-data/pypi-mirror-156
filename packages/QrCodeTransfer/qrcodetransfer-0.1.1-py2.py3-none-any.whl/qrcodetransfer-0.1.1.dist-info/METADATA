@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: QrCodeTransfer
+Version: 0.1.1
+Summary: To send and receive data transmitted by QR code. It's maybe useful where no internet connection is available.
+Author-email: cosmore <icosmore@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pyzbar>=0.1.9
+Requires-Dist: Pillow>=9.1.1
+Requires-Dist: PyQRCode>=1.2.1
+Requires-Dist: PyQt5>=5.15.6
