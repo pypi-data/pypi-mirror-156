@@ -1,0 +1,5 @@
+cythoning jsbsim.pyx to jsbsim.cpp
+building 'jsbsim' extension
+creating build/temp.linux-x86_64-cpython-310
+gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -Isrc -I/tmp/build-env-v5owx8vt/include -I/opt/python/cp310-cp310/include/python3.10 -c jsbsim.cpp -o build/temp.linux-x86_64-cpython-310/jsbsim.o -std=c++11
+g++ -pthread -shared build/temp.linux-x86_64-cpython-310/jsbsim.o -L../src -lJSBSim -lm -o build/lib.linux-x86_64-cpython-310/jsbsim.cpython-310-x86_64-linux-gnu.so
