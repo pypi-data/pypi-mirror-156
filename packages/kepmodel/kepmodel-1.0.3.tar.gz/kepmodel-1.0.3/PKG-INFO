@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kepmodel
+Version: 1.0.3
+Summary: Keplerian system model.
+Home-page: https://gitlab.unige.ch/jean-baptiste.delisle/kepmodel
+Author: Jean-Baptiste Delisle
+Author-email: jean-baptiste.delisle@unige.ch
+License: GPLv3
+Requires-Python: >=3.6
+License-File: COPYING
+
+kepmodel: Keplerian system model
+================================
+
+Read the documentation at `<https://obswww.unige.ch/~delisle/kepmodel/doc/>`_.
