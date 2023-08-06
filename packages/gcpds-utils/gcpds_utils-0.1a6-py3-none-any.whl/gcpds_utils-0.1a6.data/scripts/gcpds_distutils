@@ -1,0 +1,6 @@
+#!python
+
+from gcpds.distutils import Distutils
+import os
+
+Distutils(os.getcwd())
