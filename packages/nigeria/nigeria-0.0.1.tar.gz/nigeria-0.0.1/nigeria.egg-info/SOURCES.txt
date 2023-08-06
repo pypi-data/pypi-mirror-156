@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+nigeria/__init__.py
+nigeria.egg-info/PKG-INFO
+nigeria.egg-info/SOURCES.txt
+nigeria.egg-info/dependency_links.txt
+nigeria.egg-info/top_level.txt
