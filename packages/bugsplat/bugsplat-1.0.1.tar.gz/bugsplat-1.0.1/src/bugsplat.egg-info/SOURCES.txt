@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/bugsplat/__init__.py
+src/bugsplat/bugsplat.py
+src/bugsplat.egg-info/PKG-INFO
+src/bugsplat.egg-info/SOURCES.txt
+src/bugsplat.egg-info/dependency_links.txt
+src/bugsplat.egg-info/requires.txt
+src/bugsplat.egg-info/top_level.txt
