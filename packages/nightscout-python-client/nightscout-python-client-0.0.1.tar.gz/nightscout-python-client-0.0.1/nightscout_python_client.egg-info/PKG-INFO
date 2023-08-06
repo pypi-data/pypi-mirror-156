@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: nightscout-python-client
+Version: 0.0.1
+Summary: Nightscout Python Client
+Home-page: https://github.com/erobinson/nightscout-python-client
+Author: UNKNOWN
+Author-email: Edward.R.Robinson@gmail.com
+License: UNKNOWN
+Description:     Python project to pull data from nightscout. WARNING: Currently most of the code does NOT work!  # noqa: E501
+            
+Keywords: Swagger,Nightscout API
+Platform: UNKNOWN
