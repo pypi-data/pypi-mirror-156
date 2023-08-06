@@ -1,0 +1,4 @@
+recursive-include ./pollination_streamlit_io/*/frontend/build
+
+recursive-exclude .devcontainer *
+recursive-exclude ./examples *
