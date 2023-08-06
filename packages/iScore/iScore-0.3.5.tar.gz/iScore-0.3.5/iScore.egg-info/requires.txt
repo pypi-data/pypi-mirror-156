@@ -1,0 +1,27 @@
+numpy>=1.13
+scipy
+biopython
+mpi4py
+h5py
+matplotlib
+libsvm
+pdb2sql
+pssmgen
+
+[:platform_system == "Darwin"]
+h5xplorer
+
+[dev]
+prospector[with_pyroma]
+yapf
+isort
+
+[doc]
+recommonmark
+sphinx
+sphinx_rtd_theme
+
+[test]
+pytest
+pytest-cov
+coveralls

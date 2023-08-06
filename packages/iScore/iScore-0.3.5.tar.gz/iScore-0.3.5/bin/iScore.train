@@ -1,0 +1,52 @@
+#!/usr/bin/env python
+import os
+import argparse
+from iScore.graphrank.graph import iscore_graph
+from iScore.graphrank.kernel import iscore_kernel
+from iScore.graphrank.rank import iscore_svm
+
+
+##########################################################################
+# Train a model
+#########################################################################
+
+
+# parse arguments
+parser = argparse.ArgumentParser(description=' iScore - Train a model')
+
+# where the kernels are stored
+parser.add_argument('--kernel',default='./kernel/',type=str,help='Kernel pickle file to use')
+
+# where the graphs are stored
+parser.add_argument('--graph',default='./graph/',type=str,help='Graph pickle file to use')
+
+#name of the archive to save
+parser.add_argument('--arc',default='training_set.tar.gz', type = str, help='name of the achive')
+
+# walk length for kernel
+parser.add_argument('--walk',default=3, type=int, help='walk length for creating kernel')
+
+# max walk length to use in svm
+parser.add_argument('--maxlen', type=int, default=None, help='max walk length of the kernel. Default max len possible with the kernel file')
+
+# get the args
+args = parser.parse_args()
+
+# create the graphs
+if not os.path.isdir(args.graph):
+	os.mkdir(args.graph)
+	iscore_graph(outdir=args.graph)
+else:
+	print("Reuse the graphs in  %s" %args.graph)
+
+
+# compute the kernels
+if not os.path.isdir(args.kernel):
+	os.mkdir(args.kernel)
+	kfile = os.path.join(args.kernel,'kernel.pckl')
+	iscore_kernel(outfile=kfile,walk=args.walk)
+else:
+	print("Reuse the kernels in  %s" %args.kernel)
+
+# train the model
+iscore_svm(train=True,package_model=True,package_name=args.arc,maxlen=args.maxlen)
