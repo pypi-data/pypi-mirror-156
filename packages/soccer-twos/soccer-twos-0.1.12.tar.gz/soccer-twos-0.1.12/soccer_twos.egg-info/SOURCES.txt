@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+soccer_twos/__init__.py
+soccer_twos/agent_interface.py
+soccer_twos/evaluate.py
+soccer_twos/package.py
+soccer_twos/side_channels.py
+soccer_twos/utils.py
+soccer_twos/watch.py
+soccer_twos/wrappers.py
+soccer_twos.egg-info/PKG-INFO
+soccer_twos.egg-info/SOURCES.txt
+soccer_twos.egg-info/dependency_links.txt
+soccer_twos.egg-info/requires.txt
+soccer_twos.egg-info/top_level.txt
