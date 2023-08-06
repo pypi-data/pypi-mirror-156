@@ -1,0 +1,12 @@
+numpy
+scipy
+matplotlib
+mne
+tables
+tqdm
+
+[utils]
+sphinx
+colorama
+jinja2
+ipython
