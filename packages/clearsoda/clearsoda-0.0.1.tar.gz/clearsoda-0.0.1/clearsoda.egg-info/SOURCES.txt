@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+clearsoda/__init__.py
+clearsoda/code.py
+clearsoda/codeprimitives.py
+clearsoda/helpers.py
+clearsoda/looks.py
+clearsoda/motion.py
+clearsoda/operator.py
+clearsoda/scratchproject.py
+clearsoda/sensing.py
+clearsoda/sound.py
+clearsoda.egg-info/PKG-INFO
+clearsoda.egg-info/SOURCES.txt
+clearsoda.egg-info/dependency_links.txt
+clearsoda.egg-info/top_level.txt
