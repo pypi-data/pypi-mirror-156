@@ -1,0 +1,7 @@
+micoda-0.1.0.dist-info/METADATA,sha256=pEFX2taBbPEcNyF0CvizRE2sxcuZBJISxhgfrAIklhU,949
+micoda-0.1.0.dist-info/WHEEL,sha256=7MYReOX8Uj7brtyw59Lm8Q8ylvDymjBNz7tlr4_nr1w,125
+micoda/__init__.py,sha256=IamG26f8iUgX8lncwTgOEiGfFp7FhUzqU-gNDjUvepE,107
+micoda/__init__.pyi,sha256=3EWfyO8sVK72xZ4M-pKP3jzQm2rDVtBaj3eug2KBhEE,445
+micoda/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+micoda/micoda.cpython-39-x86_64-linux-gnu.so,sha256=YGjhDX7eoPVFagxZW8M2_k75nehWT26UbhTXt1rmscs,4724448
+micoda-0.1.0.dist-info/RECORD,,
