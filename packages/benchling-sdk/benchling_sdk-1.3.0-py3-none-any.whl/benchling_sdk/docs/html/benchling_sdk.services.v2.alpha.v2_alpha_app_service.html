@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>benchling_sdk.services.v2.alpha.v2_alpha_app_service module — Benchling SDK  documentation</title>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/alabaster.css" rel="stylesheet" type="text/css"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/custom.css" rel="stylesheet" type="text/css"/>
+<script data-url_root="./" id="documentation_options" src="https://bnch-sdk-documents.s3.amazonaws.com/_static/documentation_options.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/jquery.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/underscore.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/doctools.js"></script>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="benchling_sdk.services.v2.beta.html" rel="next" title="benchling_sdk.services.v2.beta package"/>
+<link href="benchling_sdk.services.v2.alpha.v2_alpha_aa_sequence_service.html" rel="prev" title="benchling_sdk.services.v2.alpha.v2_alpha_aa_sequence_service module"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/custom.css" rel="stylesheet" type="text/css"/>
+<meta content="width=device-width, initial-scale=0.9, maximum-scale=0.9" name="viewport"/>
+</head><body>
+<div class="container">
+<div class="contentWrapper">
+<div class="flexBox">
+<div class="headerChild">
+<a href="/">
+<img alt="Benchling logo" class="benchlingLogo" src="https://bnch-sdk-documents.s3.amazonaws.com/_static/img/logo_250_notext.png"/>
+</a>
+</div>
+<div class="headerChild">
+<a href="https://docs.benchling.com" rel="noopener noreferrer" target="_blank">
+                    Warehouse &amp; API Guide
+                </a>
+</div>
+<div class="headerChild">
+<a href="https://benchling.com/api/reference" rel="noopener noreferrer" target="_blank">
+                    Public API Reference
+                </a>
+</div>
+<div class="headerChild">
+<a href="index.html">SDK Reference</a>
+</div>
+</div>
+</div>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<section id="module-benchling_sdk.services.v2.alpha.v2_alpha_app_service">
+<span id="benchling-sdk-services-v2-alpha-v2-alpha-app-service-module"></span><h1>benchling_sdk.services.v2.alpha.v2_alpha_app_service module<a class="headerlink" href="#module-benchling_sdk.services.v2.alpha.v2_alpha_app_service" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">V2AlphaAppService</span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="benchling_sdk.services.v2.base_service.html#benchling_sdk.services.v2.base_service.BaseService" title="benchling_sdk.services.v2.base_service.BaseService"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.services.v2.base_service.BaseService</span></code></a></p>
+<p>V2-Alpha Apps.</p>
+<p>Create and manage Apps on your tenant.</p>
+<p><a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps">https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.archive_canvases">
+<span class="sig-name descname"><span class="pre">archive_canvases</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">canvas_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.alpha.models.canvases_archive_reason.CanvasesArchiveReason</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.alpha.models.canvases_archival_change.CanvasesArchivalChange</span></span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.archive_canvases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Archive App Canvases.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps/archiveCanvases">https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps/archiveCanvases</a></p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.create_canvas">
+<span class="sig-name descname"><span class="pre">create_canvas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">canvas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.alpha.models.canvas_create.CanvasCreate</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.alpha.models.canvas.Canvas</span></span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.create_canvas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an App Canvas that a Benchling App can write to and read user interaction from.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps/createCanvas">https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps/createCanvas</a></p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.get_canvas">
+<span class="sig-name descname"><span class="pre">get_canvas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">canvas_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.alpha.models.canvas.Canvas</span></span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.get_canvas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current state of the App Canvas, including user input elements.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps/getCanvas">https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps/getCanvas</a></p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.get_configuration_by_id">
+<span class="sig-name descname"><span class="pre">get_configuration_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.alpha.models.benchling_app_configuration.BenchlingAppConfiguration</span></span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.get_configuration_by_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get app configuration.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=la#/Apps/getBenchlingAppConfiguration">https://benchling.com/api/v2-alpha/reference?stability=la#/Apps/getBenchlingAppConfiguration</a></p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.get_manifest">
+<span class="sig-name descname"><span class="pre">get_manifest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.alpha.models.benchling_app_manifest.BenchlingAppManifest</span></span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.get_manifest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get app manifest.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=la/Apps/getBenchlingAppManifest">https://benchling.com/api/v2-alpha/reference?stability=la/Apps/getBenchlingAppManifest</a></p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.list_configurations">
+<span class="sig-name descname"><span class="pre">list_configurations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_at</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="benchling_sdk.helpers.pagination_helpers.html#benchling_sdk.helpers.pagination_helpers.PageIterator" title="benchling_sdk.helpers.pagination_helpers.PageIterator"><span class="pre">PageIterator</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.alpha.models.benchling_app_configuration.BenchlingAppConfiguration</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.list_configurations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get app configurations.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=la#/Apps/listAppConfigurations">https://benchling.com/api/v2-alpha/reference?stability=la#/Apps/listAppConfigurations</a></p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.unarchive_canvases">
+<span class="sig-name descname"><span class="pre">unarchive_canvases</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">canvas_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.10)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.alpha.models.canvases_archival_change.CanvasesArchivalChange</span></span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.unarchive_canvases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unarchive App Canvases.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps/unarchiveCanvases">https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps/unarchiveCanvases</a></p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.update_canvas">
+<span class="sig-name descname"><span class="pre">update_canvas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">canvas_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">canvas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.alpha.models.canvas_update.CanvasUpdate</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.alpha.models.canvas.Canvas</span></span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.update_canvas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update App Canvas.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps/updateCanvas">https://benchling.com/api/v2-alpha/reference?stability=not-available#/Apps/updateCanvas</a></p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.update_configuration">
+<span class="sig-name descname"><span class="pre">update_configuration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">configuration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.alpha.models.benchling_app_configuration_update.BenchlingAppConfigurationUpdate</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.alpha.models.benchling_app_configuration.BenchlingAppConfiguration</span></span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.update_configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update app configuration.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=la#/Apps/updateBenchlingAppConfiguration">https://benchling.com/api/v2-alpha/reference?stability=la#/Apps/updateBenchlingAppConfiguration</a></p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.update_manifest">
+<span class="sig-name descname"><span class="pre">update_manifest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">manifest</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.alpha.models.benchling_app_manifest.BenchlingAppManifest</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.alpha.models.benchling_app_manifest.BenchlingAppManifest</span></span></span><a class="headerlink" href="#benchling_sdk.services.v2.alpha.v2_alpha_app_service.V2AlphaAppService.update_manifest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update an app manifest.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-alpha/reference?stability=la#/Apps/putBenchlingAppManifest">https://benchling.com/api/v2-alpha/reference?stability=la#/Apps/putBenchlingAppManifest</a></p>
+</dd></dl>
+</dd></dl>
+</section>
+</div>
+</div>
+</div>
+<div aria-label="main navigation" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.apps.html">benchling_sdk.apps package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.services.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="benchling_sdk.services.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+<li><a href="index.html">Documentation overview</a><ul>
+<li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+<li><a href="benchling_sdk.services.html">benchling_sdk.services package</a><ul>
+<li><a href="benchling_sdk.services.v2.html">benchling_sdk.services.v2 package</a><ul>
+<li><a href="benchling_sdk.services.v2.alpha.html">benchling_sdk.services.v2.alpha package</a><ul>
+<li>Previous: <a href="benchling_sdk.services.v2.alpha.v2_alpha_aa_sequence_service.html" title="previous chapter">benchling_sdk.services.v2.alpha.v2_alpha_aa_sequence_service module</a></li>
+<li>Next: <a href="benchling_sdk.services.v2.beta.html" title="next chapter">benchling_sdk.services.v2.beta package</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="searchbox" role="search" style="display: none">
+<h3 id="searchlabel">Quick search</h3>
+<div class="searchformwrapper">
+<form action="search.html" class="search" method="get">
+<input aria-labelledby="searchlabel" autocapitalize="off" autocomplete="off" autocorrect="off" name="q" spellcheck="false" type="text"/>
+<input type="submit" value="Go"/>
+</form>
+</div>
+</div>
+<script>$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="footer">
+      ©2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="https://bnch-sdk-documents.s3.amazonaws.com/_sources/benchling_sdk.services.v2.alpha.v2_alpha_app_service.rst.txt" rel="nofollow">Page source</a>
+</div>
+</body>
+</html>

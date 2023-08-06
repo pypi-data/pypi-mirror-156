@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>benchling_sdk.services.v2.v2_beta_service module — Benchling SDK  documentation</title>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/alabaster.css" rel="stylesheet" type="text/css"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/custom.css" rel="stylesheet" type="text/css"/>
+<script data-url_root="./" id="documentation_options" src="https://bnch-sdk-documents.s3.amazonaws.com/_static/documentation_options.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/jquery.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/underscore.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/doctools.js"></script>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="benchling_sdk.services.v2.v2_stable_service.html" rel="next" title="benchling_sdk.services.v2.v2_stable_service module"/>
+<link href="benchling_sdk.services.v2.v2_alpha_service.html" rel="prev" title="benchling_sdk.services.v2.v2_alpha_service module"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/custom.css" rel="stylesheet" type="text/css"/>
+<meta content="width=device-width, initial-scale=0.9, maximum-scale=0.9" name="viewport"/>
+</head><body>
+<div class="container">
+<div class="contentWrapper">
+<div class="flexBox">
+<div class="headerChild">
+<a href="/">
+<img alt="Benchling logo" class="benchlingLogo" src="https://bnch-sdk-documents.s3.amazonaws.com/_static/img/logo_250_notext.png"/>
+</a>
+</div>
+<div class="headerChild">
+<a href="https://docs.benchling.com" rel="noopener noreferrer" target="_blank">
+                    Warehouse &amp; API Guide
+                </a>
+</div>
+<div class="headerChild">
+<a href="https://benchling.com/api/reference" rel="noopener noreferrer" target="_blank">
+                    Public API Reference
+                </a>
+</div>
+<div class="headerChild">
+<a href="index.html">SDK Reference</a>
+</div>
+</div>
+</div>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<section id="module-benchling_sdk.services.v2.v2_beta_service">
+<span id="benchling-sdk-services-v2-v2-beta-service-module"></span><h1>benchling_sdk.services.v2.v2_beta_service module<a class="headerlink" href="#module-benchling_sdk.services.v2.v2_beta_service" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.v2_beta_service.V2BetaService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">V2BetaService</span></span><a class="headerlink" href="#benchling_sdk.services.v2.v2_beta_service.V2BetaService" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="benchling_sdk.services.v2.base_service.html#benchling_sdk.services.v2.base_service.BaseService" title="benchling_sdk.services.v2.base_service.BaseService"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.services.v2.base_service.BaseService</span></code></a></p>
+<p>V2-beta.</p>
+<p>Beta endpoints have different stability guidelines than other stable endpoints.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-beta/reference">https://benchling.com/api/v2-beta/reference</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.v2_beta_service.V2BetaService.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.client.Client</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">retry_strategy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_sdk.helpers.retry_helpers.html#benchling_sdk.helpers.retry_helpers.RetryStrategy" title="benchling_sdk.helpers.retry_helpers.RetryStrategy"><span class="pre">RetryStrategy</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">RetryStrategy()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.services.v2.v2_beta_service.V2BetaService.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize a v2-beta service.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – Underlying generated Client.</p></li>
+<li><p><strong>retry_strategy</strong> – Retry strategy for failed HTTP calls</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.v2_beta_service.V2BetaService.aa_sequences">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">aa_sequences</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.v2.beta.v2_beta_aa_sequence_service.html#benchling_sdk.services.v2.beta.v2_beta_aa_sequence_service.V2BetaAaSequenceService" title="benchling_sdk.services.v2.beta.v2_beta_aa_sequence_service.V2BetaAaSequenceService"><span class="pre">V2BetaAaSequenceService</span></a></em><a class="headerlink" href="#benchling_sdk.services.v2.v2_beta_service.V2BetaService.aa_sequences" title="Permalink to this definition">¶</a></dt>
+<dd><p>V2-Beta AA Sequences.</p>
+<p>AA Sequences are the working units of cells that make everything run (they help make structures, catalyze
+reactions and allow for signaling - a kind of internal cell communication). On Benchling, these are comprised
+of a string of amino acids and collections of other attributes, such as annotations.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-beta/reference#/AA%20Sequences">https://benchling.com/api/v2-beta/reference#/AA%20Sequences</a></p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.v2_beta_service.V2BetaService.apps">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">apps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.v2.beta.v2_beta_app_service.html#benchling_sdk.services.v2.beta.v2_beta_app_service.V2BetaAppService" title="benchling_sdk.services.v2.beta.v2_beta_app_service.V2BetaAppService"><span class="pre">V2BetaAppService</span></a></em><a class="headerlink" href="#benchling_sdk.services.v2.v2_beta_service.V2BetaService.apps" title="Permalink to this definition">¶</a></dt>
+<dd><p>V2-Beta Apps.</p>
+<p>Create and manage Apps on your tenant.</p>
+<p><a class="reference external" href="https://benchling.com/api/v2-beta/reference?stability=not-available#/Apps">https://benchling.com/api/v2-beta/reference?stability=not-available#/Apps</a></p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.v2_beta_service.V2BetaService.custom_entities">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">custom_entities</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.v2.beta.v2_beta_custom_entity_service.html#benchling_sdk.services.v2.beta.v2_beta_custom_entity_service.V2BetaCustomEntityService" title="benchling_sdk.services.v2.beta.v2_beta_custom_entity_service.V2BetaCustomEntityService"><span class="pre">V2BetaCustomEntityService</span></a></em><a class="headerlink" href="#benchling_sdk.services.v2.v2_beta_service.V2BetaService.custom_entities" title="Permalink to this definition">¶</a></dt>
+<dd><p>V2-Beta Custom Entities.</p>
+<p>Benchling supports custom entities for biological entities that are neither sequences or proteins. Custom
+entities must have an entity schema set and can have both schema fields and custom fields.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-beta/reference#/Custom%20Entities">https://benchling.com/api/v2-beta/reference#/Custom%20Entities</a></p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.v2_beta_service.V2BetaService.dna_oligos">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dna_oligos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.v2.beta.v2_beta_dna_oligo_service.html#benchling_sdk.services.v2.beta.v2_beta_dna_oligo_service.V2BetaDnaOligoService" title="benchling_sdk.services.v2.beta.v2_beta_dna_oligo_service.V2BetaDnaOligoService"><span class="pre">V2BetaDnaOligoService</span></a></em><a class="headerlink" href="#benchling_sdk.services.v2.v2_beta_service.V2BetaService.dna_oligos" title="Permalink to this definition">¶</a></dt>
+<dd><p>V2-Beta DNA Oligos.</p>
+<p>DNA Oligos are short linear DNA sequences that can be attached as primers to full DNA sequences. Just like other
+entities, they support schemas, tags, and aliases.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-beta/reference#/DNA%20Oligos">https://benchling.com/api/v2-beta/reference#/DNA%20Oligos</a></p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.v2_beta_service.V2BetaService.dna_sequences">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dna_sequences</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.v2.beta.v2_beta_dna_sequence_service.html#benchling_sdk.services.v2.beta.v2_beta_dna_sequence_service.V2BetaDnaSequenceService" title="benchling_sdk.services.v2.beta.v2_beta_dna_sequence_service.V2BetaDnaSequenceService"><span class="pre">V2BetaDnaSequenceService</span></a></em><a class="headerlink" href="#benchling_sdk.services.v2.v2_beta_service.V2BetaService.dna_sequences" title="Permalink to this definition">¶</a></dt>
+<dd><p>V2-Beta DNA Sequences.</p>
+<p>DNA sequences are the bread and butter of the Benchling Molecular Biology suite. On Benchling, these are
+comprised of a string of nucleotides and collections of other attributes, such as annotations and primers.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-beta/reference#/DNA%20Sequences">https://benchling.com/api/v2-beta/reference#/DNA%20Sequences</a></p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.v2_beta_service.V2BetaService.entities">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">entities</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.v2.beta.v2_beta_entity_service.html#benchling_sdk.services.v2.beta.v2_beta_entity_service.V2BetaEntityService" title="benchling_sdk.services.v2.beta.v2_beta_entity_service.V2BetaEntityService"><span class="pre">V2BetaEntityService</span></a></em><a class="headerlink" href="#benchling_sdk.services.v2.v2_beta_service.V2BetaService.entities" title="Permalink to this definition">¶</a></dt>
+<dd><p>V2-Beta Entities.</p>
+<p>Entities include DNA and AA sequences, oligos, molecules, custom entities, and
+other biological objects in Benchling. Entities support schemas, tags, and aliases,
+and can be registered.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-beta/reference#/Entities">https://benchling.com/api/v2-beta/reference#/Entities</a></p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.v2_beta_service.V2BetaService.entries">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">entries</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.v2.beta.v2_beta_entry_service.html#benchling_sdk.services.v2.beta.v2_beta_entry_service.V2BetaEntryService" title="benchling_sdk.services.v2.beta.v2_beta_entry_service.V2BetaEntryService"><span class="pre">V2BetaEntryService</span></a></em><a class="headerlink" href="#benchling_sdk.services.v2.v2_beta_service.V2BetaService.entries" title="Permalink to this definition">¶</a></dt>
+<dd><p>V2-Beta Entries.</p>
+<p>Entries are rich text documents that allow you to capture all of your experimental data in one place.</p>
+<p><a class="reference external" href="https://benchling.com/api/v2-beta/reference#/Entries">https://benchling.com/api/v2-beta/reference#/Entries</a></p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.services.v2.v2_beta_service.V2BetaService.rna_oligos">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rna_oligos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.services.v2.beta.v2_beta_rna_oligo_service.html#benchling_sdk.services.v2.beta.v2_beta_rna_oligo_service.V2BetaRnaOligoService" title="benchling_sdk.services.v2.beta.v2_beta_rna_oligo_service.V2BetaRnaOligoService"><span class="pre">V2BetaRnaOligoService</span></a></em><a class="headerlink" href="#benchling_sdk.services.v2.v2_beta_service.V2BetaService.rna_oligos" title="Permalink to this definition">¶</a></dt>
+<dd><p>V2-Beta RNA Oligos.</p>
+<p>RNA Oligos are short linear RNA sequences that can be attached as primers to full DNA sequences. Just like other
+entities, they support schemas, tags, and aliases.</p>
+<p>See <a class="reference external" href="https://benchling.com/api/v2-beta/reference#/RNA%20Oligos">https://benchling.com/api/v2-beta/reference#/RNA%20Oligos</a></p>
+</dd></dl>
+</dd></dl>
+</section>
+</div>
+</div>
+</div>
+<div aria-label="main navigation" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.apps.html">benchling_sdk.apps package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.services.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="benchling_sdk.services.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+<li><a href="index.html">Documentation overview</a><ul>
+<li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+<li><a href="benchling_sdk.services.html">benchling_sdk.services package</a><ul>
+<li><a href="benchling_sdk.services.v2.html">benchling_sdk.services.v2 package</a><ul>
+<li>Previous: <a href="benchling_sdk.services.v2.v2_alpha_service.html" title="previous chapter">benchling_sdk.services.v2.v2_alpha_service module</a></li>
+<li>Next: <a href="benchling_sdk.services.v2.v2_stable_service.html" title="next chapter">benchling_sdk.services.v2.v2_stable_service module</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="searchbox" role="search" style="display: none">
+<h3 id="searchlabel">Quick search</h3>
+<div class="searchformwrapper">
+<form action="search.html" class="search" method="get">
+<input aria-labelledby="searchlabel" autocapitalize="off" autocomplete="off" autocorrect="off" name="q" spellcheck="false" type="text"/>
+<input type="submit" value="Go"/>
+</form>
+</div>
+</div>
+<script>$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="footer">
+      ©2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="https://bnch-sdk-documents.s3.amazonaws.com/_sources/benchling_sdk.services.v2.v2_beta_service.rst.txt" rel="nofollow">Page source</a>
+</div>
+</body>
+</html>

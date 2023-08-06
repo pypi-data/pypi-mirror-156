@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>benchling_sdk.apps.helpers.config_helpers module — Benchling SDK  documentation</title>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/alabaster.css" rel="stylesheet" type="text/css"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/custom.css" rel="stylesheet" type="text/css"/>
+<script data-url_root="./" id="documentation_options" src="https://bnch-sdk-documents.s3.amazonaws.com/_static/documentation_options.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/jquery.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/underscore.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/doctools.js"></script>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="benchling_sdk.apps.helpers.manifest_helpers.html" rel="next" title="benchling_sdk.apps.helpers.manifest_helpers module"/>
+<link href="benchling_sdk.apps.helpers.html" rel="prev" title="benchling_sdk.apps.helpers package"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/custom.css" rel="stylesheet" type="text/css"/>
+<meta content="width=device-width, initial-scale=0.9, maximum-scale=0.9" name="viewport"/>
+</head><body>
+<div class="container">
+<div class="contentWrapper">
+<div class="flexBox">
+<div class="headerChild">
+<a href="/">
+<img alt="Benchling logo" class="benchlingLogo" src="https://bnch-sdk-documents.s3.amazonaws.com/_static/img/logo_250_notext.png"/>
+</a>
+</div>
+<div class="headerChild">
+<a href="https://docs.benchling.com" rel="noopener noreferrer" target="_blank">
+                    Warehouse &amp; API Guide
+                </a>
+</div>
+<div class="headerChild">
+<a href="https://benchling.com/api/reference" rel="noopener noreferrer" target="_blank">
+                    Public API Reference
+                </a>
+</div>
+<div class="headerChild">
+<a href="index.html">SDK Reference</a>
+</div>
+</div>
+</div>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<section id="module-benchling_sdk.apps.helpers.config_helpers">
+<span id="benchling-sdk-apps-helpers-config-helpers-module"></span><h1>benchling_sdk.apps.helpers.config_helpers module<a class="headerlink" href="#module-benchling_sdk.apps.helpers.config_helpers" title="Permalink to this headline">¶</a></h1>
+<dl class="py exception">
+<dt class="sig sig-object py" id="benchling_sdk.apps.helpers.config_helpers.UnsupportedSubTypeError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UnsupportedSubTypeError</span></span><a class="headerlink" href="#benchling_sdk.apps.helpers.config_helpers.UnsupportedSubTypeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>Error when an unsupported subtype is encountered.</p>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="benchling_sdk.apps.helpers.config_helpers.field_definitions_from_dependency">
+<span class="sig-name descname"><span class="pre">field_definitions_from_dependency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dependency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.alpha.models.entity_schema_dependency.EntitySchemaDependency</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.alpha.models.schema_dependency.SchemaDependency</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.alpha.models.workflow_task_schema_dependency.WorkflowTaskSchemaDependency</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.alpha.models.workflow_task_schema_dependency_output.WorkflowTaskSchemaDependencyOutput</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.alpha.models.base_manifest_config.BaseManifestConfig</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.helpers.config_helpers.field_definitions_from_dependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Safely return a list of field definitions from a schema dependency or empty list.</p>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="benchling_sdk.apps.helpers.config_helpers.model_type_from_dependency">
+<span class="sig-name descname"><span class="pre">model_type_from_dependency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dependency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.alpha.models.entity_schema_dependency.EntitySchemaDependency</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.alpha.models.schema_dependency.SchemaDependency</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Type" title="(in Python v3.10)"><span class="pre">Type</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.AssayResult" title="benchling_api_client.v2.stable.models.assay_result.AssayResult"><span class="pre">AssayResult</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.AssayRun" title="benchling_api_client.v2.stable.models.assay_run.AssayRun"><span class="pre">AssayRun</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.Box" title="benchling_api_client.v2.stable.models.box.Box"><span class="pre">Box</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.Container" title="benchling_api_client.v2.stable.models.container.Container"><span class="pre">Container</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.Entry" title="benchling_api_client.v2.stable.models.entry.Entry"><span class="pre">Entry</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.Location" title="benchling_api_client.v2.stable.models.location.Location"><span class="pre">Location</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.Plate" title="benchling_api_client.v2.stable.models.plate.Plate"><span class="pre">Plate</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.Request" title="benchling_api_client.v2.stable.models.request.Request"><span class="pre">Request</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.AaSequence" title="benchling_api_client.v2.stable.models.aa_sequence.AaSequence"><span class="pre">AaSequence</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.CustomEntity" title="benchling_api_client.v2.stable.models.custom_entity.CustomEntity"><span class="pre">CustomEntity</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.DnaSequence" title="benchling_api_client.v2.stable.models.dna_sequence.DnaSequence"><span class="pre">DnaSequence</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.DnaOligo" title="benchling_api_client.v2.stable.models.dna_oligo.DnaOligo"><span class="pre">DnaOligo</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.Mixture" title="benchling_api_client.v2.stable.models.mixture.Mixture"><span class="pre">Mixture</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.models.html#benchling_sdk.models.RnaOligo" title="benchling_api_client.v2.stable.models.rna_oligo.RnaOligo"><span class="pre">RnaOligo</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.helpers.config_helpers.model_type_from_dependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translate a schema dependency to its model class.</p>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="benchling_sdk.apps.helpers.config_helpers.options_from_dependency">
+<span class="sig-name descname"><span class="pre">options_from_dependency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dependency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.alpha.models.dropdown_dependency.DropdownDependency</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.alpha.models.base_manifest_config.BaseManifestConfig</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.helpers.config_helpers.options_from_dependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Safely return a list of options from a dropdown dependency or empty list.</p>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="benchling_sdk.apps.helpers.config_helpers.scalar_type_from_config">
+<span class="sig-name descname"><span class="pre">scalar_type_from_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.beta.models.scalar_config.ScalarConfig</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Type" title="(in Python v3.10)"><span class="pre">Type</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><span class="pre">bool</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">date</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.10)"><span class="pre">datetime</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.helpers.config_helpers.scalar_type_from_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translate a scalar config to its Pyton type.</p>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="benchling_sdk.apps.helpers.config_helpers.workflow_task_schema_output_from_dependency">
+<span class="sig-name descname"><span class="pre">workflow_task_schema_output_from_dependency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dependency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.alpha.models.workflow_task_schema_dependency.WorkflowTaskSchemaDependency</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.alpha.models.workflow_task_schema_dependency_output.WorkflowTaskSchemaDependencyOutput</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.helpers.config_helpers.workflow_task_schema_output_from_dependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Safely return a workflow task schema output from a workflow task schema or None.</p>
+</dd></dl>
+</section>
+</div>
+</div>
+</div>
+<div aria-label="main navigation" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.apps.html">benchling_sdk.apps package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.apps.html#subpackages">Subpackages</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+<li><a href="index.html">Documentation overview</a><ul>
+<li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+<li><a href="benchling_sdk.apps.html">benchling_sdk.apps package</a><ul>
+<li><a href="benchling_sdk.apps.helpers.html">benchling_sdk.apps.helpers package</a><ul>
+<li>Previous: <a href="benchling_sdk.apps.helpers.html" title="previous chapter">benchling_sdk.apps.helpers package</a></li>
+<li>Next: <a href="benchling_sdk.apps.helpers.manifest_helpers.html" title="next chapter">benchling_sdk.apps.helpers.manifest_helpers module</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="searchbox" role="search" style="display: none">
+<h3 id="searchlabel">Quick search</h3>
+<div class="searchformwrapper">
+<form action="search.html" class="search" method="get">
+<input aria-labelledby="searchlabel" autocapitalize="off" autocomplete="off" autocorrect="off" name="q" spellcheck="false" type="text"/>
+<input type="submit" value="Go"/>
+</form>
+</div>
+</div>
+<script>$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="footer">
+      ©2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="https://bnch-sdk-documents.s3.amazonaws.com/_sources/benchling_sdk.apps.helpers.config_helpers.rst.txt" rel="nofollow">Page source</a>
+</div>
+</body>
+</html>

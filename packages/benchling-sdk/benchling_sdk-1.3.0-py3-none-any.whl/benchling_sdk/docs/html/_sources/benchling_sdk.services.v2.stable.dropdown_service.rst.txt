@@ -1,0 +1,7 @@
+benchling\_sdk.services.v2.stable.dropdown\_service module
+==========================================================
+
+.. automodule:: benchling_sdk.services.v2.stable.dropdown_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,23 @@
+benchling\_sdk.services package
+===============================
+
+.. automodule:: benchling_sdk.services
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_sdk.services.v2
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_sdk.services.v2_service

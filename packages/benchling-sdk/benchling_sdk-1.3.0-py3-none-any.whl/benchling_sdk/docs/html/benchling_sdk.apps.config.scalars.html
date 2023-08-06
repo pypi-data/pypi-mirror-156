@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>benchling_sdk.apps.config.scalars module — Benchling SDK  documentation</title>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/alabaster.css" rel="stylesheet" type="text/css"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/custom.css" rel="stylesheet" type="text/css"/>
+<script data-url_root="./" id="documentation_options" src="https://bnch-sdk-documents.s3.amazonaws.com/_static/documentation_options.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/jquery.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/underscore.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/doctools.js"></script>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="benchling_sdk.apps.helpers.html" rel="next" title="benchling_sdk.apps.helpers package"/>
+<link href="benchling_sdk.apps.config.mock_dependencies.html" rel="prev" title="benchling_sdk.apps.config.mock_dependencies module"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/custom.css" rel="stylesheet" type="text/css"/>
+<meta content="width=device-width, initial-scale=0.9, maximum-scale=0.9" name="viewport"/>
+</head><body>
+<div class="container">
+<div class="contentWrapper">
+<div class="flexBox">
+<div class="headerChild">
+<a href="/">
+<img alt="Benchling logo" class="benchlingLogo" src="https://bnch-sdk-documents.s3.amazonaws.com/_static/img/logo_250_notext.png"/>
+</a>
+</div>
+<div class="headerChild">
+<a href="https://docs.benchling.com" rel="noopener noreferrer" target="_blank">
+                    Warehouse &amp; API Guide
+                </a>
+</div>
+<div class="headerChild">
+<a href="https://benchling.com/api/reference" rel="noopener noreferrer" target="_blank">
+                    Public API Reference
+                </a>
+</div>
+<div class="headerChild">
+<a href="index.html">SDK Reference</a>
+</div>
+</div>
+</div>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<section id="module-benchling_sdk.apps.config.scalars">
+<span id="benchling-sdk-apps-config-scalars-module"></span><h1>benchling_sdk.apps.config.scalars module<a class="headerlink" href="#module-benchling_sdk.apps.config.scalars" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.BoolScalar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BoolScalar</span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.BoolScalar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.scalars.ScalarDefinition</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>]</p>
+<p>Bool Scalar.</p>
+<p>Turn a Boolean-like string value into bool. Any permutation of “true” - case insensitive - is interpreted
+as True. Any other non-empty string is False.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.BoolScalar.from_str">
+<span class="sig-name descname"><span class="pre">from_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.BoolScalar.from_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert optional str to optional bool.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.DateScalar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DateScalar</span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.DateScalar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.scalars.ScalarDefinition</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.date</span></code></a>]</p>
+<p>Date Scalar.</p>
+<p>Turn an ISO formatted date like YYYY-MM-dd into a date.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.DateScalar.from_str">
+<span class="sig-name descname"><span class="pre">from_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date" title="(in Python v3.10)"><span class="pre">date</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.DateScalar.from_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert optional str to optional date.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.DateTimeScalar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DateTimeScalar</span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.DateTimeScalar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.scalars.ScalarDefinition</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.datetime</span></code></a>]</p>
+<p>Date Time Scalar.</p>
+<p>Turn a date time string into datetime.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.DateTimeScalar.expected_format">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">expected_format</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.DateTimeScalar.expected_format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the expected date mask for parsing string to datetime.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.DateTimeScalar.from_str">
+<span class="sig-name descname"><span class="pre">from_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.10)"><span class="pre">datetime</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.DateTimeScalar.from_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert optional str to optional datetime.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.FloatScalar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FloatScalar</span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.FloatScalar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.scalars.ScalarDefinition</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]</p>
+<p>Float Scalar.</p>
+<p>Turn a string into float. Assumes the string, if not empty, is a valid floating point.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.FloatScalar.from_str">
+<span class="sig-name descname"><span class="pre">from_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.FloatScalar.from_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert optional str to optional float.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.IntScalar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IntScalar</span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.IntScalar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.scalars.ScalarDefinition</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]</p>
+<p>Int Scalar.</p>
+<p>Turn a string into int. Assumes the string, if not empty, is a valid integer.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.IntScalar.from_str">
+<span class="sig-name descname"><span class="pre">from_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.IntScalar.from_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert optional str to optional int.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.ScalarDefinition">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ScalarDefinition</span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.ScalarDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Generic" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Generic</span></code></a>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.scalars.ScalarType</span></code>]</p>
+<p>Scalar definition.</p>
+<p>Map how ScalarConfigTypes values can be converted into corresponding Python types.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.ScalarDefinition.from_str">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_sdk.apps.config.scalars.ScalarType</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.ScalarDefinition.from_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>From string.</p>
+<p>Given an optional string value of scalar configuration, produce an Optional instance of the
+specific ScalarType. For instance, converting str to int.</p>
+<p>Used when coercing Python types from string values in API responses.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.ScalarDefinition.init">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.ScalarDefinition.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.SecureTextScalar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SecureTextScalar</span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.SecureTextScalar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.scalars.TextScalar" title="benchling_sdk.apps.config.scalars.TextScalar"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.scalars.TextScalar</span></code></a></p>
+<p>Secure Text Scalar.</p>
+<p>Text is already a string, so no conversion is performed.</p>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.TextScalar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextScalar</span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.TextScalar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.scalars.ScalarDefinition</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+<p>Text Scalar.</p>
+<p>Text is already a string, so no conversion is performed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.scalars.TextScalar.from_str">
+<span class="sig-name descname"><span class="pre">from_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.scalars.TextScalar.from_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert optional str to optional str. Implemented to appease ScalarDefinition contract.</p>
+</dd></dl>
+</dd></dl>
+</section>
+</div>
+</div>
+</div>
+<div aria-label="main navigation" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.apps.html">benchling_sdk.apps package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.apps.html#subpackages">Subpackages</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+<li><a href="index.html">Documentation overview</a><ul>
+<li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+<li><a href="benchling_sdk.apps.html">benchling_sdk.apps package</a><ul>
+<li><a href="benchling_sdk.apps.config.html">benchling_sdk.apps.config package</a><ul>
+<li>Previous: <a href="benchling_sdk.apps.config.mock_dependencies.html" title="previous chapter">benchling_sdk.apps.config.mock_dependencies module</a></li>
+<li>Next: <a href="benchling_sdk.apps.helpers.html" title="next chapter">benchling_sdk.apps.helpers package</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="searchbox" role="search" style="display: none">
+<h3 id="searchlabel">Quick search</h3>
+<div class="searchformwrapper">
+<form action="search.html" class="search" method="get">
+<input aria-labelledby="searchlabel" autocapitalize="off" autocomplete="off" autocorrect="off" name="q" spellcheck="false" type="text"/>
+<input type="submit" value="Go"/>
+</form>
+</div>
+</div>
+<script>$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="footer">
+      ©2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="https://bnch-sdk-documents.s3.amazonaws.com/_sources/benchling_sdk.apps.config.scalars.rst.txt" rel="nofollow">Page source</a>
+</div>
+</body>
+</html>

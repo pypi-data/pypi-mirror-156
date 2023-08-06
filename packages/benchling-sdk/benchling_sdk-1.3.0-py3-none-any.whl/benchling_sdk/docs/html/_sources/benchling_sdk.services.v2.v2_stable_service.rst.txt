@@ -1,0 +1,7 @@
+benchling\_sdk.services.v2.v2\_stable\_service module
+=====================================================
+
+.. automodule:: benchling_sdk.services.v2.v2_stable_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

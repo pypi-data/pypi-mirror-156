@@ -1,0 +1,7 @@
+benchling\_sdk.services.v2.stable.lab\_automation\_service module
+=================================================================
+
+.. automodule:: benchling_sdk.services.v2.stable.lab_automation_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

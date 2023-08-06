@@ -1,0 +1,16 @@
+benchling\_sdk.apps package
+===========================
+
+.. automodule:: benchling_sdk.apps
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_sdk.apps.config
+   benchling_sdk.apps.helpers

@@ -1,0 +1,7 @@
+benchling\_sdk.services.v2.stable.warehouse\_service module
+===========================================================
+
+.. automodule:: benchling_sdk.services.v2.stable.warehouse_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

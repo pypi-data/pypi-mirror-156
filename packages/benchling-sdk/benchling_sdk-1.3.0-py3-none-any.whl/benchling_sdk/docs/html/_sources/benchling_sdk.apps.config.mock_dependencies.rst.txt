@@ -1,0 +1,7 @@
+benchling\_sdk.apps.config.mock\_dependencies module
+====================================================
+
+.. automodule:: benchling_sdk.apps.config.mock_dependencies
+   :members:
+   :undoc-members:
+   :show-inheritance:

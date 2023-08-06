@@ -1,0 +1,7 @@
+benchling\_sdk.services.v2.stable.assay\_run\_service module
+============================================================
+
+.. automodule:: benchling_sdk.services.v2.stable.assay_run_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

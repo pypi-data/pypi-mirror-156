@@ -1,0 +1,7 @@
+benchling\_sdk.apps.config.scalars module
+=========================================
+
+.. automodule:: benchling_sdk.apps.config.scalars
+   :members:
+   :undoc-members:
+   :show-inheritance:
