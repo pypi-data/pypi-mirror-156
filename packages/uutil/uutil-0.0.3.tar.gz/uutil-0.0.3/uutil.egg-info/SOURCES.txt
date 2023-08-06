@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+uutil/__init__.py
+uutil/case.py
+uutil.egg-info/PKG-INFO
+uutil.egg-info/SOURCES.txt
+uutil.egg-info/dependency_links.txt
+uutil.egg-info/not-zip-safe
+uutil.egg-info/requires.txt
+uutil.egg-info/top_level.txt
