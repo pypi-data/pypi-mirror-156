@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+randomus/__init__.py
+randomus.egg-info/PKG-INFO
+randomus.egg-info/SOURCES.txt
+randomus.egg-info/dependency_links.txt
+randomus.egg-info/requires.txt
+randomus.egg-info/top_level.txt

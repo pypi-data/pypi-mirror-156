@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: randomus
+Version: 1.0.0
+Summary: Парсер русского сервиса генерации имён
+Home-page: https://github.com/DarkCat09/randomus
+Author: Chechkenev Andrey (@DarkCat09)
+Author-email: aacd0709@mail.ru
+Project-URL: Bug Tracker, https://github.com/DarkCat09/randomus/issues
+Project-URL: Bug Tracker 2, https://codeberg.org/DarkCat09/randomus/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
