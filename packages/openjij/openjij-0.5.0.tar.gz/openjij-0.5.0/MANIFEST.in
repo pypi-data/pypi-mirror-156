@@ -1,0 +1,35 @@
+include setup.py
+include setup.cfg
+include CMakeLists.txt
+include LICENSE
+include README.md
+include pyproject.toml
+
+prune cmake
+
+include cmake/GenerateDocs.cmake
+include cmake/PythonAutoDetectOSX.cmake
+include cmake/FindGcov.cmake 
+include cmake/FindLcov.cmake
+include cmake/Findcodecov.cmake
+include cmake/llvm-cov-wrapper
+
+global-exclude requirements.txt
+global-exclude .gitignore 
+global-exclude Doxyfile
+global-exclude Doxyfile.bak
+global-exclude pybind11_jsonConfig.cmake
+global-exclude pybind11_jsonConfigVersion.cmake
+global-exclude pybind11_jsonTargets.cmake
+
+graft openjij
+graft tests 
+graft src 
+graft external
+
+prune share
+prune include
+prune docs
+prune example
+prune .github
+prune .git
