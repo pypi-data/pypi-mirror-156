@@ -1,0 +1,3 @@
+[console_scripts]
+kubecfg = kubecfg.__main__:app_main
+
