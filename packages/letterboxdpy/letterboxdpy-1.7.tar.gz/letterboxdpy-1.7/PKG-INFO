@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: letterboxdpy
+Version: 1.7
+Summary: A letterboxd webscraper
+Author-email: Nicholas Cassarino <nmcassa804@outlook.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# letterboxdpy
+
+[![PyPI version](https://badge.fury.io/py/letterboxdpy.svg)](https://badge.fury.io/py/letterboxdpy)
+[![Downloads](https://pepy.tech/badge/letterboxdpy)](https://pepy.tech/project/letterboxdpy)
+![format](https://img.shields.io/pypi/format/letterboxdpy)
+
+## Installation
+
+```
+    pip install letterboxdpy
+```
+
+## **Code Example**
+
+```python
+from letterboxdpy import user
+nick = user.User("nmcassa")
+print(nick.jsonify())
+```
+
+### Output
+
+![Example of the user object](ss/user_example.PNG)
+
+## **Code Example**
+
+```python
+from letterboxdpy import movie
+king = movie.Movie("king kong")
+print(king.jsonify())
+
+king = movie.Movie("king kong", 2005)
+print(king.jsonify())
+```
+
+## **Example of Movie Object**
+
+![Example of the movie object](ss/movie_example.PNG)
