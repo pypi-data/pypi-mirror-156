@@ -1,0 +1,15 @@
+[package]
+name = "tail"
+version = "1.0.0"
+edition = "2021"
+description = "tail implementation"
+readme = "README.md"
+authors = ["killown <developerorprogrammer@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "tail"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.5", features = ["extension-module"] }
