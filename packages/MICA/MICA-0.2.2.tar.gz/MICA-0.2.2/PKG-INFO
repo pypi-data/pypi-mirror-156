@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: MICA
+Version: 0.2.2
+Summary: Mutual Information-based Clustering Analysis tool designed for scRNA-seq data
+Home-page: https://github.com/jyyulab/MICA
+Author: Liang Ding, Hao Shi
+Author-email: liang.ding@stjude.org, hao.shi@stjude.org
+License: See LICENSE.md
+Platform: UNKNOWN
+Requires-Python: ==3.7.6
+License-File: LICENSE
+
+UNKNOWN
+
