@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: tktk
+Version: 0.3
+Summary: tkinter的增强控件,将tkinter的基础控件进行封装,给予更强大的控件功能,所有控件继承于LabelFrame进行封装,使用方法和普通控件没什么区别;
+Home-page: https://gitee.com/w-8/tktk
+Author: bili:凿寂
+Author-email: mdzzdyxc@163.com
+License: MIT
+Description: # tktk
+        
+        #### 浠嬬粛
+        tkinter鐨勫炲己鎺т欢锛屽皢tkinter鐨勫熀纭鎺т欢杩涜屽皝瑁咃紝缁欎簣鏇村己澶х殑鎺т欢鍔熻兘锛屾墍鏈夋帶浠剁户鎵夸簬LabelFrame杩涜屽皝瑁咃紝浣跨敤鏂规硶鍜屾櫘閫氭帶浠舵病浠涔堝尯鍒锛
+        
+        馃洜
+        **[pypi](https://pypi.org/project/tktk/)**
+        **[gitee](https://gitee.com/w-8/tktk)**
+        #### 杞浠舵灦鏋
+        杞浠舵灦鏋勮存槑
+        
+        
+        #### 瀹夎呮暀绋
+        
+        1.  pip install git+https://gitee.com/w-8/tktk.git
+        2.  pip install tktk
+        3.  xxxx
+        
+        #### 浣跨敤璇存槑
+        
+        ~~~py
+        import tkinter as tk
+        import tktk
+        
+        if __name__=="__main__":
+            win = tk.Tk()
+            xe=tktk.LogFrame(win)
+            xe.grid(column=0,row=0,sticky="WNSE")
+            win.columnconfigure(0,weight=1)
+            tk.Button(win,text="Insert1",command=lambda: xe.m_Gui_LogInsert("233")).grid(column=0,row=1,sticky='WNSE')
+            tk.Button(win,text="Insert2",command=lambda: xe.m_Gui_LogInsert("244",True)).grid(column=0,row=2,sticky='WNSE')
+            tk.Button(win,text="Clear",command=lambda: xe.m_Gui_LogClear()).grid(column=0,row=3,sticky='WNSE')
+            win.mainloop()
+        ~~~
+        
+        #### 婕旂ず鍥剧墖
+        ![LogFrame](asset/ReadmeShow.gif)
+        
+        #### 鍙備笌璐＄尞
+        
+        1.  Fork 鏈浠撳簱
+        2.  鎷夊彇Fork鍚庝粨搴撶殑浠ｇ爜鍒版湰鍦
+        3.  鎻愪氦浠ｇ爜
+        4.  鏂板缓 Pull Request
+        
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
