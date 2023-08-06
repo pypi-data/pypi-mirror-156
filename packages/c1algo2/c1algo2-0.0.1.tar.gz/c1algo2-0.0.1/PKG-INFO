@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: c1algo2
+Version: 0.0.1
+Summary: Company 1's Algorithm 2 Package for SENG 499 2022
+Author-email: Isaac Shaha <ishaha@uvic.ca>
+Project-URL: Homepage, https://github.com/seng499-company1/algorithm-2
+Project-URL: Bug Tracker, https://github.com/seng499-company1/algorithm-2/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Algorithm 2
+
+## Getting Started
+
+1. We will use Python version 3.10.4. Please install this on your device and either set it as your default or put it into a virtual environment and activate your virtual environment.
+2. Run `pip install -r requirements.txt` to install all pip packages used in this project.
+
+## Tools
+
+### `ProcessData`
+To run ProcessData:
+```
+python3 ProcessData.py
+```
+
+## Important Links
+- [Communication Standards](https://www.overleaf.com/read/djvkdxpyrtxd)
+- [Coding Standards](https://www.overleaf.com/read/zrgztvyfngdk)
+- [Project Board](https://github.com/orgs/seng499-company1/projects/6/)
+- [Algorithm 1 Data Model](https://docs.google.com/document/d/163L7pv6w5Z38rUrl2EwRJq-A9ZLllCIO9uYbUkdxi2s/edit?usp=sharing)
+- [Algorithm 2 Data Model](https://docs.google.com/document/d/14kvPrWQTaWBeyqnaRp2-NkLqod5pwzMYE8cXo7f6kQ4/edit?usp=sharing)
