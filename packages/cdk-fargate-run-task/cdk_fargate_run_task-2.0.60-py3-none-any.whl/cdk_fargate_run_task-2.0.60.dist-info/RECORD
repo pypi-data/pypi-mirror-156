@@ -1,0 +1,9 @@
+cdk_fargate_run_task/__init__.py,sha256=UwS9hKDOJ3ynUFmTfNoSgR8KAILLY-Ov3N1gdgdO-qQ,17778
+cdk_fargate_run_task/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdk_fargate_run_task/_jsii/__init__.py,sha256=zKcnmJhFBXJqJvgNpeyXN7UPaWGK5Iq2c1vxjHlYT80,388
+cdk_fargate_run_task/_jsii/cdk-fargate-run-task@2.0.60.jsii.tgz,sha256=2a4Nw50vDZjaqW-ej-D_9x9osq-VrPMSk4uDSe1hJsA,29202
+cdk_fargate_run_task-2.0.60.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdk_fargate_run_task-2.0.60.dist-info/METADATA,sha256=SbovPyp17aJBe8MJ4V7eYYwyXuMJs7eAtZs8Hyy4TFI,4322
+cdk_fargate_run_task-2.0.60.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cdk_fargate_run_task-2.0.60.dist-info/top_level.txt,sha256=VhjajoyqwV6BQUsReBxIb7u_TnP2KzhY27KUFBY7EfM,21
+cdk_fargate_run_task-2.0.60.dist-info/RECORD,,
