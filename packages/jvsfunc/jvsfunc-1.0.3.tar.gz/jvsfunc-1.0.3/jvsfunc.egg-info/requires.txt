@@ -1,0 +1,3 @@
+vapoursynth>=58
+lvsfunc
+vsutil
