@@ -1,0 +1,4 @@
+brotlipy
+
+[:python_version >= "3.4"]
+httpx[http2]>=0.21.2
