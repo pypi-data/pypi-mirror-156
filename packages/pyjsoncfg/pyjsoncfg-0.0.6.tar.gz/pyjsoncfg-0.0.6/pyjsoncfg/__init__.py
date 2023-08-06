@@ -1,0 +1,1 @@
+from .pyjsoncfg import Config
