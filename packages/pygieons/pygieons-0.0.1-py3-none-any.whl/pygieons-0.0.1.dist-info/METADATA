@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pygieons
+Version: 0.0.1
+Summary: A simple package to visualize and keep track of GIS and Earth Observation libraries in Python.
+Home-page: https://github.com/pygieons/pygieons
+Author: Henrikki Tenkanen and contributors
+Author-email: henrikki.tenkanen@aalto.fi
+License: MIT
+Project-URL: Documentation, https://pygieons.readthedocs.org/
+Project-URL: Change Log, https://github.com/pygieons/pygieons/blob/main/CHANGELOG.md
+Project-URL: Bug Tracker, https://github.com/pygieons/pygieons/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+Requires-Dist: numpy
+Requires-Dist: palettable
+Requires-Dist: pandas
+Requires-Dist: pypistats
+Requires-Dist: pyvis
+Requires-Dist: requests
+Requires-Dist: tqdm
+
+# Pygieons
+
+A simple package to visualize and keep track of GIS and Earth Observation libraries in Python.
+
+## Install
+
+`pygieons` can be installed from PyPi:
+
+`$ pip install pygieons`
+
+## Documentation
+
+Check documentation from ReadTheDocs.
