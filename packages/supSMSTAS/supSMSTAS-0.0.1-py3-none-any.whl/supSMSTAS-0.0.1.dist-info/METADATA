@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: supSMSTAS
+Version: 0.0.1
+Summary: A tool to support Super Mario Sunshine Tool Assisted Speedrun/Superplay
+Home-page: https://github.com/sup39/supSMSTAS
+Author: sup39
+Author-email: sms@sup39.dev
+Project-URL: Bug Tracker, https://github.com/sup39/supSMSTAS/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: sup-dolphin-memory-lib (~=0.1.0)
+Requires-Dist: matplotlib (~=3.5)
+Requires-Dist: PyQt5 (~=5.15)
+
+# supSMSTAS
+A tool to **sup**port **S**uper **M**ario **S**unshine **T**ool **A**ssisted **S**peedrun/Superplay.
+
+## Installation
+```
+pip install supSMSTAS==0.0.1
+```
+
+## Usage
+```
+python -m supSMSTAS
+```
+
+## Required Gecko code
+You need to add and activate the following Gecko code in Dolphin:
+```
+C20ECDE0 00000004
+3C60817F 80631000
+7C631B79 38600258
+41820008 38600096
+60000000 00000000
+C20ED284 00000005
+4E800021 3D60817F
+816B1010 55608380
+2800817E 4082000C
+7D6803A6 4E800021
+60000000 00000000
+```
+
+Make sure to disable those codes that
+alter QF sync (advance by QF) or render triangle/hitbox
+if you are using any of them.
+
+If the checkboxes in the Runtime tab don't work,
+try to disable all Gecko codes in Dolphin (except the *required Gecko code*).
+
+## Execute the source code directly
+To install dependencies, the easiest way is to run the following command
+in the root directory of the package:
+```
+pip install .
+```
+
+Due to some module/script problems,
+in order to start the program,
+instead of using `python path/to/supSMSTAS/__main__.py` (as script),
+make sure to use `python -m path.to.supSMSTAS` (as module) outside the `src/supSMSTAS/` directory.
+For example, if you are in `src/` directory, you can run the following command:
+```
+python -m supSMSTAS
+```

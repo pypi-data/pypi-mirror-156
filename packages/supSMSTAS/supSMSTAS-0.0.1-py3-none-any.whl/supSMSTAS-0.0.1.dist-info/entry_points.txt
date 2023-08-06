@@ -1,0 +1,2 @@
+[console_scripts]
+supSMSTAS = supSMSTAS.__main__:main
