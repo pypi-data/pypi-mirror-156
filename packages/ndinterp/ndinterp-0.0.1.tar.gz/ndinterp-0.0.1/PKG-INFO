@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ndinterp
+Version: 0.0.1
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex; extra == 'docs'
+Provides-Extra: test
+Provides-Extra: docs
+Summary: N-dimensional interpolation library - python interface
+Author: Alessandro Candido <alessandro.candido@sns.it>
+Author-email: Alessandro Candido <alessandro.candido@sns.it>
+License: GPL-3.0-or-later
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/AleCandido/ndinterp
+
+# ndinterp
+
+N-dimensional interpolation, python package.
+

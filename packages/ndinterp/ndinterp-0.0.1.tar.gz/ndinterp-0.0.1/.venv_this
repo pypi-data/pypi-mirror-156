@@ -1,0 +1,28 @@
+#!/bin/bash
+
+ENV_ROOT=/media/alessandro/moneybin/Projects/N3PDF/ndinterp/ndinterp_py
+ENV_NAME=env
+
+source $ENV_ROOT/$ENV_NAME/bin/activate
+
+# rc: set env variables
+#if [[ -f $ENV_ROOT/env/activate.sh ]]; then
+    #source $ENV_ROOT/env/activate.sh
+#fi
+
+# ┌───────────────────┐
+# │redefine deactivate│
+# └───────────────────┘
+
+#eval "$(echo "orig_deactivate ()"; declare -f deactivate | tail -n +2)"
+
+#deactivate () {
+    ## unset env variables
+    #if [[ -f $ENV_ROOT/env/deactivate.sh ]]; then
+        #source $ENV_ROOT/env/deactivate.sh
+    #fi
+
+    #orig_deactivate
+
+    #unset ENV_ROOT
+#}
