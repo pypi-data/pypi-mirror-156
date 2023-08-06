@@ -1,0 +1,14 @@
+dispatches_sample_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dispatches_sample_data/rts_gmlc/LICENSE.md,sha256=eIb5Z5uxHpzvfRysajQO_4V6NwfkCG5VULhvzP-xRW0,1917
+dispatches_sample_data/rts_gmlc/__init__.py,sha256=OmzugE0jhppWB_gzDtzQ6erUfGShxrDMm9b4NxFQn_0,62
+dispatches_sample_data/rts_gmlc/branch.csv,sha256=6S0W0TscXSiZ94ccDJnD65RgVSi-7xV7-eHMvP_l704,7142
+dispatches_sample_data/rts_gmlc/bus.csv,sha256=zsP3diIoEtQ-rq96yFtXdxncVl81SgThIMEqZH3bcQ4,7003
+dispatches_sample_data/rts_gmlc/dc_branch.csv,sha256=K32BzRJFKU4V8KICiCoTdb40cj6JxEgAnT_JV85Fe-g,1355
+dispatches_sample_data/rts_gmlc/gen.csv,sha256=mIRm8pEytzc53mDJIE3UoqnOsK31cuWWbAhmEScvQGg,32451
+dispatches_sample_data/rts_gmlc/reserves.csv,sha256=PA04hjG5P-N7xhfcP5USlQknrhsKDoeEgukBNxBtCig,803
+dispatches_sample_data/rts_gmlc/storage.csv,sha256=zFXEsC91lat3OZB1xyHjHadI8pSCx9eDGcTxUwv0uCw,1313
+dispatches_sample_data/rts_gmlc/timeseries_pointers.csv,sha256=CFS6DGPUlz6IGMkcIyiGnjebsBQFINRYb0_93zh6yg0,27251
+dispatches_sample_data-22.6.23.dist-info/METADATA,sha256=zv2i7anXw5SNNOBRw8GPI3YKI_L44vuvFKDV_RhzZMA,240
+dispatches_sample_data-22.6.23.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dispatches_sample_data-22.6.23.dist-info/top_level.txt,sha256=7yxb8uMi3FJUqoWckqVlvnrYHgp6UnaJMPJAKuEhcIk,23
+dispatches_sample_data-22.6.23.dist-info/RECORD,,
