@@ -1,0 +1,11 @@
+migrate_anything/__init__.py,sha256=SNWuIcFdlzIw8oZybWfbVU__nNEwEZUpV-fG6wQHIuQ,87
+migrate_anything/log.py,sha256=JmJO516nfo9USudIH_WTFjUkAfbkYIkku3g-uEtbjic,218
+migrate_anything/main.py,sha256=puWFnDT8k4Q3sFFaTkhdZ7ikkWoNT9TQQPEuqdWP4ho,770
+migrate_anything/migrator.py,sha256=GBgNUcmPMNNxFlqkXcl1ZYDlWIK6ypnZDR3HKUp0BW4,5423
+migrate_anything/storage/__init__.py,sha256=alOqjYH2hoqWYItCjyPVHogmMnp-ck426W3oDS33-Os,5890
+migrate_anything-0.1.8.dist-info/LICENSE,sha256=L2Q9DC8dkaQmArjQRMrTpTs_BgZDVemXsS_PoIVt9ok,1533
+migrate_anything-0.1.8.dist-info/METADATA,sha256=e3L-mzSiWhQSr3WVCb46ACuS_HZH0zf-tMUL9zbOaNE,8724
+migrate_anything-0.1.8.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+migrate_anything-0.1.8.dist-info/entry_points.txt,sha256=xQml6FOyXKWn6TZm4p-Y5edAjS8laGIY6X_NUHyUQm4,65
+migrate_anything-0.1.8.dist-info/top_level.txt,sha256=dqKqq0mlSWGqJoaM-r-n9-nSVHp0asqCscFaRlJG0xw,17
+migrate_anything-0.1.8.dist-info/RECORD,,
