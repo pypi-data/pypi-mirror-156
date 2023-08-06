@@ -1,0 +1,13 @@
+sphinx_notebook/__init__.py,sha256=Hdq5XlCxwN47JVUl0pjTJVfZ6fb_ptG_6BDH406nfzQ,250
+sphinx_notebook/cli.py,sha256=Pj6mmAgon9TOH45sQk_UEd70Y06Rt3UWupWvgNsfe4U,3009
+sphinx_notebook/filters.py,sha256=B4iD49SDkR9UHqBZbo1L_8gyz3YlOXkNDwfFsqfp-n0,360
+sphinx_notebook/notebook.py,sha256=Qv1Hz7i2Rs8tHEg7zxBuk2ox4cOKvmJf3qdHUJpX95o,4735
+sphinx_notebook/templates/base.rst.jinja,sha256=JtVwF8cM9kYRucN2E9vOIDhjzeM9LYZaxCwxTrwP2yE,497
+sphinx_notebook/templates/index.rst.jinja,sha256=Dhm5tg5MYaDEfxW7FX9ZxwXOy7JGdG2s-0gMvOvyAcc,495
+sphinx_notebook/templates/index_table.rst.jinja,sha256=MYj3tb8hMaPzFnAnhXmGjpn2iGcccTH27jF7u419O_s,768
+sphinx_notebook/templates/note.rst.jinja,sha256=hDz4gZPMVHJQysqWGj7bFuxhTFoL5O40Ovev1OQetOA,125
+sphinx_notebook-0.7.0.dist-info/entry_points.txt,sha256=c1qz3B1bC2haEzBgq8tK9HYM7jjrM0msWcuI2R5Ugcs,60
+sphinx_notebook-0.7.0.dist-info/LICENSE,sha256=6iwQ-KZcYMPGohlEukgbnb94U4BUyqH9OZkFFdIf1X4,1070
+sphinx_notebook-0.7.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sphinx_notebook-0.7.0.dist-info/METADATA,sha256=RKQPC1VyjDIstbbQ5phIUZowcriyjWi4uZHyoZoVs4w,1252
+sphinx_notebook-0.7.0.dist-info/RECORD,,
