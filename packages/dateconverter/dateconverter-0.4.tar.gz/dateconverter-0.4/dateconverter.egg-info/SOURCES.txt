@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dateconverter/__init__.py
+dateconverter/dateconverter.py
+dateconverter.egg-info/PKG-INFO
+dateconverter.egg-info/SOURCES.txt
+dateconverter.egg-info/dependency_links.txt
+dateconverter.egg-info/top_level.txt
