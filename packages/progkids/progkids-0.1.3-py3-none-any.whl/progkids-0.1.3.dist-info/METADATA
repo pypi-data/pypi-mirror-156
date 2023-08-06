@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: progkids
+Version: 0.1.3
+Summary: Online coding school for kids - ProgKids
+Author: ProgKids Inc.
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: Topic :: Games/Entertainment
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-socketio[client] (==4.6.1)
+Requires-Dist: nanoid
+
+Python library for communicating with Minecraft: ProgKids edition
+
+Installation
+
+```
+pip3 install progkids
+```
