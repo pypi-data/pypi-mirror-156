@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+st_rating_df/__init__.py
+st_rating_df.egg-info/PKG-INFO
+st_rating_df.egg-info/SOURCES.txt
+st_rating_df.egg-info/dependency_links.txt
+st_rating_df.egg-info/requires.txt
+st_rating_df.egg-info/top_level.txt
