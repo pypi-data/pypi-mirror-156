@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pyznn
+Version: 0.0.1
+Summary: Python SDK for interacting with the Zenon network and ecosystem.
+Home-page: https://github.com/millerships/pyznn
+Author: Roy Miller
+Author-email: roymiller2105@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: bech32 (==1.2.0)
+Requires-Dist: bip-utils (==2.3.0)
+Requires-Dist: ed25519 (==1.5)
+Requires-Dist: eth-abi (==2.1.1)
+Requires-Dist: eth-utils (==1.10.0)
+Requires-Dist: jsonrpcclient (==4.0.2)
+Requires-Dist: mnemonic (==0.20)
+Requires-Dist: websockets (==10.3)
+Provides-Extra: dev
+Requires-Dist: coverage (==6.4) ; extra == 'dev'
+Requires-Dist: ipython (==8.3.0) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.19.0) ; extra == 'dev'
+Requires-Dist: pytest (==7.1.2) ; extra == 'dev'
+Requires-Dist: pytest-mock (==3.7.0) ; extra == 'dev'
+
+
+<p align="center">
+  <a href="https://millerships.github.io/pyznn/"><img src="https://millerships.github.io/pyznn/img/logo.svg" alt="PyZNN"></a>
+</p>
+<p align="center">
+    <em>Python SDK for interacting with the Zenon network and ecosystem.</em>
+</p>
+
+---
+
+**Documentation**: <a href="https://millerships.github.io/pyznn/" target="_blank">https://millerships.github.io/pyznn</a>
+
+**Source Code**: <a href="https://github.com/millerships/pyznn/" target="_blank">https://github.com/millerships/pyznn</a>
+
+---
+
+## Installation
+
+### Requirements
+
+- Python 3.7 or above
+
+```bash
+pip install pyznn
+```
+
+## Contributing
+
+Head over to <a href="https://millerships.github.io/pyznn/docs/contributing" target="_blank">Contributing docs</a>.
+
+## Sponsors
+
+This project was sponsored by <a href="https://medium.com/@zenon.network/hyperspace-x-accelerator-z-towards-a-dao-of-daos-38dfad496365" target="_blank">Accelerator-Z</a>
+
+
