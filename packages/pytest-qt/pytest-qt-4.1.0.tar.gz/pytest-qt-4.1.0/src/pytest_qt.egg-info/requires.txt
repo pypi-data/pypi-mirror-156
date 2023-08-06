@@ -1,0 +1,9 @@
+pytest>=3.0.0
+
+[dev]
+pre-commit
+tox
+
+[doc]
+sphinx
+sphinx_rtd_theme
