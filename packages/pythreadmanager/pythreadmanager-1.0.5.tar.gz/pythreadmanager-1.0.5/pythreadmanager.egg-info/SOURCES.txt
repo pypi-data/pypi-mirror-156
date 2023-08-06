@@ -1,0 +1,8 @@
+README.md
+setup.py
+pythreadmanager/__init__.py
+pythreadmanager/threadmanager.py
+pythreadmanager.egg-info/PKG-INFO
+pythreadmanager.egg-info/SOURCES.txt
+pythreadmanager.egg-info/dependency_links.txt
+pythreadmanager.egg-info/top_level.txt
