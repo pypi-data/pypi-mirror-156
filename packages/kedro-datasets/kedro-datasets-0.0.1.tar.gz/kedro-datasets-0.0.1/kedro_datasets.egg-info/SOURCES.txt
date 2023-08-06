@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+kedro_datasets/__init__.py
+kedro_datasets.egg-info/PKG-INFO
+kedro_datasets.egg-info/SOURCES.txt
+kedro_datasets.egg-info/dependency_links.txt
+kedro_datasets.egg-info/requires.txt
+kedro_datasets.egg-info/top_level.txt
