@@ -1,0 +1,22 @@
+Change Log
+=================
+
+0.0.4 (23.6.2022)
+-----------------
+- Add more logs for verbose runners
+- Add CACHE.LOGS_DIR to save logs such as tensorboard
+- Add maximum cache limit that can be manipulated using mlm.MAX_CACHE_SIZE
+
+0.0.3 (23.6.2022)
+-----------------
+- README updated
+- full support without configurations
+- secret_root added to factory and reveal_true_path
+
+0.0.2 (23.6.2022)
+-----------------
+- Bug removal of some initial problems with the setup
+
+0.0.1 (23.6.2022)
+-----------------
+- First release
