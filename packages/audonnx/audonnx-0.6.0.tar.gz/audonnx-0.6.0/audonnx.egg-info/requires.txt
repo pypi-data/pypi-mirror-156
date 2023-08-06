@@ -1,0 +1,2 @@
+audobject>=0.7.1
+onnxruntime>=1.8.0
