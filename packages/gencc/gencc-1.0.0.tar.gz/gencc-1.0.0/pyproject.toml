@@ -1,0 +1,18 @@
+[project]
+name = "gencc"
+version = "1.0.0"
+authors = [
+  { name="AKXVAU", email="admin@itzakx.ml" },
+]
+description = "CC GENERATOR FOR BIN"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/akxvau"
+"Bug Tracker" = "https://github.com/akxvau"

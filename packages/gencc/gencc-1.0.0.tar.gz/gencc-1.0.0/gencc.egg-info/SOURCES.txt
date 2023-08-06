@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+gencc/__init__.py
+gencc/gencc.py
+gencc.egg-info/PKG-INFO
+gencc.egg-info/SOURCES.txt
+gencc.egg-info/dependency_links.txt
+gencc.egg-info/entry_points.txt
+gencc.egg-info/requires.txt
+gencc.egg-info/top_level.txt
