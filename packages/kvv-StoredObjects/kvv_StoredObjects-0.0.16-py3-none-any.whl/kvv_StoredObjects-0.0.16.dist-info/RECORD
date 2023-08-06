@@ -1,0 +1,10 @@
+StoredObjects/__init__.py,sha256=uryAoGSGuFHiXZx8bpiNwNL0nzgGrxqaBJSUFurEnNU,193
+StoredObjects/author.py,sha256=krQ3XsKSp-Pv0-Vrig-URETOBmUHBn-v8-6Z5yMYURI,2361
+StoredObjects/department.py,sha256=viYq-benwsIbcySkF8TxG2hCWdzpK-OY7bt82TEcL-c,3160
+StoredObjects/publication.py,sha256=ayTXBqWUPTP-SW-N3E6z-hZfGzwhGlxqCRl4BaTG2oI,3154
+StoredObjects/university.py,sha256=eixnmMzXMxfNr0HqPx2niKh8KTfmcau3rrUjOIPJMuU,3056
+kvv_StoredObjects-0.0.16.dist-info/LICENSE,sha256=F96EzotgWhhpnQTW2TcdoqrMDir1jyEo6H915tGQ-QE,11524
+kvv_StoredObjects-0.0.16.dist-info/METADATA,sha256=vluUUDXpmetM04DKQnltOSSCNT2QRr62fy00sG1maxI,1232
+kvv_StoredObjects-0.0.16.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kvv_StoredObjects-0.0.16.dist-info/top_level.txt,sha256=OhUEIKYN23Rad4OXb2P0FmDWaS61HV85q-y_VIXN5XU,14
+kvv_StoredObjects-0.0.16.dist-info/RECORD,,
