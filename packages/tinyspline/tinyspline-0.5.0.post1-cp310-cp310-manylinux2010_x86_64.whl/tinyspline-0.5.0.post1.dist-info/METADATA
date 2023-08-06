@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tinyspline
+Version: 0.5.0.post1
+Summary: Spline Library for a Multitude of Programming Languages
+Home-page: https://github.com/msteinbeck/tinyspline
+Author: Marcel Steinbeck
+Author-email: tinyspline@retux.de
+License: MIT
+Platform: Linux
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+
+TinySpline is a small, yet powerful library for interpolating, transforming, and querying arbitrary NURBS, B-Splines, and Bézier curves. The core of the library is written in ANSI C (C89) with a C++ wrapper for an object-oriented programming model. Based on the C++ wrapper, auto-generated bindings for C#, D, Go, Java, Javascript, Lua, Octave, PHP, Python, R, and Ruby are provided.
+
