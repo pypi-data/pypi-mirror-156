@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+study.py
+study_cli.egg-info/PKG-INFO
+study_cli.egg-info/SOURCES.txt
+study_cli.egg-info/dependency_links.txt
+study_cli.egg-info/entry_points.txt
+study_cli.egg-info/top_level.txt

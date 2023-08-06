@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: study-cli
+Version: 0.0.1
+Summary: command line flash cards
+Home-page: https://github.com/fawzisal/study-cli
+Author: Fawzi Sal
+Author-email: Example Author <fawzisal001@gmail.com>
+License: GPLv3
+Project-URL: Homepage, https://github.com/fawzisal/study-cli
+Project-URL: Bug Tracker, https://github.com/fawzisal/study-cli/issues
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# study-cli
+command line flash cards
+
+# Installation
+> pip install study-cli
+
+To get the git version, run:
+
+> git clone git://github.com/fawzisal/study-cli.git
+
+## Usage
+TBD
+
+## Bug reports
+To report bugs, please use the chemicals's Bug Tracker at:
+>    https://github.com/fawzisal/study-cli/issues
+
+## License information
+See ``LICENSE.txt`` for information on the terms & conditions for usage of this software, and a DISCLAIMER OF ALL WARRANTIES.
