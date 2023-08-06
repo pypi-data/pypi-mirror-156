@@ -1,0 +1,12 @@
+openbankingbr/__init__.py,sha256=yUx-PA7yzslWFuAhPZseNSS-mDXD43lQOkaxu3CW7D4,2713
+openbankingbr/__version__.py,sha256=VeDxRLmBtPQx4dSH1-xXan0spJsCcbHXGewo1rvd6VI,338
+openbankingbr/batch.py,sha256=XEP5AQG5D-H5p739HbpO7sHEoM_mYNzV6aEZZa1hxLw,22544
+openbankingbr/errors.py,sha256=mTGulxqMaM8KMWGoq96toWfOHkZ0qZOln0HW3tJy4dI,537
+openbankingbr/models.py,sha256=2CNAFEjuFPqastuNCe0nvpG--FrNXdNyO0j7IkNZOqM,29691
+openbankingbr/spec.py,sha256=-6vmPAlC3y0iS_aFlx0-SEV_I_p6SXSbjN2HM8OV2u4,4669
+openbankingbr/utils.py,sha256=h8u9tdMwvwFlHfbNous3ulF6BWi5FmsZlyt1XPgfiX4,6580
+openbankingbr-0.1.4.dist-info/LICENSE,sha256=fk-SLov6t4Eg3NgsxMDSvlCymMuZGfs9G6ZfAETv0q4,1072
+openbankingbr-0.1.4.dist-info/METADATA,sha256=WrU88Ib7WXvXASnhxgDAnWDW_IS-foR-Xfg9wcznAPY,3967
+openbankingbr-0.1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+openbankingbr-0.1.4.dist-info/top_level.txt,sha256=Sau2ynEaclDRDDDBYhPSooG4GB6MGgN0dJkperP8JJc,14
+openbankingbr-0.1.4.dist-info/RECORD,,
