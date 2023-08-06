@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gtrie-cli
+Version: 0.1
+Summary: CLI utility to operate on prefix trie
+Home-page: https://github.com/sidinfinity
+Author: Siddharth Maddikayala
+Author-email: sidinfinity0@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: argparse
+Requires-Dist: requests
+
+CLI to opereate on trie host in cloud
