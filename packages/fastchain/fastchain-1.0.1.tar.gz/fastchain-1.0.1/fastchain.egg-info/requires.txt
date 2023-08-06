@@ -1,0 +1,6 @@
+
+[testing]
+mypy==0.960
+mypy-extensions==0.4.3
+pytest==7.1.2
+pytest-cov==3.0.0
