@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: dualdesc
+Version: 0.1.0
+Summary: Dual description of polytopes.
+Home-page: https://gitlab.com/valtron/dualdesc
+Author: valtron
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycddlib (~=2.1.5)
+Requires-Dist: typing-extensions (~=4.2.0)
+Requires-Dist: numpy (~=1.21)
+
+# dualdesc
+
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/dualdesc)](https://gitlab.com/valtron/dualdesc)
+[![Build status](https://img.shields.io/gitlab/pipeline-status/valtron/dualdesc?branch=master)](https://gitlab.com/valtron/dualdesc/-/pipelines)
+[![Coverage](https://img.shields.io/gitlab/coverage/valtron/dualdesc/master)]()
+[![Downloads](https://pepy.tech/badge/dualdesc/month)](https://pepy.tech/project/dualdesc)
+[![License](https://img.shields.io/pypi/l/dualdesc)](https://gitlab.com/valtron/dualdesc/-/blob/master/LICENSE)
+
+Dual description for polytopes. A wrapper around [pycddlib](https://pycddlib.readthedocs.io).
+Mainly for easily converting between H- and V-representations.
+No utilities for facet enumeration, adjacencies, etc.
+
+
+## Usage
+
+This package contains two classes, `HRepr` and `VRepr`, for the H- and V-representations of polytopes.
+They have methods `to_v()` and `to_h()`, respectively, for converting between them.
+
+`HRepr(Au, bu, Ae, be)` represents the polytope defined by all points `x` s.t. `Au @ x <= bu` and `Ae @ x == be`.
+`Au`, `bu` (inequality constraints) and `Ae`, `be` (equality constraints) are also fields on the `HRepr` object.
+If there are `nu` inequality and `ne` equality constraints, and the ambient dimension is `d`,
+the shapes of these matrices are:
+- `Au`: `(nu, d)`
+- `bu`: `(d,)`
+- `Ae`: `(ne, d)`
+- `be`: `(d,)`
+
+`VRepr(Vc, Vn, Vl)` represents the polytope defined by `conv(Vc) + nonneg(Vn) + linspace(Vl)`,
+where `conv` is the convex combination of a set of points, `nonneg` is non-negative linear combinations
+of a set of points, `linspace` is a linear combination of a set of points, and `+` is Minkowski addition.
+
+### A simple example
+
+The example below defines an unbounded (i.e. non-null cone part) polytope with 3 facets and 2 vertices:
+
+```python
+import numpy as np
+import dualdesc as dd
+
+M = np.array([
+	[1, 0, 1], # x0        <= 1
+	[0, 2, 1], #      2 x1 <= 1
+	[1, 1, 1], # x0 +   x1 <= 1
+], dtype = np.float64)
+Au = M[:,:2]
+bu = M[:,-1]
+h = dd.HRepr(Au, bu)
+v = h.to_v()
+# Vertices (conv component):
+# 	v.Vc = [[0.5, 0.5], [1, 0]]
+# Cone part (nonneg and linear components):
+# 	v.Vn = [[-1, 0], [0, -1]]
+# 	v.Vl = []
+```
+
+
+## Why not pypoman?
+
+[pypoman](https://scaron.info/doc/pypoman) has more features, but only supports bounded polytopes.
+
+
+## Why not use pycddlib directly?
+
+[pycddlib](https://pycddlib.readthedocs.io) has more features (like adjacency lists), but is too low level and doesn't have a nice interface.
