@@ -1,0 +1,15 @@
+EasyMLLib/CSVWriter.py,sha256=JT_stm1mjbYwRXo2ySQfw564ILTdbyq3Y4MSkGctLjA,748
+EasyMLLib/DataGatherer.py,sha256=nnlxIDaU2rQsvL2nMCZWKN_XHjtfLV9ZxvuuC9L0Up8,1068
+EasyMLLib/DataSplitter.py,sha256=BEFqEUn-UXnW_vA7BcjXpNf6oDr55SRcl8hAPFS4vUQ,1462
+EasyMLLib/ModelSaver.py,sha256=hKploa9GK0jdcf1cVLMFiC7iFjpF9gsTvrxhKd5U_Oc,918
+EasyMLLib/__init__.py,sha256=_uk63ObVBxxxlDQ6OiwP07EkQX7ZswCkAOxtSL-lMQ0,198
+EasyMLLib/helper.py,sha256=JlpWHuS1MrFJI2h22IN8w_P2A3kE649flvqIvHU6f54,898
+EasyMLLib/logger.py,sha256=-Jkm6wBRgTgyTvmGCrTJGC1SWI5BsitWrSWehZnEj_w,761
+EasyMLLib/TestScripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EasyMLLib/TestScripts/useful/__init__.py,sha256=OvrMB2mvBzRtwnDWFo44Lf4Q1IbF4NAvcLSvzKAceUA,74
+EasyMLLib/TestScripts/useful/testFeatures.py,sha256=zlNRNt31xlVO0v5bLzdcmc4-pP4J474FKU8ClmjlD5I,4003
+EasyMLLib/TestScripts/useful/testModels.py,sha256=9xM7CPiuUpq9j6ZngVDC08f_dZ5SwWd-KsNSKf0v1Dk,8900
+EasyMLLIB-0.0.4.dist-info/METADATA,sha256=F4CExyf4wIPblF7lSwr9dqijyKkucjNyoTXFbhxH1IE,1320
+EasyMLLIB-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+EasyMLLIB-0.0.4.dist-info/top_level.txt,sha256=xldqeT4c863wr67e37Wu32L2gfC4X_pOKuCnAYucsf8,10
+EasyMLLIB-0.0.4.dist-info/RECORD,,
