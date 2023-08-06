@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: diagho-toolkit
+Version: 0.1.0
+Summary: Library with useful tools for processing genomic data
+Author-email: Julien Lebunetel <julien.lebunetel@chu-rennes.fr>, Alexandre Cuffel <alexandre.cuffel@chu-rennes.fr>
+Project-URL: Homepage, https://github.com/DiaghoProject/python-diagho-toolkit
+Project-URL: Bug Tracker, https://github.com/DiaghoProject/python-diagho-toolkit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Diagho Toolkit
+
+## What is Diagho Toolkit ?
+
+Diagho Toolkit is a python library which will read and parse a genomic file and return a generator with a pydantic model.
+
+## What database is used ?
+
+- OMIM
+- HGNC
+- HPO
+- gnomAD
+- gnomAD constraint
+- VCF
+- Fasta
+- GFF3
+
+## What pydantic model is returned ?
+
+- Clinvar
+- Feature
+- Gene
+- GnomAD
+- GnomAD_constraint
+- Pathology
+- Region
+- Sequence
+- Symptom
+- Variant
