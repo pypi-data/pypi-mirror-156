@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/rerouter/__init__.py
+src/rerouter/router.py
+src/rerouter.egg-info/PKG-INFO
+src/rerouter.egg-info/SOURCES.txt
+src/rerouter.egg-info/dependency_links.txt
+src/rerouter.egg-info/requires.txt
+src/rerouter.egg-info/top_level.txt
