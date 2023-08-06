@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/TGMI/TGMI.py
+src/TGMI/__init__.py
+src/TGMI/functions.py
+src/TriGeneI.egg-info/PKG-INFO
+src/TriGeneI.egg-info/SOURCES.txt
+src/TriGeneI.egg-info/dependency_links.txt
+src/TriGeneI.egg-info/requires.txt
+src/TriGeneI.egg-info/top_level.txt
