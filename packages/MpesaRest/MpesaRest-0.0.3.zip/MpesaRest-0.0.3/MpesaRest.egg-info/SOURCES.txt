@@ -1,0 +1,10 @@
+DESCRIPTION.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+MpesaRest.egg-info/PKG-INFO
+MpesaRest.egg-info/SOURCES.txt
+MpesaRest.egg-info/dependency_links.txt
+MpesaRest.egg-info/requires.txt
+MpesaRest.egg-info/top_level.txt
