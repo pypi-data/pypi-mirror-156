@@ -1,0 +1,17 @@
+neural_best_buddies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neural_best_buddies/algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neural_best_buddies/algorithms/feature_metric.py,sha256=9yLTPtHoUyVwQH8t17amr3SGUH3C8GhKb1Xof-gldns,2028
+neural_best_buddies/algorithms/neural_best_buddies.py,sha256=RY-AKAL0Zbz7OW06lnM8k9TprMB57QODCeZWVDbeOek,22222
+neural_best_buddies/main.py,sha256=utMoxghuUsaHGXHo3LyQFyzYQLTcP7ke5yKPT4DRmtw,646
+neural_best_buddies/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neural_best_buddies/models/vgg19_model.py,sha256=HMsi2NH5Hmtx6bYrPABNbkmqzQTJx0pLQJVX10TBybQ,5438
+neural_best_buddies/options/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neural_best_buddies/options/options.py,sha256=QSOqUSaP6qFm3AkHFklJ1Ss_0STFSHM6QQjZ-liuBx0,3726
+neural_best_buddies/util/MLS.py,sha256=FN4m6GExVUf9ROGToY9UIO28fA--bmycfJKJXRGrYyE,8419
+neural_best_buddies/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neural_best_buddies/util/draw_correspondence.py,sha256=Kx7Sxqbj6Gq7KIfevy0oF6M0jpx0j7VHUrqjfjM0kiY,4119
+neural_best_buddies/util/util.py,sha256=zqA7bLF0ZXzpOErmDoh38Hq7-Eogg7lZdi-Xba2ZEHk,6882
+neural_best_buddies-1.0.1.dist-info/LICENSE,sha256=tWsTzhpKZf15gcNmDRsK2GOUqFdWrTWT1W1ruoXV41A,1069
+neural_best_buddies-1.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+neural_best_buddies-1.0.1.dist-info/METADATA,sha256=1olUzHyp9jf9OzazqZFeVGIwsmGycxhQDfAm1GHS4Uk,412
+neural_best_buddies-1.0.1.dist-info/RECORD,,
