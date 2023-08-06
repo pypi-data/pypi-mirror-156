@@ -1,0 +1,31 @@
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
+
+with open("requirements.txt") as f:
+    requirements = f.read().strip().split("\n")
+
+
+setup(name="edn_format_debug",
+      version="0.1.1",
+      author="DuneLeto",
+      author_email="duneletogit@gmail.com",
+      description="Swaroop's EDN format reader and writer in Python, w/ minor debug addition.",
+      long_description=open('README.md').read(),
+      long_description_content_type='text/markdown',
+      url="https://github.com/DuneLeto/edn_format",
+      install_requires=requirements,
+      license="Apache 2.0",
+      packages=['edn_format_debug'],
+      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      classifiers=[
+          'Development Status :: 5 - Production/Stable',
+          'Intended Audience :: Developers',
+          'License :: OSI Approved :: Apache Software License',
+          'Topic :: Software Development',
+          'Programming Language :: Python',
+          'Programming Language :: Python :: 2',
+          'Programming Language :: Python :: 3',
+          'Operating System :: OS Independent',
+      ])
