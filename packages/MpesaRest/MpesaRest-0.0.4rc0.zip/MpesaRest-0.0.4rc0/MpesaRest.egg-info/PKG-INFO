@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: MpesaRest
+Version: 0.0.4rc0
+Summary: An interaction of the Safaricom Daraja Api with Python
+Home-page: https://github.com/kenreagan/MpesaRest
+Author: Lumuli Ken Reagan
+Author-email: lumulikenreagan@gmail.com
+License: MIT
+Description: A Close interaction of the daraja api with python.
+        
+        Interact with the  safaricom developers api with python. The custom url callbacks will allow for easy intergration with
+        your business applications.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
