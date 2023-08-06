@@ -1,0 +1,15 @@
+interactions/ext/modmail/__init__.py,sha256=bu_OYk9aJ5wz-J1OzoL-R7tnvUGGuP5MgQgPqLcrMHU,58
+interactions/ext/modmail/modmail.py,sha256=BRY0QeoSdZcWt5pk1hQzg63bvTQ4zgboblsHN5AkURY,65564
+interactions/ext/modmail/core/__init__.py,sha256=Kb6BZbudb5oBIkPUQWawv2ZSRkJh95mPY5irzHi7wxQ,177
+interactions/ext/modmail/core/_color_data.py,sha256=yA4w1jXiwXh0K5iOttVux77BihNks58yXxJO0NZtxuY,33310
+interactions/ext/modmail/core/config.json,sha256=VniEy2L7XNAdFNMuwhM755-26NO9sayIDxcbHyS0uHU,206
+interactions/ext/modmail/core/config.py,sha256=yesO0m_uhOWmEVDZDxFCdVTs7-mKR4EHKUkL1QfwPg8,15589
+interactions/ext/modmail/core/models.py,sha256=YJe-mpfQ8jVnoCu8mYwkg44JRwpZoLgqWpB9fP0Vvg8,2106
+interactions/ext/modmail/core/thread.py,sha256=a8za898LAlOEHmC7OL5LXa3NryWIFaFiDeK6H3eFVGI,44749
+interactions/ext/modmail/core/time.py,sha256=RyClMRTrnelCjc5t7tZQJXWA3fDJ0ipOomA2YtqIP6k,1172
+interactions/ext/modmail/core/utils.py,sha256=YX9jy7uPAMASQGXwFU1JojG5Z5W-uFaVjCiwlVVNDeY,7587
+interactions_modmail-1.0.4.dist-info/LICENSE,sha256=-Ejc_Yqt9emLPCswCcMW3QCoww6XP7m5YORb3eyUpCI,34464
+interactions_modmail-1.0.4.dist-info/METADATA,sha256=c_QIhrhnMWmdrK4nVw22-Lv6nmT7ka2M-S64UEdJ4X0,728
+interactions_modmail-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+interactions_modmail-1.0.4.dist-info/top_level.txt,sha256=6JGZJLyYYS31pX0unnc-w68SixoVQ_vd0-abkVS3_m0,13
+interactions_modmail-1.0.4.dist-info/RECORD,,
