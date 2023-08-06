@@ -1,0 +1,9 @@
+tentaclio_snowflake/__init__.py,sha256=OLsSXoEdU6E7bIGgBRjZeEuaV68ph3zPVCKVr1rkOmo,236
+tentaclio_snowflake/__main__.py,sha256=x0uueRUBgZoaXLPzlZmTRN-H2E8ahkcAdfWfOVyuzH8,148
+tentaclio_snowflake/clients/__init__.py,sha256=2Yi7YmojIzJyTT4MLK8DmsH6N8D3Dk-dxXEpB5GLKF4,295
+tentaclio_snowflake/clients/snowflake_client.py,sha256=djzOGhYOh-xuQ5IpPkIe-h9qxBcUMaIx4rVlkCmGw5A,372
+tentaclio_snowflake-0.0.3.dist-info/LICENSE.txt,sha256=Aqv2h5R53YlGaQXl7XgUDMZPUxJK1HftERN2ExXJ_u4,1080
+tentaclio_snowflake-0.0.3.dist-info/METADATA,sha256=lZVocIIcJ9sHXrA-vuYexqtbWt0R1NYrsdwvwNMBP9g,1672
+tentaclio_snowflake-0.0.3.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+tentaclio_snowflake-0.0.3.dist-info/top_level.txt,sha256=vKA0DtkdX37hdGb0k1EyRr1FM-ee91_lpRF_tT4bjWs,20
+tentaclio_snowflake-0.0.3.dist-info/RECORD,,
