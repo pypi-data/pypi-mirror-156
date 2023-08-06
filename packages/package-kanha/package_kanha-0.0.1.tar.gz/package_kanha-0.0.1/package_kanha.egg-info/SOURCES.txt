@@ -1,0 +1,8 @@
+license.txt
+setup.py
+basiccalculation/__init__.py
+basiccalculation/tt.py
+package_kanha.egg-info/PKG-INFO
+package_kanha.egg-info/SOURCES.txt
+package_kanha.egg-info/dependency_links.txt
+package_kanha.egg-info/top_level.txt
