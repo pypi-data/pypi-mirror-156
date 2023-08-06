@@ -1,0 +1,2 @@
+[console_scripts]
+jakym = jakym.__main__:main
