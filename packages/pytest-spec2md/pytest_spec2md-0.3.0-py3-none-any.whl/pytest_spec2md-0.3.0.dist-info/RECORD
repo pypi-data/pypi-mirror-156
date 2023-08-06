@@ -1,0 +1,9 @@
+LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+pytest_spec2md/__init__.py,sha256=B5Cm67V5P7MvwBFHhrlb8vxgKTQaY006o7EECJyAZPM,36
+pytest_spec2md/plugin.py,sha256=fRFgNQEKTl5Aan8EsSSN0LOb6_bwIYUjvl1Nl_wXS2g,1644
+pytest_spec2md/spec_creator.py,sha256=OqhBy4y9VEDfJbbI4tv4gMOCJnXtT_7XM2H3RMCezL0,8198
+pytest_spec2md-0.3.0.dist-info/entry_points.txt,sha256=YD7GCbZtuwNr6SejUTaeDS1ZEpgoR2pPaZsbO74SK_8,39
+pytest_spec2md-0.3.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+pytest_spec2md-0.3.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pytest_spec2md-0.3.0.dist-info/METADATA,sha256=woVdchAXyZxNTHIcmnbIc88cMdJ8GqSYz_UA7D1x4II,2395
+pytest_spec2md-0.3.0.dist-info/RECORD,,
