@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pylet.egg-info/PKG-INFO
+src/pylet.egg-info/SOURCES.txt
+src/pylet.egg-info/dependency_links.txt
+src/pylet.egg-info/requires.txt
+src/pylet.egg-info/top_level.txt

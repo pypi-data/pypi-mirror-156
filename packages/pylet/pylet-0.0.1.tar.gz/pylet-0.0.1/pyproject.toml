@@ -1,0 +1,26 @@
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylet"
+version = "0.0.1"
+description = "Whole Python ecosystem in one command line tool"
+readme = "README.md"
+authors = [{ name = "Oleks Litus", email = "oleks.litus@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["cli", "build"]
+dependencies = []
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = []
+
+[project.urls]
+Homepage = "https://github.com/orreksu/pylet"
