@@ -1,0 +1,2 @@
+datasette
+jupyter-server-proxy
