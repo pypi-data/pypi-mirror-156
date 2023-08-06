@@ -1,0 +1,4 @@
+include README.md
+inclure requirements.txt
+include src/minimalKNN.h
+include minimalKNN.pyx
