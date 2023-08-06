@@ -1,0 +1,5 @@
+PyQt5==5.15.4
+cruscoplanets>=0.2.8
+langcodes[data]
+pycountry==22.3.5
+wheel

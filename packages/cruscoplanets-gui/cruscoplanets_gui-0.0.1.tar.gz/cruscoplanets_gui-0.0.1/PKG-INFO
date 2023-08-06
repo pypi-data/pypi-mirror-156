@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cruscoplanets_gui
+Version: 0.0.1
+Summary: GUI interface for the cruscoplanets package
+Home-page: https://gitlab.com/kikulacho92/cruscoplanets_gui
+Author: Emiliano Minerba
+Author-email: emi.nerba@gmail.com
+License: GPL
+Description: # cruscoplanets GUI
+        
+        Graphic interface for the [cruscoplanets](https://pypi.org/project/cruscoplanets/) package
+        
+        ## Summary
+        
+        Cruscoplanets is a tool for elaborating astrological charts according to the perspective of Morpurgo's astrological school. This package provides a GUI interface for it. To use it you have just to 
+        install this pip package and launch **cruscoplanets_gui** on your terminal, if you are on Linux; if you use Windows, you should have an executable file ready after you have installed the package.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
