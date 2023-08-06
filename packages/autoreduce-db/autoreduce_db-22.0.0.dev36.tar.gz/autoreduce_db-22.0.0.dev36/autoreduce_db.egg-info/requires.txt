@@ -1,0 +1,2 @@
+autoreduce_utils==22.0.0.dev22
+Django>=3.2.10
