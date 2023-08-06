@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dagster-hightouch
+Version: 0.1.1
+Summary: Dagster library for Hightouch
+Home-page: https://github.com/hightouchio/dagster-hightouch
+Author: Pedram Navid
+Author-email: pedram@hightouch.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: dagster (>="0.14")
+Requires-Dist: requests (>="2.0")
+
+[![Pypi Publish](https://github.com/hightouchio/dagster-hightouch/actions/workflows/pypi-publish.yml/badge.svg?branch=main)](https://github.com/hightouchio/dagster-hightouch/actions/workflows/pypi-publish.yml)
+
+## Dagster-Hightouch
+
+A Dagster library for triggering syncs in Hightouch.
+
+TODO: Write a README.
+
+```
+run_ht_sync_accounts = hightouch_sync_op.configured(
+    {"sync_id": 1234}, name="hightouch_sfdc_contacts"
+)
+```
