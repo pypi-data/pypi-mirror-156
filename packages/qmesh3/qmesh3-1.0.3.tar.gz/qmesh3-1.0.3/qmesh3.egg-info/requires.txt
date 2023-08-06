@@ -1,0 +1,5 @@
+GFD_basisChangeTools
+setuptools-qmesh
+
+[RDM]
+pyrdm
