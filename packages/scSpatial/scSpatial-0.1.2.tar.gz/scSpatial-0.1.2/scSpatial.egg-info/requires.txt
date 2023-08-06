@@ -1,0 +1,6 @@
+scanpy
+Napari
+cellpose
+scikit-image
+plotly
+PyQtWebEngine
