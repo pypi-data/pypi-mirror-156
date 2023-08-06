@@ -1,0 +1,12 @@
+astropy
+fastavro
+google-api-core
+google-cloud-bigquery
+google-cloud-logging
+google-cloud-storage>=1.38
+google-cloud-pubsub
+numpy
+pandas
+PyYAML>=5.3
+six>=1.15
+typing
