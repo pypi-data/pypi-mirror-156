@@ -1,0 +1,15 @@
+matomerumi/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+matomerumi/__main__.py,sha256=VMP3ZxNZ4SiHmiSzdW3W6bLM3JeKGgedjuqRvmH15BM,287
+matomerumi/matomerumi_lib/__init__.py,sha256=-Pzh_4_OGHtlB3_d8OKa184hbS-VmbyeLWA1d2ejwHM,39
+matomerumi/matomerumi_lib/matomerumi.py,sha256=t2apI8xZyN1axDCF_35UnISBdmxPGADfDslk7RMMA1Y,5648
+matomerumi/matomerumi_lib/mmi_auto_styles.py,sha256=tu6yUTTd-0g0vY-rU-jNgY-wV77CkKneJAYgtmE7INQ,6342
+matomerumi/matomerumi_lib/mmi_config.py,sha256=QF04qEh6muhQloz3iZDz1fBGAOMR1ZozGH36xUILvFI,3843
+matomerumi/matomerumi_lib/mmi_odtgenlib.py,sha256=FeJEMTlIjz06O-KmTEmbgZHx0ZW_KpOgDCXifiDrJqU,5199
+matomerumi/matomerumi_lib/mmi_parser.py,sha256=L3MMZkGsje4WYFnInrE6PirquYtHIOu-CfYHfiedY-M,23255
+matomerumi/matomerumi_lib/mmi_path_handler.py,sha256=RpUaz4qrWN8PvpWcW5G9vGi3o6eeeknN1lkhr3XmHy4,695
+matomerumi/matomerumi_lib/mmi_templates.py,sha256=44D7rV3-DiFgFu8Q_FN9iriz4zupFqCm28KhtHX0MP8,33406
+matomeru_mi-2022.6.22.dist-info/LICENSE,sha256=3j0qvINLh5zFyVWxRNh0sJRNeiFCiWhwF1mkM6_-AJs,1516
+matomeru_mi-2022.6.22.dist-info/METADATA,sha256=ulhIW6Iat0vFZCWPwdcIMBAADXxZEbIPH2SIWMY_1eI,2321
+matomeru_mi-2022.6.22.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+matomeru_mi-2022.6.22.dist-info/top_level.txt,sha256=mO_UsG5mKSM0NtYiKR3vVQehGlA3FbmIamFksWC7_fA,11
+matomeru_mi-2022.6.22.dist-info/RECORD,,
