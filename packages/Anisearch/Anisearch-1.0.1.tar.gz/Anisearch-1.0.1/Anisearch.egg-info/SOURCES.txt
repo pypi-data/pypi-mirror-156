@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+unit_tests.py
+Anisearch/__init__.py
+Anisearch/get.py
+Anisearch/search.py
+Anisearch.egg-info/PKG-INFO
+Anisearch.egg-info/SOURCES.txt
+Anisearch.egg-info/dependency_links.txt
+Anisearch.egg-info/requires.txt
+Anisearch.egg-info/top_level.txt
