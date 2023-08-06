@@ -1,0 +1,4 @@
+graphviz~=0.19.1
+ipython
+networkx~=2.7.1
+dbis-exc-manager~=0.2.3
