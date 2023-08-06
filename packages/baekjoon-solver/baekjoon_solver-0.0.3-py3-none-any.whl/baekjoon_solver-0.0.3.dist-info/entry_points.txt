@@ -1,0 +1,3 @@
+[console_scripts]
+solve=baekjoon_solver.main:run
+
