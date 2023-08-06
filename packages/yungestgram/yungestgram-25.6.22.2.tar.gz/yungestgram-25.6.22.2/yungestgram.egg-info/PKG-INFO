@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: yungestgram
+Version: 25.6.22.2
+Summary: Telegram bot library
+Author: yungestDev
+Author-email: yungestmonsterhahaha@gmail.com
+License: MIT
+Keywords: Telegram,Bot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: License.txt
+
+UNKNOWN
+
