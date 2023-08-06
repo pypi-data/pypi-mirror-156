@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+irescue/__init__.py
+irescue.egg-info/PKG-INFO
+irescue.egg-info/SOURCES.txt
+irescue.egg-info/dependency_links.txt
+irescue.egg-info/top_level.txt
