@@ -1,0 +1,10 @@
+README.md
+setup.py
+exifstrip/__init__.py
+exifstrip/main.py
+exifstrip.egg-info/PKG-INFO
+exifstrip.egg-info/SOURCES.txt
+exifstrip.egg-info/dependency_links.txt
+exifstrip.egg-info/entry_points.txt
+exifstrip.egg-info/requires.txt
+exifstrip.egg-info/top_level.txt
