@@ -1,0 +1,8 @@
+README.md
+setup.py
+UTIR_Lib/ModuleNode.py
+UTIR_Lib/__init__.py
+UTIR_Lib.egg-info/PKG-INFO
+UTIR_Lib.egg-info/SOURCES.txt
+UTIR_Lib.egg-info/dependency_links.txt
+UTIR_Lib.egg-info/top_level.txt
