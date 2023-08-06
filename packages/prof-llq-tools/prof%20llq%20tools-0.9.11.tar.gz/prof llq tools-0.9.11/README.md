@@ -1,0 +1,7 @@
+# Prof.Li's Python Tools
+## 道法自然
+## **pip install prof-llq-tools**
+**sample code as follows:**
+###### `import llq.that
+
+![hah](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%253A%252F%252Fdingyue.ws.126.net%252F2021%252F1209%252Ff42a2b0ej00r3twsy000oc000hs00bwm.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1658544434&t=d11d8eb5ff2f0c7f4792a3aaa719a653)
