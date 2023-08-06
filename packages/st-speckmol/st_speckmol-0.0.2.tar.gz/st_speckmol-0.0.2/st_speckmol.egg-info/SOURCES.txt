@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+st_speckmol/__init__.py
+st_speckmol.egg-info/PKG-INFO
+st_speckmol.egg-info/SOURCES.txt
+st_speckmol.egg-info/dependency_links.txt
+st_speckmol.egg-info/requires.txt
+st_speckmol.egg-info/top_level.txt
