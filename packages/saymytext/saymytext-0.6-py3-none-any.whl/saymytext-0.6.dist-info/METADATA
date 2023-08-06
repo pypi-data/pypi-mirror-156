@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: saymytext
+Version: 0.6
+Summary: A text to speech package
+Home-page: https://github.com/skvortsovden/saymytext
+Author: Denys
+Author-email: skvortsovdenis81@gmail.com
+Project-URL: Bug Tracker, https://github.com/skvortsovden/saymytext/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: gTTS (==2.2.3)
+Requires-Dist: PyAudio (==0.2.11)
+Requires-Dist: pydub (==0.25.1)
+
