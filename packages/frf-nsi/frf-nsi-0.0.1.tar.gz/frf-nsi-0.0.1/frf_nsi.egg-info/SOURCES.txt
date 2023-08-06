@@ -1,0 +1,6 @@
+README.md
+setup.py
+frf_nsi.egg-info/PKG-INFO
+frf_nsi.egg-info/SOURCES.txt
+frf_nsi.egg-info/dependency_links.txt
+frf_nsi.egg-info/top_level.txt
