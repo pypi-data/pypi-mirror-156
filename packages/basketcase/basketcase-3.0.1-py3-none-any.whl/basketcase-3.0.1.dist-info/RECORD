@@ -1,0 +1,12 @@
+basketcase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basketcase/__main__.py,sha256=ADQPZAVabSZZpjqqdTTjA3l4ksWQzhMGgWwVlbZLWJY,681
+basketcase/authenticator.py,sha256=n5uwzCzef-6wVOQBxDpq7pzIqyfgBI9DczCjz9gt6eE,5215
+basketcase/basketcase.py,sha256=fuAvJ9wJf5QHvM5uP_BRp04ca0vizloofge_EZ5GtlE,2374
+basketcase/extractor.py,sha256=uLVUOwsBksh4I-ClF0s9nQ11EnA8O5YTtOuUiYtjw4Q,2434
+basketcase/storage.py,sha256=3fwaAxv_9ZxwUWwktU0vidCqwt5XfuuQ9RGC9FwLFSo,3218
+basketcase-3.0.1.dist-info/LICENSE,sha256=hFU-c1eP4nN-EArsdiGexRWkKBc0Ic4fm8elfb-0vAs,1062
+basketcase-3.0.1.dist-info/METADATA,sha256=2QnDFKCpijMs4TJcx0mEkpxI3D94uFw2Tn1k5fsLwMc,2251
+basketcase-3.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+basketcase-3.0.1.dist-info/entry_points.txt,sha256=3o6YbRcrXHLHf1f9mhwjMjbWoWv-tcDRBkHPVvnO_PU,56
+basketcase-3.0.1.dist-info/top_level.txt,sha256=_6pUwMPLrecE7ZDu9srJ_CrO0FpBH4bZNrOgcYoAAsk,11
+basketcase-3.0.1.dist-info/RECORD,,
