@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: ioNERDSS
+Version: 0.0.1
+Summary: Package for analysing NERDSS inputs and outputs.
+Home-page: UNKNOWN
+Author: Zixiu (Hugh) Liu
+Author-email: zliu140@jhu.edu
+License: MIT
+Description: A python package for analysing inputs and outputs for NERDSS simulator, including generating input files for Platonic solids and output visualization, etc.
+Keywords: NERDSS Simulation,Analysis Tools
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

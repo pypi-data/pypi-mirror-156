@@ -1,0 +1,6 @@
+Change Log
+==========
+
+0.0.1 (06/27/2022)
+------------------
+- First Release (setup dodecahedron face as COM model)
