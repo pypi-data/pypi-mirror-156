@@ -1,0 +1,13 @@
+pysquale/__init__.py,sha256=Iw9eHscig1-sHR9RGAFVvyEmba60NpTmoFo8vcUzxD8,77
+pysquale/_version.py,sha256=Qkdiz6Ybn1PE1SlWhKAQBmETf7pQ0yr5HmkqLVDxsqE,21
+pysquale/common/__init__.py,sha256=oS8m0pXNMubKr5vduIu9zS781JW1WYHNJwh2QBHtAKQ,128
+pysquale/common/pipeline.py,sha256=Dqe7FaNynqOI0j-ekfqVh_DHQ_0IptO4d2jf7vIT1sY,1722
+pysquale/words/__init__.py,sha256=vt-HiziyzOuxaf1muVAAj1C0U8K-Oj0NwPxRjxti4cI,669
+pysquale/words/cleaning.py,sha256=mMhow-tki-TWJLwljzNrhR9xVbQqK52OpjI6uP2syKA,1178
+pysquale/words/preprocessing.py,sha256=2H9D7eNzjM_63a0rIAzc7fnsqGBqps9QXRZarh9TWF4,954
+pysquale/words/utils.py,sha256=VA_4xiQ_GpUcVUri7xvnWR4Z2dmwKohthPbewpWpycI,1677
+pysquale-0.0.4.dist-info/LICENSE,sha256=wr18wInpwY9r5S5o13Xc8HTwQu-HuavGY3iWOSTrhB8,1064
+pysquale-0.0.4.dist-info/METADATA,sha256=T8HZhDLD0zhhKU22gkTVuRi6fu8VrVyxNIeZCZzLybo,1624
+pysquale-0.0.4.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pysquale-0.0.4.dist-info/top_level.txt,sha256=p5EEHPLKiP47W-AZ3FEe9P3kuTlxnWM1KFN0BB-d7Xc,9
+pysquale-0.0.4.dist-info/RECORD,,
