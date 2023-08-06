@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: npt
+Version: 0.7.1
+Summary: Geo-Planetary Processing Tools
+Home-page: https://github.com/chbrandt/npt
+Author: Carlos H. Brandt
+Keywords: geopandas,geosciences,planetary,mosaic,isis3,usgs
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: geopandas (>=0.8.1)
+Requires-Dist: requests (>=2.24)
+Requires-Dist: sh (>=1.14)
+Requires-Dist: tqdm (>=4.49)
+Requires-Dist: rasterio (>=1.2.10)
+Requires-Dist: rioxarray (>=0.10.3)
+
