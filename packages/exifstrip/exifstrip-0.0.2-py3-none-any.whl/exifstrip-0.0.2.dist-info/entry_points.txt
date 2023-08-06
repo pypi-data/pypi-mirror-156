@@ -1,0 +1,3 @@
+[console_scripts]
+exifstrip = exifstrip.main:run
+
