@@ -1,0 +1,3 @@
+[console_scripts]
+mopup=mopup.__main__:main
+
