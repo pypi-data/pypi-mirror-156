@@ -1,0 +1,13 @@
+dictionary_diff/__init__.py,sha256=mWOoQvnSnz5YPJnjYJ0lKLueRaHacYOTAVvHWesMPew,335
+dictionary_diff/change.py,sha256=FFizhcooSbLhP8bYdXvLPyfk3WIlnWWoIiZMc0xHf8A,424
+dictionary_diff/dict_diff.py,sha256=pTGVeVMbJrCb8Ddu-fBPi8u1JzvOf9oVs3LhT99JlsI,3723
+dictionary_diff/diff.py,sha256=EGTlBlqv6Kv3PxckLv6OgcSCJsPL0dKFQYbX7XScjkE,2409
+dictionary_diff/list_diff.py,sha256=WRiG8_YED8_OZMe1GC129zCpo10rlwQ6GJ4m8Rt4erY,3554
+tests/__init__.py,sha256=trp_fDJ8hMiYdC29aRGK-vc6p-z8X8TCJUsTp2RIRr0,35
+tests/profile_dict_diff.py,sha256=PAw-9MpIfUkT5_YQvGLjN4X0LFQPI6DC5XRctXjWEW4,283
+tests/test_dict_diff.py,sha256=BjFkNUyGTbi_brb7ZasCN3ZI1T9BPwq2IlvxEbLPf-0,3955
+dictionary_diff-0.0.2.dist-info/LICENSE,sha256=tq7pprFTQBL3NQ7uydNgpD46GWF1Ma_avfzZK5uX6zE,1071
+dictionary_diff-0.0.2.dist-info/METADATA,sha256=JdLlQqBrYaO7MqQzyygP3Ct84zPmWwypPJeDZxkhVfc,1113
+dictionary_diff-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dictionary_diff-0.0.2.dist-info/top_level.txt,sha256=SJmsxcTKbhQGdaLROFeL_nOdy8t3SqzCsFgBwN7VsWM,22
+dictionary_diff-0.0.2.dist-info/RECORD,,
