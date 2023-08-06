@@ -1,0 +1,5 @@
+setup.py
+src/booston.egg-info/PKG-INFO
+src/booston.egg-info/SOURCES.txt
+src/booston.egg-info/dependency_links.txt
+src/booston.egg-info/top_level.txt
