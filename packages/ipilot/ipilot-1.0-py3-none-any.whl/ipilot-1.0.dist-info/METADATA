@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ipilot
+Version: 1.0
+Summary: IP Information Lookup Tool
+Home-page: UNKNOWN
+Author: Luke Tainton
+Author-email: luke@tainton.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: certifi (==2022.6.15)
+Requires-Dist: charset-normalizer (==2.0.12)
+Requires-Dist: idna (==3.3)
+Requires-Dist: requests (==2.28.0)
+Requires-Dist: tabulate (==0.8.10)
+Requires-Dist: urllib3 (==1.26.9)
+
+UNKNOWN
+
