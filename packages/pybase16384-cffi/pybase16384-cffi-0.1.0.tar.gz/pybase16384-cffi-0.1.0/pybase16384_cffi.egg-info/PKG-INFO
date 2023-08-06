@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pybase16384-cffi
+Version: 0.1.0
+Summary: base16384 encode and decode
+Home-page: https://github.com/synodriver/pybase16384-cffi
+Author: synodriver
+Author-email: diguohuangjiajinweijun@gmail.com
+License: GPLv3
+Keywords: encode,decode,base16384
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Security :: Cryptography
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pybase16384-cffi
+
+### Same as the [origin one](https://github.com/synodriver/pybase16384), but runs on pypy with api compatibility

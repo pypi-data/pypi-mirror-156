@@ -1,0 +1,10 @@
+setup.py
+./base16384/base1464.c
+pybase16384/__init__.py
+pybase16384/build.py
+pybase16384_cffi.egg-info/PKG-INFO
+pybase16384_cffi.egg-info/SOURCES.txt
+pybase16384_cffi.egg-info/dependency_links.txt
+pybase16384_cffi.egg-info/not-zip-safe
+pybase16384_cffi.egg-info/requires.txt
+pybase16384_cffi.egg-info/top_level.txt
