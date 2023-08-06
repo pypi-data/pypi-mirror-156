@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ReverseBox
+Version: 0.0.10
+Summary: A set of functions useful in reverse engineering.
+Home-page: https://github.com/bartlomiejduda/ReverseBox
+Author: Bartlomiej Duda
+Author-email: ikskoks@gmail.com
+Keywords: ReverseBox,reverse engineering,RE,CRC,Hash,Encryption,Compression,Checksum,Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Archiving :: Compression
+Classifier: Topic :: Security :: Cryptography
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Info
+
+ReverseBox is a Python library with a set of functions
+useful in reverse engineering.
