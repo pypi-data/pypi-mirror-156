@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gag-python
+Version: 1.0.9
+Summary: Predict you age by image!
+Home-page: https://github.com/devProgst/gag-python
+Author: Andrey Ivanov
+Author-email: dev.progst@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+GAG-Python
+
+Predict you age by image!
+
