@@ -1,0 +1,2 @@
+[jupyter_serverproxy_servers]
+datasette = jupyter_datasette_proxy:setup_datasette
