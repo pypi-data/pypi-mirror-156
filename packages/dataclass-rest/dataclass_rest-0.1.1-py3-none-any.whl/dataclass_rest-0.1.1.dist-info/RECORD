@@ -1,0 +1,12 @@
+dataclass_rest/__init__.py,sha256=J-1FUlE3QYPpuRG-RxWjMf2oNAt5RpE7yuGtNNARDt4,211
+dataclass_rest/async_base.py,sha256=qFvn85Okj572-XfY4vTe_C1JL6Op4P0yZNkdHnJUZqQ,2060
+dataclass_rest/base.py,sha256=FqvU4V5EJORPqERageso7N-mW9CgNFc2gJeWFSTnjjs,2773
+dataclass_rest/common.py,sha256=AaQB44QM08vqN6aCCGUGiwmKj8KWU0A7SM4Sw8wzhkM,1533
+dataclass_rest/decorators.py,sha256=W45lorZi4p54y0HsAYWtlA6KNiJo6pFYtHc5wTGlok4,3871
+dataclass_rest/errors.py,sha256=JM2vBeiEOS2Zdw9XonxLa6DkYPlDwieDP6HhbbTEGOY,78
+dataclass_rest/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataclass_rest/sync_base.py,sha256=HV7a92PM_zZXgHveKd7nMtcI9qT4jOiUaLt6eX8OhJw,1985
+dataclass_rest-0.1.1.dist-info/METADATA,sha256=RmnX0E3-jSbbiiThkD7P7hFJAkDk9m3KDcjREHpP6tI,3162
+dataclass_rest-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dataclass_rest-0.1.1.dist-info/top_level.txt,sha256=osFYAxU24c2sCKk3Z-z5KBHFpZ40SAoQ2e0BRqjCC1I,15
+dataclass_rest-0.1.1.dist-info/RECORD,,

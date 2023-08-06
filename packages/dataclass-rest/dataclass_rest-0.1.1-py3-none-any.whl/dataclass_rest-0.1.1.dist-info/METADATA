@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: dataclass-rest
+Version: 0.1.1
+Summary: An utility for writing simple clients for REST like APIs
+Home-page: https://github.com/tishka17/dataclass_rest
+Author: A. Tikhonov
+Author-email: 17@itishka.org
+License: Apache2
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: dataclass-factory
+Requires-Dist: dataclasses ; python_version < "3.7"
+Requires-Dist: typing-extensions ; python_version < "3.8"
+
+# Dataclass REST
+
+[![PyPI version](https://badge.fury.io/py/dataclass-rest.svg)](https://badge.fury.io/py/dataclass-rest)
+[![Build Status](https://travis-ci.org/Tishka17/dataclass_rest.svg?branch=master)](https://travis-ci.org/Tishka17/dataclass_rest)
+
+A modern and simple way to create clients for REST like APIs
+
+## Quickstart
+
+
+Step 1. Install
+```bash
+pip install dataclass_rest requests
+```
+
+
+Step 2. Declare models
+
+```python
+@dataclass
+class Todo:
+    id: int
+    user_id: int
+    title: str
+    completed: bool
+```
+
+Step 3. Create and configure client
+
+```python
+
+from requests import Session
+from dataclass_rest.sync_base import BaseClient
+
+class RealClient(Client):
+    def __init__(self):
+        super().__init__("https://example.com/api", Session())
+```
+
+Step 4. Declare methods using `get`/`post`/`delete`/`patch`/`put` decorators. 
+Type hints are required. Body of method is ignored.
+
+Use any method arguments to format URL.
+`body` argument is sent as request body with json. Other arguments, not used in URL are passed as query parameters.
+`get` and `delete` does not have body.
+
+```python
+from typing import Optional, List
+from requests import Session
+from dataclass_rest import get, post, delete
+from dataclass_rest.sync_base import Client
+
+class RealClient(Client):
+    def __init__(self):
+        super().__init__("https://example.com/api", Session())
+
+    @get("todos/{id}")
+    def get_todo(self, id: str) -> Todo:
+        pass
+
+    @get("todos")
+    def list_todos(self, user_id: Optional[int]) -> List[Todo]:
+        pass
+
+    @delete("todos/{id}")
+    def delete_todo(self, id: int):
+        pass
+
+    @post("todos")
+    def create_todo(self, body: Todo) -> Todo:
+        """Создаем Todo"""
+```
+
+## Asyncio
+
+To use async client insted of sync:
+
+1. Install `aiohttp` (instead of `reuests`)
+2. Change `dataclass_rest.sync_base.Client` to `dataclass_rest.async_base.AsyncClient`
+3. Add `async` keyword to your methods 
+
+## Configuring
+
+* Override `_init_factory` or `_init_args_factory` to provide dataclass factory with required settings  
+    (see [datacass_factory](https://github.com/Tishka17/dataclass_factory)).
+* You can use different body argument name if you want. Just pass `body_name` to the decorator.
+* `args_factory` can be configured with scehmas for every argument type.  
+    They are awailable as `args_class` of original method. E.g `RealClient.get_todo.args_class`
+* Custom error handlers can be set adding them to `error_handlers` using `add_handler` method
+ 
