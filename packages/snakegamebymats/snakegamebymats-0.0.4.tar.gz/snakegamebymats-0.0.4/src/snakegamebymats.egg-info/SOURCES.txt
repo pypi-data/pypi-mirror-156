@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/snakegamebymats.egg-info/PKG-INFO
+src/snakegamebymats.egg-info/SOURCES.txt
+src/snakegamebymats.egg-info/dependency_links.txt
+src/snakegamebymats.egg-info/top_level.txt
+src/snakevonmats/__init__.py
+src/snakevonmats/snake.py
