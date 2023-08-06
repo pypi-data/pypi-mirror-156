@@ -1,0 +1,11 @@
+parti_pytorch/__init__.py,sha256=9E-1AOsra1YRzKun1pvwt1FTcCEd-VFVFXmuPu2_dYo,154
+parti_pytorch/optimizer.py,sha256=9NiG1nWuPy8fMr6_ZwVZ0wkD4pwL_3rFiyueXWgoEeQ,943
+parti_pytorch/parti_pytorch.py,sha256=301qgFDzXyQDauZmiu99P5gh_m2a2k4ubdrH68f8IZE,13116
+parti_pytorch/t5.py,sha256=1g5Z8vN0oPqq5eE5Qx_wBgAR4aAldKiW0mL-aaK_ijk,2027
+parti_pytorch/vit_vqgan.py,sha256=BIHsTHmdY3c5kY22ZiqGNi_nAe09quolcnR0hRVtePA,17106
+parti_pytorch/vit_vqgan_trainer.py,sha256=3hd_GhRCi7Z-P3ljRTLdjcTmBahRIPXF12pGrSsWOvM,8330
+parti_pytorch-0.0.11.dist-info/LICENSE,sha256=xZDkKtpHE2TPCAeqKe1fjdpKernl1YW-d01j_1ltkAU,1066
+parti_pytorch-0.0.11.dist-info/METADATA,sha256=b_SjkSlsZG67Y93F4uw2NQeRtt5VVqHJ0VBM88B9p6Q,884
+parti_pytorch-0.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+parti_pytorch-0.0.11.dist-info/top_level.txt,sha256=NalyAGgIjnA7mEODKvJ0Xo-ed25egQ_oLQH_9AVdPag,14
+parti_pytorch-0.0.11.dist-info/RECORD,,
