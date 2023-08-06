@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sup-dolphin-memory-lib
+Version: 0.1.1
+Summary: A Python library for reading and writing the memory of an emulated game in Dolphin
+Home-page: https://github.com/sup39/sup-dolphin-memory-lib
+Author: sup39
+Author-email: sms@sup39.dev
+License: MIT
+Project-URL: Bug Tracker, https://github.com/sup39/sup-dolphin-memory-lib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psutil (~=5.9)
+
+# dolphin-memory-lib
+A Python library for reading and writing the memory of an emulated game in Dolphin.
+
+## Usage
+```python
+from dolphin.memorylib import Dolphin
+if dolphin.hook() is None:
+  print('No game is running')
+
+addr = 0x80000000
+dolphin.write_uint32(addr, 39)
+result = dolphin.read_uint32(0x80000000)
+# assert result == 39
+```
