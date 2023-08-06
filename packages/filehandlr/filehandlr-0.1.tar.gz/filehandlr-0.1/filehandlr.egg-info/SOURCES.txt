@@ -1,0 +1,8 @@
+README.md
+setup.py
+filehandlr/__init__.py
+filehandlr/__main__.py
+filehandlr.egg-info/PKG-INFO
+filehandlr.egg-info/SOURCES.txt
+filehandlr.egg-info/dependency_links.txt
+filehandlr.egg-info/top_level.txt
