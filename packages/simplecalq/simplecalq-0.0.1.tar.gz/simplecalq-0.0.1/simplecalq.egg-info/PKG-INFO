@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: simplecalq
+Version: 0.0.1
+Summary: simple python library to demonstrate python tooling
+Home-page: UNKNOWN
+Author: BrainStorm
+Author-email: dhiraj@gmail.com
+License: MIT
+Description: This is a simple calculation library.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

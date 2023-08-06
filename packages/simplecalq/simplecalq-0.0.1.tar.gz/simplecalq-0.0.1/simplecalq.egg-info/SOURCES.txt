@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+calculator/__init__.py
+calculator/simplecalc.py
+simplecalq.egg-info/PKG-INFO
+simplecalq.egg-info/SOURCES.txt
+simplecalq.egg-info/dependency_links.txt
+simplecalq.egg-info/requires.txt
+simplecalq.egg-info/top_level.txt
