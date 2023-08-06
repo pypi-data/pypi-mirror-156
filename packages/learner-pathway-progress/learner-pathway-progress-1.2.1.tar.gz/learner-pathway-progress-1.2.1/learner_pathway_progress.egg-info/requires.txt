@@ -1,0 +1,7 @@
+Django
+django-model-utils
+django-simple-history
+edx-django-utils
+edx-opaque-keys
+jsonfield
+pytz
