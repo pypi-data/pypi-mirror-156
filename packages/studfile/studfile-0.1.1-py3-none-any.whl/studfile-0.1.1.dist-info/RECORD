@@ -1,0 +1,8 @@
+studfile/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+studfile/main.py,sha256=zPRZh0HH6nDVXC3tf2FhO0yR15X0qbd1rAry_QVifOo,582
+studfile/parser.py,sha256=DXIQgAvQZDhqqwbPqxk3NvM0pM5jRuEM9jYH2QovUq4,1442
+studfile/runner.py,sha256=mdYKybGEKjAy6bFwHAIzoZ0EPP3VGwJcC_9Ucl6q4PQ,686
+studfile-0.1.1.dist-info/entry_points.txt,sha256=Y4mGXMJspqDuSmMLtoWXQuarG5MeQfUzzhHuc0I5Alk,43
+studfile-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+studfile-0.1.1.dist-info/METADATA,sha256=WEJXzC_wd1hk99aUh_5UFlvdTOwKfQ1b8Ygqh1zLWHA,1568
+studfile-0.1.1.dist-info/RECORD,,
