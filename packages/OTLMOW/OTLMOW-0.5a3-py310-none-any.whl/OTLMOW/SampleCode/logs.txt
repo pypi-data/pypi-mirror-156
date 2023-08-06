@@ -1,0 +1,2677 @@
+17:08:56,510 root ERROR name 'cls' is not defined
+17:08:56,510 root ERROR Could not create a class for Agent
+17:08:56,510 root ERROR name 'cls' is not defined
+17:08:56,510 root ERROR Could not create a class for AOWSType
+17:08:56,511 root ERROR name 'cls' is not defined
+17:08:56,511 root ERROR Could not create a class for AansluitendeConstructie
+17:08:56,511 root ERROR name 'cls' is not defined
+17:08:56,511 root ERROR Could not create a class for AbstracteAanvullendeGeometrie
+17:08:56,511 root ERROR name 'cls' is not defined
+17:08:56,511 root ERROR Could not create a class for AfschermendeConstructie
+17:08:56,511 root ERROR name 'cls' is not defined
+17:08:56,511 root ERROR Could not create a class for AfwijkendeKantopsluiting
+17:08:56,512 root ERROR name 'cls' is not defined
+17:08:56,512 root ERROR Could not create a class for AndereLaag
+17:08:56,512 root ERROR name 'cls' is not defined
+17:08:56,512 root ERROR Could not create a class for AndereVerharding
+17:08:56,512 root ERROR name 'cls' is not defined
+17:08:56,512 root ERROR Could not create a class for ArtificieleLaag
+17:08:56,512 root ERROR name 'cls' is not defined
+17:08:56,512 root ERROR Could not create a class for Bebakening
+17:08:56,512 root ERROR name 'cls' is not defined
+17:08:56,513 root ERROR Could not create a class for Beginstuk
+17:08:56,513 root ERROR name 'cls' is not defined
+17:08:56,513 root ERROR Could not create a class for BegroeidVoorkomen
+17:08:56,513 root ERROR name 'cls' is not defined
+17:08:56,513 root ERROR Could not create a class for Behuizing
+17:08:56,513 root ERROR name 'cls' is not defined
+17:08:56,513 root ERROR Could not create a class for BekledingComponent
+17:08:56,513 root ERROR name 'cls' is not defined
+17:08:56,513 root ERROR Could not create a class for Bestrating
+17:08:56,513 root ERROR name 'cls' is not defined
+17:08:56,514 root ERROR Could not create a class for Betonfundering
+17:08:56,514 root ERROR name 'cls' is not defined
+17:08:56,514 root ERROR Could not create a class for BetonnenConstructieElement
+17:08:56,514 root ERROR name 'cls' is not defined
+17:08:56,514 root ERROR Could not create a class for BevestigingGC
+17:08:56,514 root ERROR name 'cls' is not defined
+17:08:56,514 root ERROR Could not create a class for BijlageVoertuigkering
+17:08:56,514 root ERROR name 'cls' is not defined
+17:08:56,514 root ERROR Could not create a class for Brandvoorziening
+17:08:56,514 root ERROR name 'cls' is not defined
+17:08:56,514 root ERROR Could not create a class for Buis
+17:08:56,515 root ERROR name 'cls' is not defined
+17:08:56,515 root ERROR Could not create a class for Buitenkast
+17:08:56,515 root ERROR name 'cls' is not defined
+17:08:56,515 root ERROR Could not create a class for Communicatieapparatuur
+17:08:56,515 root ERROR name 'cls' is not defined
+17:08:56,515 root ERROR Could not create a class for ComplexeGeleiding
+17:08:56,515 root ERROR name 'cls' is not defined
+17:08:56,515 root ERROR Could not create a class for ConstructieElement
+17:08:56,515 root ERROR name 'cls' is not defined
+17:08:56,515 root ERROR Could not create a class for ConstructieElementenGC
+17:08:56,515 root ERROR name 'cls' is not defined
+17:08:56,516 root ERROR Could not create a class for ContainerBuis
+17:08:56,516 root ERROR name 'cls' is not defined
+17:08:56,516 root ERROR Could not create a class for Controller
+17:08:56,516 root ERROR name 'cls' is not defined
+17:08:56,516 root ERROR Could not create a class for DNB
+17:08:56,516 root ERROR name 'cls' is not defined
+17:08:56,516 root ERROR Could not create a class for DNBMeter
+17:08:56,516 root ERROR name 'cls' is not defined
+17:08:56,516 root ERROR Could not create a class for Detectie
+17:08:56,516 root ERROR name 'cls' is not defined
+17:08:56,516 root ERROR Could not create a class for Detectielus
+17:08:56,517 root ERROR name 'cls' is not defined
+17:08:56,517 root ERROR Could not create a class for Deur
+17:08:56,517 root ERROR name 'cls' is not defined
+17:08:56,517 root ERROR Could not create a class for Draagconstructie
+17:08:56,517 root ERROR name 'cls' is not defined
+17:08:56,517 root ERROR Could not create a class for DwarseMarkeringToegang
+17:08:56,517 root ERROR name 'cls' is not defined
+17:08:56,517 root ERROR Could not create a class for EMAfbakening
+17:08:56,517 root ERROR name 'cls' is not defined
+17:08:56,518 root ERROR Could not create a class for EMDraagconstructie
+17:08:56,518 root ERROR name 'cls' is not defined
+17:08:56,518 root ERROR Could not create a class for EigenschappenVoertuigkering
+17:08:56,518 root ERROR name 'cls' is not defined
+17:08:56,518 root ERROR Could not create a class for Energiemeter
+17:08:56,518 root ERROR name 'cls' is not defined
+17:08:56,518 root ERROR Could not create a class for FiguratieMarkeringToegang
+17:08:56,518 root ERROR name 'cls' is not defined
+17:08:56,518 root ERROR Could not create a class for FirmwareObject
+17:08:56,518 root ERROR name 'cls' is not defined
+17:08:56,518 root ERROR Could not create a class for Fundering
+17:08:56,519 root ERROR name 'cls' is not defined
+17:08:56,519 root ERROR Could not create a class for Geleiding
+17:08:56,519 root ERROR name 'cls' is not defined
+17:08:56,519 root ERROR Could not create a class for Geluidsschermelement
+17:08:56,519 root ERROR name 'cls' is not defined
+17:08:56,519 root ERROR Could not create a class for GestandaardiseerdeKantopsluiting
+17:08:56,519 root ERROR name 'cls' is not defined
+17:08:56,519 root ERROR Could not create a class for GrazigeVegetatie
+17:08:56,519 root ERROR name 'cls' is not defined
+17:08:56,519 root ERROR Could not create a class for HardwareToegang
+17:08:56,519 root ERROR name 'cls' is not defined
+17:08:56,520 root ERROR Could not create a class for Hoppinzuil
+17:08:56,520 root ERROR name 'cls' is not defined
+17:08:56,520 root ERROR Could not create a class for HoutigeVegetatie
+17:08:56,520 root ERROR name 'cls' is not defined
+17:08:56,520 root ERROR Could not create a class for IVRIComponent
+17:08:56,520 root ERROR name 'cls' is not defined
+17:08:56,520 root ERROR Could not create a class for Inloopbehuizing
+17:08:56,520 root ERROR name 'cls' is not defined
+17:08:56,520 root ERROR Could not create a class for Kabel
+17:08:56,520 root ERROR name 'cls' is not defined
+17:08:56,520 root ERROR Could not create a class for KabelAarding
+17:08:56,521 root ERROR name 'cls' is not defined
+17:08:56,521 root ERROR Could not create a class for KabelAardingSamenstelling
+17:08:56,521 root ERROR name 'cls' is not defined
+17:08:56,521 root ERROR Could not create a class for Kabelgeleiding
+17:08:56,521 root ERROR name 'cls' is not defined
+17:08:56,521 root ERROR Could not create a class for KabelgeleidingEnLeidingBevestiging
+17:08:56,521 root ERROR name 'cls' is not defined
+17:08:56,521 root ERROR Could not create a class for Kantopsluiting
+17:08:56,521 root ERROR name 'cls' is not defined
+17:08:56,521 root ERROR Could not create a class for Kast
+17:08:56,521 root ERROR name 'cls' is not defined
+17:08:56,522 root ERROR Could not create a class for KlassiekeFundering
+17:08:56,522 root ERROR name 'cls' is not defined
+17:08:56,522 root ERROR Could not create a class for LEDBord
+17:08:56,522 root ERROR name 'cls' is not defined
+17:08:56,522 root ERROR Could not create a class for Laag
+17:08:56,522 root ERROR name 'cls' is not defined
+17:08:56,522 root ERROR Could not create a class for LaagBouwklasse
+17:08:56,522 root ERROR name 'cls' is not defined
+17:08:56,522 root ERROR Could not create a class for LaagDikte
+17:08:56,523 root ERROR name 'cls' is not defined
+17:08:56,523 root ERROR Could not create a class for LaagProductidentificatiecode
+17:08:56,523 root ERROR name 'cls' is not defined
+17:08:56,523 root ERROR Could not create a class for Leiding
+17:08:56,523 root ERROR name 'cls' is not defined
+17:08:56,523 root ERROR Could not create a class for LijnvormigElement
+17:08:56,523 root ERROR name 'cls' is not defined
+17:08:56,523 root ERROR Could not create a class for LinkendElement
+17:08:56,523 root ERROR name 'cls' is not defined
+17:08:56,523 root ERROR Could not create a class for Luchtkwaliteittoestel
+17:08:56,524 root ERROR name 'cls' is not defined
+17:08:56,524 root ERROR Could not create a class for Markering
+17:08:56,524 root ERROR name 'cls' is not defined
+17:08:56,524 root ERROR Could not create a class for NietWeggebondenDetectie
+17:08:56,524 root ERROR name 'cls' is not defined
+17:08:56,524 root ERROR Could not create a class for OmhullendeInrichting
+17:08:56,524 root ERROR name 'cls' is not defined
+17:08:56,524 root ERROR Could not create a class for PTModuleMetFirmware
+17:08:56,524 root ERROR name 'cls' is not defined
+17:08:56,525 root ERROR Could not create a class for PTModuleZFirmware
+17:08:56,525 root ERROR name 'cls' is not defined
+17:08:56,525 root ERROR Could not create a class for PTRegelaarModule
+17:08:56,525 root ERROR name 'cls' is not defined
+17:08:56,525 root ERROR Could not create a class for PU
+17:08:56,525 root ERROR name 'cls' is not defined
+17:08:56,525 root ERROR Could not create a class for Proef
+17:08:56,525 root ERROR name 'cls' is not defined
+17:08:56,525 root ERROR Could not create a class for Put
+17:08:56,525 root ERROR name 'cls' is not defined
+17:08:56,525 root ERROR Could not create a class for PutRelatie
+17:08:56,525 root ERROR name 'cls' is not defined
+17:08:56,525 root ERROR Could not create a class for SchokindexVoertuigkering
+17:08:56,525 root ERROR name 'cls' is not defined
+17:08:56,525 root ERROR Could not create a class for Seinlantaarn
+17:08:56,525 root ERROR name 'cls' is not defined
+17:08:56,525 root ERROR Could not create a class for SelNietSelLus
+17:08:56,526 root ERROR name 'cls' is not defined
+17:08:56,526 root ERROR Could not create a class for Signalisatie
+17:08:56,526 root ERROR name 'cls' is not defined
+17:08:56,526 root ERROR Could not create a class for SoftwareToegang
+17:08:56,526 root ERROR name 'cls' is not defined
+17:08:56,526 root ERROR Could not create a class for StalenConstructieElement
+17:08:56,526 root ERROR name 'cls' is not defined
+17:08:56,526 root ERROR Could not create a class for StalenProfiel
+17:08:56,526 root ERROR name 'cls' is not defined
+17:08:56,526 root ERROR Could not create a class for SteunStandaard
+17:08:56,526 root ERROR name 'cls' is not defined
+17:08:56,526 root ERROR Could not create a class for Straatmeubilair
+17:08:56,526 root ERROR name 'cls' is not defined
+17:08:56,527 root ERROR Could not create a class for TerreinDeel
+17:08:56,527 root ERROR name 'cls' is not defined
+17:08:56,527 root ERROR Could not create a class for TypeWeggebruiker
+17:08:56,527 root ERROR name 'cls' is not defined
+17:08:56,527 root ERROR Could not create a class for VRIDraagconstructie
+17:08:56,527 root ERROR name 'cls' is not defined
+17:08:56,527 root ERROR Could not create a class for VRModuleMetFirmware
+17:08:56,527 root ERROR name 'cls' is not defined
+17:08:56,527 root ERROR Could not create a class for VRModuleZFirmware
+17:08:56,527 root ERROR name 'cls' is not defined
+17:08:56,527 root ERROR Could not create a class for VegetatieElement
+17:08:56,527 root ERROR name 'cls' is not defined
+17:08:56,527 root ERROR Could not create a class for Ventilatie
+17:08:56,527 root ERROR name 'cls' is not defined
+17:08:56,528 root ERROR Could not create a class for Verankering
+17:08:56,528 root ERROR name 'cls' is not defined
+17:08:56,528 root ERROR Could not create a class for Verkeersbord
+17:08:56,528 root ERROR name 'cls' is not defined
+17:08:56,528 root ERROR Could not create a class for Verkeerslicht
+17:08:56,528 root ERROR name 'cls' is not defined
+17:08:56,528 root ERROR Could not create a class for VerkeersregelaarModule
+17:08:56,528 root ERROR name 'cls' is not defined
+17:08:56,528 root ERROR Could not create a class for Verkeersteken
+17:08:56,528 root ERROR name 'cls' is not defined
+17:08:56,528 root ERROR Could not create a class for Verlichtingstoestel
+17:08:56,528 root ERROR name 'cls' is not defined
+17:08:56,528 root ERROR Could not create a class for VerlichtingstoestelConnector
+17:08:56,528 root ERROR name 'cls' is not defined
+17:08:56,528 root ERROR Could not create a class for Voedingspunt
+17:08:56,528 root ERROR name 'cls' is not defined
+17:08:56,528 root ERROR Could not create a class for Waarschuwingslantaarn
+17:08:56,528 root ERROR name 'cls' is not defined
+17:08:56,528 root ERROR Could not create a class for ZenderOntvangerToegang
+17:08:56,529 root ERROR name 'cls' is not defined
+17:08:56,529 root ERROR Could not create a class for AIMDBStatus
+17:08:56,529 root ERROR name 'cls' is not defined
+17:08:56,529 root ERROR Could not create a class for AIMNaamObject
+17:08:56,529 root ERROR name 'cls' is not defined
+17:08:56,529 root ERROR Could not create a class for AIMObject
+17:08:56,529 root ERROR name 'cls' is not defined
+17:08:56,529 root ERROR Could not create a class for AIMToestand
+17:08:56,529 root ERROR name 'cls' is not defined
+17:08:56,529 root ERROR Could not create a class for ActivityComplex
+17:08:56,529 root ERROR name 'cls' is not defined
+17:08:56,529 root ERROR Could not create a class for Appurtenance
+17:08:56,529 root ERROR name 'cls' is not defined
+17:08:56,529 root ERROR Could not create a class for Derdenobject
+17:08:56,529 root ERROR name 'cls' is not defined
+17:08:56,529 root ERROR Could not create a class for DirectioneleRelatie
+17:08:56,529 root ERROR name 'cls' is not defined
+17:08:56,529 root ERROR Could not create a class for ElectricityAppurtenance
+17:08:56,529 root ERROR name 'cls' is not defined
+17:08:56,530 root ERROR Could not create a class for ElectricityCable
+17:08:56,530 root ERROR name 'cls' is not defined
+17:08:56,530 root ERROR Could not create a class for NaampadObject
+17:08:56,530 root ERROR name 'cls' is not defined
+17:08:56,530 root ERROR Could not create a class for NietDirectioneleRelatie
+17:08:56,530 root ERROR name 'cls' is not defined
+17:08:56,530 root ERROR Could not create a class for Pipe
+17:08:56,530 root ERROR name 'cls' is not defined
+17:08:56,530 root ERROR Could not create a class for RelatieObject
+17:08:56,530 root ERROR name 'cls' is not defined
+17:08:56,530 root ERROR Could not create a class for TelecommunicationsAppurtenance
+17:08:56,530 root ERROR name 'cls' is not defined
+17:08:56,530 root ERROR Could not create a class for TelecommunicationsCable
+17:08:56,530 root ERROR name 'cls' is not defined
+17:08:56,530 root ERROR Could not create a class for Aardingsinstallatie
+17:08:56,530 root ERROR name 'cls' is not defined
+17:08:56,530 root ERROR Could not create a class for Baanlichaam
+17:08:56,530 root ERROR name 'cls' is not defined
+17:08:56,530 root ERROR Could not create a class for BlindePut
+17:08:56,531 root ERROR name 'cls' is not defined
+17:08:56,531 root ERROR Could not create a class for Bochtafbakeningsinstallatie
+17:08:56,531 root ERROR name 'cls' is not defined
+17:08:56,531 root ERROR Could not create a class for Ecoduct
+17:08:56,531 root ERROR name 'cls' is not defined
+17:08:56,531 root ERROR Could not create a class for Ecoduiker
+17:08:56,531 root ERROR name 'cls' is not defined
+17:08:56,531 root ERROR Could not create a class for Ecokoker
+17:08:56,531 root ERROR name 'cls' is not defined
+17:08:56,531 root ERROR Could not create a class for Ecotunnel
+17:08:56,531 root ERROR name 'cls' is not defined
+17:08:56,531 root ERROR Could not create a class for Ecovallei
+17:08:56,531 root ERROR name 'cls' is not defined
+17:08:56,531 root ERROR Could not create a class for Fietstelinstallatie
+17:08:56,531 root ERROR name 'cls' is not defined
+17:08:56,531 root ERROR Could not create a class for Flitsgroep
+17:08:56,531 root ERROR name 'cls' is not defined
+17:08:56,531 root ERROR Could not create a class for Flitspaal
+17:08:56,531 root ERROR name 'cls' is not defined
+17:08:56,531 root ERROR Could not create a class for Gebouw
+17:08:56,532 root ERROR name 'cls' is not defined
+17:08:56,532 root ERROR Could not create a class for GecombineerdePut
+17:08:56,532 root ERROR name 'cls' is not defined
+17:08:56,532 root ERROR Could not create a class for GeluidwerendeConstructie
+17:08:56,532 root ERROR name 'cls' is not defined
+17:08:56,532 root ERROR Could not create a class for GroepDwarseMarkeringEnFiguratie
+17:08:56,532 root ERROR name 'cls' is not defined
+17:08:56,532 root ERROR Could not create a class for GroepMarkering
+17:08:56,532 root ERROR name 'cls' is not defined
+17:08:56,532 root ERROR Could not create a class for Gronddam
+17:08:56,532 root ERROR name 'cls' is not defined
+17:08:56,532 root ERROR Could not create a class for Hulppost
+17:08:56,532 root ERROR name 'cls' is not defined
+17:08:56,532 root ERROR Could not create a class for IPBackbone
+17:08:56,532 root ERROR name 'cls' is not defined
+17:08:56,532 root ERROR Could not create a class for InspectieputRiolering
+17:08:56,532 root ERROR name 'cls' is not defined
+17:08:56,532 root ERROR Could not create a class for Kabelkoker
+17:08:56,533 root ERROR name 'cls' is not defined
+17:08:56,533 root ERROR Could not create a class for L2AccessStructuur
+17:08:56,533 root ERROR name 'cls' is not defined
+17:08:56,533 root ERROR Could not create a class for LEDRotondeafbakening
+17:08:56,533 root ERROR name 'cls' is not defined
+17:08:56,533 root ERROR Could not create a class for LEDWegdekreflectorBebakening
+17:08:56,533 root ERROR name 'cls' is not defined
+17:08:56,533 root ERROR Could not create a class for Link
+17:08:56,533 root ERROR name 'cls' is not defined
+17:08:56,533 root ERROR Could not create a class for Lokaal
+17:08:56,533 root ERROR name 'cls' is not defined
+17:08:56,533 root ERROR Could not create a class for Luchtkwaliteitsensor
+17:08:56,533 root ERROR name 'cls' is not defined
+17:08:56,533 root ERROR Could not create a class for MIVInstallatie
+17:08:56,533 root ERROR name 'cls' is not defined
+17:08:56,533 root ERROR Could not create a class for Onderbord
+17:08:56,533 root ERROR name 'cls' is not defined
+17:08:56,533 root ERROR Could not create a class for Pad
+17:08:56,533 root ERROR name 'cls' is not defined
+17:08:56,534 root ERROR Could not create a class for Rioleringsstelsel
+17:08:56,534 root ERROR name 'cls' is not defined
+17:08:56,534 root ERROR Could not create a class for Slagboom
+17:08:56,534 root ERROR name 'cls' is not defined
+17:08:56,534 root ERROR Could not create a class for Trajectcontrole
+17:08:56,534 root ERROR name 'cls' is not defined
+17:08:56,534 root ERROR Could not create a class for VLAN
+17:08:56,534 root ERROR name 'cls' is not defined
+17:08:56,534 root ERROR Could not create a class for VerkeersbordConcept
+17:08:56,534 root ERROR name 'cls' is not defined
+17:08:56,534 root ERROR Could not create a class for VerkeersbordVerkeersteken
+17:08:56,534 root ERROR name 'cls' is not defined
+17:08:56,534 root ERROR Could not create a class for Verkeersbordopstelling
+17:08:56,534 root ERROR name 'cls' is not defined
+17:08:56,534 root ERROR Could not create a class for Wegberm
+17:08:56,534 root ERROR name 'cls' is not defined
+17:08:56,534 root ERROR Could not create a class for Zpad
+17:08:56,534 root ERROR name 'cls' is not defined
+17:08:56,534 root ERROR Could not create a class for BeheerBoomvorm
+17:08:56,535 root ERROR name 'cls' is not defined
+17:08:56,535 root ERROR Could not create a class for BeheerExoten
+17:08:56,535 root ERROR name 'cls' is not defined
+17:08:56,535 root ERROR Could not create a class for BeheerGrazigeVegetatie
+17:08:56,535 root ERROR name 'cls' is not defined
+17:08:56,535 root ERROR Could not create a class for BeheerHoutigeVegetatie
+17:08:56,535 root ERROR name 'cls' is not defined
+17:08:56,535 root ERROR Could not create a class for BeheerSierbeplanting
+17:08:56,535 root ERROR name 'cls' is not defined
+17:08:56,535 root ERROR Could not create a class for AIDModule
+17:08:56,535 root ERROR name 'cls' is not defined
+17:08:56,535 root ERROR Could not create a class for ANPRCamera
+17:08:56,535 root ERROR name 'cls' is not defined
+17:08:56,535 root ERROR Could not create a class for Aansluitmof
+17:08:56,535 root ERROR name 'cls' is not defined
+17:08:56,535 root ERROR Could not create a class for Aansluitopening
+17:08:56,535 root ERROR name 'cls' is not defined
+17:08:56,535 root ERROR Could not create a class for Aanstraalverlichting
+17:08:56,535 root ERROR name 'cls' is not defined
+17:08:56,535 root ERROR Could not create a class for AanvullendeGeometrie
+17:08:56,536 root ERROR name 'cls' is not defined
+17:08:56,536 root ERROR Could not create a class for Aardingskabel
+17:08:56,536 root ERROR name 'cls' is not defined
+17:08:56,536 root ERROR Could not create a class for Aardingslus
+17:08:56,536 root ERROR name 'cls' is not defined
+17:08:56,536 root ERROR Could not create a class for Aardingsonderbreker
+17:08:56,536 root ERROR name 'cls' is not defined
+17:08:56,536 root ERROR Could not create a class for Aardingspen
+17:08:56,536 root ERROR name 'cls' is not defined
+17:08:56,536 root ERROR Could not create a class for Afmetingsensor
+17:08:56,536 root ERROR name 'cls' is not defined
+17:08:56,536 root ERROR Could not create a class for Afscherming
+17:08:56,536 root ERROR name 'cls' is not defined
+17:08:56,536 root ERROR Could not create a class for Afsluiter
+17:08:56,536 root ERROR name 'cls' is not defined
+17:08:56,536 root ERROR Could not create a class for Aftakking
+17:08:56,536 root ERROR name 'cls' is not defined
+17:08:56,536 root ERROR Could not create a class for AnalogeHoppinzuil
+17:08:56,537 root ERROR name 'cls' is not defined
+17:08:56,537 root ERROR Could not create a class for Antenne
+17:08:56,537 root ERROR name 'cls' is not defined
+17:08:56,537 root ERROR Could not create a class for AntiParkeerpaal
+17:08:56,537 root ERROR name 'cls' is not defined
+17:08:56,537 root ERROR Could not create a class for Armatuurcontroller
+17:08:56,537 root ERROR name 'cls' is not defined
+17:08:56,537 root ERROR Could not create a class for Audioversterker
+17:08:56,537 root ERROR name 'cls' is not defined
+17:08:56,537 root ERROR Could not create a class for Batterij
+17:08:56,537 root ERROR name 'cls' is not defined
+17:08:56,537 root ERROR Could not create a class for Bel
+17:08:56,537 root ERROR name 'cls' is not defined
+17:08:56,537 root ERROR Could not create a class for Beschermbuis
+17:08:56,537 root ERROR name 'cls' is not defined
+17:08:56,537 root ERROR Could not create a class for BeschermingWapening
+17:08:56,537 root ERROR name 'cls' is not defined
+17:08:56,537 root ERROR Could not create a class for BestratingVanBetonstraatsteen
+17:08:56,538 root ERROR name 'cls' is not defined
+17:08:56,538 root ERROR Could not create a class for BestratingVanBetontegel
+17:08:56,538 root ERROR name 'cls' is not defined
+17:08:56,538 root ERROR Could not create a class for BestratingVanGebakkenStraatsteen
+17:08:56,538 root ERROR name 'cls' is not defined
+17:08:56,538 root ERROR Could not create a class for BestratingVanGrasbetontegel
+17:08:56,538 root ERROR name 'cls' is not defined
+17:08:56,539 root ERROR Could not create a class for BestratingVanKassei
+17:08:56,539 root ERROR name 'cls' is not defined
+17:08:56,539 root ERROR Could not create a class for BestratingVanMozaiekkei
+17:08:56,539 root ERROR name 'cls' is not defined
+17:08:56,539 root ERROR Could not create a class for BestratingVanNatuursteentegel
+17:08:56,539 root ERROR name 'cls' is not defined
+17:08:56,539 root ERROR Could not create a class for Bestrijking
+17:08:56,539 root ERROR name 'cls' is not defined
+17:08:56,539 root ERROR Could not create a class for Bevestiging
+17:08:56,539 root ERROR name 'cls' is not defined
+17:08:56,539 root ERROR Could not create a class for Bevestigingsbeugel
+17:08:56,540 root ERROR name 'cls' is not defined
+17:08:56,540 root ERROR Could not create a class for BijzonderGeluidsschermelement
+17:08:56,540 root ERROR name 'cls' is not defined
+17:08:56,540 root ERROR Could not create a class for Binnenverlichtingstoestel
+17:08:56,540 root ERROR name 'cls' is not defined
+17:08:56,540 root ERROR Could not create a class for BitumineuzeLaag
+17:08:56,540 root ERROR name 'cls' is not defined
+17:08:56,540 root ERROR Could not create a class for BloemrijkGlanshavergrasland
+17:08:56,540 root ERROR name 'cls' is not defined
+17:08:56,540 root ERROR Could not create a class for BloemrijkGraslandGraslandfase4
+17:08:56,540 root ERROR name 'cls' is not defined
+17:08:56,541 root ERROR Could not create a class for BloemrijkStruisgrasgrasland
+17:08:56,541 root ERROR name 'cls' is not defined
+17:08:56,541 root ERROR Could not create a class for BloemrijkVochtigTotNatGrasland
+17:08:56,541 root ERROR name 'cls' is not defined
+17:08:56,541 root ERROR Could not create a class for BoogpaalVerkeerslicht
+17:08:56,541 root ERROR name 'cls' is not defined
+17:08:56,541 root ERROR Could not create a class for Boom
+17:08:56,541 root ERROR name 'cls' is not defined
+17:08:56,541 root ERROR Could not create a class for Boombrug
+17:08:56,541 root ERROR name 'cls' is not defined
+17:08:56,541 root ERROR Could not create a class for Bouwput
+17:08:56,542 root ERROR name 'cls' is not defined
+17:08:56,542 root ERROR Could not create a class for Bovenbouw
+17:08:56,542 root ERROR name 'cls' is not defined
+17:08:56,542 root ERROR Could not create a class for Braam
+17:08:56,542 root ERROR name 'cls' is not defined
+17:08:56,542 root ERROR Could not create a class for Brandblusser
+17:08:56,542 root ERROR name 'cls' is not defined
+17:08:56,542 root ERROR Could not create a class for Brandhaspel
+17:08:56,542 root ERROR name 'cls' is not defined
+17:08:56,542 root ERROR Could not create a class for Brandleiding
+17:08:56,542 root ERROR name 'cls' is not defined
+17:08:56,543 root ERROR Could not create a class for Brandnetelruigte
+17:08:56,543 root ERROR name 'cls' is not defined
+17:08:56,543 root ERROR Could not create a class for BremEnGaspeldoornstruweel
+17:08:56,543 root ERROR name 'cls' is not defined
+17:08:56,543 root ERROR Could not create a class for Buisbekleding
+17:08:56,543 root ERROR name 'cls' is not defined
+17:08:56,543 root ERROR Could not create a class for Cabine
+17:08:56,543 root ERROR name 'cls' is not defined
+17:08:56,543 root ERROR Could not create a class for Cabinecontroller
+17:08:56,543 root ERROR name 'cls' is not defined
+17:08:56,543 root ERROR Could not create a class for Calamiteitendoorsteek
+17:08:56,544 root ERROR name 'cls' is not defined
+17:08:56,544 root ERROR Could not create a class for CalamiteitsBord
+17:08:56,544 root ERROR name 'cls' is not defined
+17:08:56,544 root ERROR Could not create a class for Camera
+17:08:56,544 root ERROR name 'cls' is not defined
+17:08:56,544 root ERROR Could not create a class for Cementbetonverharding
+17:08:56,544 root ERROR name 'cls' is not defined
+17:08:56,544 root ERROR Could not create a class for Cluster
+17:08:56,544 root ERROR name 'cls' is not defined
+17:08:56,544 root ERROR Could not create a class for Codeklavier
+17:08:56,544 root ERROR name 'cls' is not defined
+17:08:56,545 root ERROR Could not create a class for ColloidaalBeton
+17:08:56,545 root ERROR name 'cls' is not defined
+17:08:56,545 root ERROR Could not create a class for Combilantaarn
+17:08:56,545 root ERROR name 'cls' is not defined
+17:08:56,545 root ERROR Could not create a class for ConstructieSokkel
+17:08:56,545 root ERROR name 'cls' is not defined
+17:08:56,545 root ERROR Could not create a class for Contactor
+17:08:56,545 root ERROR name 'cls' is not defined
+17:08:56,545 root ERROR Could not create a class for Contactpunt
+17:08:56,545 root ERROR name 'cls' is not defined
+17:08:56,545 root ERROR Could not create a class for Container
+17:08:56,546 root ERROR name 'cls' is not defined
+17:08:56,546 root ERROR Could not create a class for Contourverlichting
+17:08:56,546 root ERROR name 'cls' is not defined
+17:08:56,546 root ERROR Could not create a class for DNBHoogspanning
+17:08:56,546 root ERROR name 'cls' is not defined
+17:08:56,546 root ERROR Could not create a class for DNBLaagspanning
+17:08:56,546 root ERROR name 'cls' is not defined
+17:08:56,546 root ERROR Could not create a class for Damwand
+17:08:56,546 root ERROR name 'cls' is not defined
+17:08:56,546 root ERROR Could not create a class for Datakabel
+17:08:56,546 root ERROR name 'cls' is not defined
+17:08:56,547 root ERROR Could not create a class for DetectieCamera
+17:08:56,547 root ERROR name 'cls' is not defined
+17:08:56,547 root ERROR Could not create a class for Dieselgenerator
+17:08:56,547 root ERROR name 'cls' is not defined
+17:08:56,547 root ERROR Could not create a class for Dilatatie
+17:08:56,547 root ERROR name 'cls' is not defined
+17:08:56,547 root ERROR Could not create a class for Divergentiepuntbebakeningselement
+17:08:56,547 root ERROR name 'cls' is not defined
+17:08:56,547 root ERROR Could not create a class for Dolomietverharding
+17:08:56,547 root ERROR name 'cls' is not defined
+17:08:56,547 root ERROR Could not create a class for DominantGraslandfase2
+17:08:56,548 root ERROR name 'cls' is not defined
+17:08:56,548 root ERROR Could not create a class for Dongle
+17:08:56,548 root ERROR name 'cls' is not defined
+17:08:56,548 root ERROR Could not create a class for Doorgang
+17:08:56,548 root ERROR name 'cls' is not defined
+17:08:56,548 root ERROR Could not create a class for Doornstruweel
+17:08:56,548 root ERROR name 'cls' is not defined
+17:08:56,548 root ERROR Could not create a class for Doorverbinddoos
+17:08:56,548 root ERROR name 'cls' is not defined
+17:08:56,548 root ERROR Could not create a class for Draineerbuis
+17:08:56,548 root ERROR name 'cls' is not defined
+17:08:56,549 root ERROR Could not create a class for Drukknop
+17:08:56,549 root ERROR name 'cls' is not defined
+17:08:56,549 root ERROR Could not create a class for Drukverhogingsgroep
+17:08:56,549 root ERROR name 'cls' is not defined
+17:08:56,549 root ERROR Could not create a class for Duikschot
+17:08:56,549 root ERROR name 'cls' is not defined
+17:08:56,549 root ERROR Could not create a class for Duingrasland
+17:08:56,549 root ERROR name 'cls' is not defined
+17:08:56,549 root ERROR Could not create a class for DunneOverlaging
+17:08:56,549 root ERROR name 'cls' is not defined
+17:08:56,549 root ERROR Could not create a class for DwarseMarkering
+17:08:56,550 root ERROR name 'cls' is not defined
+17:08:56,550 root ERROR Could not create a class for DwarseMarkeringVerschuind
+17:08:56,550 root ERROR name 'cls' is not defined
+17:08:56,550 root ERROR Could not create a class for Dwerghavergrasland
+17:08:56,550 root ERROR name 'cls' is not defined
+17:08:56,550 root ERROR Could not create a class for DwergstruikvegetatieHeidesoorten
+17:08:56,550 root ERROR name 'cls' is not defined
+17:08:56,550 root ERROR Could not create a class for DynBordExternePU
+17:08:56,550 root ERROR name 'cls' is not defined
+17:08:56,550 root ERROR Could not create a class for DynBordOpMaat
+17:08:56,550 root ERROR name 'cls' is not defined
+17:08:56,551 root ERROR Could not create a class for DynBordPK
+17:08:56,551 root ERROR name 'cls' is not defined
+17:08:56,551 root ERROR Could not create a class for DynBordRSS
+17:08:56,551 root ERROR name 'cls' is not defined
+17:08:56,551 root ERROR Could not create a class for DynBordRVMS
+17:08:56,551 root ERROR name 'cls' is not defined
+17:08:56,551 root ERROR Could not create a class for DynBordVMS
+17:08:56,551 root ERROR name 'cls' is not defined
+17:08:56,551 root ERROR Could not create a class for DynBordZ30
+17:08:56,551 root ERROR name 'cls' is not defined
+17:08:56,551 root ERROR Could not create a class for DynamischeVluchtwegindicatie
+17:08:56,552 root ERROR name 'cls' is not defined
+17:08:56,552 root ERROR Could not create a class for EcoPoort
+17:08:56,552 root ERROR name 'cls' is not defined
+17:08:56,552 root ERROR Could not create a class for Ecoraster
+17:08:56,552 root ERROR name 'cls' is not defined
+17:08:56,552 root ERROR Could not create a class for Eindstuk
+17:08:56,552 root ERROR name 'cls' is not defined
+17:08:56,552 root ERROR Could not create a class for EnergiemeterAWV
+17:08:56,552 root ERROR name 'cls' is not defined
+17:08:56,552 root ERROR Could not create a class for EnergiemeterDNB
+17:08:56,552 root ERROR name 'cls' is not defined
+17:08:56,553 root ERROR Could not create a class for EnergiemeterDNBPiek
+17:08:56,553 root ERROR name 'cls' is not defined
+17:08:56,553 root ERROR Could not create a class for EnergiemeterDNBReactief
+17:08:56,553 root ERROR name 'cls' is not defined
+17:08:56,553 root ERROR Could not create a class for EnergiemeterDerden
+17:08:56,553 root ERROR name 'cls' is not defined
+17:08:56,554 root ERROR Could not create a class for EquipotentiaalVerbinding
+17:08:56,554 root ERROR name 'cls' is not defined
+17:08:56,554 root ERROR Could not create a class for Exoten
+17:08:56,554 root ERROR name 'cls' is not defined
+17:08:56,554 root ERROR Could not create a class for ExterneDetectie
+17:08:56,554 root ERROR name 'cls' is not defined
+17:08:56,554 root ERROR Could not create a class for FieldOfView
+17:08:56,554 root ERROR name 'cls' is not defined
+17:08:56,554 root ERROR Could not create a class for Fietslantaarn
+17:08:56,554 root ERROR name 'cls' is not defined
+17:08:56,555 root ERROR Could not create a class for FietstelDisplay
+17:08:56,555 root ERROR name 'cls' is not defined
+17:08:56,555 root ERROR Could not create a class for Fietstelsysteem
+17:08:56,555 root ERROR name 'cls' is not defined
+17:08:56,555 root ERROR Could not create a class for FiguratieMarkering
+17:08:56,555 root ERROR name 'cls' is not defined
+17:08:56,555 root ERROR Could not create a class for FiguratieMarkeringVerschuind
+17:08:56,555 root ERROR name 'cls' is not defined
+17:08:56,555 root ERROR Could not create a class for Flitscamera
+17:08:56,555 root ERROR name 'cls' is not defined
+17:08:56,555 root ERROR Could not create a class for ForfaitaireAansluiting
+17:08:56,555 root ERROR name 'cls' is not defined
+17:08:56,556 root ERROR Could not create a class for Funderingsmassief
+17:08:56,556 root ERROR name 'cls' is not defined
+17:08:56,556 root ERROR Could not create a class for Funderingsplaat
+17:08:56,556 root ERROR name 'cls' is not defined
+17:08:56,556 root ERROR Could not create a class for GPU
+17:08:56,556 root ERROR name 'cls' is not defined
+17:08:56,556 root ERROR Could not create a class for Galgpaal
+17:08:56,556 root ERROR name 'cls' is not defined
+17:08:56,556 root ERROR Could not create a class for GeexpandeerdPolystyreen
+17:08:56,556 root ERROR name 'cls' is not defined
+17:08:56,556 root ERROR Could not create a class for GekleurdWegvlakMarkering
+17:08:56,557 root ERROR name 'cls' is not defined
+17:08:56,557 root ERROR Could not create a class for Geleideconstructie
+17:08:56,557 root ERROR name 'cls' is not defined
+17:08:56,557 root ERROR Could not create a class for Geleidingsverlichting
+17:08:56,557 root ERROR name 'cls' is not defined
+17:08:56,557 root ERROR Could not create a class for Geleidingswand
+17:08:56,557 root ERROR name 'cls' is not defined
+17:08:56,557 root ERROR Could not create a class for GeluidswerendeConstructie
+17:08:56,557 root ERROR name 'cls' is not defined
+17:08:56,557 root ERROR Could not create a class for Geotextiel
+17:08:56,558 root ERROR name 'cls' is not defined
+17:08:56,558 root ERROR Could not create a class for GetesteBeginconstructie
+17:08:56,558 root ERROR name 'cls' is not defined
+17:08:56,558 root ERROR Could not create a class for GrasKruidenmixGraslandfase3
+17:08:56,558 root ERROR name 'cls' is not defined
+17:08:56,558 root ERROR Could not create a class for Grasland
+17:08:56,558 root ERROR name 'cls' is not defined
+17:08:56,558 root ERROR Could not create a class for Grasmat
+17:08:56,558 root ERROR name 'cls' is not defined
+17:08:56,558 root ERROR Could not create a class for GrassenmixGraslandfase1
+17:08:56,558 root ERROR name 'cls' is not defined
+17:08:56,559 root ERROR Could not create a class for Grindgazon
+17:08:56,559 root ERROR name 'cls' is not defined
+17:08:56,559 root ERROR Could not create a class for HSBeveiligingscel
+17:08:56,559 root ERROR name 'cls' is not defined
+17:08:56,559 root ERROR Could not create a class for HSCabine
+17:08:56,559 root ERROR name 'cls' is not defined
+17:08:56,559 root ERROR Could not create a class for Haag
+17:08:56,559 root ERROR name 'cls' is not defined
+17:08:56,559 root ERROR Could not create a class for Handbediening
+17:08:56,559 root ERROR name 'cls' is not defined
+17:08:56,560 root ERROR Could not create a class for Handwiel
+17:08:56,560 root ERROR name 'cls' is not defined
+17:08:56,560 root ERROR Could not create a class for Hardware
+17:08:56,560 root ERROR name 'cls' is not defined
+17:08:56,560 root ERROR Could not create a class for HeeftAanvullendeGeometrie
+17:08:56,560 root ERROR name 'cls' is not defined
+17:08:56,560 root ERROR Could not create a class for HeeftBeheer
+17:08:56,560 root ERROR name 'cls' is not defined
+17:08:56,560 root ERROR Could not create a class for HeeftBetrokkene
+17:08:56,560 root ERROR name 'cls' is not defined
+17:08:56,560 root ERROR Could not create a class for HeeftNetwerkProtectie
+17:08:56,561 root ERROR name 'cls' is not defined
+17:08:56,561 root ERROR Could not create a class for HeeftNetwerktoegang
+17:08:56,561 root ERROR name 'cls' is not defined
+17:08:56,561 root ERROR Could not create a class for Heestermassief
+17:08:56,561 root ERROR name 'cls' is not defined
+17:08:56,561 root ERROR Could not create a class for HeischraalGrasland
+17:08:56,561 root ERROR name 'cls' is not defined
+17:08:56,561 root ERROR Could not create a class for Hoofdschakelaar
+17:08:56,561 root ERROR name 'cls' is not defined
+17:08:56,561 root ERROR Could not create a class for Hoogtedetectie
+17:08:56,561 root ERROR name 'cls' is not defined
+17:08:56,562 root ERROR Could not create a class for HoortBij
+17:08:56,562 root ERROR name 'cls' is not defined
+17:08:56,562 root ERROR Could not create a class for Huisaansluitput
+17:08:56,562 root ERROR name 'cls' is not defined
+17:08:56,562 root ERROR Could not create a class for Hulppostkast
+17:08:56,562 root ERROR name 'cls' is not defined
+17:08:56,562 root ERROR Could not create a class for Hulpstuk
+17:08:56,562 root ERROR name 'cls' is not defined
+17:08:56,562 root ERROR Could not create a class for Hydrant
+17:08:56,562 root ERROR name 'cls' is not defined
+17:08:56,563 root ERROR Could not create a class for IOKaart
+17:08:56,563 root ERROR name 'cls' is not defined
+17:08:56,563 root ERROR Could not create a class for ITSapp
+17:08:56,563 root ERROR name 'cls' is not defined
+17:08:56,563 root ERROR Could not create a class for Iepenstruweel
+17:08:56,563 root ERROR name 'cls' is not defined
+17:08:56,563 root ERROR Could not create a class for IndoorKast
+17:08:56,563 root ERROR name 'cls' is not defined
+17:08:56,563 root ERROR Could not create a class for Infiltratievoorziening
+17:08:56,563 root ERROR name 'cls' is not defined
+17:08:56,563 root ERROR Could not create a class for IntercomServer
+17:08:56,563 root ERROR name 'cls' is not defined
+17:08:56,564 root ERROR Could not create a class for IntercomToestel
+17:08:56,564 root ERROR name 'cls' is not defined
+17:08:56,564 root ERROR Could not create a class for InvasieveExoten
+17:08:56,564 root ERROR name 'cls' is not defined
+17:08:56,564 root ERROR Could not create a class for InwendigVerlichtPictogram
+17:08:56,564 root ERROR name 'cls' is not defined
+17:08:56,564 root ERROR Could not create a class for IpPowerSwitch
+17:08:56,564 root ERROR name 'cls' is not defined
+17:08:56,564 root ERROR Could not create a class for IsAdmOnderdeelVan
+17:08:56,564 root ERROR name 'cls' is not defined
+17:08:56,564 root ERROR Could not create a class for IsInspectieVan
+17:08:56,565 root ERROR name 'cls' is not defined
+17:08:56,565 root ERROR Could not create a class for IsNetwerkECC
+17:08:56,565 root ERROR name 'cls' is not defined
+17:08:56,565 root ERROR Could not create a class for IsSWGehostOp
+17:08:56,565 root ERROR name 'cls' is not defined
+17:08:56,565 root ERROR Could not create a class for IsSWOnderdeelVan
+17:08:56,565 root ERROR name 'cls' is not defined
+17:08:56,565 root ERROR Could not create a class for Kabelgoot
+17:08:56,565 root ERROR name 'cls' is not defined
+17:08:56,565 root ERROR Could not create a class for Kabelladder
+17:08:56,565 root ERROR name 'cls' is not defined
+17:08:56,566 root ERROR Could not create a class for Kabelmof
+17:08:56,566 root ERROR name 'cls' is not defined
+17:08:56,566 root ERROR Could not create a class for KabelnetBuis
+17:08:56,566 root ERROR name 'cls' is not defined
+17:08:56,566 root ERROR Could not create a class for KabelnetToegang
+17:08:56,566 root ERROR name 'cls' is not defined
+17:08:56,566 root ERROR Could not create a class for Kalkgrasland
+17:08:56,566 root ERROR name 'cls' is not defined
+17:08:56,566 root ERROR Could not create a class for KalkrijkKamgrasland
+17:08:56,566 root ERROR name 'cls' is not defined
+17:08:56,567 root ERROR Could not create a class for Kamer
+17:08:56,567 root ERROR name 'cls' is not defined
+17:08:56,567 root ERROR Could not create a class for KantstrookAfw
+17:08:56,567 root ERROR name 'cls' is not defined
+17:08:56,567 root ERROR Could not create a class for KantstrookStd
+17:08:56,567 root ERROR name 'cls' is not defined
+17:08:56,567 root ERROR Could not create a class for Klimatisatie
+17:08:56,567 root ERROR name 'cls' is not defined
+17:08:56,567 root ERROR Could not create a class for Klimvorm
+17:08:56,567 root ERROR name 'cls' is not defined
+17:08:56,567 root ERROR Could not create a class for Knipperlantaarn
+17:08:56,568 root ERROR name 'cls' is not defined
+17:08:56,568 root ERROR Could not create a class for Kopmuur
+17:08:56,568 root ERROR name 'cls' is not defined
+17:08:56,568 root ERROR Could not create a class for KringsBerliner
+17:08:56,568 root ERROR name 'cls' is not defined
+17:08:56,568 root ERROR Could not create a class for LEDDriver
+17:08:56,568 root ERROR name 'cls' is not defined
+17:08:56,568 root ERROR Could not create a class for Laagspanningsbord
+17:08:56,568 root ERROR name 'cls' is not defined
+17:08:56,568 root ERROR Could not create a class for Lensplaat
+17:08:56,568 root ERROR name 'cls' is not defined
+17:08:56,569 root ERROR Could not create a class for LetterCijferMarkering
+17:08:56,569 root ERROR name 'cls' is not defined
+17:08:56,569 root ERROR Could not create a class for LetterMarkeringVerschaald
+17:08:56,569 root ERROR name 'cls' is not defined
+17:08:56,569 root ERROR Could not create a class for Lichtmast
+17:08:56,569 root ERROR name 'cls' is not defined
+17:08:56,569 root ERROR Could not create a class for Lichtnagel
+17:08:56,570 root ERROR name 'cls' is not defined
+17:08:56,570 root ERROR Could not create a class for Lichtsensor
+17:08:56,570 root ERROR name 'cls' is not defined
+17:08:56,570 root ERROR Could not create a class for Lichtzuil
+17:08:56,570 root ERROR name 'cls' is not defined
+17:08:56,570 root ERROR Could not create a class for LigtOp
+17:08:56,570 root ERROR name 'cls' is not defined
+17:08:56,570 root ERROR Could not create a class for LijnvormigElementMarkering
+17:08:56,570 root ERROR name 'cls' is not defined
+17:08:56,570 root ERROR Could not create a class for LogischePoort
+17:08:56,570 root ERROR name 'cls' is not defined
+17:08:56,571 root ERROR Could not create a class for Loofhout
+17:08:56,571 root ERROR name 'cls' is not defined
+17:08:56,571 root ERROR Could not create a class for LoopTerminationAndProtection
+17:08:56,571 root ERROR name 'cls' is not defined
+17:08:56,571 root ERROR Could not create a class for LuchtkwaliteitControleUnit
+17:08:56,571 root ERROR name 'cls' is not defined
+17:08:56,571 root ERROR Could not create a class for LuchtkwaliteitZenderOntvanger
+17:08:56,571 root ERROR name 'cls' is not defined
+17:08:56,571 root ERROR Could not create a class for Luchtkwaliteitreflector
+17:08:56,571 root ERROR name 'cls' is not defined
+17:08:56,572 root ERROR Could not create a class for Luidspreker
+17:08:56,572 root ERROR name 'cls' is not defined
+17:08:56,572 root ERROR Could not create a class for MACQPUFrontend
+17:08:56,572 root ERROR name 'cls' is not defined
+17:08:56,572 root ERROR Could not create a class for MIVCommunicatiekaart
+17:08:56,572 root ERROR name 'cls' is not defined
+17:08:56,572 root ERROR Could not create a class for MIVLus
+17:08:56,572 root ERROR name 'cls' is not defined
+17:08:56,572 root ERROR Could not create a class for MIVLuskaart
+17:08:56,572 root ERROR name 'cls' is not defined
+17:08:56,573 root ERROR Could not create a class for MIVProcessorkaart
+17:08:56,573 root ERROR name 'cls' is not defined
+17:08:56,573 root ERROR Could not create a class for MIVVoedingsmodule
+17:08:56,573 root ERROR name 'cls' is not defined
+17:08:56,573 root ERROR Could not create a class for Mantelbuis
+17:08:56,573 root ERROR name 'cls' is not defined
+17:08:56,573 root ERROR Could not create a class for Meetcel
+17:08:56,573 root ERROR name 'cls' is not defined
+17:08:56,573 root ERROR Could not create a class for Meetmicrofoon
+17:08:56,574 root ERROR name 'cls' is not defined
+17:08:56,574 root ERROR Could not create a class for Montagekast
+17:08:56,574 root ERROR name 'cls' is not defined
+17:08:56,574 root ERROR Could not create a class for Motorvangplank
+17:08:56,574 root ERROR name 'cls' is not defined
+17:08:56,574 root ERROR Could not create a class for Muurdoorgangsstuk
+17:08:56,574 root ERROR name 'cls' is not defined
+17:08:56,574 root ERROR Could not create a class for Muurvegetatie
+17:08:56,574 root ERROR name 'cls' is not defined
+17:08:56,575 root ERROR Could not create a class for Naaldhout
+17:08:56,575 root ERROR name 'cls' is not defined
+17:08:56,575 root ERROR Could not create a class for NatteRuigte
+17:08:56,575 root ERROR name 'cls' is not defined
+17:08:56,575 root ERROR Could not create a class for Neerslagsensor
+17:08:56,575 root ERROR name 'cls' is not defined
+17:08:56,575 root ERROR Could not create a class for Netstabilisator
+17:08:56,575 root ERROR name 'cls' is not defined
+17:08:56,575 root ERROR Could not create a class for NetwerkModem
+17:08:56,575 root ERROR name 'cls' is not defined
+17:08:56,576 root ERROR Could not create a class for Netwerkelement
+17:08:56,576 root ERROR name 'cls' is not defined
+17:08:56,576 root ERROR Could not create a class for Netwerkkaart
+17:08:56,576 root ERROR name 'cls' is not defined
+17:08:56,576 root ERROR Could not create a class for Netwerkpoort
+17:08:56,576 root ERROR name 'cls' is not defined
+17:08:56,576 root ERROR Could not create a class for NietGetestBeginstuk
+17:08:56,576 root ERROR name 'cls' is not defined
+17:08:56,577 root ERROR Could not create a class for NietSelectieveDetectielus
+17:08:56,577 root ERROR name 'cls' is not defined
+17:08:56,577 root ERROR Could not create a class for NietStandaardStalenProfiel
+17:08:56,577 root ERROR name 'cls' is not defined
+17:08:56,577 root ERROR Could not create a class for Noppendrainage
+17:08:56,577 root ERROR name 'cls' is not defined
+17:08:56,577 root ERROR Could not create a class for Obstakelbeveiliger
+17:08:56,577 root ERROR name 'cls' is not defined
+17:08:56,577 root ERROR Could not create a class for OmegaElement
+17:08:56,578 root ERROR name 'cls' is not defined
+17:08:56,578 root ERROR Could not create a class for Omhult
+17:08:56,578 root ERROR name 'cls' is not defined
+17:08:56,578 root ERROR Could not create a class for Omvormer
+17:08:56,578 root ERROR name 'cls' is not defined
+17:08:56,578 root ERROR Could not create a class for OnbegroeidVoorkomen
+17:08:56,578 root ERROR name 'cls' is not defined
+17:08:56,578 root ERROR Could not create a class for Onderbouw
+17:08:56,578 root ERROR name 'cls' is not defined
+17:08:56,578 root ERROR Could not create a class for Onderdoorboring
+17:08:56,578 root ERROR name 'cls' is not defined
+17:08:56,579 root ERROR Could not create a class for Onderwaterkruising
+17:08:56,579 root ERROR name 'cls' is not defined
+17:08:56,579 root ERROR Could not create a class for Onderwatervegetatie
+17:08:56,579 root ERROR name 'cls' is not defined
+17:08:56,579 root ERROR Could not create a class for OntluchterBrandleiding
+17:08:56,579 root ERROR name 'cls' is not defined
+17:08:56,579 root ERROR Could not create a class for Ontvanger
+17:08:56,580 root ERROR name 'cls' is not defined
+17:08:56,580 root ERROR Could not create a class for OpenbaarVervoerslantaarn
+17:08:56,580 root ERROR name 'cls' is not defined
+17:08:56,580 root ERROR Could not create a class for OpgaandeBoom
+17:08:56,580 root ERROR name 'cls' is not defined
+17:08:56,580 root ERROR Could not create a class for OpgaandeHoutigeVegetatie
+17:08:56,580 root ERROR name 'cls' is not defined
+17:08:56,580 root ERROR Could not create a class for Overdrukventilator
+17:08:56,580 root ERROR name 'cls' is not defined
+17:08:56,580 root ERROR Could not create a class for Overgangsconstructie
+17:08:56,580 root ERROR name 'cls' is not defined
+17:08:56,581 root ERROR Could not create a class for OverlangseMarkering
+17:08:56,581 root ERROR name 'cls' is not defined
+17:08:56,581 root ERROR Could not create a class for Overstort
+17:08:56,581 root ERROR name 'cls' is not defined
+17:08:56,581 root ERROR Could not create a class for Overstortrand
+17:08:56,581 root ERROR name 'cls' is not defined
+17:08:56,581 root ERROR Could not create a class for PCIKaart
+17:08:56,581 root ERROR name 'cls' is not defined
+17:08:56,581 root ERROR Could not create a class for PLC
+17:08:56,581 root ERROR name 'cls' is not defined
+17:08:56,581 root ERROR Could not create a class for PTDemodulatoren
+17:08:56,582 root ERROR name 'cls' is not defined
+17:08:56,582 root ERROR Could not create a class for PTKARModem
+17:08:56,582 root ERROR name 'cls' is not defined
+17:08:56,582 root ERROR Could not create a class for PTModem
+17:08:56,582 root ERROR name 'cls' is not defined
+17:08:56,582 root ERROR Could not create a class for PTRadio
+17:08:56,582 root ERROR name 'cls' is not defined
+17:08:56,582 root ERROR Could not create a class for PTRegelaar
+17:08:56,582 root ERROR name 'cls' is not defined
+17:08:56,582 root ERROR Could not create a class for PTSCKaart
+17:08:56,582 root ERROR name 'cls' is not defined
+17:08:56,583 root ERROR Could not create a class for PTUitgangskaart
+17:08:56,583 root ERROR name 'cls' is not defined
+17:08:56,583 root ERROR Could not create a class for PTVerwerkingseenheid
+17:08:56,583 root ERROR name 'cls' is not defined
+17:08:56,583 root ERROR Could not create a class for PTVoedingsmodule
+17:08:56,583 root ERROR name 'cls' is not defined
+17:08:56,583 root ERROR Could not create a class for Persleiding
+17:08:56,583 root ERROR name 'cls' is not defined
+17:08:56,583 root ERROR Could not create a class for Pictogram
+17:08:56,583 root ERROR name 'cls' is not defined
+17:08:56,583 root ERROR Could not create a class for PiezometrischeBuis
+17:08:56,584 root ERROR name 'cls' is not defined
+17:08:56,584 root ERROR Could not create a class for Plantbakvorm
+17:08:56,584 root ERROR name 'cls' is not defined
+17:08:56,584 root ERROR Could not create a class for PlintGC
+17:08:56,584 root ERROR name 'cls' is not defined
+17:08:56,584 root ERROR Could not create a class for Plooibaken
+17:08:56,584 root ERROR name 'cls' is not defined
+17:08:56,584 root ERROR Could not create a class for PoEInjector
+17:08:56,584 root ERROR name 'cls' is not defined
+17:08:56,584 root ERROR Could not create a class for Pomp
+17:08:56,585 root ERROR name 'cls' is not defined
+17:08:56,585 root ERROR Could not create a class for PunctueleVerlichtingsmast
+17:08:56,585 root ERROR name 'cls' is not defined
+17:08:56,585 root ERROR Could not create a class for PutBovenbouw
+17:08:56,585 root ERROR name 'cls' is not defined
+17:08:56,585 root ERROR Could not create a class for Putbekleding
+17:08:56,585 root ERROR name 'cls' is not defined
+17:08:56,585 root ERROR Could not create a class for RIS
+17:08:56,586 root ERROR name 'cls' is not defined
+17:08:56,586 root ERROR Could not create a class for RaaigrasweideGraslandfase0
+17:08:56,586 root ERROR name 'cls' is not defined
+17:08:56,586 root ERROR Could not create a class for Rack
+17:08:56,586 root ERROR name 'cls' is not defined
+17:08:56,586 root ERROR Could not create a class for Radar
+17:08:56,586 root ERROR name 'cls' is not defined
+17:08:56,586 root ERROR Could not create a class for RechteSteun
+17:08:56,586 root ERROR name 'cls' is not defined
+17:08:56,586 root ERROR Could not create a class for Referentiepunt
+17:08:56,586 root ERROR name 'cls' is not defined
+17:08:56,587 root ERROR Could not create a class for ReflectorInLijnvormigElement
+17:08:56,587 root ERROR name 'cls' is not defined
+17:08:56,587 root ERROR Could not create a class for Reflectorpaal
+17:08:56,587 root ERROR name 'cls' is not defined
+17:08:56,587 root ERROR Could not create a class for Repeater
+17:08:56,587 root ERROR name 'cls' is not defined
+17:08:56,587 root ERROR Could not create a class for Reservoir
+17:08:56,587 root ERROR name 'cls' is not defined
+17:08:56,587 root ERROR Could not create a class for RetroReflecterendeKoker
+17:08:56,588 root ERROR name 'cls' is not defined
+17:08:56,588 root ERROR Could not create a class for RetroreflecterendVerkeersbord
+17:08:56,588 root ERROR name 'cls' is not defined
+17:08:56,588 root ERROR Could not create a class for RetroreflecterendeFolie
+17:08:56,588 root ERROR name 'cls' is not defined
+17:08:56,588 root ERROR Could not create a class for Riet
+17:08:56,588 root ERROR name 'cls' is not defined
+17:08:56,588 root ERROR Could not create a class for Rioleringsbuis
+17:08:56,588 root ERROR name 'cls' is not defined
+17:08:56,588 root ERROR Could not create a class for Riooltoegang
+17:08:56,588 root ERROR name 'cls' is not defined
+17:08:56,589 root ERROR Could not create a class for Ruigte
+17:08:56,589 root ERROR name 'cls' is not defined
+17:08:56,589 root ERROR Could not create a class for Schacht
+17:08:56,589 root ERROR name 'cls' is not defined
+17:08:56,589 root ERROR Could not create a class for SchampkantAfw
+17:08:56,590 root ERROR name 'cls' is not defined
+17:08:56,590 root ERROR Could not create a class for SchampkantStd
+17:08:56,590 root ERROR name 'cls' is not defined
+17:08:56,590 root ERROR Could not create a class for Schanskorf
+17:08:56,590 root ERROR name 'cls' is not defined
+17:08:56,590 root ERROR Could not create a class for ScheurremmendeLaag
+17:08:56,590 root ERROR name 'cls' is not defined
+17:08:56,590 root ERROR Could not create a class for Segmentcontroller
+17:08:56,591 root ERROR name 'cls' is not defined
+17:08:56,591 root ERROR Could not create a class for Seinbord
+17:08:56,591 root ERROR name 'cls' is not defined
+17:08:56,591 root ERROR Could not create a class for Seinbrug
+17:08:56,591 root ERROR name 'cls' is not defined
+17:08:56,591 root ERROR Could not create a class for SelectieveDetectielus
+17:08:56,591 root ERROR name 'cls' is not defined
+17:08:56,591 root ERROR Could not create a class for Sierbeplanting
+17:08:56,591 root ERROR name 'cls' is not defined
+17:08:56,592 root ERROR Could not create a class for Signaalkabel
+17:08:56,592 root ERROR name 'cls' is not defined
+17:08:56,592 root ERROR Could not create a class for Slagboomarm
+17:08:56,592 root ERROR name 'cls' is not defined
+17:08:56,592 root ERROR Could not create a class for SlagboomarmVerlichting
+17:08:56,592 root ERROR name 'cls' is not defined
+17:08:56,592 root ERROR Could not create a class for Slagboomkolom
+17:08:56,592 root ERROR name 'cls' is not defined
+17:08:56,592 root ERROR Could not create a class for Slemlaag
+17:08:56,592 root ERROR name 'cls' is not defined
+17:08:56,593 root ERROR Could not create a class for Sleuf
+17:08:56,593 root ERROR name 'cls' is not defined
+17:08:56,593 root ERROR Could not create a class for SluitAanOp
+17:08:56,593 root ERROR name 'cls' is not defined
+17:08:56,593 root ERROR Could not create a class for Software
+17:08:56,593 root ERROR name 'cls' is not defined
+17:08:56,593 root ERROR Could not create a class for Sokkel
+17:08:56,593 root ERROR name 'cls' is not defined
+17:08:56,593 root ERROR Could not create a class for SolitaireHeester
+17:08:56,593 root ERROR name 'cls' is not defined
+17:08:56,594 root ERROR Could not create a class for SoortenrijkSchraalGraslandGraslandfase5
+17:08:56,594 root ERROR name 'cls' is not defined
+17:08:56,594 root ERROR Could not create a class for StandaardStalenProfiel
+17:08:56,594 root ERROR name 'cls' is not defined
+17:08:56,594 root ERROR Could not create a class for Steenslagverharding
+17:08:56,594 root ERROR name 'cls' is not defined
+17:08:56,594 root ERROR Could not create a class for Stobbenwal
+17:08:56,594 root ERROR name 'cls' is not defined
+17:08:56,594 root ERROR Could not create a class for Stopcontact
+17:08:56,594 root ERROR name 'cls' is not defined
+17:08:56,595 root ERROR Could not create a class for Stortdraad
+17:08:56,595 root ERROR name 'cls' is not defined
+17:08:56,595 root ERROR Could not create a class for Stortsteen
+17:08:56,595 root ERROR name 'cls' is not defined
+17:08:56,595 root ERROR Could not create a class for Straatkolk
+17:08:56,595 root ERROR name 'cls' is not defined
+17:08:56,595 root ERROR Could not create a class for StroomMeetmodule
+17:08:56,595 root ERROR name 'cls' is not defined
+17:08:56,595 root ERROR Could not create a class for Stroomdalgrasland
+17:08:56,596 root ERROR name 'cls' is not defined
+17:08:56,596 root ERROR Could not create a class for Stroomkring
+17:08:56,596 root ERROR name 'cls' is not defined
+17:08:56,596 root ERROR Could not create a class for Struweel
+17:08:56,596 root ERROR name 'cls' is not defined
+17:08:56,596 root ERROR Could not create a class for Sturing
+17:08:56,596 root ERROR name 'cls' is not defined
+17:08:56,596 root ERROR Could not create a class for StuurklepBrandleiding
+17:08:56,596 root ERROR name 'cls' is not defined
+17:08:56,596 root ERROR Could not create a class for TLCfiPoort
+17:08:56,597 root ERROR name 'cls' is not defined
+17:08:56,597 root ERROR Could not create a class for Taludgoot
+17:08:56,597 root ERROR name 'cls' is not defined
+17:08:56,597 root ERROR Could not create a class for TechnischePut
+17:08:56,597 root ERROR name 'cls' is not defined
+17:08:56,597 root ERROR Could not create a class for Telecomkabel
+17:08:56,597 root ERROR name 'cls' is not defined
+17:08:56,597 root ERROR Could not create a class for Ternairmengselverharding
+17:08:56,597 root ERROR name 'cls' is not defined
+17:08:56,598 root ERROR Could not create a class for Terugkeer
+17:08:56,598 root ERROR name 'cls' is not defined
+17:08:56,598 root ERROR Could not create a class for Terugslagklep
+17:08:56,598 root ERROR name 'cls' is not defined
+17:08:56,598 root ERROR Could not create a class for Toegangscontrole
+17:08:56,598 root ERROR name 'cls' is not defined
+17:08:56,598 root ERROR Could not create a class for Transformator
+17:08:56,598 root ERROR name 'cls' is not defined
+17:08:56,598 root ERROR Could not create a class for TrottoirbandAfw
+17:08:56,598 root ERROR name 'cls' is not defined
+17:08:56,600 root ERROR Could not create a class for TrottoirbandStd
+17:08:56,600 root ERROR name 'cls' is not defined
+17:08:56,600 root ERROR Could not create a class for TrottoirbandWatergreppelAfw
+17:08:56,600 root ERROR name 'cls' is not defined
+17:08:56,600 root ERROR Could not create a class for TrottoirbandWatergreppelStd
+17:08:56,600 root ERROR name 'cls' is not defined
+17:08:56,601 root ERROR Could not create a class for UPS
+17:08:56,601 root ERROR name 'cls' is not defined
+17:08:56,601 root ERROR Could not create a class for UitheemsLoofhout
+17:08:56,601 root ERROR name 'cls' is not defined
+17:08:56,601 root ERROR Could not create a class for VRBAZ
+17:08:56,601 root ERROR name 'cls' is not defined
+17:08:56,601 root ERROR Could not create a class for VRBatterijICU
+17:08:56,601 root ERROR name 'cls' is not defined
+17:08:56,601 root ERROR Could not create a class for VRBeveiligingskaart
+17:08:56,602 root ERROR name 'cls' is not defined
+17:08:56,602 root ERROR Could not create a class for VRCommunicatiekaart
+17:08:56,602 root ERROR name 'cls' is not defined
+17:08:56,602 root ERROR Could not create a class for VRHandbediening
+17:08:56,602 root ERROR name 'cls' is not defined
+17:08:56,602 root ERROR Could not create a class for VRIVirtueleDetectiezone
+17:08:56,602 root ERROR name 'cls' is not defined
+17:08:56,602 root ERROR Could not create a class for VRIngangscontacten
+17:08:56,602 root ERROR name 'cls' is not defined
+17:08:56,602 root ERROR Could not create a class for VRKortsluitbeveiliging
+17:08:56,602 root ERROR name 'cls' is not defined
+17:08:56,603 root ERROR Could not create a class for VRLuskaart
+17:08:56,603 root ERROR name 'cls' is not defined
+17:08:56,603 root ERROR Could not create a class for VRStuurkaart
+17:08:56,603 root ERROR name 'cls' is not defined
+17:08:56,603 root ERROR Could not create a class for VRUitgangscontacten
+17:08:56,603 root ERROR name 'cls' is not defined
+17:08:56,603 root ERROR Could not create a class for Veerooster
+17:08:56,603 root ERROR name 'cls' is not defined
+17:08:56,603 root ERROR Could not create a class for VentilatieAfsluitklep
+17:08:56,603 root ERROR name 'cls' is not defined
+17:08:56,604 root ERROR Could not create a class for Ventilatierooster
+17:08:56,604 root ERROR name 'cls' is not defined
+17:08:56,604 root ERROR Could not create a class for Ventilator
+17:08:56,604 root ERROR name 'cls' is not defined
+17:08:56,604 root ERROR Could not create a class for Verankeringslandhoofd
+17:08:56,604 root ERROR name 'cls' is not defined
+17:08:56,604 root ERROR Could not create a class for Verankeringsmassief
+17:08:56,604 root ERROR name 'cls' is not defined
+17:08:56,604 root ERROR Could not create a class for VerhardingGrasKunststofplaat
+17:08:56,604 root ERROR name 'cls' is not defined
+17:08:56,604 root ERROR Could not create a class for Verkeersbordsteun
+17:08:56,605 root ERROR name 'cls' is not defined
+17:08:56,605 root ERROR Could not create a class for VerkeerslichtGroen
+17:08:56,605 root ERROR name 'cls' is not defined
+17:08:56,605 root ERROR Could not create a class for VerkeerslichtOranjegeel
+17:08:56,605 root ERROR name 'cls' is not defined
+17:08:56,605 root ERROR Could not create a class for VerkeerslichtRood
+17:08:56,605 root ERROR name 'cls' is not defined
+17:08:56,605 root ERROR Could not create a class for VerkeerslichtWit
+17:08:56,605 root ERROR name 'cls' is not defined
+17:08:56,605 root ERROR Could not create a class for Verkeersregelaar
+17:08:56,605 root ERROR name 'cls' is not defined
+17:08:56,606 root ERROR Could not create a class for Verkeersspiegel
+17:08:56,606 root ERROR name 'cls' is not defined
+17:08:56,606 root ERROR Could not create a class for VerlichtingstoestelHgLP
+17:08:56,606 root ERROR name 'cls' is not defined
+17:08:56,606 root ERROR Could not create a class for VerlichtingstoestelLED
+17:08:56,606 root ERROR name 'cls' is not defined
+17:08:56,606 root ERROR Could not create a class for VerlichtingstoestelMHHP
+17:08:56,606 root ERROR name 'cls' is not defined
+17:08:56,606 root ERROR Could not create a class for VerlichtingstoestelNaHP
+17:08:56,606 root ERROR name 'cls' is not defined
+17:08:56,606 root ERROR Could not create a class for VerlichtingstoestelNaLP
+17:08:56,607 root ERROR name 'cls' is not defined
+17:08:56,607 root ERROR Could not create a class for VerlichtingstoestelTL
+17:08:56,607 root ERROR name 'cls' is not defined
+17:08:56,607 root ERROR Could not create a class for VerruigdGrasland
+17:08:56,607 root ERROR name 'cls' is not defined
+17:08:56,607 root ERROR Could not create a class for VerstoordGrasland
+17:08:56,607 root ERROR name 'cls' is not defined
+17:08:56,607 root ERROR Could not create a class for Verwarmingselement
+17:08:56,607 root ERROR name 'cls' is not defined
+17:08:56,608 root ERROR Could not create a class for Verwarmingslint
+17:08:56,608 root ERROR name 'cls' is not defined
+17:08:56,608 root ERROR Could not create a class for VirtueleServer
+17:08:56,608 root ERROR name 'cls' is not defined
+17:08:56,608 root ERROR Could not create a class for VlakGeluidsschermelement
+17:08:56,608 root ERROR name 'cls' is not defined
+17:08:56,608 root ERROR Could not create a class for Vlierstruweel
+17:08:56,608 root ERROR name 'cls' is not defined
+17:08:56,608 root ERROR Could not create a class for Vluchtdeur
+17:08:56,608 root ERROR name 'cls' is not defined
+17:08:56,608 root ERROR Could not create a class for Vluchtopening
+17:08:56,609 root ERROR name 'cls' is not defined
+17:08:56,609 root ERROR Could not create a class for VoedingDerdenLaagspanning
+17:08:56,609 root ERROR name 'cls' is not defined
+17:08:56,609 root ERROR Could not create a class for Voedingskabel
+17:08:56,609 root ERROR name 'cls' is not defined
+17:08:56,609 root ERROR Could not create a class for Voedt
+17:08:56,610 root ERROR name 'cls' is not defined
+17:08:56,610 root ERROR Could not create a class for VoedtAangestuurd
+17:08:56,610 root ERROR name 'cls' is not defined
+17:08:56,616 root ERROR Could not create a class for VoertuigkerendGeluidsschermelement
+17:08:56,616 root ERROR name 'cls' is not defined
+17:08:56,616 root ERROR Could not create a class for Voertuiglantaarn
+17:08:56,616 root ERROR name 'cls' is not defined
+17:08:56,616 root ERROR Could not create a class for Voetgangerslantaarn
+17:08:56,616 root ERROR name 'cls' is not defined
+17:08:56,617 root ERROR Could not create a class for Vooraankondiging
+17:08:56,617 root ERROR name 'cls' is not defined
+17:08:56,617 root ERROR Could not create a class for Voorschakelapparaat
+17:08:56,617 root ERROR name 'cls' is not defined
+17:08:56,617 root ERROR Could not create a class for VulpuntBrandweer
+17:08:56,617 root ERROR name 'cls' is not defined
+17:08:56,617 root ERROR Could not create a class for WIMDatalogger
+17:08:56,617 root ERROR name 'cls' is not defined
+17:08:56,617 root ERROR Could not create a class for WVConsole
+17:08:56,617 root ERROR name 'cls' is not defined
+17:08:56,618 root ERROR Could not create a class for WVLichtmast
+17:08:56,618 root ERROR name 'cls' is not defined
+17:08:56,618 root ERROR Could not create a class for WVOpvoertransformator
+17:08:56,618 root ERROR name 'cls' is not defined
+17:08:56,619 root ERROR Could not create a class for Walsbetonverharding
+17:08:56,621 root ERROR name 'cls' is not defined
+17:08:56,621 root ERROR Could not create a class for WaterdoorlatendeBestrating
+17:08:56,621 root ERROR name 'cls' is not defined
+17:08:56,621 root ERROR Could not create a class for WatergreppelAfw
+17:08:56,621 root ERROR name 'cls' is not defined
+17:08:56,621 root ERROR Could not create a class for WatergreppelStd
+17:08:56,621 root ERROR name 'cls' is not defined
+17:08:56,622 root ERROR Could not create a class for Weegsensor
+17:08:56,622 root ERROR name 'cls' is not defined
+17:08:56,622 root ERROR Could not create a class for WegbebakeningAfschermendeConstructies
+17:08:56,622 root ERROR name 'cls' is not defined
+17:08:56,622 root ERROR Could not create a class for Wegdekvoeg
+17:08:56,622 root ERROR name 'cls' is not defined
+17:08:56,622 root ERROR Could not create a class for WeggebondenDetector
+17:08:56,622 root ERROR name 'cls' is not defined
+17:08:56,622 root ERROR Could not create a class for Wegkantkast
+17:08:56,622 root ERROR name 'cls' is not defined
+17:08:56,622 root ERROR Could not create a class for Wegreflector
+17:08:56,623 root ERROR name 'cls' is not defined
+17:08:56,623 root ERROR Could not create a class for Wervel
+17:08:56,623 root ERROR name 'cls' is not defined
+17:08:56,623 root ERROR Could not create a class for Wildreflector
+17:08:56,623 root ERROR name 'cls' is not defined
+17:08:56,623 root ERROR Could not create a class for Wilgenstruweel
+17:08:56,623 root ERROR name 'cls' is not defined
+17:08:56,623 root ERROR Could not create a class for Zender
+17:08:56,623 root ERROR name 'cls' is not defined
+17:08:56,623 root ERROR Could not create a class for Zonnepaneel
+17:08:56,623 root ERROR name 'cls' is not defined
+17:08:56,623 root ERROR Could not create a class for Keuring
+17:08:56,624 root ERROR name 'cls' is not defined
+17:08:56,624 root ERROR Could not create a class for MeteropnameEnergiemeter
+17:08:56,624 root ERROR name 'cls' is not defined
+17:08:56,624 root ERROR Could not create a class for MeteropnameEnergiemeterGecombineerd
+17:08:56,624 root ERROR name 'cls' is not defined
+17:08:56,624 root ERROR Could not create a class for ProefBindmiddeldosering
+17:08:56,624 root ERROR name 'cls' is not defined
+17:08:56,624 root ERROR Could not create a class for ProefBoomtoestand
+17:08:56,624 root ERROR name 'cls' is not defined
+17:08:56,624 root ERROR Could not create a class for ProefConsistentie
+17:08:56,624 root ERROR name 'cls' is not defined
+17:08:56,625 root ERROR Could not create a class for ProefDoorlatendheid
+17:08:56,625 root ERROR name 'cls' is not defined
+17:08:56,625 root ERROR Could not create a class for ProefDraagvermogen
+17:08:56,625 root ERROR name 'cls' is not defined
+17:08:56,625 root ERROR Could not create a class for ProefDraineervermogen
+17:08:56,625 root ERROR name 'cls' is not defined
+17:08:56,625 root ERROR Could not create a class for ProefDruksterkte
+17:08:56,625 root ERROR name 'cls' is not defined
+17:08:56,625 root ERROR Could not create a class for ProefDwarsvlakheid
+17:08:56,625 root ERROR name 'cls' is not defined
+17:08:56,626 root ERROR Could not create a class for ProefEffectiefBindmiddelgehalte
+17:08:56,626 root ERROR name 'cls' is not defined
+17:08:56,626 root ERROR Could not create a class for ProefGaafheid
+17:08:56,626 root ERROR name 'cls' is not defined
+17:08:56,626 root ERROR Could not create a class for ProefGeluidstest
+17:08:56,626 root ERROR name 'cls' is not defined
+17:08:56,626 root ERROR Could not create a class for ProefGemetenDikte
+17:08:56,626 root ERROR name 'cls' is not defined
+17:08:56,626 root ERROR Could not create a class for ProefGrondkarakteristieken
+17:08:56,626 root ERROR name 'cls' is not defined
+17:08:56,626 root ERROR Could not create a class for ProefHechtsterkte
+17:08:56,627 root ERROR name 'cls' is not defined
+17:08:56,627 root ERROR Could not create a class for ProefKerendVermogen
+17:08:56,627 root ERROR name 'cls' is not defined
+17:08:56,627 root ERROR Could not create a class for ProefKorrelverdeling
+17:08:56,627 root ERROR name 'cls' is not defined
+17:08:56,627 root ERROR Could not create a class for ProefLangsvlakheid
+17:08:56,627 root ERROR name 'cls' is not defined
+17:08:56,627 root ERROR Could not create a class for ProefLuchtdichtheid
+17:08:56,627 root ERROR name 'cls' is not defined
+17:08:56,627 root ERROR Could not create a class for ProefLuchtgehalte
+17:08:56,627 root ERROR name 'cls' is not defined
+17:08:56,627 root ERROR Could not create a class for ProefLuminantie
+17:08:56,628 root ERROR name 'cls' is not defined
+17:08:56,628 root ERROR Could not create a class for ProefMortelkwaliteit
+17:08:56,628 root ERROR name 'cls' is not defined
+17:08:56,631 root ERROR Could not create a class for ProefNaderOnderzoekTomograaf
+17:08:56,631 root ERROR name 'cls' is not defined
+17:08:56,631 root ERROR Could not create a class for ProefPctHolleruimte
+17:08:56,631 root ERROR name 'cls' is not defined
+17:08:56,631 root ERROR Could not create a class for ProefPerformantieklasse
+17:08:56,631 root ERROR name 'cls' is not defined
+17:08:56,631 root ERROR Could not create a class for ProefPerformantieniveau
+17:08:56,632 root ERROR name 'cls' is not defined
+17:08:56,632 root ERROR Could not create a class for ProefRetroreflectie
+17:08:56,632 root ERROR name 'cls' is not defined
+17:08:56,632 root ERROR Could not create a class for ProefRolgeluid
+17:08:56,632 root ERROR name 'cls' is not defined
+17:08:56,632 root ERROR Could not create a class for ProefSchokindex
+17:08:56,632 root ERROR name 'cls' is not defined
+17:08:56,632 root ERROR Could not create a class for ProefSchokindexMVP
+17:08:56,632 root ERROR name 'cls' is not defined
+17:08:56,632 root ERROR Could not create a class for ProefStaalvezelgehalte
+17:08:56,633 root ERROR name 'cls' is not defined
+17:08:56,633 root ERROR Could not create a class for ProefStroefheid
+17:08:56,633 root ERROR name 'cls' is not defined
+17:08:56,633 root ERROR Could not create a class for ProefTemperatuur
+17:08:56,633 root ERROR name 'cls' is not defined
+17:08:56,633 root ERROR Could not create a class for ProefTextuurdiepte
+17:08:56,633 root ERROR name 'cls' is not defined
+17:08:56,633 root ERROR Could not create a class for ProefVerankeringskracht
+17:08:56,634 root ERROR name 'cls' is not defined
+17:08:56,634 root ERROR Could not create a class for ProefVerderOnderzoekTrekproef
+17:08:56,634 root ERROR name 'cls' is not defined
+17:08:56,634 root ERROR Could not create a class for ProefVisueleBeoordeling
+17:08:56,634 root ERROR name 'cls' is not defined
+17:08:56,634 root ERROR Could not create a class for ProefVlakheid
+17:08:56,634 root ERROR name 'cls' is not defined
+17:08:56,634 root ERROR Could not create a class for ProefVoertuigOverhelling
+17:08:56,635 root ERROR name 'cls' is not defined
+17:08:56,635 root ERROR Could not create a class for ProefWaterdichtheid
+17:08:56,636 root ERROR name 'cls' is not defined
+17:08:56,636 root ERROR Could not create a class for ProefWatergehalte
+17:08:56,636 root ERROR name 'cls' is not defined
+17:08:56,636 root ERROR Could not create a class for ProefWateropslorping
+17:08:56,636 root ERROR name 'cls' is not defined
+17:08:56,636 root ERROR Could not create a class for ProefWeerstandAfschilfering
+17:08:56,637 root ERROR name 'cls' is not defined
+17:08:56,637 root ERROR Could not create a class for ProefWerkingsbreedteGC
+17:08:56,637 root ERROR name 'cls' is not defined
+17:08:56,637 root ERROR Could not create a class for ProefWerkingsbreedteMVP
+17:08:56,637 root ERROR name 'cls' is not defined
+17:08:56,637 root ERROR Could not create a class for ProefZichtbaarheidBijDagOfWV
+17:08:56,637 root ERROR name 'cls' is not defined
+17:08:56,637 root ERROR Could not create a class for ProefZichtbaarheidBijNacht
+17:08:56,638 root ERROR name 'cls' is not defined
+17:08:56,638 root ERROR Could not create a class for ProefZichtbaarheidBijNachtNatWegdek
+17:08:56,638 root ERROR name 'cls' is not defined
+17:08:56,638 root ERROR Could not create a class for ProefZichtbaarheidBijNachtRegenweer
+17:10:53,309 root ERROR local variable 'ns' referenced before assignment
+12:03:18,487 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,491 root ERROR Could not create a class for AansluitendeConstructie
+12:03:18,496 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,496 root ERROR Could not create a class for AbstracteAanvullendeGeometrie
+12:03:18,503 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,503 root ERROR Could not create a class for AfschermendeConstructie
+12:03:18,507 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,508 root ERROR Could not create a class for AfwijkendeKantopsluiting
+12:03:18,512 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,512 root ERROR Could not create a class for AndereLaag
+12:03:18,518 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,518 root ERROR Could not create a class for AndereVerharding
+12:03:18,523 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,523 root ERROR Could not create a class for ArtificieleLaag
+12:03:18,531 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,531 root ERROR Could not create a class for Bebakening
+12:03:18,535 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,535 root ERROR Could not create a class for Beginstuk
+12:03:18,539 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,539 root ERROR Could not create a class for BegroeidVoorkomen
+12:03:18,544 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,545 root ERROR Could not create a class for Behuizing
+12:03:18,550 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,550 root ERROR Could not create a class for BekledingComponent
+12:03:18,554 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,555 root ERROR Could not create a class for Bestrating
+12:03:18,559 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:18,559 root ERROR Could not create a class for Betonfundering
+12:03:29,806 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:29,806 root ERROR Could not create a class for Brandvoorziening
+12:03:29,812 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:29,812 root ERROR Could not create a class for Buis
+12:03:29,818 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:29,818 root ERROR Could not create a class for Buitenkast
+12:03:29,824 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:29,824 root ERROR Could not create a class for Communicatieapparatuur
+12:03:29,829 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:29,830 root ERROR Could not create a class for ComplexeGeleiding
+12:03:29,834 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:29,834 root ERROR Could not create a class for ConstructieElement
+12:03:31,755 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:31,756 root ERROR Could not create a class for Controller
+12:03:31,760 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:31,761 root ERROR Could not create a class for DNB
+12:03:31,766 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:31,766 root ERROR Could not create a class for DNBMeter
+12:03:31,772 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:31,772 root ERROR Could not create a class for Detectie
+12:03:31,778 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:31,778 root ERROR Could not create a class for Detectielus
+12:03:33,8 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:33,8 root ERROR Could not create a class for DwarseMarkeringToegang
+12:03:33,14 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:33,14 root ERROR Could not create a class for EMAfbakening
+12:03:33,21 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:33,22 root ERROR Could not create a class for EMDraagconstructie
+12:03:33,529 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:33,530 root ERROR Could not create a class for Energiemeter
+12:03:33,534 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:33,535 root ERROR Could not create a class for FiguratieMarkeringToegang
+12:03:34,42 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,43 root ERROR Could not create a class for Fundering
+12:03:34,50 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,50 root ERROR Could not create a class for Geleiding
+12:03:34,56 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,56 root ERROR Could not create a class for Geluidsschermelement
+12:03:34,64 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,64 root ERROR Could not create a class for GestandaardiseerdeKantopsluiting
+12:03:34,69 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,69 root ERROR Could not create a class for GrazigeVegetatie
+12:03:34,73 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,73 root ERROR Could not create a class for HardwareToegang
+12:03:34,77 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,77 root ERROR Could not create a class for Hoppinzuil
+12:03:34,82 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,83 root ERROR Could not create a class for HoutigeVegetatie
+12:03:34,87 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,87 root ERROR Could not create a class for IVRIComponent
+12:03:34,91 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,91 root ERROR Could not create a class for Inloopbehuizing
+12:03:34,95 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:34,95 root ERROR Could not create a class for Kabel
+12:03:35,0 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:35,1 root ERROR Could not create a class for Kabelgeleiding
+12:03:35,506 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:35,507 root ERROR Could not create a class for Kantopsluiting
+12:03:35,514 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:35,515 root ERROR Could not create a class for Kast
+12:03:35,520 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:35,520 root ERROR Could not create a class for KlassiekeFundering
+12:03:35,528 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:35,529 root ERROR Could not create a class for LEDBord
+12:03:35,534 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:35,535 root ERROR Could not create a class for Laag
+12:03:35,539 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:35,539 root ERROR Could not create a class for LaagBouwklasse
+12:03:42,531 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:42,531 root ERROR Could not create a class for Leiding
+12:03:42,535 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:42,535 root ERROR Could not create a class for LijnvormigElement
+12:03:42,539 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:42,539 root ERROR Could not create a class for LinkendElement
+12:03:42,543 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:42,543 root ERROR Could not create a class for Luchtkwaliteittoestel
+12:03:42,549 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:42,549 root ERROR Could not create a class for Markering
+12:03:42,554 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:42,554 root ERROR Could not create a class for NietWeggebondenDetectie
+12:03:43,66 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:43,66 root ERROR Could not create a class for PTModuleMetFirmware
+12:03:43,72 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:43,73 root ERROR Could not create a class for PTModuleZFirmware
+12:03:43,77 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:43,77 root ERROR Could not create a class for PTRegelaarModule
+12:03:43,83 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:43,83 root ERROR Could not create a class for PU
+12:03:43,87 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:43,87 root ERROR Could not create a class for Proef
+12:03:43,626 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:43,626 root ERROR Could not create a class for PutRelatie
+12:03:45,603 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:45,603 root ERROR Could not create a class for Seinlantaarn
+12:03:45,607 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:45,607 root ERROR Could not create a class for SelNietSelLus
+12:03:46,168 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:46,168 root ERROR Could not create a class for SoftwareToegang
+12:03:46,669 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:46,670 root ERROR Could not create a class for StalenProfiel
+12:03:46,674 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:46,675 root ERROR Could not create a class for SteunStandaard
+12:03:46,680 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:46,680 root ERROR Could not create a class for Straatmeubilair
+12:03:47,620 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:47,621 root ERROR Could not create a class for VRIDraagconstructie
+12:03:47,625 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:47,626 root ERROR Could not create a class for VRModuleMetFirmware
+12:03:47,630 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:47,631 root ERROR Could not create a class for VRModuleZFirmware
+12:03:47,635 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:47,635 root ERROR Could not create a class for VegetatieElement
+12:03:47,639 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:47,639 root ERROR Could not create a class for Ventilatie
+12:03:48,796 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:48,797 root ERROR Could not create a class for Verkeerslicht
+12:03:48,802 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:48,803 root ERROR Could not create a class for VerkeersregelaarModule
+12:03:48,814 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:48,814 root ERROR Could not create a class for Verkeersteken
+12:03:48,820 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:03:48,820 root ERROR Could not create a class for Verlichtingstoestel
+12:05:18,342 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:18,343 root ERROR Could not create a class for AansluitendeConstructie
+12:05:20,616 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,616 root ERROR Could not create a class for AbstracteAanvullendeGeometrie
+12:05:20,624 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,624 root ERROR Could not create a class for AfschermendeConstructie
+12:05:20,628 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,628 root ERROR Could not create a class for AfwijkendeKantopsluiting
+12:05:20,633 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,633 root ERROR Could not create a class for AndereLaag
+12:05:20,638 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,639 root ERROR Could not create a class for AndereVerharding
+12:05:20,644 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,644 root ERROR Could not create a class for ArtificieleLaag
+12:05:20,650 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,651 root ERROR Could not create a class for Bebakening
+12:05:20,658 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,658 root ERROR Could not create a class for Beginstuk
+12:05:20,665 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,665 root ERROR Could not create a class for BegroeidVoorkomen
+12:05:20,670 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,671 root ERROR Could not create a class for Behuizing
+12:05:20,676 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,676 root ERROR Could not create a class for BekledingComponent
+12:05:20,682 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,683 root ERROR Could not create a class for Bestrating
+12:05:20,689 root ERROR 'Inheritance' object has no attribute 'objectUri'
+12:05:20,689 root ERROR Could not create a class for Betonfundering
+12:08:29,921 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,922 root ERROR Could not create a class for Agent
+12:08:29,925 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,925 root ERROR Could not create a class for AOWSType
+12:08:29,928 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,928 root ERROR Could not create a class for AansluitendeConstructie
+12:08:29,931 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,931 root ERROR Could not create a class for AbstracteAanvullendeGeometrie
+12:08:29,934 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,935 root ERROR Could not create a class for AfschermendeConstructie
+12:08:29,938 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,938 root ERROR Could not create a class for AfwijkendeKantopsluiting
+12:08:29,942 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,942 root ERROR Could not create a class for AndereLaag
+12:08:29,945 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,945 root ERROR Could not create a class for AndereVerharding
+12:08:29,948 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,948 root ERROR Could not create a class for ArtificieleLaag
+12:08:29,951 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,951 root ERROR Could not create a class for Bebakening
+12:08:29,955 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,956 root ERROR Could not create a class for Beginstuk
+12:08:29,960 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,961 root ERROR Could not create a class for BegroeidVoorkomen
+12:08:29,965 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,965 root ERROR Could not create a class for Behuizing
+12:08:29,968 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,968 root ERROR Could not create a class for BekledingComponent
+12:08:29,972 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,972 root ERROR Could not create a class for Bestrating
+12:08:29,976 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,976 root ERROR Could not create a class for Betonfundering
+12:08:29,980 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,980 root ERROR Could not create a class for BetonnenConstructieElement
+12:08:29,983 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,984 root ERROR Could not create a class for BevestigingGC
+12:08:29,987 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,987 root ERROR Could not create a class for BijlageVoertuigkering
+12:08:29,991 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,991 root ERROR Could not create a class for Brandvoorziening
+12:08:29,996 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,996 root ERROR Could not create a class for Buis
+12:08:29,999 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:29,999 root ERROR Could not create a class for Buitenkast
+12:08:30,2 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,2 root ERROR Could not create a class for Communicatieapparatuur
+12:08:30,5 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,6 root ERROR Could not create a class for ComplexeGeleiding
+12:08:30,9 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,9 root ERROR Could not create a class for ConstructieElement
+12:08:30,12 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,12 root ERROR Could not create a class for ConstructieElementenGC
+12:08:30,15 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,15 root ERROR Could not create a class for ContainerBuis
+12:08:30,18 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,18 root ERROR Could not create a class for Controller
+12:08:30,23 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,23 root ERROR Could not create a class for DNB
+12:08:30,27 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,27 root ERROR Could not create a class for DNBMeter
+12:08:30,30 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,30 root ERROR Could not create a class for Detectie
+12:08:30,33 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,33 root ERROR Could not create a class for Detectielus
+12:08:30,37 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,37 root ERROR Could not create a class for Deur
+12:08:30,42 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,42 root ERROR Could not create a class for Draagconstructie
+12:08:30,45 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,45 root ERROR Could not create a class for DwarseMarkeringToegang
+12:08:30,48 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,48 root ERROR Could not create a class for EMAfbakening
+12:08:30,51 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,52 root ERROR Could not create a class for EMDraagconstructie
+12:08:30,55 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,56 root ERROR Could not create a class for EigenschappenVoertuigkering
+12:08:30,59 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,59 root ERROR Could not create a class for Energiemeter
+12:08:30,62 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,62 root ERROR Could not create a class for FiguratieMarkeringToegang
+12:08:30,65 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,66 root ERROR Could not create a class for FirmwareObject
+12:08:30,68 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,69 root ERROR Could not create a class for Fundering
+12:08:30,72 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,73 root ERROR Could not create a class for Geleiding
+12:08:30,76 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,76 root ERROR Could not create a class for Geluidsschermelement
+12:08:30,79 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,79 root ERROR Could not create a class for GestandaardiseerdeKantopsluiting
+12:08:30,82 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,83 root ERROR Could not create a class for GrazigeVegetatie
+12:08:30,86 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,86 root ERROR Could not create a class for HardwareToegang
+12:08:30,91 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,91 root ERROR Could not create a class for Hoppinzuil
+12:08:30,94 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,95 root ERROR Could not create a class for HoutigeVegetatie
+12:08:30,97 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,98 root ERROR Could not create a class for IVRIComponent
+12:08:30,101 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,101 root ERROR Could not create a class for Inloopbehuizing
+12:08:30,106 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,106 root ERROR Could not create a class for Kabel
+12:08:30,109 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,109 root ERROR Could not create a class for KabelAarding
+12:08:30,112 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,112 root ERROR Could not create a class for KabelAardingSamenstelling
+12:08:30,115 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,115 root ERROR Could not create a class for Kabelgeleiding
+12:08:30,118 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,118 root ERROR Could not create a class for KabelgeleidingEnLeidingBevestiging
+12:08:30,122 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,122 root ERROR Could not create a class for Kantopsluiting
+12:08:30,125 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,125 root ERROR Could not create a class for Kast
+12:08:30,128 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,129 root ERROR Could not create a class for KlassiekeFundering
+12:08:30,132 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,132 root ERROR Could not create a class for LEDBord
+12:08:30,135 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,135 root ERROR Could not create a class for Laag
+12:08:30,139 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,139 root ERROR Could not create a class for LaagBouwklasse
+12:08:30,143 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,143 root ERROR Could not create a class for LaagDikte
+12:08:30,146 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,146 root ERROR Could not create a class for LaagProductidentificatiecode
+12:08:30,149 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,149 root ERROR Could not create a class for Leiding
+12:08:30,152 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,152 root ERROR Could not create a class for LijnvormigElement
+12:08:30,156 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,156 root ERROR Could not create a class for LinkendElement
+12:08:30,159 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,159 root ERROR Could not create a class for Luchtkwaliteittoestel
+12:08:30,163 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,163 root ERROR Could not create a class for Markering
+12:08:30,166 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,166 root ERROR Could not create a class for NietWeggebondenDetectie
+12:08:30,170 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,171 root ERROR Could not create a class for OmhullendeInrichting
+12:08:30,174 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,175 root ERROR Could not create a class for PTModuleMetFirmware
+12:08:30,178 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,179 root ERROR Could not create a class for PTModuleZFirmware
+12:08:30,182 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,182 root ERROR Could not create a class for PTRegelaarModule
+12:08:30,185 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,187 root ERROR Could not create a class for PU
+12:08:30,190 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,190 root ERROR Could not create a class for Proef
+12:08:30,193 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,193 root ERROR Could not create a class for Put
+12:08:30,196 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,196 root ERROR Could not create a class for PutRelatie
+12:08:30,199 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,200 root ERROR Could not create a class for SchokindexVoertuigkering
+12:08:30,204 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,204 root ERROR Could not create a class for Seinlantaarn
+12:08:30,207 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,208 root ERROR Could not create a class for SelNietSelLus
+12:08:30,211 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,211 root ERROR Could not create a class for Signalisatie
+12:08:30,214 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,214 root ERROR Could not create a class for SoftwareToegang
+12:08:30,217 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,217 root ERROR Could not create a class for StalenConstructieElement
+12:08:30,221 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,221 root ERROR Could not create a class for StalenProfiel
+12:08:30,225 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,225 root ERROR Could not create a class for SteunStandaard
+12:08:30,228 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,228 root ERROR Could not create a class for Straatmeubilair
+12:08:30,232 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,232 root ERROR Could not create a class for TerreinDeel
+12:08:30,235 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,235 root ERROR Could not create a class for TypeWeggebruiker
+12:08:30,239 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,239 root ERROR Could not create a class for VRIDraagconstructie
+12:08:30,242 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,242 root ERROR Could not create a class for VRModuleMetFirmware
+12:08:30,245 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,245 root ERROR Could not create a class for VRModuleZFirmware
+12:08:30,248 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,249 root ERROR Could not create a class for VegetatieElement
+12:08:30,252 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,252 root ERROR Could not create a class for Ventilatie
+12:08:30,255 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,255 root ERROR Could not create a class for Verankering
+12:08:30,259 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,259 root ERROR Could not create a class for Verkeersbord
+12:08:30,264 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,265 root ERROR Could not create a class for Verkeerslicht
+12:08:30,271 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,271 root ERROR Could not create a class for VerkeersregelaarModule
+12:08:30,274 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,275 root ERROR Could not create a class for Verkeersteken
+12:08:30,280 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,280 root ERROR Could not create a class for Verlichtingstoestel
+12:08:30,284 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,284 root ERROR Could not create a class for VerlichtingstoestelConnector
+12:08:30,289 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,289 root ERROR Could not create a class for Voedingspunt
+12:08:30,292 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,293 root ERROR Could not create a class for Waarschuwingslantaarn
+12:08:30,296 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,297 root ERROR Could not create a class for ZenderOntvangerToegang
+12:08:30,300 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,300 root ERROR Could not create a class for AIMDBStatus
+12:08:30,306 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,306 root ERROR Could not create a class for AIMNaamObject
+12:08:30,310 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,311 root ERROR Could not create a class for AIMObject
+12:08:30,313 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,314 root ERROR Could not create a class for AIMToestand
+12:08:30,317 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,317 root ERROR Could not create a class for ActivityComplex
+12:08:30,322 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,322 root ERROR Could not create a class for Appurtenance
+12:08:30,325 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,326 root ERROR Could not create a class for Derdenobject
+12:08:30,328 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,329 root ERROR Could not create a class for DirectioneleRelatie
+12:08:30,332 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,332 root ERROR Could not create a class for ElectricityAppurtenance
+12:08:30,335 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,335 root ERROR Could not create a class for ElectricityCable
+12:08:30,338 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,338 root ERROR Could not create a class for NaampadObject
+12:08:30,342 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,342 root ERROR Could not create a class for NietDirectioneleRelatie
+12:08:30,345 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,345 root ERROR Could not create a class for Pipe
+12:08:30,348 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,348 root ERROR Could not create a class for RelatieObject
+12:08:30,351 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,351 root ERROR Could not create a class for TelecommunicationsAppurtenance
+12:08:30,356 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,356 root ERROR Could not create a class for TelecommunicationsCable
+12:08:30,359 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,359 root ERROR Could not create a class for Aardingsinstallatie
+12:08:30,363 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,363 root ERROR Could not create a class for Baanlichaam
+12:08:30,366 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,366 root ERROR Could not create a class for BlindePut
+12:08:30,369 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,369 root ERROR Could not create a class for Bochtafbakeningsinstallatie
+12:08:30,373 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,374 root ERROR Could not create a class for Ecoduct
+12:08:30,377 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,377 root ERROR Could not create a class for Ecoduiker
+12:08:30,380 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,380 root ERROR Could not create a class for Ecokoker
+12:08:30,383 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,383 root ERROR Could not create a class for Ecotunnel
+12:08:30,387 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,387 root ERROR Could not create a class for Ecovallei
+12:08:30,391 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,391 root ERROR Could not create a class for Fietstelinstallatie
+12:08:30,394 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,394 root ERROR Could not create a class for Flitsgroep
+12:08:30,397 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,397 root ERROR Could not create a class for Flitspaal
+12:08:30,400 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,400 root ERROR Could not create a class for Gebouw
+12:08:30,404 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,404 root ERROR Could not create a class for GecombineerdePut
+12:08:30,407 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,407 root ERROR Could not create a class for GeluidwerendeConstructie
+12:08:30,410 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,411 root ERROR Could not create a class for GroepDwarseMarkeringEnFiguratie
+12:08:30,414 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,414 root ERROR Could not create a class for GroepMarkering
+12:08:30,417 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,417 root ERROR Could not create a class for Gronddam
+12:08:30,421 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,421 root ERROR Could not create a class for Hulppost
+12:08:30,424 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,424 root ERROR Could not create a class for IPBackbone
+12:08:30,427 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,428 root ERROR Could not create a class for InspectieputRiolering
+12:08:30,430 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,430 root ERROR Could not create a class for Kabelkoker
+12:08:30,433 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,434 root ERROR Could not create a class for L2AccessStructuur
+12:08:30,437 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,437 root ERROR Could not create a class for LEDRotondeafbakening
+12:08:30,442 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,442 root ERROR Could not create a class for LEDWegdekreflectorBebakening
+12:08:30,446 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,447 root ERROR Could not create a class for Link
+12:08:30,450 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,451 root ERROR Could not create a class for Lokaal
+12:08:30,454 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,455 root ERROR Could not create a class for Luchtkwaliteitsensor
+12:08:30,457 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,458 root ERROR Could not create a class for MIVInstallatie
+12:08:30,460 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,460 root ERROR Could not create a class for Onderbord
+12:08:30,463 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,463 root ERROR Could not create a class for Pad
+12:08:30,466 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,466 root ERROR Could not create a class for Rioleringsstelsel
+12:08:30,471 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,471 root ERROR Could not create a class for Slagboom
+12:08:30,475 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,475 root ERROR Could not create a class for Trajectcontrole
+12:08:30,478 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,478 root ERROR Could not create a class for VLAN
+12:08:30,481 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,482 root ERROR Could not create a class for VerkeersbordConcept
+12:08:30,486 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,486 root ERROR Could not create a class for VerkeersbordVerkeersteken
+12:08:30,489 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,490 root ERROR Could not create a class for Verkeersbordopstelling
+12:08:30,493 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,493 root ERROR Could not create a class for Wegberm
+12:08:30,496 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,496 root ERROR Could not create a class for Zpad
+12:08:30,499 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,499 root ERROR Could not create a class for BeheerBoomvorm
+12:08:30,503 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,504 root ERROR Could not create a class for BeheerExoten
+12:08:30,508 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,508 root ERROR Could not create a class for BeheerGrazigeVegetatie
+12:08:30,512 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,512 root ERROR Could not create a class for BeheerHoutigeVegetatie
+12:08:30,516 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,517 root ERROR Could not create a class for BeheerSierbeplanting
+12:08:30,521 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,521 root ERROR Could not create a class for AIDModule
+12:08:30,525 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,525 root ERROR Could not create a class for ANPRCamera
+12:08:30,528 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,528 root ERROR Could not create a class for Aansluitmof
+12:08:30,532 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,532 root ERROR Could not create a class for Aansluitopening
+12:08:30,535 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,535 root ERROR Could not create a class for Aanstraalverlichting
+12:08:30,539 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,539 root ERROR Could not create a class for AanvullendeGeometrie
+12:08:30,542 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,543 root ERROR Could not create a class for Aardingskabel
+12:08:30,546 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,546 root ERROR Could not create a class for Aardingslus
+12:08:30,549 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,549 root ERROR Could not create a class for Aardingsonderbreker
+12:08:30,552 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,553 root ERROR Could not create a class for Aardingspen
+12:08:30,556 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,557 root ERROR Could not create a class for Afmetingsensor
+12:08:30,560 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,560 root ERROR Could not create a class for Afscherming
+12:08:30,563 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,564 root ERROR Could not create a class for Afsluiter
+12:08:30,566 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,567 root ERROR Could not create a class for Aftakking
+12:08:30,571 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,571 root ERROR Could not create a class for AnalogeHoppinzuil
+12:08:30,574 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,574 root ERROR Could not create a class for Antenne
+12:08:30,577 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,578 root ERROR Could not create a class for AntiParkeerpaal
+12:08:30,582 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,582 root ERROR Could not create a class for Armatuurcontroller
+12:08:30,587 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,587 root ERROR Could not create a class for Audioversterker
+12:08:30,592 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,592 root ERROR Could not create a class for Batterij
+12:08:30,595 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,595 root ERROR Could not create a class for Bel
+12:08:30,600 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,600 root ERROR Could not create a class for Beschermbuis
+12:08:30,604 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,604 root ERROR Could not create a class for BeschermingWapening
+12:08:30,607 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,607 root ERROR Could not create a class for BestratingVanBetonstraatsteen
+12:08:30,611 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,612 root ERROR Could not create a class for BestratingVanBetontegel
+12:08:30,615 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,615 root ERROR Could not create a class for BestratingVanGebakkenStraatsteen
+12:08:30,618 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,618 root ERROR Could not create a class for BestratingVanGrasbetontegel
+12:08:30,622 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,622 root ERROR Could not create a class for BestratingVanKassei
+12:08:30,625 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,626 root ERROR Could not create a class for BestratingVanMozaiekkei
+12:08:30,629 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,629 root ERROR Could not create a class for BestratingVanNatuursteentegel
+12:08:30,632 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,632 root ERROR Could not create a class for Bestrijking
+12:08:30,635 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:30,635 root ERROR Could not create a class for Bevestiging
+12:08:36,2 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,3 root ERROR Could not create a class for Bevestigingsbeugel
+12:08:36,8 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,8 root ERROR Could not create a class for BijzonderGeluidsschermelement
+12:08:36,12 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,12 root ERROR Could not create a class for Binnenverlichtingstoestel
+12:08:36,17 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,17 root ERROR Could not create a class for BitumineuzeLaag
+12:08:36,23 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,23 root ERROR Could not create a class for BloemrijkGlanshavergrasland
+12:08:36,27 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,28 root ERROR Could not create a class for BloemrijkGraslandGraslandfase4
+12:08:36,31 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,31 root ERROR Could not create a class for BloemrijkStruisgrasgrasland
+12:08:36,38 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,38 root ERROR Could not create a class for BloemrijkVochtigTotNatGrasland
+12:08:36,43 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,43 root ERROR Could not create a class for BoogpaalVerkeerslicht
+12:08:36,47 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,48 root ERROR Could not create a class for Boom
+12:08:36,54 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,54 root ERROR Could not create a class for Boombrug
+12:08:36,59 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,59 root ERROR Could not create a class for Bouwput
+12:08:36,63 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,63 root ERROR Could not create a class for Bovenbouw
+12:08:36,68 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,68 root ERROR Could not create a class for Braam
+12:08:36,74 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,75 root ERROR Could not create a class for Brandblusser
+12:08:36,78 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,78 root ERROR Could not create a class for Brandhaspel
+12:08:36,82 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,82 root ERROR Could not create a class for Brandleiding
+12:08:36,86 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,86 root ERROR Could not create a class for Brandnetelruigte
+12:08:36,90 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,91 root ERROR Could not create a class for BremEnGaspeldoornstruweel
+12:08:36,96 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,96 root ERROR Could not create a class for Buisbekleding
+12:08:36,100 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,101 root ERROR Could not create a class for Cabine
+12:08:36,105 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,106 root ERROR Could not create a class for Cabinecontroller
+12:08:36,113 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,113 root ERROR Could not create a class for Calamiteitendoorsteek
+12:08:36,117 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,117 root ERROR Could not create a class for CalamiteitsBord
+12:08:36,125 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,125 root ERROR Could not create a class for Camera
+12:08:36,131 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,131 root ERROR Could not create a class for Cementbetonverharding
+12:08:36,135 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,135 root ERROR Could not create a class for Cluster
+12:08:36,144 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,144 root ERROR Could not create a class for Codeklavier
+12:08:36,151 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,152 root ERROR Could not create a class for ColloidaalBeton
+12:08:36,160 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,161 root ERROR Could not create a class for Combilantaarn
+12:08:36,171 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,171 root ERROR Could not create a class for ConstructieSokkel
+12:08:36,181 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,181 root ERROR Could not create a class for Contactor
+12:08:36,192 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,192 root ERROR Could not create a class for Contactpunt
+12:08:36,197 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,198 root ERROR Could not create a class for Container
+12:08:36,206 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,207 root ERROR Could not create a class for Contourverlichting
+12:08:36,224 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,225 root ERROR Could not create a class for DNBHoogspanning
+12:08:36,266 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,266 root ERROR Could not create a class for DNBLaagspanning
+12:08:36,276 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,276 root ERROR Could not create a class for Damwand
+12:08:36,285 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,285 root ERROR Could not create a class for Datakabel
+12:08:36,295 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,295 root ERROR Could not create a class for DetectieCamera
+12:08:36,306 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,307 root ERROR Could not create a class for Dieselgenerator
+12:08:36,313 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,314 root ERROR Could not create a class for Dilatatie
+12:08:36,317 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,318 root ERROR Could not create a class for Divergentiepuntbebakeningselement
+12:08:36,323 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,323 root ERROR Could not create a class for Dolomietverharding
+12:08:36,326 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,326 root ERROR Could not create a class for DominantGraslandfase2
+12:08:36,330 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,331 root ERROR Could not create a class for Dongle
+12:08:36,338 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,339 root ERROR Could not create a class for Doorgang
+12:08:36,343 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,344 root ERROR Could not create a class for Doornstruweel
+12:08:36,350 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,350 root ERROR Could not create a class for Doorverbinddoos
+12:08:36,356 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,357 root ERROR Could not create a class for Draineerbuis
+12:08:36,363 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,364 root ERROR Could not create a class for Drukknop
+12:08:36,367 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,367 root ERROR Could not create a class for Drukverhogingsgroep
+12:08:36,373 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,373 root ERROR Could not create a class for Duikschot
+12:08:36,377 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,377 root ERROR Could not create a class for Duingrasland
+12:08:36,382 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,383 root ERROR Could not create a class for DunneOverlaging
+12:08:36,389 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,389 root ERROR Could not create a class for DwarseMarkering
+12:08:36,394 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,394 root ERROR Could not create a class for DwarseMarkeringVerschuind
+12:08:36,401 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,402 root ERROR Could not create a class for Dwerghavergrasland
+12:08:36,409 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,409 root ERROR Could not create a class for DwergstruikvegetatieHeidesoorten
+12:08:36,422 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,423 root ERROR Could not create a class for DynBordExternePU
+12:08:36,431 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,434 root ERROR Could not create a class for DynBordOpMaat
+12:08:36,447 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,447 root ERROR Could not create a class for DynBordPK
+12:08:36,458 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,458 root ERROR Could not create a class for DynBordRSS
+12:08:36,466 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,467 root ERROR Could not create a class for DynBordRVMS
+12:08:36,478 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,478 root ERROR Could not create a class for DynBordVMS
+12:08:36,487 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,487 root ERROR Could not create a class for DynBordZ30
+12:08:36,495 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,496 root ERROR Could not create a class for DynamischeVluchtwegindicatie
+12:08:36,504 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,504 root ERROR Could not create a class for EcoPoort
+12:08:36,513 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,513 root ERROR Could not create a class for Ecoraster
+12:08:36,518 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,520 root ERROR Could not create a class for Eindstuk
+12:08:36,527 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,527 root ERROR Could not create a class for EnergiemeterAWV
+12:08:36,534 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,534 root ERROR Could not create a class for EnergiemeterDNB
+12:08:36,544 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,544 root ERROR Could not create a class for EnergiemeterDNBPiek
+12:08:36,552 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,553 root ERROR Could not create a class for EnergiemeterDNBReactief
+12:08:36,562 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,562 root ERROR Could not create a class for EnergiemeterDerden
+12:08:36,568 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,568 root ERROR Could not create a class for EquipotentiaalVerbinding
+12:08:36,574 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,575 root ERROR Could not create a class for Exoten
+12:08:36,580 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,581 root ERROR Could not create a class for ExterneDetectie
+12:08:36,587 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,587 root ERROR Could not create a class for FieldOfView
+12:08:36,592 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,593 root ERROR Could not create a class for Fietslantaarn
+12:08:36,597 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,598 root ERROR Could not create a class for FietstelDisplay
+12:08:36,604 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,604 root ERROR Could not create a class for Fietstelsysteem
+12:08:36,611 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,611 root ERROR Could not create a class for FiguratieMarkering
+12:08:36,616 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,616 root ERROR Could not create a class for FiguratieMarkeringVerschuind
+12:08:36,622 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,622 root ERROR Could not create a class for Flitscamera
+12:08:36,627 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,627 root ERROR Could not create a class for ForfaitaireAansluiting
+12:08:36,633 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,633 root ERROR Could not create a class for Funderingsmassief
+12:08:36,639 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,639 root ERROR Could not create a class for Funderingsplaat
+12:08:36,644 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,645 root ERROR Could not create a class for GPU
+12:08:36,650 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,650 root ERROR Could not create a class for Galgpaal
+12:08:36,660 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,660 root ERROR Could not create a class for GeexpandeerdPolystyreen
+12:08:36,670 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,670 root ERROR Could not create a class for GekleurdWegvlakMarkering
+12:08:36,678 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,678 root ERROR Could not create a class for Geleideconstructie
+12:08:36,688 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,688 root ERROR Could not create a class for Geleidingsverlichting
+12:08:36,696 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,697 root ERROR Could not create a class for Geleidingswand
+12:08:36,707 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,707 root ERROR Could not create a class for GeluidswerendeConstructie
+12:08:36,717 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,717 root ERROR Could not create a class for Geotextiel
+12:08:36,726 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,727 root ERROR Could not create a class for GetesteBeginconstructie
+12:08:36,737 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,737 root ERROR Could not create a class for GrasKruidenmixGraslandfase3
+12:08:36,745 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,746 root ERROR Could not create a class for Grasland
+12:08:36,754 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,755 root ERROR Could not create a class for Grasmat
+12:08:36,764 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,765 root ERROR Could not create a class for GrassenmixGraslandfase1
+12:08:36,773 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,773 root ERROR Could not create a class for Grindgazon
+12:08:36,782 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,782 root ERROR Could not create a class for HSBeveiligingscel
+12:08:36,792 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,792 root ERROR Could not create a class for HSCabine
+12:08:36,801 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,802 root ERROR Could not create a class for Haag
+12:08:36,811 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,812 root ERROR Could not create a class for Handbediening
+12:08:36,821 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,821 root ERROR Could not create a class for Handwiel
+12:08:36,828 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,829 root ERROR Could not create a class for Hardware
+12:08:36,835 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,837 root ERROR Could not create a class for HeeftAanvullendeGeometrie
+12:08:36,844 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,844 root ERROR Could not create a class for HeeftBeheer
+12:08:36,850 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,850 root ERROR Could not create a class for HeeftBetrokkene
+12:08:36,860 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,860 root ERROR Could not create a class for HeeftNetwerkProtectie
+12:08:36,867 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,867 root ERROR Could not create a class for HeeftNetwerktoegang
+12:08:36,874 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,875 root ERROR Could not create a class for Heestermassief
+12:08:36,880 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,880 root ERROR Could not create a class for HeischraalGrasland
+12:08:36,890 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,890 root ERROR Could not create a class for Hoofdschakelaar
+12:08:36,894 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,895 root ERROR Could not create a class for Hoogtedetectie
+12:08:36,899 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,899 root ERROR Could not create a class for HoortBij
+12:08:36,909 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,909 root ERROR Could not create a class for Huisaansluitput
+12:08:36,915 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,915 root ERROR Could not create a class for Hulppostkast
+12:08:36,922 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,922 root ERROR Could not create a class for Hulpstuk
+12:08:36,928 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,928 root ERROR Could not create a class for Hydrant
+12:08:36,933 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,934 root ERROR Could not create a class for IOKaart
+12:08:36,939 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,940 root ERROR Could not create a class for ITSapp
+12:08:36,944 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,945 root ERROR Could not create a class for Iepenstruweel
+12:08:36,949 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,949 root ERROR Could not create a class for IndoorKast
+12:08:36,954 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,955 root ERROR Could not create a class for Infiltratievoorziening
+12:08:36,962 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,962 root ERROR Could not create a class for IntercomServer
+12:08:36,972 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,973 root ERROR Could not create a class for IntercomToestel
+12:08:36,982 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,983 root ERROR Could not create a class for InvasieveExoten
+12:08:36,990 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,990 root ERROR Could not create a class for InwendigVerlichtPictogram
+12:08:36,997 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:36,997 root ERROR Could not create a class for IpPowerSwitch
+12:08:37,2 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,3 root ERROR Could not create a class for IsAdmOnderdeelVan
+12:08:37,8 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,8 root ERROR Could not create a class for IsInspectieVan
+12:08:37,14 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,14 root ERROR Could not create a class for IsNetwerkECC
+12:08:37,22 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,22 root ERROR Could not create a class for IsSWGehostOp
+12:08:37,28 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,28 root ERROR Could not create a class for IsSWOnderdeelVan
+12:08:37,38 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,39 root ERROR Could not create a class for Kabelgoot
+12:08:37,45 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,46 root ERROR Could not create a class for Kabelladder
+12:08:37,56 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,57 root ERROR Could not create a class for Kabelmof
+12:08:37,66 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,67 root ERROR Could not create a class for KabelnetBuis
+12:08:37,74 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,75 root ERROR Could not create a class for KabelnetToegang
+12:08:37,82 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,83 root ERROR Could not create a class for Kalkgrasland
+12:08:37,89 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,90 root ERROR Could not create a class for KalkrijkKamgrasland
+12:08:37,98 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,98 root ERROR Could not create a class for Kamer
+12:08:37,106 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,106 root ERROR Could not create a class for KantstrookAfw
+12:08:37,112 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,112 root ERROR Could not create a class for KantstrookStd
+12:08:37,120 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,121 root ERROR Could not create a class for Klimatisatie
+12:08:37,128 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,129 root ERROR Could not create a class for Klimvorm
+12:08:37,134 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,134 root ERROR Could not create a class for Knipperlantaarn
+12:08:37,141 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,141 root ERROR Could not create a class for Kopmuur
+12:08:37,148 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,148 root ERROR Could not create a class for KringsBerliner
+12:08:37,154 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,155 root ERROR Could not create a class for LEDDriver
+12:08:37,163 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,164 root ERROR Could not create a class for Laagspanningsbord
+12:08:37,173 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,173 root ERROR Could not create a class for Lensplaat
+12:08:37,182 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,182 root ERROR Could not create a class for LetterCijferMarkering
+12:08:37,191 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,191 root ERROR Could not create a class for LetterMarkeringVerschaald
+12:08:37,204 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,205 root ERROR Could not create a class for Lichtmast
+12:08:37,213 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,213 root ERROR Could not create a class for Lichtnagel
+12:08:37,219 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,220 root ERROR Could not create a class for Lichtsensor
+12:08:37,227 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,227 root ERROR Could not create a class for Lichtzuil
+12:08:37,234 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,235 root ERROR Could not create a class for LigtOp
+12:08:37,246 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,246 root ERROR Could not create a class for LijnvormigElementMarkering
+12:08:37,255 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,255 root ERROR Could not create a class for LogischePoort
+12:08:37,262 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,263 root ERROR Could not create a class for Loofhout
+12:08:37,271 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,272 root ERROR Could not create a class for LoopTerminationAndProtection
+12:08:37,279 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,279 root ERROR Could not create a class for LuchtkwaliteitControleUnit
+12:08:37,288 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,288 root ERROR Could not create a class for LuchtkwaliteitZenderOntvanger
+12:08:37,297 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,297 root ERROR Could not create a class for Luchtkwaliteitreflector
+12:08:37,307 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,308 root ERROR Could not create a class for Luidspreker
+12:08:37,316 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,317 root ERROR Could not create a class for MACQPUFrontend
+12:08:37,323 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,324 root ERROR Could not create a class for MIVCommunicatiekaart
+12:08:37,328 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,328 root ERROR Could not create a class for MIVLus
+12:08:37,335 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,336 root ERROR Could not create a class for MIVLuskaart
+12:08:37,341 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,341 root ERROR Could not create a class for MIVProcessorkaart
+12:08:37,344 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,344 root ERROR Could not create a class for MIVVoedingsmodule
+12:08:37,348 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,348 root ERROR Could not create a class for Mantelbuis
+12:08:37,354 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,354 root ERROR Could not create a class for Meetcel
+12:08:37,359 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,359 root ERROR Could not create a class for Meetmicrofoon
+12:08:37,364 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,364 root ERROR Could not create a class for Montagekast
+12:08:37,371 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,371 root ERROR Could not create a class for Motorvangplank
+12:08:37,375 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,375 root ERROR Could not create a class for Muurdoorgangsstuk
+12:08:37,382 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,383 root ERROR Could not create a class for Muurvegetatie
+12:08:37,389 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,390 root ERROR Could not create a class for Naaldhout
+12:08:37,395 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,395 root ERROR Could not create a class for NatteRuigte
+12:08:37,400 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,400 root ERROR Could not create a class for Neerslagsensor
+12:08:37,408 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,409 root ERROR Could not create a class for Netstabilisator
+12:08:37,414 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,415 root ERROR Could not create a class for NetwerkModem
+12:08:37,419 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,419 root ERROR Could not create a class for Netwerkelement
+12:08:37,423 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,424 root ERROR Could not create a class for Netwerkkaart
+12:08:37,431 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,432 root ERROR Could not create a class for Netwerkpoort
+12:08:37,435 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,436 root ERROR Could not create a class for NietGetestBeginstuk
+12:08:37,443 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,443 root ERROR Could not create a class for NietSelectieveDetectielus
+12:08:37,447 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,447 root ERROR Could not create a class for NietStandaardStalenProfiel
+12:08:37,452 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,452 root ERROR Could not create a class for Noppendrainage
+12:08:37,456 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,457 root ERROR Could not create a class for Obstakelbeveiliger
+12:08:37,460 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,460 root ERROR Could not create a class for OmegaElement
+12:08:37,464 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,465 root ERROR Could not create a class for Omhult
+12:08:37,468 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,469 root ERROR Could not create a class for Omvormer
+12:08:37,474 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,474 root ERROR Could not create a class for OnbegroeidVoorkomen
+12:08:37,477 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,478 root ERROR Could not create a class for Onderbouw
+12:08:37,481 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,481 root ERROR Could not create a class for Onderdoorboring
+12:08:37,486 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,486 root ERROR Could not create a class for Onderwaterkruising
+12:08:37,495 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,496 root ERROR Could not create a class for Onderwatervegetatie
+12:08:37,505 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,506 root ERROR Could not create a class for OntluchterBrandleiding
+12:08:37,513 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,514 root ERROR Could not create a class for Ontvanger
+12:08:37,522 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,523 root ERROR Could not create a class for OpenbaarVervoerslantaarn
+12:08:37,528 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,528 root ERROR Could not create a class for OpgaandeBoom
+12:08:37,533 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,534 root ERROR Could not create a class for OpgaandeHoutigeVegetatie
+12:08:37,543 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,543 root ERROR Could not create a class for Overdrukventilator
+12:08:37,553 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,553 root ERROR Could not create a class for Overgangsconstructie
+12:08:37,563 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,563 root ERROR Could not create a class for OverlangseMarkering
+12:08:37,574 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,574 root ERROR Could not create a class for Overstort
+12:08:37,584 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,585 root ERROR Could not create a class for Overstortrand
+12:08:37,594 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,594 root ERROR Could not create a class for PCIKaart
+12:08:37,606 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,607 root ERROR Could not create a class for PLC
+12:08:37,615 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,615 root ERROR Could not create a class for PTDemodulatoren
+12:08:37,624 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,624 root ERROR Could not create a class for PTKARModem
+12:08:37,633 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,633 root ERROR Could not create a class for PTModem
+12:08:37,642 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,642 root ERROR Could not create a class for PTRadio
+12:08:37,652 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,653 root ERROR Could not create a class for PTRegelaar
+12:08:37,660 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,661 root ERROR Could not create a class for PTSCKaart
+12:08:37,669 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,670 root ERROR Could not create a class for PTUitgangskaart
+12:08:37,677 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,678 root ERROR Could not create a class for PTVerwerkingseenheid
+12:08:37,686 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,687 root ERROR Could not create a class for PTVoedingsmodule
+12:08:37,695 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,695 root ERROR Could not create a class for Persleiding
+12:08:37,703 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,704 root ERROR Could not create a class for Pictogram
+12:08:37,711 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,711 root ERROR Could not create a class for PiezometrischeBuis
+12:08:37,720 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,720 root ERROR Could not create a class for Plantbakvorm
+12:08:37,728 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,729 root ERROR Could not create a class for PlintGC
+12:08:37,737 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,738 root ERROR Could not create a class for Plooibaken
+12:08:37,747 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,748 root ERROR Could not create a class for PoEInjector
+12:08:37,757 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,758 root ERROR Could not create a class for Pomp
+12:08:37,767 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,767 root ERROR Could not create a class for PunctueleVerlichtingsmast
+12:08:37,777 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,777 root ERROR Could not create a class for PutBovenbouw
+12:08:37,786 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,786 root ERROR Could not create a class for Putbekleding
+12:08:37,795 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,795 root ERROR Could not create a class for RIS
+12:08:37,804 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,804 root ERROR Could not create a class for RaaigrasweideGraslandfase0
+12:08:37,814 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,814 root ERROR Could not create a class for Rack
+12:08:37,824 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,824 root ERROR Could not create a class for Radar
+12:08:37,834 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,834 root ERROR Could not create a class for RechteSteun
+12:08:37,842 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,842 root ERROR Could not create a class for Referentiepunt
+12:08:37,850 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,851 root ERROR Could not create a class for ReflectorInLijnvormigElement
+12:08:37,860 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,860 root ERROR Could not create a class for Reflectorpaal
+12:08:37,872 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,872 root ERROR Could not create a class for Repeater
+12:08:37,881 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,882 root ERROR Could not create a class for Reservoir
+12:08:37,891 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,891 root ERROR Could not create a class for RetroReflecterendeKoker
+12:08:37,902 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,902 root ERROR Could not create a class for RetroreflecterendVerkeersbord
+12:08:37,911 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,912 root ERROR Could not create a class for RetroreflecterendeFolie
+12:08:37,921 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,922 root ERROR Could not create a class for Riet
+12:08:37,932 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,932 root ERROR Could not create a class for Rioleringsbuis
+12:08:37,941 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,942 root ERROR Could not create a class for Riooltoegang
+12:08:37,951 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,952 root ERROR Could not create a class for Ruigte
+12:08:37,963 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,963 root ERROR Could not create a class for Schacht
+12:08:37,973 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,973 root ERROR Could not create a class for SchampkantAfw
+12:08:37,984 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,984 root ERROR Could not create a class for SchampkantStd
+12:08:37,994 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:37,995 root ERROR Could not create a class for Schanskorf
+12:08:38,4 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,5 root ERROR Could not create a class for ScheurremmendeLaag
+12:08:38,13 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,13 root ERROR Could not create a class for Segmentcontroller
+12:08:38,23 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,23 root ERROR Could not create a class for Seinbord
+12:08:38,33 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,34 root ERROR Could not create a class for Seinbrug
+12:08:38,44 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,45 root ERROR Could not create a class for SelectieveDetectielus
+12:08:38,53 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,54 root ERROR Could not create a class for Sierbeplanting
+12:08:38,63 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,64 root ERROR Could not create a class for Signaalkabel
+12:08:38,74 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,75 root ERROR Could not create a class for Slagboomarm
+12:08:38,81 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,82 root ERROR Could not create a class for SlagboomarmVerlichting
+12:08:38,91 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,91 root ERROR Could not create a class for Slagboomkolom
+12:08:38,100 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,100 root ERROR Could not create a class for Slemlaag
+12:08:38,110 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,110 root ERROR Could not create a class for Sleuf
+12:08:38,118 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,119 root ERROR Could not create a class for SluitAanOp
+12:08:38,128 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,128 root ERROR Could not create a class for Software
+12:08:38,137 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,138 root ERROR Could not create a class for Sokkel
+12:08:38,146 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,146 root ERROR Could not create a class for SolitaireHeester
+12:08:38,155 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,155 root ERROR Could not create a class for SoortenrijkSchraalGraslandGraslandfase5
+12:08:38,163 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,164 root ERROR Could not create a class for StandaardStalenProfiel
+12:08:38,173 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,173 root ERROR Could not create a class for Steenslagverharding
+12:08:38,181 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,181 root ERROR Could not create a class for Stobbenwal
+12:08:38,191 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,192 root ERROR Could not create a class for Stopcontact
+12:08:38,200 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,200 root ERROR Could not create a class for Stortdraad
+12:08:38,211 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,211 root ERROR Could not create a class for Stortsteen
+12:08:38,222 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,222 root ERROR Could not create a class for Straatkolk
+12:08:38,230 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,231 root ERROR Could not create a class for StroomMeetmodule
+12:08:38,241 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,242 root ERROR Could not create a class for Stroomdalgrasland
+12:08:38,255 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,256 root ERROR Could not create a class for Stroomkring
+12:08:38,265 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,266 root ERROR Could not create a class for Struweel
+12:08:38,276 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,276 root ERROR Could not create a class for Sturing
+12:08:38,285 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,286 root ERROR Could not create a class for StuurklepBrandleiding
+12:08:38,296 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,296 root ERROR Could not create a class for TLCfiPoort
+12:08:38,306 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,307 root ERROR Could not create a class for Taludgoot
+12:08:38,316 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,317 root ERROR Could not create a class for TechnischePut
+12:08:38,327 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,328 root ERROR Could not create a class for Telecomkabel
+12:08:38,337 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,337 root ERROR Could not create a class for Ternairmengselverharding
+12:08:38,346 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,347 root ERROR Could not create a class for Terugkeer
+12:08:38,358 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,358 root ERROR Could not create a class for Terugslagklep
+12:08:38,367 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,368 root ERROR Could not create a class for Toegangscontrole
+12:08:38,379 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,380 root ERROR Could not create a class for Transformator
+12:08:38,391 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,391 root ERROR Could not create a class for TrottoirbandAfw
+12:08:38,401 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,403 root ERROR Could not create a class for TrottoirbandStd
+12:08:38,412 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,412 root ERROR Could not create a class for TrottoirbandWatergreppelAfw
+12:08:38,422 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,423 root ERROR Could not create a class for TrottoirbandWatergreppelStd
+12:08:38,428 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,429 root ERROR Could not create a class for UPS
+12:08:38,433 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,433 root ERROR Could not create a class for UitheemsLoofhout
+12:08:38,443 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,444 root ERROR Could not create a class for VRBAZ
+12:08:38,450 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,451 root ERROR Could not create a class for VRBatterijICU
+12:08:38,455 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,455 root ERROR Could not create a class for VRBeveiligingskaart
+12:08:38,458 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,459 root ERROR Could not create a class for VRCommunicatiekaart
+12:08:38,462 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,462 root ERROR Could not create a class for VRHandbediening
+12:08:38,467 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,468 root ERROR Could not create a class for VRIVirtueleDetectiezone
+12:08:38,473 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,473 root ERROR Could not create a class for VRIngangscontacten
+12:08:38,476 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,476 root ERROR Could not create a class for VRKortsluitbeveiliging
+12:08:38,479 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,479 root ERROR Could not create a class for VRLuskaart
+12:08:38,483 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,483 root ERROR Could not create a class for VRStuurkaart
+12:08:38,487 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,488 root ERROR Could not create a class for VRUitgangscontacten
+12:08:38,491 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,491 root ERROR Could not create a class for Veerooster
+12:08:38,495 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,495 root ERROR Could not create a class for VentilatieAfsluitklep
+12:08:38,501 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,501 root ERROR Could not create a class for Ventilatierooster
+12:08:38,505 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,506 root ERROR Could not create a class for Ventilator
+12:08:38,509 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,509 root ERROR Could not create a class for Verankeringslandhoofd
+12:08:38,512 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,512 root ERROR Could not create a class for Verankeringsmassief
+12:08:38,515 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,515 root ERROR Could not create a class for VerhardingGrasKunststofplaat
+12:08:38,520 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,520 root ERROR Could not create a class for Verkeersbordsteun
+12:08:38,524 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,524 root ERROR Could not create a class for VerkeerslichtGroen
+12:08:38,527 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,527 root ERROR Could not create a class for VerkeerslichtOranjegeel
+12:08:38,532 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,532 root ERROR Could not create a class for VerkeerslichtRood
+12:08:38,536 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,536 root ERROR Could not create a class for VerkeerslichtWit
+12:08:38,540 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,540 root ERROR Could not create a class for Verkeersregelaar
+12:08:38,543 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,544 root ERROR Could not create a class for Verkeersspiegel
+12:08:38,547 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,547 root ERROR Could not create a class for VerlichtingstoestelHgLP
+12:08:38,551 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,551 root ERROR Could not create a class for VerlichtingstoestelLED
+12:08:38,558 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,558 root ERROR Could not create a class for VerlichtingstoestelMHHP
+12:08:38,563 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,563 root ERROR Could not create a class for VerlichtingstoestelNaHP
+12:08:38,566 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,566 root ERROR Could not create a class for VerlichtingstoestelNaLP
+12:08:38,570 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,570 root ERROR Could not create a class for VerlichtingstoestelTL
+12:08:38,574 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,574 root ERROR Could not create a class for VerruigdGrasland
+12:08:38,580 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,580 root ERROR Could not create a class for VerstoordGrasland
+12:08:38,584 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,584 root ERROR Could not create a class for Verwarmingselement
+12:08:38,588 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,588 root ERROR Could not create a class for Verwarmingslint
+12:08:38,592 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,592 root ERROR Could not create a class for VirtueleServer
+12:08:38,595 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,595 root ERROR Could not create a class for VlakGeluidsschermelement
+12:08:38,598 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,598 root ERROR Could not create a class for Vlierstruweel
+12:08:38,601 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,602 root ERROR Could not create a class for Vluchtdeur
+12:08:38,606 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,606 root ERROR Could not create a class for Vluchtopening
+12:08:38,610 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,610 root ERROR Could not create a class for VoedingDerdenLaagspanning
+12:08:38,614 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,614 root ERROR Could not create a class for Voedingskabel
+12:08:38,618 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,619 root ERROR Could not create a class for Voedt
+12:08:38,622 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,622 root ERROR Could not create a class for VoedtAangestuurd
+12:08:38,626 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,626 root ERROR Could not create a class for VoertuigkerendGeluidsschermelement
+12:08:38,629 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,629 root ERROR Could not create a class for Voertuiglantaarn
+12:08:38,632 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,632 root ERROR Could not create a class for Voetgangerslantaarn
+12:08:38,635 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,635 root ERROR Could not create a class for Vooraankondiging
+12:08:38,639 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,639 root ERROR Could not create a class for Voorschakelapparaat
+12:08:38,642 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,642 root ERROR Could not create a class for VulpuntBrandweer
+12:08:38,645 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,645 root ERROR Could not create a class for WIMDatalogger
+12:08:38,648 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,648 root ERROR Could not create a class for WVConsole
+12:08:38,651 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,652 root ERROR Could not create a class for WVLichtmast
+12:08:38,655 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,655 root ERROR Could not create a class for WVOpvoertransformator
+12:08:38,662 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,663 root ERROR Could not create a class for Walsbetonverharding
+12:08:38,672 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,672 root ERROR Could not create a class for WaterdoorlatendeBestrating
+12:08:38,676 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,676 root ERROR Could not create a class for WatergreppelAfw
+12:08:38,680 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,680 root ERROR Could not create a class for WatergreppelStd
+12:08:38,687 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,687 root ERROR Could not create a class for Weegsensor
+12:08:38,693 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,694 root ERROR Could not create a class for WegbebakeningAfschermendeConstructies
+12:08:38,697 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,698 root ERROR Could not create a class for Wegdekvoeg
+12:08:38,705 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,705 root ERROR Could not create a class for WeggebondenDetector
+12:08:38,711 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,712 root ERROR Could not create a class for Wegkantkast
+12:08:38,718 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,718 root ERROR Could not create a class for Wegreflector
+12:08:38,727 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,727 root ERROR Could not create a class for Wervel
+12:08:38,734 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,734 root ERROR Could not create a class for Wildreflector
+12:08:38,740 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,741 root ERROR Could not create a class for Wilgenstruweel
+12:08:38,748 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,748 root ERROR Could not create a class for Zender
+12:08:38,759 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,760 root ERROR Could not create a class for Zonnepaneel
+12:08:38,770 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,771 root ERROR Could not create a class for Keuring
+12:08:38,781 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,781 root ERROR Could not create a class for MeteropnameEnergiemeter
+12:08:38,788 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,789 root ERROR Could not create a class for MeteropnameEnergiemeterGecombineerd
+12:08:38,795 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,795 root ERROR Could not create a class for ProefBindmiddeldosering
+12:08:38,806 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,806 root ERROR Could not create a class for ProefBoomtoestand
+12:08:38,813 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,814 root ERROR Could not create a class for ProefConsistentie
+12:08:38,818 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,818 root ERROR Could not create a class for ProefDoorlatendheid
+12:08:38,823 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,823 root ERROR Could not create a class for ProefDraagvermogen
+12:08:38,826 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,826 root ERROR Could not create a class for ProefDraineervermogen
+12:08:38,829 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,829 root ERROR Could not create a class for ProefDruksterkte
+12:08:38,832 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,832 root ERROR Could not create a class for ProefDwarsvlakheid
+12:08:38,836 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,836 root ERROR Could not create a class for ProefEffectiefBindmiddelgehalte
+12:08:38,840 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,840 root ERROR Could not create a class for ProefGaafheid
+12:08:38,844 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,845 root ERROR Could not create a class for ProefGeluidstest
+12:08:38,848 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,849 root ERROR Could not create a class for ProefGemetenDikte
+12:08:38,853 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,853 root ERROR Could not create a class for ProefGrondkarakteristieken
+12:08:38,856 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,856 root ERROR Could not create a class for ProefHechtsterkte
+12:08:38,859 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,859 root ERROR Could not create a class for ProefKerendVermogen
+12:08:38,862 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,863 root ERROR Could not create a class for ProefKorrelverdeling
+12:08:38,865 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,866 root ERROR Could not create a class for ProefLangsvlakheid
+12:08:38,869 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,870 root ERROR Could not create a class for ProefLuchtdichtheid
+12:08:38,873 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,873 root ERROR Could not create a class for ProefLuchtgehalte
+12:08:38,876 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,876 root ERROR Could not create a class for ProefLuminantie
+12:08:38,880 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,881 root ERROR Could not create a class for ProefMortelkwaliteit
+12:08:38,884 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,884 root ERROR Could not create a class for ProefNaderOnderzoekTomograaf
+12:08:38,888 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,888 root ERROR Could not create a class for ProefPctHolleruimte
+12:08:38,892 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,893 root ERROR Could not create a class for ProefPerformantieklasse
+12:08:38,896 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,896 root ERROR Could not create a class for ProefPerformantieniveau
+12:08:38,899 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,899 root ERROR Could not create a class for ProefRetroreflectie
+12:08:38,903 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,903 root ERROR Could not create a class for ProefRolgeluid
+12:08:38,907 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,907 root ERROR Could not create a class for ProefSchokindex
+12:08:38,911 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,912 root ERROR Could not create a class for ProefSchokindexMVP
+12:08:38,915 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,915 root ERROR Could not create a class for ProefStaalvezelgehalte
+12:08:38,918 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,918 root ERROR Could not create a class for ProefStroefheid
+12:08:38,921 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,921 root ERROR Could not create a class for ProefTemperatuur
+12:08:38,924 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,925 root ERROR Could not create a class for ProefTextuurdiepte
+12:08:38,928 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,928 root ERROR Could not create a class for ProefVerankeringskracht
+12:08:38,931 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,931 root ERROR Could not create a class for ProefVerderOnderzoekTrekproef
+12:08:38,934 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,934 root ERROR Could not create a class for ProefVisueleBeoordeling
+12:08:38,938 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,938 root ERROR Could not create a class for ProefVlakheid
+12:08:38,942 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,942 root ERROR Could not create a class for ProefVoertuigOverhelling
+12:08:38,945 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,945 root ERROR Could not create a class for ProefWaterdichtheid
+12:08:38,948 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,948 root ERROR Could not create a class for ProefWatergehalte
+12:08:38,951 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,951 root ERROR Could not create a class for ProefWateropslorping
+12:08:38,955 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,955 root ERROR Could not create a class for ProefWeerstandAfschilfering
+12:08:38,961 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,961 root ERROR Could not create a class for ProefWerkingsbreedteGC
+12:08:38,965 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,965 root ERROR Could not create a class for ProefWerkingsbreedteMVP
+12:08:38,969 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,970 root ERROR Could not create a class for ProefZichtbaarheidBijDagOfWV
+12:08:38,973 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,973 root ERROR Could not create a class for ProefZichtbaarheidBijNacht
+12:08:38,976 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,976 root ERROR Could not create a class for ProefZichtbaarheidBijNachtNatWegdek
+12:08:38,979 root ERROR 'OSLOCollector' object has no attribute 'find_all_indirect_inheritances_by_class'
+12:08:38,979 root ERROR Could not create a class for ProefZichtbaarheidBijNachtRegenweer
+12:13:52,606 root ERROR https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#BevestigingGC class structure not implemented
+12:13:52,606 root ERROR Could not create a class for BevestigingGC
+12:13:52,675 root ERROR https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#KabelAarding class structure not implemented
+12:13:52,675 root ERROR Could not create a class for KabelAarding
+12:13:52,680 root ERROR https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#KabelgeleidingEnLeidingBevestiging class structure not implemented
+12:13:52,681 root ERROR Could not create a class for KabelgeleidingEnLeidingBevestiging
+12:13:52,699 root ERROR https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#LaagDikte class structure not implemented
+12:13:52,699 root ERROR Could not create a class for LaagDikte
+12:13:52,750 root ERROR https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#StalenConstructieElement class structure not implemented
+12:13:52,750 root ERROR Could not create a class for StalenConstructieElement
+12:13:52,759 root ERROR https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#TerreinDeel class structure not implemented
+12:13:52,759 root ERROR Could not create a class for TerreinDeel
+12:13:52,778 root ERROR https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#Verkeersbord class structure not implemented
+12:13:52,779 root ERROR Could not create a class for Verkeersbord
+12:15:34,432 root ERROR 
+12:15:34,433 root ERROR Could not create a class for KlAlgSnelheidsregime
+12:16:05,219 root ERROR https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#BevestigingGC class structure not implemented
+12:17:15,638 root ERROR https://wegenenverkeer.data.vlaanderen.be/ns/abstracten#BevestigingGC class structure not implemented
