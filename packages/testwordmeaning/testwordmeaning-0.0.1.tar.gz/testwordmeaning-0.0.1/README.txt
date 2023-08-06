@@ -1,0 +1,1 @@
+This library was written by Moein Davarzani and you can test its meaning by giving a word to its Word () function. Also get a list of meaningful words of its member by giving a list of words to the list_word () function.

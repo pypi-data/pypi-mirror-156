@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: testwordmeaning
+Version: 0.0.1
+Summary: Recognize whether words are meaningful or not
+Home-page: UNKNOWN
+Author: moein davarzani
+Author-email: moeindavarzani2006@gmail.com
+License: MIT
+Keywords: testwordmeaning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This library was written by Moein Davarzani and you can test its meaning by giving a word to its Word () function. Also get a list of meaningful words of its member by giving a list of words to the list_word () function.
+
+Change Log
+============
+
+0.0.1 (6/25/2022)
+------------------
+- Fixed the problem of importing modules
+
