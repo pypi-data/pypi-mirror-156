@@ -1,0 +1,11 @@
+apres/__init__.py,sha256=TNKIWcWfA6b8MZQPpnXkStF18LLmR0Sd-kTAfi9hY8Y,19362
+apres/apres_to_nc.py,sha256=t3Ly7vzehPAs4ChJmFSvs7J7FW2NQYhJYW0t3v15psc,445
+apres/nc_to_apres.py,sha256=wsc0aCAGXuAVfcrW9KRjQOsUGnvOFrt9eeNYAI8WIUE,918
+apres/plot_apres.py,sha256=7UxGEn1FivET_zAAOtIi1gSDjtUEwwS8yMfXVQdjjcs,5819
+apres/read_apres.py,sha256=dGbSfQ4cN8H0qZyi1-EuyCQHLMUazogX0lOp4uLyLMk,1266
+apres/write_apres.py,sha256=UBCcLExHjpcgEQMfu9--IFNsflJu5X-eQV01s1fBHik,1258
+bas_apres-0.1.1.dist-info/entry_points.txt,sha256=xncYNzRppkxOTULA8fmatpkccT2PIyMnj8Klg7po1a8,190
+bas_apres-0.1.1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+bas_apres-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+bas_apres-0.1.1.dist-info/METADATA,sha256=Ycd4FipM_XUUwiMWWEEe_QLw8F2h7vKeU3ljesfucyE,6322
+bas_apres-0.1.1.dist-info/RECORD,,
