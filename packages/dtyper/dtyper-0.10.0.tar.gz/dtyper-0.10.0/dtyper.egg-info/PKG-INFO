@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: dtyper
+Version: 0.10.0
+Summary: ⌨️dtyper: Call typer commands or make dataclasses from them ⌨️
+Home-page: https://github.com/rec/dtyper
+Author: Tom Ritchford
+Author-email: tom@swirly.com
+License: MIT
+Keywords: dataclass
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+License-File: LICENSE
+
+⌨️dtyper: Call typer commands or make dataclasses from them ⌨️
+
+Install using ``pip install dtyper``.
+
+``dtyper.function`` takes a ``typer`` command and returns a callable function
+with the correct defaults.
+
+``dtyper.dataclass`` is a decorator that takes a ``typer`` command and makes a
+dataclass from it, wrapping either a function or a callable class.
+
+See ``test_dtyper.py`` for examples of use.
+
+
