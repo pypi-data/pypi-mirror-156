@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cellshape_cluster/__init__.py
+cellshape_cluster/clustering_layer.py
+cellshape_cluster/deep_embedded_clustering.py
+cellshape_cluster/training_functions.py
+cellshape_cluster.egg-info/PKG-INFO
+cellshape_cluster.egg-info/SOURCES.txt
+cellshape_cluster.egg-info/dependency_links.txt
+cellshape_cluster.egg-info/not-zip-safe
+cellshape_cluster.egg-info/requires.txt
+cellshape_cluster.egg-info/top_level.txt
