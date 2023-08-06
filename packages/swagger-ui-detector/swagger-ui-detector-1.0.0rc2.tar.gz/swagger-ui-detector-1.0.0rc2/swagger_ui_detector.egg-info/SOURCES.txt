@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/__init__.py
+src/cli.py
+src/git_searcher.py
+src/snyk_parser.py
+src/swagger_classifier.py
+swagger_ui_detector.egg-info/PKG-INFO
+swagger_ui_detector.egg-info/SOURCES.txt
+swagger_ui_detector.egg-info/dependency_links.txt
+swagger_ui_detector.egg-info/entry_points.txt
+swagger_ui_detector.egg-info/requires.txt
+swagger_ui_detector.egg-info/top_level.txt

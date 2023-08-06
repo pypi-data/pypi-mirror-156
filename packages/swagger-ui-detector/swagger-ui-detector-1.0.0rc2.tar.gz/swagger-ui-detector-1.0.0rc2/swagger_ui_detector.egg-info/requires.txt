@@ -1,0 +1,9 @@
+beautifulsoup4
+GitPython>=3.0.8
+requests
+packaging
+urllib3
+Click
+
+[:python_version < "3.8"]
+importlib-metadata
