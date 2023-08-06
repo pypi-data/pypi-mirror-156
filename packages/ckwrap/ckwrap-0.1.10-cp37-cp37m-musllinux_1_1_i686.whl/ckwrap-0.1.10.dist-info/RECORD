@@ -1,0 +1,12 @@
+_ckwrap.cpython-37m-i386-linux-gnu.so,sha256=mJJ1kfPkOHSWAUd7Lk-WtoHpxj-PLAHa9HH47oyuZ2s,355672
+ckwrap/result.py,sha256=aNqCxVwyanFMzNS3WiuXpc6rwYNYQZtnGJIcKRVqJ4E,1027
+ckwrap/ckwrap.py,sha256=SkQBUzArzjRai97sHRGAI09HE-AH5wqnF23a1HR_KuQ,3854
+ckwrap/kmeans_1d_dp.pxd,sha256=60HZrURz74WJVQyDYvuoaYBy5mKdpK5o24O2PQZK4r4,582
+ckwrap/__init__.py,sha256=6CvzbXRx28FRyX_zfWBxBy7htpfMj2igdwEAqFvPmdI,47
+ckwrap-0.1.10.dist-info/top_level.txt,sha256=rz7_VuVX8xHp5oQUK7fuzwFp1LmsaoI9QA9bUg0YGz8,15
+ckwrap-0.1.10.dist-info/WHEEL,sha256=lZHcoVmNVnr6Uew9BrwuQE6HB7NIId3MKYWlekeDEug,110
+ckwrap-0.1.10.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+ckwrap-0.1.10.dist-info/METADATA,sha256=2ii_FwmsAPuE4YG6H9MNz7M4e8UFOQXQwhK8lVrElvs,633
+ckwrap-0.1.10.dist-info/RECORD,,
+ckwrap.libs/libgcc_s-8b50eaaa.so.1,sha256=aEf1qbEV-lDljbUGr6ql8FAfnxyJlKTeEsHNdrBlAHM,101648
+ckwrap.libs/libstdc++-8baf04f9.so.6.0.28,sha256=7dHa2sV5CgWXjdC4QqxbCNsm-pN9kkmNNqxtn5AaAvs,2428960
