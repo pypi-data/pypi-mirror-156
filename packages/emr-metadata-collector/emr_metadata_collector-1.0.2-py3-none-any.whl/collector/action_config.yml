@@ -1,0 +1,26 @@
+#JMX:
+jmx_data:
+  cmd_type: "rest"
+  cmd: "/jmx?description=true"
+  file: "jmxdata.json"
+
+conf_data:
+  cmd_type: "rest"
+  cmd: "/conf"
+  file: "configuration.xml"
+
+dump_data:
+  cmd_type: "rest"
+  cmd: "/dump"
+  file: "dump.txt"
+
+log_data:
+  cmd_type: "rest"
+  cmd: "/logs"
+  file: "logs.log"
+
+script_version:
+  cmd_type: "method"
+  cmd: "script_version"
+  need_params: false
+  file: "scriptversion.txt"
