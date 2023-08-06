@@ -1,0 +1,25 @@
+fastapi
+requests
+uvicorn
+click
+sqlalchemy
+python-multipart
+wheel
+twine
+pycryptodome
+werkzeug
+pydantic
+python-jose
+guesstime
+orjson
+setuptools==57.5.0
+walrus
+# pymysql
+# psycopg2
+# psycopg2-binary
+unrar-cffi
+d22d
+aiomysql
+async_pool_executor
+aiosqlite
+asyncpg
