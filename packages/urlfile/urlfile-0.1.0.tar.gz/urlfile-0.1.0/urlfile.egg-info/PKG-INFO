@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: urlfile
+Version: 0.1.0
+Summary: Lazily reading a file from a url. Allows random access via http range requests.
+Home-page: https://github.com/sjmillius/urlfile
+License: Apache License 2.0
+Project-URL: Homepage, https://github.com/sjmillius/urlfile
+Project-URL: Bug Tracker, https://github.com/sjmillius/urlfile/issues
+Keywords: url,range,lazy,file
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# urlfile
+
+Lazily reading a file from a url.
+Allows random access via http range requests so that not the whole file has to be downloaded first.
+
+## Example Usage
+
+```python
+import urlfile
+import zipfile
+
+with zip.ZipFile(urlfile.UrlFile(url=...)) as f:
+  f.printdir()
+```
