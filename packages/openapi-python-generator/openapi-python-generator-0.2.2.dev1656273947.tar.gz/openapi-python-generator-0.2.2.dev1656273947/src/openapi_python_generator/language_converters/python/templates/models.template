@@ -1,0 +1,16 @@
+from typing import *
+from pydantic import BaseModel
+from . import *
+
+class {{ schema_name }}(BaseModel):
+    """
+    {{ schema.title }} model
+    {% if schema.description != None %}
+    {{ schema.description }}
+    {% endif %}
+
+    """
+    {% for property in properties %}
+
+    {{ property.name }} : {{ property.type }} {% if not property.required %} = {{ property.default }} {% endif %}
+    {% endfor %}
