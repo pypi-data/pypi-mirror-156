@@ -1,0 +1,2 @@
+[console_scripts]
+spacyturk = spacyturk.__main__:main
