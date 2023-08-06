@@ -1,0 +1,8 @@
+mlflow_log_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlflow_log_cli/cli.py,sha256=4VU2wCuXW-ZO3pjvMcm8_rEUFuv8PUksmEK551mmls8,312
+mlflow_log_cli/json_file.py,sha256=-arInAt7w6z4cAC5eur2g3vvaFXYWNnruoUcLJ8y8YI,1337
+mlflow_log_cli-0.1.0.dist-info/entry_points.txt,sha256=4372kz7P6IupONvtQqFD5CcoOnr-AxECcc92O22Il1c,57
+mlflow_log_cli-0.1.0.dist-info/LICENSE,sha256=H2T3_RTgmcngMeC7p_SXT3GwBLkd2DaNgAZuxulcfiA,1066
+mlflow_log_cli-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+mlflow_log_cli-0.1.0.dist-info/METADATA,sha256=5jLhgY8bRAUrTBiMl8c677zN8n2ix6FKeAD9pHggX3w,360
+mlflow_log_cli-0.1.0.dist-info/RECORD,,

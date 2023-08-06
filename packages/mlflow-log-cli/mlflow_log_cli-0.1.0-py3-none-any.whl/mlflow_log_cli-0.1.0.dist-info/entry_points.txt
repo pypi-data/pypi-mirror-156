@@ -1,0 +1,3 @@
+[console_scripts]
+mlflow-log-cli=mlflow_log_cli.cli:cli
+
