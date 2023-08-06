@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['django_feedparser', 'django_feedparser.templatetags']
+
+package_data = \
+{'': ['*'], 'django_feedparser': ['templates/django_feedparser/*']}
+
+install_requires = \
+['feedparser>=6.0.10,<7.0.0', 'requests>=2.28.0,<3.0.0', 'six>=1.16.0,<2.0.0']
+
+setup_kwargs = {
+    'name': 'django3-feedparser',
+    'version': '2.0.1',
+    'description': 'A Django app using feedparser to fetch and parse a feed to render it from a template.',
+    'long_description': '.. _six: https://pypi.python.org/pypi/six\n.. _Django: https://www.djangoproject.com/\n.. _feedparser: https://github.com/kurtmckee/feedparser\n.. _requests: http://docs.python-requests.org/\n.. _DjangoCMS: https://www.django-cms.org\n.. _cmsplugin_feedparser: https://github.com/sveetch/cmsplugin-feedparser\n\n==================\ndjango3-feedparser\n==================\n\nA `Django`_ app using `feedparser`_ to fetch and parse a feed to render it from a template. \n\nIt is not a Feed agregator since it manage feeds one by one.\n\n* `requests`_ is used to fetch feeds;\n* `feedparser`_ is used to parse feeds;\n* Django cache is used to avoid fetching again the feed each time;\n* Basic feed renderers just parse the feed without modifying anything but you can extend it to implement your post-process formatting;\n* Once the feed has been fetched, it can be displayed through a template. Default template is really basic and you should eventually override it or create another one to fit to your feed structure/format;\n* A `DjangoCMS`_ plugin is available on `cmsplugin_feedparser`_;\n\nImagescape Fork\n***************\nThis fork has been modified to:\n* Pass the request context into the inclusion tag\n* Allow for normal app settings behavior\n* Add a template filter, feed_date, for converting dates into datetime objects\n\nLinks\n*****\n\n* Download his `PyPi package <https://pypi.python.org/pypi/django-feedparser>`_;\n* Clone it on his `repository <https://github.com/sveetch/django-feedparser>`_;\n\nRequires\n********\n\n* `six`_;\n* `Django`_ >= 1.4;\n* `requests`_ >= 2.7.0\',\n* `feedparser`_ >= 5.1.3\',\n\nInstall\n*******\n\nFirst install the package: ::\n\n    pip install django3-feedparser\n\nAdd it to your installed Django apps in settings: ::\n\n    INSTALLED_APPS = (\n        ...\n        \'django_feedparser\',\n        ...\n    )\n\nThen import its settings: ::\n\n    from django_feedparser.settings import *\n\nAnd finally see about `Available settings`_ you can override.\n\nUsage\n*****\n\nRenderers\n---------\n\nThere is actually two basic renderer available:\n\nbasic-xml\n    Just the basic renderer, parsing an XML feed and return result given by `feedparser`.\n    \n    Don\'t do any special formatting.\nbasic-json\n    Like ``basic-xml`` but for a JSON feed, obviously don\'t use `feedparser` but \n    the ``json`` builtin from Python and return the loaded object.\n\nFinally, remember than your renderer have to be compatible with the used template and vice-versa.\n\nViews\n-----\n\nThere is a mixin ``django_feedparser.views.FeedFetchMixin`` you can inherit from your views to exploit a feed.\n\nAnd there is a basic view ``django_feedparser.views.FeedView`` that inherits from mixin ``FeedFetchMixin`` to demonstrate its usage. However the basic view is usable as it if it meets your needing, if so you just have to use it directly in your urls like ``django.views.generic.base.TemplateView``: ::\n    \n    from django.conf.urls import *\n\n    from .views import FeedView\n\n    urlpatterns = patterns(\'\',\n        ...\n        url(r\'^myfeed/$\', FeedView.as_view(feed_url="http://localhost/myfeed.xml"), name="myfeed"),\n        ...\n    )\n\n.. NOTE::\n   Although the app contains an \'urls.py\', it\'s mainly intended for debugging purpose, you should not mount it in your project urls.\n\nTemplate tags\n-------------\n\nMore common way is to use the template tag to include rendered feed in your templates.\n\nBasic sample: ::\n\n    {% load feedparser_tags %}\n    {% feedparser_render \'http://localhost/sample.xml\' %}\n\nOr with all accepted arguments: ::\n\n    {% feedparser_render \'http://localhost/sample.xml\' renderer=\'CustomRenderer\' template=\'foo/custom.html\' expiration=3600 %}\n\n\nAvailable settings\n******************\n\nFEED_RENDERER_DEFAULT_TEMPLATE\n    Path to the default renderer template.\n    \n    **Default value**: ``\'django_feedparser/basic_feed_renderer.html\'``\n\nFEED_CACHE_KEY\n    Feed cache key template string.\n    \n    **Default value**: ``\'feedparser_feed_{id}_{expire}\'``\n\nFEED_TIMEOUT\n    Timeout until feed response, in seconds.\n    \n    **Default value**: ``5``\n\nFEED_BOZO_ACCEPT\n    Wether we accept (``True``) badly formatted xml feed or not (``False``).\n    \n    **Default value**: ``True``\n\nFEED_SAFE_FETCHING\n    Wether fetching a feed throw an exception (False) or not (True).\n    \n    Bad http status, request errors and timeout error are silently catched when safe fetching is enabled.\n    \n    **Default value**: ``False``\n\nFEED_RENDER_ENGINES\n    A Python dictionnary for available renderer engines, where the key is the shortcut \n    engine name and the value is a valid Python path to the renderer class.\n    \n    **Default value**: ::\n    \n        {\n            \'basic-xml\': \'django_feedparser.renderer.FeedBasicRenderer\',\n            \'basic-json\': \'django_feedparser.renderer.FeedBasicRenderer\',\n        }\n\nDEFAULT_FEED_RENDER_ENGINE\n    The default renderer engine name to use when no one is given.\n    \n    **Default value**: ``basic-xml``\n',
+    'author': 'David Thenon',
+    'author_email': 'dthenon@emencia.com',
+    'maintainer': 'Imagescape',
+    'maintainer_email': 'info@imagescape.com',
+    'url': 'https://github.com/ImaginaryLandscape/django3-feedparser',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
