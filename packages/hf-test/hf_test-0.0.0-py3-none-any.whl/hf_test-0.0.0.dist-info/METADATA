@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hf-test
+Version: 0.0.0
+Summary: Huggingface TPU Test Package
+Home-page: 
+Author: appleeji
+Author-email: appleeji@naver.com
+License: MIT
+Requires-Python: >=3
+Requires-Dist: cloud-tpu-client
+Requires-Dist: torch
+Requires-Dist: transformers
+

@@ -1,0 +1,7 @@
+test_gpu.py,sha256=tpiaMBA-fh5QoxB8vnEjOWrk9JPRNri5ovIg0Htslpo,3880
+hf-test/tpu_benchmark.py,sha256=XjzkWxQCUB9kbbBxLxfkOZ_ZMw3OYT9GMZnmAih19yk,3915
+packages/test_gpu.py,sha256=tpiaMBA-fh5QoxB8vnEjOWrk9JPRNri5ovIg0Htslpo,3880
+hf_test-0.0.0.dist-info/METADATA,sha256=iHxQ1hiBZ8xUgg5BGfORgIW_w9BDRnLuurGOkTwIb4Q,267
+hf_test-0.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+hf_test-0.0.0.dist-info/top_level.txt,sha256=OoVzHeNIMLaetQA9hvmksKNeP6OP-6SdKsYgd9h-UKk,8
+hf_test-0.0.0.dist-info/RECORD,,
