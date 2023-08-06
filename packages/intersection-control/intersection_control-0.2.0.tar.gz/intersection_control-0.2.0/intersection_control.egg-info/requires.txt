@@ -1,0 +1,8 @@
+numpy
+ray>=1.12
+gym
+Shapely
+
+[deploy]
+myst-parser
+karma-sphinx-theme
