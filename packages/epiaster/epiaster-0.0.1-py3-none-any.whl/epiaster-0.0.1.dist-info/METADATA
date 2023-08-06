@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: epiaster
+Version: 0.0.1
+Summary: ASTER: accurate estimation of cell-type numbers in single-cell chromatin accessibility data
+Home-page: https://github.com/BioX-NKU/ASTER
+Author: BioX-NKU
+License: MIT Licence
+Keywords: pip,aster,single-cell
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8.0
+License-File: LICENSE
+Requires-Dist: numpy (<1.22,>=1.21.6)
+Requires-Dist: scipy (>=1.8.0)
+Requires-Dist: scikit-learn (>=1.1.0)
+Requires-Dist: kneed (>=0.7.0)
+Requires-Dist: scanpy (>=1.9.1)
+Requires-Dist: episcanpy (>=0.3.2)
+Requires-Dist: igraph (>=0.9.10)
+Requires-Dist: louvain (>=0.7.1)
+Requires-Dist: leidenalg (>=0.8.10)
+
+ASTER provides an accurate and efficient way to estimate the number of cell types in single-cell chromatin accessibility data. We provide documentation in the form of functional application programming interface documentation, tutorials and example workflows at https://aster.readthedocs.io/en/latest/index.html. All ASTER wheels distributed on PyPI are MIT licensed.
