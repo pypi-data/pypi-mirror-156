@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simple-kalman
+Version: 0.0.0
+Summary: kalman
+Home-page: https://github.com/eadali/simple-kalman
+Author: Erkan ADALI
+Author-email: erkanadali91@gmail.com
+License: MIT
+Project-URL: Documentation, https://simple-kalman.readthedocs.io/
+Project-URL: Source Code, https://github.com/eadali/simple-kalman
+Keywords: control,theory,engineering,kalman,real,time
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+kalman

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+simple_kalman.egg-info/PKG-INFO
+simple_kalman.egg-info/SOURCES.txt
+simple_kalman.egg-info/dependency_links.txt
+simple_kalman.egg-info/requires.txt
+simple_kalman.egg-info/top_level.txt
