@@ -1,0 +1,6 @@
+setup.py
+purpurmc/__init__.py
+purpurmc.egg-info/PKG-INFO
+purpurmc.egg-info/SOURCES.txt
+purpurmc.egg-info/dependency_links.txt
+purpurmc.egg-info/top_level.txt
