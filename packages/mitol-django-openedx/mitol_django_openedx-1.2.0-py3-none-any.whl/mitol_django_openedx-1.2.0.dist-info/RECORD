@@ -1,0 +1,15 @@
+mitol_django_openedx-1.2.0-py3.8-nspkg.pth,sha256=1XVUL3B-_EJMQFAeDbjRTf_p2rBMZfZgZnLohBzFq0M,534
+mitol/openedx/CHANGELOG.md,sha256=l0-Mi2_mJNEX_ynchiTz26FZl5bLSvOO3bynYFcbzHc,616
+mitol/openedx/README.md,sha256=_V5pF2vJHkhBcZIUitEhCa34yNo23HmSsjccux6B0ek,195
+mitol/openedx/__init__.py,sha256=xB_n8lJulvPNROyAS3h9_KEUZnPQrcEUS-h8DI9zsIQ,144
+mitol/openedx/apps.py,sha256=Rgm2wiVW7wD8la3jZu_aG2UdYzB-ikZ_0oIjQhvqN_I,665
+mitol/openedx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mitol/openedx/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mitol/openedx/utils/__init__.py,sha256=GmeD3blOan0cvsQ-Wayibfze3-2Uipw1H3rBHsFGSfU,61
+mitol/openedx/utils/courses.py,sha256=I6nBrNZ5Z03TSFrTVhnBqjEHrVzxkyKMBKJS04bFXXI,764
+mitol_django_openedx-1.2.0.dist-info/METADATA,sha256=cGEAtA6qCnrdcidNiiqoAVT7vXW8Cb-cVqHoqJw3uc8,601
+mitol_django_openedx-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mitol_django_openedx-1.2.0.dist-info/namespace_packages.txt,sha256=9qMalQulPLLFaSu29n2ga8gU2jGaSr2fwyDQG3-G3OI,6
+mitol_django_openedx-1.2.0.dist-info/top_level.txt,sha256=9qMalQulPLLFaSu29n2ga8gU2jGaSr2fwyDQG3-G3OI,6
+mitol_django_openedx-1.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mitol_django_openedx-1.2.0.dist-info/RECORD,,
