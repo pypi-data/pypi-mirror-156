@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphist"
+version = "0.0.1"
+authors = [
+    { name="Amin Ahmadi", email="info@amin-ahmadi.com" },
+]
+description = "A package that helps add graph capabilities to your program."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://amin-ahmadi.com"
