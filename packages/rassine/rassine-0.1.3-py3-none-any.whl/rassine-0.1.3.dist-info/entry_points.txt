@@ -1,0 +1,17 @@
+[console_scripts]
+enumerate_table_column_unique_values=rassine.tools.enumerate_table_column_unique_values:cli
+enumerate_table_rows=rassine.tools.enumerate_table_rows:cli
+matching_anchors_filter=rassine.matching.matching_anchors_filter:cli
+matching_anchors_scan=rassine.matching.matching_anchors_scan:cli
+matching_diff=rassine.matching.matching_diff:cli
+pickle_compare=rassine.tools.pickle_compare:cli
+preprocess_import=rassine.imports.preprocess_import:cli
+preprocess_table=rassine.imports.preprocess_table:cli
+rassine=rassine.rassine.rassine:cli
+reinterpolate=rassine.imports.reinterpolate:cli
+reorder_csv=rassine.tools.reorder_csv:cli
+sort_csv=rassine.tools.sort_csv:cli
+stacking_create_groups=rassine.stacking.stacking_create_groups:cli
+stacking_master_spectrum=rassine.stacking.stacking_master_spectrum:cli
+stacking_stack=rassine.stacking.stacking_stack:cli
+
