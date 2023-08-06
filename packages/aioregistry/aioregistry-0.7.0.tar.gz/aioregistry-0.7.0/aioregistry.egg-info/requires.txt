@@ -1,0 +1,8 @@
+aiohttp<4,>=3.8
+pydantic<2,>=1.8
+
+[:python_version < "3.8"]
+typing_extensions
+
+[tqdm]
+tqdm>=4.20.0<5
