@@ -1,0 +1,2 @@
+[console_scripts]
+pidet = pidet.cmd.pidet:main
