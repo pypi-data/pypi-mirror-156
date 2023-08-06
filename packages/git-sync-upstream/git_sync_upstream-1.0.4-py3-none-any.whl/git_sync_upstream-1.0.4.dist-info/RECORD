@@ -1,0 +1,10 @@
+gitsyncupstream/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitsyncupstream/__main__.py,sha256=vvpkIxXoLJCNmWxB9YoqXpCLBibQ9m56qWanaDGLhiY,1570
+gitsyncupstream/git.py,sha256=qrGso39Hx2Iittu8069MY5mAozKqLXch8d_dD2kLm5o,611
+gitsyncupstream/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_sync_upstream-1.0.4.dist-info/LICENSE,sha256=O_SiUnJR1oX1khnnR1XHPAsyk9DS_8ZBRBhBLLdi6Go,1069
+git_sync_upstream-1.0.4.dist-info/METADATA,sha256=-iYBzF0ODwP1Bi3boacktesEhmfh0U0KMA9jhR82Ttg,1862
+git_sync_upstream-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+git_sync_upstream-1.0.4.dist-info/entry_points.txt,sha256=kR1yHeedRExrZmezhSp3WJfTEr_u1gOOtCmP4zFNsTo,68
+git_sync_upstream-1.0.4.dist-info/top_level.txt,sha256=Vv5fyXIrIhDzgOZGdV8rcdq7Hlqxh9IkFJlMNBZDY3U,16
+git_sync_upstream-1.0.4.dist-info/RECORD,,
