@@ -1,0 +1,8 @@
+pip
+packaging
+numpy
+pandas
+scikit-learn
+statsmodels
+
+[dev]
