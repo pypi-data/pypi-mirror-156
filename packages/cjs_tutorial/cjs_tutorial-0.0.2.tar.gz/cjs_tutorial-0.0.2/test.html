@@ -1,0 +1,20 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+      <py-env>
+        - matplotlib
+        - cjs_tutorial
+      </py-env>
+    </head>
+
+  <body>
+    <h1>Let's plot random numbers</h1>
+    <div id="plot"></div>
+    <py-script output="plot">
+      from cjs_tutorial.plot import plt_oscillator
+      fig, ax = plt_oscillator()
+      fig
+    </py-script>
+  </body>
+</html>
