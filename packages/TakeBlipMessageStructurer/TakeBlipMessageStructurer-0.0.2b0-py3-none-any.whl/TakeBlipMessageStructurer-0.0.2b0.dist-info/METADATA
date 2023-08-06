@@ -1,0 +1,235 @@
+Metadata-Version: 2.1
+Name: TakeBlipMessageStructurer
+Version: 0.0.2b0
+Summary: Message Structurer Package
+Author: Data and Analytics Research
+Author-email: analytics.dar@take.net
+License: UNKNOWN
+Keywords: messagestructurer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyaap
+Requires-Dist: tqdm
+Requires-Dist: gensim (==3.8.3)
+Requires-Dist: TakeSentenceTokenizer (==1.0.1)
+Requires-Dist: TakeBlipPosTagger (==1.0.6b0)
+Requires-Dist: TakeBlipNer (==0.0.7b2)
+Requires-Dist: tensorboard
+
+# TakeBlipMessageStructurer Package
+_Data & Analytics Research_
+
+## Overview
+
+Message Structurer is an AI model capable of assisting in structuring text messages.
+
+For each message sent, a list is obtained with the main elements found in the analyzed sentence.
+
+The elements found can be more than one word and have the following components:
+
+- **value**: sequence of characters found in the sentence corresponding to the element
+- **lowercase**: is the value found previously in lower case
+- **postags**: element grammar class
+- **type**: type of element found (class of entity found or postagging)
+
+Here are presented these content:
+
+## Run
+
+To run the Message Structurer is possible in two ways: for a single sentence e for a batch of sentences.
+
+### Single Sentence 
+To predict a single sentence, the method **predict_line** should be used. 
+Example of initialization e usage:
+1) Import main packages;
+2) Initialize model variables;
+3) Read PosTagging, NER model and embedding model;
+4) Initialize and usage.
+
+
+An example of the above steps could be found in the python code below:
+
+1) Import main packages:
+```
+import json
+import torch
+
+from TakeBlipNer.predict import NerPredict
+from TakeBlipPosTagger.predict import PosTaggerPredict
+from TakeBlipMessageStructurer.utils import load_fasttext_embeddings
+from TakeBlipMessageStructurer.predict.messagestructurer import MessageStructurer
+```
+2) Initialize model variables:
+
+In order to predict the sentences tags, the following variables should be
+created:
+- **postag_model_path**: string with the path of PosTagging pickle model;
+- **postag_label_path**: string with the path of PosTagging pickle labels;
+- **ner_model_path**: string with the path of NER pickle model;
+- **ner_label_path**: string with the path of NER pickle labels;
+- **wordembed_path**: string with FastText embedding files;
+- **padding_string**: string which represents the pad token;
+- **unknown_string**: a string which represents unknown token;
+- **sentence**: string with sentence to be structured.
+
+Example of variables creation:
+```
+postag_model_path = '*.pkl'
+postag_label_path = '*.pkl'
+ner_label_path = '*.pkl'
+ner_model_path = '*.pkl'
+wordembed_path = '*.kv'
+padding_string = '<pad>'
+unk_string = '<unk>'
+sentence = 'SENTENCE EXAMPLE TO PREDICT'
+```
+
+3) Read Embedding, PosTagging and NER model:
+```
+embedding_model = load_fasttext_embeddings(embedding_path, pad_string)
+
+postagging_model = torch.load(postag_model_path)
+postag_predicter = PosTaggerPredict(
+    model=postagging_model,
+    label_path=postag_label_path,
+    embedding=embedding_model)
+
+ner_model = torch.load(ner_model_path)
+ner_predicter = NerPredict(
+    pad_string=pad_string,
+    unk_string=unk_string,
+    model=ner_model,
+    postag_model=postag_predicter,
+    label_path=ner_label_path)
+```
+
+4) Initialize tags to be removed, Message Structurer and usage:
+
+```
+tags = ['INT', 'ART', 'PRON', 'SIMB', 'PON', 'CONJ']
+message_structurer = MessageStructurer(ner_model=ner_predicter)
+
+print(message_structurer.structure_message(sentence, tags))
+```
+
+
+
+### Batch
+
+To predict a single sentence, the method **predict_line** should be used. 
+Example of initialization e usage:
+1) Import main packages;
+2) Initialize model variables;
+3) Read PosTagging, NER model and embedding model;
+4) Read file to be structured;   
+5) Initialize and usage;
+6) Package usage.
+
+
+An example of the above steps could be found in the python code below:
+
+1) Import main packages:
+```
+import json
+import torch
+
+from TakeBlipNer.predict import NerPredict
+from TakeBlipPosTagger.predict import PosTaggerPredict
+from TakeBlipMessageStructurer.utils import load_fasttext_embeddings
+from TakeBlipMessageStructurer.predict.messagestructurer import MessageStructurer
+```
+2) Initialize model variables:
+
+In order to predict the sentences tags, the following variables should be
+created:
+- **postag_model_path**: string with the path of PosTagging pickle model;
+- **postag_label_path**: string with the path of PosTagging pickle labels;
+- **ner_model_path**: string with the path of NER pickle model;
+- **ner_label_path**: string with the path of NER pickle labels;
+- **wordembed_path**: string with FastText embedding files;
+- **padding_string**: string which represents the pad token;
+- **unknown_string**: a string which represents unknown token.
+
+Example of variables creation:
+```
+postag_model_path = '*.pkl'
+postag_label_path = '*.pkl'
+ner_label_path = '*.pkl'
+ner_model_path = '*.pkl'
+wordembed_path = '*.kv'
+padding_string = '<pad>'
+unk_string = '<unk>'
+```
+
+3) Read Embedding, PosTagging and NER model:
+```
+embedding_model = load_fasttext_embeddings(embedding_path, pad_string)
+
+postagging_model = torch.load(postag_model_path)
+postag_predicter = PosTaggerPredict(
+    model=postagging_model,
+    label_path=postag_label_path,
+    embedding=embedding_model)
+
+ner_model = torch.load(ner_model_path)
+ner_predicter = NerPredict(
+    pad_string=pad_string,
+    unk_string=unk_string,
+    model=ner_model,
+    postag_model=postag_predicter,
+    label_path=ner_label_path)
+```
+4) Read file to be structured:
+- In order to predict a batch, will need a json file as follows:
+```
+{
+    "sentences": [
+                    {
+                        "id": 1, 
+                        "sentence": "sentence_1"
+                    }, 
+                    {
+                        "id": 2, 
+                        "sentence": "sentence_2"
+                    }
+                ]
+}
+```
+- Reading json file:
+```
+file = open(path_sentences)
+sentence = json.load(file)['Sentences']
+```
+
+5) Initialize tags to be removed and Message Structurer:
+```
+tags = ['INT', 'ART', 'PRON', 'SIMB', 'PON', 'CONJ']
+message_structurer = MessageStructurer(ner_model=ner_predicter)
+```
+6) Package usage
+- In order to use the package, some variables should be initialized:
+    - **input_path**: a string with path of the .csv file;
+    - **batch_size**: number of sentences which will be predicted at the same time;
+    - **shuffle**: a boolean representing if the dataset is shuffled;
+    - **use_pre_processing**: a boolean indicating if sentence will be preprocessed;
+
+Example of variable creations:
+```
+path_sentences = '*.json'
+batch_size = 64
+shuffle = True
+use_pre_processing = True
+```
+- Structuring a batch of sentences:
+```
+print(messagestructurer.structure_message_batch(
+    batch_size=batch_size,
+    shuffle=shuffle,
+    use_pre_processing=use_pre_processing,
+    sentences=sentence,
+    tags_to_remove=tags))
+```
+
