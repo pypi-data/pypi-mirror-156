@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lglibs
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Gao ZhenZhe
+Author-email: 2983536011@qq.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: demjson
+
+UNKNOWN
+
+
