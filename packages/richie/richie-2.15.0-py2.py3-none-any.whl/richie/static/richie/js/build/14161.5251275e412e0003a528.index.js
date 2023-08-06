@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkrichie_education=self.webpackChunkrichie_education||[]).push([[14161],{14161:function(e,c,i){i.r(c);var n=i(67557);c.default=function(){return(0,n.jsx)("h1",{children:"Dashboard"})}}}]);
+//# sourceMappingURL=14161.5251275e412e0003a528.index.js.map
