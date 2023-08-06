@@ -1,0 +1,9 @@
+README.md
+httper.py
+setup.py
+httper.egg-info/PKG-INFO
+httper.egg-info/SOURCES.txt
+httper.egg-info/dependency_links.txt
+httper.egg-info/entry_points.txt
+httper.egg-info/requires.txt
+httper.egg-info/top_level.txt
