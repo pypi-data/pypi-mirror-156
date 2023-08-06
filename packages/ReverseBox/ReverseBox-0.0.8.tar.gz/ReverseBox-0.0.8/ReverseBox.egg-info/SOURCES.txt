@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+ReverseBox.egg-info/PKG-INFO
+ReverseBox.egg-info/SOURCES.txt
+ReverseBox.egg-info/dependency_links.txt
+ReverseBox.egg-info/top_level.txt
+src/__init__.py
+src/checksum/__init__.py
+src/checksum/checksum_crc16.py
+src/checksum/checksum_crc32.py
+src/compression/__init__.py
+src/encryption/__init__.py
+src/hash/__init__.py
+src/io_files/__init__.py
