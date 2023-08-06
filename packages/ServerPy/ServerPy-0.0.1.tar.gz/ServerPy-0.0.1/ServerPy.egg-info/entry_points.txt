@@ -1,0 +1,3 @@
+[console_scripts]
+serverpy = servpy.main:main
+
