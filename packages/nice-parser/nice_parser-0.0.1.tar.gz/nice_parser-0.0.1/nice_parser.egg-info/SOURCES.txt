@@ -1,0 +1,14 @@
+LICENSE
+pyproject.toml
+setup.cfg
+nice/__init__.py
+nice/column.py
+nice/database.py
+nice/dtypes.py
+nice/parser.py
+nice/query.py
+nice/table.py
+nice_parser.egg-info/PKG-INFO
+nice_parser.egg-info/SOURCES.txt
+nice_parser.egg-info/dependency_links.txt
+nice_parser.egg-info/top_level.txt
