@@ -1,0 +1,2 @@
+[console_scripts]
+veld = veld.__main__:main
