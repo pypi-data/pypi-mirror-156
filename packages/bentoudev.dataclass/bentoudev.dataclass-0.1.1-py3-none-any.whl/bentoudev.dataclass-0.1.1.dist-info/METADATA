@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: bentoudev.dataclass
+Version: 0.1.1
+Summary: Yaml to dataclass loader
+Author: BentouDev
+Project-URL: Homepage, https://github.com/BentouDev/zetsubou.dataclass
+Keywords: yaml,dataclass
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fs
+Requires-Dist: platformdirs
+Requires-Dist: typing-inspect
+Requires-Dist: typing-extensions
+Requires-Dist: PyYAML
+Requires-Dist: tomli ; python_version < "3.11"
+Provides-Extra: dev
+Requires-Dist: pyinstaller (==5.0) ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# Bentoudev.dataclass
+
+[![CI (on push)](https://github.com/BentouDev/Bentoudev.dataclass/actions/workflows/python-ci.yml/badge.svg)](https://github.com/BentouDev/Bentoudev.dataclass/actions/workflows/python-ci.yml)
+
+### Yaml to dataclass loader created for Zetsubou tool
