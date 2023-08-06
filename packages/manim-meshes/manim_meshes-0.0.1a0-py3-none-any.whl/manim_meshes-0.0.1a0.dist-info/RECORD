@@ -1,0 +1,9 @@
+manim_meshes/__init__.py,sha256=Nv24dwdYPahlNfOGbLFdY8KQqCkTrR_tMUGuRRTBSJs,328
+manim_meshes/models.py,sha256=lLa6TT8fgIdw1y0mfS_L_RSFqTO4Jf9-vfXkYj5aObs,7713
+manim_meshes/params.py,sha256=cPQyAD8wmKDmNZt8WzfsUtJDrSmnLibqQCELaYwJNus,2434
+manim_meshes/templates.py,sha256=mGEZ0fWOE_9Jw34wwGRQpKsftg4T1ChbTY9VBTAUSW8,2220
+manim_meshes-0.0.1a0.dist-info/entry_points.txt,sha256=VQ4YZOTA0ohnWeKOwe5i3vvkcyaKIGupXKKq1q9GRN0,49
+manim_meshes-0.0.1a0.dist-info/LICENSE,sha256=M5DSbYkixXLTU5aryvjmqM3bW_6IGgcwjkxCni3XeEw,1115
+manim_meshes-0.0.1a0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+manim_meshes-0.0.1a0.dist-info/METADATA,sha256=9lcoBX2xuiyuPYmIm-hkdnp21jVFbLCP9Icv5Ty2LxI,2053
+manim_meshes-0.0.1a0.dist-info/RECORD,,
