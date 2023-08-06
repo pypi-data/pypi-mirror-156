@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+filename_templates/__init__.py
+filename_templates/filenames.py
+filename_templates.egg-info/PKG-INFO
+filename_templates.egg-info/SOURCES.txt
+filename_templates.egg-info/dependency_links.txt
+filename_templates.egg-info/top_level.txt
