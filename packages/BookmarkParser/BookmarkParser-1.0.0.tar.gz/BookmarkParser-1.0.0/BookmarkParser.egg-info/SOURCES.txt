@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+BookmarkParser/__init__.py
+BookmarkParser/main.py
+BookmarkParser/utils.py
+BookmarkParser.egg-info/PKG-INFO
+BookmarkParser.egg-info/SOURCES.txt
+BookmarkParser.egg-info/dependency_links.txt
+BookmarkParser.egg-info/requires.txt
+BookmarkParser.egg-info/top_level.txt
