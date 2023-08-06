@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/doubanlib/__init__.py
+src/doubanlib/movie.py
+src/doubanlib.egg-info/PKG-INFO
+src/doubanlib.egg-info/SOURCES.txt
+src/doubanlib.egg-info/dependency_links.txt
+src/doubanlib.egg-info/top_level.txt
