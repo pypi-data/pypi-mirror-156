@@ -1,0 +1,47 @@
+[
+    {
+        "title": "TCP/IP配置",
+        "cmd": "ipconfig /all",
+        "encoding": "gbk"
+    },
+    {
+        "title": "网络统计信息",
+        "cmd": "netstat -s",
+        "encoding": "gbk"
+    },
+    {
+        "title": "路由表信息",
+        "cmd": "netstat -r",
+        "encoding": "gbk"
+    },
+    {
+        "title": "活动链接信息",
+        "cmd": "netstat -a",
+        "encoding": "gbk"
+    },
+    {
+        "title": "tracert",
+        "cmd": "tracert www.baidu.com",
+        "encoding": "gbk"
+    },
+    {
+        "title": "路由表",
+        "cmd": "route print",
+        "encoding": "gbk"
+    },
+    {
+        "title": "查看MAC",
+        "cmd": "arp -a",
+        "encoding": "gbk"
+    },
+    {
+        "title": "域名信息",
+        "cmd": "nslookup www.baidu.com",
+        "encoding": "gbk"
+    },
+    {
+        "title": "网络账户信息",
+        "cmd": "net accounts",
+        "encoding": "gbk"
+    }
+]

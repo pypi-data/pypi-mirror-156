@@ -1,0 +1,27 @@
+{
+    "maxLogLines": 1000,
+    "maxStdout": 40960,
+    "defaultEncoding": "gbk",
+    "configs": [
+        {
+            "file": "runner_common.json",
+            "title": "通用(测试)"
+        },
+        {
+            "file": "runner_adb.json",
+            "title": "adb快捷命令"
+        },
+        {
+            "file": "runner_network.json",
+            "title": "网络快捷命令"
+        },
+        {
+            "file": "runner_windwos.json",
+            "title": "windows专属"
+        },
+        {
+            "file": "runner_me.json",
+            "title": "我的配置"
+        }
+    ]
+}

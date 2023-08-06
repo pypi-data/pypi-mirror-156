@@ -1,0 +1,40 @@
+[
+    {
+        "title": "测试输出",
+        "cmd": "python console.py",
+        "cwd": "test"
+    },
+    {
+        "title": "测试输出(plain)",
+        "cmd": "python console.py",
+        "cwd": "test",
+        "plain": true
+    },
+    {
+        "title": "网络配置",
+        "cmd": "sh network.sh",
+        "cwd": "test"
+    },
+    {
+        "title": "ping 佰肚(gbk)",
+        "cmd": "cmd /c  ping www.baidu.com",
+        "encoding": "gbk"
+    },
+    {
+        "title": "切换codepage到utf-8(慎用)",
+        "cmd": "cmd /c  chcp 65001",
+        "encoding": "gbk",
+        "qss": "color: rgb(0, 150, 0);"
+    },
+    {
+        "title": "切换codepage到gbk(慎用)",
+        "cmd": "cmd /c  chcp 936",
+        "encoding": "gbk",
+        "qss": "color: rgb(150, 0, 0);"
+    },
+    {
+        "title": "打开防火墙",
+        "cmd": "firewall.cpl",
+        "cwd": "test"
+    }
+]

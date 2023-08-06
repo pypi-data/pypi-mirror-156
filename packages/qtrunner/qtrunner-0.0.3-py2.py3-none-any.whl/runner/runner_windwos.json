@@ -1,0 +1,65 @@
+[
+    {
+        "title": "记事本",
+        "cmd": "notepad"
+    },
+    {
+        "title": "计算器",
+        "cmd": "calc"
+    },
+    {
+        "title": "画图",
+        "cmd": "mspaint"
+    },
+    {
+        "title": "任务管理器",
+        "cmd": "cmd /c taskmgr"
+    },
+    {
+        "title": "查看版本",
+        "cmd": "winver"
+    },
+    {
+        "title": "系统配置",
+        "cmd": "cmd /c msconfig"
+    },
+    {
+        "title": "检查DirectX信息",
+        "cmd": "dxdiag"
+    },
+    {
+        "title": "磁盘整理",
+        "cmd": "cleanmgr"
+    },
+    {
+        "title": "设备管理器",
+        "cmd": "cmd /c mmc devmgmt.msc"
+    },
+    {
+        "title": "辅助工具管理器",
+        "cmd": "utilman"
+    },
+    {
+        "title": "屏幕键盘",
+        "cmd": "cmd /c osk"
+    },
+    {
+        "title": "证书管理器",
+        "cmd": "cmd /c mmc certmgr.msc"
+    },
+    {
+        "title": "电源方案",
+        "cmd": "powercfg /list",
+        "encoding": "gbk"
+    },
+    {
+        "title": "开启休眠",
+        "cmd": "powercfg /hibernate on",
+        "encoding": "gbk"
+    },
+    {
+        "title": "关闭休眠",
+        "cmd": "powercfg /hibernate on",
+        "encoding": "gbk"
+    }
+]
