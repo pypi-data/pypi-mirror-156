@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: hammerddos
+Version: 0.2.3
+Summary: Low bandwidth DoS tool. Slowloris rewrite in Python.
+Home-page: https://github.com/gkbrk/slowloris
+Author: Nahid Alam
+Author-email: nahidalam1603@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: dos,http,hammer
+Platform: UNKNOWN
