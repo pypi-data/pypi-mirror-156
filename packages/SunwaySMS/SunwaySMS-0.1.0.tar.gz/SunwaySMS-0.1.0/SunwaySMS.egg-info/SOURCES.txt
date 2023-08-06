@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SunwaySMS.egg-info/PKG-INFO
+SunwaySMS.egg-info/SOURCES.txt
+SunwaySMS.egg-info/dependency_links.txt
+SunwaySMS.egg-info/requires.txt
+SunwaySMS.egg-info/top_level.txt
+sunwaysms/__init__.py
+sunwaysms/sunwaysms.py
