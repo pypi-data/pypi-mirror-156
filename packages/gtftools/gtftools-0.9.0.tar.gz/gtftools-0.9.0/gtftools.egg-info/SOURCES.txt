@@ -1,0 +1,14 @@
+LICENCE
+README.md
+setup.py
+gtftools/__init__.py
+gtftools/gtftools.py
+gtftools.egg-info/PKG-INFO
+gtftools.egg-info/SOURCES.txt
+gtftools.egg-info/dependency_links.txt
+gtftools.egg-info/entry_points.txt
+gtftools.egg-info/not-zip-safe
+gtftools.egg-info/top_level.txt
+gtftools/test_data/demo.gtf
+gtftools/test_data/demo_mouse.gtf
+gtftools/test_data/snp_list.txt
