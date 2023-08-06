@@ -1,0 +1,50 @@
+adlfs<=2022.2,>=2021.7.1
+bandit<2.0,>=1.6.2
+biopython~=1.73
+compress-pickle[lz4]~=1.2.0
+dask[complete]~=2021.10
+delta-spark~=1.2.1
+dill~=0.3.1
+filelock<4.0,>=3.4.0
+gcsfs<=2022.1,>=2021.4
+geopandas<1.0,>=0.6.0
+hdfs<3.0,>=2.5.8
+holoviews~=1.13.0
+import-linter[toml]==1.2.6
+ipython<8.0,>=7.31.1
+Jinja2<3.1.0
+joblib>=0.14
+jupyterlab~=3.0
+jupyter~=1.0
+lxml~=4.6
+memory_profiler<1.0,>=0.50.0
+networkx~=2.4
+openpyxl<4.0,>=3.0.3
+pandas-gbq<1.0,>=0.12.0
+pandas~=1.3
+Pillow~=9.0
+plotly<6.0,>=4.8.0
+psutil==5.8.0
+pyarrow<7.0,>=1.0
+pylint<3.0,>=2.5.2
+pyproj~=3.0
+pyspark<4.0,>=2.2
+redis~=4.1
+requests~=2.20
+s3fs<0.5,>=0.3.0
+SQLAlchemy~=1.2
+tensorflow~=2.0
+trufflehog~=2.1
+xlsxwriter~=1.0
+
+[:platform_system != "Windows"]
+tables~=3.6
+
+[:platform_system == "Windows" and python_version < "3.9"]
+tables~=3.6.0
+
+[:python_version < "3.10"]
+matplotlib<3.4,>=3.0.3
+
+[:python_version == "3.10"]
+matplotlib<3.6,>=3.5
