@@ -1,0 +1,10 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+license.txt
+setup.py
+azuredatabricksjsonsettings.egg-info/PKG-INFO
+azuredatabricksjsonsettings.egg-info/SOURCES.txt
+azuredatabricksjsonsettings.egg-info/dependency_links.txt
+azuredatabricksjsonsettings.egg-info/top_level.txt
+settingsretrievalapp/__init__.py
