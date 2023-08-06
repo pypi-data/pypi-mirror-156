@@ -1,0 +1,12 @@
+datapeek/LICENSE,sha256=mLwk_w90u-kUSUQJGjnJc833MTltAxj4Fh7aqnzefRg,1072
+datapeek/src/logger/main.py,sha256=tlrQEXBbvPQuhJbQHeWm2D1KniMSI2FJV28SdfvoWN0,19
+datapeek/src/peeker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datapeek/src/peeker/colors.json,sha256=SqAPsxzpXYIb-acvWKA0ftEeGePsI2ZFzYzZj_EsLbM,1061
+datapeek/src/peeker/colours_db.py,sha256=N5lRzZIchPdumpdCEVN00yfKSG7cb6Pewx2fmgaD2gc,2110
+datapeek/src/peeker/dummy.py,sha256=N5lRzZIchPdumpdCEVN00yfKSG7cb6Pewx2fmgaD2gc,2110
+datapeek/src/peeker/main.py,sha256=R8OckhkRBI4TpAPUMEzvhL4hhdtte7sPAqPgHVoeVDc,1256
+datapeek/src/peeker/peeker.py,sha256=OWOF0kfaROD3EP8N1WwNTMQXI6oY7L3QERoz3JKlwoI,2206
+datapeek/src/peeker/themes.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datapeek-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+datapeek-0.1.0.dist-info/METADATA,sha256=IOAZ8cpsR_49w0GtlmMHkbF5oi2OFyMOLDofvLrzWbs,420
+datapeek-0.1.0.dist-info/RECORD,,
