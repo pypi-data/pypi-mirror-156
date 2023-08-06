@@ -1,0 +1,2 @@
+[console_scripts]
+kaiyo = kaiyo.kaiyo:kaiyo
