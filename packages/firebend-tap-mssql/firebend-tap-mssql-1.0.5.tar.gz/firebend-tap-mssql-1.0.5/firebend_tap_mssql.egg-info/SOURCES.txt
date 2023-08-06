@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+firebend_tap_mssql.egg-info/PKG-INFO
+firebend_tap_mssql.egg-info/SOURCES.txt
+firebend_tap_mssql.egg-info/dependency_links.txt
+firebend_tap_mssql.egg-info/entry_points.txt
+firebend_tap_mssql.egg-info/requires.txt
+firebend_tap_mssql.egg-info/top_level.txt
+tap_mssql/__init__.py
+tap_mssql/connection.py
+tap_mssql/sync_strategies/__init__.py
+tap_mssql/sync_strategies/common.py
+tap_mssql/sync_strategies/full_table.py
+tap_mssql/sync_strategies/incremental.py
+tap_mssql/sync_strategies/logical.py

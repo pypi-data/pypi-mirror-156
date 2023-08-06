@@ -1,0 +1,12 @@
+pendulum~=1.5.1
+singer-python~=5.12.2
+sqlalchemy~=1.4.31
+pyodbc==4.0.32
+backoff==1.8.0
+MarkupSafe==2.0.1
+jinja2==2.11.3
+
+[test]
+pylint~=2.12.2
+pytest~=6.2.5
+pytest-cov~=3.0.0

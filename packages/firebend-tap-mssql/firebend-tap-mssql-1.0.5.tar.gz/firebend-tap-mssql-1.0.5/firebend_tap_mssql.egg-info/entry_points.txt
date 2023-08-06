@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          tap-mssql=tap_mssql:main
+      
