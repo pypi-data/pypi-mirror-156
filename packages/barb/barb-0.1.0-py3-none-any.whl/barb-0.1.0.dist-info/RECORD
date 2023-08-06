@@ -1,0 +1,14 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cli.py,sha256=wfjr6e9FrzUEw2B8MitzWXyGq_d4M0XYJQHABYn5maE,1201
+src/hooks.py,sha256=OmysW4yJGr9yRNpr8urJKqfTkTeZEwSqOj0eQdS1SPY,2010
+src/init.py,sha256=v6tJOQoDHWo2cOchlOl7lGnIHbld6SfVbJjhicSPtXo,820
+src/install.py,sha256=_dAP8tnl4kHhetxo2eAv0GyIgvKXhxB_sdyJ9bLT_-s,389
+src/logger.py,sha256=qTuzgxWkJXwW5sawLrakme_wl7iksoRSUqrja61h5jM,652
+src/run.py,sha256=I-Kg24laXcjRYLCvyJgS5i-hOyDdM-to5IEsKGbn49Y,3150
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_cli.py,sha256=ccuxwRG4axjgLLuK2obqu59U8IGhc6RVMW16yTGdPfc,46
+barb-0.1.0.dist-info/METADATA,sha256=-qnFMXzbkVWogPii4Gq342kcVwaVc5jLPM8nfEvr1v8,1420
+barb-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+barb-0.1.0.dist-info/entry_points.txt,sha256=wO6Eg36TS_bV3mNOYLfsS6vuEyR75LxSCwLu_0COWZc,39
+barb-0.1.0.dist-info/top_level.txt,sha256=ko5Zp-GH1-aCqmTB-_pzAfcKWZ9D29cRgzo8EmAy2_k,9
+barb-0.1.0.dist-info/RECORD,,
