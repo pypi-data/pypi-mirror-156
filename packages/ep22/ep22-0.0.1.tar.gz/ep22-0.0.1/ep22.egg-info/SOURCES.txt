@@ -1,0 +1,7 @@
+setup.py
+ep22.egg-info/PKG-INFO
+ep22.egg-info/SOURCES.txt
+ep22.egg-info/dependency_links.txt
+ep22.egg-info/top_level.txt
+printName/__init__.py
+printName/pN.py
