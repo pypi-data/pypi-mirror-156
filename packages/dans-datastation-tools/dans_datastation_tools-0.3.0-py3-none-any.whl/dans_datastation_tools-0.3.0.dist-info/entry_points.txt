@@ -1,0 +1,3 @@
+[console_scripts]
+update-datacite-records=datastation.scripts.update_datacite_records:main
+
