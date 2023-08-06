@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: instabuy-integration-utils
+Version: 1.0.3
+Summary: Instabuy python 3 integration package
+Home-page: https://github.com/Instabuy-Ltda/Instabuy-Integration-Package
+Author: Instabuy
+Author-email: instabuy.dev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Instabuy python 3 integration package #
+
+What this package can do:
+
+- Self update integration robots
+- Send exceptions logs to Instabuy
+- Download buys
+- Upload products
+- Local products cache
+- Parse robots config
+
+It contains:
+- Instabuy commons order and products models
+- Commons data parsers
+
+Python versions supported >= 3.7.7
