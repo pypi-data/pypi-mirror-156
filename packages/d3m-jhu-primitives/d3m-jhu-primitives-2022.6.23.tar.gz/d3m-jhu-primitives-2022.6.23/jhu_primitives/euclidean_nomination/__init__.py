@@ -1,0 +1,2 @@
+from __future__ import absolute_import
+from .euclidean_nomination import EuclideanNomination

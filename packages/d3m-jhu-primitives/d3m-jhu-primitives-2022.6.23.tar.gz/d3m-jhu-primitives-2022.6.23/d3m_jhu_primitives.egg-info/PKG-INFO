@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: d3m-jhu-primitives
+Version: 2022.6.23
+Summary: JHU Python interfaces for TA1 primitives for d3m
+Home-page: https://gitlab.com/datadrivendiscovery/contrib/jhu-primitives
+Author: Hayden S. Helm, Joshua Agterberg, Bijan Varjavand, Anton Alyakin, Disa Mhembere, Eric Bridgeford, Youngser Park, Heather G. Patsolic, Tyler M. Tomita, Jesse L. Patsolic
+Author-email: hhelm2@jhu.edu
+License: Apache-2.0
+Description: A library wrapping JHU's Python interfaces for the D3M program's TA1 primitives.
+Keywords: d3m_primitive
+Platform: UNKNOWN
