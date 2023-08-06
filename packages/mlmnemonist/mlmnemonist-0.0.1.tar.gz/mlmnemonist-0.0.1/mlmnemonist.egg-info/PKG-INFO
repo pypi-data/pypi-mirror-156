@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: mlmnemonist
+Version: 0.0.1
+Summary: A light-weight framework to store the progress you madeon your ML operations with the ability to smartly cache your modelsand retrieve it even when your session crashes.
+Home-page: https://github.com/HamidrezaKmK/ML-Mnemonist
+Author: Hamidreza Kamkari
+Author-email: hamidrezakamkari@gmail.com
+License: MIT
+Description: # ML-Mnemonist
+        A lightweight framework to run MLOps experiments with caching abilities.
+        
+        
+        Change Log
+        =================
+        
+        0.0.1 (23.6.2022)
+        -----------------
+        - First release
+Keywords: MLOps,Caching
+Platform: UNKNOWN
