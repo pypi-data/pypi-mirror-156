@@ -1,0 +1,4 @@
+traitlets
+jupyterlite
+requests
+empack>=0.7.0
