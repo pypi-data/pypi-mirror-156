@@ -1,0 +1,4 @@
+warcio
+surt
+idna<3.0
+py3amf
