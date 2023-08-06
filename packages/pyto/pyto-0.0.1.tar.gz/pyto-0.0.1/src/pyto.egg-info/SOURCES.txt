@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pyto.egg-info/PKG-INFO
+src/pyto.egg-info/SOURCES.txt
+src/pyto.egg-info/dependency_links.txt
+src/pyto.egg-info/requires.txt
+src/pyto.egg-info/top_level.txt
