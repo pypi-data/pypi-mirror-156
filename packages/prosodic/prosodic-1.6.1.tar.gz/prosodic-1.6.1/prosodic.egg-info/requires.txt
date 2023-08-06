@@ -1,0 +1,12 @@
+nltk>=3.6.4
+numpy
+Pyphen
+pyparsing
+xlrd
+networkx
+scipy
+xlwt
+levenshtein
+p_tqdm
+nltk
+numpy
