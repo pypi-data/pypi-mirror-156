@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: tse-datatools
+Version: 0.1.0
+Summary: Toolbox for handling data from TSE Systems product line
+Home-page: https://github.com/TSE-Systems/tse-datatools
+Author: Anton Rau
+Author-email: anton.rau@tse-systems.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/TSE-Systems/tse-datatools/issues
+Project-URL: Documentation, https://github.com/TSE-Systems/tse-datatools#README.md
+Project-URL: Source Code, https://github.com/TSE-Systems/tse-datatools
+Project-URL: User Support, https://github.com/TSE-Systems/tse-datatools/issues
+Keywords: TSE,metabolism,behavior,inhalation,physiology
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tse-datatools
+
+Toolbox for handling data from TSE Systems product line.
+
+## Installation
+
+You can install napari-imc via [pip](https://pypi.org/project/pip/):
+
+    pip install tse-datatools
+    
+## Usage
+
+In progress.
+
+## Authors
+
+Created and maintained by Anton Rau [anton.rau@tse-systems.com](mailto:anton.rau@tse-systems.com)
+
+## Contributing
+
+[Contributing](https://github.com/TSE-Systems/tse-datatools/blob/main/CONTRIBUTING.md)
+
+## Changelog
+
+[Changelog](https://github.com/TSE-Systems/tse-datatools/blob/main/CHANGELOG.md)
+
+## License
+
+[MIT](https://github.com/TSE-Systems/tse-datatools/blob/main/LICENSE)
