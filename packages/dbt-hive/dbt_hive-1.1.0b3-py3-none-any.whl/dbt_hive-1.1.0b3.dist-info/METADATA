@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dbt-hive
+Version: 1.1.0b3
+Summary: The experient hive adapter plugin for dbt
+Home-page: https://github.com/bachng2017/dbt-hive
+Author: Nguyen Huu Bach
+Author-email: bachng@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: dbt-core (==1.1.0)
+Requires-Dist: setuptools (>=40.3.0)
+
+The experient hive adapter plugin for dbt
+
