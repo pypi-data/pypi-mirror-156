@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ccrootpath
+Version: 1.0
+Summary: Set project root path for importing local modules
+Home-page: https://github.com/OpenFibers/CCRootPath
+Author: OpenFibers
+Author-email: openfibers@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
