@@ -1,0 +1,11 @@
+pydantic>=1.9.1
+typer>=0.4.1
+
+[dev]
+black
+coverage
+flake8
+mypy
+pytest
+pytest-cov
+pytest-flake8

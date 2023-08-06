@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: arbejdstimer
+Version: 2022.6.27
+Summary: Working hours (Danish arbejdstimer) or not?
+Home-page: https://github.com/sthagen/arbejdstimer
+Author: Stefan Hagen
+Author-email: stefan@hagen.link
+Maintainer: Stefan Hagen
+Maintainer-email: stefan@hagen.link
+Project-URL: Bug Tracker, https://github.com/sthagen/arbejdstimer/issues
+Project-URL: Documentation, https://sthagen.github.io/arbejdstimer
+Project-URL: Source Code, https://github.com/sthagen/arbejdstimer
+Keywords: developer-tools,documentation-tools,html,markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# arbejdstimer
+
+[![license](https://img.shields.io/github/license/sthagen/arbejdstimer.svg?style=flat)](https://github.com/sthagen/arbejdstimer/blob/default/LICENSE)
+[![version](https://img.shields.io/pypi/v/arbejdstimer.svg?style=flat)](https://pypi.python.org/pypi/arbejdstimer/)
+[![downloads](https://pepy.tech/badge/arbejdstimer/month)](https://pepy.tech/project/arbejdstimer)
+[![wheel](https://img.shields.io/pypi/wheel/arbejdstimer.svg?style=flat)](https://pypi.python.org/pypi/arbejdstimer/)
+[![supported-versions](https://img.shields.io/pypi/pyversions/arbejdstimer.svg?style=flat)](https://pypi.python.org/pypi/arbejdstimer/)
+[![supported-implementations](https://img.shields.io/pypi/implementation/arbejdstimer.svg?style=flat)](https://pypi.python.org/pypi/arbejdstimer/)
+
+Working hours (Danish arbejdstimer) or not?
+
+## Status
+
+Experimental.
+
+**Note**: The default branch is `default`.
