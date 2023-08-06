@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: datapeek
+Version: 0.1.0
+Summary: A python package to display data in a more fluent and well formatted manner using colours and smart formatting
+License: MIT
+Author: lsmucassi
+Author-email: lindasmucassi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
