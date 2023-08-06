@@ -1,0 +1,11 @@
+pypaystack2/__init__.py,sha256=P7-zmlCie5cAjSZWhbFaHD8vRYV7pH3ufLAh-08SyE8,239
+pypaystack2/baseapi.py,sha256=8cU_hoBnoKOYWBgMjETxLfe5Ctibsq59Iqs-OKQ9T68,3161
+pypaystack2/customers.py,sha256=6PvYljQsNl6qbsZq8W_APjFqG0BEZL7DHAx2iG3gtEc,2196
+pypaystack2/errors.py,sha256=z1ItTDAQEgdZ2tA8_oq_FXqvM7PSeF0KP13IvG2tOLk,462
+pypaystack2/plans.py,sha256=dVKZFcbCGkV-fV_FvoCinBWmNpcwjwU6M9OlAJUaFBU,3552
+pypaystack2/transactions.py,sha256=QNt9IRC9wVaLgG_fzlfyIInMlTVZ2yRCv4ibm1IQm5A,5021
+pypaystack2/utils.py,sha256=cKjf-b9zgOCQzzRatrcq-RSBnqMI74IP-b8Q09Uz7kI,1110
+pypaystack2/version.py,sha256=g16wfp3nrZRRqwKPL1lv9ThojfKU7i7syjhZh56IzOs,164
+pypaystack2-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pypaystack2-0.2.0.dist-info/METADATA,sha256=3fzEFmOHe8SacsxJIbGOgLSU1cDLgPVWrlFKC2V1ivY,3038
+pypaystack2-0.2.0.dist-info/RECORD,,
