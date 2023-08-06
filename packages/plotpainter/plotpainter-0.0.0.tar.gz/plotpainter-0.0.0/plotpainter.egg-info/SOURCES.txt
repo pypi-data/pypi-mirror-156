@@ -1,0 +1,11 @@
+README.md
+setup.py
+plotpainter/__init__.py
+plotpainter/extracted_figure_class.py
+plotpainter/run_gui.py
+plotpainter.egg-info/PKG-INFO
+plotpainter.egg-info/SOURCES.txt
+plotpainter.egg-info/dependency_links.txt
+plotpainter.egg-info/top_level.txt
+test/__init__.py
+test/test.py
