@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: jitterbug
+Version: 0.1.1
+Summary: 'Test the stability of multithreaded code by adding random delays'
+Home-page: https://github.com/MarkCBell/jitterbug
+Author: Mark Bell
+Author-email: mcbell@illinois.edu
+License: UNKNOWN
+Keywords: testing,multithreaded,parallel,fuzzing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Jitterbug
+
+Jitterbug is a testing tool for fuzzing parallel code.
+It does this by randomly inserting ``sleep`` commands into various places in your code before each test run.
+This is a great way to test the stability of multithreaded or parallel code.
+
+Jitterbug supports [py.test](https://docs.pytest.org/en/latest/) tests in Python 3.8+.
+
+## Quickstart
+
+Jitterbug is available on [PyPI](https://pypi.org/project/jitterbug/), so it can be installed via:
+
+    $ pip install jitterbug --user --upgrade
+
+Run jitterbug specifying the location of your code and its unit tests:
+
+    $ python -m jitterbug --source <PATH TO SOURCE> --test <PATH TO UNIT TESTS>
+
+
