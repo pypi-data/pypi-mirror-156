@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+confapp/__init__.py
+confapp/load_config.py
+confapp/settings_manager.py
+confapp_shaliulab.egg-info/PKG-INFO
+confapp_shaliulab.egg-info/SOURCES.txt
+confapp_shaliulab.egg-info/dependency_links.txt
+confapp_shaliulab.egg-info/top_level.txt
