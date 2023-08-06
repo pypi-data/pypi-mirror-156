@@ -1,0 +1,9 @@
+egobox-0.3.1.dist-info/METADATA,sha256=wSPjEL1c5x231fuMkkR0kTuW2Wlc5vsxtOvfJXbbBEg,8408
+egobox-0.3.1.dist-info/WHEEL,sha256=n-TJhWtoNxW0pdl3eVX9xkSdJwHSc75Xnr8NdYJOsrY,136
+egobox/egobox.pyd,sha256=C4ZzFT3QbG6O729qOUJRo2IJWjagkdmljlpHBFE0Jps,12867072
+egobox/tests/test_egor.py,sha256=XsNPBp3mVMKfMon4ovi5ttVE05b-S-TV5zErguiHVqQ,5125
+egobox/tests/test_mixintegor.py,sha256=PiqgWN2kHbpEvcHLGxgHm7RO2nK7M5uShGu4oYO4xCc,783
+egobox/tests/test_utils.py,sha256=vCwZXa_2XQKAJo1h-K2-V3R5gl3IybBIEtIfVBj3NUU,980
+egobox/__init__.py,sha256=UCup-J4YiXvMFyxafP3ZCQCCzKs8Ygp7407p46yXSTw,23
+egobox/egobox.pypy37-pp73-x86_64-linux-gnu.so,sha256=5ztqkGBx57JlFVqDIDHdGcE1VTIFFVoj-zPhDvX2zPA,22480360
+egobox-0.3.1.dist-info/RECORD,,
