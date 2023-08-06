@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wantstoparty
+Version: 0.0.1
+Summary: An API wrapper for the wants-to.party API.
+Home-page: UNKNOWN
+Author: acatiadroid
+Author-email: <acatia@mail.com>
+License: UNKNOWN
+Keywords: python,api wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires: aiohttp
+Requires: requests
+License-File: LICENSE.txt
+
+An API wrapper for the wants-to.party API which provides 
+full API coverage. This wrapper also lets you make API calls asynchronously and
+synchronously
+
