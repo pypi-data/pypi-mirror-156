@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: deltaman
+Version: 0.0.4
+Summary: Parsing human time intervals
+Home-page: https://github.com/wonderbeyond/deltaman
+License: MIT
+Keywords: python,datetime,timedelta,human,interval
+Author: Wonder
+Author-email: wonderbeyond@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: building
+Provides-Extra: testing
+Requires-Dist: lark (>=1.1.2,<2.0.0); extra == "building"
+Requires-Dist: pytest (>=7.1.2,<8.0.0); extra == "testing"
+Requires-Dist: tox (>=3.25.0,<4.0.0); extra == "testing"
+Project-URL: Documentation, https://github.com/wonderbeyond/deltaman
+Project-URL: Repository, https://github.com/wonderbeyond/deltaman
+Description-Content-Type: text/markdown
+
+# Deltaman - Parsing human time intervals
+
+```shell
+pip install deltaman
+```
+
+## Getting Started
+
+```python
+from deltaman import delta_parser
+
+for delta in ("15s", "3min", "1h15m", "1 day 12 hours", "1m-15s"):
+    parsed = delta_parser.parse(delta)
+    print(f'{delta!r:20s} {parsed!r:20s}')
+```
+
+That outputs
+
+```
+'15s'                datetime.timedelta(seconds=15)
+'3min'               datetime.timedelta(seconds=180)
+'1h15m'              datetime.timedelta(seconds=4500)
+'1 day 12 hours'     datetime.timedelta(days=1, seconds=43200)
+'1m-15s'             datetime.timedelta(seconds=45)
+```
+
+Note you can get more examples from the testing files.
+
+## Testing
+
+```shell
+$ pytest
+```
+
+Or
+
+```shell
+$ tox
+```
+

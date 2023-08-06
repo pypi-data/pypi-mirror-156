@@ -1,0 +1,8 @@
+deltaman/__init__.py,sha256=fvlKzexDtWqe4ShiTCBnhMtSnVNOfexIDlQM6b5l0Nk,68
+deltaman/_lark_parser.py,sha256=SPgoukejVrk1n6Z7cDU6L61gwbo5EHnnj8mLmhmnSbs,105691
+deltaman/delta.lark,sha256=TzPRzqBWfe8fdNpCwl2yJh6x2mjnY3NdMNWZ3i2CkT8,449
+deltaman/delta_parser.py,sha256=NCWj15J2nmcW8OzrFd_Agmb9vge4uB_YYOADBs81AhU,1460
+deltaman-0.0.4.dist-info/LICENSE,sha256=QSmRUPvVabmkPkdUXxOf96T_63WyY_BxDmdUPnz1UGc,1056
+deltaman-0.0.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+deltaman-0.0.4.dist-info/METADATA,sha256=t4wYqQi0i2YIvk6sEozyAnYj08It1XBEkcy_iV3Tkq8,1757
+deltaman-0.0.4.dist-info/RECORD,,
