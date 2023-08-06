@@ -1,0 +1,7 @@
+pysilk/__init__.py,sha256=pCORUT6cstw9snWkihrSBuUoap5ie-GnqhHCDQC5tHw,8825
+pysilk/_silk.abi3.so,sha256=cnNrxkWN_F2b4QLDUujKvYcrCyeqbVe1sdBUOAEgMJU,315528
+pysilk/build.py,sha256=4KATjvHvET_ShZQW7ssC7mnFJoy-fb0vkhbrojjJy1A,3609
+pysilk_cffi-0.1.0rc1.dist-info/METADATA,sha256=VrAgovKtRXAGjukqj9KTtgZtzzoT-6BvEKLitM2VR_A,2848
+pysilk_cffi-0.1.0rc1.dist-info/WHEEL,sha256=L2ysQRpzaZ_dwmB2jbkklv0iP3gp4u98o7Dm87lh-Xk,111
+pysilk_cffi-0.1.0rc1.dist-info/top_level.txt,sha256=tcB-cCbL6OMj8uspHFAz4kJ8ObWLz--nuLQ1wVc0GRY,7
+pysilk_cffi-0.1.0rc1.dist-info/RECORD,,
