@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pressure_test_lib
+Version: 0.0.1
+Summary: 压测包
+Home-page: https://github.com/guanmengshi/test
+Author: guanmengshi
+License: UNKNOWN
+Description: ### 安装方式
+        pip install pressure-test-lib
+        
+Keywords: test,pressure-test
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
