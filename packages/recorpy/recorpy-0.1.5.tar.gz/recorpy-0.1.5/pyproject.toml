@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "recorpy"
+version = "0.1.5"
+description = "ReCorPy is a small package to reorder correlation matrices from dataframes for better visualizations"
+authors = ["thebooort <18428931+thebooort@users.noreply.github.com>"]
+repository = 'https://github.com/thebooort/ReCorPy'
+readme = 'README.md'
+keywords = ['correlation matrix','visualization','clustering']
+documentation = 'https://recorpy.readthedocs.io/en/latest/index.html'
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.4.3"
+scikit-learn = "^1.1.1"
+numpy = "^1.23.0"
+
+[tool.poetry.dev-dependencies]
+pandas = "^1.4.3"
+numpy = "^1.23.0"
+scikit-learn = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
