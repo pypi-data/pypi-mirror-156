@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "deltaman"
+version = "0.0.4"
+description = "Parsing human time intervals"
+readme = "README.md"
+homepage = "https://github.com/wonderbeyond/deltaman"
+repository = "https://github.com/wonderbeyond/deltaman"
+documentation = "https://github.com/wonderbeyond/deltaman"
+keywords = ["python", "datetime", "timedelta", "human", "interval"]
+authors = ["Wonder <wonderbeyond@gmail.com>"]
+license = "MIT"
+include = ["deltaman/*.py"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+lark = {version = "^1.1.2", optional = true}
+pytest = {version = "^7.1.2", optional = true}
+tox = {version = "^3.25.0", optional = true}
+
+[tool.poetry.dev-dependencies]
+lark = "^1.1.2"
+flake8 = "^4.0.1"
+mypy = "^0.961"
+
+[tool.poetry.extras]
+building = ["lark"]
+testing = ["pytest", "tox"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

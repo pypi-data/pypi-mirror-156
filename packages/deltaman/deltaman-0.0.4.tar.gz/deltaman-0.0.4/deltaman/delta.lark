@@ -1,0 +1,18 @@
+%import common.WS
+%import common.SIGNED_NUMBER
+
+number: SIGNED_NUMBER
+?start: delta
+delta: time+
+time: number unit
+unit: SECOND | MINUTE | HOUR | DAY | WEEK | MONTH | YEAR
+
+SECOND: "s" | "sec" | "second" | "seconds"
+MINUTE: "m" | "min" | "minute" | "minutes"
+HOUR:   "h" | "hr" | "hour" | "hours"
+DAY:    "d" | "day" | "days"
+WEEK:   "w" | "week" | "weeks"
+MONTH:  "mo" | "mon" | "month" | "months"
+YEAR:   "y" | "yr" | "year" | "years"
+
+%ignore WS
