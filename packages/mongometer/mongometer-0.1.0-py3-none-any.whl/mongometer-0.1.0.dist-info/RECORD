@@ -1,0 +1,9 @@
+LICENSE,sha256=lONU0zgZ1HW5tSXFURfslm5ony72-OR9-gHecWNZWEY,1083
+mongometer/__init__.py,sha256=8cZXg04HpNHkmW_LmT_L4cGHdqNntmyBT-U5WLkD_L0,111
+mongometer/aggregation.py,sha256=X5fAxLdLLAPjjAePvln6XsWhUUWPGLnJXUkg4Ws7A-g,3161
+mongometer/executor.py,sha256=V7-Pi3_owLL4eBBK1DVRxsJN_zj5vtkdAu7DLUFyGd0,888
+mongometer-0.1.0.dist-info/entry_points.txt,sha256=mmNhrW6r7K4tcW2GLbsHl0O4ZTZ4xoFnaaH3sz6qJHA,58
+mongometer-0.1.0.dist-info/LICENSE,sha256=lONU0zgZ1HW5tSXFURfslm5ony72-OR9-gHecWNZWEY,1083
+mongometer-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+mongometer-0.1.0.dist-info/METADATA,sha256=8TGxd5YpxHmzfwgdWdMwg-lFKtKcCzXigi159Dv4lAA,4559
+mongometer-0.1.0.dist-info/RECORD,,
