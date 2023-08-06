@@ -1,0 +1,10 @@
+
+[dev]
+commitizen
+pre-commit
+
+[doc]
+sphinx
+
+[test]
+hypothesis
