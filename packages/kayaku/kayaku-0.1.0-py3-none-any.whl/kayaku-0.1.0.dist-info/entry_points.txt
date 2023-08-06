@@ -1,0 +1,4 @@
+[kayaku.providers]
+toml_ro=kayaku.providers.toml:TOMLReadOnlyProvider
+toml_rw=kayaku.providers.toml:TOMLReadWriteProvider
+
