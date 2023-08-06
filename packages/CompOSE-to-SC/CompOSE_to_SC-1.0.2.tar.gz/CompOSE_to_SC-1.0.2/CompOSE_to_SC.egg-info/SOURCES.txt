@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+CompOSE_to_SC/ConstantsAndConversions.py
+CompOSE_to_SC/__init__.py
+CompOSE_to_SC/conversion.py
+CompOSE_to_SC/download.py
+CompOSE_to_SC/plotting.py
+CompOSE_to_SC.egg-info/PKG-INFO
+CompOSE_to_SC.egg-info/SOURCES.txt
+CompOSE_to_SC.egg-info/dependency_links.txt
+CompOSE_to_SC.egg-info/top_level.txt
