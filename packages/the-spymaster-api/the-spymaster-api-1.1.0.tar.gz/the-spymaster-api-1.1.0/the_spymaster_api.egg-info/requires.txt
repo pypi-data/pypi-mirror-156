@@ -1,0 +1,5 @@
+codenames~=1.1
+the_spymaster_util~=1.10
+the_spymaster_solvers_client~=0.4
+pydantic~=1.9
+requests~=2.28
