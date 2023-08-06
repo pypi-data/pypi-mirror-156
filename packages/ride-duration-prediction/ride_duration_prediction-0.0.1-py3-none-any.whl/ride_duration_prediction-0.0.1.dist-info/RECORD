@@ -1,0 +1,8 @@
+ride_duration/VERSION,sha256=axN4nkPlSFY0Uz3hamXYup00xMl1hYi2ZYBUNfgOsRU,5
+ride_duration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ride_duration/predict.py,sha256=FuVRjIzMdH77SnUtlNV03odkeF2I0XzukdPvLAPEwkU,600
+ride_duration/utils.py,sha256=ShPVQoTOTm05qllAas1TXV5cKEL19zWVWM46jCLld9Y,1161
+ride_duration_prediction-0.0.1.dist-info/METADATA,sha256=YeNHj5MnZhdQr9UnGb0XFhi0Gc5WD11unTCXllEX5KM,3661
+ride_duration_prediction-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ride_duration_prediction-0.0.1.dist-info/top_level.txt,sha256=b-QMSa8acVvyz7cjMANWxUQmxA1AjdAfItB9UN75KVc,14
+ride_duration_prediction-0.0.1.dist-info/RECORD,,
