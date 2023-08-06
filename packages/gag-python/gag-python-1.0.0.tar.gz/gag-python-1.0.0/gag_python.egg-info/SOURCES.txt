@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+gag_python/__init__.py
+gag_python/gag.py
+gag_python/model.py
+gag_python.egg-info/PKG-INFO
+gag_python.egg-info/SOURCES.txt
+gag_python.egg-info/dependency_links.txt
+gag_python.egg-info/requires.txt
+gag_python.egg-info/top_level.txt
