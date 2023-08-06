@@ -1,0 +1,8 @@
+[console_scripts]
+kozai-operator = kozai.operator.main:main
+
+[mlflow.artifact_repository]
+kozai = kozai.mlflow.artifact_repository:KozaiArtifactRepository
+
+[mlflow.run_context_provider]
+unused = kozai.mlflow.notebook_run_context:KozaiNotebookRunContext
