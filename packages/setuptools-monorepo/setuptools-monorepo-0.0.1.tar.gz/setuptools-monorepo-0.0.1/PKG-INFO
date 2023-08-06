@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: setuptools-monorepo
+Version: 0.0.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Run Python code from a monorepo during Python package installation
