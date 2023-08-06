@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sveder/__init__.py
+sveder/sveder
+sveder/sveder.py
+sveder/sveders_passwords_and_documents.enc
+sveder.egg-info/PKG-INFO
+sveder.egg-info/SOURCES.txt
+sveder.egg-info/dependency_links.txt
+sveder.egg-info/top_level.txt
