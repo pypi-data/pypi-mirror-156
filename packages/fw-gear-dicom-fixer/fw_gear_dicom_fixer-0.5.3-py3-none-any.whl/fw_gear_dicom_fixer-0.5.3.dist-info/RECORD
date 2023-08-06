@@ -1,0 +1,9 @@
+fw_gear_dicom_fixer/__init__.py,sha256=V6E4wouGLPzfn_7_R6bAb0R3QcgJStSgYKId43riuQk,246
+fw_gear_dicom_fixer/fixers.py,sha256=HM-TRtipoiCTWNefin3MM85tEcZFzXCGx5cfh7vdi9E,6581
+fw_gear_dicom_fixer/main.py,sha256=oAxwVec_dOUWGTgZY5CZPMQLrewjUyeRIn4qxoYO68E,7883
+fw_gear_dicom_fixer/metadata.py,sha256=LJmOQefSjoWuV5KVBt117JAp7YVyvok0rJWloaoa4Bw,7520
+fw_gear_dicom_fixer/parser.py,sha256=htroGLoY6B1YLy-cyiJaISm_J5Ewc6vTX_3qMTdPA4c,633
+fw_gear_dicom_fixer-0.5.3.dist-info/LICENSE,sha256=NNC8xrLtqnhvmkJdOB71ctPp2jBi_2V5u9RzRVEpBcs,1092
+fw_gear_dicom_fixer-0.5.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fw_gear_dicom_fixer-0.5.3.dist-info/METADATA,sha256=07UjJEA4AsKpWNRrGU89mQj3AcGRAscYSk8Ym3LmaHc,3720
+fw_gear_dicom_fixer-0.5.3.dist-info/RECORD,,
