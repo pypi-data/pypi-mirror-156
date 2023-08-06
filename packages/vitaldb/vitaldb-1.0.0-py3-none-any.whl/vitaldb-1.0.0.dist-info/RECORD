@@ -1,0 +1,9 @@
+vitaldb/__init__.py,sha256=FjQk0j1h0BVWAjFwIqtoo5IJVsaO9vsZxNWPbPqJ3K8,103061
+vitaldb/api.py,sha256=kJoYadK47RRM3USDtuavut-k7-8wctLL18KaaATP_IQ,4447
+vitaldb/dataset.py,sha256=GAcG_FxqW-NMTzAMgYXSmfUVTpSD9gAduR3Pev_Kbi8,3149
+vitaldb/utils.py,sha256=cM4myJ0Myb20dfj-xRLXme9MN3Kbj5ke9d1z8TI1gvU,56847
+vitaldb-1.0.0.dist-info/LICENSE,sha256=h_p8qyePNkMbAgB4B_dsGwtNhTR3fSM38fGQIpTuodI,1085
+vitaldb-1.0.0.dist-info/METADATA,sha256=kloGVhe_a4JAnRNqXmtC72oPZ38D1q8obYQvgnFNZhM,561
+vitaldb-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vitaldb-1.0.0.dist-info/top_level.txt,sha256=xJoTTkaIm_WeMoAfX0de2vl5Ns40HOLc0FX-dI2IoDw,8
+vitaldb-1.0.0.dist-info/RECORD,,
