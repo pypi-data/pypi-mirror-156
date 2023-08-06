@@ -1,0 +1,3 @@
+[console_scripts]
+pynitro=pynitro.main:app
+
