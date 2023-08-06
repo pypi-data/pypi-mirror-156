@@ -1,0 +1,809 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ChiantiPy.model package &#8212; ChiantiPy 0.13.1 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ChiantiPy.tests package" href="ChiantiPy.tests.html" />
+    <link rel="prev" title="ChiantiPy.fortranformat package" href="ChiantiPy.fortranformat.html" /> 
+  </head><body>
+<div style="padding: 20px 10px 10px 40px; background-color: #fff8d3; text-align: left;">
+<a href="">
+<img border="0" alt="chiantipy" src="_static/chiantipy_logo.png"/>
+</a>
+</div>
+    
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="ChiantiPy.tests.html" title="ChiantiPy.tests package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ChiantiPy.fortranformat.html" title="ChiantiPy.fortranformat package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">ChiantiPy 0.13.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >ChiantiPy’s API documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="ChiantiPy.html" accesskey="U">ChiantiPy package</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ChiantiPy.fortranformat.html"
+                        title="previous chapter">ChiantiPy.fortranformat package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ChiantiPy.tests.html"
+                        title="next chapter">ChiantiPy.tests package</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="chiantipy-model-package">
+<h1>ChiantiPy.model package<a class="headerlink" href="#chiantipy-model-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ChiantiPy.model.Maker">
+<span id="chiantipy-model-maker-module"></span><h2>ChiantiPy.model.Maker module<a class="headerlink" href="#module-ChiantiPy.model.Maker" title="Permalink to this headline">¶</a></h2>
+<p>classes and methods to analyze observations of astrophysical spectra</p>
+<dl class="function">
+<dt id="ChiantiPy.model.Maker.doDemGofntQ">
+<code class="descclassname">ChiantiPy.model.Maker.</code><code class="descname">doDemGofntQ</code><span class="sig-paren">(</span><em>inQueue</em>, <em>outQueue</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.doDemGofntQ" title="Permalink to this definition">¶</a></dt>
+<dd><p>helper for multiprocessing with maker.mgofnt()</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ChiantiPy.model.Maker.emPlot">
+<code class="descclassname">ChiantiPy.model.Maker.</code><code class="descname">emPlot</code><span class="sig-paren">(</span><em>matchDict</em>, <em>vs='T'</em>, <em>loc='upper right'</em>, <em>fs=10</em>, <em>adjust=None</em>, <em>position='both'</em>, <em>legend=True</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.emPlot" title="Permalink to this definition">¶</a></dt>
+<dd><p>to plot line intensities divided by gofnt
+adjust is to provide an adjustment to the position of the labels
+position : one of ‘both’, ‘right’, ‘left’, or ‘none’</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>vs</strong> (<cite>str</cite>, either ‘T’, or ‘D’) – whether to plot the emission measure vs temperature or density</li>
+<li><strong>loc</strong> (<cite>str</cite>) – matplotlib argument for plt.legend</li>
+<li><strong>fs</strong> (<cite>int</cite>) – the fontsize for the legend</li>
+<li><strong>adjust</strong> (<cite>list</cite>) – a list of multiplicative adjustments to the labels to the plot lines
+must be the same length as the number of lines</li>
+<li><strong>position</strong> (<cite>str</cite>) – where the labels to the lines should be placed, <cite>both</cite> for both ends, <cite>left</cite> for the left size only, ‘right’ for the right side only, or None for no labels</li>
+<li><strong>label</strong> (<cite>bool</cite>) – whether to apply</li>
+<li><strong>legend</strong> (<cite>bool</cite>) – whether to include a matplotlib legend</li>
+<li><strong>fontsize</strong> (<cite>int</cite>) – fontsize for the matplotlib xlabel and ylabel</li>
+<li><strong>tscale</strong> (<cite>float</cite>) – scale the temperature by dividing by tscale</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="ChiantiPy.model.Maker.maker">
+<em class="property">class </em><code class="descclassname">ChiantiPy.model.Maker.</code><code class="descname">maker</code><span class="sig-paren">(</span><em>specData</em>, <em>temperature=None</em>, <em>eDensity=None</em>, <em>elementList=[]</em>, <em>ionList=[]</em>, <em>allLines=False</em>, <em>abundanceName=None</em>, <em>minAbund=10.0</em>, <em>wghtFactor=None</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="ChiantiPy.base.html#ChiantiPy.base._IonTrails.ionTrails" title="ChiantiPy.base._IonTrails.ionTrails"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChiantiPy.base._IonTrails.ionTrails</span></code></a>, <a class="reference internal" href="ChiantiPy.base.html#ChiantiPy.base._SpecTrails.specTrails" title="ChiantiPy.base._SpecTrails.specTrails"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChiantiPy.base._SpecTrails.specTrails</span></code></a></p>
+<p>a class matching observed lines to lines in the CHIANTI database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>specData</strong> (<em>dict</em>) – contains the following keys
+intensity - a list of observed line intensities
+wvlObs - a list of observed wavelengths, usually in Angstroms
+dwvl the expected wavelength different between the observed wvl and CHIANTI</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>temperature</strong> (<cite>float</cite>, <cite>list</cite>, <cite>ndarray</cite>) – the temperature(s) in K</li>
+<li><strong>eDensity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>ndarray</em>) – eDensity: electron density in <span class="math notranslate nohighlight">\(\mathrm{cm^{-3}}\)</span></li>
+<li><strong>elementList</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – a list of elements, such as fe, to be searched</li>
+<li><strong>ionList</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – a list of ions, such as fe_14, to be searched</li>
+<li><strong>allLines</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – if true, unobserved lines in CHIANTI are included in the search</li>
+<li><strong>abundanceName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – the name of the elemental abundance file to be used,
+if not set, the default abundance file is used</li>
+<li><strong>minAbund</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – sets the minimum abundance for an element to be included in the search</li>
+<li><strong>verbose</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – if True, additional output is sent to the terminal</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.argCheck">
+<code class="descname">argCheck</code><span class="sig-paren">(</span><em>temperature=None</em>, <em>eDensity=None</em>, <em>pDensity='default'</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.argCheck" title="Permalink to this definition">¶</a></dt>
+<dd><p>to check the compatibility of the three arguments
+and put them into numpy arrays of atleast_1d</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>temperature</strong> (<cite>float</cite>, <cite>list</cite>, <cite>ndarray</cite>) – the temperature(s) in K</li>
+<li><strong>eDensity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>ndarray</em>) – eDensity: electron density in <span class="math notranslate nohighlight">\(\mathrm{cm^{-3}}\)</span></li>
+<li><strong>pDensity</strong> (<cite>str</cite>, <cite>float</cite>, <cite>ndarray</cite>) – pDensity: proton density in <span class="math notranslate nohighlight">\(\mathrm{cm^{-3}}\)</span> defaults to ‘default’</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.diff">
+<code class="descname">diff</code><span class="sig-paren">(</span><em>sort=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.diff" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculates the weighted and straight differences between observed and predicted
+creates an  attribute self.Dict, a dict with the following keys:
+‘wvl’ = observed wavelength (A)
+‘relDiff’ = (I_obs - I_pred)/(I_obs)
+‘ionS’ the CHIANTI type name for an ion
+sort be either of none, ‘wvl’, or ‘ion’</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><strong>sort</strong> (<cite>str</cite> or None) – whether the output should be sorted by <cite>wvl</cite> or <cite>ion</cite> or not</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.diffPlot">
+<code class="descname">diffPlot</code><span class="sig-paren">(</span><em>title=False, fontsize=16, figsize=[7.0, 5.0]</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.diffPlot" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>title</strong> (<em>bool</em>) – whether to plot the title or not</li>
+<li><strong>fontsize</strong> (<em>int</em>) – fontsize for matplotlib plots</li>
+<li><strong>figsize</strong> (<em>2d list, ndarray</em>) – the figure size for the plot</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Variables:</th><td class="field-body"><p class="first last"><strong>DiffPlot</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – contains the fig, ax matplotlib objects created</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.diffPrint">
+<code class="descname">diffPrint</code><span class="sig-paren">(</span><em>filename='diffPrint.txt'</em>, <em>sort=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.diffPrint" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculates the weighted and straight differences between observed and predicted
+prints the values and saves to a file
+also created a attribute self.Dict, a dict with the following keys:
+‘wvl’ = observed wavelength (A)
+‘relDiff’ = (I_obs - I_pred)/(I_obs)
+‘ionS’ the CHIANTI type name for an ion</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>filename</strong> (<cite>str</cite>) – the filename where the text should be output</li>
+<li><strong>sort</strong> (<cite>str</cite>, can be <cite>wvl</cite>, <cite>ion</cite>, or None) – whether the output should be sorted by <cite>wvl</cite> or <cite>ion</cite> or not</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.emFitPlot">
+<code class="descname">emFitPlot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.emFitPlot" title="Permalink to this definition">¶</a></dt>
+<dd><p>to plot the emission measures derived from a chi-squared search over temperature</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.emMake">
+<code class="descname">emMake</code><span class="sig-paren">(</span><em>filename</em>, <em>reference</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.emMake" title="Permalink to this definition">¶</a></dt>
+<dd><p>to make a CHIANTI style emission measure file
+outName does not need the suffix .em
+reference should be a list of references</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filename</strong> (<cite>str</cite>) – the name of the em file to be produced</li>
+<li><strong>reference</strong> (<cite>list</cite>) – a list of strings providing a reference at the end of the em file</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.emPlot">
+<code class="descname">emPlot</code><span class="sig-paren">(</span><em>vs='T'</em>, <em>loc='upper right'</em>, <em>fs=10</em>, <em>adjust=None</em>, <em>position='both'</em>, <em>label=True</em>, <em>legend=True</em>, <em>fontsize=16</em>, <em>tscale=1.0</em>, <em>verbose=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.emPlot" title="Permalink to this definition">¶</a></dt>
+<dd><p>to plot line intensities divided by gofnt
+adjust is to provide an adjustment to the position of the labels
+position : one of ‘both’, ‘right’, ‘left’, or ‘none’</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>vs</strong> (<cite>str</cite>, either ‘T’, or ‘D’) – whether to plot the emission measure vs temperature or density</li>
+<li><strong>loc</strong> (<cite>str</cite>) – matplotlib argument for plt.legend</li>
+<li><strong>fs</strong> (<cite>int</cite>) – the fontsize for the legend</li>
+<li><strong>adjust</strong> (<cite>list</cite>) – a list of multiplicative adjustments to the labels to the plot lines
+must be the same length as the number of lines</li>
+<li><strong>position</strong> (<cite>str</cite>) – where the labels to the lines should be placed, <cite>both</cite> for both ends, <cite>left</cite> for the left size only, ‘right’ for the right side only, or None for no labels</li>
+<li><strong>label</strong> (<cite>bool</cite>) – whether to apply</li>
+<li><strong>legend</strong> (<cite>bool</cite>) – whether to include a matplotlib legend</li>
+<li><strong>fontsize</strong> (<cite>int</cite>) – fontsize for the matplotlib xlabel and ylabel</li>
+<li><strong>tscale</strong> (<cite>float</cite>) – scale the temperature by dividing by tscale</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.emPlotObj">
+<code class="descname">emPlotObj</code><span class="sig-paren">(</span><em>vs='T', loc='upper right', fs=10, adjust=None, position='both', label=True, legend=True, fontsize=16, figsize=[7.0, 5.0], tscale=1.0, verbose=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.emPlotObj" title="Permalink to this definition">¶</a></dt>
+<dd><p>the emPlot using the object oriented version of matplotlib - a figure and axis objects are returned
+to plot line intensities divided by gofnt
+adjust is to provide an adjustment to the position of the labels
+position : one of ‘both’, ‘right’, ‘left’, or ‘none’
+this uses the modern object interface fig, ax = plt.subplots(figsize=figsize)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>vs</strong> (<cite>str</cite>, either ‘T’, or ‘D’) – whether to plot the emission measure vs temperature or density</li>
+<li><strong>loc</strong> (<cite>str</cite>) – matplotlib argument for plt.legend</li>
+<li><strong>fs</strong> (<cite>int</cite>) – the fontsize for the legend</li>
+<li><strong>adjust</strong> (<cite>list</cite>) – a list of multiplicative adjustments to the labels to the plot lines
+must be the same length as the number of lines</li>
+<li><strong>position</strong> (<cite>str</cite>) – where the labels to the lines should be placed, <cite>both</cite> for both ends, <cite>left</cite> for the left size only, ‘right’ for the right side only, or None for no labels</li>
+<li><strong>label</strong> (<cite>bool</cite>) – whether to apply</li>
+<li><strong>legend</strong> (<cite>bool</cite>) – whether to include a matplotlib legend</li>
+<li><strong>fontsize</strong> (<cite>int</cite>) – fontsize for the matplotlib xlabel and ylabel</li>
+<li><strong>figsize</strong> (two element <cite>list</cite> or <cite>ndarray</cite>) – sets the figure size when using matplotlib subplots to initiate the object style plotting</li>
+<li><strong>tscale</strong> (<cite>float</cite>) – scale the temperature by dividing by tscale</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.emSet">
+<code class="descname">emSet</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.emSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>sets the EM values for a N temperature EM distribution</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<cite>list</cite>, <cite>ndarray</cite>) – the values of the emission measure to be used when the intensities are predicted</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.emSetIndices">
+<code class="descname">emSetIndices</code><span class="sig-paren">(</span><em>indices</em>, <em>add=0.0</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.emSetIndices" title="Permalink to this definition">¶</a></dt>
+<dd><p>to set the indices of the N temperature/density EM distribution
+can increase the number of paramaters if additional parameters have been used</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>indices</strong> (<cite>list</cite>, <cite>ndarray</cite>) – the indices of the temperature/density arrays for which a set of intensities will be predicted</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>add</strong> (<cite>float</cite>) – to increase the number of parameters used in the calculation of the reduced chi-squared</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.findMinMaxIndices">
+<code class="descname">findMinMaxIndices</code><span class="sig-paren">(</span><em>verbose=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.findMinMaxIndices" title="Permalink to this definition">¶</a></dt>
+<dd><p>to find the minimum and maximum indices where all match[‘intensitySum’] are
+greater than 0</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.fit1t">
+<code class="descname">fit1t</code><span class="sig-paren">(</span><em>initialValue</em>, <em>maxfev=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.fit1t" title="Permalink to this definition">¶</a></dt>
+<dd><p>calls leastsq to fit the 1t (single temperature) model
+used in search1dspace</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>initialValue</strong> (<cite>float</cite>) – the initial value to start the leastsq process</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">see if this can be replaced by fitFunct1t or fitNt</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.fitFunc1t">
+<code class="descname">fitFunc1t</code><span class="sig-paren">(</span><em>em</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.fitFunc1t" title="Permalink to this definition">¶</a></dt>
+<dd><p>the fitting function for the isothermal model to be called by leastsq
+called by fit1t</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>em</strong> (<em>number</em>) – the log10 value of the emission measure</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>weighted chisquared</strong></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-todo admonition" id="index-1">
+<p class="first admonition-title">Todo</p>
+<p class="last">see if this can be replaced by fitFuncNt</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.fitFuncNt">
+<code class="descname">fitFuncNt</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.fitFuncNt" title="Permalink to this definition">¶</a></dt>
+<dd><p>the fitting function for the multiple  temperature model to be called by leastsq
+called by fitNt</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<cite>list</cite>) – the initial values for the em fit</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.fitNt">
+<code class="descname">fitNt</code><span class="sig-paren">(</span><em>initialValue</em>, <em>maxfev=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.fitNt" title="Permalink to this definition">¶</a></dt>
+<dd><p>calls leastsq to fit the multi temperature models
+called by search2tSpace, search3tSpace etc</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>initialValue</strong> (<cite>list</cite>) – the initial trial value for the emission measure (log1))</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><strong>maxfev</strong> (<cite>int</cite>) – not sure it is needed</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.getChisq">
+<code class="descname">getChisq</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.getChisq" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the weighted chi-squared</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.getNormalizedChisq">
+<code class="descname">getNormalizedChisq</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.getNormalizedChisq" title="Permalink to this definition">¶</a></dt>
+<dd><p>return normalized chisq:  chi-squared divided by the number of observed lines</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.getWeightedDiff">
+<code class="descname">getWeightedDiff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.getWeightedDiff" title="Permalink to this definition">¶</a></dt>
+<dd><p>to calculated the weighted difference of each of the intensities
+returns a 1D array</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.gofnt">
+<code class="descname">gofnt</code><span class="sig-paren">(</span><em>temperature</em>, <em>density</em>, <em>verbose=1</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.gofnt" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate the gofnt function for each of the matched lines
+do each ion only once</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>temperature</strong> (<cite>float</cite>, <cite>list</cite>, <cite>ndarray</cite>) – the temperature(s) in K</li>
+<li><strong>density</strong> (<cite>float</cite>, <cite>list</cite>, <cite>ndarray</cite>) – density: electron density in <span class="math notranslate nohighlight">\(\mathrm{cm^{-3}}\)</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.loadMatch">
+<code class="descname">loadMatch</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.loadMatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>to open a pickle file, return the match data and make it an attribute</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.loadSearchData">
+<code class="descname">loadSearchData</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.loadSearchData" title="Permalink to this definition">¶</a></dt>
+<dd><p>to load the pickled search data as an attribute self.SearchData</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><strong>filename</strong> (<cite>str</cite>) – the filename of the pickle file where the search data has been created</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.makeMatch">
+<code class="descname">makeMatch</code><span class="sig-paren">(</span><em>verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.makeMatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>to match the CHIANTI lines with the input specdata
+uses ionTrails.ionGate to sort through ions</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.mgofnt">
+<code class="descname">mgofnt</code><span class="sig-paren">(</span><em>temperature</em>, <em>density</em>, <em>proc=6</em>, <em>timeout=0.1</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.mgofnt" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate the gofnt function for each of the matched lines
+this is the multiprocessing version
+does each ion only once</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>temperature</strong> (<cite>float</cite>, <cite>list</cite>, <cite>ndarray</cite>) – the temperature(s) in K</li>
+<li><strong>density</strong> (<cite>float</cite>, <cite>list</cite>, <cite>ndarray</cite>) – density: electron density in <span class="math notranslate nohighlight">\(\mathrm{cm^{-3}}\)</span></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>proc</strong> (<cite>int</cite>) – the number of cores to be used</li>
+<li><strong>timeout</strong> (<em>'float'</em>) – may not actually be necessary</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.predict">
+<code class="descname">predict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>to predict the intensities of the observed lines from an emission measure
+the emission measure is already specified as self.Em which is an ndarray
+the temperatures are set by emSetIndices</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.predictPrint">
+<code class="descname">predictPrint</code><span class="sig-paren">(</span><em>minContribution=0.1</em>, <em>filename='predictPrint.txt'</em>, <em>sort=None</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.predictPrint" title="Permalink to this definition">¶</a></dt>
+<dd><p>to predict the intensities of the observed lines from an emission measure
+the emission measure is already specified as self.Em which is an np array
+sort can be ‘wvl’ or ‘ion’, otherwise, there is no sorting done</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>minContribution</strong> (<cite>float</cite>) – the minimum contribution a blend must supply to be included in the text output</li>
+<li><strong>filename</strong> (<cite>str</cite>) – the filename where the text should be output</li>
+<li><strong>sort</strong> (<cite>str</cite>, can be <cite>wvl</cite>, <cite>ion</cite>, or None) – whether the output should be sorted by <cite>wvl</cite> or <cite>ion</cite> or not</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.predictPrint1d">
+<code class="descname">predictPrint1d</code><span class="sig-paren">(</span><em>minContribution=0.1</em>, <em>filename='predictPrint1d.txt'</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.predictPrint1d" title="Permalink to this definition">¶</a></dt>
+<dd><p>to predict the intensities of the observed lines from an emission measure
+the emission measure is already specified as self.Em which is an np array</p>
+<p>to be used after a 1d search over density</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>minContribution</strong> (<cite>float</cite>) – the minimum contribution a blend must supply to be included in the text output</li>
+<li><strong>filename</strong> (<cite>str</cite>) – the filename where the text should be output</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.saveMatch">
+<code class="descname">saveMatch</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.saveMatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>to save the attribute Match to a pickle file so that it can be reloaded later</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><strong>filename</strong> (<cite>str</cite>) – the filename where the text should be output</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.saveSearchData">
+<code class="descname">saveSearchData</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.saveSearchData" title="Permalink to this definition">¶</a></dt>
+<dd><p>to save the attribute SearchData to a pickle file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><strong>filename</strong> (<cite>str</cite>) – the filename of the pickle file where the search data is to be created</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.search1dSpace">
+<code class="descname">search1dSpace</code><span class="sig-paren">(</span><em>initialEm</em>, <em>indxlimits=None</em>, <em>verbose=False</em>, <em>log=False</em>, <em>maxfev=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.search1dSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>to conduct a brute force search over electron density for an isothermal-space and find the
+best fit to the em and density
+indxlimits give the range of indices to fit over
+can use self.MinIndex and self.MaxIndex+1
+initialEm = log value of the emission measure to begin the searching</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>initialEm</strong> (<cite>float</cite>) – the initial trial value for the log10 emission measure</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>indxlimits</strong> (<cite>list</cite>, None) – the range of indices of the density array to search
+if None is specified, the whole range is searched</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+<li><strong>log</strong> (<cite>bool</cite>) – if True, a log file is created - ‘search1d.raw’</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.search1tEmSpace">
+<code class="descname">search1tEmSpace</code><span class="sig-paren">(</span><em>verbose=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.search1tEmSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>to find the value of chisq as a function of Em with T = best-fit</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.search2tSpace">
+<code class="descname">search2tSpace</code><span class="sig-paren">(</span><em>initial</em>, <em>indxlimits=None</em>, <em>verbose=0</em>, <em>log=0</em>, <em>maxfev=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.search2tSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>to conduct a brute force search of 2 temperature space and find the
+best fit
+indxlimits give the range of indices to fit over</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>initial</strong> (<cite>list</cite>) – the initial trial values (2) for the log10 emission measure</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>indxlimits</strong> (<cite>list</cite>, None) – the range of indices of the density array to search
+if None is specified, the whole range is searched</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+<li><strong>log</strong> (<cite>bool</cite>) – if True, a log file is created - ‘search1d.raw’</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.search3tSpace">
+<code class="descname">search3tSpace</code><span class="sig-paren">(</span><em>initial</em>, <em>indxlimits=None</em>, <em>verbose=0</em>, <em>log=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.search3tSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>to conduct a brute force search of 3 temperature space and find the
+best fit</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>initial</strong> (<cite>list</cite>) – the initial trial values (3) for the log10 emission measure</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>indxlimits</strong> (<cite>list</cite>, None) – the range of indices of the density array to search
+if None is specified, the whole range is searched</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+<li><strong>log</strong> (<cite>bool</cite>) – if True, a log file is created - ‘search1d.raw’</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ChiantiPy.model.Maker.maker.search4tSpace">
+<code class="descname">search4tSpace</code><span class="sig-paren">(</span><em>initial</em>, <em>indxlimits=None</em>, <em>verbose=0</em>, <em>log=0</em><span class="sig-paren">)</span><a class="headerlink" href="#ChiantiPy.model.Maker.maker.search4tSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>to conduct a brute force search of 4 temperature space and find the
+best fit
+set log to create a log file of the iterations rather that outputting to
+the jupyter/ipython session</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>initial</strong> (<cite>list</cite>) – the initial trial values (4) for the log10 emission measure</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Keyword Arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>indxlimits</strong> (<cite>list</cite>, None) – the range of indices of the density array to search
+if None is specified, the whole range is searched</li>
+<li><strong>verbose</strong> (<cite>bool</cite>) – if True, additional output is sent to the terminal</li>
+<li><strong>log</strong> (<cite>bool</cite>) – if True, a log file is created - ‘search1d.raw’</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ChiantiPy.model">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ChiantiPy.model" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="ChiantiPy.tests.html" title="ChiantiPy.tests package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ChiantiPy.fortranformat.html" title="ChiantiPy.fortranformat package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">ChiantiPy 0.13.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >ChiantiPy’s API documentation</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="ChiantiPy.html" >ChiantiPy package</a> &#187;</li> 
+      </ul>
+    </div>
+<div style="padding: 20px 10px 10px 40px; background-color: #fff8d3; text-align: left;">
+
+
+</div>
+    
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Ken Dere.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
+    </div>
+
+  </body>
+</html>
