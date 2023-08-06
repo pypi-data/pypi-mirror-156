@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dpgenZ/DpZingest.py
+src/dpgenZ/__init__.py
+src/dpgenZ/dpZdb.py
+src/dpgenZ/storage.py
+src/dpgenZ.egg-info/PKG-INFO
+src/dpgenZ.egg-info/SOURCES.txt
+src/dpgenZ.egg-info/dependency_links.txt
+src/dpgenZ.egg-info/requires.txt
+src/dpgenZ.egg-info/top_level.txt
