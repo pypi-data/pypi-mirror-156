@@ -1,0 +1,13 @@
+rustshed/__init__.py,sha256=Krx_gaAYJWJXF2ebgQZk2PXbOH-VBf21_qVcSmz8YtQ,624
+rustshed/option_result.py,sha256=J_lw8qBTqJzmEtA_i0RdxHZzjFi8_5vqwSOLY51rCaQ,27765
+rustshed/option_shortcut.py,sha256=lzu1VLjYAnL63ns06QtwlKWkDsUyWi8ABhlm1aP-4u0,469
+rustshed/panic.py,sha256=nq_rwzv-S4sU2RcZHUFwqkm8Fn3l2i57JqTfuxZV6d4,55
+rustshed/py.typed,sha256=sow9soTwP9T_gEAQSVh7Gb8855h04Nwmhs2We-JRgZM,7
+rustshed/result_shortcut.py,sha256=z3cljr90iJPtJ0ewwZ9Mss5G7GSY4FxAxdeKxh6FTu0,504
+rustshed/to_option.py,sha256=m9qGfOeVypbErQLX7WDAHamwbIhJE4M39bqKQNdKUBI,774
+rustshed/to_result.py,sha256=GcbKr2rv38glhdaqQzfIn3vuKlsNywNJcXtcNH113rQ,1425
+rustshed/typeguards.py,sha256=e1jAjn2-FZM6wJypZuxZnPULdeKm0_6looy4XQ-5JPc,470
+rustshed-0.4.0.dist-info/LICENSE,sha256=dEh7oflRLG0rW-_fPOUyAdm0ajLa5HtGH6iDAVak4eI,1069
+rustshed-0.4.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+rustshed-0.4.0.dist-info/METADATA,sha256=R1t6B-559hUXu4n05jDRm5SzAJQJAm_C787OxNXAHfc,3494
+rustshed-0.4.0.dist-info/RECORD,,
