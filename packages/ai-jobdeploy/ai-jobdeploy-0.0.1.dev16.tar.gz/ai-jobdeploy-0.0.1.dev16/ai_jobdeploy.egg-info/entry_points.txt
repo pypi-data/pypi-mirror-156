@@ -1,0 +1,2 @@
+[console_scripts]
+jd = jd.__main__:cli
