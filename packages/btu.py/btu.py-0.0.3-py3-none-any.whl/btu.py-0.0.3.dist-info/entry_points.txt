@@ -1,0 +1,2 @@
+[console_scripts]
+btu-fetch = btu.__main__:main
