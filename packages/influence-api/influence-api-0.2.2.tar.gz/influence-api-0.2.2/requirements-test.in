@@ -1,0 +1,10 @@
+-c requirements.txt
+GitPython
+pip-tools
+pre-commit
+pytest
+pytest-annotate
+pytest-cov
+pytest-env
+pytest-xdist
+requests-mock
