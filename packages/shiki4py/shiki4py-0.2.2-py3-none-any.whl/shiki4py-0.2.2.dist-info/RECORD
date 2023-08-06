@@ -1,0 +1,11 @@
+shiki4py/__init__.py,sha256=xsF1DiGXc93rkVMvr4OJpf_sSo6TEhoAyKyabfIBqPU,58
+shiki4py/client.py,sha256=6sHnYODZ9n9_to64b_lHW0qNNg5gp7MWZfH1GcSuC9s,5601
+shiki4py/log.py,sha256=InJ55dlP-mcJrtpi04ON2Oc9EGeZT6Jl7sa8VaHfGvY,1724
+shiki4py/store/__init__.py,sha256=3Fw6LhIvA_EOoOYmYna2dCO7-9obi9TVfTu05THkgVY,264
+shiki4py/store/env.py,sha256=ZETU6DlQLeBJNWSRnzcgN3qUH0FAaw7Yi2-RvLTLwt4,838
+shiki4py/store/ini.py,sha256=3FaE1PPlpLzSIA0uOHD4WSkX8UdYjg04l_6euWA77yM,771
+shiki4py-0.2.2.dist-info/LICENSE,sha256=HO45DWVyDumqcTPLi8u97LoOTroVOHB9CHTw-VTPmAg,1064
+shiki4py-0.2.2.dist-info/METADATA,sha256=M9_axbTeRkA2YzA3KmrJqFOj_ZRPrAW24gx9yHrycxQ,3232
+shiki4py-0.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shiki4py-0.2.2.dist-info/top_level.txt,sha256=OQ3gOcBL0Ah7sZKvVvRCNAxJi9XGhKWG1AJuZ2-j_e8,9
+shiki4py-0.2.2.dist-info/RECORD,,
