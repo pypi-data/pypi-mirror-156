@@ -1,0 +1,65 @@
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package]
+version = "0.2.23"
+name = "bed-reader"
+description = "Read and write the PLINK BED format, simply and efficiently."
+repository = "https://github.com/fastlmm/bed-reader"
+readme = "README-rust.md"
+documentation = "https://docs.rs/bed-reader/latest/bed_reader/"
+authors = ["FaST-LMM Team <fastlmm-dev@python.org>"]
+exclude = ["tests/*", "doc/*", "docs/*"]
+license = "Apache-2.0"
+keywords = ["bioinformatics", "plink", "genomics", "genotype", "snps"]
+categories = ["science"]
+edition = "2021"
+homepage = "https://fastlmm.github.io/"
+
+[package.metadata.maturin]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+]
+requires-dist = ["numpy>=1.13.3", "pandas>=0.25.1", "pooch>=1.1.1"]
+
+[package.metadata.maturin.project-url]
+Homepage = "https://fastlmm.github.io"
+"Source Code" = "https://github.com/fastlmm/bed-reader"
+"Bug Tracker" = "https://github.com/fastlmm/bed-reader/issues"
+Documentation = "http://fastlmm.github.io/bed-reader"
+
+[lib]
+name = "bed_reader"
+crate-type = ["cdylib", "rlib"]
+
+[features]
+# https://github.com/PyO3/pyo3/discussions/2271
+extension-module = ["pyo3"]
+
+[dependencies]
+thiserror = "1.0.30"
+num-traits = "0.2.14"
+ndarray-npy = { version = "0.8.1", default-features = false }
+rayon = "1.5.2"
+numpy = "0.16.2"
+ndarray = { version = "0.15.4", features = ["approx", "rayon"] }
+approx = "0.5.1"
+statrs = "0.15.0"
+byteorder = { version = "1.4.3", default-features = false }
+pyo3 = { version = "0.16.4", features = ["extension-module"], optional = true }
+dpc-pariter = "0.4.0"                                                           # //  pariter = "0.5.1"
+derive_builder = "0.11.1"
+temp_testdir = "0.2.3"
+ureq = { version = "2.4.0", features = [] }
+directories = "4.0.1"
+sha2 = "0.10.2"
+base16ct = { version = "0.1.1", features = ["alloc"] }
+ctor = "0.1.22"
+
+[dev-dependencies]
+ndarray-rand = "0.14.0"
