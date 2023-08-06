@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: mdbase
+Version: 0.1
+Summary: MDbase :: auto-join + process multiple XLSX databases
+Home-page: https://github.com/mirekslouf/mdbase/
+Author: Mirek Slouf
+Author-email: mirek.slouf@gmail.com
+License: MIT
+Project-URL: Documentation, https://mirekslouf.github.io/mdbase/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+MDbase :: auto-join + process multiple XLSX databases
+-----------------------------------------------------
+
+* MDbase is a Python package that...
+	- Reads multiple XLSX files and joins them into one single database
+	- Enables fast and easy data mining = correlations, comparisons...
+
+
+Documentation, help and examples
+--------------------------------
+
+More detailed help, demo and source code including documentation are in
+[GitHub](https://mirekslouf.github.io/mcreep).
+
+
+Versions of MDbase
+------------------
+
+* Version 0.1 = complete, working, but without detailed documentation
+
