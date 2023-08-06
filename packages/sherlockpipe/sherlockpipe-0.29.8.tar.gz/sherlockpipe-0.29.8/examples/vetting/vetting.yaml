@@ -1,0 +1,14 @@
+# Thise YAML file illustrates how to provide data for the vetting process. Comma separated sectors and transit times
+# together to the mission id.
+
+id: 1
+period: 24.56182
+depth: 0.32
+t0: 1571.2524
+duration: 231
+rp_rs: 0.01812
+a: 0.16401
+sectors: [10, 37]
+ffi: False
+number: 2
+curve: 3
