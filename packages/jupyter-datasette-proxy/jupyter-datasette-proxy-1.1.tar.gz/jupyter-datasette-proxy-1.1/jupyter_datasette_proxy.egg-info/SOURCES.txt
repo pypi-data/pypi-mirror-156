@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jupyter_datasette_proxy.egg-info/PKG-INFO
+jupyter_datasette_proxy.egg-info/SOURCES.txt
+jupyter_datasette_proxy.egg-info/dependency_links.txt
+jupyter_datasette_proxy.egg-info/entry_points.txt
+jupyter_datasette_proxy.egg-info/requires.txt
+jupyter_datasette_proxy.egg-info/top_level.txt
