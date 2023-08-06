@@ -1,0 +1,223 @@
+ [
+    {
+        "name":"PEHL Emergency",
+        "number":"911",
+        "description":"A unified emergency service for the country.",
+        "coverage":"country-wide",
+        "category":"all-emergency"
+    },
+    {
+        "name":"Digital Rights Foundation",
+        "number":"0800-39393 ",
+        "description":"Harassment in the digital space.",
+        "coverage":"country-wide",
+        "email":"info@digitalrightsfoundation.pk",
+        "website":"dastak.org.pk",
+        "category":"online, digital, pranking , fraud, cyber, bullying"
+    },
+    {
+        "name":"Dastak Trust",
+        "number":"0333-4161610",
+        "description":"Rights safeguard.",
+        "coverage":"country-wide",
+        "email":"info@dastak.org.pk",
+        "website":"dastak.org.pk",
+        "category":"children rights, women rights, shelter"
+    },
+    {
+        "name": "KPK Child Protection & Welfare Bureau",
+        "number": "1121",
+        "description": "Child welfare services in Khyber-Pakhtun-Khwa.",
+        "email": "",
+        "website": "www.kpcpwc.gov.pk/",
+        "category": "children, exploitation, education, maintenance, rehab, protection, welfare"
+    },
+    {
+        "name": "National Highway & Motorway Police",
+        "number": "130",
+        "description": "Any issues concerning issues on the highway or motorway.",
+        "email": "digmotorways@nhmp.gov.pk",
+        "website": "nhmp.gov.pk",
+        "category": "traffic, road issues, accidents, emergency, licensing, advisory"
+    },
+    {
+        "name": "Traffic Police",
+        "number": "1915",
+        "description": "Any issues concerning traffic.",
+        "email": "",
+        "website": "",
+        "category": "traffic, road issues, accidents, emergency "
+    },
+    {
+        "name": "Pakistan's Women Helpline",
+        "number": "1043",
+        "description": "Any issues concerning women.",
+        "email": "",
+        "website": "",
+        "category": "women, emergency, problems, violence, other domestic issues."
+    },
+    {
+        "name":"NACTA",
+        "number":"1717",
+        "description":"National counter terrorism authority.",
+        "coverage":"country-wide",
+        "email":"",
+        "website":"nacta.gov.pk",
+        "category":"extremism, terrorism, terrorism finance, national, state, violence against women, women related issues"
+    },
+    {
+        "name":"Pakistan Sweet Home",
+        "number":"0514865856",
+        "description":"Welfare for children.",
+        "coverage":"islamabad",
+        "email": "info@pakistansweethome.org.pk",
+        "website":"pakistansweethome.org.pk",
+        "category":"children, orphans, care, orphanage, donations"
+    },
+    {
+        "name":"Jannat-Ul-Firdous Trust",
+        "number":"+924235960013",
+        "description":"Welfare for children and women.",
+        "coverage":"punjab",
+        "email": "juftrust14@gmail.com",
+        "website":"juftrust.com",
+        "category":"children, orphans, elderly, care, orphanage, donations"
+    },
+    {
+        "name":"PCSW Punjab",
+        "number":"+923414444544",
+        "description":"Safeguarding women's rights through economic empowerment.",
+        "coverage":"punjab",
+        "website":"www.pcswpb.org",
+        "category":"complaints, discrimination, harassment, violence against women, women related issues"
+    },
+    {
+        "name":"New Life Orphanage",
+        "description":"Orphanage.",
+        "coverage":"islamabad",
+        "website":"www.newlifepk.org/orphanage-project.html",
+        "category":"children, orphans, housing"
+    },
+    {
+        "name":"Khpalkhor Foundation",
+        "number":"+92946729211",
+        "description":"The KKF is providing family-oriented care and best quality education along with the community children.",
+        "coverage":"swat",
+        "email":"khpalkor@gmail.com",
+        "website":"khpalkor.org",
+        "category":"children, orphans, housing"
+    },
+    {
+        "name":"Bedari Foundation",
+        "number":"+923414444544",
+        "description":"Let us stand against violence.",
+        "coverage":"punjab",
+        "email":"bedari@bedari.org.pk",
+        "website":"www.bedari.org.pk",
+        "category":"domestic, violence, child marriage, girls educations, self growth"
+    },
+    {
+        "name":"SOS Children's Village",
+        "number":"+92-42-35918035-6 ",
+        "description":"A loving home for every child.",
+        "coverage":"punjab",
+        "email":"national@sos.org.pk",
+        "website":"www.sos.org.pk",
+        "category":"children, orphans, sponsorship, care, dowry"
+    },
+    {
+        "name":"Roshni Trust Homes",
+        "number":"+924235290587",
+        "description":"Child community care.",
+        "coverage":"punjab",
+        "email":"lnfo@roshnihomes.org",
+        "website":"roshnihomes.org",
+        "category":"children, orphans, care, community development"
+    },
+    {
+        "name":"Edhi Welfare Foundation",
+        "number":"115",
+        "description":"Largest medical emergency network.",
+        "coverage":"major-cities",
+        "email":"lnfo@edhi.org",
+        "website":"www.edhi.org",
+        "category":"ambulance, air ambulance, orphanage, homes, sacrifice, qurbani, wheelchair, laboratory, immunisation, food, nursing training, diabetic centre, children, education, Burial, missing person, morgue, refugee, marriage, fitra, fidya, sadqa, kaffara, zakkat"
+    },
+    {
+        "name":"Chhipa Welfare Association",
+        "number":"1020",
+        "description":"A non-profit welfare organization in Pakistan, imbued with a noble mission, having sincere love and affection for the humanity and a strong commitment to serve the common people.",
+        "coverage":"major-cities",
+        "email":"lnfo@chhipa.org",
+        "website":"www.chhipa.org",
+        "category":"ambulance, food, morgue, qurbani, sacrifice, fitra, fidya, sadqa, kaffara, wheelchair, children, orphanage, education, burial, missing, zakkat, ambulance"
+    },
+    {
+        "name":"Rescue 1122",
+        "number":"1122",
+        "description":"The Punjab Emergency Service (Rescue 1122) is the leading emergency service of South Asia. Rescue 1122 has been established under the Punjab Emergency Service Act 2006 for professional management of emergencies such as road traffic crashes, medical emergencies, building collapse, fire, hazardous material incidents, explosions, flood & water rescue and animal rescue etc.",
+        "coverage":"punjab",
+        "email":"pio@rescue.gov.pk",
+        "website":"www.rescue.gov.pk",
+        "category":"traffic accidents, medical, crime, fire, drowning, collapse"
+    },
+    {
+        "name":"Police Madadgar",
+        "number":"15",
+        "description":"In order to streamline the security deployment & emergency response, a new unit “Police Security & Emergency Services Division (PS&ESD)” has been established",
+        "coverage":"country-wide",
+        "email":"info@sesdsindhpolice.gos.pk",
+        "website":"www.sesdsindhpolice.gos.pk",
+        "category":"missing person, police, bomb disposal, gas leak, vehicle computer clearance, dacoity, theft, water, sewage, vehicle snatching, law and order, legal aid"
+    },
+    {
+        "name":"Pakistan Rangers",
+        "number":"1011",
+        "description":"Their primary purpose is to secure and defend sites of significance in the country, although they are also usually involved in major internal and external security operations with the regular Pakistani military and provide assistance to municipal and provincial police forces to maintain law and order against crime, terrorism and unrest.",
+        "coverage":"country-wide",
+        "email":"help@pakistanrangerssindh.org",
+        "website":"www.pakistanrangerssindh.org",
+        "category":"border control, federal law enforcement, crime"
+    },
+    {
+        "name":"Sehat Tahafuz",
+        "number":"1166",
+        "description":"he Pakistan Medical Assistance Helpline, also known as ‘Sehat Tahafuz’, was initially launched to spread polio awareness in Pakistan and to answer the queries of people regarding its vaccination campaign.It provides all types of medical information and assistance to citizens.",
+        "coverage":"country-wide",
+        "category":"medical, advice, assistance"
+    },
+    {
+        "name":"Aman Foundation",
+        "number":"+92 (21) 111-111-823",
+        "description":"Their primary purpose is to secure and defend sites of significance in the country, although they are also usually involved in major internal and external security operations with the regular Pakistani military and provide assistance to municipal and provincial police forces to maintain law and order against crime, terrorism and unrest.",
+        "coverage":"sindh",
+        "email":"info@theamanfoundation.org",
+        "website":"www.theamanfoundation.org",
+        "category":"mental health, health, maternal, training, vocational, ambulance"
+    },
+    {
+        "name":"Pakistan Fire Brigade",
+        "number":"16",
+        "description":"Fire protection services.",
+        "coverage":"country-wide",
+        "category":"fire, rescue, safety"
+    },
+    {
+        "name":"Rising Sun Institute",
+        "number":"+92 42 111 774 444,",
+        "description":"For children with special needs.",
+        "coverage":"punjab",
+        "email":"info@risingsun.org.pk",
+        "website":"www.risingsun.org.pk",
+        "category":"disability, impairment, autism, special needs, vision"
+    },
+    {
+        "name":"Domestic Violence  Helpline",
+        "number":"1099,",
+        "description":"Let us end violence together.",
+        "coverage":"country-wide",
+        "email":"helpline@mohr.gov.pk",
+        "website":"www.mohr.gov.pk",
+        "category":"abuse, violence, domestice"
+    }
+]
