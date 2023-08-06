@@ -1,0 +1,9 @@
+advanced_pid/__init__.py,sha256=0nP8ct5ympgEwTPnE58KHpvbSpQDWZ4Z6T34p5IL3mc,32
+advanced_pid/pid.py,sha256=cZo7FE3GUfLEvGnKoWTB22Rzm7xl59zIoFsl2JM6xLg,5255
+advanced_pid/integrate/__init__.py,sha256=fW37SmD3ccMQwvoMk0blPFtWpY6h6K-2HTCLbxQ7FXc,72
+advanced_pid/integrate/state_space.py,sha256=qYe6QixR9tkLqnoF2OpYCcE6gdhX8_QEThtOKKREbZo,4443
+advanced_pid-0.0.2.dist-info/LICENSE,sha256=rr_mUmzwI8TGDrfjk9VIyCwBot3t_B4uuyKwapOexIc,1063
+advanced_pid-0.0.2.dist-info/METADATA,sha256=hKI-3pMRMJ_SB4coLUg2B8ngBQf_vfXpgsDzXwTylec,827
+advanced_pid-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+advanced_pid-0.0.2.dist-info/top_level.txt,sha256=3bD1eHzIm5C4SvdGvcF4R38_0NKGoixzDYJTxwJyETE,13
+advanced_pid-0.0.2.dist-info/RECORD,,
