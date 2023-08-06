@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nfmodelapis
+Version: 0.0.1
+Summary: Data Curation over Time
+Home-page: https://github.com/nfflow/nfmodelapis
+Author: Abhijith Neil Abraham
+Author-email: abhijithneilabrahampk@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nfmodelapis
+Model APIs from NFFLOW
+
+
