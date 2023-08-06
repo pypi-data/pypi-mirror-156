@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+ParrotAnafiController/AnafiCamera.py
+ParrotAnafiController/AnafiCameraControls.py
+ParrotAnafiController/AnafiCameraMedia.py
+ParrotAnafiController/AnafiController.py
+ParrotAnafiController/AnafiPiloting.py
+ParrotAnafiController/AnafiRTH.py
+ParrotAnafiController/SoftwarePilot.py
+ParrotAnafiController/__init__.py
+ParrotAnafiController.egg-info/PKG-INFO
+ParrotAnafiController.egg-info/SOURCES.txt
+ParrotAnafiController.egg-info/dependency_links.txt
+ParrotAnafiController.egg-info/requires.txt
+ParrotAnafiController.egg-info/top_level.txt
