@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: saki
+Version: 1.1.0
+Summary: A simple alternative to the cat command line tool
+Author: Luke Pitstick
+Author-email: lukepitstick06@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: npyscreen (>=4.10.5,<5.0.0)
+Requires-Dist: typer[all] (>=0.4.1,<0.5.0)
+Description-Content-Type: text/markdown
+
+# Saki
+
+![](https://www.beardsleyzoo.org/uploads/1/2/4/2/124214186/245_orig.jpg)
+
+## Desciption
+
+Saki is an alternative of the cat and nano command line tools.
+
+## Links
+
+Github - https://github.com/Luke-Pitstick/saki
+
+PyPi - https://pypi.org/project/saki/
+
+
+
