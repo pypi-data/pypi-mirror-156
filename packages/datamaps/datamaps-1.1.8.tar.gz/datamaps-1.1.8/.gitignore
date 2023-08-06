@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+cli.spec
+build/
+dist/
+datamaps.spec
+/.eggs/
+/.mypy_cache/
+/.ropeproject/
+**/__pycache__/*
+*.egg-info/*
+.nox/.venv/*
+.venv/*
+.coverage/*
+.coverage
+pip-wheel-metadata/*

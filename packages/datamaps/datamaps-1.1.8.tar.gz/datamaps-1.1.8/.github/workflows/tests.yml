@@ -1,0 +1,48 @@
+name: Tests and Build exe
+on: push
+jobs:
+  tests:
+    env:
+      GITHUB_ACTIONS_RUNNER: runner
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+          architecture: x64
+      - run: pip install nox==2019.11.9
+      - run: nox
+
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Install Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+          architecture: x64
+
+      - name: Print Version
+        run: python --version
+
+      - name: Install dependencies
+        run: |
+          pip install setuptools --upgrade
+
+      - name: Pip list
+        run: pip list
+
+      - name: Build with pyinstaller
+        #        run: python -m PyInstaller.__main__ cli.py --name "dm" --onefile
+        #run: poetry run pyinstaller cli.py --name "dm" --onefile
+        run: pyinstaller cli.py --name "dm" --onefile
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: datamaps
+          path: dist/dm.exe
