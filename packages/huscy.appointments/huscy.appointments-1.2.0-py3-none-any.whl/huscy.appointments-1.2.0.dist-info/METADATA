@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: huscy.appointments
+Version: 1.2.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Alexander Tyapkov, Mathias Goldau, Stefan Bunde
+Author-email: tyapkov@gmail.com, goldau@cbs.mpg.de, stefanbunde+git@posteo.de
+License: AGPLv3+
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Requires-Dist: Django (>=3.2)
+Requires-Dist: djangorestframework (>=3.11)
+Requires-Dist: django-filter (>=2.3)
+Requires-Dist: django-ical (>=1.4)
+Provides-Extra: development
+Requires-Dist: psycopg2-binary ; extra == 'development'
+Provides-Extra: testing
+Requires-Dist: tox ; extra == 'testing'
+Requires-Dist: watchdog ; extra == 'testing'
+
+UNKNOWN
+
+
