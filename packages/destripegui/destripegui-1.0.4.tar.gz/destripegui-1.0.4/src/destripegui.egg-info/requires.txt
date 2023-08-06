@@ -1,0 +1,5 @@
+pystripe
+configparser
+pathlib
+tkinter
+sys
