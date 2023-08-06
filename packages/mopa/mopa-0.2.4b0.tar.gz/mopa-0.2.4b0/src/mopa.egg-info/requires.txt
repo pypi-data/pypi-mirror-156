@@ -1,0 +1,6 @@
+pandas
+hiplot
+dash
+dash-bootstrap-components
+packaging
+dash-uploader==0.7.0a1
