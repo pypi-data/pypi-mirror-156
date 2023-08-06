@@ -1,0 +1,3 @@
+argcomplete==1.9.4
+Dickens==1.0.1
+plumbum@ git+https://github.com/jesteria/plumbum.git@v1.7.2-604
