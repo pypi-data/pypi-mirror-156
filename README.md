@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2022-06-21 13:47 and 2022-06-28 14:42.
 
-The repo is 39% (15946/40000) complete.
+The repo is 44% (17940/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-156/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| jij-cimod | 219 |
-| rapidfuzz | 184 |
-| ddtrace | 177 |
-| openjij | 171 |
-| jarowinkler | 168 |
-| noteapp | 161 |
-| picologging | 120 |
-| spanishconjugator | 116 |
-| longbridge | 112 |
-| orjson | 111 |
-| Chips-python | 94 |
-| tf-nightly | 93 |
-| stream-gears | 90 |
-| pyagrum-nightly | 90 |
-| yoga | 89 |
-| cdktf-cdktf-provider-newrelic | 86 |
-| dcona | 84 |
-| tf-nightly-cpu | 80 |
-| aim | 80 |
-| opteryx | 77 |
-| openapi-python-generator | 74 |
-| SQLAlchemy | 71 |
-| coiled | 70 |
-| cirq-web | 68 |
-| cirq-rigetti | 68 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-156).
 
 
