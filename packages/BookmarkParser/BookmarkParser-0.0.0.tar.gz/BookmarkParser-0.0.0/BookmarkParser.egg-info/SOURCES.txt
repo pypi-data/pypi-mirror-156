@@ -1,0 +1,6 @@
+README.md
+setup.py
+BookmarkParser.egg-info/PKG-INFO
+BookmarkParser.egg-info/SOURCES.txt
+BookmarkParser.egg-info/dependency_links.txt
+BookmarkParser.egg-info/top_level.txt
