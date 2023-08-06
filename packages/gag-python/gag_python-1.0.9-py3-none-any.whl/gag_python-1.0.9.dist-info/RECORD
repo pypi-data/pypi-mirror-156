@@ -1,0 +1,15 @@
+gag_python/VERSION,sha256=1vkXxITmpI_Pi5DvCc3gKGw9huXerUi0L68NrpT7LfU,5
+gag_python/__init__.py,sha256=4qW--fmA34jhYlWJ9LgAFyQNgg1a8z3tRCaC7xFITrc,171
+gag_python/gag.py,sha256=oH-_X-aIxRQCI06lwk2-aac554FacMvJeCA52jxRwFQ,3089
+gag_python/conf/config.yaml,sha256=ras_3n2N6hhfLrR-Wl5JebKeMVyDZBkzk_KsCD0Ix8I,204
+gag_python/models/age_deploy.prototxt,sha256=9Ytz4uIHZvVMWDyxqUBPRdq4kBdz2mhk2UtjIS7TfKA,2308
+gag_python/models/age_net.caffemodel,sha256=bd5dB99codZv855SVpPwXM-50sQ34Yj90aENQuV_q9Y,45661480
+gag_python/models/gender_deploy.prototxt,sha256=c3mVPgSOW_-tnfxrOogH9_yCbi8nQy31bUwmcHhLjng,2309
+gag_python/models/gender_net.caffemodel,sha256=rHVxsoGuB4gXdktkWiBUG9aqG6vqwgpF5tjefWG6DlA,45649168
+gag_python/models/opencv_face_detector.pbtxt,sha256=U5eAg2L8b7fEBESEhI4peyJEnZE6Jn-n-L2dhtzikUQ,34912
+gag_python/models/opencv_face_detector_uint8.pb,sha256=XHHXUu8svy9Fesgv3VgPyyUi_QTF79rtGOttnihD--0,2727750
+gag_python-1.0.9.dist-info/LICENSE.md,sha256=cO2FzcItsex0wdZ9YHvLjogODQFQOxIxqy2sWD5FYzo,1070
+gag_python-1.0.9.dist-info/METADATA,sha256=eTNrD3ATrpy05e8Z9r-kl3wzo70rL_z3S9UGCogkuuY,959
+gag_python-1.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gag_python-1.0.9.dist-info/top_level.txt,sha256=fNsS1AwIBtpZsBCPJAGMfKfEuVN9AmJ9sPT_y9krsDQ,11
+gag_python-1.0.9.dist-info/RECORD,,
