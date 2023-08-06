@@ -1,0 +1,12 @@
+fileblock/Abstrcat.py,sha256=FYu4fAJ63nO22jwRUGED1F6Ue7lGRtfLD5lRiUq0sY0,305
+fileblock/Block.py,sha256=iWop7sO-efStg7cEQdjb2bmmNnJcDh9INpVgOeDNSUg,7731
+fileblock/Directory.py,sha256=gRH4afvcDgrRMOU7XIW7ZcNUFmAHTAcx-A6qqMnX_To,5018
+fileblock/__init__.py,sha256=2UyIm5rSOyJ3ESBBPhZneDoGOoHwrMfhqmAAfp5cMHM,464
+fileblock/__version__.py,sha256=rOmy7lOsFY-kmdlwzznaNIx2O0jz2mEoMDyIAPUt1T4,287
+fileblock/btype.py,sha256=wBE1tCkp6CwtVwf1Up0nBQICuPuNhh78fvEyOKrpBBU,544
+fileblock/utils.py,sha256=3lacuY15zfqeHJ_nwMxcr7igSJYY2SEvvhLLU_EXXJo,1974
+fileblock-2.0.3.2022.6.27.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+fileblock-2.0.3.2022.6.27.dist-info/METADATA,sha256=OdUrXFkk-4byrd3cItZ_y2EB-W1ZrgwJML3V_XlAt-k,5358
+fileblock-2.0.3.2022.6.27.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fileblock-2.0.3.2022.6.27.dist-info/top_level.txt,sha256=zFHIIlb6ZnF25lWQKi_18mKWn-qj8RKuYyDUrM1Gx5E,10
+fileblock-2.0.3.2022.6.27.dist-info/RECORD,,
