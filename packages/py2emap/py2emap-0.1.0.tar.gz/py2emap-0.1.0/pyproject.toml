@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "py2emap"
+version = "0.1.0"
+description = "Convert Python objects to Emap which is friendly data exchange format for Neos VR"
+authors = ["Nemnomi <dev@nemnomi.net>"]
+license = "MIT License"
+repository = "https://github.com/pluser/py2emap"
+readme = "README.md"
+packages = [
+    { include = "py2emap", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
