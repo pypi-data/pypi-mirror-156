@@ -1,0 +1,169 @@
+#+title: Transaction
+
+
+Let's interact with the Pact API using python!!
+
+#+begin_src jupyter-python :session pact
+import json
+import yaml
+import requests
+import datetime
+#+end_src
+
+#+RESULTS:
+
+First, we look at how the request URL is builtin
+
+#+begin_src jupyter-python :session pact
+networks = {'mainnet':'https://api.chainweb.com',
+            'testnet04':'https://api.testnet.chainweb.com',
+            'P2P':'https://us-e1.chainweb.com'}
+endpoints = ['send','local']
+header = {'Content-Type': 'application/json'}
+chain = '0'
+chainweb_testnet_url = f"{networks['testnet04']}/chainweb/0.0/testnet04/chain/{chain}/pact/api/v1/local"
+
+#+end_src
+
+#+RESULTS:
+
+Now, we need to build the data JSON that. Fortunately, the pact language supports
+
+#+begin_src jupyter-python :session pact
+transaction_sample = {
+  "hash": "k6HwF2g75cDvSBwwWC5auE_ktGTVLaC6gmcXxANZVas",
+  "sigs": [
+    {
+      "sig": "fe72def43ada4aa1e8f887f3e2aced79cf96ec7337b399f2d1dacb91e0aa9455e34822f47a2f7f76818402c0c85a91abd72fb6d9439dd96d46de98696e0e780c"
+    }
+  ],
+  "cmd": "{\"networkId\":\"testnet\",\"payload\":{\"exec\":{\"data\":{\"a\":\"Clarissa\"},\"code\":\"(format \\\"Hello {}!\\\" [(read-string 'a)])\\n\"}},\"signers\":[{\"pubKey\":\"7bfe3d362f2fe90b09239f027dba090c40369ade6b8daf661a025416dbf7cbb1\"}],\"meta\":{\"creationTime\":1653682508,\"ttl\":28000,\"gasLimit\":100000,\"chainId\":\"0\",\"gasPrice\":1.0e-6,\"sender\":\"k:7bfe3d362f2fe90b09239f027dba090c40369ade6b8daf661a025416dbf7cbb1\"},\"nonce\":\"2022-05-27 20:15:08.814707 UTC\"}"
+}
+
+transaction_sample = json.dumps(transaction_sample)
+
+#+end_src
+
+#+RESULTS:
+
+Finally, we send our transaction to an appropriate endpoint
+
+
+#+begin_src jupyter-python :session pact
+a = requests.post(chainweb_testnet_url, data=transaction_sample, headers=header)
+a.json()
+#+end_src
+
+#+RESULTS:
+| gas | : | 10 | result | : | (status : success data : Hello Clarissa!) | reqKey | : | k6HwF2g75cDvSBwwWC5auE_ktGTVLaC6gmcXxANZVas | logs | : | wsATyGqckuIvlm89hhd2j4t6RMkCrcwJe_oeCYr7Th8 | metaData | : | (publicMeta : (creationTime : 1653682508 ttl : 28000 gasLimit : 100000 chainId : 0 gasPrice : 1e-06 sender : k:7bfe3d362f2fe90b09239f027dba090c40369ade6b8daf661a025416dbf7cbb1) blockTime : 1653950431226377 prevBlockHash : 0BNd5oQxq1fMLK4nmwKkvglqwNmRoRQvt_f0dlaqV6U blockHeight : 2247906) | continuation | : | hline | txId | : | hline |
+
+As we have seen, it is quite simple to send a transaction once we have its corresponding JSON properly formatted. Our main aim here is to make this formatting process as simple as possible. The main references we have are the [[https://github.com/hexafluoride/PactSharp][PactSharp]] library and the Chainweb API [[https://api.chainweb.com/openapi/pact.html#tag/endpoint-local/paths/~1local/post][docs]].
+
+#+begin_src jupyter-python :session pact :tangle transaction.py
+class PactTransaction:
+    def __init__(self):
+        self.hash = '123'
+        self.sigs = []
+        self.cmd = "{}"
+
+    def generate_metadata(self,
+                        chain:str,
+                        gaslimit:int,
+                        gasPrice:float,
+                        sender:str,
+                        ttl:int,
+                        creation_time:str):
+        dict = {r'\"chainId\"': r"\"{}\"".format(chain),
+                r"\"sender\"": r"\"{}\"".format(sender),
+                r"\"gasLimit\"": gaslimit,
+                r"\"gasPrice\"": gasPrice,
+                r"\"ttl\"" : ttl,
+                r"\"creationTime\"":creation_time}
+
+        return str(dict)
+
+    def generate_payload(self, code, data):
+        dict = {r"\"exec\"": {"\"code\"": code,
+                         "\"data\"": data}
+                }
+        return json.dumps(dict)
+
+    def generate_cmd(self, chain:str, code:str, data):
+        creation_time = str(datetime.datetime.now())
+        nonce = str(hash(creation_time))
+        metadata = generate_metadata()
+
+        dict = { r"\"nonce\"": nonce,
+                r"\"meta\"" : self.generate_metadata,
+                r"\"signers\"":[],
+                r"\"networkId\"": r"\"testnet\"",
+                r"\"payload\"": self.generate_payload
+                }
+
+        return json.dumps(dict)
+
+    def generate_local_command(self):
+        dict = {
+            "sigs":[],
+            "cmd": self.generate_cmd(),
+            "hash":""
+        }
+        return json.dumps(dict)
+
+#TODO: Fill 'hash' field above.
+#Unpadded Base64URL of Blake2s-256 hash of the cmd field value. Serves as a #command requestKey since each transaction must be unique.
+
+    def generate_send_command(self):
+        return 1
+
+
+#+end_src
+
+#+RESULTS:
+
+Let us write some tests for our newly defined
+
+#+begin_src jupyter-python :session pact :tangle transaction.py
+if __name__ == "__main__":
+    tx = PactTransaction()
+    m = tx.generate_metadata("0", 10, 1, "me", 2, "now")
+    print(m)
+#+end_src
+
+#+begin_src jupyter-python
+
+## Example interaction
+    tx = PactTransaction()
+## First, we specify the network
+    networkId = "development"
+## The parameters below compose the metadata of the transaction
+    chain = "0"
+    gasLimit = 100000
+    gasPrice = 1.0e-6
+    sender = "me"
+    ttl = 20
+    tx.generate_metadata(chain, gasLimit, gasPrice, sender, ttl)
+## Set the code to be ran and the variables that are used in the transaction
+    code = "(+ 1 (read-integer 'a))"
+    data = {"a": 10, "b": "oi"}
+    cmd = tx.generate_cmd(networkId, code, data)
+## create transaction combining the elements above and computing its hash value
+## Send command to the  'local' endpoint of the chainweb API.
+## This is equivalent to pressing the 'preview' button in Shadena.
+    response = tx.execute_command_local(networkId, 0, cmd)
+    #print(response.json()['result'])
+## END OF THE FIRST EXAMPLE.
+    key = tx.retrieve_keys("sample-keys.keys")
+    cap_name = "coin.GAS"
+    cap_args = []
+    cap2name = "coin.TRANSFER"
+    cap2args = ["a", "b", 50]
+    teste = tx.add_capability(key[0], cap_name, cap_args)
+    teste2 = tx.add_capability(key[0], cap2name, cap2args)
+    cmd = tx.generate_cmd(networkId, code,data)
+    command = tx.generate_local_command(cmd)
+    print(command)
+## Let us try to simulate a transaction that requires some kind of signature.
+## In our second example
+
+#+end_src

@@ -1,0 +1,68 @@
+#+title: Readme
+
+* Introduction
+
+Welcome to PactPy, the first python client for interacting with the chainweb API from the Kadena blockchain!
+This code is inspired by the PactSharp repository.
+
+* Installation
+
+#+BEGIN_SRC bash
+pip install pactpy
+#+END_SRC
+
+#+RESULTS:
+| Collecting   | pactpy    |                               |        |     |
+| Using        | cached    | pactpy-0.0.1-py3-none-any.whl | (1.9   | kB) |
+| Installing   | collected | packages:                     | pactpy |     |
+| Successfully | installed | pactpy-0.0.1                  |        |     |
+
+* Usage and Examples
+===
+#+BEGIN_SRC python
+
+    import pactpy.transaction as pactpy
+
+    ## Example interaction
+    tx = pactpy.PactTransaction()
+
+    ## First, we specify the network
+    networkId = "development"
+
+    ## The parameters below compose the metadata of the transaction
+    chain = "0"
+    gasLimit = 100000
+    gasPrice = 1.0e-6
+    sender = "me"
+    ttl = 20
+    tx.generate_metadata(chain, gasLimit, gasPrice, sender, ttl)
+
+    ## Set the code to be ran and the variables that are used in the transaction
+    code = "(+ 1 (read-integer 'a))"
+    data = {"a": 10, "b": "oi"}
+    cmd = tx.generate_cmd(networkId, code, data)
+
+    ## create transaction combining the elements above and computing its hash value
+    ## Send command to the  'local' endpoint of the chainweb API.
+    ## This is equivalent to pressing the 'preview' button in Shadena.
+    response = tx.execute_command_local(networkId, 0, cmd)
+    print(response.json()['result'])
+## END OF THE FIRST EXAMPLE.
+
+#+END_SRC
+
+
+* Use Cases
+
+PactPy can be used in any program that interacts with the chainweb api.
+
+* RoadMap
+- [ ] Write Docs
+- [ ] Handle complex keysets properly
+- [ ] More comprehensive approach to pool and listen endpoints
+- [ ] Add MemPool functionality
+- [ ] Improve docs/examples
+
+* License
+
+This Project uses the MIT License.
