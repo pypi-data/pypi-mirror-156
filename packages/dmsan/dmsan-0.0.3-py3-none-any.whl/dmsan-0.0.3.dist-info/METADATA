@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: dmsan
+Version: 0.0.3
+Summary: Decision-Making for sanitation and resource recovery systems
+Home-page: https://github.com/QSD-Group/DMsan
+Author: Quantitative Sustainable Design Group
+Author-email: quantitative.sustainable.design@gmail.com
+License: UIUC
+Keywords: multi-criteria decision analysis,quantitative sustainable design,sanitation,resource recovery
+Platform: Windows
+Platform: Mac
+Platform: Linux
+Classifier: License :: OSI Approved :: University of Illinois/NCSA Open Source License
+Classifier: Environment :: Console
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+Requires-Dist: exposan
+Requires-Dist: country-converter
+
+NOT READY FOR USERS YET
