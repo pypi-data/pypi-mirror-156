@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jira-cli-top-moumoute
+Version: 0.9.2
+Summary: CLI to connect to JIRA
+Home-page: https://www.github.com/aubustou/jira-cli
+Author: aubustou
+Author-email: survivalfr@yahoo.fr
+Requires-Dist: click (==8.0.0)
+Requires-Dist: atlassian-python-api (==3.10.0)
+Requires-Dist: apischema
+
