@@ -1,0 +1,13 @@
+peristole/__init__.py,sha256=4AUQ9Va1dd2BMBfDwM7HjTV7_wB0w4IoOO0_l7DN_nQ,102
+peristole/amp.py,sha256=Tz3LQRK5QhiwdQ7bolSxN_3AhsGO6pQgmiKsgI-l_BQ,2072
+peristole/ca1.py,sha256=l4Ds5O3NzlTl558xVwxXgRrF1DefosAkpCCj2SJsWyc,4089
+peristole/geom_td.py,sha256=HoufLJi388mFj45pAgnFfd2vH0dLG7VQ-R6qzVhQlBg,6800
+peristole/grav_td.py,sha256=HoufLJi388mFj45pAgnFfd2vH0dLG7VQ-R6qzVhQlBg,6800
+peristole/imsc_2.py,sha256=87qmFoUEWvfUsr2VU8UBwsROm-OBPiBOTvFoff9L7mI,7008
+peristole/lat_td.py,sha256=2NgcROV8t1NEnnQit6yXHrfIYb0SNkpZBn5eT_ldKDE,5280
+peristole/rot_td.py,sha256=-isXnKa3k7D0hLdPkWwYsbCGMYV46EK3bFfyd2v3Cx0,5880
+peristole-1.0.4.dist-info/LICENSE,sha256=P30nDnDdOb_WRUsg4pjDfCLs-M6T7kTsNm5XSR1XbZo,1071
+peristole-1.0.4.dist-info/METADATA,sha256=mqt66WmCKUhgwN7lsVm7UEiPgxbQU6PFGhnbUXt2WR4,142
+peristole-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+peristole-1.0.4.dist-info/top_level.txt,sha256=h7r7y16FyaNW6PYAJrHUK1vt3VhPrvym69IQo7fmWGQ,10
+peristole-1.0.4.dist-info/RECORD,,
