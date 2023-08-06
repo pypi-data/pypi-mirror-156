@@ -1,0 +1,1 @@
+from deflator.deflator import deflate
