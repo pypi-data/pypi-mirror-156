@@ -1,0 +1,7 @@
+#!python
+
+import subprocess
+import sys
+from pymican import BINFILEPATH
+
+subprocess.run([BINFILEPATH, *sys.argv[1:]])
