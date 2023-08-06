@@ -1,0 +1,13 @@
+tests/delaunay/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/delaunay/test_delaunay_tesselation.py,sha256=w6T6D9fu7YFfBw6gEGD1JnGAFMjBxM2LPvYVVQFtvcM,480
+vr_delaunay_to_voronoi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vr_delaunay_to_voronoi/library_seeding.py,sha256=n2y9RLzroKNVSxIiHUm3smp4ep4-4Bb0etQZbG8Wrq4,120
+vr_delaunay_to_voronoi/points_getting.py,sha256=k3CFjbMvburMtGS8gx_vjIYOgpskg64QeirukvIxD28,167
+vr_delaunay_to_voronoi/polygon_patch_getting.py,sha256=F-RVZFn5bpiMAYsXYdPq4hqgP2JyIAhO6_x4mAQLZxA,825
+vr_delaunay_to_voronoi/voronoi.py,sha256=cI2GivDthgJOFIvGN048m1JoQoGU81wfGAshF-LifZA,10705
+vr_delaunay_to_voronoi/delaunay/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vr_delaunay_to_voronoi/delaunay/delaunay_tesselation_getting.py,sha256=vAq9-n7-3ANMrC4VbS0jBLT1_90iUUkWBnSFIM4rz1w,933
+vr_delaunay_to_voronoi-1.0.8.dist-info/METADATA,sha256=4zPj506UVzMg4r0TBzU9jUYhdqv2BvXrMKxl96rzr0o,3404
+vr_delaunay_to_voronoi-1.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vr_delaunay_to_voronoi-1.0.8.dist-info/top_level.txt,sha256=FhUKo-MfDnb7sIUv8qPdFso6iAk7OgjmppoaD0YNS6g,29
+vr_delaunay_to_voronoi-1.0.8.dist-info/RECORD,,
