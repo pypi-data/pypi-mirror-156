@@ -1,0 +1,14 @@
+fredapi/__init__.py,sha256=xFkyI2Fg6wUvy2HaMtfjWn0Z_jLIk0Os_LZt2-JVbF8,75
+fredapi/api/__init__.py,sha256=MjK5hOmHnTOUzCE82QZDPiN842jdwS13FoCBJhmsYXA,472
+fredapi/api/categories.py,sha256=_MxZ47Vg70VVBXDU6jH6pf1BE9-V1rR_e2ynuUV-S_o,1987
+fredapi/api/exceptions.py,sha256=1LfwRhCHySjR-Z0KIDszc7E59PuFSm-7jhRbSleiOPU,564
+fredapi/api/fred_client.py,sha256=niICLWCH4pAI7LsgfqAR95J4FAmjxFfnhUKBZlLTJJI,1533
+fredapi/api/releases.py,sha256=IG36kY6RMv5BgWYL8zWAMzXF6qEzhodrIU4bVm81iV8,2784
+fredapi/api/series.py,sha256=Pqf-neuW4fEFRr4jBeGfvj5k0d-eXF3zxlPfhfjX9QA,3317
+fredapi/api/sources.py,sha256=2FkazI1tBdk0_J9IVpb6Zw4vmWhk-NBbkNIseD5VKs8,957
+fredapi/api/tags.py,sha256=Xxs3ESAUKiP2TZa1Wtm7x4WIx8mOchZ657qAKQ-657s,905
+fred_py_api-0.0.4.dist-info/LICENSE,sha256=HGFuQPt9ld5Z2l4xAv22uJNpMLtIf6H80ewJZDEds_A,1068
+fred_py_api-0.0.4.dist-info/METADATA,sha256=CXMcdHpovdtyOzs2p41V1bQL3cwcuzBNuqJYnwj9aCw,811
+fred_py_api-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fred_py_api-0.0.4.dist-info/top_level.txt,sha256=I9_uHTCIN8B1e6Reva0ayWz7rz4UTiwfYMK4R8w2su0,8
+fred_py_api-0.0.4.dist-info/RECORD,,
