@@ -1,0 +1,11 @@
+optuna
+hiplot
+torchvision
+pytorch_lightning>=1.6.0
+jsonargparse[signatures]>=4.3.0
+gradio
+click
+streamlit
+streamlit_autorefresh
+wandb
+lightning
