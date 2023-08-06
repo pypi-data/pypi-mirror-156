@@ -1,0 +1,4 @@
+[console_scripts]
+mewni=mewni.cli:main
+ni=mewni.cli:main
+

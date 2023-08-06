@@ -1,0 +1,4 @@
+from mewni import *
+
+class {{ name }}(Model):
+    pass
