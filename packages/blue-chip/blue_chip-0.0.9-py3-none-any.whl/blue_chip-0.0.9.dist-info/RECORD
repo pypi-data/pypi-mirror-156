@@ -1,0 +1,13 @@
+blue_chip/__init__.py,sha256=hzw7mkXX9cBNUim5A7299oZwfQIeURmFibxyd_dZyHc,121
+blue_chip/__main__.py,sha256=DVNRjtJRjrcj5bfrMN57YpbY7901wh41bWhDCjVuIUU,672
+blue_chip/config/__init__.py,sha256=_M99B2jLmWWcNcDBukwOTnZsoTV7wL-qvOJ_6fGW8PE,120
+blue_chip/config/data.py,sha256=2DxIa6iugjdPdwKsQ007yGIk9XBwto0FROjCYU7Es-4,1570
+blue_chip/constants.py,sha256=dOaagnaA1y6lhtVJ7NFFmSM-0unIdnYkP9ut6qxeU2k,161
+blue_chip/tasks/__init__.py,sha256=QdUupI8aJJBD3zZFSlBJOpyCxmtROeHupYr9zZPPGOA,64
+blue_chip/tasks/formatting.py,sha256=gJyE_ohbrTYAybU8vR3Q5ZA2VwKIqAVGRWo-uSEMvYI,1863
+blue_chip/tasks/linting.py,sha256=K7ovAgRVR-cm_EJd4P_hlBXDwxM4d9KmigTxEB08Pio,1238
+blue_chip-0.0.9.dist-info/entry_points.txt,sha256=IJIErAs1Dq5nTfI_v7ipKk5mZ86EZGPi8Q1fr5hIb3I,88
+blue_chip-0.0.9.dist-info/LICENSE,sha256=WoTRadDy8VbcIKoVzl5Q1QipuD_cexAf3ul4MaVLttc,18044
+blue_chip-0.0.9.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+blue_chip-0.0.9.dist-info/METADATA,sha256=IvFwWXfP1CbIuJn8htQBE9tmOfmTWOHvIRg8KDFbyPA,3341
+blue_chip-0.0.9.dist-info/RECORD,,
