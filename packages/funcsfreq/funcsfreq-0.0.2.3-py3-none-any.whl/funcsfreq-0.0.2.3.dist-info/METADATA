@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: funcsfreq
+Version: 0.0.2.3
+Summary: python package of frequently used functions
+Home-page: UNKNOWN
+Author: y
+Author-email: <y@outlook.com>
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+
+python package of frequently used functions
+
+
