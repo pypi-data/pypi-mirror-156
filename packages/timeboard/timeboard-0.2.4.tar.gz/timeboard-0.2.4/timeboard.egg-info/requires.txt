@@ -1,0 +1,14 @@
+python-dateutil>=2.6.1
+six
+
+[:python_full_version < "3.6.1"]
+pandas<=0.24,>=0.22
+
+[:python_full_version >= "3.6.1"]
+pandas>=0.22
+
+[:python_version < "3.6"]
+numpy<=1.16,>=1.13
+
+[:python_version >= "3.6"]
+numpy>=1.16

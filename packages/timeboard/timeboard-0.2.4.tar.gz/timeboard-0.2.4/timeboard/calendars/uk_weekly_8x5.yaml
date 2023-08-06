@@ -1,0 +1,112 @@
+template: days_weekly
+description : "UK weekly 8x5 business calendar"
+workdays: 'y y y y y n n'
+workday_label: 8
+weekday_labels: [8, 8, 8, 8, 8, 0, 0]
+
+start: '2000'
+end: "31 Dec 2020"
+holiday_label: 0
+long_weekends: next
+
+amend:
+
+  - name: new_year
+    observance: day_of_month
+    when: 
+      month: 1
+      day: 1
+
+  - name: new_year2
+    country: scotland
+    observance: day_of_month
+    when: 
+      month: 1
+      day: 2
+
+  - name: st_patricks
+    country: northern_ireland
+    observance: day_of_month
+    when: 
+      month: 3
+      day: 17
+
+  - name: orangemens
+    country: northern_ireland
+    observance: day_of_month
+    when: 
+      month: 7
+      day: 12
+
+  - name: st_andrews
+    country: scotland
+    observance: day_of_month
+    when: 
+      month: 11
+      day: 30
+
+  - name: christmas
+    observance: day_of_month
+    when: 
+      month: 12
+      day: 25
+
+  - name: boxing
+    observance: day_of_month
+    when: 
+      month: 12
+      day: 26
+
+  - name: early_may
+    observance: nth_weekeday_of_month
+    when: 
+      month: 5
+      weekday: 1
+      week: 1
+
+  - name: spring
+    observance: nth_weekeday_of_month
+    when: 
+      month: 5
+      weekday: 1
+      week: -1
+
+  - name: summer
+    country: [england, northern_ireland]
+    observance: nth_weekeday_of_month
+    when: 
+      month: 8
+      weekday: 1
+      week: -1
+
+  - name: summer
+    country: scotland
+    observance: nth_weekeday_of_month
+    when: 
+      month: 8
+      weekday: 1
+      week: 1
+
+  - name: good_friday
+    observance: from_easter_western
+    when: 
+      shift: -2
+
+  - name: easter_monday
+    country: [england, northern_ireland]
+    observance: from_easter_western
+    when: 
+      shift: 1
+
+  - name: royal
+    observance: date
+    when:
+      dates: ["29 Apr 2011", "04 Jun 2012", "05 Jun 2012"]
+
+  - name: royal
+    label: 8
+    #holiday: False
+    observance: date
+    when:
+      dates: ["28 May 2012"]
+
