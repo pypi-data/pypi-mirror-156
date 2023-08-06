@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+prediction_coefficient/__init__.py
+prediction_coefficient/categorical_prediction_coefficient.py
+prediction_coefficient.egg-info/PKG-INFO
+prediction_coefficient.egg-info/SOURCES.txt
+prediction_coefficient.egg-info/dependency_links.txt
+prediction_coefficient.egg-info/requires.txt
+prediction_coefficient.egg-info/top_level.txt

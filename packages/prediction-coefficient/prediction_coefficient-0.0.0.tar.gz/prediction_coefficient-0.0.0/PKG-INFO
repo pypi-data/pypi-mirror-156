@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: prediction_coefficient
+Version: 0.0.0
+Summary: A categorical correlation coefficient that's in the same range for all pairs of variables (from 0 to 1), regardless of their degrees of freedom or the chosen confidence level.
+Home-page: https://github.com/ForDataScience/prediction_coefficient
+Author: Lance Darragh
+Author-email: Lance Edward Darragh <ForDataScience@gmx.com>
+License: Copyright ©2022 by Lance Edward Darragh. All rights reserved. This software may be used for free. This software may not be reproduced or distributed without the author's written consent. To obtain consent, contact the author at ForDataScience@gmx.com. Prediction Coefficient™
+Project-URL: Documentation, https://github.com/QuantumAudio/Prediction-Coefficient/blob/main/README.md
+Project-URL: Theory, https://medium.com/@LanceDarragh/a-new-type-of-categorical-correlation-coefficient-f5782036fc85
+Keywords: prediction_coefficient
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
