@@ -1,0 +1,9 @@
+plotpainter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plotpainter/extracted_figure_class.py,sha256=G8s9rxO-rHbjMv2uKOITS0zNNFCpLVWCHCJXBfYKuI4,12396
+plotpainter/run_gui.py,sha256=c-QhIY9Bo9aH8KQ1lLJGHN_EOXcNWOvPhgIk5qHVTrU,4315
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=97mGYHRahoMuwYTnDnIrmChRNDTPb6WrRADPJILNyPE,2401
+plotpainter-0.0.0.dist-info/METADATA,sha256=HPJ2v58W-CtAIuEs-NfSeJ5Jsrc9S3_twH2canXP56I,56
+plotpainter-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+plotpainter-0.0.0.dist-info/top_level.txt,sha256=ZF4pAezGWBrKzwgo-oy9Oo0mndOWJGk-l2R32JKSKVw,17
+plotpainter-0.0.0.dist-info/RECORD,,
