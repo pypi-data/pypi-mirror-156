@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gitreg/__init__.py
+src/gitreg/main.py
+src/pylaw.egg-info/PKG-INFO
+src/pylaw.egg-info/SOURCES.txt
+src/pylaw.egg-info/dependency_links.txt
+src/pylaw.egg-info/top_level.txt
