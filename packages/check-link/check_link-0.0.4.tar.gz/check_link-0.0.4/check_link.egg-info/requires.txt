@@ -1,0 +1,16 @@
+aiohttp
+requests
+
+[cli]
+click
+
+[dev]
+pytest
+pytest-asyncio
+pytest-cov
+aioresponses
+responses
+faker
+
+[faster]
+aiohttp[speedups]
