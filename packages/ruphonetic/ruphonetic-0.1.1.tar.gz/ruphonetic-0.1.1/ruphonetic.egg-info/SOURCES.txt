@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+ruphonetic/__init__.py
+ruphonetic/transcriptor.py
+ruphonetic.egg-info/PKG-INFO
+ruphonetic.egg-info/SOURCES.txt
+ruphonetic.egg-info/dependency_links.txt
+ruphonetic.egg-info/requires.txt
+ruphonetic.egg-info/top_level.txt
+ruphonetic/accentuation/lemmas.dat
+ruphonetic/accentuation/stress.py
+ruphonetic/accentuation/wordforms.dat
