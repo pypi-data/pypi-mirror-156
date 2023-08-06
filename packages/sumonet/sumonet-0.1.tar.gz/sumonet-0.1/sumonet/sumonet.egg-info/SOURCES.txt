@@ -1,0 +1,14 @@
+LICENSE.rst
+README.md
+setup.cfg
+setup.py
+sumonet/model/__init__.py
+sumonet/model/architecture.py
+sumonet/sumonet.egg-info/PKG-INFO
+sumonet/sumonet.egg-info/SOURCES.txt
+sumonet/sumonet.egg-info/dependency_links.txt
+sumonet/sumonet.egg-info/requires.txt
+sumonet/sumonet.egg-info/top_level.txt
+sumonet/utils/__init__.py
+sumonet/utils/encodings.py
+sumonet/utils/load_data.py
