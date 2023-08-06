@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ytdlbt
+Version: 1.0.2
+Summary: download youtube music by title
+Author: insu
+Author-email: kin4496@naver.com
+License: MIT
+Requires-Python: >=3.*
+Requires-Dist: pytube
+Requires-Dist: youtube-search-python
+
