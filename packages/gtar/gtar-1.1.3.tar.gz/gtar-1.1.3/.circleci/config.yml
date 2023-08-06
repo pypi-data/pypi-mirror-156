@@ -1,0 +1,287 @@
+version: 2.1
+
+executors:
+  glotzerlab:
+    parameters:
+      image:
+        type: string
+      python-version:
+        type: string
+    docker:
+      - image: glotzerlab/ci:2021.03-<< parameters.image >>
+    environment:
+      PYTHONPATH: /home/ci/project/build
+      PYTHON: "/usr/bin/python<< parameters.python-version >>"
+      PYTEST: "/usr/bin/python<< parameters.python-version >> -m pytest"
+    working_directory: /home/ci/project
+
+commands:
+  build:
+    parameters:
+      cc:
+        type: string
+      cxx:
+        type: string
+      cmake:
+        type: string
+    steps:
+      - checkout:
+          path: code
+      - run:
+          name: Configure CMake build
+          command: export CC=<< parameters.cc >> CXX=<< parameters.cxx >> && mkdir build && cd build && << parameters.cmake >> ../code -DPYTHON_EXECUTABLE=${PYTHON} -GNinja
+      - run:
+          name: Build with CMake
+          command: cd build && ninja
+      - run:
+          name: Install pip
+          command: |
+            curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+            ${PYTHON} get-pip.py --user
+      - run:
+          name: Build Python module
+          command: |
+            ${PYTHON} -m pip install --user numpy pytest
+            export CC=<< parameters.cc >> CXX=<< parameters.cxx >> && ${PYTHON} -m pip install --user --no-build-isolation --no-use-pep517 ./code
+
+  test:
+    steps:
+      - run:
+          name: Test CMake build
+          command: build/test/test_records && build/test/test_gtar
+      - run:
+          name: Test Python module
+          command: mkdir test-results && cd code/test && ${PYTEST} --junit-xml=/home/ci/project/test-results/test.xml
+      - store_artifacts:
+          path: test-results
+          destination: test-results
+      - store_test_results:
+          path: test-results
+
+jobs:
+  build_and_test:
+    parameters:
+      image:
+        type: string
+      cc:
+        type: string
+      cxx:
+        type: string
+      python-version:
+        type: string
+      cmake:
+        default: /usr/bin/cmake
+        type: string
+    executor:
+      name: glotzerlab
+      image: << parameters.image >>
+      python-version: << parameters.python-version >>
+    steps:
+      - build:
+          cc: << parameters.cc >>
+          cxx: << parameters.cxx >>
+          cmake: << parameters.cmake >>
+      - test
+
+  pypi-linux-wheels:
+    parameters:
+      image:
+        type: string
+      python:
+        type: string
+      run-tests:
+        type: boolean
+        default: true
+      build-sdist:
+        type: boolean
+        default: false
+      numpy:
+        type: string
+        default: 1.9.3
+    docker:
+      - image: "quay.io/pypa/<< parameters.image >>"
+    environment:
+      PYBIN: "/opt/python/<< parameters.python >>/bin"
+    steps:
+      - run:
+          name: Install software
+          working_directory: /root/code
+          command: yum install -y openssh-clients
+      - run:
+          name: Checkout repository
+          command: |
+            cd /root
+            git clone https://github.com/glotzerlab/${CIRCLE_PROJECT_REPONAME} code
+            cd code
+            if [ -n "$CIRCLE_TAG" ]
+            then
+              git reset --hard "$CIRCLE_SHA1"
+              git checkout -q "$CIRCLE_TAG"
+            elif [ -n "$CIRCLE_BRANCH" ]
+            then
+              git reset --hard "$CIRCLE_SHA1"
+              git checkout -q -B "$CIRCLE_BRANCH"
+            fi
+      - run:
+          name: Build numpy
+          working_directory: /
+          command: |
+            "${PYBIN}/python" -m pip install cython --no-deps --ignore-installed -q --progress-bar=off
+            curl -sSLO https://github.com/numpy/numpy/archive/v<< parameters.numpy >>.tar.gz
+            tar -xzf v<< parameters.numpy >>.tar.gz
+            cd numpy-<< parameters.numpy >>
+            rm -f numpy/random/mtrand/mtrand.c
+            rm -f PKG-INFO
+            rm -rf branding
+            "${PYBIN}/python" -m pip install . --no-deps --ignore-installed -v --progress-bar=off -q
+      - run:
+          name: Compile gtar wheels
+          working_directory: /root/code
+          command: |
+            "${PYBIN}/python" -m pip wheel -w wheels/ . --no-deps --progress-bar=off --no-build-isolation --no-use-pep517
+      - run:
+          name: Audit wheels
+          working_directory: /root/code
+          command: |
+            for whl in wheels/gtar*.whl; do
+                auditwheel repair "$whl" -w dist/
+            done
+      - when:
+          condition: << parameters.run-tests >>
+          steps:
+            - run:
+                name: Test wheels (old numpy)
+                working_directory: /root/code
+                command: |
+                  "${PYBIN}/pip" install nose --progress-bar=off
+                  "${PYBIN}/pip" install gtar --no-index -f dist --progress-bar=off
+                  cd test && "${PYBIN}/nosetests"
+            - run:
+                name: Test wheels (latest numpy)
+                working_directory: /root/code
+                command: |
+                  "${PYBIN}/pip" install numpy --upgrade --progress-bar=off
+                  "${PYBIN}/pip" install gtar --no-index -f dist --progress-bar=off
+                  cd test && "${PYBIN}/nosetests"
+      - when:
+          condition: << parameters.build-sdist >>
+          steps:
+            - run:
+                name: Build sdist
+                working_directory: /root/code
+                command: |
+                  export PYBIN=/opt/python/cp37-cp37m/bin
+                  "${PYBIN}/python" setup.py sdist
+      - store_artifacts:
+          path: /root/code/dist
+
+workflows:
+  test:
+    jobs:
+      - build_and_test:
+          name: gcc10-py39
+          image: gcc10_py39
+          cc: gcc-10
+          cxx: g++-10
+          python-version: "3.9"
+
+      - build_and_test:
+          name: gcc9-py38
+          image: gcc9_py38
+          cc: gcc-9
+          cxx: g++-9
+          python-version: "3.8"
+
+      - build_and_test:
+          name: gcc8-py37
+          image: gcc8_py37
+          cc: gcc-8
+          cxx: g++-7
+          python-version: "3.7"
+
+      - build_and_test:
+          name: clang8-py38
+          image: clang8_py38
+          cc: clang-8
+          cxx: clang++-8
+          python-version: "3.8"
+
+      - build_and_test:
+          name: clang7-py38
+          image: clang7_py38
+          cc: clang-7
+          cxx: clang++-7
+          python-version: "3.8"
+
+      - build_and_test:
+          name: clang6-py37
+          image: clang6_py37
+          cc: clang-6.0
+          cxx: clang++-6.0
+          python-version: "3.7"
+
+      - pypi-linux-wheels:
+          name: wheel-build-cp36m
+          python: cp36-cp36m
+          image: manylinux1_x86_64
+
+      - pypi-linux-wheels:
+          name: wheel-build-cp37m
+          python: cp37-cp37m
+          build-sdist: true
+          image: manylinux2010_x86_64
+
+      - pypi-linux-wheels:
+          name: wheel-build-cp38
+          python: cp38-cp38
+          image: manylinux2010_x86_64
+
+      - pypi-linux-wheels:
+          name: wheel-build-cp39
+          python: cp39-cp39
+          image: manylinux2014_x86_64
+          numpy: 1.14.6
+
+  deploy:
+    jobs:
+      - pypi-linux-wheels:
+          name: wheel-deploy-cp36m
+          python: cp36-cp36m
+          image: manylinux1_x86_64
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+
+      - pypi-linux-wheels:
+          name: wheel-deploy-cp37m
+          python: cp37-cp37m
+          image: manylinux2010_x86_64
+          build-sdist: true
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+
+      - pypi-linux-wheels:
+          name: wheel-deploy-cp38
+          python: cp38-cp38
+          image: manylinux2010_x86_64
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+
+      - pypi-linux-wheels:
+          name: wheel-deploy-cp39
+          python: cp39-cp39
+          image: manylinux2014_x86_64
+          numpy: 1.14.6
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
