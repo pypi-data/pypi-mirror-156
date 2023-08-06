@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: drb-impl-wms
+Version: 1.0.0
+Summary: DRB WMS OGC Service implementation
+Home-page: https://gitlab.com/drb-python/impl/wms
+Author: GAEL Systems
+Author-email: drb-python@gael.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# WMS implementation
+The web map service driver extends abstracts WxS driver with the getMap feature.
+
+# Nodes
+### WmsServiceNode
+Represents the WMS service. This node has no attribute and
+has as children WmsOperationNode like GetMap.
+Others children give information about the service like layers, and are XmlNode.
+Those children are filled in by the information returned from 
+the service's GetCapabilities request.
+
+### WmsOperationNode
+
+Represents an operation than can mde on the service.
+For WMS service, the mandatory operation are GetMap, GetCapabilities, and 
+GetFeatureInfo.
+Optional operations may be provided by the service 
+and indicated in the possibilities thereof. 
+Those optional operations are also represented as WmsOperationNode.
+
+For perform an operation (mandatory or optional), you can use the operator '[]' with a dict that contains 
+the parameters of the request.
+
+Example:
+```
+dict_request = {'layers': 'mgrs_region', 'format': 'image/png', 'height': 256, 'width': 256, 'crs': 'EPSG:3857', 'bbox': '7514065.628545968,7514065.628545967,10018754.171394622,10018754.171394628'}
+
+
+get_map = service_wms['GetMap'][dict_request]
+```
+
+For mandatory operations GetMap and GetFeatureInfo you can
+alternatively use Predicate WmsGetMapPredicate and WmsGetFeatureInfoPredicate.
+
+Specific class define WXSNodeOperationGetMap and WXSNodeOperationGetFeatureInfo 
+for accept respectively WmsGetMapPredicate WmsGetFeatureInfoPredicate.
+
+Example:
+```
+predicate = WmsGetMapPredicate(layers='mgrs_region', height=256, width=256, bbox='7514065.628545968,7514065.628545967,10018754.171394622,10018754.171394628'}
+
+
+get_map = service_wms['GetMap'][predicate]
+```
+
+# Installation
+```
+pip install drb-impl-wms
+```
+# Examples
+
+```python
+from drb.factory import DrbFactoryResolver
+
+from drb_impl_wms import WmsServiceNode
+
+url_wms='https+wms://geoserver.swarm.ops.internal.gael.fr/geoserver/demo/wms?'
+
+
+resolver = DrbFactoryResolver()
+
+service_wms = WmsServiceNode(url_wms)
+
+list_cap = service_wms.children
+
+print('----------------------------------------')
+print('list_cap')
+
+print(list_cap)
+
+for child in service_wms.children:
+    print(child)
+    print(child.name)
+
+#=> <drb_impl_wXs.wXs_node.WXSNodeOperation object at 0x7fc2cb0aeaf0>
+#=> GetCapabilities
+#=> <drb_impl_wXs.wXs_node.WXSNodeOperation object at 0x7fc2cb0ae520>
+#=> GetMap
+#=> <drb_impl_wXs.wXs_node.WXSNodeOperation object at 0x7fc2cb0a2460>
+#=> GetFeatureInfo
+#=> <drb_impl_xml.xml_node.XmlNode object at 0x7fc2cb0aefd0>
+#=> Exception
+#=> <drb_impl_xml.xml_node.XmlNode object at 0x7fc2cb0aed30>
+#=> Layer
+    
+    
+get_map = service_wms['GetMap']
+
+print('----------------------------------------')
+print('GetMap : Format')
+
+print(get_map.get_attribute('Format'))
+#=> ['image/png', 'application/atom+xml', 'application/json;type=geojson', 'application/json;type=topojson', 'application/json;type=utfgrid', 'application/pdf', 'application/rss+xml', 'application/vnd.google-earth.kml+xml', 'application/vnd.google-earth.kml+xml;mode=networklink', 'application/vnd.google-earth.kmz', 'application/vnd.mapbox-vector-tile', 'image/geotiff', 'image/geotiff8', 'image/gif', 'image/jpeg', 'image/png; mode=8bit', 'image/svg+xml', 'image/tiff', 'image/tiff8', 'image/vnd.jpeg-png', 'image/vnd.jpeg-png8', 'text/html; subtype=openlayers', 'text/html; subtype=openlayers2', 'text/html; subtype=openlayers3']
+
+dict_request = {'layers': 'mgrs_region', 'format': 'image/png', 'height': 256, 'width': 256, 'crs': 'EPSG:3857', 'bbox': '7514065.628545968,7514065.628545967,10018754.171394622,10018754.171394628'}
+
+
+get_map = service_wms['GetMap'][dict_request]
+
+print('----------------------------------------')
+print('GetMap : with parameter return image')
+print(get_map)
+#=>  <drb_impl_image.image_node_factory.DrbImageBaseNode object at 0x7fc2cb23efa0>
+
+```
+
+
+
+
+
