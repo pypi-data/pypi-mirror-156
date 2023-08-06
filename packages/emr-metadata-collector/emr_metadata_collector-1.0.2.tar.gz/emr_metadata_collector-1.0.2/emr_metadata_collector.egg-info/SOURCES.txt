@@ -1,0 +1,11 @@
+emr_metadata_collector
+setup.py
+collector/__init__.py
+collector/action_config.yml
+collector/domain_config.py
+collector/emr_data_collector.py
+emr_metadata_collector.egg-info/PKG-INFO
+emr_metadata_collector.egg-info/SOURCES.txt
+emr_metadata_collector.egg-info/dependency_links.txt
+emr_metadata_collector.egg-info/requires.txt
+emr_metadata_collector.egg-info/top_level.txt

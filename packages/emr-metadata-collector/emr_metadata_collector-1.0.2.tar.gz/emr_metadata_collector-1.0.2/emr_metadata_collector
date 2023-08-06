@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+
+import argparse
+import os
+from collector.emr_data_collector import list_clusters,collect_data,archive_files
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("sub_cmd",help='sub_cmd {list_clusters,collect_data},list_clusters: list the clusters of Amazon EMR;collect_data:collect Amazon EMR metadata data')
+    parser.add_argument("-r", "--region", action="store", help="the region name where Amazon EMr cluster installed")
+    parser.add_argument("-c","--cluster",action="store", help="the cluster ID to be collected data")
+    parser.add_argument("-o", "--output", action="store", help='Output file directory')
+    args = parser.parse_args()
+
+    if args.region:
+        print("region: " + args.region)
+
+    if(args.sub_cmd == "list_clusters"):
+        list_clusters(args.region)
+    elif(args.sub_cmd == "collect_data"):
+        print("cluster: " + args.cluster)
+        output_folder = str(args.output)
+        if output_folder.endswith("/"):
+            output_folder = output_folder[:-1]
+
+        print("output:" + output_folder)
+        if os.path.exists(output_folder):
+            print("WARN: output folder exist. Data will be overwritten.")
+        else:
+            print("INFO: output folder does not exist. Creating folder:  " + output_folder)
+            os.mkdir(output_folder)
+            os.mkdir(output_folder+"/logs")
+
+        collect_data(args.region,args.cluster,output_folder)
+        archive_files(output_folder)
