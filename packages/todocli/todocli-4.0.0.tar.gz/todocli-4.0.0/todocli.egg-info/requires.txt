@@ -1,0 +1,4 @@
+setuptools==60.9.3
+
+[tests]
+pyfakefs==4.5.5
