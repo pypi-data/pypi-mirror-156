@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django-signer
+Version: 0.2.0
+Summary: A lightweight implementation of a signer based on Django TimestampSigner.
+License: BSD-3-Clause
+Author: Natan Lima Viana
+Author-email: natanvianat16@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytest (>=7.1.2,<8.0.0)

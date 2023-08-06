@@ -1,0 +1,16 @@
+django_signer/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+django_signer/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_signer/core/signing.py,sha256=N1IM0q2_3NYmu2tb6twJCSh7C_n0w4bNJuncOhjaCC8,7850
+django_signer/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_signer/test/tests.py,sha256=yjEhtmeOTQYy42d05bDkynYEMYgNPWIYEFUF6qGwks4,9112
+django_signer/test/utils.py,sha256=sbsggO-wXl1ZZAFngEAhQg8szNrt61IzvFqcsJhO2ro,552
+django_signer/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_signer/utils/crypto.py,sha256=lqCGBj7Ucmmxjf-VXWx8YkQskLD1pRUDID68B0dnTq0,2806
+django_signer/utils/encoding.py,sha256=lmS7oi6njj6I2Bam5RQLZZE73KGcZrIUA5VxuNOhHl8,8798
+django_signer/utils/functional.py,sha256=p6odhwlTHyFlydjxWGBTJEx5CYt6vt_9TtpGuvgxwWE,6999
+django_signer/utils/regex_helper.py,sha256=Mnqdng07f39sUbUZgv7Py80dLUCok0tQgl3GjWLsn04,769
+django_signer-0.2.0.dist-info/LICENSE.python,sha256=pSxfIaEVix6-28uSiusYmITnfjxeOIw41mDVk-cf7x8,14383
+django_signer-0.2.0.dist-info/LICENSE,sha256=uEZBXRtRTpwd_xSiLeuQbXlLxUbKYSn5UKGM0JHipmk,1552
+django_signer-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+django_signer-0.2.0.dist-info/METADATA,sha256=J_Sd79U-RbfcHl1R6B2qrwyxxGsEUWkcbwU-P1X0_WU,492
+django_signer-0.2.0.dist-info/RECORD,,
