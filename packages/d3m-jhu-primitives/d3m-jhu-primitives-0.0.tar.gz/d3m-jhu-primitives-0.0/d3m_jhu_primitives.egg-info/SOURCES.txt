@@ -1,0 +1,5 @@
+setup.py
+d3m_jhu_primitives.egg-info/PKG-INFO
+d3m_jhu_primitives.egg-info/SOURCES.txt
+d3m_jhu_primitives.egg-info/dependency_links.txt
+d3m_jhu_primitives.egg-info/top_level.txt
