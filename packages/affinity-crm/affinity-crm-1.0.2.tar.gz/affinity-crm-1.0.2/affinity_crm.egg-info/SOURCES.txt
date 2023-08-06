@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+affinity/__init__.py
+affinity/client/__init__.py
+affinity/client/endpoints.py
+affinity/common/__init__.py
+affinity/common/constants.py
+affinity/common/exceptions.py
+affinity/core/__init__.py
+affinity/core/models.py
+affinity_crm.egg-info/PKG-INFO
+affinity_crm.egg-info/SOURCES.txt
+affinity_crm.egg-info/dependency_links.txt
+affinity_crm.egg-info/requires.txt
+affinity_crm.egg-info/top_level.txt
