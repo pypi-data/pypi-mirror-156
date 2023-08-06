@@ -1,0 +1,3 @@
+[console_scripts]
+roborecipe = roborecipe.roborecipe_main:main
+
