@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: uzbstemmer
+Version: 0.3
+Summary: This package is desgined to help researcher to find stem of the word package has 1 input parameter, first parameter is input word as a dictionry, for example Uzbekstemmer([{'inputT':'vatanim'}])
+Home-page: UNKNOWN
+Author: Alisher Ismailov Shakirovich, Nilufar Abdurahmonova
+Author-email: alisherismailov1991@gmail.com, abdurahmonova.1987@mail.ru
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
+UNKNOWN
+
