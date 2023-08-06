@@ -1,0 +1,7 @@
+pytest
+pytest-cov
+pytest-httpbin
+pytest-mock
+more-itertools
+structlog
+werkzeug==2.0.3
