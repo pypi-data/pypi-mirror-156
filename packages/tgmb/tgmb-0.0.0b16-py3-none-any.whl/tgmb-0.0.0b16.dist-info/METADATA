@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tgmb
+Version: 0.0.0b16
+Summary: Predecessor to `tgmb`
+Home-page: https://github.com/ksssomesh12/tgmb-beta
+Author: SomesH S
+Author-email: ksssomesh12@gmail.com
+Project-URL: Bug Tracker, https://github.com/ksssomesh12/tgmb-beta/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aria2p (==0.10.4)
+Requires-Dist: google-api-python-client (==2.7.0)
+Requires-Dist: google-auth-httplib2 (==0.1.0)
+Requires-Dist: google-auth-oauthlib (==0.4.4)
+Requires-Dist: psutil (==5.8.0)
+Requires-Dist: python-magic (==0.4.24)
+Requires-Dist: python-telegram-bot (==13.5)
+Requires-Dist: qbittorrent-api (==2021.8.23)
+Requires-Dist: torrentool (==1.1.1)
+Requires-Dist: youtube-dl (==2021.6.6)
+
+# tgmb-beta
+
+[![build-docker-image](https://github.com/ksssomesh12/tgmb-beta/actions/workflows/build-docker-image.yml/badge.svg)](https://github.com/ksssomesh12/tgmb-beta/actions/workflows/build-docker-image.yml)
