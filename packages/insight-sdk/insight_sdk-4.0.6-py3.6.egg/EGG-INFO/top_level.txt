@@ -1,0 +1,13 @@
+insight_sdk
+insight_sdk/com
+insight_sdk/com/cert
+insight_sdk/com/insight
+insight_sdk/com/interface
+insight_sdk/com/libs/python310/x64
+insight_sdk/com/libs/python310/x86
+insight_sdk/com/libs/python36/x64
+insight_sdk/com/libs/python36/x86
+insight_sdk/com/libs/python37/x64
+insight_sdk/com/libs/python37/x86
+insight_sdk/com/libs/python39/x64
+insight_sdk/com/libs/python39/x86
