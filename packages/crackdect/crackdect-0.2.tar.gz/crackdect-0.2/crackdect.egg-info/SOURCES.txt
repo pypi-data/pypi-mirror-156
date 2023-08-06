@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+crackdect/__init__.py
+crackdect/crack_detection.py
+crackdect/image_functions.py
+crackdect/imagestack.py
+crackdect/io.py
+crackdect/stack_operations.py
+crackdect/visualization.py
+crackdect.egg-info/PKG-INFO
+crackdect.egg-info/SOURCES.txt
+crackdect.egg-info/dependency_links.txt
+crackdect.egg-info/requires.txt
+crackdect.egg-info/top_level.txt
