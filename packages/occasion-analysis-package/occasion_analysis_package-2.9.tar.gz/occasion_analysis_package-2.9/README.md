@@ -1,0 +1,66 @@
+**Installation:**
+
+pip install occasion-analysis-package
+
+
+**Get started:**
+
+**Description:** Python package to do analysis on Occasion.
+
+**Long Description:** This package consist of 3 functions: export sql data to csv(export_data_to_csv), create word cloud(create_word_cloud), create emoji chart(create_emoji_chart).
+
+1. **export_data_to_csv(export_file_path):**
+The function will export data based on SQL query into csv file.
+You can connect to Database either via credentials.env file or through environment variables.
+Either use VPN or make sure your IP is whitelisted. 
+For data loading via credentails file create a file named: "credentials.env" which has database credential details in following format:
+
+DATABASE = 'database_name'
+
+USER = 'user_name'
+
+PASSWORD = 'password'
+
+HOST = 'host'
+
+PORT = 'port_number'
+
+This function will ask for Database connection input: 1. Credentials 2. Environmental.
+
+This function will ask for Occasion Input. Like Mother's Day, Father's Day, Christmas.
+
+
+***Parameters:***
+
+**export_file_path (string):** File Path to export the data with file name.
+
+
+
+2. **create_word_cloud(import_file_path):**
+The function will create Word Cloud using Document Term Matrix.
+Later you will be asked to enter stop word list.
+
+***Parameters:***
+
+**import_file_path (string):** File Path to export the data. There should be two columns in the file: "use_case", "all_text". File name should be .csv extension.
+
+
+
+
+3. **create_emoji_chart(import_file_path):**
+The function will create Emoji Frequency Chart.
+
+***Parameters:***
+
+**import_file_path (string):** File Path to export the data. There should be two columns in the file: "use_case", "all_text". File name should be .csv extension.
+
+
+**Example:**
+from occasion_analysis_package import export_data_to_csv, create_word_cloud, create_emoji_chart
+
+export_data_to_csv("D:\\\\Analysis\\\\Occasion Analysis\\\\test\\\\occasion.csv")
+
+create_word_cloud("D:\\\\Analysis\\\\Occasion Analysis\\\\test\\\\occasion.csv")
+
+create_emoji_chart("D:\\\\Analysis\\\\Occasion Analysis\\\\test\\\\occasion.csv")
+             
