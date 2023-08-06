@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/itusm2117/__init__.py
+src/itusm2117/_internal.py
+src/itusm2117/_schema.py
+src/itusm2117/read.py
+src/itusm2117/write.py
+src/itusm2117.egg-info/PKG-INFO
+src/itusm2117.egg-info/SOURCES.txt
+src/itusm2117.egg-info/dependency_links.txt
+src/itusm2117.egg-info/requires.txt
+src/itusm2117.egg-info/top_level.txt
