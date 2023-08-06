@@ -1,0 +1,3 @@
+cellworld
+moviepy
+PyQt6
