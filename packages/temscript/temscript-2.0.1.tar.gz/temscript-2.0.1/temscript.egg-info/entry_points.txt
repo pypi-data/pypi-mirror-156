@@ -1,0 +1,2 @@
+[console_scripts]
+temscript-server = temscript.server:run_server
