@@ -1,0 +1,11 @@
+straycat/__init__.py,sha256=hdYwal9GxgruxlaQPusbK5EcX7_gG9j8rsyIhnpXfuU,256
+straycat/text_preprocessing/__init__.py,sha256=wu9hLNUOE6KiTZcIN9Igs4JsePFq3EZ7nkyLnxyq5mE,238
+straycat/text_preprocessing/core_text_preprocessing.py,sha256=VHcWPeaLQ2MITIjOIaWKvcfgRqu0ejLa8M8fc58zLas,17398
+straycat/text_preprocessing/count_decorator.py,sha256=WpEfCw8LOonjzFyJFDknq_3s5FV1pweeEjJDoAp_PWQ,326
+straycat/text_preprocessing/text_preprocessing.py,sha256=n4DGNJwlg2UDGSIPqyy26aHokz63D79KcM8YyI2YU3k,8349
+straycat-1.0.0.dist-info/AUTHORS.rst,sha256=olrkWwEN2L3FsF440LHywb62fKnkSK76GW8_GqFjNZc,173
+straycat-1.0.0.dist-info/LICENSE,sha256=Ucd9OmCAohja0Q70FNmPQRRLedPLThx4M43zSceAnrM,1078
+straycat-1.0.0.dist-info/METADATA,sha256=K0SypZS0915wy74O_qTXGjPZ9y1kXGi0QD4CztJUvuc,16015
+straycat-1.0.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+straycat-1.0.0.dist-info/top_level.txt,sha256=vSupbIJ-dW8-Ap0Rp7R77DUw8SJYjL0mhf65i17VeZM,9
+straycat-1.0.0.dist-info/RECORD,,
