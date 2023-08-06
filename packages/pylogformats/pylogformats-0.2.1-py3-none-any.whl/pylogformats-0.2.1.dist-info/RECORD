@@ -1,0 +1,8 @@
+pylogformats/__init__.py,sha256=raZUFYBJDn-3ZeV-EkMAcPeqwsOkB5gDoRnpYGNAjZ0,275
+pylogformats/advjson.py,sha256=Z4pNGLegU4zOQ6luEZ4nK5eL9Lv9NRhwshCc6z8ZeAA,1884
+pylogformats/bunyan.py,sha256=yd_Vp82Kxs7iWAoJnqlp7-qn0wB1KVmW8jP5FDG-1qc,1021
+pylogformats/simpjson.py,sha256=PbZSIhXo8Y822Q9AWlckgdn0xb9W8Z54UyJZexr8OlY,1429
+pylogformats-0.2.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+pylogformats-0.2.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+pylogformats-0.2.1.dist-info/METADATA,sha256=QNqQ5Q6oRefdpNaGRJLtiKYeRrTO14LN6zq0qFEWRdU,2974
+pylogformats-0.2.1.dist-info/RECORD,,
