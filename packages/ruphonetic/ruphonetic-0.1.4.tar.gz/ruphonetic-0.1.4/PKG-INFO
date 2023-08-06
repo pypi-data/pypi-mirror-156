@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: ruphonetic
+Version: 0.1.4
+Summary: Russian Phonetic Analysis Module
+Home-page: UNKNOWN
+Author: Igor Furkalo
+Author-email: igor.furkalo@gmail.com
+License: MIT
+Keywords: quantanalysis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Russian Phonetic Analysis Module
+
+Change Log
+===============
+
+0.1.3 (25.06.2022)
+--------------------
+-Add pie, bar plot support
+
+0.1.3 (25.06.2022)
+--------------------
+-Spacy model installation workaround
+
+0.1.2 (25.06.2022)
+--------------------
+-Fix bad accentuation import
+
+0.1.1 (25.06.2022)
+--------------------
+-Remove pprint
+
+0.1 (25.06.2022)
+--------------------
+-First Release
+
