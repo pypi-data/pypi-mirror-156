@@ -1,0 +1,13 @@
+serialize>=0.2.1
+validators
+packaging
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[:python_version < "3.9"]
+typing_extensions
+
+[test]
+pytest
+pytest-cov
