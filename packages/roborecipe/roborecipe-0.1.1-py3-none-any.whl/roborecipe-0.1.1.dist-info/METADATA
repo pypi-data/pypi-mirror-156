@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: roborecipe
+Version: 0.1.1
+Summary: generate robot build instruction from scripts
+Home-page: https://github.com/eriac/roborecipe
+Author: Erio.Akanuma
+Author-email: e.a@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: PyOpenGL
+Requires-Dist: jinja2
+Requires-Dist: networkx
+Requires-Dist: pillow
+
+# Roborecipe
+
+## Abstruct
+Roborecipe generate robot build instructions automatically.  
+See [Generated html file](https://eriac.github.io/roborecipe/docs/sample_out).
+
+## framework
+roborecipe is based on Ubuntu20.4 and Python3
+
+# source file reference
+see [xml document](https://github.com/eriac/roborecipe/blob/master/docs/xml_reference.md)
+
+# usage
+
+## how to install
+```code
+$ git clone https://github.com/eriac/roborecipe.git  
+$ cd roborecipe
+$ pip install ./ (add -e for develope mode)
+```
+
+## how to use
+```code
+$ roborecipe # dispaly help
+```
+
+## get list of component with sample 
+```code
+$ roborecipe list -d ~/roborecipe/sample/ 
+### package ###
+...
+### component ###
+...
+```
+
+## generate instruction with sample
+```code
+$ roborecipe generate sample_project main_asm -d roborecipe/sample/ -o out
+```
+
+## how to uninstall
+```code
+pip uninstall roborecipe
+```
+
+
