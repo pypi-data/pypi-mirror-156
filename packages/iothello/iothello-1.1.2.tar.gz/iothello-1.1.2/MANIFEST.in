@@ -1,0 +1,3 @@
+include LICENCE.txt
+include iothello/font.otf
+include iothello/models/*.sav
