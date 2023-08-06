@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: whtlib
+Version: 1.0.0
+Summary: this is a outstanding lib
+Home-page: https://github.com/wangshunzi/Python_code
+Author: wht
+Author-email: 1781329447@qq.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+*斜体*
+
+**加粗**
+
+``test,code``
+
