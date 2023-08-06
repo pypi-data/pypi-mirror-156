@@ -1,0 +1,10 @@
+diatomic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diatomic/calculate.py,sha256=UmrZauz6FSwHRBl5djqCVK8aYg4EolyUerMXh2oXmGQ,13621
+diatomic/constants.py,sha256=QU1YVmBwsjclKWIRXQ9nma9aJw-AbwsLdj2bI1yLXrQ,4899
+diatomic/hamiltonian.py,sha256=lNi2NcT1azq0icPCbra9L4B2En-Wb62iqqG3kxTKh60,26220
+diatomic/plotting.py,sha256=Fd7RHnBd8qTzdmPeaixMlJXhpbiO8JBn-NYUVct2C24,19981
+diatomic_py-1.0.1.dist-info/LICENSE,sha256=L0BugbsJUo3nbWr5ZeMPb3WL0PAFZqhoDvFamrIK-To,1473
+diatomic_py-1.0.1.dist-info/METADATA,sha256=6y89OMU8RBhtJ6tgDZynJPiDdgOufFKKmqCtRrOcLqI,1682
+diatomic_py-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+diatomic_py-1.0.1.dist-info/top_level.txt,sha256=BFLYxDVdApHOUsTJDXV8nvfh3T70vGbBmPb6AKk_0sY,9
+diatomic_py-1.0.1.dist-info/RECORD,,
