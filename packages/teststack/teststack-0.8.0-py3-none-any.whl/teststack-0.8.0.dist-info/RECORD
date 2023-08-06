@@ -1,0 +1,16 @@
+teststack/__init__.py,sha256=r9XcZeFFph82y0YCU2d1L1YqqR7z8QLJ5G_sYOTOBVc,2662
+teststack/__main__.py,sha256=WsRonoTnQNaqRtDUoSQzq0SAwrf2dGg9jtG2QhXYbWg,99
+teststack/_version.py,sha256=ZaoeiJ1PScLJWe3AOklUq03KO_KgAwSQBYrLWCsbjcw,176
+teststack/errors.py,sha256=m3vPe_9MM33pI1_FB_-1D1TGmXa-iTXspyJH-5KpkCI,51
+teststack/git.py,sha256=id13lXlyXoQwpkKWWTwgwc8OKI79-ajzTLC_ajuX28c,711
+teststack/utils.py,sha256=U_HOHaPMqdCPZGR4c7m1Sjt7DQI1S87VvJPX5Js64Yg,579
+teststack/commands/containers.py,sha256=Y6wUQ1t6zLVZkaxCqSe8ZkSEqZ6CqJhm9Artiq1Kn4U,8221
+teststack/commands/environment.py,sha256=ItfbXYwFDPJPwCi6SQ0CDVJunDD1WvjNR9DO6P-v4Dc,1883
+teststack/containers/docker.py,sha256=3IKTNemxSNu5FEFVEQt_iKW_SI9phEeb3NpiObwgWMk,4517
+teststack/containers/podman.py,sha256=n0S-fa_3iYrict6urK0hh0skRpyQ-eLIEPZ7icARzPk,5411
+teststack-0.8.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+teststack-0.8.0.dist-info/METADATA,sha256=3Y4626Q_of0_7RZAYMlNTcML3TScAmbWwxzTSOiB_w8,5283
+teststack-0.8.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+teststack-0.8.0.dist-info/entry_points.txt,sha256=h4JMfaagIaQAd5YNrLvz1n0mZsyuXf1SZbMt-MTNeEY,250
+teststack-0.8.0.dist-info/top_level.txt,sha256=29uiy8iC-q2WLp54U2XIhbRtsrO6T04QgyAKSLNx0uA,10
+teststack-0.8.0.dist-info/RECORD,,
