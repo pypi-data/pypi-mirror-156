@@ -1,0 +1,2 @@
+[console_scripts]
+destripegui = src.destripegui:main
