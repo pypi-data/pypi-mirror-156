@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+drf_extended/__init__.py
+drf_extended/models.py
+drf_extended/serializers.py
+drf_extended/types.py
+drf_extended.egg-info/PKG-INFO
+drf_extended.egg-info/SOURCES.txt
+drf_extended.egg-info/dependency_links.txt
+drf_extended.egg-info/requires.txt
+drf_extended.egg-info/top_level.txt
