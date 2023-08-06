@@ -1,0 +1,2 @@
+[console_scripts]
+scratchtext = pyscratch.main:cli
