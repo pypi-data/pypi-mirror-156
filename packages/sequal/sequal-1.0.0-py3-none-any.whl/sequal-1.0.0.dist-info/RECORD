@@ -1,0 +1,13 @@
+sequal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequal/amino_acid.py,sha256=HjLPnh00AE0NGh8RhwsU2ZtpRtWRJRvfD0KFKq9Zb-Q,1306
+sequal/base_block.py,sha256=e7XNvMd7pICbiE-4oZj5rJMp4Ab-Tvyn3q2C4CywRUA,729
+sequal/ion.py,sha256=qmnEbQIRWs77xm9QRbegoyj2L69IYPVUe88loFW3t1Q,1843
+sequal/mass.py,sha256=dhZFBquLe2C6Q6kQ-zYlZzFKB8yw2PUq1cH4yAQap_c,1980
+sequal/mass_spectrometry.py,sha256=xcEjQsx6s3pO6Hhq6OG2yY4j7ZumbLs-tTr7BXNE5Yw,1185
+sequal/modification.py,sha256=hj5vhrSeJqTTDD0KnCWon5V8gCPuvFYcyts_69L033k,3780
+sequal/resources.py,sha256=Wtk0Bc4Yiq0J8keC_lq_HUiMxbBcOYAXZ-9HaJmi998,1057
+sequal/sequence.py,sha256=Aqui1HyiN0UpyEdfHFXsvGVm29ELpwj-Lg19h9ClwCA,15598
+sequal-1.0.0.dist-info/LICENSE,sha256=mbb4py-Cxdln-RVu-nP8_9aX19wCzdXJU7C6dN4je_w,1088
+sequal-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+sequal-1.0.0.dist-info/METADATA,sha256=_e5CxIFo_Ilbd7rGnC9fvAuxLSE1h5yjPVL3HOc1_Ik,303
+sequal-1.0.0.dist-info/RECORD,,
