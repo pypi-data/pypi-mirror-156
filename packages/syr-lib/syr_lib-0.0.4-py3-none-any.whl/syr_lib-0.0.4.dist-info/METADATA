@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: syr-lib
+Version: 0.0.4
+Summary: Compute_Haversine
+Home-page: UNKNOWN
+Author: seshkalyan
+Author-email: dseshkalyan@gmail.com
+License: SYREN CLOUD TECHNOLOGIES
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+Haversine Formula in Python (Distance between two GPS points)
+
+This following function will give us the distance in kilometers between two 
+latitude and longitude points.
+
+Version Release Beta
+==========
+0.0.3 (28/06/2022)
+-------------------
+
+
+
+    from math import radians, cos, sin, asin, sqrt
+    def haversine(lat1, lon1, lat2, lon2):
+            
+        """
+        Calculate the great circle distance between two points on the 
+        earth (specified in decimal degrees), returns the distance in
+        meters.
+        All arguments must be of equal length.
+        :param lon1: longitude of first place
+        :param lat1: latitude of first place
+        :param lon2: longitude of second place
+        :param lat2: latitude of second place
+        :return: distance in meters between the two sets of coordinates
+        """
+
+      R = 6372.8 # For Earth radius in kilometers use 6372.8 km
+
+            # Convert decimal degrees to radians
+
+      dLat = radians(lat2 - lat1)
+      dLon = radians(lon2 - lon1)
+      lat1 = radians(lat1)
+      lat2 = radians(lat2)
+
+            # Haversine formula
+
+      a = sin(dLat/2)**2 + cos(lat1)*cos(lat2)*sin(dLon/2)**2
+      c = 2*asin(sqrt(a))
+
+      return R * c
+
+
+
+----------
+
+Usage
+-------------------
+Install the published library:
+
+        pip install syr_lib_haversine
+
+        import syr_lib_haversine as slh
+        
+        distance = slh.haversine(lat1= , lon1= 
+                                ,lat2= , lon2= )
+        print(distance)
+        
+
