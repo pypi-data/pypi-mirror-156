@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: project-utilities
+Version: 1.0.2
+Summary: A package containing scripts, classes, functions etc all useful for maintaining projects
+Home-page: https://github.com/RickarySanchez/project-utilities
+Author: RickarySanchez
+Author-email: RickarySanchez@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Project-Utilities
+
+The purpose of this package is to make life easier for all the developers out there who are working on a project. The package as I write this contains nothing but any contributions to the GitHub Repo would be greatly appreciated and added to the package. Some of the basic implementations I have considered adding are a file structure handling module which could make searching folders easy, and anything else in that realm. Also functions which create a release or make formatting code simple and easy. 
+

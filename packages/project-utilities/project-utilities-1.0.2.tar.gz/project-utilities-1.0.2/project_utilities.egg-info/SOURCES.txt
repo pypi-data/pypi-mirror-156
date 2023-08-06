@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+project_utilities/__init__.py
+project_utilities/file_utils.py
+project_utilities/make_release.py
+project_utilities/project_init.py
+project_utilities.egg-info/PKG-INFO
+project_utilities.egg-info/SOURCES.txt
+project_utilities.egg-info/dependency_links.txt
+project_utilities.egg-info/requires.txt
+project_utilities.egg-info/top_level.txt
