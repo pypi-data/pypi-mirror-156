@@ -1,0 +1,5 @@
+ndinterp-0.0.1.dist-info/METADATA,sha256=YlVbzJ21PtrUc-cdn5juBi6605I1iTcaOD40s_PvrQM,968
+ndinterp-0.0.1.dist-info/WHEEL,sha256=zO2h6ikpjTgjtGtfX37gpxKCt9KvFLwJI5WNwWFRm2U,135
+ndinterp/__init__.py,sha256=sKjR3KpHhC2KxepaLkVmhowassOPeFhBxe0XCC1joyA,115
+ndinterp/ndinterp.cpython-39-x86_64-linux-gnu.so,sha256=i9Lvw4k0IjwOMxET-brGL9Q5Ed17CesAduQZU1OpjWE,313664
+ndinterp-0.0.1.dist-info/RECORD,,
