@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: nbproject
+Version: 0.1a3
+Summary: nbproject: Manage Jupyter notebooks.
+Author-email: Lamin Labs <laminlabs@gmail.com>
+Description-Content-Type: text/markdown
+Requires-Dist: loguru
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Requires-Dist: packaging
+Requires-Dist: orjson
+Requires-Dist: ipylab
+Requires-Dist: importlib-metadata
+Requires-Dist: stdlib_list; python_version < '3.10'
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "test"
+Requires-Dist: pandas ; extra == "test"
+Requires-Dist: nbformat ; extra == "test"
+Requires-Dist: nbclient ; extra == "test"
+Project-URL: Home, https://github.com/laminlabs/nbproject
+Provides-Extra: dev
+Provides-Extra: test
+
+# nbproject: Manage Jupyter notebooks
+
+This package is in private beta at this moment!
+
+Follow https://twitter.com/laminlabs to learn about a first public release.
+
+For beta users: Read the [docs](https://lamin.ai/nbproject).
+
