@@ -1,0 +1,4 @@
+plotly>=5.4
+numpy
+kaleido
+pandas

@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/barviz/Attributes.py
+src/barviz/Collection.py
+src/barviz/Scrawler.py
+src/barviz/Simplex.py
+src/barviz/SimplexBuilder.py
+src/barviz/__init__.py
+src/barviz/version.py
+src/barviz.egg-info/PKG-INFO
+src/barviz.egg-info/SOURCES.txt
+src/barviz.egg-info/dependency_links.txt
+src/barviz.egg-info/requires.txt
+src/barviz.egg-info/top_level.txt
