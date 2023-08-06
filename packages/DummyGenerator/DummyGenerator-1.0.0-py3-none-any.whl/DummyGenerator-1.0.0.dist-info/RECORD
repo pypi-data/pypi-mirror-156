@@ -1,0 +1,13 @@
+DummyGenerator/DummyGenerator.py,sha256=5jx7bzzG_r52yVYuB8-wkArXfT4GlCPMdRvFoFBlXkc,4679
+DummyGenerator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DummyGenerator/models/age_net.caffemodel,sha256=bd5dB99codZv855SVpPwXM-50sQ34Yj90aENQuV_q9Y,45661480
+DummyGenerator/models/deploy.prototxt.txt,sha256=UeShgYtsAijjB8Df_Bw6dEGVLjoIXJ51bQ8AqFkh1BI,29892
+DummyGenerator/models/deploy_age.prototxt,sha256=y9p8xe6_ow4c3ECAiJh9984AhIRQ7a1o26C4TbKKBMA,2309
+DummyGenerator/models/deploy_gender.prototxt,sha256=tUKV_HGvTjdVTjMH96xYJRa3sSME8jKOc5UOaY83TYM,2309
+DummyGenerator/models/gender_net.caffemodel,sha256=rHVxsoGuB4gXdktkWiBUG9aqG6vqwgpF5tjefWG6DlA,45649168
+DummyGenerator/models/res10_300x300_ssd_iter_140000_fp16.caffemodel,sha256=UQ_9JHG9geP8yIpb606uT7RFzPgzPrxU5zArg_QVinY,5351047
+DummyGenerator-1.0.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+DummyGenerator-1.0.0.dist-info/METADATA,sha256=EMG2ZxdYbIgPCHPPKQ8CwzbNsuH5C967zoo8yp5gaqo,1242
+DummyGenerator-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+DummyGenerator-1.0.0.dist-info/top_level.txt,sha256=1limWGpeZwN4kc5t5pEekOddKg7dkvm4-PxQ2kwyqyw,15
+DummyGenerator-1.0.0.dist-info/RECORD,,
