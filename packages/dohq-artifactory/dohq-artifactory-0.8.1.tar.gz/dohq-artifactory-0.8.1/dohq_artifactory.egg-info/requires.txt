@@ -1,0 +1,3 @@
+requests
+python-dateutil
+PyJWT~=2.0
