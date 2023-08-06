@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pydgets
+Version: 0.11
+Summary: Console widget library for Python 3
+Home-page: https://pypi.org/project/pydgets/
+Author: Jan Mach
+Author-email: email@jan-mach.cz
+License: MIT
+Project-URL: Documentation, https://709.gitlab-pages.cesnet.cz/mentat/pydgets/master/html/manual.html
+Project-URL: Source, https://gitlab.cesnet.cz/709/mentat/pydgets
+Project-URL: Tracker, https://gitlab.cesnet.cz/709/mentat/pydgets/-/issues
+Keywords: library console widgets
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Environment :: Console
+License-File: LICENSE.txt
+
+Pydgets
+================================================================================
+
+Python3 command line widget library.
+
+.. warning::
+
+    This library is still work in progress.
+
+.. note::
+
+    For usage and examples please see the source code, for demonstration execute
+    the appropriate module with Python3 interpreter.
+
+Copyright
+--------------------------------------------------------------------------------
+
+Copyright (C) since 2016 Jan Mach <honza.mach.ml@gmail.com>
+Use of this package is governed by the MIT license, see LICENSE file.
+
+
+Changelog
+--------------------------------------------------------------------------------
+
+
+Version 0.11
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Released 2022-06-27
+
+-   Added a config file for GitLab CI/CD.
+-   Updated the repository information.
+-   Updated packages versions.
