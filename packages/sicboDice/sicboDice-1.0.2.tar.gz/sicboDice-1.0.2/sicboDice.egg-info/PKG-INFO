@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sicboDice
+Version: 1.0.2
+Summary: This function will determine the results of shuffling the dice that will be used in the Sicbo game.
+Home-page: https://github.com/defartsa23/shuffle-dice-sicbo
+Download-URL: https://github.com/defartsa23/shuffle-dice-sicbo/archive/refs/heads/main.zip
+Author: Deza Farras Tsany
+Author-email: deza.ftsany@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/defartsa23/shuffle-dice-sicbo
+Project-URL: Source, https://github.com/defartsa23/shuffle-dice-sicbo
+Project-URL: Tracker, https://github.com/defartsa23/shuffle-dice-sicbo/issues
+Keywords: SICBO,DICE,SHUFFLE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
