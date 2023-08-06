@@ -1,0 +1,11 @@
+phacts/__init__.py,sha256=J5cXHVFGWFkK7jyGOC5P0vlbwhoG4Pr43NlMiwHvxlU,44
+phacts/lifestyle.pkl.xz,sha256=8Z0Dzf7EdXnLhXMbbbDh2CC21__6WbT1Ypqob4brUMM,8431284
+phacts/linux.fasta35,sha256=49q4OWSRtLU3FfB-RIifkpY645N-sUia0wBz0q3gaeA,875320
+phacts/load_data.py,sha256=AHJatfRVym4a_nvIMhLyV0YPgi-oL_DQnMwy0BhWUhU,547
+phacts/osx.fasta35,sha256=VvFjzyvaaI107eOHdwNper3ZX0W6HOg36DY5I56nWX0,286400
+phacts-1.8.data/scripts/phacts.py,sha256=Fva0PwMOo36x6U-3d1ogRprFl4cBPyrXatJOcol50eU,4778
+phacts-1.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+phacts-1.8.dist-info/METADATA,sha256=cns9wJaMmgzv-37lisUXGS8wsnTRZSf1E2VqcnJQoT0,1922
+phacts-1.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+phacts-1.8.dist-info/top_level.txt,sha256=g-0qjg8u0POrXiz6IruUC7L8gHmFKGazE6AfAuYdF6o,7
+phacts-1.8.dist-info/RECORD,,
