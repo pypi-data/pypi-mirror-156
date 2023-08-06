@@ -1,0 +1,5 @@
+#!python
+
+from mlpproc.__main__ import preprocessor_main
+
+preprocessor_main()
