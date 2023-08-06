@@ -1,0 +1,15 @@
+getgit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getgit/args.py,sha256=b0pOY27HfKuYBeozjGMTAMinARPwYRlaYwgLIjPNyVE,374
+getgit/cli.py,sha256=pSrmocPVJ-iDlUuDu_KOhBAdKPivickQFN5fECySuPo,3642
+getgit/clone.py,sha256=Piux7RMRWM9ofrQoeTkl12Fn9U25_abd20Q8xFQDODs,427
+getgit/constants.py,sha256=WgxmOQkq1cg-tUkKa4n969EOlMAdu2-CSayC0xldidw,185
+getgit/main.py,sha256=k0M8OoBjHNFyLhd2Di4q7ZNVXriSBhydRf5bCtycTn8,738
+getgit/parse.py,sha256=DnotG3JZbpvkaMLKxuPefrjkE4gAyOlFPut79xSCRH0,1982
+getgit/wwyaml.py,sha256=mJJhIdlUQsTUqTYviVIWs65RwDrgjHsFp1AjQ6UxLLA,2216
+getgit/config/parse.yaml,sha256=oGcL2oL69SXsVhI62SO-3fFYU0RgWNry0_xfb2THsdc,427
+getgit-0.1.5.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+getgit-0.1.5.dist-info/METADATA,sha256=h7aFu36JYIBRO-DiG--oOe21Dx5K5JSCPILuC_ZyU-I,1796
+getgit-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+getgit-0.1.5.dist-info/entry_points.txt,sha256=QyQuijV7oNQwTp9_qgtFx51fDzGwKqoIBlwBueloSzE,45
+getgit-0.1.5.dist-info/top_level.txt,sha256=f3PrU5Y84xvxBgv0pJVVMSKefYYIia0tbZBiArq_i9c,7
+getgit-0.1.5.dist-info/RECORD,,
