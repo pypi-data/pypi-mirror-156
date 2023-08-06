@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+maglimit/__init__.py
+maglimit/limiting_mag.py
+maglimit.egg-info/PKG-INFO
+maglimit.egg-info/SOURCES.txt
+maglimit.egg-info/dependency_links.txt
+maglimit.egg-info/top_level.txt
