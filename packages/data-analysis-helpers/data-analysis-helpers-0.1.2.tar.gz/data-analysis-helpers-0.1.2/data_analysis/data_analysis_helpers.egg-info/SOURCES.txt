@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+data_analysis/data_analysis_helpers.egg-info/PKG-INFO
+data_analysis/data_analysis_helpers.egg-info/SOURCES.txt
+data_analysis/data_analysis_helpers.egg-info/dependency_links.txt
+data_analysis/data_analysis_helpers.egg-info/requires.txt
+data_analysis/data_analysis_helpers.egg-info/top_level.txt
