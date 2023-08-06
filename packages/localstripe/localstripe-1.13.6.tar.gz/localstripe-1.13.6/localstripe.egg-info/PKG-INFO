@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: localstripe
+Version: 1.13.6
+Summary: A fake but stateful Stripe server that you can run locally, for testing purposes.
+Home-page: https://github.com/adrienverge/localstripe
+Author: Adrien Vergé
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
