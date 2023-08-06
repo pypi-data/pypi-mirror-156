@@ -1,0 +1,10 @@
+wbkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wbkit/basic.py,sha256=7BL0YNTfXs7hdt0T03ldKfBqSmc1t5dLfkw5aZ45YkA,3793
+wbkit/cglimits.py,sha256=wevwmtRQeOhPU3rzvUPuRZ32gAKgkSPFhACDaaV6xZw,6202
+wbkit/plfunc.py,sha256=tcwn3iEfk5tMmIoy34TcnkfUdg5xQ8edfy5FKjhxNmA,6197
+wbkit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wbkit-0.0.5.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+wbkit-0.0.5.dist-info/METADATA,sha256=0YQfSc8jVAOMKP1Xmbyesbm_wk9E8Jg9QLvY73sx2c4,652
+wbkit-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wbkit-0.0.5.dist-info/top_level.txt,sha256=NTat4_DELCoqWA0Gb62rOwDhusHMAlg4oUTEHooq7XE,6
+wbkit-0.0.5.dist-info/RECORD,,
