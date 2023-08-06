@@ -1,0 +1,8 @@
+dbt_sync_server/__init__.py,sha256=Wm63KlKiRlD25q5xBjgeZyCXhV0cWWJ_qyzMuCvsFA4,8614
+dbt_sync_server/__main__.py,sha256=DmBLvPkUA86u_Gk-HYDtceEvcZT2mXsegcUNh8WHkJY,103
+dbt_sync_server/dbt_rpc_client.py,sha256=c6veM-A-ir3oqhDZmD3Gqu0TQNYyUnNXWZXic99ZGnU,35549
+dbt_sync_server/wsgi.py,sha256=3veH9tUki4w36y7um2DuRjsfZhjRge3DdywACOAAw8o,397
+dbt_sync_server-0.3.3.dist-info/entry_points.txt,sha256=4bhXJb7POdj35DJf7gOdy_O92dU96cTAGJUE2sJxi30,55
+dbt_sync_server-0.3.3.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+dbt_sync_server-0.3.3.dist-info/METADATA,sha256=eTEq6_kpgGutWFyJrUG3PzGTXjte3Fxtwlf87pZiJ84,603
+dbt_sync_server-0.3.3.dist-info/RECORD,,
