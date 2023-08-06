@@ -1,0 +1,15 @@
+.DS_Store
+LICENSE.md
+README.md
+setup.py
+data/.DS_Store
+data/full_hr.txt
+stellar_plots/__init__.py
+stellar_plots/driver.py
+stellar_plots/make_plot.py
+stellar_plots/mast_utils.py
+stellar_plots/utils.py
+stellar_plots.egg-info/PKG-INFO
+stellar_plots.egg-info/SOURCES.txt
+stellar_plots.egg-info/dependency_links.txt
+stellar_plots.egg-info/top_level.txt
