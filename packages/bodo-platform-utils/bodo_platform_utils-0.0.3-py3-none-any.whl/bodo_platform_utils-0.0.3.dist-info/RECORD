@@ -1,0 +1,10 @@
+bodo_platform_utils/__init__.py,sha256=6bHCTzNYUzMr982qIBCTbP6Atv4Dz5UK3D7b6fatjZM,74
+bodo_platform_utils/_version.py,sha256=6Oopsk8E4Dyzeg2F2cQgrTglwAAhiaAN2EiyNiMesA4,497
+bodo_platform_utils/config.py,sha256=ShkQWcuba0Jkht465W_u4ceQVue_2HFGIkuAJLbxW3E,300
+bodo_platform_utils/secrets.py,sha256=0pNZ1mka3p0NXTtvyNp_EBHp1fSTkTiedZVty-AeIZw,1504
+bodo_platform_utils/utils_types.py,sha256=VqWZVV-D8gEYsGfeFNoeyw44KtrjTC7OA-rI9My7Ipg,87
+bodo_platform_utils-0.0.3.dist-info/LICENSE,sha256=B4Hf1DkRK5DQRAwL4m9cNZByqxUxoUcS0KD2uWy2FRg,1064
+bodo_platform_utils-0.0.3.dist-info/METADATA,sha256=DF1CMGqFPsFn14TDUsOwKGtauo7sQNq0uwAOHbvk-Bs,800
+bodo_platform_utils-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bodo_platform_utils-0.0.3.dist-info/top_level.txt,sha256=WiB8uApyFf68C18IU_dh_4mrYZb0HytFk35IUGdhR8k,20
+bodo_platform_utils-0.0.3.dist-info/RECORD,,
