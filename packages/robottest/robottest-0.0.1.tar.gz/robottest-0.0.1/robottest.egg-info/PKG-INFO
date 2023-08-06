@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: robottest
+Version: 0.0.1
+Summary: robottest 测试框架
+Home-page: https://github.com/redrose2100/RobotTest
+Author: redrose2100
+Author-email: hitredrose@163.com
+Maintainer: hitredrose@163.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+
+RobotTest测试框架
+=================
+
+robottest 安装
+==============
+
+使用pip命令安装
+
+.. code:: bash
+
+   pip install robottest
+
+使用文档
+========
+
+-  调用系统命令
+
+.. code:: bash
+
+   def test_robot_fix(robot_fix):
+       output=robot_fix.cli.exec("dir")
+       print(output)
+
+发布记录
+========
+
+-  0.0.1 2022-06-27 robot_fix支持调用系统的命令
+
+修改记录
+========
+
+-  0.0.1
+
+   -  增加robot_fix，支持调用系统的命令

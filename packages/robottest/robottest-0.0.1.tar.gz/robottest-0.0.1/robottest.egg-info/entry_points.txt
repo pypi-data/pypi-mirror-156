@@ -1,0 +1,5 @@
+[console_scripts]
+robot = robottest.cli:main
+
+[pytest11]
+robot = robottest.pytest11
