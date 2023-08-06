@@ -1,0 +1,8 @@
+upgrade/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upgrade/scripts/upgrade_python_package.py,sha256=VQnfaqalEBtYgKzEsvGDy8-yCVQ9Q6Lq50zzZjkTgf8,16672
+upgrade/scripts/utils.py,sha256=rY89r35FauQ6Ul_zyG6AA7Ur0vRysGS4AtTWDxfuVGk,105
+upgrade_python_package-0.2.0.dist-info/METADATA,sha256=t4eYteTt1ZLd11C03sR3VHJyYMlKkVT-KMH8ZEsOHFQ,1369
+upgrade_python_package-0.2.0.dist-info/RECORD,,
+upgrade_python_package-0.2.0.dist-info/WHEEL,sha256=saUSQBLOUjf5ACZdNkhQ0lB6XrHU-l4vpzxq_W1n_AY,116
+upgrade_python_package-0.2.0.dist-info/entry_points.txt,sha256=2qxlhMOeAK4yvUrauQAVXauwltCTMAaCgLmlnzrSdlU,72
+upgrade_python_package-0.2.0.dist-info/top_level.txt,sha256=UprFPn3glNBbyCZ6QS3ybIL8bXlT5oPvhqTOQ5bhwco,8
