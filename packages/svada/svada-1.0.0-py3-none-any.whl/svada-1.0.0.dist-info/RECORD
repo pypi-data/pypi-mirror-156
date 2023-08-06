@@ -1,0 +1,9 @@
+svd/__init__.py,sha256=aO45GFocYCk5mLM_sQuVE5fAEtPpGZjrbsr8F87-_IM,380
+svd/parsing.py,sha256=qPZ7oSWSwsFd_diML6MbCVENc_3wMjb8a_Ik9VQswkU,934
+svd/peripheral.py,sha256=KGRfpKLEZZcJTdxS6ZIppG1pgFbdzoRQb9EGRYRbMv8,23275
+svd/util.py,sha256=S2ulYiEMMNXQKZ-tiI7pb5eRchE7FEg28Cbfx2tXwmo,1230
+svada-1.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+svada-1.0.0.dist-info/METADATA,sha256=oGvIFiklZx9K4Vf6Cjxk_dlIlTydYnPvD6RtlXWZlsE,3883
+svada-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+svada-1.0.0.dist-info/top_level.txt,sha256=Q4UPlN8-NyD_XaHwTlWuokT8frYVRncPVhnI7BzYLIQ,4
+svada-1.0.0.dist-info/RECORD,,
