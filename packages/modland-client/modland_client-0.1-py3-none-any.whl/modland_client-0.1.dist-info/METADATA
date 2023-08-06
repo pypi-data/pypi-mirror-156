@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: modland-client
+Version: 0.1
+Summary: Modland tracker music archive client working via ftp
+Project-URL: Bug Tracker, https://codeberg.org/spline/modland_client/issues
+Project-URL: Homepage, https://codeberg.org/spline/modland_client
+Author-email: Andrew Lobanov <spline1986@yandex.ru>
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# Modland Client
+Modland tracker modules archive client working via FTP.
+
+## Usage
+Download directory structure and build datafile:
+
+```
+$ modland_client -b
+```
+
+Download artist's modules:
+
+```
+$ modland_client -a ARTIST
+```
