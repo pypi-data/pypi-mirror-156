@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyuptimekuma
+Version: 0.0.1
+Summary: Simple Python wrapper for Uptime Kuma
+Home-page: https://github.com/jayakornk/pyuptimekuma
+Author: Jayakorn Karikan
+Author-email: jayakornk@gmail.com
+License: MIT License
+Keywords: pyuptimekuma,setuptools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (<4.0,>=3.8.1)
+Requires-Dist: prometheus-client (>=0.14.1)
+Requires-Dist: cchardet (>=2.1.7)
+Requires-Dist: aiodns (>=3.0.0)
+Provides-Extra: dev
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+
+# pyuptimekuma
+Simple Python wrapper for Uptime Kuma
