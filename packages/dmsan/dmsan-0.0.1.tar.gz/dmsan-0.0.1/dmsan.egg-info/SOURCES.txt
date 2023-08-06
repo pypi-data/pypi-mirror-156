@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+setup.py
+dmsan/__init__.py
+dmsan/_ahp.py
+dmsan/_location.py
+dmsan/_mcda.py
+dmsan.egg-info/PKG-INFO
+dmsan.egg-info/SOURCES.txt
+dmsan.egg-info/dependency_links.txt
+dmsan.egg-info/requires.txt
+dmsan.egg-info/top_level.txt
