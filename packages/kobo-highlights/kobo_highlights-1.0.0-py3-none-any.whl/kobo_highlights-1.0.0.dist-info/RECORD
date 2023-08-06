@@ -1,0 +1,11 @@
+kobo_highlights/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+kobo_highlights/config.py,sha256=ABfFIJ-kNmErV7pFdYvWGIk-6o31CkyfdPdRs0YqPgc,6405
+kobo_highlights/config.toml,sha256=2gt5YYrDP8VcyH0-XDpzmvpkfxOJUlk1RwIBKw6X-kE,187
+kobo_highlights/console.py,sha256=wwsT6W7sqANfMW91YAzA0EN2BJhNDxunG8ooZJ06Zys,228
+kobo_highlights/functions.py,sha256=NS4TKdTCvfY2OodhDQ_7Sey__fniB5ROCIqMwiIlAPk,11078
+kobo_highlights/main.py,sha256=DrPOszxBYvqXfp8qf8JeoD0UFRGdSTGF2CHJe8tKNz4,7661
+kobo_highlights-1.0.0.dist-info/entry_points.txt,sha256=IDy9Bk-Jd6f-mcG6Dm7DJ9Ad-scSwGa2zcUqQbUDodY,47
+kobo_highlights-1.0.0.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+kobo_highlights-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+kobo_highlights-1.0.0.dist-info/METADATA,sha256=pImEa1jzZ4NA2XUWo0QsiTk3lud6b05q65kUJSs2Gu0,5975
+kobo_highlights-1.0.0.dist-info/RECORD,,
