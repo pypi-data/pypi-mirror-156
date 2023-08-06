@@ -1,0 +1,11 @@
+screen_brightness_control/__init__.py,sha256=09VUcAsnjTovM0AVtJBqJWYPZr1qjvUzKb2N0H5_Xqc,28893
+screen_brightness_control/__main__.py,sha256=WRBewfI5yt_0yc1g5oHVS_oil79UVh4s9vdYwaxJqoY,5507
+screen_brightness_control/_version.py,sha256=4twlxv7S4hFNBnAlRPCcMrHtyRTiA6gTZ1Ri7_0uqwQ,124
+screen_brightness_control/helpers.py,sha256=8oOuVteBD3eFQRBd2PnVhUVq7kXsw6_v8bieiR4MCxU,13520
+screen_brightness_control/linux.py,sha256=njQxtIyrRpy1DAFCTToNcWuwhCnQw7TR8ZdzqCPobdY,40845
+screen_brightness_control/windows.py,sha256=CcHhy_OCu3-0vJYBwfS52adxawXmClU3lRNQ8FRFOAs,20634
+screen_brightness_control-0.15.0.dist-info/LICENSE,sha256=fhX3z93p9jtsSk4XvIw5_UnpJCjqcwBloh83fvu7nKA,1065
+screen_brightness_control-0.15.0.dist-info/METADATA,sha256=ZAmQQziD8Yf75d7tCBOyC7bE2qd_Py-ExT-Dre0HApg,3506
+screen_brightness_control-0.15.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+screen_brightness_control-0.15.0.dist-info/top_level.txt,sha256=ZJ_5JobWMjXdS7QxGcU_8F8vVzK6dSMelLibCuKK9sI,26
+screen_brightness_control-0.15.0.dist-info/RECORD,,
