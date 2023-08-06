@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sicboDice/__init__.py
+sicboDice/shuffleDice.py
+sicboDice.egg-info/PKG-INFO
+sicboDice.egg-info/SOURCES.txt
+sicboDice.egg-info/dependency_links.txt
+sicboDice.egg-info/top_level.txt
