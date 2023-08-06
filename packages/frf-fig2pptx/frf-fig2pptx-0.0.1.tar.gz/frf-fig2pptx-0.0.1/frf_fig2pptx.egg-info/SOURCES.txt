@@ -1,0 +1,6 @@
+README.md
+setup.py
+frf_fig2pptx.egg-info/PKG-INFO
+frf_fig2pptx.egg-info/SOURCES.txt
+frf_fig2pptx.egg-info/dependency_links.txt
+frf_fig2pptx.egg-info/top_level.txt
