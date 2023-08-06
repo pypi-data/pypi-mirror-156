@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+tassistant/city.py
+tassistant/tassistant.py
+tassistant/tictactoe.py
+tassistant.egg-info/PKG-INFO
+tassistant.egg-info/SOURCES.txt
+tassistant.egg-info/dependency_links.txt
+tassistant.egg-info/top_level.txt
