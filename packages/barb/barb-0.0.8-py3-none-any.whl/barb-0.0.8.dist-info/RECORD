@@ -1,0 +1,11 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cli.py,sha256=W409MkciMeGPVVU2w9_Gt6hfmie4-ZfP_L7MugPJY00,948
+src/hooks.py,sha256=OusD4ZrFXMgPfXXxi2YzlUgc3jMPn_fU2w26_Id53B4,1116
+src/init.py,sha256=0edUFTGJK-TvjV69IuMtaR1vd8XCrF7zkbh5loLSne4,554
+src/install.py,sha256=1_LOSBqP4jQIc2kXGGDadN0pYGCCDvEX77bWvjTdr7k,220
+src/run.py,sha256=YRu2HJ_DJ72RoQysnHd-qCdA9CylzbWut_u7VoxLfpM,1554
+barb-0.0.8.dist-info/METADATA,sha256=fWMGsFp0e-deQvKh9TgpuKXizKJAHpRUwWH_Wi-g_78,1385
+barb-0.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+barb-0.0.8.dist-info/entry_points.txt,sha256=wO6Eg36TS_bV3mNOYLfsS6vuEyR75LxSCwLu_0COWZc,39
+barb-0.0.8.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+barb-0.0.8.dist-info/RECORD,,
