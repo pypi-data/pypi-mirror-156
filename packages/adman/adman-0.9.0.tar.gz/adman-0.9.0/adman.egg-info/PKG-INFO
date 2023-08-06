@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: adman
+Version: 0.9.0
+Summary: Active Directory Automated Maintenance
+Home-page: https://gitlab.com/JonathonReinhart/adman
+Author: Jonathon Reinhart
+Author-email: Jonathon.Reinhart@gmail.com
+License: MIT
+Description: adman
+        =====
+        ADMan is a tool for performing automated Active Directory management.
+        
+        For more information, [Read the Docs](https://adman.readthedocs.io/).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
