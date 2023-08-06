@@ -1,0 +1,17 @@
+StockHero/StockExchange.py,sha256=_fSWcArF08LZQTyH3-LMbJDUxTzocsrpbRRN3tQtvKs,26982
+StockHero/StockValuation.py,sha256=cK7K8fZCt0NrO0Q416PpqcrUroMZ7vxdbSjxv18dBY8,4891
+StockHero/Ticker.py,sha256=tei3URQ9JCnLg6kregseA8TS-LLuoLK3vlqNwsyY8XE,8837
+StockHero/__init__.py,sha256=kH5O8GHlW2I7NxNKeGiOBkQQIR6NhDsv3_BL1fTPOIY,284
+StockHero/__version__.py,sha256=HFaz9DjWyRjlHs07VsGWgT8BkXgwfDyEVoFQUb2nj08,2109
+StockHero/Ticker_Sources/__init__.py,sha256=M0NZuQ7-112l8K2h1eayVvSmvQrufrOcD5AYKgIf_Is,1
+StockHero/Ticker_Sources/gurufocus.py,sha256=-P_t98LUzS1EqK1ate1dwWwbcfarKvfV4pURuXQVJ6g,2446
+StockHero/Ticker_Sources/morningstar_key_ratios.py,sha256=QiJDvM96tqWFsKTPskaaBiEvlmrfInYhRIuKP3hsMH4,22568
+StockHero/Ticker_Sources/morningstar_key_statistics.py,sha256=TCdoijx-TehVF1Uytt5RsYe6bKo4d3d-rWkr5_zYwBA,1556
+StockHero/Ticker_Sources/morningstar_quote.py,sha256=sBW1eDNdMucVS8n3y7pfc-mJLSctA3619n4Q4La6P28,5588
+StockHero/Ticker_Sources/nasdaq.py,sha256=gnDX9H_EP--a_WV_YjF3Rzr6pfm_OdCQi0RtLWBRZ2M,22612
+StockHero/Ticker_Sources/yahoo.py,sha256=vWvv66lMCayuWJimEYZT_86MN4mAPIZ6Iq1yqOR6_e0,12506
+StockHero-0.3.1.dist-info/LICENSE,sha256=4SwzzqP13PF8-0g7rvwSI3nz7JJyIaCE5KNs786RlFI,10729
+StockHero-0.3.1.dist-info/METADATA,sha256=FwVN9LUxHXOkdEz6u-QtDTi_-xsxnETlxVX3Lt1nTYg,6210
+StockHero-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+StockHero-0.3.1.dist-info/top_level.txt,sha256=UzD7zwKiglHnsBpCDIW8zLkKwu7H1cX8Vc3rrmPNN6o,10
+StockHero-0.3.1.dist-info/RECORD,,
