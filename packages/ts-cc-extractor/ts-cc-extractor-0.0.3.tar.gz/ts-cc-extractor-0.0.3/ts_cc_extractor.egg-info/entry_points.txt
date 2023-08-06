@@ -1,0 +1,3 @@
+[console_scripts]
+ts-cc-extractor = ts_cc_extractor.__main__:main
+

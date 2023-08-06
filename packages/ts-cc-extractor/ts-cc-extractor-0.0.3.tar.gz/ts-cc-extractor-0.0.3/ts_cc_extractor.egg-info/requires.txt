@@ -1,0 +1,9 @@
+pycaption>=2.0.9
+
+[dev]
+wheel<0.38,>=0.36.2
+tox<4,>=3.5
+pytest<8,>=6.2
+
+[dev:python_version < "3.8"]
+typing-extensions>=4.0.0
