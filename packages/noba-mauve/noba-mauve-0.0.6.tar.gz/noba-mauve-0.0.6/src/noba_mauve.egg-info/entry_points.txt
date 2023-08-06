@@ -1,0 +1,11 @@
+[console_scripts]
+mauve_compress_files = mauve.bin.compress_files:main
+mauve_convert_filenames = mauve.bin.convert_filenames:main
+mauve_epub_slimmer = mauve.bin.epub_slimmer:main
+mauve_epub_to_text = mauve.bin.to_text:main
+mauve_generate_rag = mauve.bin.generate_rag:main
+mauve_mobi_to_epub = mauve.bin.mobi_to_epub:main
+mauve_scrape_author_nationality = mauve.bin.scrape_author_nationality:main
+mauve_scrape_calibre = mauve.bin.scrape_calibre:main
+mauve_scrape_eye = mauve.bin.scrape_eye:main
+mauve_scrape_goodreads = mauve.bin.scrape_goodreads:main
