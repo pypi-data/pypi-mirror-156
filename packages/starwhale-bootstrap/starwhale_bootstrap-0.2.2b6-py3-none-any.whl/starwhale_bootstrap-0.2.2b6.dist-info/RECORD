@@ -1,0 +1,15 @@
+starwhale_bootstrap/__init__.py,sha256=ULQu292Uns7yT3_i2XZeI66fvEE7LTE66GlbSvSRkqY,356
+starwhale_bootstrap/cmd.py,sha256=V1OZBvC-MU8j63ej5LAg35odWCtU3_tnRKiPFJ0mw08,11783
+starwhale_bootstrap/default.py,sha256=OqLr7Qba8MDPrEnx1hV46OoevOgPHlZVy7hpj9G8_BY,1797
+starwhale_bootstrap/deploy.py,sha256=K5bRyULPOzUMbAtFYMDNG1wgyA4H4a4UheIY3dqvYUQ,869
+starwhale_bootstrap/playbook/bootstrap.yaml,sha256=D5G58GsO7M1stPRkX54XX7-aHIgtZ2TwLMgHN4ogzec,374
+starwhale_bootstrap/playbook/roles/agent/tasks/main.yaml,sha256=k8i2d7Ovh3g-pK0F98ZWTbfQlKuyB_bYjYuwEVnEfhk,1871
+starwhale_bootstrap/playbook/roles/controller/tasks/main.yaml,sha256=6mkg_3LLU9U-1K--BT-XT3gduLuEKjCIgovnunUTOE0,1410
+starwhale_bootstrap/playbook/roles/minio/tasks/main.yaml,sha256=NMJRd3zJqTSpVQpla27unnmSSGHXa4FuWT0BhBXssyI,931
+starwhale_bootstrap/playbook/roles/mysql/tasks/main.yaml,sha256=r6yiuog0aI1Hwo-tIys54m-g_kQauLWa-MGiMYyp9vc,660
+starwhale_bootstrap/playbook/roles/nexus/tasks/main.yaml,sha256=zXeHwmYatqeThifX_Cd3XOXksv7xIDyUBsGEPENoB3w,780
+starwhale_bootstrap-0.2.2b6.dist-info/METADATA,sha256=77GEEG1jmPH4NEMqXmHQI3nvyxbmX9rGKvygR_ZwLLQ,1523
+starwhale_bootstrap-0.2.2b6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+starwhale_bootstrap-0.2.2b6.dist-info/entry_points.txt,sha256=BR7IrEQwXsvYXmPuwCwf_lBjJw6t1RRrqemZy2UGuqQ,132
+starwhale_bootstrap-0.2.2b6.dist-info/top_level.txt,sha256=fB9M2wH9sxalPI8chpSwI1I-1BXH2mpl-w8a0oeistI,20
+starwhale_bootstrap-0.2.2b6.dist-info/RECORD,,
