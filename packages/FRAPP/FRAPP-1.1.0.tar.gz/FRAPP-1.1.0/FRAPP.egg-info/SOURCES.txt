@@ -1,0 +1,15 @@
+README.md
+setup.py
+FRAPP/FRAPP.py
+FRAPP/PDF.py
+FRAPP/__init__.py
+FRAPP/loadarxiv.py
+FRAPP.egg-info/PKG-INFO
+FRAPP.egg-info/SOURCES.txt
+FRAPP.egg-info/dependency_links.txt
+FRAPP.egg-info/top_level.txt
+tests/__init__.py
+tests/test_bold_letter.py
+tests/test_end_to_end.py
+tests/test_modify_word_font.py
+tests/test_setup_file.py
