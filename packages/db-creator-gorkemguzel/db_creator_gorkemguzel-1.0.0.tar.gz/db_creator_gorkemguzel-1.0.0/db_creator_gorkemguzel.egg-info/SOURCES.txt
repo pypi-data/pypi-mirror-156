@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+db_creator_gorkemguzel/__init__.py
+db_creator_gorkemguzel/database_creator.py
+db_creator_gorkemguzel.egg-info/PKG-INFO
+db_creator_gorkemguzel.egg-info/SOURCES.txt
+db_creator_gorkemguzel.egg-info/dependency_links.txt
+db_creator_gorkemguzel.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: db-creator-gorkemguzel
+Version: 1.0.0
+Summary: Program that creates database from a text file
+Home-page: UNKNOWN
+Author: Görkem Güzel
+Author-email: guzelgo17@itu.edu.tr
+License: UNKNOWN
+Download-URL: https://github.com/gorkemguzel32/db_creator_gorkemguzel/archive/refs/tags/v1.0.0.tar.gz
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+I developed a program that creates database from a text file for my evaluation process at Organon Analytics.
+
