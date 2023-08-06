@@ -1,0 +1,17 @@
+#
+# Clone URL of the repository containing the Hostea inventory
+#
+HOSTEA_REPO=git@{{ hostea_gitea }}:/{{ hostea_user }}/{{ hostea_project }}
+#
+# Private deploy key with write access to HOSTEA_REPO
+#
+HOSTEA_REPO_SSH_KEY=/srv/hostea/deploy
+#
+# URL of the Woodpecker CI
+#
+HOSTEA_CI=https://{{ hostea_woodpecker }}
+#
+# Path to the file containing the access token for HOSTEA_CI to set in
+# a header: "Authorization: Bearer {HOSTEA_CI_TOKEN}"
+#
+HOSTEA_CI_TOKEN=/srv/hostea/woodpecker-token
