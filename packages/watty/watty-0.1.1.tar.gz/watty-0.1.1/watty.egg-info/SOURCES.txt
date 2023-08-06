@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+watty/__init__.py
+watty/api.py
+watty/util.py
+watty.egg-info/PKG-INFO
+watty.egg-info/SOURCES.txt
+watty.egg-info/dependency_links.txt
+watty.egg-info/requires.txt
+watty.egg-info/top_level.txt
