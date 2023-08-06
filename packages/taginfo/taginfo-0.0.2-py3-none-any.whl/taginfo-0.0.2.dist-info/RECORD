@@ -1,0 +1,11 @@
+example_pkg/__init__.py,sha256=H2qJrPxgg4PdxsZcfALuwIV-KsRhpmtF4FScgf2-x58,22
+example_pkg_matkoniecz/__init__.py,sha256=D7eh9o3-VxZRxCX937FHYsrJe9XRsyn_4cqX3XSKCjc,73
+example_pkg_matkoniecz/lorem_ipsum.py,sha256=cR0JDTGU5IoTz8c5uC_ZiGVmm71RRH7T6AbDjeW_8lg,474
+taginfo/__init__.py,sha256=2eiC5RpoKESpBg99dLcAXv0bRe5utAn_VSKAaD1YpPg,20
+taginfo/lorem_ipsum.py,sha256=cR0JDTGU5IoTz8c5uC_ZiGVmm71RRH7T6AbDjeW_8lg,474
+taginfo/query.py,sha256=UxhknxfnZ8SDM77JEquq9z5uRAAdEogH-cFG8f2nauo,863
+taginfo-0.0.2.dist-info/LICENSE,sha256=LveK7S_LBIG0nwa5D0RwNUcEaNbqy8jznE3eGAQlE_s,1075
+taginfo-0.0.2.dist-info/METADATA,sha256=klbZAUDp2P2zMNT8a6Hw0JBs7rhq3HdrIUhIxYo-BUs,541
+taginfo-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+taginfo-0.0.2.dist-info/top_level.txt,sha256=HdAJfH5nblc4-ZzdKR0WTxI7phozZZ8LyrPUpV4_P6c,8
+taginfo-0.0.2.dist-info/RECORD,,
