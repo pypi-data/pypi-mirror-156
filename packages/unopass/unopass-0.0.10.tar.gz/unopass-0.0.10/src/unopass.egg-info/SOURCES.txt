@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/unopass/__init__.py
+src/unopass/unopass.py
+src/unopass.egg-info/PKG-INFO
+src/unopass.egg-info/SOURCES.txt
+src/unopass.egg-info/dependency_links.txt
+src/unopass.egg-info/top_level.txt
