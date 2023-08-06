@@ -1,0 +1,8 @@
+cellshape_cloud/__init__.py,sha256=mHDpjd82DchtPalD90k5oCAwr7K0-JZjRDQjiRsY5X8,368
+cellshape_cloud/cloud_autoencoder.py,sha256=bbnT4g0OQKK8mkxFXf7e_-2iBC_y7nw8djY5VzqMhv0,1497
+cellshape_cloud/pointcloud_dataset.py,sha256=vbpA_KynRAUpa3maavZQDNXdaeP64B51VBg8MTZNorY,632
+cellshape_cloud/training_functions.py,sha256=WXgswD9gehhe9enWMi6PwzHymVyXEi2l8prR9uHZbFM,2674
+cellshape_cloud-0.0.9rc0.dist-info/METADATA,sha256=16ghgmgPPPhf-GxhSlJLQIjKhwHsXpu7s9b8i89VI8I,5594
+cellshape_cloud-0.0.9rc0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cellshape_cloud-0.0.9rc0.dist-info/top_level.txt,sha256=Y6t0-wdn7lx_ZJs8UKRPlCjQhc4Qcb4y3J1dSTo5SXM,16
+cellshape_cloud-0.0.9rc0.dist-info/RECORD,,
