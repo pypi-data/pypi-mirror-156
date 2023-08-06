@@ -1,0 +1,1 @@
+from .quicksample101 import quicktext
