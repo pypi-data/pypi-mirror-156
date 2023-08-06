@@ -1,0 +1,9 @@
+logpass_pytest_plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logpass_pytest_plugins/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logpass_pytest_plugins/contrib/auto_pytest_factoryboy.py,sha256=Dng8SdDyjzhJbwN_ztd8lPuYjVkiZhf-NmViiZt93qk,4068
+logpass_pytest_plugins/contrib/channels.py,sha256=bm5kqOEUHAYiD3kCgzzExg-Bh3EOdW25EOT8JbKzBu8,1550
+logpass_pytest_plugins/contrib/rest_framework.py,sha256=g3Esw2XI15ZSH8gsORtY-xRo-5g5xTjEexLtngwuQEg,346
+logpass_pytest_plugins-0.0.5.dist-info/entry_points.txt,sha256=Z5ju3EdoF5HWHPUo3WniXeBHn9lHhob8LdKHS_fzHlk,199
+logpass_pytest_plugins-0.0.5.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+logpass_pytest_plugins-0.0.5.dist-info/METADATA,sha256=E3o3xpeX4A0_to1rC8QFvCx7gx_ehqTP2hMpYtm8JQs,3740
+logpass_pytest_plugins-0.0.5.dist-info/RECORD,,
