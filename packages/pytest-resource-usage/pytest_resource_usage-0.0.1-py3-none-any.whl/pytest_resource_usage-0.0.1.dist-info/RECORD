@@ -1,0 +1,9 @@
+pytest_resource_usage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_resource_usage/duration.py,sha256=4jKzvwvBGIBQAOfxdIqG4hxygH6pXNF6eLaCCrOIf1k,609
+pytest_resource_usage/report.py,sha256=7nQGNQsN4-9Wf6T4avZ4-yrcVoIY5W63d6WjQceunHc,1073
+pytest_resource_usage/tracemalloc.py,sha256=Ae7oCOoe-GIAXnXQs6Lk6k74RqQnIuvi3h8IoGIC5GA,1148
+pytest_resource_usage-0.0.1.dist-info/entry_points.txt,sha256=-N_B3ALs-vKmHaPV6hVYD9vNMOluTlm7_Oe-P5My0vA,163
+pytest_resource_usage-0.0.1.dist-info/LICENSE,sha256=cGTcPYborFXeW7rGzf4GfCre7ioVVCe9rOhTBR8uKVQ,1096
+pytest_resource_usage-0.0.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+pytest_resource_usage-0.0.1.dist-info/METADATA,sha256=7B-LAhnWGBxpKun4J0tGXcKYJFPUwpJMUnzG-I-w-qg,2805
+pytest_resource_usage-0.0.1.dist-info/RECORD,,
