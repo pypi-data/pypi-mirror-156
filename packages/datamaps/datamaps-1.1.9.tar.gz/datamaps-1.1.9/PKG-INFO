@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: datamaps
+Version: 1.1.9
+Summary: Collect and clean data using Excel spreadsheets.
+Home-page: https://github.com/hammerheadlemon/datamaps
+Author: Matthew Lemon
+Author-email: matt@matthewlemon.com
+Maintainer: Matthew Lemon
+Maintainer-email: matt@matthewlemon.com
+Keywords: data console commandline excel
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+![Tests](https://github.com/hammerheadlemon/datamaps/workflows/Tests/badge.svg)
+
+## Introduction
+
+`datamaps` is a command line tool, written in Python, which facilitates the collection of data using Excel as the 'form'. It accepts that Excel files are freely distributable, easy to understand and already well integrated in the non-technical office environment.
+
+The tool uses a concept a *datamap*, which is simple, user-created CSV file which maps cell references within Excel 'templates'. The datamap concept makes it easy to design pretty Excel spreadsheets with blank cells (the 'template') intended for the user to complete - the cell references in the datamap inform the `datamaps` program where it should expect to find user-entered data. At this point, the output is another *master* spreadsheet which contains all the data from each completed template compiled into a single table. This is then used by other tools for further analysis.
+
+The documentation found at [Datamaps - Twenty Four Software](https://datamaps.twentyfoursoftware.com) gives a more detailed explanation.
+
+## Installation
+
+`pip install datamaps`
+
+## Bugs and issues
+
+Please report bugs as [Github issues](https://github.com/yulqen/datamaps/issues).
