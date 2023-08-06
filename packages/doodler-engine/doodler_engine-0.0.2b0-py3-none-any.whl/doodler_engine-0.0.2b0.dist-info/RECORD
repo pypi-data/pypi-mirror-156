@@ -1,0 +1,12 @@
+doodler_engine/__init__.py,sha256=BJqnMdp4oEiUz4fuOUxz4FXy85oE6AgTgHI3SPQv9QY,147
+doodler_engine/_version.py,sha256=HgkcnQUEpoyLZj57GEZNZChZ-Bp0YsHyxyoHQjcUADw,503
+doodler_engine/annotations_to_segmentations.py,sha256=yx4TAbm7Zi4h8EkieLP9hmc24ZYgS22e2dmjZ1-MmpM,14965
+doodler_engine/app_funcs.py,sha256=IyKi_1K1PfuzZp7gpDsD5TRLImxbIpIC8sEWiRtMwBA,4540
+doodler_engine/defaults.py,sha256=CVjQERxhGtlaH7x1_fNf83ZPCgbMWgtk7qx0GuklRFw,1381
+doodler_engine/image_segmentation.py,sha256=V8Q1LBjc3aKAt7JMp46VcHMn8EEf-YO8Xeu9K0GvLxQ,17264
+doodler_engine/plot_utils.py,sha256=XK0zLvNwI0SQh91rKoLMtlSdZTjSWzswYSxPgmgfKG8,4713
+doodler_engine-0.0.2b0.dist-info/LICENSE,sha256=2iu1gHn76liQOSjkl880WZ1hdulnvPJF1cZA-4oXO7k,1068
+doodler_engine-0.0.2b0.dist-info/METADATA,sha256=ujZNq-u9Z2chACsSMlgaJOT240Uk1KVlW5toeFszAK0,508
+doodler_engine-0.0.2b0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+doodler_engine-0.0.2b0.dist-info/top_level.txt,sha256=DoyhP8M864zFLD7rGrF8-YOvYKLoYvtAocIS8r6D3o4,15
+doodler_engine-0.0.2b0.dist-info/RECORD,,
