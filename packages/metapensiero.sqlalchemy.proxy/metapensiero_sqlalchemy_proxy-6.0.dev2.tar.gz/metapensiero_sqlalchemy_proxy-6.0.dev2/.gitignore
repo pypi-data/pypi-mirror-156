@@ -1,0 +1,15 @@
+*.autosave
+*.egg-info
+*.py[co]
+/.cache/
+/.coverage
+/.eggs/
+/.emacs.desktop.lock
+/.pytest_cache/
+/.tox/
+/build/
+/dist/
+/doc/_build/
+/emacs.desktop
+/env/
+__pycache__/
