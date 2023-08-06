@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dycifer
+Version: 0.1.0
+Summary: DYCIFER (Dynamic Circuits Performance Evaluation Tool) is a tool dedicated to the calculation of the performance indicators of integrated circuits operating at relatively high frequencies.
+Home-page: https://github.com/das-dias/dyciferpy
+License: MIT
+Keywords: dynamic integrated circuit,performance evaluation,tool,eda
+Author: Diogo André S. Dias
+Author-email: das.dias6@gmail.com
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Markdown (>=3.3.7,<4.0.0)
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: colorama (>=0.4.5,<0.5.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: modelling-utils (>=0.2.11,<0.3.0)
+Requires-Dist: numpy (>=1.22.4,<2.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: plotext (>=5.0.2,<6.0.0)
+Requires-Dist: pyfiglet (>=0.8.post1,<0.9)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/das-dias/dyciferpy
