@@ -1,0 +1,12 @@
+vier_gewinnt_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vier_gewinnt_package/game.py,sha256=H5GyrxoFceHwHaBOSezcvPJVb8UPU7nSj5WGn7YhHvQ,2816
+vier_gewinnt_package/game_piece.py,sha256=uNO_0_CkQUV3KVd4RsDv0xGpjQu3rukZlesNUAE08To,205
+vier_gewinnt_package/game_table.py,sha256=sq4rbP_lC_Y_neowff0zhkrsyB4SCreaHB8Xu7T2qTc,7986
+vier_gewinnt_package/main.py,sha256=xrrxdr_w-mCJyWRy8ptDgxwOHKhq4DFROFt8kEKIYGY,117
+vier_gewinnt_package/player.py,sha256=4beKgebPzFvCQQs30Y4rZFEI2h6KSCnDPgAOzVYyip8,81
+vier_gewinnt_package/player_type.py,sha256=tPI1yOEVV-zoKAckUYskbaI96OLfwFbZZUi6FEnzMgc,1393
+vier_gewinnt_kianbuechner-1.0.0.dist-info/LICENSE.LIC,sha256=7fjGGLCGg00zAGvrnQdbojl8B6SFJiK_H5jukgXbkLs,1056
+vier_gewinnt_kianbuechner-1.0.0.dist-info/METADATA,sha256=Oyx_svGfTIpO3spq0FE4c51AgOathaY4Ldp2naeaWKM,637
+vier_gewinnt_kianbuechner-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vier_gewinnt_kianbuechner-1.0.0.dist-info/top_level.txt,sha256=AuQqm05cKUFY_lNyRAsbOHnN5ZrU6eufQp-8z5UYkkQ,21
+vier_gewinnt_kianbuechner-1.0.0.dist-info/RECORD,,
