@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cellshape_cloud/__init__.py
+cellshape_cloud/cloud_autoencoder.py
+cellshape_cloud/pointcloud_dataset.py
+cellshape_cloud/training_functions.py
+cellshape_cloud.egg-info/PKG-INFO
+cellshape_cloud.egg-info/SOURCES.txt
+cellshape_cloud.egg-info/dependency_links.txt
+cellshape_cloud.egg-info/not-zip-safe
+cellshape_cloud.egg-info/requires.txt
+cellshape_cloud.egg-info/top_level.txt
