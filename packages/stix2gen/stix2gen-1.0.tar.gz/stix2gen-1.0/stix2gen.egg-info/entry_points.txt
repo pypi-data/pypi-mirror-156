@@ -1,0 +1,3 @@
+[console_scripts]
+stix2gen = stix2gen.cli:cli
+
