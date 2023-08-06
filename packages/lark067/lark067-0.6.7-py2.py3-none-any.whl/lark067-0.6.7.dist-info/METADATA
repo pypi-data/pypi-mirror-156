@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: lark067
+Version: 0.6.7
+Summary: a modern parsing library
+Home-page: https://github.com/skieffer/lark
+Author: Erez Shinan
+Author-email: UNKNOWN
+License: MIT
+Keywords: Earley LALR parser parsing ast
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: MIT License
+
+This package exists to make a wheel available for v0.6.7
+of [Lark](https://pypi.org/project/lark-parser/).
+
+Many thanks to the makers of Lark, for an excellent library!
+
+
+
