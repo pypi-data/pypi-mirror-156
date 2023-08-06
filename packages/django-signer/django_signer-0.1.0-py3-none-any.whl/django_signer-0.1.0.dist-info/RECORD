@@ -1,0 +1,7 @@
+django_signer/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+django_signer/signing.py,sha256=ecv7sN5d_Au00Enx0BBAlghY7DhNPwQGttjWpIwwvmo,7822
+django_signer-0.1.0.dist-info/LICENSE,sha256=uEZBXRtRTpwd_xSiLeuQbXlLxUbKYSn5UKGM0JHipmk,1552
+django_signer-0.1.0.dist-info/LICENSE.python,sha256=pSxfIaEVix6-28uSiusYmITnfjxeOIw41mDVk-cf7x8,14383
+django_signer-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+django_signer-0.1.0.dist-info/METADATA,sha256=mFuwjSjPCkcXBPKTyq4yOvS92mpP2PZc1EpbwE0dQfU,492
+django_signer-0.1.0.dist-info/RECORD,,
