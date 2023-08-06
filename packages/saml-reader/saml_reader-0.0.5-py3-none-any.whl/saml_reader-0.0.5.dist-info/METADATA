@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: saml-reader
+Version: 0.0.5
+Summary: SAML response parser for MongoDB Cloud
+Home-page: https://github.com/clegaspi/saml_reader
+Author: Christian Legaspi
+Author-email: christian.legaspi@mongodb.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pyperclip
+Requires-Dist: haralyzer
+Requires-Dist: python3-saml
+Requires-Dist: cryptography
+Requires-Dist: networkx
+Requires-Dist: lxml (<4.7.1)
+Requires-Dist: defusedxml
+Requires-Dist: dash
+Requires-Dist: Flask (==1.1.2)
+Requires-Dist: dash-extensions (==0.0.71)
+
+UNKNOWN
+
