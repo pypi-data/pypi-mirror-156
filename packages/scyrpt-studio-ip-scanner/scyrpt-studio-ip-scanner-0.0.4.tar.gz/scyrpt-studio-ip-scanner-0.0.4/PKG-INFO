@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: scyrpt-studio-ip-scanner
+Version: 0.0.4
+Summary: Pip package to scan IP address on local ip range.
+Author-email: Rishabh Wadhwa <rishabh0206@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 rishabh0206
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/rishabh0206/ip-scanner
+Keywords: ip,scanner
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# ip-scanner
+Pip package to scan IP address on local ip range.
+
+It scans all ip addresses on specified range and port/s and returns the list of live IP addresses.
+
+### Installation
+You can install the IP Scanner from PyPI:
+```
+python -m pip install scyrpt-studio-ip-scanner
+```
+
+IP Scanner is supported on Python 3.8 and above.
+
+### How to use
+
+There are 2 ways to use this library -
+
+1. Start IP scanning from command line. To do that, simply run -
+```
+ip_scanner <<First 3 parts of IP>> <<Ports (Can be multiple, separated by comma)>> <<Start IP Address>> <<End IP Address>>
+
+Ex. - ip_scanner "192.168.1." "80" "5" "15" 
+Will scan IP's from 192.168.1.5 to 192.168.1.15 on Port 80
+```
+
+2. Import in your code and scan/trigger it via your code -
+```
+from ip_scanner.ip_scanner import IPScanner
+
+ipScanner = IPScanner(base_ip="192.168.1.", ports=(80, ), start_ip=5, end_ip=15)
+ipScanner.start_scanning()
+```
+It returns a list of live IP addresses found in the specified range

@@ -1,0 +1,2 @@
+[console_scripts]
+ip_scanner = ip_scanner:main

@@ -1,0 +1,7 @@
+
+[dev]
+black
+bumpversion
+isort
+pip-tools
+pytest

@@ -1,0 +1,30 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scyrpt-studio-ip-scanner"
+version = "0.0.4"
+description = "Pip package to scan IP address on local ip range."
+readme = "README.md"
+authors = [{ name = "Rishabh Wadhwa", email = "rishabh0206@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["ip", "scanner"]
+dependencies = []
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["black", "bumpversion", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/rishabh0206/ip-scanner"
+
+[project.scripts]
+ip_scanner = "ip_scanner:main"
