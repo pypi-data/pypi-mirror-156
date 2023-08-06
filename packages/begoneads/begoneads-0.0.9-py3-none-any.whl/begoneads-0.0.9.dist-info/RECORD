@@ -1,0 +1,17 @@
+begoneads/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+begoneads/begoneads.py,sha256=ON65hIsj-E5v2_qxqPLdmDQ_f4XwCCNMfBWat6_6Ojg,4588
+begoneads/exceptions.py,sha256=Ui0LvlDqaXoOfW6n5E2CRfBdBaRpMq4YPfY4ZJozZ0g,232
+begoneads/helpers.py,sha256=6TfOsZk7koPpty_3lh0C8GU5BR4zDqh6uFNsSWGyHRc,451
+begoneads/hostsmanager.py,sha256=ZGxKZfhikOvdyVF9sAu0149phE8VY5eqNDmpu8C0amU,1409
+begoneads/hostsmanager_test.py,sha256=AqKz0EjD8COCz-cMGvIpa7dXGn2FTeCeNluy3egnPso,1668
+begoneads/collectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+begoneads/collectors/base_collector.py,sha256=VW_EjNClZtC7jEyibk0bBGctBcls66cHlWjWXoPui04,1217
+begoneads/collectors/local_collector.py,sha256=j8fh8IHzHGYWLlAblrB50mIVNKzu2uR76PMW9ZhuL70,465
+begoneads/collectors/remote_collector.py,sha256=UeJBzCVTuA-hYR0rq9Sg901x4xAiuzqvfW4vtS5oS3s,662
+begoneads/collectors/remote_collector_test.py,sha256=oD32VxpArpBEnCWWqyTabLPuhjuJnxllhvyBx3lnnjg,896
+begoneads-0.0.9.dist-info/LICENSE.md,sha256=wPewYB-8sPVfK8aNrh5DL6Gts0VMb6SfZ_aVE2AZyro,1073
+begoneads-0.0.9.dist-info/METADATA,sha256=_xRx8vccYvH3y9NrzjFNTLjzEYwXU_P1r4UlxE3egWc,4460
+begoneads-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+begoneads-0.0.9.dist-info/entry_points.txt,sha256=W_Osqs5zOipJmFepR-e5qwD89B9k8edTddbVv_FXcYg,55
+begoneads-0.0.9.dist-info/top_level.txt,sha256=FikxowB-BNbVAFIVbRYIn1U9q4qXE1W8BXASaCot7mQ,10
+begoneads-0.0.9.dist-info/RECORD,,
