@@ -1,0 +1,8 @@
+README.md
+setup.py
+backspace/__init__.py
+backspace/backspace.py
+backspace.egg-info/PKG-INFO
+backspace.egg-info/SOURCES.txt
+backspace.egg-info/dependency_links.txt
+backspace.egg-info/top_level.txt
