@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: strawhat
+Version: 0.2.0
+Summary: Wrapper module for aws boto3
+Author-email: Mridul Ahluwalia <ahluwaliamridul@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2018 Real Python
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Keywords: strawhat,aws,boto3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pypi-strawhat
+My own python module with useful functions
+
+## strawhat module contains wrapper for aws boto3
+
+This module makes interacting with aws services quite simple. It is built on top of AWS' boto3 module
+
+## Key Features
+
+> - Module has in built handling of `LastEvaluatedKey` while calling scan and query operations
+> - Module will convert `float` to `Decimal` while calling put and update operations
+> - Module will convert `Decimal` to `float` while calling scan and query operations
+
+## How to use
+
+Below snippet contains a basic guide to use access dynamodb
+
+```python
+# imports
+from strawhat.aws import AWS, Dynamodb
+
+# constants
+access_key = '***'
+secret_key = '***'
+region = 'ap-south-1'
+table_name = 'my_table'
+
+# initialising aws instance
+aws = AWS(access_key, secret_key, region) # default region is 'ap-south-1'
+db_resource = aws.resource('dynamodb')
+
+# initialise dynamodb
+ddb = Dynamodb(db_resource)
+ddb.connect2table(table_name)
+
+# executing a scan operation
+conditions = {} # put the conditions for scan in the dictionary
+responses = ddb.scan_table(table_name, conditions)
+```
+
+## Supported Functions
+
+> #### Dynamodb
+- scan_table(table_name, conditions)
+- query_table(table_name, conditions)
+- put_data(table_name, data)
+- get_data(table_name, conditions)
+- update_row(table_name, conditions)
+- delete_row(table_name, conditions)
+- batch_write(table_name, data_list)
+
+> #### S3
+- read_object(bucket_name, bucket_object)
+- put_object(bucket_name, bucket_object, content)
+
+## User Note
+
+The module is still a work in progress
