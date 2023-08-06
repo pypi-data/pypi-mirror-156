@@ -1,0 +1,12 @@
+tap_userflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_userflow/client.py,sha256=Gp4yRdELVePC7qXFtCUG9SKSohvQ8wDSrttuJjSHKzM,3662
+tap_userflow/schemas/content-session.json,sha256=weqO2xR50U6S2RzZ1Lp3H4f906K8FczUiQMSHUkdxzI,1241
+tap_userflow/schemas/content.json,sha256=PYhvBC4oKrYUCt_hfZadCoqBN9QXn8TD5N_Mq7tmAKg,728
+tap_userflow/streams.py,sha256=TVFitVh-xQFzkB1ctzTpOoN-eA4oeQ0cncbAIOMjQMA,1329
+tap_userflow/tap.py,sha256=Vr2Dr47yjkiALWgMASZP_BXPBqck6DbqHMlnLXCtqf4,1092
+tap_userflow/tests/__init__.py,sha256=V3TrDLjVd8MW-9W42quoOx2Q8ylcJxYyUUgWFr4tu0E,36
+tap_userflow/tests/test_core.py,sha256=3aI7Xx2W_RrPkjFj-mQuqPXkv3RmfBWIDWfawMf--ik,680
+tap_userflow-0.0.3.dist-info/entry_points.txt,sha256=pxaBKLmjfEfZ_Q1wC2S6g8q7j_tXdSm2m9BzYDIrb34,65
+tap_userflow-0.0.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+tap_userflow-0.0.3.dist-info/METADATA,sha256=G0iK9GGrR9vS73PClmcHWVKeBOoJZ_3I7pkhY1wDlpo,583
+tap_userflow-0.0.3.dist-info/RECORD,,
