@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/AthenaServerClient/__init__.py
+src/AthenaServerClient.egg-info/PKG-INFO
+src/AthenaServerClient.egg-info/SOURCES.txt
+src/AthenaServerClient.egg-info/dependency_links.txt
+src/AthenaServerClient.egg-info/top_level.txt
+src/AthenaServerClient/_info/__init__.py
+src/AthenaServerClient/_info/_v.py

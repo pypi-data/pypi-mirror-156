@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: AthenaServerClient
+Version: 0.0.0
+Summary: A general server system for Directive Athena Applications
+Home-page: https://github.com/DirectiveAthena/AthenaServer
+Author: Andreas Sas
+Author-email: 
+License: GPLv3
+Project-URL: Bug Tracker, https://github.com/DirectiveAthena/AthenaServer/issues
+Requires-Python: >=3.10
