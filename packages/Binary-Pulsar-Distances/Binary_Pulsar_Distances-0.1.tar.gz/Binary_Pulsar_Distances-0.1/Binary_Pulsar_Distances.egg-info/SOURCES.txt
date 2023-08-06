@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+Binary_Pulsar_Distances/__init__.py
+Binary_Pulsar_Distances/match_gaia_to_psr.py
+Binary_Pulsar_Distances.egg-info/PKG-INFO
+Binary_Pulsar_Distances.egg-info/SOURCES.txt
+Binary_Pulsar_Distances.egg-info/dependency_links.txt
+Binary_Pulsar_Distances.egg-info/top_level.txt
