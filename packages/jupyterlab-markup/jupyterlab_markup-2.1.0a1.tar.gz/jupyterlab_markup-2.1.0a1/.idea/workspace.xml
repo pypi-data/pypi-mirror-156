@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0bdae7d5-cc9e-4e58-8ec4-975963a7cd1e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1655930776" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="fix-webpack-chunks" />
+                    <option name="lastUsedInstant" value="1655930753" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feat-add-post-render" />
+                    <option name="lastUsedInstant" value="1655844416" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="2AtChgaV43DfHzW6KyPzEh8Uv6E" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/angus/Git/jupyter-renderers/packages/mathjax3-extension",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/home/angus/Git/jupyterlab-markup/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/home/angus/Git/jupyterlab-markup/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/builtins" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bdae7d5-cc9e-4e58-8ec4-975963a7cd1e" name="Changes" comment="" />
+      <created>1655819615127</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655819615127</updated>
+      <workItem from="1655819616420" duration="20014000" />
+      <workItem from="1655890587168" duration="37973000" />
+    </task>
+    <task id="LOCAL-00001" summary="Refactor: strict null checks">
+      <created>1655826055490</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655826055490</updated>
+    </task>
+    <task id="LOCAL-00002" summary="WIP: initial commit">
+      <created>1655844434303</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655844434303</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Refactor: rename typesetter → typesetter-adaptor&#10;Feat: remove unneeded math wrappers">
+      <created>1655905220006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655905220006</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Feat: add rank to plugins">
+      <created>1655906219443</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655906219443</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Feat: add rank to plugins">
+      <created>1655908852258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655908852258</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Feat: add pre-parse hook">
+      <created>1655909080009</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655909080009</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Feat: don't return node form postRender">
+      <created>1655909187649</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655909187649</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Package: set alpha version of new release">
+      <created>1655909425260</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655909425260</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Docs: improve documentation">
+      <created>1655914116312</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655914116312</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix: note correct chunk name">
+      <created>1655930181599</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1655930181599</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix: note correct chunk name">
+      <created>1655930233787</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655930233787</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Docs: improve demo">
+      <created>1655930677869</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655930677869</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix: restore legacy interface">
+      <created>1655931813318</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1655931813318</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Feat: add warning about deprecated interface">
+      <created>1655935449199</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1655935449199</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fix: sort options by rank">
+      <created>1655935479044</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1655935479044</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Feat: allow optional plugins">
+      <created>1655935502208</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1655935502208</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Refactor: make options order&#10;base -&gt; user -&gt; widget -&gt; explicit">
+      <created>1655936214951</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1655936214951</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fix: revert options order">
+      <created>1655978594290</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1655978594290</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Refactor: code cleanups">
+      <created>1655979291932</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1655979291932</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactor: don't async load hooks&#10;&#10;There's an argument to be made for also having an async hook provider, but the hooks themselves are async, so this is a lot of duplication for an edge case. If plugins need to do work, they can cache it themselves.&#10;&#10;Async provision of the core MarkdownIt plugin makes sense, as these need to be registered immediately.">
+      <created>1655979670317</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1655979670317</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor: increase strictness and remove option" />
+    <MESSAGE value="Refactor: remove enabled" />
+    <MESSAGE value="Refactor: strict null checks" />
+    <MESSAGE value="Feat: expand MarkdownIt type into schema" />
+    <MESSAGE value="WIP: initial commit" />
+    <MESSAGE value="WIP: dollarmath rendering" />
+    <MESSAGE value="Refactor: rename typesetter → typesetter-adaptor&#10;Feat: remove unneeded math wrappers" />
+    <MESSAGE value="Feat: add rank to plugins" />
+    <MESSAGE value="Feat: add pre-parse hook" />
+    <MESSAGE value="Feat: don't return node form postRender" />
+    <MESSAGE value="Package: set alpha version of new release" />
+    <MESSAGE value="Docs: improve documentation" />
+    <MESSAGE value="Fix: note correct chunk name" />
+    <MESSAGE value="Docs: improve demo" />
+    <MESSAGE value="Fix: restore legacy interface" />
+    <MESSAGE value="Feat: add warning about deprecated interface" />
+    <MESSAGE value="Fix: sort options by rank" />
+    <MESSAGE value="Feat: allow optional plugins" />
+    <MESSAGE value="Refactor: make options order&#10;base -&gt; user -&gt; widget -&gt; explicit" />
+    <MESSAGE value="Fix: revert options order" />
+    <MESSAGE value="Refactor: code cleanups" />
+    <MESSAGE value="Refactor: don't async load hooks&#10;&#10;There's an argument to be made for also having an async hook provider, but the hooks themselves are async, so this is a lot of duplication for an edge case. If plugins need to do work, they can cache it themselves.&#10;&#10;Async provision of the core MarkdownIt plugin makes sense, as these need to be registered immediately." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor: don't async load hooks&#10;&#10;There's an argument to be made for also having an async hook provider, but the hooks themselves are async, so this is a lot of duplication for an edge case. If plugins need to do work, they can cache it themselves.&#10;&#10;Async provision of the core MarkdownIt plugin makes sense, as these need to be registered immediately." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
