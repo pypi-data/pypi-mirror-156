@@ -1,0 +1,53 @@
+Changelog
+=========
+
+Versions follow the `Semantic Versioning 2.0.0 <https://semver.org/>`_
+standard.
+
+.. Entry title format: django-overcomingbias-api 1.2.3 (release date)
+
+.. Entry items:
+.. Breaking Changes = backward-incompatible changes
+.. Deprecations = functionality marked as deprecated
+.. Features = Added new features
+.. Improvements = Improvements to existing features
+.. Bug Fixes
+.. Improved Documentation
+.. Trivial/Internal Changes
+
+django-overcomingbias-api 0.2.1 (2022-06-27)
+--------------------------------------------
+
+Improvements
+^^^^^^^^^^^^
+
+- Download overcomingbias posts in chunks by default to reduce memory usage.
+  Chunk size is controlled by the ``OBAPI_DOWNLOAD_BATCH_SIZE`` setting.
+
+
+django-overcomingbias-api 0.2.0 (2022-05-30)
+--------------------------------------------
+
+Features
+^^^^^^^^
+
+- Ability to export sequences of posts using pandoc.
+
+Improvements
+^^^^^^^^^^^^
+
+- Preprocessing of HTML content from overcomingbias posts
+
+- Refactored ModelAdmin classes (to allow for asynchronous execution of some actions)
+
+Bug fixes
+^^^^^^^^^
+
+- Various bug fixes
+
+django-overcomingbias-api 0.1.0 (2022-04-13)
+--------------------------------------------
+
+Initial release.
+
+See docs at `<https://django-overcomingbias-api.readthedocs.io/en/stable/>`_.
