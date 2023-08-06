@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+docs/__init__.py
+docs/chart.py
+docs/conf.py
+examples/__init__.py
+gviz_data_table/__init__.py
+gviz_data_table/cell.py
+gviz_data_table/column.py
+gviz_data_table/encoder.py
+gviz_data_table/table.py
+gviz_data_table.egg-info/PKG-INFO
+gviz_data_table.egg-info/SOURCES.txt
+gviz_data_table.egg-info/dependency_links.txt
+gviz_data_table.egg-info/top_level.txt
