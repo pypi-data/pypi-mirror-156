@@ -1,0 +1,15 @@
+clearsoda/__init__.py,sha256=0NoNXDLZ56_a_5kufAwMrYF0Q9RiJe4RIFPRHRhHgZA,36
+clearsoda/code.py,sha256=LlUXutR7nQ1J9-08e98OEwMzRt-fbv6QraxN2sVeUys,2011
+clearsoda/codeprimitives.py,sha256=kBBappB9M9NjpKH9Lq3qQSygYMSi4RKpjsVrxwOP9ZU,4144
+clearsoda/helpers.py,sha256=6vLGSbwl4jEhAOmYlN0zpXEE0hmfe0rrSczYkihteNY,2274
+clearsoda/looks.py,sha256=DPCHQsJDSBgD8V9v_B81JeIRFyMJAQXydGt87q4z6lM,5335
+clearsoda/motion.py,sha256=ChFEFfIcdioJSEzA_3HmGH8wkO95iOeo9r9CuyTn14w,2500
+clearsoda/operator.py,sha256=W3u2Vs8IPPUHS_gRT0Soj56Yl4RjaCgpsAO7ENqdpVQ,4036
+clearsoda/scratchproject.py,sha256=FD76CzEW70vZk-0kkgX3yFc7eK3HFDcumryaZCxHSzE,537
+clearsoda/sensing.py,sha256=f5L5qub1xz5W5fMR-OPWkvbDaIdlAwsSRpi-ct5lAlY,2865
+clearsoda/sound.py,sha256=PgT-zJtEePtnB8nqa4R3moE6C9NXmgqHvABMmrKUY-E,1863
+clearsoda-0.0.1.dist-info/LICENSE,sha256=_auMX3BGQyLQFl6rqeBjRFJlyf3TxnvisAisn1hZXxQ,1065
+clearsoda-0.0.1.dist-info/METADATA,sha256=_T93w_957G0gR6PtdAjbd4JV4NOYOPTU_ccIMks1Pa0,515
+clearsoda-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+clearsoda-0.0.1.dist-info/top_level.txt,sha256=6YgqWjm84Sp-bG0eFwYoXbESjbymAHyc8xcNO4FY4AI,10
+clearsoda-0.0.1.dist-info/RECORD,,
