@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: events-ingestion-client
+Version: 0.0.1
+Summary: Events Ingestion API
+Home-page: 
+Author-email: support@datakitchen.io
+Keywords: Swagger,Events Ingestion API
+
+    The Observation platform&#x27;s Events Ingestion API  # noqa: E501
+    
