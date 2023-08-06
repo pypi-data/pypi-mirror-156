@@ -1,0 +1,2 @@
+pyqt-custom-titlebar-setter>=0.0.1
+qtsasstheme>=0.0.1qtpy>=0.0.1
