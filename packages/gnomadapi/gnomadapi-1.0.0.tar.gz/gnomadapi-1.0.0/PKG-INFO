@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gnomadapi
+Version: 1.0.0
+Summary: selenium wrapper to access gnomad db from the cmd
+License: MIT
+Author: StephanHolgerD
+Author-email: stephdruk@googlemail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: chromedriver-binary (>=104.0.5112,<105.0.0)
+Requires-Dist: chromedriver-binary-auto (==0.1.2)
+Requires-Dist: glob2 (>=0.7,<0.8)
+Requires-Dist: selenium (==4.2.0)
