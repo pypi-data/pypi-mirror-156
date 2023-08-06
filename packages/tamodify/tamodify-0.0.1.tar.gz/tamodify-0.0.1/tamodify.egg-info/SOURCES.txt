@@ -1,0 +1,10 @@
+README.md
+setup.py
+../c/tajk_data.c
+../c/tajk_modify.c
+src/tamodify.c
+tamodify.egg-info/PKG-INFO
+tamodify.egg-info/SOURCES.txt
+tamodify.egg-info/dependency_links.txt
+tamodify.egg-info/not-zip-safe
+tamodify.egg-info/top_level.txt

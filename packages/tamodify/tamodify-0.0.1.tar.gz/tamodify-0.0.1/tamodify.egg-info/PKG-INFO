@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tamodify
+Version: 0.0.1
+Summary: TA接口文件修改
+Home-page: UNKNOWN
+Author: Chen chuan
+Author-email: 13902950907@139.com
+License: UNKNOWN
+Description: TA 接口文件修改库
+        
+        可以读出文件，修改一些字段或者是增加、删除某些行，再写入一个新文件
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
