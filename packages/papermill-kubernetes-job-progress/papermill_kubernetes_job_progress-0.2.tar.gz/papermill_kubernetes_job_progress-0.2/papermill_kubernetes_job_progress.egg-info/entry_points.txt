@@ -1,0 +1,2 @@
+[papermill.engine]
+kubernetes_job_progress = papermill_kubernetes_job_progress:KubernetesJobProgressEngine
