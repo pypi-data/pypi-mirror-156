@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: amplitude-data-wrapper
+Version: 0.1.2
+Summary: python wrapper for using the amplitude analytics and taxonomy APIs
+License: MIT
+Author: Tobias McVey
+Author-email: tobias.mcvey@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
