@@ -1,0 +1,3 @@
+[console_scripts]
+seq2neo = seq2neo.main:main
+

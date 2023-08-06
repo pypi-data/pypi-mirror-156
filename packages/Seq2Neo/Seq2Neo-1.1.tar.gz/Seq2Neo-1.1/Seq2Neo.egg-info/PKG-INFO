@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Seq2Neo
+Version: 1.1
+Summary: Seq2Neo: a comprehensive pipeline for cancer neoantigen immunogenicity prediction
+Home-page: https://github.com/XSLiuLab/Seq2Neo
+Author:  Kaixuan Diao
+Author-email: diaokx@shanghaitech.edu.cn
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: neoantigen fusion immunogenicity prediction sequencing cancer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3
+Description-Content-Type: text/markdown
