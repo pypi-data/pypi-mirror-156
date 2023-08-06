@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+setup.cfg
+src/InstallIt.egg-info/PKG-INFO
+src/InstallIt.egg-info/SOURCES.txt
+src/InstallIt.egg-info/dependency_links.txt
+src/InstallIt.egg-info/requires.txt
+src/InstallIt.egg-info/top_level.txt
+src/installit/__init__.py
+src/installit/installit.py
