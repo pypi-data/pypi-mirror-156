@@ -1,0 +1,7 @@
+fakeredis
+hiredis
+python>=3.7
+pytest
+pytest-cov
+redis
+redis-py

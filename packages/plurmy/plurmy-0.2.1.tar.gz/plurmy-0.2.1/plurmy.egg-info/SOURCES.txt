@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+plurmy/__init__.py
+plurmy/orchestrate.py
+plurmy.egg-info/PKG-INFO
+plurmy.egg-info/SOURCES.txt
+plurmy.egg-info/dependency_links.txt
+plurmy.egg-info/entry_points.txt
+plurmy.egg-info/requires.txt
+plurmy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_orchestrate.py
+tests/test_plurmy.py
