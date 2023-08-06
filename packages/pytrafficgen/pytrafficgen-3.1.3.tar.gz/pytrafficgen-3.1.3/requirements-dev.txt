@@ -1,0 +1,20 @@
+-r requirements.txt
+
+# Testing
+pytest
+pytest-cov
+tox
+
+pre-commit
+pylint
+pylint_pytest
+
+# Packaging
+wheel
+setuptools-scm
+twine
+
+# Documentation
+mkdocs
+mkdocs-material
+mkdocstrings
