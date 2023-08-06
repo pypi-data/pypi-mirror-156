@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+bigselfies/__init__.py
+bigselfies.egg-info/PKG-INFO
+bigselfies.egg-info/SOURCES.txt
+bigselfies.egg-info/dependency_links.txt
+bigselfies.egg-info/not-zip-safe
+bigselfies.egg-info/top_level.txt
