@@ -1,0 +1,8 @@
+drb<1.1.0,>=1.0.7
+antlr4-python3-runtime==4.9.3
+versioneer>=0.20
+drb-impl-file<1.1.0,>=1.0.1
+setuptools~=44.0.0
+python-dateutil~=2.8.2
+drb-impl-xml<1.1.0,>=1.0.3
+Click
