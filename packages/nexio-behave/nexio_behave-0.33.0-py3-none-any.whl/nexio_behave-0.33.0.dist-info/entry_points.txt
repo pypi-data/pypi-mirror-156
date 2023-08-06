@@ -1,0 +1,3 @@
+[console_scripts]
+nexio-behave=nexio_behave.cli_nexio_behave.cli:cli
+
