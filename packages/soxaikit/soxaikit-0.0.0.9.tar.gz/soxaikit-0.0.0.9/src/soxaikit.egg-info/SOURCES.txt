@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/soxaikit/DataLoadSave.py
+src/soxaikit/__init__.py
+src/soxaikit/example.py
+src/soxaikit.egg-info/PKG-INFO
+src/soxaikit.egg-info/SOURCES.txt
+src/soxaikit.egg-info/dependency_links.txt
+src/soxaikit.egg-info/top_level.txt

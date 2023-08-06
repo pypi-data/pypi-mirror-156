@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+soxaikit.egg-info/PKG-INFO
+soxaikit.egg-info/SOURCES.txt
+soxaikit.egg-info/dependency_links.txt
+soxaikit.egg-info/top_level.txt
