@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+citerate/__init__.py
+citerate/citerate.py
+citerate/version.py
+citerate.egg-info/PKG-INFO
+citerate.egg-info/SOURCES.txt
+citerate.egg-info/dependency_links.txt
+citerate.egg-info/entry_points.txt
+citerate.egg-info/not-zip-safe
+citerate.egg-info/top_level.txt
