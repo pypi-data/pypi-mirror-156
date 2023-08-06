@@ -1,0 +1,17 @@
+vier_gewinnt_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vier_gewinnt_package/game_elements2.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vier_gewinnt_package/main.py,sha256=N3EGyJs5fiEfNpFpkUolGKs2EgJE337-uxZEXcOUB-c,156
+vier_gewinnt_package/game_elements/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vier_gewinnt_package/game_elements/game.py,sha256=lSv3NoXMCKizgzNBA0zuQKCJrEGLrxG77810ecddlEc,2942
+vier_gewinnt_package/game_elements/game_piece.py,sha256=uNO_0_CkQUV3KVd4RsDv0xGpjQu3rukZlesNUAE08To,205
+vier_gewinnt_package/game_elements/game_table.py,sha256=1OQX-HBDVUAeMM0w8Refnjs0_hOV06fI3sp5aU7FovU,8067
+vier_gewinnt_package/game_elements/player/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vier_gewinnt_package/game_elements/player/player.py,sha256=4beKgebPzFvCQQs30Y4rZFEI2h6KSCnDPgAOzVYyip8,81
+vier_gewinnt_package/game_elements/player/type/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vier_gewinnt_package/game_elements/player/type/ai.py,sha256=UQmH_W2xvl3gwSTucUMr9KdAO5csOmOXGmfmfMe-n_g,313
+vier_gewinnt_package/game_elements/player/type/human.py,sha256=uYpEWhzLQ6zEDhqOb8GQifsJKznndOVzWXqfjN5W5EY,1198
+vier_gewinnt_kianbuechner-0.0.3.dist-info/LICENSE.LIC,sha256=7fjGGLCGg00zAGvrnQdbojl8B6SFJiK_H5jukgXbkLs,1056
+vier_gewinnt_kianbuechner-0.0.3.dist-info/METADATA,sha256=aX7ysQAIsPUnXlPYX0Q_lWY4PbpEin1SSeXS5N1_-po,637
+vier_gewinnt_kianbuechner-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vier_gewinnt_kianbuechner-0.0.3.dist-info/top_level.txt,sha256=AuQqm05cKUFY_lNyRAsbOHnN5ZrU6eufQp-8z5UYkkQ,21
+vier_gewinnt_kianbuechner-0.0.3.dist-info/RECORD,,
