@@ -1,0 +1,5 @@
+[console_scripts]
+qonnx-cleanup = qonnx.util.cleanup:main
+qonnx-exec = qonnx.util.exec_qonnx:main
+qonnx-inference-cost = qonnx.util.inference_cost:main
+qonnx-to-channels-last = qonnx.util.to_channels_last:main
