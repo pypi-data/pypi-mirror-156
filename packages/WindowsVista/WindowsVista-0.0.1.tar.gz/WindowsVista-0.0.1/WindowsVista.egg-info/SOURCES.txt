@@ -1,0 +1,6 @@
+setup.py
+WindowsVista/__init__.py
+WindowsVista.egg-info/PKG-INFO
+WindowsVista.egg-info/SOURCES.txt
+WindowsVista.egg-info/dependency_links.txt
+WindowsVista.egg-info/top_level.txt
