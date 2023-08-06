@@ -1,0 +1,5 @@
+[console_scripts]
+pyfitransfer-cli = PyFiTransfer.CLI_main:CLI_main
+
+[gui_scripts]
+pyfitransfer-gui = PyFiTransfer.main:main
