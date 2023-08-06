@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: clearsoda
+Version: 0.0.2
+Summary: Library to generate scratch projects using object-oriented relations.
+Home-page: https://github.com/xAspirus/clearsoda
+License: MIT
+Author: xAspirus
+Author-email: movxa@protonmail.com
+Maintainer: xAspirus
+Maintainer-email: movxa@protonmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Documentation, https://github.com/xAspirus/clearsoda
+Project-URL: Repository, https://github.com/xAspirus/clearsoda
+Description-Content-Type: text/markdown
+
+# clearsoda
+clearsoda is a library for generating scratch projects in python
+
