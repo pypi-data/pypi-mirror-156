@@ -1,0 +1,13 @@
+darkprop.libs/libsatlas-7e2f78d2.so.3.10,sha256=X_Wa34zDOWb1y0s4CLcX6eWesbYpAdF2DJR6Jxavuxg,11078608
+darkprop.libs/libgslcblas-9055a056.so.0.0.0,sha256=oNu7YlZQr4pOHWbmuJ4zX1yPsK8TYGqQ1wQWzPCNsgI,257280
+darkprop.libs/libgsl-cb3064f9.so.0.16.0,sha256=K7T8yyaJCfpWO9izh7NYCusMv3MUa-x6ABwdam0mOBk,2646824
+darkprop.libs/libquadmath-96973f99.so.0.0.0,sha256=l82oXdtRY-Labh7bTh1rVXgzqZpA7aB5rjflA5Rltl0,247608
+darkprop.libs/libgfortran-91cc3cb1.so.3.0.0,sha256=yG4uC4CkJbuXNkV2kISH0t7i_MNYl1Y8rUbu79S2j5c,1259664
+darkprop-0.2.0.dist-info/top_level.txt,sha256=QuUL48f_f5Cq5oRMDQm9mdW1ooukrVUjqUt4JhK32FA,9
+darkprop-0.2.0.dist-info/METADATA,sha256=5kVapy8r7K-jPXjYvShMp1Omlwwv1eT_Bh8hHh0NUDU,3239
+darkprop-0.2.0.dist-info/LICENSE,sha256=kB6TzzWwE0m_Gw-tScigyVTCcBuc4TKHtQiBIHmxD2w,1064
+darkprop-0.2.0.dist-info/WHEEL,sha256=FGGRUrvefXOiAJfyJCZAiu4TpTMkXB_CzdEp3x2T96E,150
+darkprop-0.2.0.dist-info/RECORD,,
+darkprop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+darkprop/darkprop.py,sha256=GV8M1jeeUYM01xUZ4TlE1cDCrm8ZqwZjZ6dZSCoxPfk,34170
+darkprop/_darkprop.cpython-37m-x86_64-linux-gnu.so,sha256=OO6AMLdc102UcdUhEBIUe5WmtGoLKasxO1jTqi8KTi0,10053264
