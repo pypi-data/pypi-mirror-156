@@ -1,0 +1,23 @@
+{% extends "base.rst.jinja" %}
+
+
+{% block section %}
+
+{% if node.children | selectattr("is_leaf") | list | count -%}
+.. list-table::
+
+{% for row in node.children | selectattr("is_leaf") | batch(4, '') -%}
+{% for col in row -%}
+{% if loop.first %}
+{{ "    * - :doc:`%s <%s>`"|format(col.title, col.target) }}
+{% elif col == '' %}
+{{ "      - " }}
+{% else %}
+{{ "      - :doc:`%s <%s>`"|format(col.title, col.target) }}
+{% endif %}
+{%- endfor %}
+
+{%- endfor %}
+
+{% endif %}
+{% endblock section %}
