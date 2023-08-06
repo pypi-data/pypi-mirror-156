@@ -1,0 +1,3 @@
+[console_scripts]
+gnomadAPI=gnomadapi.__main__:main
+
