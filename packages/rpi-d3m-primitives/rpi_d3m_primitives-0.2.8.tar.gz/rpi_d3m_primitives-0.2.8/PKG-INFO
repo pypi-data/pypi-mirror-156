@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: rpi_d3m_primitives
+Version: 0.2.8
+Summary: RPI primitives for D3M submission.
+Home-page: https://github.com/zijun-rpi/d3m-primitives.git
+Author: Naiyu Yin, Yuru Wang, Zijun Cui, Qiang Ji
+Author-email: yinn2@rpi.edu
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: d3m_primitive
+Platform: Linux
+Platform: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
