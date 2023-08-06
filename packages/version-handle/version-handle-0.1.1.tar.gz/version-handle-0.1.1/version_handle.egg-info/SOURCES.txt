@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+version_handle/__init__.py
+version_handle/__version__.py
+version_handle/compare.py
+version_handle/entities.py
+version_handle/generate.py
+version_handle/python.py
+version_handle.egg-info/PKG-INFO
+version_handle.egg-info/SOURCES.txt
+version_handle.egg-info/dependency_links.txt
+version_handle.egg-info/top_level.txt
