@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{ site_info.lang }}">
+<head>
+	<meta charset="utf-8">
+	{% set description = page.front_matter.get('meta_description', page.excerpt) %}
+	{% if description %}
+	<meta name="description" content="{{ description }}">
+	{% endif %}
+	{% if page.front_matter.get("meta_keywords") %}
+	<meta name="keywords" content="{{ page.front_matter['meta_keywords'] }}">
+	{% endif %}
+	{% for meta in page.front_matter.get("extra_meta_tags",[]) %}
+	<meta{% for k,v in meta.items() %} {{ k }}="{{ v }}"{% endfor %}>
+	{% endfor %}
+	{% set author_link = page.front_matter.get("author_link", site_info.author_link) %}
+	{% if author_link %}
+	<link rel="author" href="{{ author_link }}"/>
+	{% endif %}
+	<link rel="canonical" href="{{ page.absolute_canonical_href }}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>{{ page.title }} | {{ site_info.name }}</title>
+	<link rel="stylesheet" href="{{ '/css/normalize.css' | pyg_urlencode }}">
+	<link rel="stylesheet" href="{{ '/css/main.css' | pyg_urlencode }}">
+	<link rel="stylesheet" href="{{ '/css/pygments.css' | pyg_urlencode }}">
+	{% for css_file in site_info.theme_options.get("extra_css",[]) + page.front_matter.get("extra_css_files",[]) %}
+	<link rel="stylesheet" href="{{ css_file | pyg_urlencode }}">
+	{% endfor %}
+</head>
+<body>
+	{% set is_home = (page.href if not page.pagination else page.pagination["root"]) == "/" %}
+    {% set have_sidebar = site_info.theme_options.get("sidebar") and (not site_info.theme_options.get("sidebar_in_home_only") or is_home) %}
+    <div class="main-and-sidebar-wrapper {% if not have_sidebar %}no-sidebar{%endif%} {% if is_home %}home{%endif%}">
+	{%- block body %}
+
+	{%+ filter indent(4) %}{% include "header.html" %}{%- endfilter %}
+	{% if site_info.theme_options.get("breadcrumbs",False) and page.breadcrumbs | length > 1 %}
+	<nav aria-label="breadcrumb" class="breadcrumbs"><ol>
+	{% for crumb in page.breadcrumbs %}
+	<li>
+		{% if crumb[1] %}
+		<a class="existing_breadcrumb" aria-current="{% if crumb[1] == page.href or (page.pagination and crumb[1] == page.pagination['root']) %}page{% else %}false{% endif %}" href="{{ crumb[1] | pyg_urlencode }}">{{ crumb[0] }}</a>
+		{% else %}
+		<a aria-current="{% if crumb[1] == page.href or (page.pagination and crumb[1] == page.pagination['root']) %}page{% else %}false{% endif %}">{{ crumb[0] }}</a>
+		{% endif %}
+	</li>
+	{% endfor %}
+	</ol></nav>
+	{%- endif -%}
+
+	<main>
+	{% block content +%}
+	{%- endblock %}
+	</main>
+
+	{%- if have_sidebar +%}
+	{%+ filter indent(4) %}{% include "sidebar.html" %}{% endfilter %}
+	{%- endif +%}
+	</div>
+
+	<footer>
+		Copyright &copy; {{ site_info.theme_options.get("copyright_year", site_info.internal_data["build_date"].year) }} <a href="/" aria-label="home page">{{ site_info.name }}</a>.
+		Powered by <a aria-label="the 'lamya' site generator github repository" href="https://github.com/vshotarov/lamya">lamya</a>.
+	</footer>
+	{% endblock %}
+
+	<script src="{{ '/js/nav_aria.js' | pyg_urlencode }}"></script>
+	{% for js_file in site_info.theme_options.get("extra_js",[]) + page.front_matter.get("extra_js", []) %}
+	<script src="{{ js_file | pyg_urlencode }}"></script>
+	{% endfor %}
+</body>
+</html>

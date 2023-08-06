@@ -1,0 +1,60 @@
+{% block sidebar %}
+<aside>
+	{% if site_info.theme_options.get("sidebar_image") and (not site_info.theme_options.get("sidebar_image_in_home_only") or page.href == "/") %}
+	<section id="sidebar-image">
+		<img alt="{{ site_info.theme_options.get('sidebar_image_alt','') }}" src="{{ site_info.theme_options.get('sidebar_image','') }}" style="{% if site_info.theme_options.get("sidebar_image_max_width") %}max-width:{{ site_info.theme_options.get("sidebar_image_max_width") }}px{% endif %}">
+	</section>
+	{% endif %}
+
+	{% if site_info.theme_options.get("social_links") and (not site_info.theme_options.get("sidebar_social_in_home_only") or page.href == "/") %}
+	<section>
+		<ul id="sidebar-social-links">
+		{% for link in site_info.theme_options.get("social_links") %}
+			<li>
+			{% if (link | length) == 3 %}
+				<a aria-label="{{ link[0] }} link" href="{{ link[1] }}"><img alt="" src="{{ link[2] }}"></a>
+			{% else %}
+				<a href="{{ link[1] }}">{{ link[0] }}</a>
+			{% endif %}
+			</li>
+		{% endfor %}
+		</ul>
+	</section>
+	{% endif -%}
+
+	{% if site_info.theme_options.get("sidebar_description") and (not site_info.theme_options.get("sidebar_description_in_home_only") or page.href == "/") %}
+	<section>
+		<p>{{ site_info.theme_options.get("sidebar_description") | safe }}</p>
+	</section>
+	{% endif %}
+
+	{% if site_info.theme_options.get("links") %}
+	<section>
+		<h2 id="links-nav-title">Links</h2>
+		<dl aria-label="links">
+		{% for link in site_info.theme_options.get("links") %}
+			<dt>{{ link[0] }}</dt>
+			{% if (link | length) == 3 %}
+			<dd><a href="{{ link[1] }}">{{ link[2] }}</a></dd>
+			{% else %}
+			<dd><a aria-label="{{ link[0] }} link" href="{{ link[1] }}">link</a></dd>
+			{% endif %}
+		{% endfor %}
+		</dl>
+	</section>
+	{% endif %}
+
+	{% if site_info.archive_nav and site_info.theme_options.get("sidebar_archive_nav") %}
+	<section id="archive-links">
+		<h2 id="archive-nav-title">Archive</h2>
+		<nav aria-labelledby="archive-nav-title">
+			<ul>
+			{% for name, href in (site_info.archive_nav["by_month"] if site_info.theme_options.get("display_archive_by_month_in_sidebar",True) else []) + (site_info.archive_nav["by_year"] if site_info.theme_options.get("display_archive_by_year_in_sidebar",False) else [])%}
+				<li><a href="{{ href | pyg_urlencode }}">{{ name}} </a>
+			{% endfor %}
+			</ul>
+		</nav>
+	</section>
+	{% endif %}
+</aside>
+{%- endblock %}
