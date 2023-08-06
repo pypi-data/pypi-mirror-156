@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: IQS-algorithm
+Version: 0.0.9
+Summary: The IQS is an iterative approach for optimizing short keyword queries given a prototype document through interaction with an opaque search engine such as Twitter.
+Home-page: https://iqs.cs.bgu.ac.il/
+Author: Ori Ben-Artzy, Ophir Porat, Mor Zweig
+Author-email: iqs.bgu@gmail.com
+Project-URL: Frontend repository, https://github.com/ophirporat/ProjectIQS-Front
+Project-URL: Backend repository, https://github.com/oribena/projectIQS
+Project-URL: Academic Article, https://www.sciencedirect.com/science/article/pii/S0957417422004432
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pathlib
+Requires-Dist: nltk
+Requires-Dist: tweepy
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: gensim
+Requires-Dist: uuid
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: importlib-resources
+
+# Iterative Query Selection (IQS)
+
+## Check out the IQS algorithm web platform in the following link: [IQS Web](https://iqs.cs.bgu.ac.il/)
+
+The platform can help you explore the IQS algorithm benefits:
+* Search and retrieve data from Twitter's website using the IQS algorithm.
+* Displays results from the experiment described in the academic paper. In the experiment, the IQS algorithm is compared to another algorithm in the field (ALMIK) on a specific dataset.
+* Presenting the academic paper with Q&A
