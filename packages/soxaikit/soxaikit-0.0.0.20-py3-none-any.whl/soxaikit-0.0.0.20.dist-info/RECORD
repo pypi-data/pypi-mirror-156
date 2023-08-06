@@ -1,0 +1,13 @@
+soxaikit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soxaikit/fea.py,sha256=OcgDPeyWrLP73VAaUZe4UEbtyEKTXJyxCCEBZHAGUYo,4496
+soxaikit/io.py,sha256=u3mHCJ9nOu0W29K6xdEld679e03fRRVTQf4YM2ts9dM,2420
+soxaikit/log.txt,sha256=UlYyWfBBnLniHVhzt4PC2kyfRG-TSIChx-xFmE0h74A,669
+soxaikit/plot.py,sha256=GtiwvEpLqgIVxY7So0PLy6OpbgQ7oArI1YEmvXajJVM,2688
+soxaikit/pre.py,sha256=OwwNnJOeBh5SW_3ot2vcBU4G2OtDMv__pUNytc2igZ0,6584
+soxaikit/run_all.py,sha256=zZ_C7I6bj90sioYUObhn2luDevmdVNrgHX0EtWcp7XM,3723
+soxaikit/sleep.py,sha256=hc4dCZ6STsBD_rMva8r24XXjSELN1YuriZ6SCn2iXpk,4507
+soxaikit-0.0.0.20.dist-info/METADATA,sha256=0jssA50edEqp0cTa5D-Hmph6mUPaI4pWr1wAx5LdcD4,473
+soxaikit-0.0.0.20.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+soxaikit-0.0.0.20.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soxaikit-0.0.0.20.dist-info/license_files/LICENSE,sha256=0CB_3ImrFFeufVi7xAoB61XEVtAGIY7osF70qrdp7Sk,1112
+soxaikit-0.0.0.20.dist-info/RECORD,,
