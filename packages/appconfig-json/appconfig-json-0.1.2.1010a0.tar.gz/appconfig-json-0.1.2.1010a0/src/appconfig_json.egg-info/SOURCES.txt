@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/appconfig/__init__.py
+src/appconfig/appconfig.py
+src/appconfig_json.egg-info/PKG-INFO
+src/appconfig_json.egg-info/SOURCES.txt
+src/appconfig_json.egg-info/dependency_links.txt
+src/appconfig_json.egg-info/top_level.txt
