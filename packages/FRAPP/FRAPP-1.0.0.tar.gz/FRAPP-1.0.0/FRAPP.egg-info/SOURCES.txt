@@ -1,0 +1,8 @@
+README.md
+setup.py
+FRAPP/FRAPP.py
+FRAPP/__init__.py
+FRAPP.egg-info/PKG-INFO
+FRAPP.egg-info/SOURCES.txt
+FRAPP.egg-info/dependency_links.txt
+FRAPP.egg-info/top_level.txt
