@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+dj_enum/__init__.py
+dj_enum/exceptions.py
+dj_enum/fields.py
+dj_enum/utils.py
+dj_enum.egg-info/PKG-INFO
+dj_enum.egg-info/SOURCES.txt
+dj_enum.egg-info/dependency_links.txt
+dj_enum.egg-info/not-zip-safe
+dj_enum.egg-info/requires.txt
+dj_enum.egg-info/top_level.txt
