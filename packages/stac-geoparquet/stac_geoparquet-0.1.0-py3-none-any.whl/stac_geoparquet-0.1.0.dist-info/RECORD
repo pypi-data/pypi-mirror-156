@@ -1,0 +1,11 @@
+stac_geoparquet/__init__.py,sha256=_jwOPrWdCmvglg7h7TxAFsu2pZBjr4fjaHX3EJu2EtI,137
+stac_geoparquet/cli.py,sha256=UqHzF0nhxYmC0fBNkaGGcbvm51aArw1zquxYLw8PaKk,1527
+stac_geoparquet/pc_runner.py,sha256=Q7ePibDcaWd9A31dGOcdH33vkQJPXdMMmvPGoXm-U2E,3561
+stac_geoparquet/pgstac_reader.py,sha256=03KPfhbPWDrmFh2bXL4NRYSr2aw8lGsAFabvjNcNxsk,9778
+stac_geoparquet/stac_geoparquet.py,sha256=G_WZ6m3mWoa1dU8W6HWLiu54AHKK8O_cToheB4kjifg,3142
+stac_geoparquet/utils.py,sha256=hoM10-V0-j2uNoOlTAHCQSp9bDezoC7kIDSqK8GW1GI,2480
+stac_geoparquet-0.1.0.dist-info/entry_points.txt,sha256=VWP1oV5_Br9JaQlvpWbc55MLuMNV1HTFGkQVk9LwZhE,58
+stac_geoparquet-0.1.0.dist-info/LICENSE,sha256=y0NTSD0wStEdJmPcBE5zpuTfHAYMpU_VMGBvrQEOE-0,1081
+stac_geoparquet-0.1.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+stac_geoparquet-0.1.0.dist-info/METADATA,sha256=dhmiiONtTjb9aDR34rck2oWgAi3unLfeRI7qEGC_bzg,2844
+stac_geoparquet-0.1.0.dist-info/RECORD,,
