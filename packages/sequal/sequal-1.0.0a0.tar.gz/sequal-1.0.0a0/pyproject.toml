@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sequal"
+version = "1.0.0a"
+description = "A Python package for working with protein sequence and PTM"
+authors = ["Toan K. Phung <toan.phungkhoiquoctoan@gmail.com>"]
+license = "MIT"
+keywords = ["protein sequence", "modification", "mass spectrometry"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
