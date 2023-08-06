@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/oneNeuron/Perceptron.py
+src/oneNeuron/__init__.py
+src/oneneuron_pkg_Vinayak_HUB1.egg-info/PKG-INFO
+src/oneneuron_pkg_Vinayak_HUB1.egg-info/SOURCES.txt
+src/oneneuron_pkg_Vinayak_HUB1.egg-info/dependency_links.txt
+src/oneneuron_pkg_Vinayak_HUB1.egg-info/requires.txt
+src/oneneuron_pkg_Vinayak_HUB1.egg-info/top_level.txt
