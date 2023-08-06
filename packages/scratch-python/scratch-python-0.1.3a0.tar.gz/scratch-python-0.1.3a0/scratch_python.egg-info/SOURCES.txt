@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+pyscratch/__init__.py
+pyscratch/block_name_mapping.csv
+pyscratch/main.py
+pyscratch/parser.py
+pyscratch/scratch.py
+pyscratch/scratchtext.ebnf
+scratch_python.egg-info/PKG-INFO
+scratch_python.egg-info/SOURCES.txt
+scratch_python.egg-info/dependency_links.txt
+scratch_python.egg-info/entry_points.txt
+scratch_python.egg-info/requires.txt
+scratch_python.egg-info/top_level.txt
