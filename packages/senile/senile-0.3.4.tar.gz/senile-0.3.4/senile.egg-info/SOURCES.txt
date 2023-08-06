@@ -1,0 +1,15 @@
+AUTHORS
+LICENSE
+README.md
+setup.py
+senile/__init__.py
+senile/__main__.py
+senile/database.py
+senile/icons.py
+senile/todo.py
+senile.egg-info/PKG-INFO
+senile.egg-info/SOURCES.txt
+senile.egg-info/dependency_links.txt
+senile.egg-info/entry_points.txt
+senile.egg-info/requires.txt
+senile.egg-info/top_level.txt
