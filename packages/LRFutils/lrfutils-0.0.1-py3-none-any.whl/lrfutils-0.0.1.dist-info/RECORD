@@ -1,0 +1,9 @@
+setup.py,sha256=AVsDjWkqfnMKSiTNJOxuIMaSFU2zUTmToAigBqQdMaA,420
+src/LRFutils/archive.py,sha256=Lg0krY1_MBtFQq2M-tdJBWKTbCUgt_SEwGnK0rDr8EQ,1221
+src/LRFutils/color.py,sha256=2N-0omJVGfrx4uCttfVKWsglDb-vmZFR--7_lYc2nJk,1542
+src/LRFutils/term.py,sha256=LpS27VPFRceqKfVHJu5t1yzA1r42y951c1BUPtn6Eag,3257
+lrfutils-0.0.1.dist-info/METADATA,sha256=sw2oSnnMSSjzxJNXoROzNoTvnFpD5rr2n0opyFQUkT8,2041
+lrfutils-0.0.1.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+lrfutils-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lrfutils-0.0.1.dist-info/license_files/LICENSE,sha256=tyky04iVd1Lbgs54g7qght-dbeGH_VpTlcgUWcD2nLI,1092
+lrfutils-0.0.1.dist-info/RECORD,,
