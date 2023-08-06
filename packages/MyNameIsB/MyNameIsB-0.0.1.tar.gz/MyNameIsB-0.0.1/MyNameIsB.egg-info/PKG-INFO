@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: MyNameIsB
+Version: 0.0.1
+Summary: Who is B
+Home-page: https://github.com/UncleEngineer/
+Author: Uncle Engineer
+Author-email: test@gmail.com
+License: MIT
+Download-URL: https://github.com/UncleEngineer/
+Keywords: B,Uncle Engineer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+License-File: LICENSE.txt
+
+แพ็คเกจนี้เป็นแพคเกจpythonที่โชว์ข้อมูลเกี่ยวกับB”
+==================================================
+
+PyPi: https://pypi.org/project/MyNameIsB/
+
+สวัสดีจ้าาาา แพ็คนี้คือแพ็คเกจโชว์ข้อมูลเกี่ยวกับB และอื่นๆ ###
+วิธีติดตั้ง
+
+เปิด CMD / Terminal
+
+.. code:: python
+
+   pip install MyNameIsB
+
+วิธีใช้งานแพ็คเพจนี้
+~~~~~~~~~~~~~~~~~~~~
+
+-  เปิด IDLE ขึ้นมาแล้วพิมพ์…
+
+.. code:: python
+
+   from MyNameIsB import B
+
+   B = B()         #ประกาศชื่อคลาส
+   B.show_name()       #โชว์ชื่อ
+   B.show_youtube()    #โชว์ยูทูป
+   B.about()       #โชว์ลิ้ง
+   B.show_art()        #โชว์ภาพศิลปะ
+
+พัฒนาโดย: B FB: https://www.facebook.com
+
+YouTube: https://www.youtube.com
+
+
