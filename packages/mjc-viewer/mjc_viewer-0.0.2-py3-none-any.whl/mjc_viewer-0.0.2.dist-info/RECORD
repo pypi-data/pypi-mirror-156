@@ -1,0 +1,15 @@
+mjc_viewer/__init__.py,sha256=u2TSW3Uw4B9vqurh1eNi_UMp0bqDhZJh0Z9krfbVqcA,144
+mjc_viewer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mjc_viewer/_src/config.proto,sha256=IXddeoJaPwH3zmx6uQlddkIq1rSi0pib1Q2Gs6a81Es,4041
+mjc_viewer/_src/config_pb2.py,sha256=R6n8AAO0iTE-4s49zmCJF78sBWtADC_StRt78GB2IHc,3945
+mjc_viewer/_src/serializer.py,sha256=V0Kzyw2He6GBHShLGwHq_6IdZgmeUpEii6dw8csIgLE,7774
+mjc_viewer/_src/js/animator.js,sha256=7Z9KMOXK34gSyrDlaubssJaf_gsUfAH8rR9a8zRkY5g,2990
+mjc_viewer/_src/js/selector.js,sha256=oXRQUoRMCx3LDHsC0zRfyGD9U6G8F8zAfR2cNo7Mqf8,2950
+mjc_viewer/_src/js/system.js,sha256=2cit6nmLGMhjvExnabzYgnA-qU3R736TZ0OSFlfesBo,7143
+mjc_viewer/_src/js/viewer.js,sha256=fzZSt8FGr3n5Sp4m-0TvHNW18JRUEEahJ-akFsb8TF4,10434
+mjc_viewer-0.0.2.dist-info/LICENSE,sha256=9PtY81VzHJ_Xi-vrzqo-FDt_nXIEsNGiG1GnIa9wfqc,1069
+mjc_viewer-0.0.2.dist-info/METADATA,sha256=p-yLMTYc1n6dr7DFb5mqpz-ekvchVw4NhiXDxvpe7QA,1487
+mjc_viewer-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mjc_viewer-0.0.2.dist-info/top_level.txt,sha256=fKqs_6kqfS-6bqRDyfmSDHiPd8CQW8edC-El38F9yOg,11
+mjc_viewer-0.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mjc_viewer-0.0.2.dist-info/RECORD,,
