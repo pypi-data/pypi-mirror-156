@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: aditzak
+Version: 0.0.2.1
+Summary: A python package to analyse and build  Euskera verbs
+Project-URL: Homepage, https://github.com/HCook86/Aditzak
+Author-email: Henry Cook <henryscookolaizola@gmail.com>, Alejandro Sempere <asempere@colegioaleman.net>, Pablo Pérez <pperez@colegioaleman.net>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
