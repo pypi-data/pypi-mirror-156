@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: hkw
+Version: 1.1.3
+Summary: hkwarray.
+Author: hkw
+Author-email: kkhwer@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+================
+ Document Title
+================
+----------
+ Subtitle
+----------
+
+Section Title
+=============
+* a bullet point using "*"
+
+  - a sub-list using "-"
+
+    + yet another sub-list
+
+  - another item
+
+
+
