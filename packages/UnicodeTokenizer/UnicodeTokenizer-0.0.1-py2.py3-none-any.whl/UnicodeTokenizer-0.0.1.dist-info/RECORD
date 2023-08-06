@@ -1,0 +1,13 @@
+UnicodeTokenizer/Blocks.py,sha256=_aOWcNcQjZ-Lwrog7MaDmLD-wJHzJELToR3-av6b1Ms,18139
+UnicodeTokenizer/UnicodeTokenizer.py,sha256=d2R-WlsmWoKbkyDMZ6mhlmXkJ0Eu3gxvElTnbE59QOs,8173
+UnicodeTokenizer/__init__.py,sha256=1_FYB7jjqFr1lL4EYoUvPV43i6GYSi7WSjMJ7WyRzKk,44
+old/BertTokenization.py,sha256=6xnOaIds44F5RXDlX384JmG3nyk7EM2Ajpx7dVhTygw,15147
+old/Blocks.py,sha256=_aOWcNcQjZ-Lwrog7MaDmLD-wJHzJELToR3-av6b1Ms,18139
+old/UnicodeTokenizer.py,sha256=d2R-WlsmWoKbkyDMZ6mhlmXkJ0Eu3gxvElTnbE59QOs,8173
+old/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+old/demo.py,sha256=qnk0iMYcE-5v1onz0tBqwmCzq5Mq7q7iGz2ZazS4AAM,11624
+old/setup.py,sha256=1dB-Vn1NOGosEsNvItJ4AppXC4KdggMCMQO_0c4ESWA,806
+UnicodeTokenizer-0.0.1.dist-info/METADATA,sha256=LsvjmTgJ0KPHunquJIvpug9CqCQwYwDJ90i0GO-uRwA,19745
+UnicodeTokenizer-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+UnicodeTokenizer-0.0.1.dist-info/top_level.txt,sha256=_Gu9Y7FLZ1vqfchsFk_nOU58uQBfO0pqob5srLEQN7s,21
+UnicodeTokenizer-0.0.1.dist-info/RECORD,,
