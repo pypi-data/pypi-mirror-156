@@ -1,0 +1,5 @@
+wget
+click
+pefile
+pillow
+pip>=22.1.1
