@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: aocli
+Version: 0.2.0
+Summary: A python package and CLI providing various utility functions for Advent of Code puzzles.
+Keywords: advent-of-code,advent of code,aoc
+Author-email: Steven van de Graaf <steven@vandegraaf.xyz>
+Requires-Python: >3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Dist: lxml >=4.9.0
+Requires-Dist: requests >=2.28.0
+Requires-Dist: rich >=12.4.4
+Requires-Dist: typer >=0.4.1
+Requires-Dist: autoflake >=1.4 ; extra == "dev"
+Requires-Dist: black >=22.3.0 ; extra == "dev"
+Requires-Dist: flake8 >=4.0.1 ; extra == "dev"
+Requires-Dist: isort >=5.10.1 ; extra == "dev"
+Requires-Dist: mypy >=0.961 ; extra == "dev"
+Requires-Dist: pre-commit >=2.19.0 ; extra == "dev"
+Requires-Dist: pyupgrade >=2.34.0 ; extra == "dev"
+Project-URL: Home, https://github.com/sgraaf/aocli
+Provides-Extra: dev
+
+# Advent of Code CLI
+
+[![PyPI version](https://img.shields.io/pypi/v/aocli)](https://pypi.org/project/aocli/)
+[![Supported Python Versions](https://img.shields.io/pypi/pyversions/aocli)](https://pypi.org/project/aocli/)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/sgraaf/aocli/main.svg)](https://results.pre-commit.ci/latest/github/sgraaf/aocli/main)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+
+> This repository contains a CLI and various utility functions for Advent of Code puzzles
+
