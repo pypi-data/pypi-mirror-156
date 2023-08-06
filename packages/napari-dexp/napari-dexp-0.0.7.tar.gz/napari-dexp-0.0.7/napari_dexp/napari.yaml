@@ -1,0 +1,33 @@
+name: napari-dexp
+schema_version: 0.1.0
+display_name: DEXP
+contributions:
+  commands:
+  - id: napari-dexp.get_reader
+    title: Get Reader
+    python_name: napari_dexp._reader:napari_get_reader
+  - id: napari-dexp.write_image
+    title: Write Image
+    python_name: napari_dexp._writer:napari_write_image
+  - id: napari-dexp.write_labels
+    title: Write Labels
+    python_name: napari_dexp._writer:napari_write_labels
+  readers:
+  - command: napari-dexp.get_reader
+    filename_patterns:
+    - "*.zarr"
+    - "*.zarr.zip"
+    accepts_directories: true
+  writers:
+  - command: napari-dexp.write_image
+    layer_types:
+    - image
+    filename_extensions:
+    - "*.zarr"
+    display_name: image
+  - command: napari-dexp.write_labels
+    layer_types:
+    - labels
+    filename_extensions:
+    - "*.zarr"
+    display_name: labels

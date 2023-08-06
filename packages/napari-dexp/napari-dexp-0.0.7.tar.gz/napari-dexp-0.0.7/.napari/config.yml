@@ -1,0 +1,16 @@
+
+# Add labels the plugin from the EDAM Bioimaging ontology
+labels:
+  ontology: EDAM-BIOIMAGING:alpha06
+  terms:
+  - Light-sheet microscopy
+  - Image denoising
+  - Image registration
+  - Image fusion
+  - Image correction
+  - Image deconvolution
+  - 2D image
+  - 3D image
+  - Image time series
+  - Image visualisation
+  - Data handling
