@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: iothello
+Version: 1.1.1
+Summary: Welcome to iOthello_package, a project which leverages the power of machine learning to create an AI-Bot for Othello.
+Home-page: https://github.com/ThomasMind/iOthello
+Author: Thomas Compagnoni
+Author-email: thomascompagnoni@gmail.com
+License: MIT LICENCE
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pygame
+Requires-Dist: joblib
+
+UNKNOWN
+
+
