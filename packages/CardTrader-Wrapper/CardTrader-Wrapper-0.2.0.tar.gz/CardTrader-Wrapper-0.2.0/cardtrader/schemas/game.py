@@ -1,0 +1,18 @@
+from pydantic import BaseModel, Extra, Field, validator
+
+
+class Game(BaseModel):
+    display_name: str
+    id_: int = Field(alias="id")
+    game_id: int = Field(alias="id")
+    name: str
+
+    class Config:
+        anystr_strip_whitespace = True
+        extra = Extra.forbid
+
+    @validator("display_name", "name", pre=True, check_fields=False)
+    def remove_blank_strings(cls, value: str):
+        if value:
+            return value
+        return None
