@@ -1,0 +1,3 @@
+[console_scripts]
+utrello=src.utrello:main
+
