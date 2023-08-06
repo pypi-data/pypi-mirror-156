@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: EasyMLLIB
+Version: 0.1.0
+Summary: EasyMLLIB
+Home-page: UNKNOWN
+Author: Aaron Collins
+Author-email: aaron777collins@gmail.com
+License: UNKNOWN
+Keywords: python,EasyMLLIB,Machine Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: cycler
+Requires-Dist: et-xmlfile
+Requires-Dist: Flask
+Requires-Dist: fonttools
+Requires-Dist: idna
+Requires-Dist: itsdangerous
+Requires-Dist: Jinja2
+Requires-Dist: joblib
+Requires-Dist: kiwisolver
+Requires-Dist: MarkupSafe
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-plot
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: threadpoolctl
+Requires-Dist: urllib3
+Requires-Dist: Werkzeug
+
+EasyMLLIB - A library to make machine learning easier
+
