@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tgmb
+Version: 0.0.0b16
+Summary: Predecessor to `tgmb`
+Home-page: https://github.com/ksssomesh12/tgmb-beta
+Author: SomesH S
+Author-email: ksssomesh12@gmail.com
+Project-URL: Bug Tracker, https://github.com/ksssomesh12/tgmb-beta/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tgmb-beta
+
+[![build-docker-image](https://github.com/ksssomesh12/tgmb-beta/actions/workflows/build-docker-image.yml/badge.svg)](https://github.com/ksssomesh12/tgmb-beta/actions/workflows/build-docker-image.yml)

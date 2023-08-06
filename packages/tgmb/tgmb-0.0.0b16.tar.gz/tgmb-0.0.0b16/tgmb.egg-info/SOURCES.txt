@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+tgmb/__init__.py
+tgmb/__main__.py
+tgmb.egg-info/PKG-INFO
+tgmb.egg-info/SOURCES.txt
+tgmb.egg-info/dependency_links.txt
+tgmb.egg-info/requires.txt
+tgmb.egg-info/top_level.txt
