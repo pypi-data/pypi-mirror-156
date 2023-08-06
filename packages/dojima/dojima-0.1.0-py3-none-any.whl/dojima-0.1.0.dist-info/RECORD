@@ -1,0 +1,8 @@
+dojima/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+dojima/brokers/__init__.py,sha256=uup32Y0FUIfnE3h3t1DKl3PxSxgPrDpWY5g-gBf9q0c,29
+dojima/brokers/ledgerx.py,sha256=NEJTLtN4KO8ZgFtmVPchPjnKpZwbw3QVnJgzqDO0XgM,12079
+dojima/main.py,sha256=rZrVIPOAb6cpol1XUam0Fxb30Y6Owi-YoQEZB03Rxnw,314
+dojima-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dojima-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+dojima-0.1.0.dist-info/METADATA,sha256=fOWjG83OECbNoWNQz4QVABcBN2el0C3KXUWqsMdfvio,413
+dojima-0.1.0.dist-info/RECORD,,
