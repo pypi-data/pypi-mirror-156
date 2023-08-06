@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cana-sdoc
+Version: 0.12
+Summary: Small Database of Optical Constants
+Home-page: https://github.com/depra/sdoc
+Author: M. De Pra
+Author-email: mariondepra@gmail.com
+Maintainer: M. De Pra
+Maintainer-email: mariondepra@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
