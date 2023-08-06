@@ -1,0 +1,7 @@
+site_name: Setux-REPL
+
+nav:
+    - Overview: README.md
+    - Commands: commands.md
+
+theme: readthedocs
