@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pytfa
+Version: 0.9.4
+Summary: pyTFA, Thermodynamics-based Flux Analysis in Python
+Home-page: https://github.com/EPFL-LCSB/pytfa/
+Download-URL: https://github.com/EPFL-LCSB/pytfa/archive/0.9.4.tar.gz
+Author: pyTFA team
+Author-email: softwares.lcsb@epfl.ch
+License: Apache 2.0
+Keywords: pytfa,tfa,thermodynamics,flux analysis
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4
+License-File: LICENSE.txt
+Requires-Dist: cobra (>0.13)
+Requires-Dist: bokeh (>=0.12.1)
+Requires-Dist: networkx
+Requires-Dist: optlang
+Requires-Dist: pytest
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Provides-Extra: equilibrator
+Requires-Dist: equilibrator-cache (>=0.2.6) ; extra == 'equilibrator'
+Requires-Dist: python-version (>="3.6") ; extra == 'equilibrator'
+Requires-Dist: equilibrator-api ; extra == 'equilibrator'
+
