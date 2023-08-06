@@ -1,0 +1,9 @@
+code_wake_v1wsgi_service/__init__.py,sha256=XrZgJ1C7HOl-V2D4L-XmvF-bBXa-E_yshUBI-qj_66Q,102
+code_wake_v1wsgi_service/pkg_meta.py,sha256=oCsdu98JkjRk8-4AsSpNgLkrwtgksXdk157QFtxIPaU,1634
+code_wake_v1wsgi_service/v1wsgiservice.py,sha256=IAf5orLRHXdMOEhbA5_q_R0wpRCKSxGvG8xtKlcqhxo,13104
+code_wake_v1wsgi_service-0.0.2.dist-info/LICENSE,sha256=8EY-J_ULZGlFOEyDVOKXKqIYWkaOtx3tGLFyQVlX69c,1106
+code_wake_v1wsgi_service-0.0.2.dist-info/METADATA,sha256=RN7x8xD-H9JGIMp2FX_UeffgdQ4rWhdIU7vit-HdE84,2337
+code_wake_v1wsgi_service-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+code_wake_v1wsgi_service-0.0.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+code_wake_v1wsgi_service-0.0.2.dist-info/top_level.txt,sha256=Cl410cz_PfwJUnM2IQ2feHr6D-v1xEiAvBL96qNlS_M,25
+code_wake_v1wsgi_service-0.0.2.dist-info/RECORD,,
