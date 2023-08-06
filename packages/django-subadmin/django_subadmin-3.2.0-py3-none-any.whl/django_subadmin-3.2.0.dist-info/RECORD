@@ -1,0 +1,16 @@
+subadmin/__init__.py,sha256=5MJthDgedqn6ozJckRy8WQL6LE2i9Sm9ZyJpDgQT804,23222
+subadmin/templates/subadmin/breadcrumbs.html,sha256=ok-xFALB9sr5OPYM2t838AzbjMEUyn8SN5fl6U_qx8Q,313
+subadmin/templates/subadmin/change_form.html,sha256=GSGV0Zzy-wy6w246owYwxG7lVXS9sZwqdx4vxwKW428,1047
+subadmin/templates/subadmin/change_list.html,sha256=-edaVKDzJjQU-exZiBC7VuyaQNKcI7LODnb-yuIDP9I,569
+subadmin/templates/subadmin/delete_confirmation.html,sha256=iaSKm0akt4XGw_Hny4ADdegB_bgOagBV7beFpAL6o-M,421
+subadmin/templates/subadmin/delete_selected_confirmation.html,sha256=2c14BmCVZnqkOPnpW6vYAZ8YvHDEUEoetaa7EQwBGLE,338
+subadmin/templates/subadmin/object_history.html,sha256=3Ck1d-UEb8J1FpJHmg4lnGNixh7vf83YnEmRpPxPRk4,418
+subadmin/templates/subadmin/parent_change_form.html,sha256=Vrxw897lArlML2McGtBWFzg51UjnLdOo7gZkc1eeTCc,266
+subadmin/templates/subadmin/submit_line.html,sha256=XdDa3SlCwlebhKzWycNFi25lU5Pu1NM79PoVPHj3CQE,791
+subadmin/templatetags/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+subadmin/templatetags/subadmin_tags.py,sha256=1l9DlLZ9O7Kt81A9cTTjtqwwjr5HUf33HcyG-St3UOI,1920
+django_subadmin-3.2.0.dist-info/LICENSE,sha256=qn69QFVRnX5frsdR39Lckbxwq7VpuaVdh7dFyzK02sA,1085
+django_subadmin-3.2.0.dist-info/METADATA,sha256=O0Pt6aFV1UGulFBypZBEm1LQ6Q1hwKU57S-QepCHhc0,6303
+django_subadmin-3.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_subadmin-3.2.0.dist-info/top_level.txt,sha256=_TYm3zBrTa6kfJlSY4GhEg8CvGuIv3NyCbC711OauUk,9
+django_subadmin-3.2.0.dist-info/RECORD,,
