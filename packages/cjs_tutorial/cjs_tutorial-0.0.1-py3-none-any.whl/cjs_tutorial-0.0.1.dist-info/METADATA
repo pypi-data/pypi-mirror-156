@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cjs_tutorial
+Version: 0.0.1
+Summary: Exemplar Python package.
+Keywords: tutorial
+Author-email: Chris Sewell <chrisj_sewell@hotmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: ipykernel
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pytest ; extra == "testing"
+Provides-Extra: testing
+
+# CJS Tutorial (Python)
+
+
+```
+$ flit init
+```
+
+tox
+
