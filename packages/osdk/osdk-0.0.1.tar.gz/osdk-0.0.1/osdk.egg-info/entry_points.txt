@@ -1,0 +1,2 @@
+[console_scripts]
+osdk = osdk:main

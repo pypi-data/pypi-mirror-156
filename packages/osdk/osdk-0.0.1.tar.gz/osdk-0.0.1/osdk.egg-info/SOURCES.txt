@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+osdk/__init__.py
+osdk/__main__.py
+osdk/build.py
+osdk/manifests.py
+osdk/ninja.py
+osdk/targets.py
+osdk/utils.py
+osdk.egg-info/PKG-INFO
+osdk.egg-info/SOURCES.txt
+osdk.egg-info/dependency_links.txt
+osdk.egg-info/entry_points.txt
+osdk.egg-info/requires.txt
+osdk.egg-info/top_level.txt
