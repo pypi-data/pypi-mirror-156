@@ -1,0 +1,11 @@
+LICENSE
+README.md
+look_and_say.py
+setup.cfg
+setup.py
+look_and_say.egg-info/PKG-INFO
+look_and_say.egg-info/SOURCES.txt
+look_and_say.egg-info/dependency_links.txt
+look_and_say.egg-info/not-zip-safe
+look_and_say.egg-info/requires.txt
+look_and_say.egg-info/top_level.txt
