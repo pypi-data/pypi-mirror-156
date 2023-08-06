@@ -1,0 +1,260 @@
+Metadata-Version: 2.1
+Name: dataoutsider
+Version: 1.1.1
+Summary: Data visualization toolbox.
+Home-page: https://pypi.org/project/dataoutsider/
+Author: Nick Gerend
+Author-email: nickgerend@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# Welcome to the dataoutsider visualization toolbox!
+
+## Featuring:
+
+* Multi-Chord Diagram
+    * ![](https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-domaincom-v1-0-0%2F690%2F492690%2FdYt43lIQ%2F2d2bee5d133b4c9ba70e33b12ed768e4&amp;methods=resize%2C400 "Multi-Chord Diagram!")
+* Pie-Tree Chart (or Pie-Map Chart)
+    * ![](https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-domaincom-v1-0-0%2F690%2F492690%2FdYt43lIQ%2F63766f09f62c44d38e2d0e1974885e3d&amp;methods=resize%2C400 "Pie-Tree Chart!")
+* Bubble Series Chart
+    * ![This is a alt text.](https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-domaincom-v1-0-0%2F690%2F492690%2FdYt43lIQ%2F3026806f93ee4bea84a3ad2004b1d5b8&amp; "Bubble Series Chart!")
+
+## Multi-Chord Diagram
+Have too many sets for a Venn Diagram?
+
+1. Prepare groups
+a. Select 2 fields that identify 1. a group (ex: sports event) and 2. an entity (ex: athlete) to identify the many-to-many relationships (ex: many athletes to many events)
+or
+b. Pre-group data and provide each unique group combination (ex: athletes that competed in only the [100 meter] vs those that competed in only the [100 meter & 200 meter], etc.) and associated entity count (ex: # of athletes per group)
+1. Configure the parent-group order
+1. The multi-chord diagram will create bonds between many-to-many relationships, sized by the entity count per each unique group combination (ex: 10 athletes competed in only the [50 meter, 100 meter, & meter], 23 athletes competed in only the [100 meter], etc.)
+
+Assumes 1 row = 1 unit for 1. a.
+
+### Example 1 (1. a.):
+```
+from dataoutsider import multi_chord as mc
+
+df = mc.load_olympics_df()
+df = df.loc[(df['Year'] >= 2014) & (df['Sex'] == 'F') & (df['Sport'] == 'Speed Skating')]
+outer = 'Event'
+inner = 'ID'
+lookup = mc.multi_chord_get_alias(df, outer, inner)
+print(lookup)
+df_mc = mc.multi_chord_alias(df, outer, inner, percent = 75.)
+
+df_mc_venn = mc.multi_chord_venn(df_mc)
+
+mc.multi_chord_plot(df_mc, level = 4, transparency = 0.5)
+```
+
+![This is a alt text.](https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-domaincom-v1-0-0%2F690%2F492690%2FdYt43lIQ%2F0fbb7f4935b9467d9765e083e029fab6&amp;methods=resize%2C400 "multi-chord diagram!")
+
+### Example 2 (1. b.):
+```
+from dataoutsider import multi_chord as mc
+import pandas as pd
+
+data = [['a', 25.5], ['a,b', 15], ['a,c', 14.4], ['a,c,d', 5], ['c,d', 13], ['d', 14], ['c,b', 10], ['b', 7]]
+df = pd.DataFrame(data, columns = ['group', 'value'])
+df_mc = mc.multi_chord_on_groups_alias(df, percent=33.)
+df_mc_venn = mc.multi_chord_venn(df_mc)
+mc.multi_chord_plot(df_mc, level = 3, transparency = 0.5)
+```
+![This is a alt text.](https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-domaincom-v1-0-0%2F690%2F492690%2FdYt43lIQ%2F67177cec40e54097987981bbc2e44114&amp;methods=resize%2C600 "multi-chord diagram!")
+### Example 3 (1. a.):
+```
+from dataoutsider import multi_chord as mc
+import pandas as pd
+
+data = [['5', 'a'], ['5', 'b'], ['5', 'd'], ['2', 'b'], ['2', 'c'], ['3', 'b'], ['3', 'd'], ['4', 'c']]
+df = pd.DataFrame(data, columns = ['inner', 'outer'])
+lookup = mc.multi_chord_get_alias(df, 'outer', 'inner')
+print(lookup) # use outer_ID (alias) to set manual order
+df_mc = mc.multi_chord_alias(df, outer='outer', inner='inner', order='1,3,2,4', percent=33.) #, order = 'b,c,d,a'
+mc.multi_chord_plot(df_mc, level = 3, transparency = 0.5)
+```
+![This is a alt text.](https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-domaincom-v1-0-0%2F690%2F492690%2FdYt43lIQ%2F8ae3faa052384f6e9231ce3746c39e9f&amp;methods=resize%2C600 "multi-chord diagram!")
+### Example 4 (1. b. version of Example 3):
+```
+from dataoutsider import multi_chord as mc
+import pandas as pd
+
+data = [['a,b,d', 1], ['b,c', 1], ['b,d', 1], ['c', 1]]
+df = pd.DataFrame(data, columns = ['group', 'value'])
+df_mc = mc.multi_chord_on_groups_alias(df, order = 'b,c,d,a', percent=33.)
+mc.multi_chord_plot(df_mc, level = 3, transparency = 0.5)
+```
+![This is a alt text.](https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-domaincom-v1-0-0%2F690%2F492690%2FdYt43lIQ%2Ff2dc2911953e41639c12837d8d04cd9a&amp;methods=resize%2C600 "multi-chord diagram!")
+
+### Functions:
+```
+multi_chord_alias(df, outer, inner, percent=100., order=None, buffer = 1., elements_offset = 0.04, elements_height = 0.04, group_offset = 0., group_height = 0.04)
+
+multi_chord_get_alias(df, outer, inner)
+
+multi_chord_on_groups_alias(df_chord, percent=100., order=None, buffer = 1., elements_offset = 0.04, elements_height = 0.04, group_offset = 0., group_height = 0.04)
+
+multi_chord_venn(df_mc)
+
+multi_chord_plot(df_mc, level = None, transparency = 0.5)
+```
+* multi_chord_alias: Multi-Chord Diagram generator that encodes the supplied groups with an alias, output: Pandas DataFrame
+* multi_chord_get_alias: retreive the alias for the supplied groups (can use to create a manual ordering)
+* multi_chord_on_groups_alias: Multi-Chord Diagram generator based on pre-defined groupings, output: Pandas DataFrame
+* multi_chord_venn: output for creating an Upset plot, output: Pandas DataFrame
+* multi_chord_plot: generate a plot using Matplotlib
+
+### Parameters:
+| Parameter | Values | Description |
+| :- | :- | :- |
+| **df** | (DataFrame) | Pandas DataFrame |
+| **outer** | (string) | Column name of group |
+| **inner** | (string) | Column name of group entity |
+| **percent** | (float: 0-100) | Percent of full circle to draw within |
+| **order** | (csv string) | Group order |
+| **buffer** | (float) | Radial distance between groups  |
+| **elements_offset** | (float) | Distance offset of element legend for entities |
+| **elements_height** | (float) | Height of element legend for entities |
+| **group_offset** | (float) | Distance offset of group legend |
+| **group_height** | (float) | Height of group legend |
+| **df_mc** | (DataFrame) | Pandas DataFrame of multi-chord results |
+| **level** | (int) | Bold chords by count of groups in chord (optional) |
+| **transparency** | (float: 0-1) | Add color transparency (optional) |
+
+## Pie-Tree Chart
+Need to display hierarchical density as pie-shaped areas?
+
+1. Select [1 to n] categorical columns from a dataframe to group by 
+1. Configure the chart ordering and hierarchy orientation
+1. The pie-tree chart will create a hierarchical set of areas sized by the number of rows in each group at each level
+
+Assumes 1 row = 1 unit
+
+### Example:
+```
+from dataoutsider import pie_tree as pt
+
+df = pt.load_aircraft_df()
+levels = ['Registrant', 'Aircraft', 'Engine', 'seats_bin']
+
+inner_radius = 0.5
+outer_radius = 2.0
+starting_angle = 0.0
+ending_angle = 360.0
+point_resolution = 200
+pie_tree_df = pt.pie_tree_calc(
+    df, levels, 
+    inner_radius, 
+    outer_radius, 
+    starting_angle, 
+    ending_angle, 
+    point_resolution)
+
+pt.pie_tree_plot(pie_tree_df, 4)
+```
+
+![This is a alt text.](https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-domaincom-v1-0-0%2F690%2F492690%2FdYt43lIQ%2F35d90b39d7954382a1668e8272cc367e&methods=resize%2C600%2C5000 "pie_tree chart!")
+
+### Functions:
+```
+def pie_tree_calc(df, groupers, r1, r2, start_angle, end_angle, points, default_sort = False, default_sort_override = True, default_sort_override_reversed = False, all_vertical = False)
+
+pie_tree_plot(pie_tree_df, level = 1, transparency = 0.5, line_level = 0)
+```
+* pie_tree_calc: Pie-Tree (Pie-Map) Chart generator, output: Pandas DataFrame
+* multi_chord_plot: generate a plot using Matplotlib
+
+### Parameters:
+
+| Parameter | Values | Description |
+| :- | :- | :- |
+| **df** | (DataFrame) | Pandas DataFrame |
+| **groupers** | list of (string) | Columns names in df |
+| **r1** | (float) | Innder radius |
+| **r2** | (float) | Outer radius (> inner radius) |
+| **start_angle** | (float) | Angle to start drawing |
+| **end_angle** | (float) | Angle to end drawing |
+| **points** | (int) | Resolution for curve drawing |
+| **default_sort** | True/False | Default: *False*, True: pandas sort, False: data sort |
+| **default_sort_override** | True/False | Default: *True*, True: overrides default_sort |
+| **default_sort_override_reversed** | True/False | Default: *False*, sort areas True: desc, False: asc |
+| **all_vertical** | True/False | Default: *False*, True: break levels vertically, False: alternate |
+| **level** | (int) | Hierarchy level to plot (optional) |
+| **transparency** | (float: 0-1) | Add color transparency (optional) |
+| **line_level** | (int) | Hierarchy level to bold (optional) |
+
+### Variations:
+![This is a alt text.](https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-domaincom-v1-0-0%2F690%2F492690%2FdYt43lIQ%2Ffa09a1b2be194a6ba0b9f91d0953f675&amp "pie_tree chart!")
+
+## Bubble Series Chart
+Need to visualize sized bubbles that have a positional feature?
+
+1. Identify the columns names in the data for item, position, and size (circle area)
+1. Add an optional radius buffer to separate the circles
+1. The bubble series chart will pack all of the sized circles deterministically according to their positions (along the horizontal axis)
+
+Assumes 1 row = 1 unit
+
+### Example:
+```
+from dataoutsider import bubble_series as bs
+
+data = [
+    ('a',-5.2,4.1),
+    ('b',-3.2,3.5),
+    ('c',2,2),
+    ('d',1,7),
+    ('e',5,5),
+    ('f',13,4),
+    ('g',12,3),
+    ('h',1.5,0.5)]
+df = pd.DataFrame(data, columns = ['name', 'position', 'size'])
+
+df_bs = bs.bubble_series_calc(df, 'name', 'position', 'size', 0.0)
+bs.bubble_series_plot(df_bs)
+```
+
+![This is a alt text.](https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-domaincom-v1-0-0%2F690%2F492690%2FdYt43lIQ%2F05b6ae03676248099b778914b075d85c&amp; "pie_tree chart!")
+
+### Functions:
+```
+bubble_series_calc(df, item_col_name, position_col_name, size_col_name, r_buffer=0.0)
+
+bubble_series_plot(bubble_series_calc_df, transparency = 0.5)
+```
+* bubble_series_calc: Bubble Series Chart generator, output: Pandas DataFrame
+* bubble_series_plot: generate a plot using Matplotlib
+
+### Parameters:
+
+| Parameter | Values | Description |
+| :- | :- | :- |
+| **df** | (DataFrame) | Pandas DataFrame |
+| **item_col_name** | (string) | Columns name of items |
+| **position_col_name** | (string) | Columns name of item's positions |
+| **size_col_name** | (string) | Columns name of item's sizes |
+| **r_buffer** | (float) | radius buffer to add separation between bubbles (optional) |
+| **transparency** | (float: 0-1) | Add color transparency (optional) |
+
+
+## Tableau users
+
+#### Output:
+* Polygon chart: Columns: [x], Rows: [y], Path: [path], Detail: varies by algorithm, use grouping fields as needed (see examples below)
+
+#### Examples:
+
+* Multi-Chord Diagram: [Sink or Swim](https://public.tableau.com/app/profile/nick.gerend/viz/SinkorSwim_16287160714940/SinkorSwim)
+* Pie-Tree Chart: [Takeoff](https://public.tableau.com/profile/nick.gerend#!/vizhome/Takeoff/Takeoff)
+* Bubble Series Chart: [Black Hole Sun](https://public.tableau.com/app/profile/nick.gerend/viz/BlackHoleSun/BlackHoleSun)
+
+### Check back soon for updates!
+
