@@ -1,0 +1,9 @@
+README.md
+setup.py
+ConfigParser/ConfigParser.py
+ConfigParser/_DictItem.py
+ConfigParser/__init__.py
+PyConfigParser.egg-info/PKG-INFO
+PyConfigParser.egg-info/SOURCES.txt
+PyConfigParser.egg-info/dependency_links.txt
+PyConfigParser.egg-info/top_level.txt
