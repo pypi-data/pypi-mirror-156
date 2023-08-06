@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+talktomachine/__init__.py
+talktomachine/talk_to_humans.py
+talktomachine/talk_to_machine.py
+talktomachine.egg-info/PKG-INFO
+talktomachine.egg-info/SOURCES.txt
+talktomachine.egg-info/dependency_links.txt
+talktomachine.egg-info/top_level.txt
