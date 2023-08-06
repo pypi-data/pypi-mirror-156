@@ -1,0 +1,13 @@
+numpy>=1.17.2
+scipy>=1.3.1
+pandas>=1.0.0
+lightgbm>=2.3.0
+pywavelets
+scikit-learn
+h5py
+matplotlib
+packaging
+pyyaml
+
+[:python_version < "3.7"]
+importlib_resources
