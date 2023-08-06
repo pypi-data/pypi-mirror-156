@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fyiban
+Version: 1.0.0
+Summary: Apis lib for yiban.
+Home-page: https://github.com/sricor/yiban
+Author: Sricor
+Author-email: josricor@outlook.com
+License: MIT
+Project-URL: Source, https://github.com/sricor/yiban
+Project-URL: Bug Tracker, https://github.com/sricor/yiban/issues
+Keywords: yiban school task health
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Environment :: Console
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
