@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unknown_fields"
+version = "0.0.1a1"
+authors = [
+  { name="haruna-dev", email="haruna-dev@proton.me" },
+]
+description = "Wrapper to handle unknown parameters for dataclasses init"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/haruna-dev/unknown_fields"
+"Bug Tracker" = "https://github.com/haruna-dev/unknown_fields/issues"
