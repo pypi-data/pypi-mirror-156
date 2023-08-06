@@ -1,0 +1,2 @@
+[lightning.external_components]
+lightning_hpo = lightning_hpo:exported_lightning_components
