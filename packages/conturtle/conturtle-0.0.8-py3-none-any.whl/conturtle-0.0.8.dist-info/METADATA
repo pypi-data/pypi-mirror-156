@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: conturtle
+Version: 0.0.8
+Summary: a console version of python turtle
+Home-page: https://github.com/LogSkele/conturtle
+Author: iop3
+Author-email: keystove@gmail.com
+Project-URL: Bug Tracker, https://github.com/LogSkele/conturtle/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# conturtle
+
+💻 + 🐢
+
+> conturtle is short for console turtle
+
+## Installation
+
+### For Windows
+1. Go to console (or terminal)
+2. Now follow instructions over here: https://github.com/kcsaff/getkey/issues/2#issuecomment-611278429
+
+###### Why there you may ask. Well it took me a long time to find a solution the windows bug for `getkey`, and the repo was not maintained and active anymore.
+###### They didn't add a solution for windows. But @li-rupert made one for windows. So check out his fork :D.
+
+3. Go back to your console after my quick talk
+4. Enter
+
+```
+pip install cursor
+```
+
+5. Then
+
+```
+pip install conturtle
+```
+
+6. Import it!
+
+```py
+from conturtle import *
+```
+
+### For Other OS
+
+Very simple.
+
+1. Install `requirements.txt`
+
+```
+pip install -r requirements.txt
+```
+
+2. Import `conturtle`
+
+```py
+from conturtle import *
+```
+
+## Use
+
+IDK, it is just a maze so play around and add stuff I guess.
+
+## Credits
+Someone on replit who first made the structure of it.
+
+And me ofc.
+
+## Note
+I've made lots of these maze games on my replit account (they are old deal with it).
+
+Check them out! --> [@icodeletion](https://replit.com/@icodeletion)
+
+> totally not advertising my work on my work lol
