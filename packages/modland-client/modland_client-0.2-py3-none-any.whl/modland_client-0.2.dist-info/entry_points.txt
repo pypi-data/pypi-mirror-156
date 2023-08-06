@@ -1,0 +1,2 @@
+[console_scripts]
+modland_client = modland_client.py:main
