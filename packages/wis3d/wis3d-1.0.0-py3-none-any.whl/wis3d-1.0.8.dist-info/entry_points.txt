@@ -1,0 +1,2 @@
+[console_scripts]
+wis3d = wis3d:main
