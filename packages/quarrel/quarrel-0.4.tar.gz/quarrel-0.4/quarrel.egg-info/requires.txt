@@ -1,0 +1,17 @@
+concentric
+jinja2
+
+[all]
+numpy
+pandas
+
+[dev]
+pytest
+flake8
+coverage
+bumpversion
+twine
+
+[pandas]
+pandas
+numpy
