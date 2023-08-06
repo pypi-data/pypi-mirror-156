@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+curseofaros/__init__.py
+curseofaros.egg-info/PKG-INFO
+curseofaros.egg-info/SOURCES.txt
+curseofaros.egg-info/dependency_links.txt
+curseofaros.egg-info/requires.txt
+curseofaros.egg-info/top_level.txt
+curseofaros/_assets/__init__.py
+curseofaros/_assets/_client.py
+curseofaros/_assets/errors.py
