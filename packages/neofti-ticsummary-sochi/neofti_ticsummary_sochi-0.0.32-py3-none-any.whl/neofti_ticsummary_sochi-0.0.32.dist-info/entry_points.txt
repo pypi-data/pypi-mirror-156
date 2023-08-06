@@ -1,0 +1,3 @@
+[gui_scripts]
+ticsummary_sochi = ticsummary_sochi.__main__:startup
+
