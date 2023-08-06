@@ -1,0 +1,2 @@
+[console_scripts]
+litexplore = litexplore:__main__
