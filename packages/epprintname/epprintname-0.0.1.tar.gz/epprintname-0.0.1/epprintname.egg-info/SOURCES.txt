@@ -1,0 +1,7 @@
+setup.py
+epprintname.egg-info/PKG-INFO
+epprintname.egg-info/SOURCES.txt
+epprintname.egg-info/dependency_links.txt
+epprintname.egg-info/top_level.txt
+printName/__init__.py
+printName/pN.py
