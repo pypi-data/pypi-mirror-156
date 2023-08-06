@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: logreg
+Version: 0.1.0
+Summary: A logisticregression model for predicting license short_name
+Home-page: UNKNOWN
+Author: Sushant Kumar
+Author-email: sushantmishra02102002@gmail.com
+License: UNKNOWN
+Description: ## About
+        
+        This is a simple python package of LogisticRegression model trained on the Minerva dataset. The trained model can be used to
+        predict the license shortname from the code.
+        
+        ### How to use
+        
+        - Installing the package:
+          - `pip install logreg`
+        - Import the trained model:
+          - `from logreg import logreg`
+          - `short_name = logreg(preprocessed_data)`
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

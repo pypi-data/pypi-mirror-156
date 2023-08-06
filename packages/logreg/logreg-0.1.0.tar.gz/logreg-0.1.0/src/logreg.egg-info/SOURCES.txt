@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+src/logreg/__init__.py
+src/logreg.egg-info/PKG-INFO
+src/logreg.egg-info/SOURCES.txt
+src/logreg.egg-info/dependency_links.txt
+src/logreg.egg-info/top_level.txt
