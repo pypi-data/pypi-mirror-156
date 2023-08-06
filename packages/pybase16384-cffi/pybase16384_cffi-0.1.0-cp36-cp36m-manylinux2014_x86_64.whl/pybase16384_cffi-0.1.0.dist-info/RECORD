@@ -1,0 +1,7 @@
+pybase16384/__init__.py,sha256=N4FJZ-6iXWM1ry5S40viP7dB2Y8-oPLpfmuihNuj5TM,6488
+pybase16384/_core.abi3.so,sha256=nD2pw7Nx_zzaTHnaUUl1ORxE_pLATs7_mM1GI9i3DsM,57104
+pybase16384/build.py,sha256=5xfMTuK5Xp-5ZkI2z7Sc_nf3gnXvid1GB6x8SqlCd3M,1239
+pybase16384_cffi-0.1.0.dist-info/METADATA,sha256=9teEhExlXnLIXnVxqUhM9NR_jMPx7bHJUJ1P69hOwsw,1258
+pybase16384_cffi-0.1.0.dist-info/WHEEL,sha256=KDdWf3ZhYQfpUsmL4e8Y1MYFgvqyIyp2j7DqDOHxoMM,104
+pybase16384_cffi-0.1.0.dist-info/top_level.txt,sha256=kXpl7pWjnjpm74qJP0SJg3JhbiWuwKQApJgkJH0B5Mk,12
+pybase16384_cffi-0.1.0.dist-info/RECORD,,
