@@ -1,0 +1,4 @@
+winapyC.cp39-win_amd64.pyd
+winapy_gdi.cp39-win_amd64.pyd
+winapy_mme.cp39-win_amd64.pyd
+winapy_user.cp39-win_amd64.pyd
