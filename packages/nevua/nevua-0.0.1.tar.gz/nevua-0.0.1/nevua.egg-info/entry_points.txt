@@ -1,0 +1,2 @@
+[console_scripts]
+nevua = nevua.__main__:main

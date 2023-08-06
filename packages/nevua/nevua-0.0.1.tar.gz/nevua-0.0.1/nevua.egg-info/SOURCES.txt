@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+nevua.egg-info/PKG-INFO
+nevua.egg-info/SOURCES.txt
+nevua.egg-info/dependency_links.txt
+nevua.egg-info/entry_points.txt
+nevua.egg-info/requires.txt
+nevua.egg-info/top_level.txt

@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: nevua
+Version: 0.0.1
+Summary: Dashboards to analyze the spread of the novel coronavirus.
+Home-page: https://www.github.com/jbenjoseph/nevua
+Author: JJ Ben-Joseph
+Author-email: jbenjoseph@iqt.org
+License: Apache
+Keywords: machine_learning artificial_intelligence dashboard forecasting
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Provides-Extra: full
+License-File: LICENSE
+
+Nevua 
+~~~~~
+
+This is a platform for disease forcasting. It is especially focused on monitoring the COVID-19 outbreak.
+
+Currently includes:
+
+* A dashboard that detects hotspots based on growth (not total cases) and maps them.
+
+Uses third-party data:
+
+* Coronavirus data from the New York Times.
+
+This is a reboot of an old project from the start of the pandemic. We are forking it to get it into a publishable form for an academic venue.
+
+Installation
+~~~~~~~~~~~~
+
+:: 
+
+    pip install nevua
+
+
+Usage
+~~~~~
+
+::
+
+    nevua up
+
+Running the web app on a WSGI server is recommended for production. The module is 
+"nevua.app:SERVER". We use uWSGI.
+
+
+License and Credits
+~~~~~~~~~~~~~~~~~~~
+
+Apache Licensed. 
+Forked from corona-dashboard project of B.Next which had same author (JJ Ben-Joseph).
+
