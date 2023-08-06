@@ -1,0 +1,7 @@
+setup.py
+lib/__init__.py
+lib/ok.py
+sscd5.egg-info/PKG-INFO
+sscd5.egg-info/SOURCES.txt
+sscd5.egg-info/dependency_links.txt
+sscd5.egg-info/top_level.txt
