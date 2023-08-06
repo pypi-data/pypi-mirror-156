@@ -1,0 +1,9 @@
+LICENSE,sha256=krEAn_vzqvoFMf0xMy02elYuC6tHDYGBo10yd4J2xhk,1633
+neuralsens/__init__.py,sha256=_wfA3yKDOWTFgz3lRGVrwbkLPzrW1BPQKEXhi2mi0QU,159
+neuralsens/activation_functions.py,sha256=_kigatGhi0O_xHdmFL7gKmY7gLY6SblgY_7J2RY1mIA,12645
+neuralsens/meta.yaml,sha256=vw84R189KNsp30K7PpFcOGdW059B0jY8ojtBaLBuIsM,831
+neuralsens/partial_derivatives.py,sha256=tC06iFF-ZbW_GGAYlaykxWL4tOmSWJtCaopEMCi_lqE,56905
+neuralsens-0.0.4.dev10.dist-info/LICENSE,sha256=krEAn_vzqvoFMf0xMy02elYuC6tHDYGBo10yd4J2xhk,1633
+neuralsens-0.0.4.dev10.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+neuralsens-0.0.4.dev10.dist-info/METADATA,sha256=-KAuTKWwumg6EUzZdshJnaah0w0DCc0oBeI97XroQ94,2559
+neuralsens-0.0.4.dev10.dist-info/RECORD,,
