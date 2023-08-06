@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+boxfish/boxfish.egg-info/PKG-INFO
+boxfish/boxfish.egg-info/SOURCES.txt
+boxfish/boxfish.egg-info/dependency_links.txt
+boxfish/boxfish.egg-info/top_level.txt
