@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cesium
+Version: 0.10.1
+Summary: Machine Learning Time-Series Platform
+Home-page: http://cesium-ml.org
+Download-URL: https://github.com/cesium-ml/cesium
+Maintainer: cesium Team
+Maintainer-email: stefanv@berkeley.edu
+License: Modified BSD
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires: numpy (>= 1.14.3)
+Requires: scipy (>= 0.16.0)
+Requires: scikit_learn (>= 0.22.1)
+Requires: pandas (>= 0.17.0)
+Requires: dask (>= 2.5.0)
+Requires: toolz
+Requires: gatspy (>= 0.3.0)
+Requires: cloudpickle
+Requires: joblib (>= 0.14.1)
+License-File: LICENSE.txt
+Requires-Dist: scipy (>=0.16.0)
+Requires-Dist: scikit-learn (>=0.22.1)
+Requires-Dist: pandas (>=0.17.0)
+Requires-Dist: dask (>=2.5.0)
+Requires-Dist: toolz
+Requires-Dist: gatspy (>=0.3.0)
+Requires-Dist: cloudpickle
+Requires-Dist: joblib (>=0.14.1)
+
+Machine Learning Time Series Platform
+
+https://github.com/cesium-ml/cesium
+
