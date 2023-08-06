@@ -1,0 +1,7 @@
+[
+  "test_backend.py::TestMemoryBackend::test_app",
+  "test_backend.py::TestMemoryBackend::test_backend",
+  "test_backend.py::TestRawSQLBackend::test_app",
+  "test_backend.py::TestRawSQLBackend::test_backend",
+  "test_version.py::TestVersion::test_version_type"
+]
