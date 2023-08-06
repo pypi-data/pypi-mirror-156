@@ -1,0 +1,13 @@
+ds_store_dump/DSStoreDumper.py,sha256=AYkAzj0g1YkihK1uW-rkA-OcO8TkcNujbafTnjhJ8wg,5094
+ds_store_dump/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ds_store_dump/__main__.py,sha256=ZfOxtoVjRBKW7ztjxwl64eWLi4Cka6yKrdddmZoNu90,81
+ds_store_dump/cli.py,sha256=AF0aJ6is67uYLRMruYbNT51wVGSABtRXeCE9mFf2dRI,1704
+ds_store_dump/log.py,sha256=bTwxIYG-2CluEM0bo3jv8bveL06qRj3lRe63wRajTK8,482
+ds_store_dump/utils/decorators.py,sha256=-ZRlSXKGC1RzYtqcIi8rR0dVLACX28Myldw4NelJJiI,187
+ds_store_dump/utils/logging.py,sha256=ODt34NjYjgbBY4dEibQauEK76G-WXBLNIN1o3kJnLSo,502
+ds_store_dump/utils/termcolors.py,sha256=EgWwLCzvZERLbAw_JhbN9zZdik02_tnGaXgtuzrEjpM,1130
+ds_store_dump-0.1.0.dist-info/entry_points.txt,sha256=OzDX0UcHMxbJh6KmcqIn0XChdcedqoPfASnrKtIumRo,51
+ds_store_dump-0.1.0.dist-info/LICENSE,sha256=oBgl93HVsM3Wo_p2SBoruQpf7Stz6hcxPejlXGMDiZA,1063
+ds_store_dump-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+ds_store_dump-0.1.0.dist-info/METADATA,sha256=qygO5mjh_-emUkdHVi3gpwrz_X7CUkwtnMUDeaXYtIk,529
+ds_store_dump-0.1.0.dist-info/RECORD,,

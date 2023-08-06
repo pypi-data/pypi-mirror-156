@@ -1,0 +1,3 @@
+[console_scripts]
+ds-store-dump=ds-store-dump:cli
+
