@@ -1,0 +1,6 @@
+aspell-python-py3
+gmpy2
+langdetect
+pycrypto
+scipy
+z3-solver
