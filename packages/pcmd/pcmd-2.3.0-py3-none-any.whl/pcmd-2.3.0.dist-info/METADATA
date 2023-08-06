@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: pcmd
+Version: 2.3.0
+Summary: A super simple terminal command shortener.
+Home-page: https://github.com/j0fiN/pcmd
+License: Apache-2.0
+Keywords: command-line,utilities,cmd,terminal,CLI
+Author: Jofin
+Author-email: jofinfab@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Utilities
+Requires-Dist: Distance
+Requires-Dist: PyYAML
+Requires-Dist: typer
+Project-URL: Repository, https://github.com/j0fiN/pcmd
+Description-Content-Type: text/markdown
+
+## About
+During daily development, it can be frustrating,
+
+- to type long commands when you start up the terminal for the day (or when your terminal shuts down due to unknown reasons!) or,
+- to type a set of terminal commands repeatedly to do configuration, checks, and so on.
+
+> For these problems...
+
+***pcmd*** comes in handy :thumbsup:  
+It's main features are
+
+- It helps to execute commands with a user-define name. 
+- It helps to execute multiple commands with just a single user-defined name.
+
+A single config file ...
+
+... and your ready to go !
+
+Trust me, it is better than bash aliases!
+## ><=> pcmd 
+- [Documentation](https://j0fin.github.io/pcmd/)
+- [Source Code](https://github.com/j0fiN/pcmd)

@@ -1,0 +1,15 @@
+pcmd/__const__.py,sha256=DpRD9x0yFOXcXk3jnqXa8BaDtXuppSsYZkPLn4UZPm4,786
+pcmd/__core__.py,sha256=J-jajZyjgPjQo1mM4Y4Vme4Kc56AYE10IkoLIBv1AkU,4847
+pcmd/__echoes__.py,sha256=xmaztb7BH-a3NkBjXFpYZamI1BmfvGqmS2_5TyKJZcg,3338
+pcmd/__helper__.py,sha256=hpEZpOMNpIWLkPqxicG2iqIXCd65ZRnofMWY0UcVj4c,705
+pcmd/__init__.py,sha256=BmC-HC9gwDmXCRJrQJSTN3hcUhkReiGBq_eybplD7RI,28
+pcmd/__main__.py,sha256=kWgujrQ-0vGx3feSyhNfZzBUcqKb7y9L0d6bB_sfVrY,139
+pcmd/main.py,sha256=xws-qMdsTcMlkS2mOQJCh84PJ88QHIzUSzBg50Tj2Yo,4944
+pcmd/tryouts/tryout_add.py,sha256=3uEWAaRX8IaSZtjCOHVmYZfCcugAyI0ncdJuu0pLM-8,362
+pcmd/tryouts/tryout_run_args.py,sha256=8yHu20nxwRDg6l02Qk0ZcQkNBJUESn8JW0Z_Fm1HZTI,1295
+pcmd/tryouts/tryout_template.py,sha256=mpLc8FGnpU96khxOZnLdQocNAzuVAKm1vbi_Wwx_BEQ,1325
+pcmd-2.3.0.dist-info/entry_points.txt,sha256=7fSX5BEBt9WEMp-saow0ayk2seKiqskdp62DdnpAtoI,38
+pcmd-2.3.0.dist-info/LICENSE,sha256=kyP6zWtYK3Ke2itaoOUDE5NW5Ob9kwD7bgHs9orBrLc,11547
+pcmd-2.3.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pcmd-2.3.0.dist-info/METADATA,sha256=YcxZywXRJEZEqExzV1ZCeu3ETNTMcQZdb9Sn2Da195M,1607
+pcmd-2.3.0.dist-info/RECORD,,
