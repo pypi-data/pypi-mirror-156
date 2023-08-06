@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+tqdm
+magenpy==0.0.4
+statsmodels
+scikit-learn
+psutil
