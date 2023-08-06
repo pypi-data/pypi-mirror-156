@@ -1,0 +1,8 @@
+README.md
+setup.py
+execman/__init__.py
+execman/execman.py
+execman.egg-info/PKG-INFO
+execman.egg-info/SOURCES.txt
+execman.egg-info/dependency_links.txt
+execman.egg-info/top_level.txt
