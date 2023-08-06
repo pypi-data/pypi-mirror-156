@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: watty
+Version: 0.1.2
+Summary: Wrapper around the aWATTar Price API.
+Home-page: https://github.com/aaronlyy/watty
+Author: aaronlyy (Aaron Levi)
+Author-email: <aaronlevican@gmail.com>
+License: UNKNOWN
+Keywords: energy,energycost,api,germany,austria
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# watty
+Wrapper around the aWATTar Price API
+
+
