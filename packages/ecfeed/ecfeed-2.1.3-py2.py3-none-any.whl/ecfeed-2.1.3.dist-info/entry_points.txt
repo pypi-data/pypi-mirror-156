@@ -1,0 +1,2 @@
+[console_scripts]
+ecfeed = ecfeed_cli:main
