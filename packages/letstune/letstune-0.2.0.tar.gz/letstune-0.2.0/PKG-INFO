@@ -1,0 +1,170 @@
+Metadata-Version: 2.1
+Name: letstune
+Version: 0.2.0
+Summary: Hyper-parameter tuning for the masses!
+Home-page: https://www.letstune.org/
+License: MIT
+Keywords: machine-learning,hyperparameter-tuning,deep-learning
+Author: Michał Słapek
+Author-email: 28485371+mslapek@users.noreply.github.com
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Project-URL: Documentation, https://letstune.readthedocs.io/
+Project-URL: Repository, https://github.com/mslapek/letstune
+Description-Content-Type: text/markdown
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/mslapek/letstune/main/img/logo.svg"><br>
+</div>
+
+-----------------
+
+# letstune
+
+*Hyper-parameter tuning for the masses!*
+
+![License: MIT](https://img.shields.io/badge/license-MIT-purple.svg)
+[![Documentation Status](https://readthedocs.org/projects/letstune/badge/?version=latest)](https://letstune.readthedocs.io/en/latest/?badge=latest)
+[![PyPI wheel](https://img.shields.io/pypi/wheel/letstune?color=orange&label=pip)](https://pypi.org/project/letstune/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat)](https://pycqa.github.io/isort/)
+![Lint and test workflow](https://github.com/mslapek/letstune/actions/workflows/linttest.yml/badge.svg)
+
+* [Documentation](https://letstune.readthedocs.io/en/latest/)
+* [PyPI Package](https://pypi.org/project/letstune/)
+* [Examples](examples)
+
+## Why?
+
+### Do you know good *number of layers* or *learning rate*?
+
+**No?** I also don't. :wink:
+
+_letstune_ tries various parameter configurations and gives you back
+the best model.
+
+### Do you have *excess* of time or cloud resources?
+
+**Nobody has!** :alarm_clock:
+
+When training neural network or doing gradient boosting,
+_letstune_ spends most of the time on the most promising
+parameters.
+
+_letstune_ makes a kind of :moneybag: investment rounds.
+
+At the first round, it evaluates all parameters for a few epochs.
+
+Only 25% of trainings will advance to the next round.
+Trainings with the lowest metric value are automatically dropped.
+
+### Are you a *hard worker*?
+
+**Neither do I.** :sunglasses:
+
+Common tasks in _letstune_ are realized with Python one-liners:
+
+* get the best model: `model = tuning[0].best_epoch.checkpoint.load_pickle()`
+* get Pandas summary dataframe with *parameters* and *metric values*: `df = tuning.to_df()`
+
+### Additionally:
+
+Works with your favourite ML library :snake: - it's *library agnostic*!
+
+*Resumes work* from the point, where program was stopped.
+
+Permissive *business-friendly* MIT license.
+
+## Great! How to use it?
+
+Install with *pip*:
+
+```
+pip install letstune
+```
+
+First, define your *parameters*:
+
+```python
+import letstune
+from letstune import rand
+
+class SGDClassifierParams(letstune.ModelParams[SGDClassifier]):
+    average: bool
+    l1_ratio: float = rand.uniform(0, 1)
+    alpha: float = rand.uniform(1e-2, 1e0, log=True)
+```
+
+Then define a *trainer*.
+*Trainer* is an object, which knows how to *train* a model!
+
+```python
+class DigitsTrainer(letstune.SimpleTrainer[SGDClassifierParams]):
+    metric = letstune.Metric("accuracy")
+
+    def load_dataset(self, dataset):
+        self.X_train, self.X_test, self.y_train, self.y_test = dataset
+
+    def train(self, params):
+        # params has type SGDClassifierParams
+
+        # letstune provides method create_model
+        # returning SGDClassifier
+        model = params.create_model(
+            loss="hinge",
+            penalty="elasticnet",
+            fit_intercept=True,
+            random_state=42,
+        )
+        model.fit(self.X_train, self.y_train)
+
+        accuracy = model.score(self.X_test, self.y_test)
+
+        return model, {"accuracy": accuracy}
+
+
+trainer = DigitsTrainer()  # new instance!
+```
+
+Neural networks and gradient boosting trainings
+can be based on `letstune.EpochTrainer`,
+which has `train_epoch` method.
+
+Finally, *let's tune*!
+
+```python
+tuning = letstune.tune(
+    trainer,
+    16,  # number of tested random parameters
+    dataset=(X_train, X_test, y_train, y_test),
+    results_dir="digits_tuning",
+)
+```
+
+*Our model* is ready to use:
+
+```python
+model = tuning[0].checkpoint.load_pickle()
+```
+
+Don't forget to check out [examples directory](examples)! :eyes:
+
+Documentation is [here](https://letstune.readthedocs.io/en/latest/)!
+
+## References
+
+*A System for Massively Parallel Hyperparameter Tuning* by Li et al.;
+[arXiv:1810.05934](https://arxiv.org/abs/1810.05934)
+
+Overview of various hyperparameter-tuning algorithms.
+_letstune_ implements a variant of Successive Halving.
+
+## Are you a cloud provider?
+
+Check out [README](https://github.com/mslapek)
+about *letstune* and *cloud providers*.
+
