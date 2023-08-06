@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: huscy.participations
+Version: 0.2.0a6
+Summary: huscy.participations
+Home-page: https://bitbucket.org/huscy/participations
+Author: Stefan Bunde
+Author-email: stefanbunde+git@posteo.de
+License: AGPLv3+
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Description-Content-Type: text/markdown
+Provides-Extra: development
+Provides-Extra: testing
+License-File: LICENSE
+
+# huscy.participations
+
+
