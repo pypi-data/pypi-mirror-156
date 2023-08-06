@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pyteomics_utils/__init__.py
+pyteomics_utils/fasta.py
+pyteomics_utils/main.py
+pyteomics_utils/pepxml.py
+pyteomics_utils/utils.py
+pyteomics_utils.egg-info/PKG-INFO
+pyteomics_utils.egg-info/SOURCES.txt
+pyteomics_utils.egg-info/dependency_links.txt
+pyteomics_utils.egg-info/entry_points.txt
+pyteomics_utils.egg-info/requires.txt
+pyteomics_utils.egg-info/top_level.txt

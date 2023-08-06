@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pyteomics-utils
+Version: 0.0.5
+Summary: Simple but handy CLI tools for everyday data analysis tasks.
+Author: Lev Levitsky
+Author-email: pyteomics@googlegroups.com
+License: License :: OSI Approved :: Apache Software License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries
+Provides-Extra: XML
+License-File: LICENSE
+
+# pyteomics-utils
+Simple but handy CLI tools for everyday data analysis tasks.
+
+The commands operate on stdin and write to stdout whenever possible.
+
+## Supported commands (run each command with `-h` for help)
+
+`pyteomics fasta decoy` -- generate a decoy database for one or more files.
+
+`pyteomics fasta describe` -- check contents of a FASTA file.
+
+`pyteomics fasta combine` -- combine multiple FASTA files, optionally adding decoys in the process.
+
+`pyteomics pepxml info` -- list number of PSMs (with and without FDR filtering) in pepXML files.
+
+

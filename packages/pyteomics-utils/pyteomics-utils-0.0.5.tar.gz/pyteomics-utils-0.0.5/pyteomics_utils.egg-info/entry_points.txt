@@ -1,0 +1,2 @@
+[console_scripts]
+pyteomics = pyteomics_utils.main:main
