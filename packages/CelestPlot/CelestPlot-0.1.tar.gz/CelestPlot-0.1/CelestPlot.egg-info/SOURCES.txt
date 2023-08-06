@@ -1,0 +1,9 @@
+setup.py
+CelestPlot.egg-info/PKG-INFO
+CelestPlot.egg-info/SOURCES.txt
+CelestPlot.egg-info/dependency_links.txt
+CelestPlot.egg-info/requires.txt
+CelestPlot.egg-info/top_level.txt
+Celestcoord/CelSphere.py
+Celestcoord/InNCon.py
+Celestcoord/__init__.py
