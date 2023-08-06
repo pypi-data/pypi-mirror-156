@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: light-pandas
+Version: 0.1.2
+Summary: Light weight Pandas library
+Home-page: https://github.com/bombhero/LightPandas
+Author: bomb_hero
+Author-email: bomb.zhang@gmail.com
+License: MIT
+Description: # light-pandas
+        
+        ## Brief
+        Light pandas will compatible with part of pandas.<br>
+        It is base on list data structure.<br>
+        The cell type only support str.
+        
+            
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
