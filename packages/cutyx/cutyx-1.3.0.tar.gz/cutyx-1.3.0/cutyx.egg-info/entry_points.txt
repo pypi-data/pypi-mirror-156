@@ -1,0 +1,2 @@
+[console_scripts]
+cutyx = cutyx.cli:main
