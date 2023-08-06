@@ -1,0 +1,17 @@
+AUTHORS
+LICENSE
+README.md
+setup.py
+midea_python_client/__init__.py
+midea_python_client/midea_client.py
+midea_python_client/midea_databody_dehumi_query.py
+midea_python_client/midea_databody_dehumi_request.py
+midea_python_client/midea_databody_dehumi_response.py
+midea_python_client/midea_dehumidification_device.py
+midea_python_client/midea_fcCon.py
+midea_python_client/midea_security.py
+midea_python_client.egg-info/PKG-INFO
+midea_python_client.egg-info/SOURCES.txt
+midea_python_client.egg-info/dependency_links.txt
+midea_python_client.egg-info/requires.txt
+midea_python_client.egg-info/top_level.txt
