@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: bblocks
+Version: 0.1.1
+Summary: A package with tools to download and analyse international development data.
+Home-page: https://github.com/ONECampaign/bblocks
+License: MIT
+Author: The ONE Campaign
+Author-email: data@one.org
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: country-converter (>=0.7,<0.8); extra == "dev" or extra == "doc"
+Requires-Dist: numpy (>=1.23,<2.0); extra == "dev" or extra == "doc"
+Requires-Dist: openpyxl (>=3.0.10,<4.0.0); extra == "dev" or extra == "doc"
+Requires-Dist: pandas (>=1.4,<2.0); extra == "test" or extra == "dev" or extra == "doc"
+Requires-Dist: pytest (>=7.1.2,<8.0.0); extra == "test" or extra == "dev"
+Requires-Dist: pytest-cov (>=3.0.0,<4.0.0); extra == "test" or extra == "dev"
+Requires-Dist: twine (>=4.0.1,<5.0.0); extra == "dev"
+Requires-Dist: wbgapi (>=1.1,<2.0)
+Requires-Dist: wheel (>=0.37.1,<0.38.0)
+Description-Content-Type: text/markdown
+
+# bblocks
+
+
+[![pypi](https://img.shields.io/pypi/v/bblocks.svg)](https://pypi.org/project/bblocks/)
+[![python](https://img.shields.io/pypi/pyversions/bblocks.svg)](https://pypi.org/project/bblocks/)
+[![codecov](https://codecov.io/gh/ONECampaign/bblocks/branch/main/graphs/badge.svg)](https://codecov.io/github/ONECampaign/bblocks)
+
+
+
+A package with tools to download and analyse international development data.
+
+
+* Documentation: <https://ONECampaign.github.io/bblocks>
+* GitHub: <https://github.com/ONECampaign/bblocks>
+* PyPI: <https://pypi.org/project/bblocks/>
+* Free software: MIT
+
+
+## Features
+
+* TODO
+
