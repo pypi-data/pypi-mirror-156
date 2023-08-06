@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-payroll
+Version: 14.0.20220623.0
+Summary: Meta package for oca-payroll Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-hr-payroll-cancel
+Requires-Dist: odoo14-addon-hr-payslip-change-state
+Requires-Dist: odoo14-addon-payroll
+Requires-Dist: odoo14-addon-payroll-account
+
+UNKNOWN
+
