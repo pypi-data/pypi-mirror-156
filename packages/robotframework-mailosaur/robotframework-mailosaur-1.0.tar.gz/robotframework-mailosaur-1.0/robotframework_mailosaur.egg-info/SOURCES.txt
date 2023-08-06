@@ -1,0 +1,11 @@
+README.md
+setup.py
+rfmailosaur/__init__.py
+rfmailosaur/keywords.py
+rfmailosaur/server_management_keywords.py
+rfmailosaur/version.py
+robotframework_mailosaur.egg-info/PKG-INFO
+robotframework_mailosaur.egg-info/SOURCES.txt
+robotframework_mailosaur.egg-info/dependency_links.txt
+robotframework_mailosaur.egg-info/requires.txt
+robotframework_mailosaur.egg-info/top_level.txt
