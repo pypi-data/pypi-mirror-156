@@ -1,0 +1,9 @@
+[metadata]
+name = "mino"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"

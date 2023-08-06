@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mino/__init__.py
+src/mino/mino.py
+src/mino.egg-info/PKG-INFO
+src/mino.egg-info/SOURCES.txt
+src/mino.egg-info/dependency_links.txt
+src/mino.egg-info/entry_points.txt
+src/mino.egg-info/top_level.txt
