@@ -1,0 +1,4 @@
+numpy
+scipy
+matplotlib
+openturns>=1.17
