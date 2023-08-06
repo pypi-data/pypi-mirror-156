@@ -1,0 +1,6 @@
+setup.py
+intellij/__init__.py
+intellij.egg-info/PKG-INFO
+intellij.egg-info/SOURCES.txt
+intellij.egg-info/dependency_links.txt
+intellij.egg-info/top_level.txt
