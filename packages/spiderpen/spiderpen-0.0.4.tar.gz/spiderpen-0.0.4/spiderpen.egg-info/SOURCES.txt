@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spiderpen/__init__.py
+spiderpen.egg-info/PKG-INFO
+spiderpen.egg-info/SOURCES.txt
+spiderpen.egg-info/dependency_links.txt
+spiderpen.egg-info/top_level.txt
