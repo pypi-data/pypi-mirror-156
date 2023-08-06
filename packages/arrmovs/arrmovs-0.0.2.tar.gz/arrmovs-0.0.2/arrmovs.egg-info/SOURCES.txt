@@ -1,0 +1,8 @@
+README.md
+setup.py
+arrmovs/__init__.py
+arrmovs/arrmovs.py
+arrmovs.egg-info/PKG-INFO
+arrmovs.egg-info/SOURCES.txt
+arrmovs.egg-info/dependency_links.txt
+arrmovs.egg-info/top_level.txt
