@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: CelestPlotter
+Version: 1.0
+Summary: RA and Dec Conversion and Plotter package
+Home-page: UNKNOWN
+Author: Aditi Das
+Author-email: <aditi.das1601@gmail.com>
+License: UNKNOWN
+Description: Use this package to make converting Right Ascension and Declination values to degrees(from HMS and DMS) way easier. Simply use InNCon.Convert(...) to convert the parameters into degrees. This package also has a plotting function CelSphere.Plot() to plot the RA and Declination values on the Celestial Sphere, complete with the representation of the Equatorial Plane and vector marking the Vernal Equinox.
+Platform: UNKNOWN
