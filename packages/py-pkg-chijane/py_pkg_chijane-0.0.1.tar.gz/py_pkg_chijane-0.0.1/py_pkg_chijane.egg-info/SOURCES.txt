@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+py_pkg_chijane/__init__.py
+py_pkg_chijane/hello.py
+py_pkg_chijane.egg-info/PKG-INFO
+py_pkg_chijane.egg-info/SOURCES.txt
+py_pkg_chijane.egg-info/dependency_links.txt
+py_pkg_chijane.egg-info/top_level.txt
