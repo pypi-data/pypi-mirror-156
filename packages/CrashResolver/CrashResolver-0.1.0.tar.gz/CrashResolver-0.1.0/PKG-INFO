@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: CrashResolver
+Version: 0.1.0
+Summary: CrashResolver tries to manage (fetch, symbolicate, gather statistics) multiple crash reports, crash reports may be from different platforms, such as iOS, Android, Mac OS X, etc.
+Author-email: cosmore <icosmore@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests>=2.28.0
+Requires-Dist: PyYAML>=6.0
