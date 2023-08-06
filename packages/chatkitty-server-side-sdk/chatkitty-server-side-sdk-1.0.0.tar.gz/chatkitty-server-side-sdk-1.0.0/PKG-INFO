@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: chatkitty-server-side-sdk
+Version: 1.0.0
+Summary: ChatKitty Platform REST API
+Home-page: 
+Author: chatkitty
+Author-email: development@chatkitty.com
+License: MIT
+Keywords: OpenAPI,OpenAPI-Generator,ChatKitty Platform REST API
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+
+    Platform REST API OpenAPI specification (OAS).  See the Interactive Docs to try ChatKitty API methods without writing code,  and get the complete schema of resources exposed by the API.  # noqa: E501
+    
