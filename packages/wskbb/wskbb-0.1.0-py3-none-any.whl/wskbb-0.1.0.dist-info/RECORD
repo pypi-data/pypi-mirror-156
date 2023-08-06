@@ -1,0 +1,11 @@
+wskbb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wskbb/__main__.py,sha256=e-6wzrE2jYYwbY-Ct7gGHVWZ4Rx-gKQ7HUjaOC8HVz8,56
+wskbb/utils.py,sha256=WniRIxixXtqhOp7f2CD0nYGSOus2MN4G5dihBtm4Z78,4965
+wskbb/wskbb.py,sha256=HnpQg817dZipUxt9yhvGRBzJ4UHQ5pkmrdhDsIN73ro,4391
+wskbb-0.1.0.data/scripts/wskbb,sha256=cGvhyjK0R6y0A0-LiHl2v4g2pin57dYfhsVN7LUjOEw,71
+wskbb-0.1.0.dist-info/LICENSE,sha256=JpSdyW7nFUmE8Qlv1IGUYtI7Fjr7n7ikIq07lkHvt8M,692
+wskbb-0.1.0.dist-info/METADATA,sha256=SwpDqUK0OKgKLquIX9R9_ZjHfNOGrobOsop0AsfJqcg,1373
+wskbb-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wskbb-0.1.0.dist-info/entry_points.txt,sha256=6AtsiR4M4eJuAPkj3Mf-cALwjd4ypBtEMtSNEsveKsI,43
+wskbb-0.1.0.dist-info/top_level.txt,sha256=umRTkqERgzX6LmDH3-AaG-6Ikyh-0zAfBTHInG0a53E,6
+wskbb-0.1.0.dist-info/RECORD,,

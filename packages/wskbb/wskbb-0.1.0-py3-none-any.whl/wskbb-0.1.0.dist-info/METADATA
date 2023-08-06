@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: wskbb
+Version: 0.1.0
+Summary: Command line untuk mengubah image menjadi ala karya Papin dan Agung Botol
+Home-page: https://lantip.xyz
+Author: Lantip
+Author-email: lantip@gmail.com
+License-File: LICENSE
+Requires-Dist: opencv-python (==4.6.0.66)
+Requires-Dist: scikit-image (==0.19.3)
+Requires-Dist: matplotlib (==3.5.2)
+Requires-Dist: scikit-learn (==1.1.1)
+
+wskbb
+=====
+
+Kemarin, 25 Juni 2022, aku mendengar kabar, dua sahabatku terserang stroke. 
+Mereka adalah `Papin <https://twitter.com/pinotski>`_ dan kang `Agung Botol <https://www.facebook.com/agung.botol>`_.
+
+Mereka berdua adalah orang-orang yang tak henti menginspirasi, dan amatlah kebetulan bahwa keduanya memiliki bidang keahlian yang mirip, yaitu mengolah gambar. Output olahan gambar Kang Agung Botol adalah berbentuk vektor yang kemudian mewujud dalam kaos ataupun stiker. Sementara, karya pinot, sudah mendunia dalam bentul pixel art, retro.
+
+Saya percaya bahwa ``doa`` terbaik adalah yang disertai ``laku``, maka biarlah koding tak seberapa ini menjadi ``laku`` ku untuk mendoakan kesembuhan mereka berdua. 
+
+Lekas sembuh dan teruslah berkarya, dulur-dulurku.
+
+Cara Menggunakan
+*****************
+
+    $ wskbb path_image --model=model
+
+    ``path_image``:: letak image yang ingin diproses.
+
+    ``model``:: model hasil yang dipilih. Pilihannya ada dua: ``papin`` dan ``botol``. 
