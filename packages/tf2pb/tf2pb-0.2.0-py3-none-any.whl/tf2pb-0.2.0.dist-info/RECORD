@@ -1,0 +1,13 @@
+tf2pb/.__data__.pys,sha256=Xzszi8pM0tp2fcFjjHmMJVOmMMW0cPqsrt2aAGpWhM4,69431
+tf2pb/__init__.py,sha256=CySMup-Gm_w885ahXEcU1cktn_lQxoXUqdjzZsLpLHg,530
+tf2pb/convert_ckpt.py,sha256=noS06xPu9aCX6m1UcuHX2VSyUrjGnMEWwcTB0zgzmpw,5110
+tf2pb/convert_ckpt_dtype.py,sha256=WFoRsVSxF-UZU8qylBF7m5zzYIP7003J6Hq04LZs_bE,318
+tf2pb/convert_keras.py,sha256=vW4ZbQ_Mu1-z5UNoQ00l_qZK6HiF6_vNWd40FRU5kZo,1033
+tf2pb/optimization.py,sha256=WwlD8PBoMg8pAuO6EDKJc3OJ5hA95Lwkr-O6puSGJo8,6258
+tf2pb/run_classifier.py,sha256=zW_Ub1sbAS3ep0jhlTLPTAxAslJtyxyASc9jNzfmOZc,35368
+tf2pb/tokenization.py,sha256=V2-OcJ6qWcmZqK7T8yxYFIfVmrRwef5ks9P6RXvH-zQ,12257
+tf2pb/module/__init__.py,sha256=2xos06eWeeEjxQXyc6ybNI90zvPSFxbbX0aceL5_rkE,228
+tf2pb-0.2.0.dist-info/METADATA,sha256=KCqMa1_pDebTJWF_hTXNBZtqAOoq3JRxcOVRQ3x9V74,8314
+tf2pb-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tf2pb-0.2.0.dist-info/top_level.txt,sha256=Z2Z70twG_QkDr5ZVqb4H1rybbFY1Tt6FhZhljGY1Iao,19
+tf2pb-0.2.0.dist-info/RECORD,,
