@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: crystal_engine
+Version: 0.0.1
+Home-page: https://github.com/mikael-chowdhury/crystal-engine
+Author: Mikael Chowdhury
+Author-email: mikael@shaficonsultancy.com
+License: MIT
+Keywords: python game-engine 2d pygame-wrapper lightweight
+License-File: LICENSE.txt
