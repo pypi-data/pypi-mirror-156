@@ -1,0 +1,6 @@
+requests
+lxml
+pandas
+aiohttp
+aiohttp-socks
+charset-normalizer==2.0.0

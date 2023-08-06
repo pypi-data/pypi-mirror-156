@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: twstocks-crawler
+Version: 0.0.5
+Summary: TWStock profiles crawler
+Home-page: https://github.com/sunaley/stocks
+Author: Sunaley
+Author-email: sunaley@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
