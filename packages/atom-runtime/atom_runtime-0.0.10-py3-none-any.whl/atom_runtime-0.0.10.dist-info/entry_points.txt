@@ -1,0 +1,3 @@
+[console_scripts]
+atom = atom_runtime.atom_controller:main
+
