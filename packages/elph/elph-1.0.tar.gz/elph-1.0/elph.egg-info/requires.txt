@@ -1,0 +1,11 @@
+ase>=3.20.0
+halo
+numpy
+phonopy
+scipy
+sphinx_rtd_theme
+tqdm
+
+[docs]
+sphinx
+sphinxcontrib-programoutput
