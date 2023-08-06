@@ -1,0 +1,8 @@
+{
+    "dev": {
+        "IS_DEBUG": true
+    },
+    "product": {
+        "IS_DEBUG": false
+    }
+}
