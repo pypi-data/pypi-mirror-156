@@ -1,0 +1,2 @@
+[console_scripts]
+acq = read_acq.cli:main

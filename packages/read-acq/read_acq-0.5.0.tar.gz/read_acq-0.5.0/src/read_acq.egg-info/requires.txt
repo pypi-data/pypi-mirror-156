@@ -1,0 +1,14 @@
+click
+numpy
+scipy
+tqdm
+
+[dev]
+edges-io
+pre-commit
+pytest>=5
+pytest-cov
+python-semantic-release
+
+[h5]
+edges-io
