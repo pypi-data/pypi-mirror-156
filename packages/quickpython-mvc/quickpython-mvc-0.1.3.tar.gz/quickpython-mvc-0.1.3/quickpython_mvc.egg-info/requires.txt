@@ -1,0 +1,6 @@
+tornado
+pymysql
+
+[:python_version <= "3.6"]
+enum34
+future
