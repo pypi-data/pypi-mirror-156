@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PyABraOM
+Version: 0.1.2
+Summary: A Python API to communicate with ABraOM database
+Home-page: https://github.com/bioinfo-hcpa/pyABraOM
+Author: Paola Carneiro and Felipe Colombeli
+Author-email: bioinfo@hcpa.edu.br
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+
+UNKNOWN
+
