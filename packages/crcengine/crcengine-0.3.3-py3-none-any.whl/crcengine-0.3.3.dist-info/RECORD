@@ -1,0 +1,14 @@
+crcengine/__init__.py,sha256=8SSOwzgzSBeu3-EmqL4qcmgVMdRkB2fJ24O-Dgc5N9c,1282
+crcengine/__main__.py,sha256=rLI6-RT_7uo1mhDYBC0SaoCJibuU_Lq4t0E7dn3JmCA,4853
+crcengine/algorithms.py,sha256=gZUFGlfLSGHPnlSPyfnglzznlTepsp2mwg-uSVfi_N0,6448
+crcengine/calc.py,sha256=1ZVms_SeYxLo75R4yy6dmBUXoSn9etRn30A6HiiLhlA,14130
+crcengine/codegen.py,sha256=_zGwtiDMR3MIgHTgLm8jgwR124UdEmy_7CmCPdmuMrM,8214
+crcengine/templates/c_template,sha256=WeoU0cNnGcWkQh8jO7LVi6F1NsiIfUrb-mqnwkt_OjY,1298
+crcengine/templates/h_template,sha256=5W5bGTCGF0R78SDAUC6FVZlEYDcnqZ2SOVsv61SqG2U,291
+crcengine/templates/test_template,sha256=AMVj92a2EhV43gBLsLlIjUFj60cTRKfrkfu3v-6Mi2k,458
+crcengine-0.3.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+crcengine-0.3.3.dist-info/METADATA,sha256=qOc2xMVtYy8FJ20D5O5_FOMkdXr0-F8F_ZpelUJo8EQ,5770
+crcengine-0.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+crcengine-0.3.3.dist-info/entry_points.txt,sha256=hqEqt-Xd5-QMN4nZ-YB6PKmSUrDsa_0xTaA3l_qOGc8,54
+crcengine-0.3.3.dist-info/top_level.txt,sha256=KyVyxOPvad1-RiBnbLRTkSSrKdyWy_M8k4F-6PDsDXA,10
+crcengine-0.3.3.dist-info/RECORD,,
