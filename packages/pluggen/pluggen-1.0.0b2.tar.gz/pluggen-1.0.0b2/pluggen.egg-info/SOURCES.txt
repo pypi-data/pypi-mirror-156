@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+pluggen/__init__.py
+pluggen/plugin.py
+pluggen.egg-info/PKG-INFO
+pluggen.egg-info/SOURCES.txt
+pluggen.egg-info/dependency_links.txt
+pluggen.egg-info/top_level.txt

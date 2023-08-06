@@ -1,0 +1,21 @@
+[build-system]
+requires = [ "setuptools" ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pluggen"
+version = "1.0.0-beta2"
+authors = [
+	{ name = "Staffan Thomén", email = "staffan@thomen.fi" }
+]
+description = "A module for plugin discovery and instantiation"
+readme = "README.md"
+keywords = [ "plugins", "discovery" ]
+license = { text = "BSD 3-Clause License" }
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Programming Language :: Python :: 3"
+]
+
+[project.urls]
+"Homepage" = "https://git.shangtai.net/staffan/pluggen"
