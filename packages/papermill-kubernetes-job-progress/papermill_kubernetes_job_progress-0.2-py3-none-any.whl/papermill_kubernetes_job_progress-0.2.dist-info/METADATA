@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: papermill-kubernetes-job-progress
+Version: 0.2
+Home-page: https://github.com/eurodatacube/papermill-kubernetes-job-progress
+License-File: LICENSE
+Requires-Dist: papermill
+Requires-Dist: kubernetes
+
