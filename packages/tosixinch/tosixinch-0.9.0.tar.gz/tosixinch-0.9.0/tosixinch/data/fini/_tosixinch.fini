@@ -1,0 +1,352 @@
+
+# tosixinch application configurations
+
+# For the syntax, see https://github.com/openandclose/configfetch.
+
+# '*' at the beginning of option names are common option markers.
+# when reading, they are stripped.
+
+# If you just want to check valid option names and defaults,
+# see data/tosixinch.ini.
+
+[_generic]
+
+input=              : input rsrc (URL or file path). it can be specified multiple times
+                    :: names: i
+                    :: action: append
+
+file=               : file to read inputs. only one file
+                    :: names: f
+                    :: default: rsrcs.txt
+
+help=               : show this help message and exit
+                    :: names: h
+                    :: action: store_true
+
+verbose=            : print out more detailed log messages
+                    :: names: v
+                    :: action: store_true
+
+quiet=              : supress non-critical log messages
+                    :: names: q
+                    :: action: store_true
+
+version=            : print version and exit
+                    :: names: V
+                    :: action: store_true
+
+userdir=            : specify user configuration directory
+
+nouserdir=          : disable user configuration (intended for testing)
+                    :: f: bool
+                    no
+
+
+[_action]
+
+download=           : download by downloader
+                    :: names: 1
+                    :: action: store_true
+
+extract=            : extract by extractor
+                    :: names: 2
+                    :: action: store_true
+
+convert=            : convert by converter
+                    :: names: 3
+                    :: action: store_true
+
+view=               : open a pdf viewer if configured
+                    :: names: 4
+                    :: action: store_true
+
+appcheck=           : print application settings after command line evaluation, and exit
+                    :: names: a
+                    :: action: store_true
+
+browser=            : open first extracted html (efile) in browser, and exit
+                    :: names: b
+                    :: action: store_true
+
+check=              : print matched rsrc settings, and exit (so you have to supply rsrc some way)
+                    :: names: c
+                    :: action: store_true
+
+toc=                : create toc htmls and a toc rsrc list file. conflicts with '--input'.
+                    :: action: store_true
+
+inspect=            : parse downloaded htmls (dfiles), and do arbitrary things user specified
+                    :: action: store_true
+
+printout=           : print filenames the program's actions would create
+                    : (0=rsrc, 1=dfiles, 2=efiles 3=pdfname, all=0<tab>1<tab>2)
+                    :: choices: '0', '1', '2', '3', 'all'
+
+
+[_program]
+
+urllib=             : set downloader to urllib (default)
+                    :: action: store_const
+                    :: const: urllib
+                    :: dest: downloader
+
+headless=           : set downloader to one of headless browser engines
+                    : (see --browser-engine)
+                    :: action: store_const
+                    :: const: headless
+                    :: dest: downloader
+
+lxml=               : set extractor to lxml (default, and currently the only option)
+                    :: action: store_const
+                    :: const: lxml
+                    :: dest: extractor
+
+prince=             : set converter to princexml
+                    :: action: store_const
+                    :: const: prince
+                    :: dest: converter
+
+weasyprint=         : set converter to weasyprint
+                    :: action: store_const
+                    :: const: weasyprint
+                    :: dest: converter
+
+cnvpath=            : specify converter executable path. also need to set converter itself
+
+css2=               : specify css files, for converter commandline css option
+                    :: f: comma
+
+cnvopts=            : specify additional converter commandline options
+                    :: f: cmd
+
+
+[general]
+
+*downloader=        : argparse.SUPPRESS
+                    :: choices: urllib, headless
+                    urllib
+
+*extractor=         : argparse.SUPPRESS
+                    :: choices: lxml
+                    lxml
+
+converter=          : argparse.SUPPRESS
+                    :: choices: prince, weasyprint
+                    prince
+
+*user_agent=        : set http request user-agent (only for urllib)
+                    Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+
+*timeout=           : set http request timeout (only for urllib)
+                    :: f: float
+                    5
+
+*interval=          : interval for each download
+                    :: f: float
+                    0.2
+
+*browser_engine=    : specify the browser engine when 'headless'
+                    : (default: selenium-firefox)
+                    :: choices: selenium-chrome, selenium-firefox
+                    selenium-firefox
+
+*selenium_chrome_path=  : specify the path of chromedriver for selenium
+
+*selenium_firefox_path= : specify the path of geckodriver for selenium
+
+*encoding=          : specify encoding candidates for file opening when extract (f: comma)
+                    :: f: comma
+                    utf-8, cp1252, latin_1
+
+*encoding_errors=   : specify encoding error handler (default: strict)
+                    # Python 3.7.4
+                    :: choices: strict, ignore, replace, xmlcharrefreplace, backslashreplace, namereplace, surrogateescape, surrogatepass
+                    strict
+
+*parts_download=    : download components (images etc.) before PDF conversion (default: True)
+                    :: f: bool
+                    yes
+
+*no_parts_download= : not download components before PDF conversion
+                    :: dest: parts_download
+                    :: f: bool
+                    no
+
+*force_download=    : force '--download' and '--parts-download' even if the file already exists
+                    :: f: bool
+                    no
+
+guess=              : if there is no matched option, use this XPath for content selection (f: line)
+                    :: f: line
+                    //div[@itemprop="articleBody"]
+                    //div[@role="main"]
+                    //div[@id="main"]
+                    //div[@id="content"]
+                    //div[@class=="body"]
+                    //article
+
+*defaultprocess=    :: f: line
+                    add_h1
+                    youtube_video_to_thumbnail
+                    convert_permalink_sign
+
+*full_image=        : pixel size to add special class attributes to images (default: 200)
+                    :: f: int
+                    200
+
+add_binary_extensions=  : add or subtract to-skip-binaries-extension list (f: plus_binaries)
+                        :: f: plus_binaries
+
+*add_clean_tags=    : add or subtract to-delete-tag list (f: plus)
+                    :: f: plus
+
+*add_clean_attrs=   : add or subtract to-delete-attribute list (f: plus)
+                    :: f: plus
+                    color, width, height
+
+*elements_to_keep_attrs=    : specify elements (XPath) in which you want to keep attributes
+                            : (default: <math>, <svg> and some mathjax tags) (f: line)
+                            :: f: line
+                            self::math
+                            self::svg
+                            self::node()[starts-with(@class, "MathJax")]
+
+hashid=             :: f: bool
+                    yes
+
+*ftype=             : specify file type
+                    :: choices: html, prose, nonprose, python
+
+textwidth=          : width (character numbers) for rendering non-prose text
+                    :: f: int
+                    65
+
+textindent=         : line continuation marker for rendering non-prose text
+                    '                    --> '
+
+*trimdirs=          : if no sign, remove leading directories from local text name in PDF TOC.
+                    : if minus sign, remove leading directories to reduce path segments to that abs number.
+                    : (default: 3)
+                    :: f: int
+                    3
+
+raw=                : use input paths as is (no filename transformation)
+                    :: f: bool
+                    no
+
+*css=               :: f: comma
+                    sample
+
+pdfname=            : specify pdf file name
+
+precmd1=            : run arbitrary commands before download action
+                    :: f: line, cmds
+
+postcmd1=           : run arbitrary commands after download action
+                    :: f: line, cmds
+
+precmd2=            : run arbitrary commands before extract action
+                    :: f: line, cmds
+
+postcmd2=           : run arbitrary commands after extract action
+                    :: f: line, cmds
+
+precmd3=            : run arbitrary commands before convert action
+                    :: f: line, cmds
+
+postcmd3=           : run arbitrary commands after convert action
+                    :: f: line, cmds
+
+viewcmd=            : commandline string to open the pdf viewer (f: cmds)
+                    :: f: line, cmds
+
+pre_each_cmd1=      : run arbitrary commands before each download
+                    :: f: line, cmds
+
+post_each_cmd1=      : run arbitrary commands after each download
+                    :: f: line, cmds
+
+pre_each_cmd2=      : run arbitrary commands before each extract
+                    :: f: line, cmds
+
+post_each_cmd2=     : run arbitrary commands after each extract
+                    :: f: line, cmds
+
+browsercmd=         :: f: cmd
+
+download_dir=       : specify root directory for download and extract
+                    : (default: '_htmls')
+                    _htmls
+
+keep_html=          : do not extract, keep html as is, just component download
+                    : to make complete local version html
+                    :: f: bool
+                    no
+
+overwrite_html=     : do not create new 'efile' (overwrite 'dfile')
+                    :: f: bool
+                    no
+
+xx=                 :: f: comma
+
+
+[style]
+
+orientation=        : portrait (default) or landscape, determine which size data to use
+                    :: choices: portrait, landscape
+                    portrait
+
+portrait_size=      : portrait size for css, e.g. '90mm 118mm'
+                    90mm 118mm
+
+landscape_size=     : landscape size for css, e.g. '118mm 90mm'
+                    118mm 90mm
+
+toc_depth=          : specify depth of table of contents
+                    :: f: int
+                    3
+
+font_family=        : main font for css, e.g. '"DejaVu Sans", sans-serif'
+                    "DejaVu Sans", sans-serif
+
+font_mono=          : monospace font for css
+                    "Dejavu Sans Mono", monospace
+
+font_serif=         : serif font for css (not used by sample)
+
+font_sans=          : sans font for css (not used by sample)
+
+font_size=          : main font size for css, e.g. '9px'
+                    9px
+
+font_size_mono=     : monospace font size for css
+                    8px
+
+font_scale=         : number like 1.5 to scale base font sizes (default: 1.0)
+                    1.0
+
+line_height=        : adjust line height (default: 1.3)
+                    1.3
+
+# hedding_scale=      1.125
+
+
+[prince]
+
+cnvpath=            prince
+
+css2=               :: f: comma
+
+cnvopts=            :: f: cmd
+                    # --javascript
+                    # --no-default-style
+                    # --no-warn-css
+
+
+[weasyprint]
+
+cnvpath=            weasyprint
+
+css2=               :: f: comma
+
+cnvopts=            :: f: cmd
