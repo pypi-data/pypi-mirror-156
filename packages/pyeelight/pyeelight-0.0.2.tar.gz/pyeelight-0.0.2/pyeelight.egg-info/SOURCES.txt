@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+pyeelight/__init__.py
+pyeelight/pyeelight.py
+pyeelight.egg-info/PKG-INFO
+pyeelight.egg-info/SOURCES.txt
+pyeelight.egg-info/dependency_links.txt
+pyeelight.egg-info/top_level.txt
+pyeelight/discoverer/__init__.py
+pyeelight/discoverer/discoverer.py
