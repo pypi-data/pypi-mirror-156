@@ -1,0 +1,8 @@
+setup.py
+LeTrille/winapi.c
+winapy/__init__.py
+winapy/const.py
+winapy.egg-info/PKG-INFO
+winapy.egg-info/SOURCES.txt
+winapy.egg-info/dependency_links.txt
+winapy.egg-info/top_level.txt
