@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/string_kernels.egg-info/PKG-INFO
+src/string_kernels.egg-info/SOURCES.txt
+src/string_kernels.egg-info/dependency_links.txt
+src/string_kernels.egg-info/top_level.txt
+src/stringkernels/__init__.py
+src/stringkernels/kernels.py
+src/stringkernels/utils.py
