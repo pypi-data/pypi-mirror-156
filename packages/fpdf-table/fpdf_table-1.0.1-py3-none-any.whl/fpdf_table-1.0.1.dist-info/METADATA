@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fpdf-table
+Version: 1.0.1
+Summary: PDF table reports library
+Home-page: https://fpdf-table.readthedocs.io/
+Author: Matias Gabriel Martinez Rebori
+Author-email: martinezrebori@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: fpdf2
+
+# FPDFTable
+A fast library for quick PDF table reports creation
+## Installation
+## Get Started
+Como utilizar esta libreria
+prueba ci
