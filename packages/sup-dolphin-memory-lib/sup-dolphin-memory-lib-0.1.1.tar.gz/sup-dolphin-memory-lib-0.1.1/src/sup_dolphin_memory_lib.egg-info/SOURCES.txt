@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dolphin/__init__.py
+src/dolphin/memorylib.py
+src/sup_dolphin_memory_lib.egg-info/PKG-INFO
+src/sup_dolphin_memory_lib.egg-info/SOURCES.txt
+src/sup_dolphin_memory_lib.egg-info/dependency_links.txt
+src/sup_dolphin_memory_lib.egg-info/requires.txt
+src/sup_dolphin_memory_lib.egg-info/top_level.txt
