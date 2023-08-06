@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: dirtyopts
+Version: 0.0.18
+Summary: another opts parser
+Home-page: https://github.com/smautner/dirtyopts
+Author: Stefan Mautner
+Author-email: myl4stn4m3stef@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
