@@ -1,0 +1,13 @@
+colaquant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colaquant/asset_analysis.py,sha256=X0LUa_7B4vITRec5p26u1HxkiAm6D3-MKlxotBMdOHI,1740
+colaquant/colafactor.py,sha256=x3gtjzsuE58GJm0rxXB0xL7AdTSAb-CgI2k_w8n-uog,8561
+colaquant/colafactor_object.py,sha256=9J4uJkolIPU9wvDiJvtlrVS3QjXnWh9g9-yWdr6hOeM,26912
+colaquant/data_processing.py,sha256=qUSe9tSlPha1mQgYah2ViQXizV7RTpGthZWdRmN94vU,6889
+colaquant/information_analysis.py,sha256=EOkFyVSTujvipPpTh3GwcGQy8fRBuJ8Q2QfM3mBuBxM,4088
+colaquant/position_analysis.py,sha256=99UOcWcYxS29CAn_kB6MuqP_I83LY5UngXCkchdWjBg,2570
+colaquant/returns_analysis.py,sha256=ek-fvxc5dFeAaezSm1I9k_XpkYmTYPpTt5QAiZMJ6q4,4068
+colaquant/utils.py,sha256=QKxvHjb61CiAx7q6BSqN8Tfs5iAWPLyus9AGV6wyTr8,2732
+colaquant-0.0.5.dist-info/METADATA,sha256=e7LsSw_1LPRqdgVIZrlTzfOtCtCLp5jMoxswQ6VGEbU,232
+colaquant-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+colaquant-0.0.5.dist-info/top_level.txt,sha256=guFHu24lpv3h9YJy28eDkLrToN7sMirMfoLjCmXiTmU,10
+colaquant-0.0.5.dist-info/RECORD,,
