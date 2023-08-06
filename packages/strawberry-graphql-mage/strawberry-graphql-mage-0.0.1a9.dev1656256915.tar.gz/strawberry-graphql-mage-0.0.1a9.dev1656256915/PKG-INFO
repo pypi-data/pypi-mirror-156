@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: strawberry-graphql-mage
+Version: 0.0.1a9.dev1656256915
+Summary: An automated, modular, backend-agnostic GraphQL API generator
+License: MIT
+Author: Vojtěch Dohnal
+Author-email: vojdoh@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SQLAlchemy-Utils (>=0.38.2,<0.39.0)
+Requires-Dist: SQLAlchemy[asyncio] (>=1.4.25,<2.0.0)
+Requires-Dist: aiosqlite (>=0.17.0,<0.18.0)
+Requires-Dist: frozendict (>=2.0.6,<3.0.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: overrides (>=6.1.0,<7.0.0)
+Requires-Dist: strawberry-graphql (>0.80.0,<1.0.0)
+Project-URL: Homepage, https://github.com/KundaPanda/strawberry-graphql-mage/
+Description-Content-Type: text/markdown
+
+# Strawberry-GraphQL-Mage
+
+Creates a GraphQL backend for your database with really low effort.
+
+The mainly developed feature is currently the SQLAlchemy backend with universal dataloader support coming hopefully soon.
+
+Performance is currently not a major factor - this is mostly a helper library to make creating GraphQL endpoints easier.
+
+## Still under heavy development
+
+Feel free to use it and create issues though.
+
+Contributions are welcome as well.
+
+## Roadmap
+
+- [x] Generating a basic GraphQL schema
+- [x] Queries
+- [x] Mutations
+- [ ] Subscriptions
+- [x] Backend abstraction
+- [ ] Move used meta attributes to an isolated Metaclass of the object instead of polluting the object with them
+- [ ] SQLAlchemy backend
+  - [x] Entity models
+  - [x] Implement basic mutations/queries
+  - [x] Add basic tests
+  - [x] Filtering, ordering
+  - [x] Utility functions for relationships
+  - [ ] Nested pagination
+  - [ ] Add more tests
+  - [x] Asyncio
+  - [ ] Implement abstract sqla models
+- [ ] Strawberry Dataloader universal backend
+  - [ ] ...
+- [ ] Add more filters
+- [ ] Add options for custom data-types
+- [ ] Setup CI
+- [ ] Try some authorization / authentication
+- [ ] Write instructions for using the app
+- [ ] Write instructions for creating custom backends
+
