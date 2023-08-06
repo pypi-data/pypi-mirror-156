@@ -1,0 +1,9 @@
+cdktf_cdktf_provider_docker/__init__.py,sha256=8U6Vy8C-NKqvi6BFbaffD3y6EA8sLJpW0WcYs9z1Cx8,968238
+cdktf_cdktf_provider_docker/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdktf_cdktf_provider_docker/_jsii/__init__.py,sha256=E1jy3_LnMCitz7BB8LOgrYUd2Nd-IAzMBaxRc6OzGtg,383
+cdktf_cdktf_provider_docker/_jsii/provider-docker@0.8.27.jsii.tgz,sha256=sjQGWyowdg37hlWCiu2RhwwmGicTgUzPMRgfocL5X7Q,328364
+cdktf_cdktf_provider_docker-0.8.27.dist-info/LICENSE,sha256=qDABaRGjSKVOib1U8viw2P_96sIK7Puo426784oD9f8,15976
+cdktf_cdktf_provider_docker-0.8.27.dist-info/METADATA,sha256=Ebjq0YwSno8f8xt2SG5g53ns0v0fRN1Jo2ebk6InTvU,3964
+cdktf_cdktf_provider_docker-0.8.27.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cdktf_cdktf_provider_docker-0.8.27.dist-info/top_level.txt,sha256=gh5CmZchiMTB1s-rCfjAtxZ3c_6oUoPlFTDa-Sf78Og,28
+cdktf_cdktf_provider_docker-0.8.27.dist-info/RECORD,,
