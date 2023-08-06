@@ -1,0 +1,6 @@
+README.md
+setup.py
+jianxin.egg-info/PKG-INFO
+jianxin.egg-info/SOURCES.txt
+jianxin.egg-info/dependency_links.txt
+jianxin.egg-info/top_level.txt
