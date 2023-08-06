@@ -1,0 +1,12 @@
+barviz/Attributes.py,sha256=LfEWlxFn8u3hc8lCOG9quLZnKVwTLvfmIT9QptbC6Ns,1634
+barviz/Collection.py,sha256=QIc7ZKVM92PlyfR0j2aVhU_Klu5nUJAukQUElq6p88s,3982
+barviz/Scrawler.py,sha256=DvcKe-GpJyJhyZO-JGBsr3bq931cWgyOAsH3mVAtIQA,8198
+barviz/Simplex.py,sha256=vskn08LGaZOxKiKpyNVuN2KM1UrtaIXL0bM4H-c9HcY,3653
+barviz/SimplexBuilder.py,sha256=WatGT_hYkMb5kqOliTJQIv5jpu5eCIxyGmMteUa2ZwE,4130
+barviz/__init__.py,sha256=hZ5Vz9NVQ_TFblm8QZlHIigg7Tip419xsZAedQZjcrE,295
+barviz/version.py,sha256=rrZaqTCBTbvzEfMNdUDGMD_5Zl_l1vt1ePSD7A_Gjdg,438
+barviz-0.0.0.dist-info/LICENSE,sha256=VLrylRAm9sDKgLUS1Lpw4O-zF2Crb-lGdDeCGknxbkU,1073
+barviz-0.0.0.dist-info/METADATA,sha256=rbS1IDbNmP4IL1d0dHZx_iJgT5STGm1jpBvHCGV0ons,73
+barviz-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+barviz-0.0.0.dist-info/top_level.txt,sha256=lNb00k_JYBVY4CbV4T6KZln6MfBU2td72PdK3gOwlCc,7
+barviz-0.0.0.dist-info/RECORD,,
