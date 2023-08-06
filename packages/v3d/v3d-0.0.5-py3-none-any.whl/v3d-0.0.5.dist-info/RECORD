@@ -1,0 +1,8 @@
+v3d/__init__.py,sha256=BBYSKtccrJbRPbAu6WFOpnpRRj84v7KKhfyeHrak1LQ,52
+v3d/point.py,sha256=RTcZmaCqd-6z0zEKA7IM3rab4m3IzXd1SBNjtvAgfk8,9475
+v3d/vector.py,sha256=Jt-lP5YhGJyhGCbI_HnyOyOot14FMsC9tGr3zAAAZ18,19785
+v3d-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+v3d-0.0.5.dist-info/METADATA,sha256=Nbxf2_lre6R4hP_WYX4UXqWPdnndDXEAAjK3QaW8PHM,7192
+v3d-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+v3d-0.0.5.dist-info/top_level.txt,sha256=f6EI01SwvwLu1xJVCT1njGarMJ4Sob4K_mERt9ViBRM,13
+v3d-0.0.5.dist-info/RECORD,,
