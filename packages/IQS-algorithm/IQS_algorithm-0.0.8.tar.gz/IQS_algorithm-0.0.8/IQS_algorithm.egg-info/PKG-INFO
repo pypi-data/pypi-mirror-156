@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: IQS-algorithm
+Version: 0.0.8
+Summary: Check out the IQS algorithm web platform in the following link: https://iqs.cs.bgu.ac.il/
+Home-page: https://iqs.cs.bgu.ac.il/
+Author: Ori Ben-Artzy, Ophir Porat, Mor Zweig
+Author-email: iqs.bgu@gmail.com
+Project-URL: Frontend repository, https://github.com/ophirporat/ProjectIQS-Front
+Project-URL: Backend repository, https://github.com/oribena/projectIQS
+Project-URL: Academic Article, https://www.sciencedirect.com/science/article/pii/S0957417422004432
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
