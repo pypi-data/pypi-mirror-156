@@ -1,0 +1,14 @@
+deformation/__init__.py,sha256=LZM6R3JGVZqYbxKXuZljR62tKRLpaQNgmZgJ-C7BqDk,2436
+deformation/affine.py,sha256=qpL79NKW_DbrWlezAFPndLpwcZgo9qa4M2UP-FUBydQ,4191
+deformation/core.py,sha256=HXY9K-l0o6fm39icIvYvTlZh3JUICsQlUqZaP03XVS8,24932
+deformation/doc.py,sha256=KxkB2wQDfDkd9VJLs2bLu75fy0glWyST7Ryhw3T2dMs,2078
+deformation/padding.py,sha256=fNzMgg-1peC9p1-jAJxFqVej2wQ36tChOFt4OfapkQg,4016
+deformation/perspective.py,sha256=UVfRaBbPcuzkU6R1AvmkHfxcmUgLt0Ghtunb9oJChOg,7455
+deformation/poly.py,sha256=J_hlG1VqI4p7kYzNANkWA8176pWR-9RPkrPv4XuW_EA,26747
+deformation/rotation.py,sha256=bndBJsi0Bue4ajvXil8zHCdB3Pwg4bKX6N_tJoBjQFM,4155
+deformation/test.py,sha256=EqIMR7VnBYZTR9U2qTSnm3ndke4Fz2BqM7AUWVAOkQU,7304
+deformation-1.0.3.dist-info/LICENSE,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+deformation-1.0.3.dist-info/METADATA,sha256=UCRVJEfbBzD_ebde2GcExsXtOP4-Jpuzzrs9x84vFzg,2271
+deformation-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deformation-1.0.3.dist-info/top_level.txt,sha256=hPCMIeGuZEde94ow0au8xQUziR4K5b3U9FuoVtwkW6s,12
+deformation-1.0.3.dist-info/RECORD,,
