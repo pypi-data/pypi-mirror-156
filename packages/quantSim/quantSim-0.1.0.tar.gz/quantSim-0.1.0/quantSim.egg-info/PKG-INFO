@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: quantSim
+Version: 0.1.0
+Summary: Classical Simulator of Quantum Circuits
+Home-page: https://https://github.com/sw478/qSim
+Author: Silas Wong
+Author-email: silas.wong478@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
