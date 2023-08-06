@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: Modulimagen
+Version: 0.1.2
+Summary: A python module that contains functions which can be mixed and applied in sequence for generating matrices (which can be converted into images) in a modular way.
+Home-page: https://github.com/RubenSab/Modulimagen
+Author: Ruben Sabatini
+Author-email: rubensabatini2005@gmail.com
+License: LGPL-2.1
+Description: more info at https://github.com/RubenSab/Modulimagen
+Platform: UNKNOWN

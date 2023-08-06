@@ -1,0 +1,8 @@
+Modulimagen.py
+README.md
+setup.py
+Modulimagen.egg-info/PKG-INFO
+Modulimagen.egg-info/SOURCES.txt
+Modulimagen.egg-info/dependency_links.txt
+Modulimagen.egg-info/requires.txt
+Modulimagen.egg-info/top_level.txt
