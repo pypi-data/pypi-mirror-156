@@ -1,0 +1,13 @@
+BeemAfrica/AirTime.py,sha256=xj4MAbxIDXFqpXcfXO7GjTePPfZhOH23sNkihQtg94g,1825
+BeemAfrica/Bpay.py,sha256=feeM57mqzb8B193QknjDv6kKhQCvVlcAP8R4zsE2AgY,688
+BeemAfrica/Contacts.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BeemAfrica/OTP.py,sha256=fOTdRPq5a_hiaLOtgwHl3jH1IUIFTyiQCLLvFw3dJRg,1964
+BeemAfrica/SMS.py,sha256=hA5OSZMGZtUxCiNxZd15K3IOI70xSImgVeuh_rFm8WA,2334
+BeemAfrica/TwowaySMS.py,sha256=T_ZjAhxHkGX5LAbsLOdB_gX9_eDuHaIQRWe2mzgtnPI,669
+BeemAfrica/USSD.py,sha256=aBu-LIToC57ERlW0nvpLdzDpI1rTCs-Eqg2EzKXH99M,689
+BeemAfrica/__init__.py,sha256=eAsgrFI5bUPITXwsuCz8u5bKYlO6jn_PCSInEC-rMSE,2115
+beem_africa-0.1.1.dist-info/LICENSE,sha256=w7SqfO5h3DLr2c6XDCLHG3W00DgMN9GZtI6muvsakJs,1068
+beem_africa-0.1.1.dist-info/METADATA,sha256=9aBj939iPZdBvu9v3uuI6jBkKhymUuRkYgnWqGDLPis,919
+beem_africa-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+beem_africa-0.1.1.dist-info/top_level.txt,sha256=F2ZgJDk_UKcqpqCyi8JOwGRw8TFWn9RxWtOtJjvGqGQ,11
+beem_africa-0.1.1.dist-info/RECORD,,
