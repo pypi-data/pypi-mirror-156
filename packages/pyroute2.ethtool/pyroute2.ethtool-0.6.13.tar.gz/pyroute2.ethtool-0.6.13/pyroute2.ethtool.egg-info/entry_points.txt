@@ -1,0 +1,3 @@
+[pr2modules]
+Ethtool = pr2modules.ethtool.ethtool:Ethtool
+
