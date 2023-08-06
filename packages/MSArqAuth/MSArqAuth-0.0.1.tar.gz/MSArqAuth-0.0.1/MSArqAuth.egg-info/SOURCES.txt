@@ -1,0 +1,8 @@
+setup.py
+MSArqAuth.egg-info/PKG-INFO
+MSArqAuth.egg-info/SOURCES.txt
+MSArqAuth.egg-info/dependency_links.txt
+MSArqAuth.egg-info/requires.txt
+MSArqAuth.egg-info/top_level.txt
+libname/MSArqAuth.py
+libname/__init__.py
