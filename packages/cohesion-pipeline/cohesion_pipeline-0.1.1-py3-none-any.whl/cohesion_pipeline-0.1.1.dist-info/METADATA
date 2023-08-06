@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: cohesion-pipeline
+Version: 0.1.1
+Summary: Cohesion measurement to evaluate topic modeling score. call cohesion_df(df)
+Home-page: https://github.com/Berdugo1994/cohesion-pipeline
+Author: Eden Berdugo, Tom Nachman, Asaf Solomon
+Author-email: berdugogo@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: nltk (~=3.7)
+Requires-Dist: scikit-learn (~=1.1.1)
+Requires-Dist: pandas (~=1.3.0)
+Requires-Dist: transformers (~=4.20.1)
+Requires-Dist: numpy (~=1.21.0)
+Requires-Dist: tqdm (~=4.64.0)
+Requires-Dist: tensorflow (~=2.9.1)
+Requires-Dist: protobuf (~=3.20.1)
+Requires-Dist: torch
+
+# The Cohesion Pipeline
+
+Given a division, Cohesion pipeline should give a cohesion score and recommend a suitable name for each group
+A suitable should suit each member of the group and be the tightest one (no entities in other groups suits the name), using inter and intra score
+
+
+## Installation
+
+```bash
+pip install cohesion-pipeline
+```
+
+## Usage Example
+The input to the cohesion_score functin must be a csv,txt,tsv file with a tab['\t'] seperator and must have 'label' and 'text' columns
+```python
+import pandas as pd
+from cohesion import cohesion_pipeline
+
+data = {"text":
+            ["we like to play football",
+             "I'm playing football better than neymar and cristano ronaldo",
+             'I like Fifa more than I like football, My Fav team is #RealMadrid Hala Madrid',
+             'Hamburger or Pizza? what would i choose? I will eat both of them, it so tasty!',
+             'banana pancakes with syrup maple, thats my favorite meal'],
+        'label':
+            [1, 1, 1, 2, 2]}
+df = pd.DataFrame(data)
+score, res = cohesion_pipeline.cohesion_df(df)
+print("Cohesion Final score is", score)
+print("Cohesion Topics are:", res)
+
+```
