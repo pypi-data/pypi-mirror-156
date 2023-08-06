@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rulu
+Version: 0.3
+Summary: Python interface for building rule-based expert systems over clipspy
+Home-page: http://github.com/ubarkai/rulu
+Author: Uri Barkai
+Author-email: ubarkai@gmail.com
+License: LGPL
+Platform: UNKNOWN
+Provides-Extra: testing
+License-File: LICENSE.txt
+
+UNKNOWN
+

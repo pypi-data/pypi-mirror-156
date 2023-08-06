@@ -1,0 +1,5 @@
+munch
+clipspy
+
+[testing]
+pytest
