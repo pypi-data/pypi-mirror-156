@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: zoish
+Version: 0.1.3
+Summary: This project uses shapely values for selecting Top n features compatible with scikit learn pipeline
+Home-page: https://github.com/drhosseinjavedani/zoish
+License: MIT
+Author: drhosseinjavedani
+Author-email: h.javedani@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: fasttreeshap (>=0.1.2,<0.2.0)
+Requires-Dist: feature-engine (>=1.4.1,<2.0.0)
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: numba (>=0.55.2,<0.56.0)
+Requires-Dist: numpy (<1.22.0)
+Requires-Dist: optuna (>=2.10.1,<3.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: pip-licenses (>=3.5.4,<4.0.0)
+Requires-Dist: scikit-learn (>=1.1.1,<2.0.0)
+Requires-Dist: scipy (>=1.8.1,<2.0.0)
+Requires-Dist: shap (>=0.41.0,<0.42.0)
+Requires-Dist: xgboost (>=1.6.1,<2.0.0)
