@@ -1,0 +1,9 @@
+cleanup_utils/__init__.py,sha256=z0pFintYfMr6ygCkJiQQxtUqFWmnVbmHF0GXZ_jHEoU,53
+cleanup_utils/config.py,sha256=r3rtPuk5ZQDj7HyFOsVPYOFl44AvApKk8G7cpxl-3jk,842
+cleanup_utils/mac_clean_library_cache.py,sha256=uR64H-oOkNXTx0zQdQW69XcFbLo2U3kPrW74aYbVW-Y,2151
+cleanup_utils/utils.py,sha256=AQkTOS9gtXf0yvVuSjjwpBIkUHkIYi6W6A4WZ3hPCa8,4464
+cleanup_utils-0.1.1.dist-info/entry_points.txt,sha256=JMbrnYcovkoHmtsz3b6qwI9qECaBPZmjIYK2X6GpNBk,136
+cleanup_utils-0.1.1.dist-info/LICENSE,sha256=ourMoCbjPM42xNPF2hgFj17PLKzS8tWahPGttjH_Gpk,1106
+cleanup_utils-0.1.1.dist-info/WHEEL,sha256=FWzWAvOOsDP6aqtZj_z3pIhVEk8S9F03Xwafa0tLqIY,90
+cleanup_utils-0.1.1.dist-info/METADATA,sha256=GIJQNeCeiveLgKcETyhaX7bAF364e7wA8Y6I-QvsaIM,666
+cleanup_utils-0.1.1.dist-info/RECORD,,
