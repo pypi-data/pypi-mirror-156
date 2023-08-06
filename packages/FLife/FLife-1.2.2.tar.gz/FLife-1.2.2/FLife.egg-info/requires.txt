@@ -1,0 +1,9 @@
+numpy
+scipy
+fatpack
+rainflow
+pylint
+pytest
+lvm_read
+matplotlib>=3.3
+pyExSi
