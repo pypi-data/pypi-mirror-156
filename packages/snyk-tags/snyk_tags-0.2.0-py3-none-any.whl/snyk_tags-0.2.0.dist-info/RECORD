@@ -1,0 +1,10 @@
+snyk_tags/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+snyk_tags/__init__.py,sha256=ABUqag7aatVlMEQ1v8y9OiXAEDn2icM5UW_w5ExWO2s,211
+snyk_tags/__main__.py,sha256=JdE8caEQ_HLSnHDAnKWhSCNzPrsJQE6WKs6XpiPGoNc,154
+snyk_tags/apply.py,sha256=7b685DduB-cnrj2ZlPn1BaNIxZQuHLrdmRwnhfOc1Dk,8894
+snyk_tags/tags.py,sha256=zc8An8f22rkcK0U82BvHyXKo_XhuqgDcABOzgooJ72Q,828
+snyk_tags-0.2.0.dist-info/entry_points.txt,sha256=HzeLORk4rJGYgAupCx3ttBD63m_MzSDRm5Cws3W4egI,48
+snyk_tags-0.2.0.dist-info/LICENSE.md,sha256=TXVQj4dwU2xQB7w7CqUzkVRhKdVRY5zw9deSBunYz0I,2138
+snyk_tags-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+snyk_tags-0.2.0.dist-info/METADATA,sha256=ZBL8ZEHtJ2cGo2t-Mz6PysbPRbuDihKGgrOfcDVMURA,3494
+snyk_tags-0.2.0.dist-info/RECORD,,
