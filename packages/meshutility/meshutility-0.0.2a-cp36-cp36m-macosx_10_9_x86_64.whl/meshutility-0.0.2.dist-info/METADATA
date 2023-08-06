@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: meshutility
+Version: 0.0.2
+Summary: A collection of python utilities for mesh processing
+Home-page: https://github.com/zishun/MeshUtility
+Author: Zishun Liu
+Author-email: 
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/zishun/MeshUtility/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.BSD2
+License-File: LICENSE.MPL2
+License-File: LICENSE.OpenMesh
+License-File: LICENSE.pybind11
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: openmesh
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+
+[![Build](https://github.com/zishun/MeshUtility/actions/workflows/wheels.yml/badge.svg?branch=main)](https://github.com/zishun/MeshUtility/actions/workflows/wheels.yml)
+# MeshUtility
+
+> A collection of python utilities for mesh processing.
+
+Install with
+```
+pip install meshutility==0.0.2
+```
+
+A simple tutorial is available [here](https://zishun.github.io/projects/MeshUtility/).
+
+
+## Functions & Modules
+- ```colormap_vertex_color```: assign vertex color to visualize a scalar field defined on mesh.
+- ```cut_along_curve```: cut a mesh along a vertex chain.
+- ```ff_graph```: face-face graph of mesh.
+- ```get_scalar_field_on_resampled_points```: given a scalar field defined on a triangular mesh, get field values on resampled points.
+- ```IsoCurve``` module: extract isocurves on a scalar field defined on a manifold triangular mesh.
+- ```pygeodesic``` module (C++): geodesic for triangular meshes.
+    - exact geodesic by Danil Kirsanov.
+    - fast marching, may use different speed on each face.
+- ```pyisocurve``` module (C++): almost the same as ```IsoCurve``` above.
+- ```pyremesh``` module (C++): incremental isotropic remeshing.
+- ```pyshapeop``` module (C++): a partial binding of ShapeOp.
+- ```read_obj_lines```: read polyline from a [Wavefront .obj file](https://en.wikipedia.org/wiki/Wavefront_.obj_file#Line_elements).
+- ```remove_unreferenced_vertices```: remove unreferenced vertices.
+- ```sphere_cvt```: iteratively approximate centroidal Voronoi tessellation (CVT) on the unit sphere (kind of uniform sampling).
+- ```split_connected_components```: split connected components.
+- ```split_mesh, split_mesh_complete```: split a mesh by inserting new vertices defined on mesh edges.
+- ```write_obj_lines```: write polyline as a Wavefront .obj file that can be open with MeshLab.
+- ```vv_graph```: vertex-vertex graph of mesh.
+
+
+## Build from Source
+
+see [```build.md```](https://github.com/zishun/MeshUtility/blob/main/build.md)
+
+
