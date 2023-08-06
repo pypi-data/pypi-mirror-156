@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+soccer_twos/soccer_twos.egg-info/PKG-INFO
+soccer_twos/soccer_twos.egg-info/SOURCES.txt
+soccer_twos/soccer_twos.egg-info/dependency_links.txt
+soccer_twos/soccer_twos.egg-info/requires.txt
+soccer_twos/soccer_twos.egg-info/top_level.txt
