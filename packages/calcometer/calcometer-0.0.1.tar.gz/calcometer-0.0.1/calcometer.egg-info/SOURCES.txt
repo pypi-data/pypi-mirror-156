@@ -1,0 +1,7 @@
+LICENCE
+README
+setup.py
+calcometer.egg-info/PKG-INFO
+calcometer.egg-info/SOURCES.txt
+calcometer.egg-info/dependency_links.txt
+calcometer.egg-info/top_level.txt
