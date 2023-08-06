@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: autohome_push
+Version: 0.0.1
+Summary: a tools that processing feature
+	ensure feature consistency when training and reasoning
+	
+Home-page: https://github.com/hisoka176/push
+Author: hisoka
+Maintainer-email: libin16104@autohome.com.cn
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: pyspark;machine learning
+Platform: UNKNOWN
+Requires-Python: ==2.7
