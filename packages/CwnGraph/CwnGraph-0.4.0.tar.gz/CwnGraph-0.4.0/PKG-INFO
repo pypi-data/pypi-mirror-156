@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: CwnGraph
+Version: 0.4.0
+Summary: A CWN Python binding with graph structure
+Author: NTUGIL LOPE Lab
+License: GPL GNUv3
+License-File: LICENSE
+
+A CWN Python binding with graph structure
