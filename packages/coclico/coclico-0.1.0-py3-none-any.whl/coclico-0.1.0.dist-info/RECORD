@@ -1,0 +1,8 @@
+coclico/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coclico/coclico.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coclico/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coclico/utils/boxes.py,sha256=Po9vPMlyeAwNYJtuHBvD10hu4XgcIVsMHCPS2CO6mFE,4308
+coclico-0.1.0.dist-info/LICENSE,sha256=mdfxqIfE__I_7b-q73p7S0p-F9coTzXxYPwZtqwPmc8,1073
+coclico-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+coclico-0.1.0.dist-info/METADATA,sha256=Sj_C1i09X0RIBtUNXpuCVbAHVI5g_00w5MwnB_chj-c,1360
+coclico-0.1.0.dist-info/RECORD,,
