@@ -1,0 +1,2 @@
+[console_scripts]
+pytest-smell = pytest_smell:pytest_smell
