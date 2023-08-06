@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: spiderpen
+Version: 0.0.9
+Summary: Python library to control a complementary model of the LEGO Boost 17101 set
+Home-page: https://github.com/valentin-burillier/spiderpen
+Author: Valentin Burillier
+Author-email: 
+License: UNKNOWN
+Keywords: LEGO,ROBOTICS
+Platform: UNKNOWN
+Requires: pylgbst
+License-File: LICENSE
+
+UNKNOWN
+
