@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/pyStFTP/__init__.py
+src/pyStFTP/pyStFTP.py
+src/pyStFtp.egg-info/PKG-INFO
+src/pyStFtp.egg-info/SOURCES.txt
+src/pyStFtp.egg-info/dependency_links.txt
+src/pyStFtp.egg-info/top_level.txt
+test/test_pyStFTP.py

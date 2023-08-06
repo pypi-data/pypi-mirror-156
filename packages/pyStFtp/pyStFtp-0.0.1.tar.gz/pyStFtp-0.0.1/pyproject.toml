@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "pyStFtp"
+version = "0.0.1"
+authors = [
+  { name="Mickael Eriksson", email="mickael@mickenet.com"},
+]
+description = "A cutom libaray to help in doing sfpt"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/MickaelE/pyStFtp.git"
+"Bug Tracker" = "https://github.com/MickaelE/pyStFtp/issues"
