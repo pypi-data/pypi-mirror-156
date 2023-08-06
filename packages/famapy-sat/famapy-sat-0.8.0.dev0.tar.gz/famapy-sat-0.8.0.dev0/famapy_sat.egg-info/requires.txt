@@ -1,0 +1,10 @@
+famapy>=0.9.0
+famapy-fm>=0.7.0
+python-sat>=0.1.7.dev6
+
+[dev]
+pytest
+pytest-mock
+prospector
+mypy
+coverage
