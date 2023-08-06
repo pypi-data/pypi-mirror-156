@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: yiwen scraper
+Version: 0.0.1
+Summary: some web scraping tool for Weibo
+Home-page: UNKNOWN
+Author: Yiwen Li
+Author-email: liyiwen_2311@163.com
+License: MIT
+Keywords: web scraper
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This library is something I wrote to make my code look neat. These are some scraping functions for Weibo
+
+
+
+1. scroll(scroll_num): to scroll down some pages  
+type(scroll_num) = int
+
+2. scroll_little_bit(scroll_num) :to scroll down a little bit, no more than one page, at a time, 250 pixel to be precise 
+type(scroll_num) = int
+
+3. login_mobile(): to log in to weibo mobile web page
+
+4. login_web(): to log in to weibo web page
+
+5. hot_people(hashtag):find the users who has made the most contribute to a certain topic area,on weibo web. Takes in a hashtag and return a data frame 
+type(hashtag) = str
+
+6. search_mobile(user_name): to search a user on weibo mobile page
+type(user_name) = str
+
+7.repo_passive_name(scroll_num):to get some user's name who likes to repost certain key user's post,on weibo mobile web
+type(scroll_num) = int
+
+8.repo_name_initiative(scroll_num):to got all the user’s names that the key user reposted from,on weibo mobile web
+type(scroll_num) = int
+
+9.make_list_num_df(list_long):to make a dataframe from a list
+type(list_long) = list
+
+10.clean_repo_name(repo_name_list):to get all the "None" out of the list
+type(repo_name_list) = list
+
+11.get_content_and_time(scroll_num):to get some of the post of a key user and their post time on weibo mobile web
+type(scroll_num) = int
+
+12.find_repo_in_content(content_list):to some of possible connections in post content
+type(content_list) = list
+
+13.fan_num_mobile(user_name):to get the follower number of a certain user ,on weibo mobile web
+type(user_name) = str
+
+14.fan_num_web(user_name):to get the follower number of a certain user ,on weibo web
+type(user_name) = str
+
+15. get_repo_like_ratio(user_name,scroll_num):to get the repost/like ratio of a certain user ,on weibo mobile web
+type(user_name) = str
+type(scroll_num) = int
+
+16.search_topic_general(hashtag, page_num):to search a hashtag and scrape all the content in the search result, store the scraped content in a dataframe
+type(hashtag) = str
+type(page_num) = int
+
+17.search_keyword_general(hashtag, page_num):to search a keyword and scrape all the content in the search result, store the scraped content in a dataframe
+type(hashtag) = str
+type(page_num) = int
+
+
+1. Library created in 2022/6.27 ver 0.0.1
+
+

@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Yiwen scraper/__init__.py
+yiwen_scraper.egg-info/PKG-INFO
+yiwen_scraper.egg-info/SOURCES.txt
+yiwen_scraper.egg-info/dependency_links.txt
+yiwen_scraper.egg-info/top_level.txt
