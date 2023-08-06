@@ -1,0 +1,8 @@
+README.md
+setup.py
+shipper/__init__.py
+shipper/shipper.py
+shipper.egg-info/PKG-INFO
+shipper.egg-info/SOURCES.txt
+shipper.egg-info/dependency_links.txt
+shipper.egg-info/top_level.txt
