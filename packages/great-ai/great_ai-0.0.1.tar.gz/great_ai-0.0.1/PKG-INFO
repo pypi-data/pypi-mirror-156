@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: great_ai
+Version: 0.0.1
+Home-page: https://github.com/ScoutinScience/great_ai
+Author: András Schmelczer
+Author-email: andras@scoutinscience.com
+Project-URL: Bug Tracker, https://github.com/ScoutinScience/great_ai/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# GreatAI
+
+[![Check library](https://github.com/ScoutinScience/great_ai/actions/workflows/check.yml/badge.svg)](https://github.com/ScoutinScience/great_ai/actions/workflows/check.yml) [![Quality Gate Status](https://sonar.scoutinscience.com/api/project_badges/measure?project=great-ai&metric=alert_status)](https://sonar.scoutinscience.com/dashboard?id=great-ai)
+
+**work in progress, do not use!**
