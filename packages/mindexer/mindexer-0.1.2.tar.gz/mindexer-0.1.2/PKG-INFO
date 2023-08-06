@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mindexer
+Version: 0.1.2
+Summary: Experimental Index Recommendation Tool for MongoDB
+Home-page: http://github.com/mongodb-labs/mindexer
+Author: Thomas Rueckstiess
+Author-email: thomas.rueckstiess@mongodb.com
+License: MIT
+Keywords: mongodb indexes recommendations
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mindexer
+
+An experimental tool to recommend indexes for MongoDB
+
+## Description
+
+`mindexer` is a command line tool written in Python to recommend indexes for a MongoDB collection. It uses queries logged to the `system.profile` collection (find out more about [profiling in MongoDB](https://www.mongodb.com/docs/manual/tutorial/manage-the-database-profiler/)) and a small random sample of the original collection to determine the indexes best suited for a workload and dataset.
+
+## Installation
+
+TBD
+
+## Usage
+
+TBD
