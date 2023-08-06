@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: nb-conda-store-kernels
+Version: 0.1.0
+Summary: Launch Jupyter kernels from Conda-Store
+Home-page: https://github.com/Quansight/nb_conda_store_kernels
+Author: Christopher Ostrouchov
+Author-email: chris.ostrouchov@gmail.com
+License: BSD License
+Project-URL: Bug Reports, https://github.com/quansight/nb_conda_store_kernels
+Project-URL: Documentation, https://nb_conda_store_kernels.readthedocs.io/
+Project-URL: Source, https://github.com/quansight/nb_conda_store_kernels
+Keywords: conda
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# nb_conda_store_kernels
+
+## Usage
+
+Modify the jupyter configuration to enable `nb_conda_store_kernels` as
+a kernel manager in `jupyter_config.py`. Several of the settings can
+be configured via traitlets. However several will need to be set via
+environment variables. 
+
+```python
+c.JupyterApp.kernel_spec_manager_class = "nb_conda_store_kernels.manager.CondaStoreKernelSpecManager"
+c.CondaStoreKernelSpecManager.conda_store_url = "http://conda-store-server:5000/conda-store"
+c.CondaStoreKernelSpecManager.conda_store_auth = "basic"
+```
+
+Environment variables which correspond to the environment variables
+that [conda-store](https://github.com/quansight/conda-store) uses:
+ - `CONDA_STORE_URL`
+ - `CONDA_STORE_AUTH`
+ - `CONDA_STORE_NO_VERIFY_SSL`
+ - `CONDA_STORE_USERNAME`
+ - `CONDA_STORE_PASSWORD`
+ - `CONDA_STORE_TOKEN`
+
+This package is heavily under development and much may change. If
+configured properly environment should show up in ~10 second delays
+from changes in the Conda-Store server.
+
+## Development
+
+Start Conda-Store server
+
+```
+docker-compose up --build
+nix develop
+python -m nb_conda_store_kernels.install
+jupyter lab
+```
+
+Login to Conda-Store at [localhost:5000](http://localhost:5000) and
+create a new environment.
