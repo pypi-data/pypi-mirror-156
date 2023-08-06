@@ -1,0 +1,8 @@
+setup.py
+parent/__init__.py
+parent/path_append.py
+path_append.egg-info/PKG-INFO
+path_append.egg-info/SOURCES.txt
+path_append.egg-info/dependency_links.txt
+path_append.egg-info/not-zip-safe
+path_append.egg-info/top_level.txt
