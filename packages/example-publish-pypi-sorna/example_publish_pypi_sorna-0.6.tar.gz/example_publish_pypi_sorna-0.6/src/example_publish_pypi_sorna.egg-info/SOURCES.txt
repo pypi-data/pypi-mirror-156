@@ -1,0 +1,10 @@
+README.txt
+setup.cfg
+setup.py
+src/example/__init__.py
+src/example/custom_sklearn.py
+src/example_publish_pypi_sorna.egg-info/PKG-INFO
+src/example_publish_pypi_sorna.egg-info/SOURCES.txt
+src/example_publish_pypi_sorna.egg-info/dependency_links.txt
+src/example_publish_pypi_sorna.egg-info/requires.txt
+src/example_publish_pypi_sorna.egg-info/top_level.txt
