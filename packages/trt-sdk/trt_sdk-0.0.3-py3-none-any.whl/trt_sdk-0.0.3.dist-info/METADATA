@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: trt-sdk
+Version: 0.0.3
+Summary: trt-sdk: c or c++ interface sdk
+Home-page: https://github.com/ssbuild
+Author: ssbuild
+Author-email: 9727464@qq.com
+License: Apache 2.0
+Keywords: trt-sdk,trt_sdk,tensorrt,trt,inference
+Platform: linux_x86_64
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3, <4
+Description-Content-Type: text/markdown
+
+trt-sdk: c or c++ interface sdk
+## trt_csdk: tensort c库接口
+    
+    c库接口 , 可用于py调用c库或者c库直接调用
+    
+    tensorrt version 8.0 , 8.2 , 8.4
+
+    trt_csdk 8.0.0
+    trt_csdk 8.2.0
+    trt_csdk 8.4.0
+
+```python
+    typedef void* CC_SDK_TRT_HANDLE;
+
+	int cc_sdk_trt_init();
+
+	int cc_sdk_trt_uninit();
+
+	int cc_sdk_trt_delete(const CC_SDK_TRT_HANDLE handle);
+
+	int cc_sdk_trt_new(const char* model_buffer, int buffer_size,
+		int device_id,
+		const bool enableGraph,
+		std::vector<std::vector<std::vector<int>>>& input_shape_,
+		std::vector<std::vector<int>>& input_item_size_,
+		std::vector<std::vector<std::vector<int>>>& output_shape_,
+		std::vector<std::vector<int>>& output_item_size_,
+		CC_SDK_TRT_HANDLE& instance);
+
+	int cc_sdk_trt_process(const CC_SDK_TRT_HANDLE instance, int net_stage, const void* const* input_buffer_list,
+		const int input_num, const int batch_size,void** output_buf_only_read, int* output_buf_size);
+
+
+```

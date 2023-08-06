@@ -1,0 +1,8 @@
+trt_sdk/__init__.py,sha256=Q86UxnUffx8qDHIaKSQWWVaoesNwzEGgiGhrVhWxfeA,72
+trt_sdk/engine_trt8.0.so,sha256=0qxO8ABJMmAftREQcVgs1SjHjbj_64pqygBctdEjCyo,2528752
+trt_sdk/engine_trt8.2.so,sha256=XEEXzF6OnKhpNzCFqGcSYdC_ArcJLOR8NvDsNkYwrYk,2529704
+trt_sdk/engine_trt8.4.so,sha256=y-wjr3ySSPeBy3rwKwXzWmHVR46F-QnqX4rrYfA7iek,2529880
+trt_sdk-0.0.3.dist-info/METADATA,sha256=-WUjbgy0AKp8BTsj2KEZ11rB2tJVXDwDEoy3FStAvXE,2236
+trt_sdk-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+trt_sdk-0.0.3.dist-info/top_level.txt,sha256=zas1Nzh201Yf4E4iUvHpV_xoHSZyboN8j-z2d1VDmUo,8
+trt_sdk-0.0.3.dist-info/RECORD,,
