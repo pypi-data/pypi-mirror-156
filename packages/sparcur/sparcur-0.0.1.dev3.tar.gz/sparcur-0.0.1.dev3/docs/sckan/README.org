@@ -1,0 +1,175 @@
+#+title: Getting started
+
+Instructions for getting SCKAN up and running.
+
+The successful completion of the steps in this file should result in a
+window with [[./welcome.org][welcome.org]] greeting you and giving you quick access to an
+interactive query interface.
+
+SCKAN is distributed as two docker images.
+1. An image with the software needed to run queries [[https://hub.docker.com/r/tgbugs/musl/tags?name=kg-release-user][tgbugs/musl:kg-release-user]]
+2. An image containing only the loaded databases [[https://hub.docker.com/r/tgbugs/sckan/tags?name=latest][tgbugs/sckan:latest]]
+
+The underlying data and the =tgbugs/sckan:latest= image are also archived on Zenodo.
+The latest data release can be obtained from https://doi.org/10.5281/zenodo.5337441.
+
+* Download Docker and X11
+1. Download and install docker for your platform.
+   - linux: [[https://repology.org/project/docker/packages][consult]] your local package manager
+   - [[https://docs.docker.com/desktop/mac/install/][macos]]
+   - [[https://docs.docker.com/desktop/windows/install/][windows]]
+
+2. Download and install X11 for your platform.
+   - linux: you are already done
+   - macos: [[https://www.xquartz.org/][XQuartz]]
+   - windows: [[https://sourceforge.net/projects/vcxsrv/][VcXsrv]]
+
+Commands for specific operating systems are in the [[#examples][Examples]] section below.
+* X11 configuration
+** linux
+#+begin_src bash
+xhost local:docker
+#+end_src
+
+** macos
+#+begin_src bash
+open -a XQuartz
+
+# XXX Go to XQuartz > Preferences > Security
+# and enable Allow connections from network clients
+# you may need to restart XQuartz after this
+
+xhost +localhost
+#+end_src
+
+** windows
+#+begin_src powershell
+& 'C:\Program Files\VcXsrv\vcxsrv.exe' -multiwindow -clipboard -wgl :0
+#+end_src
+
+* Running
+#+begin_src bash
+# obtain the latest release images from dockerhub
+
+docker pull tgbugs/musl:kg-release-user
+docker pull tgbugs/sckan:latest
+
+# create a container that can be used to mount the SCKAN data release as a volume
+
+docker create -v /var/lib/blazegraph -v /var/lib/scigraph --name sckan-data tgbugs/sckan:latest /bin/true
+
+# run the image
+
+## linux
+
+docker run --volumes-from sckan-data -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -it tgbugs/musl:kg-release-user
+
+## macos
+
+docker run --volumes-from sckan-data -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=host.docker.internal:0 -it tgbugs/musl:kg-release-user
+
+## windows
+
+docker run --volumes-from sckan-data -e DISPLAY=host.docker.internal:0 -it tgbugs/musl:kg-release-user
+
+#+end_src
+
+If you update to a new version of =tgbugs/sckan= you will want to run
+the following to update the =sckan-data= container.
+#+begin_src bash
+docker rm sckan-data
+docker create -v /var/lib/blazegraph -v /var/lib/scigraph --name sckan-data tgbugs/sckan:latest /bin/true
+#+end_src
+
+* Examples
+Full workflows for various operating systems.
+** linux
+Note that these commands assume =>=docker-20= so make sure your
+package index is up to date.
+
+#+begin_src bash
+sudo apt install docker docker.io  # ubuntu mint etc.
+sudo usermod -a -G docker ${USER}
+
+# you may need to get a new login shell at this point
+
+xhost local:docker
+
+docker pull tgbugs/musl:kg-release-user
+docker pull tgbugs/sckan:latest
+
+docker rm sckan-data
+docker create -v /var/lib/blazegraph -v /var/lib/scigraph --name sckan-data tgbugs/sckan:latest /bin/true
+
+docker run \
+--volumes-from sckan-data \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+-e DISPLAY=$DISPLAY \
+-it tgbugs/musl:kg-release-user
+#+end_src
+
+** macos
+Using https://brew.sh/.
+#+begin_src bash
+brew install virtualbox xquartz
+brew install --cask docker
+
+# there are some system level persmissions that you will need to set for virtualbox
+
+open -a XQuartz
+
+# XXX Go to XQuartz > Preferences > Security
+# and enable Allow connections from network clients
+# you may need to restart XQuartz after this
+
+xhost +localhost
+
+docker pull tgbugs/musl:kg-release-user
+docker pull tgbugs/sckan:latest
+
+docker rm sckan-data
+docker create -v /var/lib/blazegraph -v /var/lib/scigraph --name sckan-data tgbugs/sckan:latest /bin/true
+
+docker run \
+--volumes-from sckan-data \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+-e DISPLAY=host.docker.internal:0 \
+-it tgbugs/musl:kg-release-user
+#+end_src
+
+** windows
+Using https://chocolatey.org/.
+#+begin_src powershell
+choco install wsl2 wsl-ubuntu-2004 vcxsrv docker-desktop docker
+
+& 'C:\Program Files\VcXsrv\vcxsrv.exe' -multiwindow -clipboard -wgl :0
+
+docker pull tgbugs/musl:kg-release-user
+docker pull tgbugs/sckan:latest
+
+docker rm sckan-data
+docker create -v /var/lib/blazegraph -v /var/lib/scigraph --name sckan-data tgbugs/sckan:latest /bin/true
+
+docker run `
+--volumes-from sckan-data `
+-e DISPLAY=host.docker.internal:0 `
+-it tgbugs/musl:kg-release-user
+#+end_src
+
+If you try to launch =vcxsrv.exe= more than once with the same display
+number set you will encounter a fatal error.
+
+* Other ways to use the docker images
+Beyond the interactive query interface, these docker images can be run
+as standalone SciGraph and Blazegraph instances of SCKAN for use in a
+variety of applications.
+
+#+begin_src bash
+docker run \
+--volumes-from sckan-data \
+-p 9000:9000 \
+-p 9999:9999 \
+--entrypoint /etc/services.sh \
+tgbugs/musl:kg-release-user
+#+end_src
+# TODO examples of how to modify the entrypoint

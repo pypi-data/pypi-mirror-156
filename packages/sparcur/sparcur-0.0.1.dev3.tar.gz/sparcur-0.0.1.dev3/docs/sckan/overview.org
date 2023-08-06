@@ -1,0 +1,156 @@
+#+title: Overview
+Contents
+- [[#introduction][Introduction]]
+- [[#glossary][Glossary]]
+* Introduction
+:PROPERTIES:
+:CUSTOM_ID:  introduction
+:END:
+The SPARC Knowledge base of the Automatic Nervous System is an
+integrated graph database composed of three parts: the SPARC dataset
+metadata graph, ApiNATOMY and NPO models of connectivity, and the
+larger ontology used by SPARC which is a combination of the
+NIF-Ontology and community ontologies.
+
+** SPARC Content
+The SPARC content is as follows.
+1. SPARC dataset metadata graph
+   1. Datasets
+      1. Publicly released datasets, including those under embargo.
+   2. Protocols
+      1. Hypothesis Annotations
+      2. Processed Hypothesis annotations
+2. SPARC Connectivity
+   1. ApiNATOMY models
+      1. models
+         1. ard-arm-cardiac
+         2. bolser-lewis
+         3. bronchomotor
+         4. keast-bladder
+         5. sawg-distal-colon
+         6. sawg-stomach
+   2. Neuron Phenotype Ontology
+      1. Evidence Based Types
+         1. nerves.ttl
+      2. NPO stubs
+3. Ontology
+   1. sparc-methods.ttl
+   2. sparc-community-terms.ttl
+   3. NIF-Ontology+
+
+** Ontology content
+What ontologies are part of this release?
+The [[https://github.com/SciCrunch/NIF-Ontology][NIF-Ontology]] provides the foundation of the ontology used for SCKAN.
+The NIF-Ontology imports Uberon, Human Disease Ontology DOID, PR, and subsets of ChEBI, NCBITaxon, and NCBIGene.
+In addition we import the MONDO Disease Ontology, the Human Phenotype Ontology, Foundationaly Model of Anatomy, and CL.
+
+The two releases have slightly different ontology content due to their
+different use cases.
+
+1. SciGraph
+   Everything.
+2. Blazegraph
+   Not quite everything.
+   Only the subset that is used in the SPARC content or connectivity portions of SCKAN.
+
+** Compiled content
+In order to create an accessible version of the Knowledge Base that
+can be queried we convert and enrich the SPARC content by loading it
+into a property graph (Neo4j) and into an triple store (Blazegraph),
+and by augmenting it with the NIF-Ontology which pulls in a number of
+community ontologies.
+
+SCKAN = SPARC Content + NIF-Ontology + Community ontologies
+
+Why do we have two representations?
+
+There are two representations becuase we have found that they serve
+complementary use case.  The triplestore is useful for executing basic
+competency queries over the dataset releases, but there are not
+existing APIs that are straight forward for devopers to consume. On
+the other hand, SciGraph provides a developer friendly REST API that
+is much easier to use in production systems.
+
+Both of these databases are available in the docker image we provide
+since they are needed to run the queries.  You can download the
+compiled versions of each database separately as well.
+
+The SciGraph release comes as a zipped Neo4j database.
+The Blazegraph release comes as a journal file.
+** How to query the database
+In addition to the underlying raw data, we also provide two
+representations of the knowledge base that can be queried directly
+using the SPARQL or Cypher query languages. These are available as
+docker images and as standalone releases.
+
+See the [[./README.org][README]] to get started querying.
+
+| Representation | Database         | Language |
+|----------------+------------------+----------|
+| RDF            | Blazegraph       | SPARQL   |
+| Property Graph | SciGraph (Neo4j) | Cypher   |
+
+* Glossary
+:PROPERTIES:
+:CUSTOM_ID:  glossary
+:END:
+*** Neurulated groups
+Neurulated groups are used to ensure that the individual segments and
+parts of neurons modeled in ApiNATOMY can be recognized as single
+cellular entities. By default ApiNATOMY treats parts of neurons
+individually so that it is possible to talk about the specific
+location of a neurite and give it an exact anatomical location.
+
+Note however that sometimes when we talk about neurons in ApiNATOMY we
+implictly mean neuron populations, so a neurite or cell part is not an
+individual neurite of a single cell, but rather a population level
+representation. Cell parts here include axons, dendrites, and somas.
+
+#+begin_comment
+These population level representations are more similar to the old
+reticular hypothesis about the structure of the nervous system in that
+they also allow multi-nucleated populations, which can be confusing if
+one is expecting the model to be of individual neurons. They can also
+allow axon trees that are not trees but instead are graphs.
+#+end_comment
+
+Population level representations can be used to generate models of
+individual neurons that are consistent with the population as a whole
+but do not differentiate between certain scenarios such as individual
+neurons branching vs sub-populations with distinct projection
+patterns.
+
+Neurulating over the parts of populations makes it possible to recover
+a representation that is more familiar to those who are used to
+working with and thinking about whole cells.
+
+This is useful for querying connectivity defined by neuron populations.
+*** Neuron populations
+Neuron populations correspond sets of neurons that share defining
+properties the distinguish them from other similar populations.  For
+example, there may be many populations that have their somas located
+in the Superior Cervical Ganglion, however they can be differentiated
+by considering their projection targets, both anatomically and based
+on their target populations.
+
+In this knowledge base neuron populations are distinct from neurulated
+groups in that they are identified by the ontology representation in
+addition to the ApiNATOMY anatomical representation.
+
+For the parts of the NPO that are related to SPARC, the major defining
+properties for the populations are the locations of their somas,
+axons, and dendrites. The intersection between neurite type and
+anatomical region is usually sufficient to uniquely identify the
+populations in ApiNATOMY models.
+*** Neurites and somas
+Axons and dendrites in the ApiNATOMY representation are collective
+unions of all the individual members of a population. This means that
+we do not distinguish between cases where a single neuron branches
+into multiple collaterals that project to different location and
+multiple neurons that each project to a different location and all
+combinations in between.
+
+The micro-anatomy of dendrite and axonal morphology is not considered
+in these population level models, so any branching that is seen is
+representative of the macro-scale branching or differential projection
+patterns of whole populations.

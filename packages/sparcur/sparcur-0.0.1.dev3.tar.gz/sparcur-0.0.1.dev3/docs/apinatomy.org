@@ -1,0 +1,1127 @@
+# -*- mode: org; orgstrap-cypher: sha256; orgstrap-norm-func-name: orgstrap-norm-func--dprp-1\.0; orgstrap-block-checksum: ffb05a046b697a8e464d6b8979d9857e657acc0f640d98d2f4ddb6872d5e1fef; -*-
+#+title: ApiNATOMY model RDF export and deployment
+# [[orgstrap][jump to the orgstrap block for this file]]
+# reminder that num:nil breaks table of contents so if one is nil both should probably be nil
+#+options: num:nil toc:nil
+#+startup: showall
+#+property: header-args:elisp :lexical yes
+#+property: header-args :eval no-export
+
+# [[file:./apinatomy.pdf]]
+# [[file:./apinatomy.html]]
+
+#+name: orgstrap-shebang
+#+begin_src bash :eval never :results none :exports none
+{ __p=$(mktemp -d);touch ${__p}/=;chmod +x ${__p}/=;__op=$PATH;PATH=${__p}:$PATH;} > ${null="/dev/null"}
+$file= $MyInvocation.MyCommand.Source
+$ErrorActionPreference= "silentlycontinue"
+file=$0
+args=$@
+$ErrorActionPreference= "Continue"
+{ PATH=$__op;rm ${__p}/=;rmdir ${__p};} > $null
+emacs -batch -no-site-file -eval "(let (vc-follow-symlinks) (defun orgstrap--confirm-eval (l _) (not (memq (intern l) '(elisp emacs-lisp)))) (let ((file (pop argv)) enable-local-variables) (find-file-literally file) (end-of-line) (when (eq (char-before) ?\^m) (let ((coding-system-for-read 'utf-8)) (revert-buffer nil t t)))) (let ((enable-local-eval t) (enable-local-variables :all) (major-mode 'org-mode)) (require 'org) (org-set-regexps-and-options) (hack-local-variables)))" "${file}" -- $args
+exit
+<# powershell open
+#+end_src
+
+* Using this file :noexport:
+This is an executable org file! Here is an example of how to use it to build an apinatomy model.
+#+begin_src bash
+./apinatomy.org --model-id keast-bladder
+#+end_src
+It +can also+ /will soon be able to/ deploy ttl files.
+#+begin_src bash
+./apinatomy.org --deploy
+#+end_src
+* ApiNATOMY to RDF/OWL2 conversion
+:PROPERTIES:
+:visibility: folded
+:END:
+** Basic strategy
+JSON -> RDF -> OWL2 \\
+Conversion from json to rdf should have few if any changes in semantics. \\
+Conversion from a direct rdf translation to OWL2 is where the semantic \\
+translation of ApiNATOMY structures into OWL2 constructs will happen.
+* Server setup
+:PROPERTIES:
+:visibility: folded
+:END:
+On the ontology host (read, ttl host, not SciGraph host) you will need the following.
+#+begin_src bash :dir /ssh:host-apinat-ttl|sudo:host-apinat-ttl: :eval never
+mkdir /var/www/sparc/ApiANTOMY
+mkdir /var/www/sparc/ApiANTOMY/archive
+mkdir /var/www/sparc/ApiANTOMY/archive/manual
+mkdir /var/www/sparc/ApiANTOMY/ontologies
+chown -R nginx:nginx /var/www/sparc/ApiANTOMY
+#+end_src
+* SciGraph pipeline
+** Everything
+#+begin_src bash :noweb yes :tangle ../bin/apinat-functions.sh
+function apinat-full-to-prod () {
+    echo this is not ready
+    return 1
+
+    apinat-build-all &&
+    pushd ~/git/apinatomy-models
+    git commit &&
+    popd
+    echo This would deploy: $(git diff --name-only HEAD~1..HEAD | cut -d'/' -f 1 | sort -u)
+    <<&are-you-sure>>
+    apinat-deploy-ttls $(git diff --name-only HEAD~1..HEAD | cut -d'/' -f 1 | sort -u)
+    ~/git/pyontutils/nifstd/scigraph/bin/run-load-graph-sparc-data &&
+    ~/git/pyontutils/nifstd/scigraph/bin/run-deploy-graph-sparc-data
+}
+
+function apinat-full-to-dev () {
+    apinat-build-all &&
+    ~/git/pyontutils/nifstd/scigraph/bin/run-load-graph-sparc-data-dev &&
+    echo TODO figure out the dance we have to do for docker may need a separate function
+}
+#+end_src
+** Parallel build
+For the time being (until a bit more machinery is in place for
+orthauth style configuration in elisp) you can put the path to
+=secrets.sxpr= in =~/.emacs.d/orgstrap-init.el= with the following
+expression =(setq oa-secrets "/path/to/secrets.sxpr")=.
+#+name: &aba
+#+begin_src bash :noweb no :tangle ../bin/apinat-functions.sh :mkdirp yes
+function apinat-build-all () {
+    pushd ~/git/apinatomy-models
+    pushd models
+    local ids=$(ls -d *)
+    popd
+    echo $ids | \
+    xargs -P10 -r -I {} \
+        bash -c 'apinat-build --repo $(pwd) --model-id ${@}'" ${@}" _ {}
+
+    # only add models where the json has changed since the xlsx is opaque
+    git add -u $(git status --porcelain | grep json | grep M | cut -d' ' -f3 | cut -d'/' -f1-2)
+    popd
+}
+#+end_src
+
+#+begin_src elisp
+(let ((default-directory apinat-model-repo))
+  (cl-remove-if-not
+   (lambda (s) (string-match ".json$" s))
+   (split-string
+    (run-command "git" "diff" "--name-only" "HEAD" "HEAD~1" "--" "models"))))
+#+end_src
+
+** Export to ttl
+#+link: r-apin-mod git:79316499d7987f73a56ce2bc54d07afe91886cd1:
+
+# these link abbreviations should be in the file themselves, or materialized from a common source
+# in a way that can be synced, or actually it is probably ok to put them in a setup/startup file
+# as long as orgstrap tells you how to get that file
+# the gsl local index should not be here in the file, but the local path names can and should be
+#+git-share-local: git:79316499d7987f73a56ce2bc54d07afe91886cd1:HEAD: file:~/git/apinatomy-models/
+r-apin-mod:HEAD:{model-id}/
+#+link: gsx https://docs.google.com/spreadsheets/d/%s/export?format=xlsx
+YEAH it DOES support arbitrary locations, with the ~%s~ implicitly at the tail by default
+
+gsx:google-sheet-id
+
+# org
+# org-set-regexps-and-options
+
+#+name: flow-to-ttl
+#+begin_src elisp :results none
+(defvar-local apinat-model-repo "~/git/apinatomy-models/"
+  "Path to a local copy of the apinatomy-models repository.")
+
+(defvar-local apinat-converter-command "apinat-converter"
+  "Command name or full path to javascript apinatomy converter.")
+
+(defvar-local apinat-converter-debug nil
+  "Dynamic variable used to control debug behavior.")
+
+(defun-local ex-do (&rest nothing)
+  "Executor do. Eats the input since it is to be run by the executor."
+  ;; maybe use this to resolve the ex-come-from flows?
+  ;; while loop would be annoying here
+  (yes-or-no-p "Step done? "))
+
+(defun-local ex-label (label) ;; call/cc, prompt, or cl condition handling is likely the abstraction we would want
+  "Target acquired!")
+
+(defun-local ex-come-from (label)
+  ;; detangling what is going on when using this, there is an implicit assertion
+  ;; that a linear set of `ex-do' steps result in the same final state as a series
+  ;; of sequential calls, the reason to use come-from is that the conductor program
+  ;; can return and go on to the next step as expected (though a post condition)
+  ;; measurement ala a contract needs to be confirmed, the conductor continues
+  ;; along to the next step, and the extracted and compiled `ex-do' (which is really
+  ;; a macro) command uses the come-from to stich the dependency tree back together
+  ;; for the real world steps that are most efficient, the problem with this is that
+  ;; you have to prove that the ordering for both graphs is compatible, namely that
+  ;; for a particular set of sequential calls that there is only a single come-from
+  ;; per line, otherwise you have to figure out what it means to have 20 things that
+  ;; can all in princilple happen after the completion of a step, which is possible
+  ;; but would need a solution
+  "AAAAAAAAA!")
+
+(defmacro apinat--with-model (model-id &rest body)
+  (declare (indent defun))
+  `(let ((default-directory (expand-file-name
+                             (symbol-name ,model-id)
+                             (expand-file-name "models" apinat-model-repo)))
+         (xlsx    (format "source/%s.xlsx"    model-id))
+         (json    (format "source/%s.json"    model-id))
+         (jsong   (format "derived/%s.json"   model-id))
+         (jsonld  (format "derived/%s.jsonld" model-id))
+         (ttl     (format "derived/%s.ttl"    model-id)))
+     ,@body))
+
+(defun-local flow-to-ttl (model-id)
+  ;; probably need 1 more level of indirection to handle cases where the model-id
+  ;; will be put inside the models/ folder which should probably happen sooner rather than later
+  ;;(let ((default-directory (expand-file-name model-id (git-share-local r-apin-mod:HEAD:))) ; TODO ))
+  '
+  (apinat--with-model model-id
+    ;; TODO make sure the directories exist
+    ;; TODO resume from previous step on failure <- this is critical
+    ;; check out `file-newer-than-file-p' as a reasonable approach ala make
+    ;; the only issue is how to prevent the xlsx retrieval from notching it up
+    ;; every single time, maybe we can compare checksums on the xlsx file?
+    ;; TODO push the model id further down the call chain since input
+    ;; and output paths are defined by convention
+    (funcall (checksum-or #'-mx->)  model-id   xlsx) ; source/{model-id}.xlsx
+    ;;; FIXME TODO message about opening the open physiology viewer
+    (-xjl-> xlsx json jsonld)
+    ;;(funcall (out-or      #'-xj->)  xlsx       json) ; source/{model-id}.xlsx source/{model-id}.json
+    ;;(funcall (out-or      #'-jl->)  json     jsonld) ; source/{model-id}.json derived/{model-id}.jsonld
+    (funcall (out-or      #'-lt->)  jsonld      ttl) ; derived/{model-id}.jsonld derived/{model-id}.ttl
+    )
+
+  (apinat--with-model model-id
+    (-mxjjl-> model-id xlsx json jsong jsonld)
+    (-lt-> jsonld ttl)))
+
+(defun-local checksum-or (fun)
+  (lambda (thing path-out)
+    ;;(message "dd: %s" default-directory)
+    (if (file-exists-p path-out)
+        (let ((path-temp (let ((temporary-file-directory default-directory))
+                           ;; keep the temp nearby rather than where ever the tfd is
+                           (make-temp-file (concat path-out "._maybe_new_")))))
+          (unwind-protect
+              (progn
+                (funcall fun thing path-temp)
+                (let ((checksum-new (securl-path-checksum path-temp))
+                      (checksum-old (securl-path-checksum path-out)))
+                  (unless (string= checksum-new checksum-old)
+                    (rename-file path-temp path-out t))))
+            (when (file-exists-p path-temp)
+              (delete-file path-temp))))
+      (funcall fun thing path-out))))
+
+(defun-local out-or (fun)
+  (lambda (path-in path-out)
+    (when (and (file-exists-p path-in)
+               (or (not (file-exists-p path-out))
+                   (and (file-exists-p path-out)
+                        (file-newer-than-file-p path-in path-out))))
+      (funcall fun path-in path-out))))
+
+;; model id -> some path
+
+(defun-local -mt-> (model-id path-ttl) "`model-id' to `path-ttl'")
+(defun-local -ml-> (model-id path-jsonld) "`model-id' to `path-jsonld'")
+(defun-local -mxjjl-> (model-id path-xlsx path-json path-jsong path-jsonld)
+  "`model-id' to everything except the ttl"
+  (let ((path-xlsx (concat default-directory "/" path-xlsx))
+        (path-json (concat default-directory "/" path-json))
+        (path-jsong (concat default-directory "/" path-jsong))
+        (path-jsonld (concat default-directory "/" path-jsonld))
+        (path-temp (make-temp-file "apinat-conversion" 'directory)))
+    (unwind-protect
+        (let* ((default-directory path-temp)
+               (google-sheet-id (symbol-name (-ms-> model-id)))
+               (path-internal (concat path-temp "/build")) ; should not exist to avoid date suffix
+               (_ (let (backtrace-on-error-noninteractive) ; we know where the error happens
+                    (run-command apinat-converter-command
+                                 "-f" "id"
+                                 "-t" "xlsx"
+                                 "-t" "json"
+                                 "-t" "json-resources"
+                                 "-t" "json-flattened"
+                                 "-i" google-sheet-id
+                                 "-o" path-internal))))
+          (cl-loop for path in (list path-xlsx path-json path-jsonld) do
+                   (let ((parent (file-name-directory path)))
+                     (unless (file-directory-p parent)
+                       (make-directory parent t))))
+          (rename-file (concat path-internal "/" "model.xlsx") path-xlsx t)
+          (rename-file (concat path-internal "/" "model.json") path-json t)
+          (rename-file (concat path-internal "/" "model-generated.json") path-jsong t)
+          (rename-file (concat path-internal "/" "model-flattened.jsonld") path-jsonld t))
+      (unless apinat-converter-debug
+        (delete-directory path-temp 'recursive)))))
+
+(defun-local -mj-> (model-id path-json) "`model-id' to `path-json'")
+
+;; intermediate steps for model id
+
+(defun-local -m-lt-> (model-id)
+  (apinat--with-model model-id
+    (funcall (out-or #'-lt->) jsonld ttl)))
+
+(defun-local -m-x-> (model-id)
+  (apinat--with-model model-id
+    (-mx-> model-id xlsx)))
+
+(defun-local -ms-> (model-id)
+  (oa-path :google :sheets (if (keywordp model-id)
+                               model-id
+                             (intern (format ":%s" model-id)))))
+
+(defun-local -mx-> (model-id path-xlsx)
+  ;; automated
+  (let* ((google-sheet-id (-ms-> model-id))
+         (url (format "https://docs.google.com/spreadsheets/d/%s/export?format=xlsx" google-sheet-id)))
+    ' ; it probably makes more sense to implement stuff like this using the condition system?
+    ;; in terms of flow control for a DAG you try to do the thing,
+    ;; stop at your first error and then go do the dependency? but in
+    ;; reality there is often an explicit step where all checks must
+    ;; pass before the whole process can continue because of some time
+    ;; constraint or similar
+    (ex-do (message "Make sure that the permissions are set correctly on %s" url))
+    ;; NOTE `url-copy-file' cannot detect login redirects correclty
+    ;; google sends a 307 for the download if everything is going to work
+    ;; in curl it sends a 302 but never something in the 400 range
+    ;; ideally we would be able to (run-command "mimetype" path-xlsx)
+    ;; but that requires that users have the mimetype command avaiable
+    (url-copy-file url path-xlsx t)))
+
+(defun-local -xj-> (path-xlsx path-json)
+  "This is currently a manual step."
+  (let (;(open-physiology-viewer "file:///home/tom/git/open-physiology-viewer/dist/test-app/index.html")
+        (open-physiology-viewer "https://open-physiology-viewer.surge.sh/"))
+    ;; TODO conditional open only if not already
+    ;;(browse-url open-physiology-viewer)
+    ;;(run-command "google-chrome-unstable" open-physiology-viewer)
+    (ex-do (message "open file (left top folder) to upload to viewer from %s" path-xlsx)
+           (message "save file (left bottom floppy) to download from viewer to %s" path-json)
+           (ex-label 'viewer-after-open))))
+
+(defun-local -jl-> (path-json path-jsonld)
+  "Currently a manual step."
+  (ex-do (ex-come-from 'viewer-after-open) ; This is amazing.
+         ;; Allows decoupling of functional spec from the actual execution in the real world.
+         ;; As a bonus we get to use my all time favorite control flow structure.
+         (message "export flattened json-ld (right 2nd from bot white doc) to download from viewer to %s"
+                  path-jsonld)))
+
+(defun-local -xjl-> (path-xlsx path-json path-jsonld)
+  ;; yay automated NOTE requires nodejs and open-physiology-viewer
+  (let ((path-xlsx (concat default-directory "/" path-xlsx))
+        (path-json (concat default-directory "/" path-json))
+        (path-jsonld (concat default-directory "/" path-jsonld))
+        (path-temp (make-temp-file "apinat-conversion" 'directory)))
+    (unwind-protect
+        (let* ((default-directory path-temp)
+               (_ (run-command apinat-converter-command "-m" "xlsx" "-i" path-xlsx))
+               (output-dir (car (directory-files default-directory nil "converted-*"))))
+          ;; '("model-flattened.jsonLD" "model-generated.json" "model.json" "model.jsonLD")
+          (rename-file (concat output-dir "/" "model.json") path-json t)
+          (rename-file (concat output-dir "/" "model-flattened.jsonLD") path-jsonld t))
+      (delete-directory path-temp 'recursive))))
+
+(defun-local -lt-> (path-jsonld path-ttl)
+  ;; automated
+  (let (backtrace-on-error-noninteractive)
+    (run-command (or (executable-find "pypy3") ; beware missing libs
+                     (executable-find "python"))
+                 "-m" "sparcur.cli" "apinat" path-jsonld path-ttl)))
+#+end_src
+
+#+name: all-ttl-models
+#+begin_src elisp :results none
+(defun-local update-models (model-ids) ; vs &rest model-ids
+  ;; FIXME mapcar is inadequate for handling parallel processes that
+  ;; might have `ex-do' parts
+  (mapcar #'flow-to-ttl model-ids))
+
+(defun-local all-models ()
+  ;;(let ((default-directory (git-share-local r-apin-mod:HEAD:)) ; TODO ))
+  (let ((default-directory (expand-file-name "models" apinat-model-repo)))
+    ;; you could use something like model-repository but then you have to make
+    ;; a bunch of concatentations, better just to switch the default directory
+    ;; so that the context deals with alignment between name and local referent
+    (cl-remove-if (lambda (p)
+                    (or (not (file-directory-p p))
+                        (string-prefix-p "." p)
+                        (not (file-exists-p (concat p "/source/" p ".json")))))
+                  (directory-files default-directory))))
+
+(defun apinat--ttl-newer (model-id)
+  (apinat--with-model model-id
+    (let ((mtimes
+           (mapcar (lambda (p)
+                     (string-to-number
+                      (format-time-string
+                       "%s"
+                       (file-attribute-modification-time (file-attributes p)))))
+                   (list ttl xlsx))))
+      (message "%S" mtimes)
+      (and (file-exists-p ttl)
+           (apply #'> mtimes)))))
+
+;; TODO apinat--remote-older or something
+
+(defun apinat--all-except (except)
+  (cl-remove-if (lambda (id) (memq id except)) (mapcar #'intern (all-models))))
+
+(defun-local filter-recent-models (model-ids)
+  (cl-remove-if #'apinat--ttl-newer model-ids))
+
+(defun-local update-all-models (&optional skip-recent)
+  (update-models (if skip-recent
+                     (filter-recent-models (mapcar #'intern (all-models)))
+                   (mapcar #'intern (all-models)))))
+
+(defvar-local apinat-process-results nil)
+
+(defun sentinel (process message &optional stderr-process)
+  (when (memq (process-status process) '(exit signal))
+    (let ((ex (process-exit-status process))
+          (buf (process-buffer process))
+          (cmd (process-command process)))
+      (setq apinat-process-results
+            (cons (list ex (with-current-buffer buf (buffer-string)))
+                  apinat-process-results))
+      (if (= ex 0)
+        (message "completed: %S" process)
+        (warn "command failed with %s: %s" ex (string-join cmd " "))
+        (warn "stdout: %S stderr: %S"
+              (with-current-buffer buf (buffer-string))
+              (and stderr-process
+                   (with-current-buffer (process-buffer stderr-process)
+                     (buffer-string))))))))
+
+(defun-local update-all-models-async ()
+  (let ((model-ids (all-models)))
+    (message "updating all models %s" model-ids)
+    (cl-loop
+     for model-id in model-ids
+     collect
+     ;; TODO consider whether we can somehow use invocation-name invocation-directory so that
+     ;; specific versions of emacs are used to run the block instead of always the system version
+     (ow-run-command-async "sh" :sentinel #'sentinel (buffer-file-name) "--model-id" model-id "--secrets" oa-secrets "--repo" apinat-model-repo))
+    (while (< (length apinat-process-results) (length model-ids))
+      (sleep-for 5)
+      (message "complete: %s/%s" (length apinat-process-results) (length model-ids)))))
+#+end_src
+
+#+begin_src elisp
+;; FIXME do fetch all in one batch so we don't have
+;; to wait for the ttl export between each model
+(update-all-models t)
+' ; or pick your own models
+(update-models '(vagus-nerve))
+' ; jsonld -> ttl conversion
+(-m-lt-> 'vagus-nerve)
+#+end_src
+
+if error clone the repo
+#+begin_src sh
+pushd ~/git
+git clone https://github.com/open-physiology/apinatomy-models.git
+#+end_src
+if model-id error then we need to set the model ids in secrets but in
+reality need to overwrite the defniition of ~-ms->~ is easier right
+now
+
+missing derived folders
+#+begin_src powershell
+pushd ~/git/apinatomy-models/
+New-Item -Path * -Name derived -ItemType "directory"
+#+end_src
+
+#+begin_src bash
+pushd ~/git/apinatomy-models/
+find -maxdepth 1 -type d -not -path '*.git*' -not -path '.' -exec mkdir {}/derived \;
+#+end_src
+** Deploy ttl
+After running the ttl export define the functions in
+ref:deploy-ontology-file and then run ~apinat-deploy-from-ttl
+bronchomotor.ttl~. NOTE Both functions need to be defined.
+
+#+name: deploy-ttls
+#+begin_src elisp
+(defvar apinat--remote-onts-path ; TODO source from config
+  "/ssh:cassava|sudo:nginx@cassava:/var/www/sparc/ApiNATOMY/ontologies/")
+
+(defun apinat--write-to-remote (model-id)
+  "Deploy a single apinatomy model MODEL-ID to `apinat--remote-onts-path'."
+  (apinat--with-model model-id
+    (with-current-buffer (find-file-noselect ttl 'no-warn 'rawfile)
+      ;; FIXME this has inverted nesting if we want to start depositing
+      ;; multiple different models
+      (unwind-protect
+          (let* (;(version "TODO datetime etc, or better, read it from the ttl file")
+                 (version (int-to-string (time-convert nil 'integer)))
+                 (version-path-local
+                  (concat (symbol-name model-id) "/" version "/" (file-name-nondirectory ttl)))
+                 (version-path
+                  (expand-file-name
+                   version-path-local
+                   apinat--remote-onts-path))
+                 (latest-path
+                  (expand-file-name
+                   (file-name-nondirectory ttl)
+                   apinat--remote-onts-path)))
+            ;; if the version already exists, error
+            ;; otherwise make it via tramp
+            (if (file-directory-p version-path)
+                ;; XXX this call to `file-directory-p' outside where
+                ;; `tramp-histfile-override' is bound to t is critical
+                ;; to prevent the tramp ssh sudo chain from truncating
+                ;; your .bash_history file, see
+                (error "Version exists!")
+              (let ((tramp-histfile-override t))
+                ;; system users have no home, tramp will error without override t
+                ;; XXX WARNING if `tramp-histfile-override' is set to t and somehow
+                ;; the scope of a call affects a local file path or runs on the
+                ;; local system it WILL truncate the history file for the current user ;_;
+                (make-directory (file-name-directory version-path) 'parents)
+                (write-file version-path)
+                ;;(message "%S %S" version-path-local latest-path)
+                (make-symbolic-link
+                 version-path-local
+                 latest-path
+                 'ok-if-already-exists))))
+        (kill-buffer (current-buffer))))))
+
+(defun apinat-deploy-models (model-ids)
+  ;; FIXME check already deployed
+  (let (fails)
+    (cl-loop for model-id in model-ids
+             do (condition-case nil
+                    (apinat--write-to-remote model-id)
+                  (error (push model-id fails))))
+    fails))
+#+end_src
+
+The current command to deploy all is.
+#+begin_src bash
+for f in $(ls models/*/derived/*.ttl); do echo apinat-deploy-from-ttl $f; done
+#+end_src
+
+Alternately use the following to deploy specific models.
+
+# on deployment server
+#+name: apinat-last-deploy-date
+#+begin_src bash :dir /ssh:cassava:/var/www/sparc/ApiNATOMY/ontologies :cache yes
+date -Is -d "@$(find | awk -F'/' '{ print $3 }' | sort | tail -n 1)"
+#+end_src
+
+# on devel
+#+header: :var LAST_DEPLOY=apinat-last-deploy-date() REPO=(expand-file-name apinat-model-repo)
+#+name: apinat-json-changed-since-last-deploy
+#+begin_src bash :results drawer
+pushd "${REPO}" 2>&1 > /dev/null
+git log --name-only --since "${LAST_DEPLOY}" --pretty="format:" | grep json | cut -d'/' -f2 | sort -u
+#+end_src
+
+Always run =apinat-deploy-ttls= from inside =apinat-model-repo=
+#+begin_src bash
+apinat-deploy-ttls $(git diff --name-only HEAD~1..HEAD | cut -d'/' -f 2 | sort -u)
+#+end_src
+
+If you add a new model you will need to update the imports in
+https://cassava.ucsd.edu/ApiNATOMY/ontologies/sparc-data.ttl.
+The update process should be automated as part of the workflows
+described here. See also [[file:./../resources/scigraph/ontologies-sparc-data.yaml]].
+
+# [[tramp:/ssh:cassava|sudo:cassava:/var/www/sparc/ApiNATOMY/ontologies/sparc-data.ttl]]
+
+# FIXME it should be possible to implement this whole process
+# using OntResIriWrite or something like that
+# read the header, lookup the uri -> server file system path
+# write the version iri if it doesn exist (otherwise error)
+# and symlink it to the remote, I don't have an implementation
+# of RemoteUnixPath that could use something like sftp to
+# allow direct execution of file operations on a remote path
+# from a local python representation of that class so it is
+# too big to bite off right now
+
+#+name: deploy-ontology-file
+#+begin_src bash :tangle ../bin/apinat-functions.sh
+function apinat-remote-operations () {
+    local PATH_SOURCE="${1}"
+    local PATH_TARGET="${2}"
+    local PATH_LINK="${3}"
+    local FILE_NAME_TTL=$(basename -- "${PATH_TTL}")
+    local DIR_LINK="$(dirname "${PATH_LINK}")"
+    local LINK_TARGET="$(realpath -m --relative-to="${DIR_LINK}" "${PATH_TARGET}")"
+    mkdir -p "$(dirname "${PATH_TARGET}")"
+    chown nginx:nginx "${PATH_SOURCE}"
+    mv "${PATH_SOURCE}" "${PATH_TARGET}"
+    # FIXME we need to fail if the source path does not exist otherwise we end in broken state
+    unlink "${PATH_LINK}"
+    ln -s "${LINK_TARGET}" "${PATH_LINK}"
+}
+
+function apinat-deploy-from-ttl () {
+    # TODO loop over positional argument paths, but retain a single ssh command
+    local PATH_TTL="${1}"  # FIXME careful with this, never allow a user to set the source path
+    local DATE=$(date +%s)  # FIXME source from the ontology directly? better to spend time implementing OntResIriWrite
+    local HOST_APINAT_ONTOLOGY=cassava
+    local FILE_NAME_TTL=$(basename -- "${PATH_TTL}")
+    local NAME_TTL="${FILE_NAME_TTL%.*}"
+    local PATH_REMOTE_TARGET_BASE=/var/www/sparc/ApiNATOMY/ontologies/
+    local VERSION_PATH="${NAME_TTL}/${DATE}/${FILE_NAME_TTL}"
+    local PATH_REMOTE_SOURCE="/tmp/${FILE_NAME_TTL}"
+    local PATH_REMOTE_TARGET="${PATH_REMOTE_TARGET_BASE}${VERSION_PATH}"
+    local PATH_REMOTE_LINK="${PATH_REMOTE_TARGET_BASE}${FILE_NAME_TTL}"
+
+    # FIXME also notify host for sudo
+    local SUDO_OR_SU='$(command -v sudo 1>& 2 && echo sudo ${0} -c || { echo For su on ${HOSTNAME} 1>& 2; echo su -c; })'
+
+    # TODO ensure that apinat-remote-operations is defined
+    rsync --rsh ssh "${PATH_TTL}" ${HOST_APINAT_ONTOLOGY}:"${PATH_REMOTE_SOURCE}"
+    ssh -t ${HOST_APINAT_ONTOLOGY} "${SUDO_OR_SU} '$(typeset -f apinat-remote-operations); apinat-remote-operations \
+\"${PATH_REMOTE_SOURCE}\" \
+\"${PATH_REMOTE_TARGET}\" \
+\"${PATH_REMOTE_LINK}\"'"
+}
+
+function apinat-deploy-ttls () {
+    # TODO do it in batch, derive the timesamps correctly etc.
+    for id in $@; do
+        apinat-deploy-from-ttl "models/${id}/derived/${id}.ttl"
+    done
+}
+#+end_src
+
+Check [[https://cassava.ucsd.edu/ApiNATOMY/ontologies/]] for success if needed.
+# [[tramp:/ssh:cassava|sudo:cassava:/var/www/sparc/ApiNATOMY/ontologies/sparc-data.ttl]]
+
+#+begin_src bash
+spc report changes \
+--ttl-file https://cassava.ucsd.edu/ApiNATOMY/ontologies/keast-bladder/1620348301/keast-bladder.ttl \
+--ttl-compare https://cassava.ucsd.edu/ApiNATOMY/ontologies/keast-bladder/1617055182/keast-bladder.ttl
+#+end_src
+** Load and deploy graph
+Then run
+[[file:~/git/pyontutils/nifstd/scigraph/README.org::run-load-deploy-graph-sparc-data][run-load-deploy-graph-sparc-data]]
+to load and deploy in one shot.
+
+An example run is
+#+begin_src bash
+~/git/pyontutils/nifstd/scigraph/bin/run-load-graph-sparc-data
+~/git/pyontutils/nifstd/scigraph/bin/run-deploy-graph-sparc-data
+#+end_src
+# TODO consider ob-screen ... for cases like this
+# where we aren't really writing bash so much as just
+# running commands
+** Review query output
+[[http://ontology.neuinfo.org/trees/sparc/dynamic/demos/apinat/somas][All somas]]
+[[http://ontology.neuinfo.org/trees/sparc/dynamic/demos/apinat/soma-processes][Soma processes]]
+[[http://ontology.neuinfo.org/trees/sparc/simple/dynamic/demos/apinat/soma-processes][Soma processes simple]]
+* NPO identifiers
+** minimal listing
+#+begin_src elisp :exports none
+(jupyter-repl-restart-kernel) ; and this is why we don't use python kids
+#+end_src
+
+Run this and commit the output to the neurons branch of the ontology.
+
+#+name: apinatomy-neuron-populations.py
+#+begin_src jupyter-python :session pys
+import rdflib
+import augpathlib as aug
+from pyontutils.core import OntGraph, OntResPath
+from pyontutils.config import auth
+from pyontutils.namespaces import *
+repo_relative_path = 'ttl/generated/neurons/apinatomy-neuron-populations.ttl'
+uri_base = 'https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/neurons/'
+oid = rdflib.URIRef(uri_base + repo_relative_path)
+
+def _genlabel(oid):
+    x = (oid.rsplit("-", 3)[-3]
+         if oid.endswith('-prime')
+         else (oid.rsplit("-", 3)[-3] if 'unbranched' in oid else oid.rsplit("-", 2)[-2]))
+    l = (oid.rsplit("-", 3)[-3]
+         if oid.endswith('-prime')
+         else (' '.join(oid.rsplit("-", 3)[-3:-1]) if 'unbranched' in oid else oid.rsplit("-", 2)[-2]))
+    t = (oid.rsplit("-", 2)[-2] + "'"
+         if oid.endswith('-prime')
+         else (oid.rsplit("-", 1)[-1] if 'unbranched' in oid else oid.rsplit("-", 1)[-1]))
+
+    # XXX manual fix for consistency
+    if x == 'keast':
+        x = 'kblad'
+    if l == 'keast':
+        l = 'kblad'
+
+    label = f'neuron type {l} {t}'
+    return label, x
+
+def genlabel(oid):
+    return _genlabel(oid)[0]
+
+g = OntGraph()
+g.populate_from_triples(
+    ((oid, p, o) for p, o in
+     ((rdf.type, owl.Ontology),
+)))
+
+amr = aug.LocalPath("~/git/apinatomy-models").expanduser()
+models = [c for c in (amr / 'models').children if c.name != 'too-map']
+mgraphs = [OntResPath(p).graph for m in models for p in (m / 'derived' / (m.name + '.ttl'),) if p.exists()]
+for mg in mgraphs:
+    mg.namespace_manager.populate(g)
+    for s in mg[:rdf.type:elements.OntologyTerm]:
+        if 'readable/neuron-type' in s:  # FIXME haaaack
+            g.add((s, rdfs.subClassOf, ilxtr.NeuronEBM))
+            g.add((s, rdfs.label, rdflib.Literal(genlabel(s))))
+
+olr = aug.LocalPath(auth.get('ontology-local-repo')).expanduser()
+g.write(olr / repo_relative_path)
+#+end_src
+
+** minimal modelling
+run this block
+#+begin_src jupyter-python :session pys
+from neurondm.lang import Phenotype, Neuron, Config, OntId
+from pprint import pprint
+from pyontutils.sheets import Sheet
+amr = aug.LocalPath("~/git/apinatomy-models").expanduser()
+skip = 'too-map', 'dev-layout-conn', 'scaffold-test', 'vagus-nerve', 'pancreas'
+models = [_.name for _ in (amr / 'models').children if _.name not in skip and (_ / f'source/{_.name}.xlsx').exists()]
+classes = []
+for model in models:
+    c = type(f'{model.replace("-", "_")}groups', (Sheet,), {'name': f'{model}', 'sheet_name': 'groups'})
+    classes.append(c)
+
+insts = [c() for c in classes]
+#+end_src
+
+then run this block and after that clean up the output to remove stuff we don't need
+~g/Label/d~ and friends then ~%s/owl:equiv.+\(\n.+\)+\]\ ;//~ then ~%!ttlfmt -f ttl~
+
+# #+header: :var block_lines=(let ((e (cadr (org-element-at-point)))) (list (1- (count-lines 1 (plist-get e :begin))) (1- (count-lines 1 (plist-get e :end)))))
+# #+header: :var __file__=(concat (buffer-file-name) "/#/" (plist-get (cadr (org-element-at-point)) :name))
+#+name: apinat-pops-more.py
+#+begin_src jupyter-python :session pys
+#print(block_lines)
+from neurondm.lang import Phenotype, Neuron, Config, OntId
+#i = insts[0]
+#pprint(dir(i.row_object(0)))
+
+#pprint([i.values for i in insts])
+
+#para_pre =  'ilxtr:neuron-phenotype-para-pre'
+#para_post = 'ilxtr:neuron-phenotype-para-post'
+#sym_pre =   'ilxtr:neuron-phenotype-sym-pre'
+#sym_post =  'ilxtr:neuron-phenotype-sym-post'
+
+para = Phenotype('ilxtr:ParasympatheticPhenotype')
+sym = Phenotype('ilxtr:SympatheticPhenotype')
+pre = Phenotype('ilxtr:PreGanglionicPhenotype')
+post = Phenotype('ilxtr:PostGanglionicPhenotype')
+
+sens = Phenotype('ilxtr:SensoryPhenotype', 'ilxtr:hasCircuitRolePhenotype')
+motor = Phenotype('ilxtr:MotorPhenotype', 'ilxtr:hasCircuitRolePhenotype')
+intrin = Phenotype('ilxtr:IntrinsicPhenotype', 'ilxtr:hasCircuitRolePhenotype')
+
+mapping = {
+    'sympathetic': sym,
+    'parasympathetic': para,
+    'pre-ganglionic': pre,
+    'post-ganglionic': post,
+    'sensory': sens,
+    'motor': motor,
+    'local': intrin,
+    'interneuron': intrin,
+}
+
+bad_bits = {'neuron', '', 'first', 'order', 'circuit', 'lower', 'somatic'}
+bad_sets = (  # from the school of maximum wat
+    {'inhibitor', 'motor'},
+    # inhibitory motor in the context of the stomach means nitric
+    # oxide releaseing, motor usually implies actuating ach, we need
+    # to clarify the definition because neuro/myo/modulatory release
+    # is usually not what we mean in other systems
+    {'primary', 'afferent', 'intrinsic'},
+)
+
+def normalize_type(string):
+    raw_bits = set(string.split(' '))
+    bits = raw_bits - bad_bits
+    if bits in bad_sets:
+        return set()
+    id_bits = set([mapping[b] if b in mapping else b for b in bits
+                   if b in mapping])
+    return id_bits
+
+_id_oid_type = [
+    (r.id().value,
+     r.ontologyterms().value if hasattr(r, 'ontologyterms') else f'ERROR {inst}',
+     r.neurontypes().value if hasattr(r, 'neurontypes') else f'ERROR {inst}')
+    for inst in insts for r in inst.rows()[1:]]
+id_oid_type = [(i, o, t) for i, o, t in _id_oid_type if o]
+#pprint(id_oid_type)
+raw_types = sorted(set([t for i, o, t in id_oid_type]))
+#pprint(raw_types)
+#pprint([(t, normalize_type(t)) for t in raw_types])
+bagged = [(normalize_type(t), t, o) for i, o, t in id_oid_type]
+#pprint(bagged, width=240)
+neuron_classes = {
+    sn: type(f'Neuron{sn.capitalize()}', (Neuron,), {'owlClass': f'ilxtr:Neuron{sn.capitalize()}'})
+    for sn in ['kblad' if _ == 'keast' else _ for _ in
+               set(oid.rsplit("-", 3)[-3]
+                   if oid.endswith('-prime')
+                   else oid.rsplit("-", 2)[-2]
+                   for _, oid, _ in id_oid_type)]
+}
+
+def dophen(oid, bag):
+    label, x = _genlabel(oid)
+    neuron_class = neuron_classes[x]
+    # FIXME this doesn't work because entailed phenotypes don't work
+    # with the correct logic because they are still acting like ec
+    # phenotypes which replace eachother, ent neurons should stack
+    # so for now we just stick the neuron id itself in and don't worry about it
+    u = OntId(oid).u
+    up = OntId(oid).u.replace('neuron-type', 'neuron-phenotype')
+    return neuron_class(Phenotype(up), *(p.asEntailed() for p in bag),
+                        #label=label,
+                        id_=u)
+
+config = Config('apinat-pops-more')
+neus = [dophen(oid, bag) for bag, _, oid in bagged if bag]
+pprint(neus)
+#sys.modules['__main__'].__file__ = __file__
+#import linecache
+#linecache.cache[__file__] = size, mtime, lines, fullname
+config.write()
+config.write_python()
+
+# cleanup
+repo_relative_path = 'ttl/generated/neurons/apinat-pops-more.ttl'
+olr = aug.LocalPath(auth.get('ontology-local-repo')).expanduser()
+og = OntGraph(path=olr / repo_relative_path)
+og.parse()
+ng = OntGraph().populate_from_triples((t for t in og if 'able' not in t[1] and 'abel' not in t[1]))
+ng.namespace_manager.populate_from(og)
+ng.write(olr / repo_relative_path)
+#+end_src
+
+* Dynamic cypher queries
+:PROPERTIES:
+:visibility: folded
+:END:
+NOTE: this section contains temporary instructions.
+This should really be done on a development instance of data services.
+Sometimes it is faster to edit [[tramp:/ssh:aws-scigraph-data-scigraph:services.yaml]] directly.
+Use the following command to restart services to load the updated dynamic queries.
+#+begin_src bash :results none
+ssh aws-scigraph-data sudo systemctl restart scigraph
+#+end_src
+When you have a query working as desired add it or update it in
+[[file:../resources/scigraph/cypher-resources.yaml][cypher resources]].
+# TODO need that local/remote git link ...
+See also [[file:../../pyontutils/nifstd/scigraph/README.org::#sparc-data-services-build-deploy][data services build and deploy]].
+* Add new ApiNATOMY model to SciGraph load
+Edit [[file:../resources/scigraph/sparc-data.ttl][sparc-data.ttl]] and
+add a new line to the second =owl:import= statement.
+* ApiNATOMY model server specification
+:PROPERTIES:
+:visibility: folded
+:END:
+# file is in pyontutils/nifstd/resolver
+** Intro
+While an ApiNATOMY server has been on the roadmap for some time, there have not been
+clear requirements and use cases to drive the development in a way that is productive.
+As the conversion of ApiNATOMY models to RDF has progressed, some of the requirements
+and use cases have presented themselves and helped to solidify a set of initial use cases.
+The need to integrate knowledge represented in ApiNATOMY into the larger linked data space
+provides some initial requirements which are the that the server be able to provide persistent
+and resolvable identifiers for ApiNATOMY models, and that it be able to provide high granularity
+access to the version history of these models. In addition, we are ultimately aiming for
+the server to be able to automatically convert input models or spreadsheets into generated
+models and resource maps. We have mapped out three phases for arriving at this end goal.
+The first phase is to be able to resolve input models, the second is to be able to upload
+and link the generated model and resource map and track which input model they came from.
+These two will address our primary short-term needs.
+
+To accomplish this, the plan is to use git (via GitHub) as the primary datastore for the models.
+This will allow us to leverage the significant existing infrastructure around GitHub for version
+control, collaboration, review, content hosting, and backup. In front of this there will be a
+server that provides resolvable persistent identifiers for ApiNATOMY models so that the identifiers
+appearing in the linked data graphs will be resolvable and interoperable with the rest of the
+NIF-Ontology search and discovery tooling.
+
+In the future as part of the third phase we can work towards automating the conversion of input models,
+and it might also be possible to have the server automatically convert and serve the RDF version of the
+models as well.
+
+A brief outline of the initial requirements needed to meet the needs of the RDF conversion pipeline
+are documented below.
+** Architecture diagram
+[[file:./images/apinatomy-server-diagram.png]]
+Legend.
+| Solid lines         | initial  |
+| Dashed lines        | soon     |
+| Dotted lines        | later    |
+| Dashed dotted lines | dataflow |
+** https by default
+** url structure
+*** apinatomy.org
+**** /
+landing page to maximize engagement
+
+existing index page
+links to the various git repositories
+youtube introduction
+wikipedia page and similar
+funding
+papers
+use cases
+**** /viewer
+the open-physiology-viewer
+a search entry point could also appear here
+**** /dashboard
+list of anatomical entities that have been used to annotate
+number of models etc. from the queries.org file
+somehow link this into search?
+**** /docs/{page}
+***** /docs/source.html
+move under /docs
+***** /docs/identifiers.html
+generated via esdoc, issues with angular components
+**** /docs/manual
+currently at /manual
+out of date
+coming from open-physiology-viewer/manual markdown files
+**** /uris
+alternately https://uri.apinatomy.org
+***** /uris/models/{model-id}
+need a landing page that has all the model metadata and would allow
+users to open the model in the viewer with a single click, maybe even
+have a static image of the model rendered on the page
+***** /uris/models/{model-id}.{ext}
+how to deal with json/ttl and model, generated, map
+***** /uris/models/{model-id}/ids/{local-id}
+***** /uris/models/{model-id}/snapshot/{snapshot-id}
+Implies that snapshots are always associated with a single model, so
+that if there are multiple models they should be imported into a
+single top level file.
+
+need some way to resolve snapshot files
+***** /uris/readable/{string}
+***** /uris/elements/{string}
+**** TODO json-ld context
+*** tests
+http://apinatomy.org/docs
+http://apinatomy.org/docs/
+http://apinatomy.org/docs/manual/usage.html
+http://apinatomy.org/viewer
+http://apinatomy.org/uris/models/keast-bladder
+http://apinatomy.org/uris/ontologies/keast-bladder.ttl
+http://apinatomy.org/uris/models/keast-bladder/source/keast-bladder.json
+http://apinatomy.org/uris/models/keast-bladder/ref/master/source/keast-bladder.json
+http://apinatomy.org/uris/models/keast-bladder/ref/df0dc5f9e96620c8f4deef3727a81868a6606eea/source/keast-bladder.json
+http://apinatomy.org/uris/models/keast-bladder/version/1627520229
+** transformed models/copies need to be able to point back to the exact commit
+for deposition on blackfynn, export to scigraph, etc.
+the source model hash needs to be separat
+** Serve the JSONLD context
+** return authoring metadata
+** store the source model
+** have endpoint for resource-map and generated
+** overlap with loading in the client
+*** load all formats from local
+*** google sheets import
+*** load from a url
+* Reporting
+#+begin_src python :epilogue "return main()" :exports both
+import json
+import augpathlib as aug
+from pyontutils.core import OntGraph
+from pyontutils.namespaces import rdf, owl
+
+
+def path_json(string):
+    with open(string, 'rt') as f:
+        return json.load(f)
+
+
+def main():
+    graph = OntGraph()
+    apinat_models = aug.RepoPath('~/git/apinatomy-models').expanduser()
+    [graph.parse(f) for f in apinat_models.rglob('*.ttl')]
+    # rdf
+    n_trip = len(graph)
+    n_class = len(set(graph[:rdf.type:owl.Class]))
+    n_ind = len(set(graph[:rdf.type:owl.NamedIndividual]))
+    # json
+    js = [path_json(p) for p in apinat_models.rglob('*.json')]
+    keys = ('publications', 'nodes', 'links', 'lyphs', 'materials', 'chains', 'groups')
+    n_obj = sum([sum([len(j[k])
+                      if k in j else 0 for k in keys])
+                 for j in js])
+    n_pair = sum([sum([sum([len(o) for o in j[k]])
+                       if k in j else 0 for k in keys])
+                  for j in js])
+    print(f'''rdf
+trip:  {n_trip}
+class: {n_class}
+ind:   {n_ind}
+
+json
+obj:   {n_obj}
+obj:   {n_pair}''')
+    return [['Type', 'Authored', 'Expanded'],
+            ['Individual', n_obj, n_ind],
+            ['Statement', n_pair, n_trip],
+            ['owl:Class', 'n/a', n_class],]
+#+end_src
+
+#+RESULTS:
+| Type       | Authored | Expanded |
+|------------+----------+----------|
+| Individual |     1714 |    25940 |
+| Statement  |     8274 |   318378 |
+| owl:Class  |      n/a |      395 |
+* External links
+https://scicrunch.org/sawg/about/ApiNATOMY
+* Bootstrap :noexport:
+
+#+name: orgstrap
+#+begin_src elisp :results none :lexical yes :noweb yes
+;;; load remote code
+
+(unless (featurep 'reval)
+  (defvar reval-cache-directory (concat user-emacs-directory "reval/cache/"))
+  (defun reval-minimal (cypher checksum path-or-url &rest alternates)
+    "Simplified and compact implementation of reval."
+    (let* (done (o url-handler-mode) (csn (symbol-name checksum))
+           (cache-path (concat reval-cache-directory (substring csn 0 2) "/" csn
+                               "-" (file-name-nondirectory path-or-url))))
+      (url-handler-mode)
+      (unwind-protect
+          (cl-loop for path-or-url in (cons cache-path (cons path-or-url alternates))
+                   do (when (file-exists-p path-or-url)
+                        (let* ((buffer (find-file-noselect path-or-url))
+                               (buffer-checksum (intern (secure-hash cypher buffer))))
+                          (if (eq buffer-checksum checksum)
+                              (progn
+                                (unless (string= path-or-url cache-path)
+                                  (let ((parent-path (file-name-directory cache-path))
+                                        make-backup-files)
+                                    (unless (file-directory-p parent-path)
+                                      (make-directory parent-path t))
+                                    (with-current-buffer buffer
+                                      (write-file cache-path))))
+                                (eval-buffer buffer)
+                                (setq done t))
+                            (kill-buffer buffer) ; kill so cannot accidentally evaled
+                            (error "reval: checksum mismatch! %s" path-or-url))))
+                   until done)
+        (unless o
+          (url-handler-mode 0)))))
+  (defalias 'reval #'reval-minimal)
+  (reval 'sha256 '3620321396c967395913ff19ce507555acb92335b0545e4bd05ec0e673a0b33b 
+         "https://raw.githubusercontent.com/tgbugs/orgstrap/300b1d5518af53d76d950097bcbcd7046cfa2285/reval.el"))
+
+(let ((ghost "https://raw.githubusercontent.com/tgbugs/orgstrap/"))
+  (unless (featurep 'ow)
+    (reval 'sha256 '230f8cff6da6aa6514f333e1f0263653d6d8c5f7d633d4a33aa9d9b46598f427
+           (concat ghost "c761da3d5e9d4761335b74cfb43c75df7336f067" "/ow.el"))))
+
+(unless (fboundp 'run-command)
+  ;; ow.el doesn't set the alias because it is doubles as a real package
+  (defalias 'run-command #'ow-run-command))
+
+;; (ow-enable-use-package)
+
+;; (ow-use-packages docopt)
+
+;; local function definitions
+
+<<flow-to-ttl>>
+
+<<all-ttl-models>>
+
+<<deploy-ttls>>
+
+(defun apinat---pre-tangle () ; (ref:sure)
+  ;; FIXME hardcoded paths issues
+  (unless (assq '&are-you-sure org-babel-library-of-babel)
+    (org-babel-lob-ingest "~/git/pyontutils/nifstd/scigraph/README.org")))
+
+(add-hook 'org-babel-pre-tangle-hook #'apinat---pre-tangle nil t)
+
+(unless (or noninteractive (and (boundp 'ow-nth-time) ow-nth-time))
+  (setq-local ow-nth-time t)
+  (ow-hide-section-0-blocks))
+
+;; entry point for batch command line
+
+(when noninteractive
+  (unless user-init-file
+    ;; FIXME I can't decide whether this approach or the
+    ;; ~/.config/app-name/init.el approach is better and whether I
+    ;; should use "~/.orgstrap/init.el" or something ... but I think
+    ;; the point here is that we just want to provide a place for a
+    ;; stripped down init file that will load as fast as the user
+    ;; wants and can hold pointers to things like oa-secrets
+    (let ((orgstrap-init-file (expand-file-name "orgstrap-init.el" user-emacs-directory)))
+      (when (file-exists-p orgstrap-init-file)
+        (setq user-init-file orgstrap-init-file)
+        (load user-init-file))))
+  (ow-cli-gen
+      ((:install)
+       (:tangle)
+       (:deploy) ; FIXME decouple from build
+       (:after-commit nil)
+       (:after-tag nil)
+       (:all)
+       (:model-id nil) ; the id of the model to build
+       ((:repo apinat-model-repo) apinat-model-repo) ; path to the models repo
+       ((:converter apinat-converter-command) apinat-converter-command) ; command or full path to converter
+       ((:secrets oa-secrets) oa-secrets) ; path to secrets.sxpr file
+       ((:debug) apinat-converter-debug)) ; enable debug mode
+    (when tangle
+      (let (enable-local-eval)
+        ;; this pattern is required when tangling to avoid infinite loops
+        (revert-buffer nil t nil)
+        (setq-local find-file-literally nil))
+      (org-babel-tangle))
+    (when (or all model-id)
+      (message "updating %s" (or model-id "all"))
+      (if all
+          (update-all-models-async)
+        (update-models (list (intern model-id)))))
+    (when deploy
+      (message "argv: %S ac: %S" argv after-commit)
+      "TODO")))
+#+end_src
+
+#+begin_src elisp
+' ; slow but works
+(apinat-deploy-models (apinat--all-except '(keast-bladder bolser-lewis fcomp too-map)))
+;; (apinat-deploy-models '(keast-bladder too-map))
+
+(let (password-cache) ; password-data
+  ;; (apinat-deploy-models '(too-map))
+  (apinat-deploy-models (apinat--all-except '(too-map))))
+
+;; tramp-cleanup-all-buffers ; FIXME nginx sudo password issues
+;; (tramp-list-remote-buffers)
+#+end_src
+
+[[(sure)]] Ensure that the
+[[file:~/git/pyontutils/nifstd/scigraph/README.org::&are-you-sure][&are-you-sure]]
+block can be nowebbed for tangling.
+
+** Local Variables :ARCHIVE:
+# close powershell comment #>
+# Local Variables:
+# eval: (progn (setq-local orgstrap-min-org-version "8.2.10") (let ((actual (org-version)) (need orgstrap-min-org-version)) (or (fboundp #'orgstrap--confirm-eval) (not need) (string< need actual) (string= need actual) (error "Your Org is too old! %s < %s" actual need))) (defun orgstrap-norm-func--dprp-1\.0 (body) (let ((p (read (concat "(progn\n" body "\n)"))) (m '(defun defun-local defmacro defvar defvar-local defconst defcustom)) print-quoted print-length print-level) (cl-labels ((f (b) (cl-loop for e in b when (listp e) do (or (and (memq (car e) m) (let ((n (nthcdr 4 e))) (and (stringp (nth 3 e)) (or (cl-subseq m 3) n) (f n) (or (setcdr (cddr e) n) t)))) (f e))) p)) (prin1-to-string (f p))))) (unless (boundp 'orgstrap-norm-func) (defvar-local orgstrap-norm-func orgstrap-norm-func-name)) (defun orgstrap-norm-embd (body) (funcall orgstrap-norm-func body)) (unless (fboundp #'orgstrap-norm) (defalias 'orgstrap-norm #'orgstrap-norm-embd)) (defun orgstrap-org-src-coderef-regexp (_fmt &optional label) (let ((fmt org-coderef-label-format)) (format "\\([:blank:]*\\(%s\\)[:blank:]*\\)$" (replace-regexp-in-string "%s" (if label (regexp-quote label) "\\([-a-zA-Z0-9_][-a-zA-Z0-9_ ]*\\)") (regexp-quote fmt) nil t)))) (unless (fboundp #'org-src-coderef-regexp) (defalias 'org-src-coderef-regexp #'orgstrap-org-src-coderef-regexp)) (defun orgstrap--expand-body (info) (let ((coderef (nth 6 info)) (expand (if (org-babel-noweb-p (nth 2 info) :eval) (org-babel-expand-noweb-references info) (nth 1 info)))) (if (not coderef) expand (replace-regexp-in-string (org-src-coderef-regexp coderef) "" expand nil nil 1)))) (defun orgstrap--confirm-eval-portable (lang _body) (not (and (member lang '("elisp" "emacs-lisp")) (let* ((body (orgstrap--expand-body (org-babel-get-src-block-info))) (body-normalized (orgstrap-norm body)) (content-checksum (intern (secure-hash orgstrap-cypher body-normalized)))) (eq orgstrap-block-checksum content-checksum))))) (unless (fboundp #'orgstrap--confirm-eval) (defalias 'orgstrap--confirm-eval #'orgstrap--confirm-eval-portable)) (let (enable-local-eval) (vc-find-file-hook)) (let ((ocbe org-confirm-babel-evaluate) (obs (org-babel-find-named-block "orgstrap"))) (if obs (unwind-protect (save-excursion (setq-local orgstrap-norm-func orgstrap-norm-func-name) (setq-local org-confirm-babel-evaluate #'orgstrap--confirm-eval) (goto-char obs) (org-babel-execute-src-block)) (when (eq org-confirm-babel-evaluate #'orgstrap--confirm-eval) (setq-local org-confirm-babel-evaluate ocbe)) (org-set-visibility-according-to-property)) (warn "No orgstrap block."))))
+# End:
