@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - hmmer=3.2.1
+  - pyhmmer=0.6.0
+  - joblib
+  - pandas
+  - numpy
+  - scikit-learn=1.0.2
+  - biopython
