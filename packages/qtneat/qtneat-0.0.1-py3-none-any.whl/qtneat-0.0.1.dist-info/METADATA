@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: qtneat
+Version: 0.0.1
+Summary: Set the Qt frameless titlebar/theme easily
+Home-page: https://github.com/yjg30737/qtneat.git
+Author: Jung Gyu Yoon
+Author-email: yjg30737@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyqt-custom-titlebar-setter (>=0.0.1)
+Requires-Dist: qt-sass-theme (>=0.0.1)
+
+
+# qtneat
+
+Set the Qt frameless titlebar/theme easily
+
+
+
+There is qtmodern, qtawesome, i choose the word "<b>neat</b>".
+
+
+
+Tell me that naming is nice.
+
+
+
+I'll make this usable not only for PyQt5, but also for PyQt6 and PySide6.
+
+
+
+## Requirements
+
+* PyQt5 >= 5.8
+
+
+
+## Setup
+
+`python -m pip install qtneat`
+
+
+
