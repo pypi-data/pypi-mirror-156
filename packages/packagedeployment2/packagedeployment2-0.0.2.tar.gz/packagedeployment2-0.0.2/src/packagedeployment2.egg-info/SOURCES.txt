@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mypackage/__init__.py
+src/mypackage/model.py
+src/packagedeployment2.egg-info/PKG-INFO
+src/packagedeployment2.egg-info/SOURCES.txt
+src/packagedeployment2.egg-info/dependency_links.txt
+src/packagedeployment2.egg-info/top_level.txt
