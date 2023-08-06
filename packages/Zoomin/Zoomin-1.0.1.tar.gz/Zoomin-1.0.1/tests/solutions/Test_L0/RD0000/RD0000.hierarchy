@@ -1,0 +1,20 @@
+
+Grid = 1
+Task              = 0
+GridRank          = 3
+GridDimension     = 38 38 38 
+GridStartIndex    = 3 3 3 
+GridEndIndex      = 34 34 34 
+GridLeftEdge      = 0 0 0 
+GridRightEdge     = 1 1 1 
+Time              = 0.81651202102541
+SubgridsAreStatic = 0
+NumberOfBaryonFields = 0
+NumberOfParticles   = 32768
+NumberOfActiveParticles = 0
+PresentParticleTypes = DarkMatter 
+ParticleTypeCounts = 32768 
+ParticleFileName = ./RD0000/RD0000.cpu0000
+GravityBoundaryType = 0
+Pointer: Grid[1]->NextGridThisLevel = 0
+Pointer: Grid[1]->NextGridNextLevel = 0

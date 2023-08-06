@@ -1,0 +1,48 @@
+# Relevant Section of Enzo Paramter File (NOT COMPLETE!) 
+ProblemType                              = 30      // cosmology simulation
+TopGridRank                              = 3
+TopGridDimensions                        = 32 32 32
+SelfGravity                              = 1       // gravity on
+TopGridGravityBoundary                   = 0       // Periodic BC for gravity
+LeftFaceBoundaryCondition                = 3 3 3   // same for fluid
+RightFaceBoundaryCondition               = 3 3 3
+RefineBy                                 = 2
+
+#
+CosmologySimulationOmegaBaryonNow        = 0
+CosmologySimulationOmegaCDMNow           = 0.285
+CosmologySimulationCalculatePositions    = 1
+CosmologySimulationParticleVelocity1Name = ParticleVelocities_x
+CosmologySimulationParticleVelocity2Name = ParticleVelocities_y
+CosmologySimulationParticleVelocity3Name = ParticleVelocities_z
+CosmologySimulationParticleDisplacement1Name = ParticleDisplacements_x
+CosmologySimulationParticleDisplacement2Name = ParticleDisplacements_y
+CosmologySimulationParticleDisplacement3Name = ParticleDisplacements_z
+
+#
+#  define cosmology parameters
+#
+ComovingCoordinates                      = 1       // Expansion ON
+CosmologyOmegaMatterNow                  = 0.285
+CosmologyOmegaLambdaNow                  = 0.715
+CosmologyHubbleConstantNow               = 0.695     // in 100 km/s/Mpc
+CosmologyComovingBoxSize                 = 25    // in Mpc/h
+CosmologyMaxExpansionRate                = 0.015   // maximum allowed delta(a)/a
+CosmologyInitialRedshift                 = 99      //
+CosmologyFinalRedshift                   = 0       //
+GravitationalConstant                    = 1       // this must be true for cosmology
+#
+#
+ParallelRootGridIO                       = 1
+ParallelParticleIO                       = 1
+PartitionNestedGrids                     = 1
+CosmologySimulationNumberOfInitialGrids  = 2
+CosmologySimulationGridDimension[1]      =                8                6                8
+CosmologySimulationGridLeftEdge[1]       =          0.40625          0.46875          0.40625
+CosmologySimulationGridRightEdge[1]      =          0.53125           0.5625          0.53125
+CosmologySimulationGridLevel[1]          = 1
+#
+# region allowed for further refinement
+#
+RefineRegionLeftEdge                     =          0.41875         0.478125          0.41875
+RefineRegionRightEdge                     =          0.51875         0.553125          0.51875

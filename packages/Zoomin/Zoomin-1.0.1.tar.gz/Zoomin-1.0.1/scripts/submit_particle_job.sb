@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH --time=00:30:00
+#SBATCH --job-name=particle_collection
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=8
+#SBATCH --mem=32G
+
+if [[ -z "${WORKING_DIR}" ]]; then
+    echo "WORKING_DIR environment variable has not been set. Exiting."
+    exit
+fi
+
+if [[ -z "${ZOOMIN_CONF_FILE}" ]]; then
+    echo "ZOOMIN_CONF_FILE environment variable has not been set. Exiting."
+    exit
+fi
+
+module purge
+ml -* GCC/11.2.0  OpenMPI/4.1.1 Scipy-bundle/2021.10
+export OMPI_MCA_rmaps_base_oversubscribe=yes
+
+export PATH=$PATH:/mnt/home/llorente/zoomin
+
+cd ${WORKING_DIR}
+
+mpirun -n 8 zoomin_collect_particles ${ZOOMIN_CONF_FILE}
