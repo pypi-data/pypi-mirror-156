@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/pymatdet.egg-info/PKG-INFO
+src/pymatdet.egg-info/SOURCES.txt
+src/pymatdet.egg-info/dependency_links.txt
+src/pymatdet.egg-info/top_level.txt
