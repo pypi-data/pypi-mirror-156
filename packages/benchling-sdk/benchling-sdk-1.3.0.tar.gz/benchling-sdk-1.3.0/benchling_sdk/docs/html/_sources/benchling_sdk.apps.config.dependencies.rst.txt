@@ -1,0 +1,7 @@
+benchling\_sdk.apps.config.dependencies module
+==============================================
+
+.. automodule:: benchling_sdk.apps.config.dependencies
+   :members:
+   :undoc-members:
+   :show-inheritance:

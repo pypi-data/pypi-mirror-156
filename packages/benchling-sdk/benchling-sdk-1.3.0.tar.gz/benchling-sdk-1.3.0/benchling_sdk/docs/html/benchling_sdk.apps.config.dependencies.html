@@ -1,0 +1,727 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>benchling_sdk.apps.config.dependencies module — Benchling SDK  documentation</title>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/alabaster.css" rel="stylesheet" type="text/css"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/custom.css" rel="stylesheet" type="text/css"/>
+<script data-url_root="./" id="documentation_options" src="https://bnch-sdk-documents.s3.amazonaws.com/_static/documentation_options.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/jquery.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/underscore.js"></script>
+<script src="https://bnch-sdk-documents.s3.amazonaws.com/_static/doctools.js"></script>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="benchling_sdk.apps.config.mock_dependencies.html" rel="next" title="benchling_sdk.apps.config.mock_dependencies module"/>
+<link href="benchling_sdk.apps.config.decryption_provider.html" rel="prev" title="benchling_sdk.apps.config.decryption_provider module"/>
+<link href="https://bnch-sdk-documents.s3.amazonaws.com/_static/custom.css" rel="stylesheet" type="text/css"/>
+<meta content="width=device-width, initial-scale=0.9, maximum-scale=0.9" name="viewport"/>
+</head><body>
+<div class="container">
+<div class="contentWrapper">
+<div class="flexBox">
+<div class="headerChild">
+<a href="/">
+<img alt="Benchling logo" class="benchlingLogo" src="https://bnch-sdk-documents.s3.amazonaws.com/_static/img/logo_250_notext.png"/>
+</a>
+</div>
+<div class="headerChild">
+<a href="https://docs.benchling.com" rel="noopener noreferrer" target="_blank">
+                    Warehouse &amp; API Guide
+                </a>
+</div>
+<div class="headerChild">
+<a href="https://benchling.com/api/reference" rel="noopener noreferrer" target="_blank">
+                    Public API Reference
+                </a>
+</div>
+<div class="headerChild">
+<a href="index.html">SDK Reference</a>
+</div>
+</div>
+</div>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<section id="module-benchling_sdk.apps.config.dependencies">
+<span id="benchling-sdk-apps-config-dependencies-module"></span><h1>benchling_sdk.apps.config.dependencies module<a class="headerlink" href="#module-benchling_sdk.apps.config.dependencies" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ApiDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ApiDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ApiDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Generic" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Generic</span></code></a>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.ApiConfigType</span></code>]</p>
+<p>Api Dependency.</p>
+<p>A dependency that is API identifiable in Benchling, such as a schema.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ApiDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_sdk.apps.config.dependencies.ApiConfigType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ApiDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ApiDependency.link">
+<span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_sdk.apps.config.dependencies.ApiConfigType</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ApiDependency.link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.BaseDependencies">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BaseDependencies</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.BaseDependencies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A base class for implementing dependencies.</p>
+<p>Used as a facade for the underlying link store, which holds dependency links configured in Benchling.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.BaseDependencies.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">store</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore" title="benchling_sdk.apps.config.dependencies.DependencyLinkStore"><span class="pre">DependencyLinkStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalar_definitions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.10)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.scalar_config_types.ScalarConfigTypes</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="benchling_sdk.apps.config.scalars.html#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><span class="pre">ScalarDefinition</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">DEFAULT_SCALAR_DEFINITIONS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unknown_scalar_definition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.apps.config.scalars.html#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><span class="pre">ScalarDefinition</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decryption_provider</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.apps.config.decryption_provider.html#benchling_sdk.apps.config.decryption_provider.BaseDecryptionProvider" title="benchling_sdk.apps.config.decryption_provider.BaseDecryptionProvider"><span class="pre">BaseDecryptionProvider</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.BaseDependencies.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize Base Dependencies.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>store</strong> – The dependency link store to source dependency links from.</p></li>
+<li><p><strong>scalar_definitions</strong> – A map of scalar types from the API definitions to ScalarDefinitions which</p></li>
+</ul>
+</dd>
+</dl>
+<p>determines how we want map them to concrete Python types and values. Can be overridden to customize
+deserialization behavior or formatting.
+:param unknown_scalar_definition: A scalar definition for handling unknown scalar types from the API. Can be
+used to control behavior for forwards compatibility with new types the SDK does not yet support (e.g.,
+by treating them as strings).
+:param decryption_provider: A decryption provider that can decrypt secrets from app config. If
+dependencies attempt to use a secure_text’s decrypted value, a decryption_provider must be specified.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.BaseDependencies.from_app">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_sdk.benchling.html#benchling_sdk.benchling.Benchling" title="benchling_sdk.benchling.Benchling"><span class="pre">Benchling</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">decryption_provider</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.apps.config.decryption_provider.html#benchling_sdk.apps.config.decryption_provider.BaseDecryptionProvider" title="benchling_sdk.apps.config.decryption_provider.BaseDecryptionProvider"><span class="pre">BaseDecryptionProvider</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_sdk.apps.config.dependencies.D</span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.BaseDependencies.from_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize dependencies from an app_id.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.BaseDependencies.invalidate_cache">
+<span class="sig-name descname"><span class="pre">invalidate_cache</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.BaseDependencies.invalidate_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invalidate the cache of dependency links and force an update.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.BenchlingConfigProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BenchlingConfigProvider</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.BenchlingConfigProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.ConfigProvider" title="benchling_sdk.apps.config.dependencies.ConfigProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.ConfigProvider</span></code></a></p>
+<p>Benchling Config provider.</p>
+<p>Provides a BenchlingAppConfiguration retrieved from Benchling’s API.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.BenchlingConfigProvider.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_sdk.benchling.html#benchling_sdk.benchling.Benchling" title="benchling_sdk.benchling.Benchling"><span class="pre">Benchling</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.BenchlingConfigProvider.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize Benchling Config Provider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – A configured Benchling instance for making API calls.</p></li>
+<li><p><strong>app_id</strong> – The app_id from which to retrieve configuration.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.BenchlingConfigProvider.config">
+<span class="sig-name descname"><span class="pre">config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.beta.models.benchling_app_configuration.BenchlingAppConfiguration</span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.BenchlingConfigProvider.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide a Benchling app configuration from Benchling’s APIs.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ConfigProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConfigProvider</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ConfigProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Config provider.</p>
+<p>Provides a BenchlingAppConfiguration.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ConfigProvider.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ConfigProvider.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ConfigProvider.config">
+<span class="sig-name descname"><span class="pre">config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.beta.models.benchling_app_configuration.BenchlingAppConfiguration</span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ConfigProvider.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implement to provide a Benchling app configuration.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DependencyLinkStore">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DependencyLinkStore</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Dependency Link Store.</p>
+<p>Marshalls an app configuration from the configuration provider into an indexable structure.
+Only retrieves app configuration once unless its cache is invalidated.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DependencyLinkStore.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration_provider</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.ConfigProvider" title="benchling_sdk.apps.config.dependencies.ConfigProvider"><span class="pre">ConfigProvider</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize Dependency Link Store.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>configuration_provider</strong> – A ConfigProvider that will be invoked to provide the</p>
+</dd>
+</dl>
+<p>underlying config from which to organize dependency links.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DependencyLinkStore.config_by_name">
+<span class="sig-name descname"><span class="pre">config_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Type" title="(in Python v3.10)"><span class="pre">Type</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_sdk.apps.config.dependencies.AnyConfigType</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_sdk.apps.config.dependencies.AnyConfigType</span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore.config_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Config by name.</p>
+<p>Look up a configuration reference by its name. Only applies to named configuration at the top level,
+not subdependencies.</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DependencyLinkStore.config_links">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_links</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.dropdown_dependency_link.DropdownDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.entity_schema_dependency_link.EntitySchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.resource_dependency_link.ResourceDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.schema_dependency_link.SchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.workflow_task_schema_dependency_link.WorkflowTaskSchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.scalar_config.ScalarConfig</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.secure_text_config.SecureTextConfig</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore.config_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Config links.</p>
+<p>Return a map of configuration item names to their corresponding API link or dependency value.</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DependencyLinkStore.configuration">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">configuration</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.benchling_app_configuration.BenchlingAppConfiguration</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore.configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the underlying configuration.</p>
+<p>Return the raw, stored configuration. Can be used if the provided accessors are inadequate
+to find particular configuration items.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DependencyLinkStore.from_app">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="benchling_sdk.benchling.html#benchling_sdk.benchling.Benchling" title="benchling_sdk.benchling.Benchling"><span class="pre">Benchling</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore" title="benchling_sdk.apps.config.dependencies.DependencyLinkStore"><span class="pre">DependencyLinkStore</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore.from_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>From App.</p>
+<p>Instantiate a DependencyLinkStore from an app_id and a configured Benchling instance. Preferred to
+using the class’s constructor.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DependencyLinkStore.invalidate_cache">
+<span class="sig-name descname"><span class="pre">invalidate_cache</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore.invalidate_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invalidate Cache.</p>
+<p>Will force retrieval of configuration from the ConfigProvider the next time the link store is accessed.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DependencyLinkStore.map_from_configuration">
+<span class="sig-name descname"><span class="pre">map_from_configuration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.beta.models.benchling_app_configuration.BenchlingAppConfiguration</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.10)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.dropdown_dependency_link.DropdownDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.entity_schema_dependency_link.EntitySchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.resource_dependency_link.ResourceDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.schema_dependency_link.SchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.workflow_task_schema_dependency_link.WorkflowTaskSchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.scalar_config.ScalarConfig</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.secure_text_config.SecureTextConfig</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore.map_from_configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Map from configuration.</p>
+<p>Produce a map of Benchling configuration references where the <cite>name</cite> is the key for easy lookup.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DependencyLinkStore.to_map_value">
+<span class="sig-name descname"><span class="pre">to_map_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration_item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.dropdown_dependency_link.DropdownDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.entity_schema_dependency_link.EntitySchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.resource_dependency_link.ResourceDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.schema_dependency_link.SchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.workflow_task_schema_dependency_link.WorkflowTaskSchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.scalar_config.ScalarConfig</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.secure_text_config.SecureTextConfig</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.extensions.UnknownType</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.dropdown_dependency_link.DropdownDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.entity_schema_dependency_link.EntitySchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.resource_dependency_link.ResourceDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.schema_dependency_link.SchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.workflow_task_schema_dependency_link.WorkflowTaskSchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.scalar_config.ScalarConfig</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.secure_text_config.SecureTextConfig</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DependencyLinkStore.to_map_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform configuration item to a map.</p>
+<p>This method can be overridden to change handling of UnknownType and type safety for ConfigurationReference.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DropdownDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DropdownDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DropdownDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.ApiDependency" title="benchling_sdk.apps.config.dependencies.ApiDependency"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.ApiDependency</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_api_client.v2.beta.models.dropdown_dependency_link.DropdownDependencyLink</span></code>], <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.Subdependencies" title="benchling_sdk.apps.config.dependencies.Subdependencies"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.Subdependencies</span></code></a></p>
+<p>Dropdown Dependency.</p>
+<p>Links a Benchling dropdown.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DropdownDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.beta.models.dropdown_dependency_link.DropdownDependencyLink</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DropdownDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DropdownDependency.link">
+<span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.dropdown_dependency_link.DropdownDependencyLink</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DropdownDependency.link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DropdownDependency.subdependency_links">
+<span class="sig-name descname"><span class="pre">subdependency_links</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DropdownDependency.subdependency_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get options dependency links from a dropdown dependency.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DropdownDependency.subdependency_type_display_name">
+<span class="sig-name descname"><span class="pre">subdependency_type_display_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DropdownDependency.subdependency_type_display_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the user-friendly name for this subdependency type.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DropdownOptionsDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DropdownOptionsDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DropdownOptionsDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Dropdown Options Dependency.</p>
+<p>Links a Benchling dropdown with options to the parent that owns those options.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DropdownOptionsDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.DropdownDependency" title="benchling_sdk.apps.config.dependencies.DropdownDependency"><span class="pre">DropdownDependency</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DropdownOptionsDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.DropdownOptionsDependency.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.DropdownDependency" title="benchling_sdk.apps.config.dependencies.DropdownDependency"><span class="pre">DropdownDependency</span></a></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.DropdownOptionsDependency.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.EntitySchemaDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EntitySchemaDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.EntitySchemaDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.ApiDependency" title="benchling_sdk.apps.config.dependencies.ApiDependency"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.ApiDependency</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_api_client.v2.beta.models.entity_schema_dependency_link.EntitySchemaDependencyLink</span></code>], <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.SchemaFieldsMixin" title="benchling_sdk.apps.config.dependencies.SchemaFieldsMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.SchemaFieldsMixin</span></code></a></p>
+<p>Entity Schema Dependency.</p>
+<p>Links a Benchling entity schema.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.EntitySchemaDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.beta.models.entity_schema_dependency_link.EntitySchemaDependencyLink</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.EntitySchemaDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.EntitySchemaDependency.link">
+<span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.entity_schema_dependency_link.EntitySchemaDependencyLink</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.EntitySchemaDependency.link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasConfigWithDecryptionProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HasConfigWithDecryptionProvider</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasConfigWithDecryptionProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Has Config With Decryption Provider.</p>
+<p>A mixin for typing to assert that a particular class has a decryption provider and config.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasConfigWithDecryptionProvider.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasConfigWithDecryptionProvider.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasConfigWithDecryptionProvider.config">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.scalar_config.ScalarConfig</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasConfigWithDecryptionProvider.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the underlying scalar config.</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasConfigWithDecryptionProvider.decryption_provider">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">decryption_provider</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.apps.config.decryption_provider.html#benchling_sdk.apps.config.decryption_provider.BaseDecryptionProvider" title="benchling_sdk.apps.config.decryption_provider.BaseDecryptionProvider"><span class="pre">BaseDecryptionProvider</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasConfigWithDecryptionProvider.decryption_provider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the decryption provider.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasEntityLink">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HasEntityLink</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasEntityLink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Has Entity Link.</p>
+<p>A mixin for typing to assert that a particular class has a link to an entity schema.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasEntityLink.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasEntityLink.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasEntityLink.link">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.entity_schema_dependency_link.EntitySchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.schema_dependency_link.SchemaDependencyLink</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasEntityLink.link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the underlying schema dependency link.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasLink">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HasLink</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasLink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Has Link.</p>
+<p>A mixin for typing to assert that a particular class has any link.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasLink.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasLink.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasLink.link">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.dropdown_dependency_link.DropdownDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.entity_schema_dependency_link.EntitySchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.resource_dependency_link.ResourceDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.schema_dependency_link.SchemaDependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.workflow_task_schema_dependency_link.WorkflowTaskSchemaDependencyLink</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasLink.link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the underlying dependency link.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasScalarDefinition">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HasScalarDefinition</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasScalarDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Has Scalar Definition.</p>
+<p>A mixin for typing to assert that a particular class has scalar attributes.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasScalarDefinition.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasScalarDefinition.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasScalarDefinition.config">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.scalar_config.ScalarConfig</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasScalarDefinition.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the underlying scalar config.</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasScalarDefinition.definition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">definition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.apps.config.scalars.html#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><span class="pre">ScalarDefinition</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasScalarDefinition.definition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the scalar definition, allowing for conversion to Python types.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaLink">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HasWorkflowTaskSchemaLink</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaLink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Has Workflow Task Schema Link.</p>
+<p>A mixin for typing to assert that a particular class has a link to a workflow task schema.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaLink.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaLink.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaLink.link">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.workflow_task_schema_dependency_link.WorkflowTaskSchemaDependencyLink</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaLink.link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the underlying workflow task schema dependency link.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaParentLink">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HasWorkflowTaskSchemaParentLink</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaParentLink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">typing_extensions.Protocol</span></code></p>
+<p>Has Workflow Task Schema Parent Link.</p>
+<p>A mixin for typing to assert that a particular class has a link to a parent workflow task schema.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaParentLink.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaParentLink.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaParentLink.parent">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaLink" title="benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaLink"><span class="pre">HasWorkflowTaskSchemaLink</span></a></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.HasWorkflowTaskSchemaParentLink.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the parent workflow task schema dependency link.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.MissingAppConfigError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MissingAppConfigError</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.MissingAppConfigError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>Missing app config error.</p>
+<p>The app did not return any configuration.
+It may not have a manifest installed, or may not have been configured.</p>
+</dd></dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.MissingDependencyError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MissingDependencyError</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.MissingDependencyError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>Missing dependency error.</p>
+<p>Indicates a dependency was missing from app config.
+For instance, no dependency with that name was in the list.</p>
+</dd></dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.MissingScalarDefinitionError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MissingScalarDefinitionError</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.MissingScalarDefinitionError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>Missing scalar definition error.</p>
+<p>The manifest and configuration specified a scalar type which the SDK does not know how to translate
+to Python values yet.</p>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.RequiredApiDependencyMixin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequiredApiDependencyMixin</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.RequiredApiDependencyMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Require Api Link.</p>
+<p>A mixin for accessing an API link which is required and should always be present. Should
+only be mixed in with ApiDependency or another class that provides the <cite>self.link</cite> attribute.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.RequiredApiDependencyMixin.id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.RequiredApiDependencyMixin.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the API ID of the linked configuration.</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.RequiredApiDependencyMixin.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.RequiredApiDependencyMixin.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the name of the linked configuration.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.RequiredScalarDependencyMixin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequiredScalarDependencyMixin</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.RequiredScalarDependencyMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Generic" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Generic</span></code></a>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.scalars.ScalarType</span></code>]</p>
+<p>Require Scalar Config.</p>
+<p>A mixin for accessing a scalar config which is required and should always be present.
+Should only be mixed in with ScalarConfig.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.RequiredScalarDependencyMixin.value">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">value</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_sdk.apps.config.scalars.ScalarType</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.RequiredScalarDependencyMixin.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value of the scalar.</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.RequiredScalarDependencyMixin.value_str">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">value_str</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.RequiredScalarDependencyMixin.value_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value of the scalar as a string.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.RequiredSecureTextDependencyMixin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequiredSecureTextDependencyMixin</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.RequiredSecureTextDependencyMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.RequiredScalarDependencyMixin" title="benchling_sdk.apps.config.dependencies.RequiredScalarDependencyMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.RequiredScalarDependencyMixin</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+<p>Require Secure Text.</p>
+<p>A mixin for accessing a secure text config which is required and should always be present.
+Should only be mixed in with SecureTextConfig.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.RequiredSecureTextDependencyMixin.decrypted_value">
+<span class="sig-name descname"><span class="pre">decrypted_value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.RequiredSecureTextDependencyMixin.decrypted_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decrypted value.</p>
+<p>Decrypts a secure_text dependency’s encrypted value into plain text.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ResourceDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResourceDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ResourceDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.ApiDependency" title="benchling_sdk.apps.config.dependencies.ApiDependency"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.ApiDependency</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_api_client.v2.beta.models.resource_dependency_link.ResourceDependencyLink</span></code>]</p>
+<p>Resource Dependency.</p>
+<p>Holds a reference to an API identified Benchling resource.
+Typically a singleton, such as a registry, or particular entity.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ResourceDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.beta.models.resource_dependency_link.ResourceDependencyLink</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ResourceDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ResourceDependency.link">
+<span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.resource_dependency_link.ResourceDependencyLink</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ResourceDependency.link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ScalarDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ScalarDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ScalarDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Scalar Dependency.</p>
+<p>Scalars are values that can be represented outside the Benchling domain.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ScalarDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.scalar_config.ScalarConfig</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.secure_text_config.SecureTextConfig</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">definition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.apps.config.scalars.html#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><span class="pre">ScalarDefinition</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ScalarDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ScalarDependency.config">
+<span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.scalar_config.ScalarConfig</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.secure_text_config.SecureTextConfig</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ScalarDependency.config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.ScalarDependency.definition">
+<span class="sig-name descname"><span class="pre">definition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.apps.config.scalars.html#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><span class="pre">ScalarDefinition</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.ScalarDependency.definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SchemaDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SchemaDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SchemaDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.ApiDependency" title="benchling_sdk.apps.config.dependencies.ApiDependency"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.ApiDependency</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_api_client.v2.beta.models.schema_dependency_link.SchemaDependencyLink</span></code>], <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.SchemaFieldsMixin" title="benchling_sdk.apps.config.dependencies.SchemaFieldsMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.SchemaFieldsMixin</span></code></a></p>
+<p>Schema Dependency.</p>
+<p>Links a Benchling schema for types other than bio entities.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SchemaDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.beta.models.schema_dependency_link.SchemaDependencyLink</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SchemaDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SchemaDependency.link">
+<span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.schema_dependency_link.SchemaDependencyLink</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SchemaDependency.link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SchemaFieldsDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SchemaFieldsDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SchemaFieldsDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Schema Fields Dependency.</p>
+<p>Links a Benchling object with schema fields to the parent that owns those fields.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SchemaFieldsDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.EntitySchemaDependency" title="benchling_sdk.apps.config.dependencies.EntitySchemaDependency"><span class="pre">EntitySchemaDependency</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.SchemaDependency" title="benchling_sdk.apps.config.dependencies.SchemaDependency"><span class="pre">SchemaDependency</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency" title="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency"><span class="pre">WorkflowTaskSchemaDependency</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputDependency" title="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputDependency"><span class="pre">WorkflowTaskSchemaOutputDependency</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SchemaFieldsDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SchemaFieldsDependency.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.EntitySchemaDependency" title="benchling_sdk.apps.config.dependencies.EntitySchemaDependency"><span class="pre">EntitySchemaDependency</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.SchemaDependency" title="benchling_sdk.apps.config.dependencies.SchemaDependency"><span class="pre">SchemaDependency</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency" title="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency"><span class="pre">WorkflowTaskSchemaDependency</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputDependency" title="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputDependency"><span class="pre">WorkflowTaskSchemaOutputDependency</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SchemaFieldsDependency.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SchemaFieldsMixin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SchemaFieldsMixin</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SchemaFieldsMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.Subdependencies" title="benchling_sdk.apps.config.dependencies.Subdependencies"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.Subdependencies</span></code></a></p>
+<p>Implements Subdependencies for schema fields.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SchemaFieldsMixin.subdependency_links">
+<span class="sig-name descname"><span class="pre">subdependency_links</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SchemaFieldsMixin.subdependency_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get field definition dependency links from a dependency with schema fields.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SchemaFieldsMixin.subdependency_type_display_name">
+<span class="sig-name descname"><span class="pre">subdependency_type_display_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SchemaFieldsMixin.subdependency_type_display_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the user-friendly name for this subdependency type.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SecureTextDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SecureTextDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SecureTextDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.ScalarDependency" title="benchling_sdk.apps.config.dependencies.ScalarDependency"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.ScalarDependency</span></code></a></p>
+<p>SecureText Config.</p>
+<p>A dependency for accessing a secure_text config.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SecureTextDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.scalar_config.ScalarConfig</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.secure_text_config.SecureTextConfig</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">definition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.apps.config.scalars.html#benchling_sdk.apps.config.scalars.ScalarDefinition" title="benchling_sdk.apps.config.scalars.ScalarDefinition"><span class="pre">ScalarDefinition</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decryption_provider</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.apps.config.decryption_provider.html#benchling_sdk.apps.config.decryption_provider.BaseDecryptionProvider" title="benchling_sdk.apps.config.decryption_provider.BaseDecryptionProvider"><span class="pre">BaseDecryptionProvider</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SecureTextDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.SecureTextDependency.decryption_provider">
+<span class="sig-name descname"><span class="pre">decryption_provider</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="benchling_sdk.apps.config.decryption_provider.html#benchling_sdk.apps.config.decryption_provider.BaseDecryptionProvider" title="benchling_sdk.apps.config.decryption_provider.BaseDecryptionProvider"><span class="pre">BaseDecryptionProvider</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.SecureTextDependency.decryption_provider" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.StaticConfigProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StaticConfigProvider</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.StaticConfigProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.ConfigProvider" title="benchling_sdk.apps.config.dependencies.ConfigProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.ConfigProvider</span></code></a></p>
+<p>Static Config provider.</p>
+<p>Provides a BenchlingAppConfiguration from a static declaration. Useful for mocking or testing.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.StaticConfigProvider.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.beta.models.benchling_app_configuration.BenchlingAppConfiguration</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.StaticConfigProvider.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize Static Config Provider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>configuration</strong> – The configuration object to return.</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.StaticConfigProvider.config">
+<span class="sig-name descname"><span class="pre">config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.beta.models.benchling_app_configuration.BenchlingAppConfiguration</span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.StaticConfigProvider.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide a Benchling app configuration from a static object.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.Subdependencies">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Subdependencies</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.Subdependencies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<p>Subdependencies.</p>
+<p>Assigns behavior to a class that can have a list of dependencies, such as schema fields
+or dropdown options.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.Subdependencies.subdependency_by_name">
+<span class="sig-name descname"><span class="pre">subdependency_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.Subdependencies.subdependency_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a subdependency link by its name.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.Subdependencies.subdependency_links">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subdependency_links</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.Subdependencies.subdependency_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implement to fetch the list of subdependency links.</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.Subdependencies.subdependency_mapping">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subdependency_mapping</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.Subdependencies.subdependency_mapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Access subdependencies as a map with names as the key and subdependency links as the values.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.Subdependencies.subdependency_type_display_name">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subdependency_type_display_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.Subdependencies.subdependency_type_display_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implement for user messaging, for example when surfacing errors.</p>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.Subdependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Subdependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.Subdependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.ApiDependency" title="benchling_sdk.apps.config.dependencies.ApiDependency"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.ApiDependency</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span></code>]</p>
+<p>Subdependency.</p>
+<p>Holds a reference to an API identified Benchling subdependency that belongs to a parent.
+Examples are fields on a schema or options on a dropdown.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.Subdependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.Subdependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.Subdependency.link">
+<span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.Subdependency.link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.UnsupportedDependencyError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UnsupportedDependencyError</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.UnsupportedDependencyError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>Unsupported dependency error.</p>
+<p>The manifest and configuration specified a dependency which the SDK is incapable of handling yet.</p>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WorkflowTaskSchemaDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.ApiDependency" title="benchling_sdk.apps.config.dependencies.ApiDependency"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.ApiDependency</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_api_client.v2.beta.models.workflow_task_schema_dependency_link.WorkflowTaskSchemaDependencyLink</span></code>], <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.SchemaFieldsMixin" title="benchling_sdk.apps.config.dependencies.SchemaFieldsMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.SchemaFieldsMixin</span></code></a></p>
+<p>Workflow Task Schema Dependency.</p>
+<p>Links a Benchling workflow task schema.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">benchling_api_client.v2.beta.models.workflow_task_schema_dependency_link.WorkflowTaskSchemaDependencyLink</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency.link">
+<span class="sig-name descname"><span class="pre">link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">benchling_api_client.v2.beta.models.workflow_task_schema_dependency_link.WorkflowTaskSchemaDependencyLink</span></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency.link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputDependency">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WorkflowTaskSchemaOutputDependency</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputFieldsMixin" title="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputFieldsMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputFieldsMixin</span></code></a></p>
+<p>Workflow Task Schema Output Dependency.</p>
+<p>Links a Benchling workflow task schema output to its parent workflow task schema.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputDependency.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency" title="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency"><span class="pre">WorkflowTaskSchemaDependency</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputDependency.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputDependency.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency" title="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaDependency"><span class="pre">WorkflowTaskSchemaDependency</span></a></em><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputDependency.parent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputFieldsMixin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WorkflowTaskSchemaOutputFieldsMixin</span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputFieldsMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#benchling_sdk.apps.config.dependencies.Subdependencies" title="benchling_sdk.apps.config.dependencies.Subdependencies"><code class="xref py py-class docutils literal notranslate"><span class="pre">benchling_sdk.apps.config.dependencies.Subdependencies</span></code></a></p>
+<p>Implements Subdependencies for workflow task schema output schema fields.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputFieldsMixin.subdependency_links">
+<span class="sig-name descname"><span class="pre">subdependency_links</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><span class="pre">benchling_api_client.v2.beta.models.subdependency_link.SubdependencyLink</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputFieldsMixin.subdependency_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get field definition dependency links from a workflow task schema output with schema fields.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputFieldsMixin.subdependency_type_display_name">
+<span class="sig-name descname"><span class="pre">subdependency_type_display_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#benchling_sdk.apps.config.dependencies.WorkflowTaskSchemaOutputFieldsMixin.subdependency_type_display_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the user-friendly name for this subdependency type.</p>
+</dd></dl>
+</dd></dl>
+</section>
+</div>
+</div>
+</div>
+<div aria-label="main navigation" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Benchling SDK</a></h1>
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Package contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="benchling_sdk.html">benchling_sdk package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="benchling_sdk.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="benchling_sdk.apps.html">benchling_sdk.apps package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="benchling_sdk.apps.html#subpackages">Subpackages</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.auth.html">benchling_sdk.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.docs.html">benchling_sdk.docs package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.helpers.html">benchling_sdk.helpers package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.models.html">benchling_sdk.models package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benchling_sdk.services.html">benchling_sdk.services package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="benchling_sdk.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+<li><a href="index.html">Documentation overview</a><ul>
+<li><a href="benchling_sdk.html">benchling_sdk package</a><ul>
+<li><a href="benchling_sdk.apps.html">benchling_sdk.apps package</a><ul>
+<li><a href="benchling_sdk.apps.config.html">benchling_sdk.apps.config package</a><ul>
+<li>Previous: <a href="benchling_sdk.apps.config.decryption_provider.html" title="previous chapter">benchling_sdk.apps.config.decryption_provider module</a></li>
+<li>Next: <a href="benchling_sdk.apps.config.mock_dependencies.html" title="next chapter">benchling_sdk.apps.config.mock_dependencies module</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="searchbox" role="search" style="display: none">
+<h3 id="searchlabel">Quick search</h3>
+<div class="searchformwrapper">
+<form action="search.html" class="search" method="get">
+<input aria-labelledby="searchlabel" autocapitalize="off" autocomplete="off" autocorrect="off" name="q" spellcheck="false" type="text"/>
+<input type="submit" value="Go"/>
+</form>
+</div>
+</div>
+<script>$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="footer">
+      ©2022, Benchling.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="https://bnch-sdk-documents.s3.amazonaws.com/_sources/benchling_sdk.apps.config.dependencies.rst.txt" rel="nofollow">Page source</a>
+</div>
+</body>
+</html>

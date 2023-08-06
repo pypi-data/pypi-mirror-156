@@ -1,0 +1,7 @@
+benchling\_sdk.services.v2.stable.workflow\_task\_group\_service module
+=======================================================================
+
+.. automodule:: benchling_sdk.services.v2.stable.workflow_task_group_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

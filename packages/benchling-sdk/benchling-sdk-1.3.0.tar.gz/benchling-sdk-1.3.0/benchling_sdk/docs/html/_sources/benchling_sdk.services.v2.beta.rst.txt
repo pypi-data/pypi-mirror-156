@@ -1,0 +1,22 @@
+benchling\_sdk.services.v2.beta package
+=======================================
+
+.. automodule:: benchling_sdk.services.v2.beta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_sdk.services.v2.beta.v2_beta_aa_sequence_service
+   benchling_sdk.services.v2.beta.v2_beta_app_service
+   benchling_sdk.services.v2.beta.v2_beta_custom_entity_service
+   benchling_sdk.services.v2.beta.v2_beta_dna_oligo_service
+   benchling_sdk.services.v2.beta.v2_beta_dna_sequence_service
+   benchling_sdk.services.v2.beta.v2_beta_entity_service
+   benchling_sdk.services.v2.beta.v2_beta_entry_service
+   benchling_sdk.services.v2.beta.v2_beta_rna_oligo_service

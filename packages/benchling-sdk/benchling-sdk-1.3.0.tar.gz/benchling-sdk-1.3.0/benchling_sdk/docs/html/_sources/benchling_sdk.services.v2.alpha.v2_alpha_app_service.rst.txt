@@ -1,0 +1,7 @@
+benchling\_sdk.services.v2.alpha.v2\_alpha\_app\_service module
+===============================================================
+
+.. automodule:: benchling_sdk.services.v2.alpha.v2_alpha_app_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

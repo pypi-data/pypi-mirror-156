@@ -1,0 +1,18 @@
+benchling\_sdk.apps.config package
+==================================
+
+.. automodule:: benchling_sdk.apps.config
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   benchling_sdk.apps.config.decryption_provider
+   benchling_sdk.apps.config.dependencies
+   benchling_sdk.apps.config.mock_dependencies
+   benchling_sdk.apps.config.scalars
