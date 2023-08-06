@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+lotrsdkbyfernanda.egg-info/PKG-INFO
+lotrsdkbyfernanda.egg-info/SOURCES.txt
+lotrsdkbyfernanda.egg-info/dependency_links.txt
+lotrsdkbyfernanda.egg-info/requires.txt
+lotrsdkbyfernanda.egg-info/top_level.txt
