@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: econ-jp
+Version: 0.1.12
+Summary: This module returns DataFrame of 
+    Japanese economic indicators.
+Home-page: https://github.com/chomoku/econ_jp
+Author: HideyukiO
+Author-email: mazarimono@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10

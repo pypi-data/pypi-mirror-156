@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+econ_jp/__init__.py
+econ_jp/econ_jp.py
+econ_jp/econ_kobe.py
+econ_jp/econ_kyoto.py
+econ_jp/econ_osaka.py
+econ_jp/util.py
+econ_jp.egg-info/PKG-INFO
+econ_jp.egg-info/SOURCES.txt
+econ_jp.egg-info/dependency_links.txt
+econ_jp.egg-info/requires.txt
+econ_jp.egg-info/top_level.txt
