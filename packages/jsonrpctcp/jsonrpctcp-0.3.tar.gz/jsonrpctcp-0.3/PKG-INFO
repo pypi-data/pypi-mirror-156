@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: jsonrpctcp
+Version: 0.3
+Summary: JSON-RPC (v2) over TCP sockets.
+Home-page: UNKNOWN
+Author: Josh Marshall
+Author-email: catchjosh@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
