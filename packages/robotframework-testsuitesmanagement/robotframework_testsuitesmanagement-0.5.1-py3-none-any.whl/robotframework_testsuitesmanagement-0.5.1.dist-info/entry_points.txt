@@ -1,0 +1,2 @@
+[console_scripts]
+robfwaio_version = RobotFramework_Testsuites.version:robfwaio_version
