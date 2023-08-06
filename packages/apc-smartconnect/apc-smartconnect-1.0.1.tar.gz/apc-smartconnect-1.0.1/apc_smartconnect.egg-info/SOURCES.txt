@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+apc_smartconnect/APCSmartConnect.py
+apc_smartconnect/__init__.py
+apc_smartconnect.egg-info/PKG-INFO
+apc_smartconnect.egg-info/SOURCES.txt
+apc_smartconnect.egg-info/dependency_links.txt
+apc_smartconnect.egg-info/requires.txt
+apc_smartconnect.egg-info/top_level.txt

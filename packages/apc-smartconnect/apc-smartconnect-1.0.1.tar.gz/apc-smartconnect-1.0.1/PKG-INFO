@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: apc-smartconnect
+Version: 1.0.1
+Summary: A Python class to get info from APC SmartConnect
+Project-URL: Homepage, https://github.com/datagutten/apc-smartconnect-py
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# apc-smartconnect
+A Python class to get info from APC SmartConnect
