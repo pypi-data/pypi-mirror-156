@@ -1,0 +1,2 @@
+[console_scripts]
+symd = symd.main:crystal
