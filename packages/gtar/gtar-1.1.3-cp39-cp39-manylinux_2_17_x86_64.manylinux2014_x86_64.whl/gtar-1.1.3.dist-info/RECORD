@@ -1,0 +1,12 @@
+gtar/__init__.py,sha256=_zBQEAG5uFi8O7S3Ex2BSS4rHzKC1WJxzivmqTnOvIs,195
+gtar/_gtar.cpython-39-x86_64-linux-gnu.so,sha256=Nl1p4nFayJVVlMfxBvcKqrbLK0eobkQdEuITd-Kz4t8,13889856
+gtar/cat.py,sha256=fOMQiuXNZR5jj9rj14DDXUTiyBTd85CvpaJM34nJuTg,2387
+gtar/copy.py,sha256=KtBmKJVakY6E7x3h4SZZoqbYveOAHac0gbl6OtPQN9M,933
+gtar/fix.py,sha256=_y4EkSMICVzmBMuN0HCgmfGgvKxKT9QcS-KW4eTjpYE,3704
+gtar/read.py,sha256=e0CzgLzFZDqRPFX8kLSXyJC6-e84bixVTMZqvck95PU,1490
+gtar/version.py,sha256=EjzST3KPPHOqCgRcx-9lc8o6d0ds2S4-zJQ91mMRzXc,22
+gtar-1.1.3.dist-info/LICENSE,sha256=xv-g_2ENOKmaFEr397IM5ZhTnOEGIq21opuKpWPlCxo,1089
+gtar-1.1.3.dist-info/METADATA,sha256=XJjC9h8-HWbxx23VLaux9VMcDi_BPr-PXGgAHsJSk8Y,1019
+gtar-1.1.3.dist-info/WHEEL,sha256=FNUt4eBsrBVn_Yc5KG3aXtKE40X3uNZrbGLNCbVxyFw,148
+gtar-1.1.3.dist-info/top_level.txt,sha256=rGfEVcdKLdoooPbFkC7c3uVNoJgCOFTEzecaXW4fRgo,5
+gtar-1.1.3.dist-info/RECORD,,
