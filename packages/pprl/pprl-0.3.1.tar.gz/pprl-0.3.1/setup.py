@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['pprl']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['requests>=2.28.0,<3.0.0']
+
+setup_kwargs = {
+    'name': 'pprl',
+    'version': '0.3.1',
+    'description': 'Wrapper around PPRL services provided by MDS Group Leipzig',
+    'long_description': '# PPRL library\n\nThe `pprl` library provides wrappers around the PPRL REST services provided by the Medical Data Science Group Leipzig.\nThe main entrypoints are `pprl.encoder`, `pprl.match` and `pprl.broker` which are all submodules for consuming the APIs of the respective services.\n\n## Documentation\n\nThe documentation of the latest commit on the `master` branch [can be seen on GitLab](https://pprl.gitlab.io/pprl-python-client/).\n\n## Running tests\n\nRun the linter in the root directory using `poetry run flake8`.\n\nNavigate to the [tests](./tests) directory on the command line and execute `docker compose up -d`.\nThis will start a number of services that are required to run the integration tests.\nOnce they\'re up and running (might take a couple minutes), run the following command in the root directory of this repository.\n\n```\n$ PYTEST_BROKER_BASE_URL="http://localhost:8080/broker" \\\n    PYTEST_ENCODER_BASE_URL="http://localhost:8080/encoder" \\\n    PYTEST_MATCH_BASE_URL="http://localhost:8080/matcher" \\\n    poetry run pytest\n```\n\n## Installation\n\nRun `pip install pprl`.\nYou can then import the `pprl` module in your project.\n\n## Usage\n\nThe following snippet shows how to encode an entity with specific Bloom filter encoding definitions and attribute schemas with the `encoder` submodule.\nDepending on which parameters you choose, some options may be mandatory, despite them being type hinted as optional.\n\n```py\nfrom pprl import AttributeSchema, BloomFilterConfiguration, Entity\nfrom pprl.encoder import EncoderClient\n\nencoder = EncoderClient("http://localhost:8080/encoder")\nentities = encoder.encode(\n    config=BloomFilterConfiguration(\n        filter_type="RBF",\n        hash_strategy="RANDOM_SHA256",\n        key="s3cr3t"\n    ),\n    schema_list=[\n        AttributeSchema(\n            attribute_name="name",\n            data_type="string",\n            average_token_count=10,\n            weight=2\n        ),\n        AttributeSchema(\n            attribute_name="age",\n            data_type="integer",\n            average_token_count=3,\n            weight=1\n        )\n    ],\n    entity_list=[\n        Entity(id="1", attributes={\n            "name": "foobar",\n            "age": 42\n        })\n    ]\n)\n\nfor entity in entities:\n    print(f"{entity.id} = {entity.value}")\n```\n\nYou can use the generated Base64-encoded bit vectors to compute their similarities to one another.\nYou will need to make use of the `match` submodule.\n\n```py\nfrom pprl import MatchConfiguration\nfrom pprl.match import MatchClient\n\nmatcher = MatchClient("http://localhost:8080/matcher")\nmatches = matcher.match(\n    config=MatchConfiguration(\n        match_function="JACCARD",\n        match_mode="CROSSWISE",\n        threshold=0.8\n    ),\n    domain_list=["Zm9vYmFyCg=="],\n    range_list=["Zm9vYmF6Cg=="]\n)\n\nfor match in matches:\n    print(f"{match.domain} => {match.range} ({round(match.similarity, 3)})")\n```\n\nThe `broker` submodule is for consuming the broker service API.\nIt is designed for massively parallel distributed record linkage.\nAs such, the following example is a bit more complicated, but not by much.\nEffectively, a new session is created.\nTwo clients will join the session, submit their bit vectors and receive their results eventually.\n\n```py\nimport time\n\nfrom pprl import BitVector, BitVectorMetadata, BitVectorMetadataSpecification, MatchConfiguration\nfrom pprl.broker import BrokerClient\n\nbroker = BrokerClient("http://localhost:8080/broker")\n\n# we can discard the second argument since we won\'t receive any cancellation arguments\n# from the "simple" cancellation strategy\nsession_secret, _ = broker.create_session(\n    config=MatchConfiguration(\n        match_function="JACCARD",\n        threshold=0.8\n    ),\n    session_cancellation="SIMPLE",\n    metadata_specifications=[\n        BitVectorMetadataSpecification(\n            name="createdAt",\n            data_type="datetime",\n            decision_rule="keepLatest"\n        )\n    ]\n)\n\n# we create two clients identified by different secrets\nclient_1_secret = broker.create_client(session_secret)\nclient_2_secret = broker.create_client(session_secret)\n\nbroker.submit_bit_vectors(client_1_secret, [\n    BitVector(\n        id="1",\n        value="Zm9vYmFyCg==",\n        metadata=[\n            BitVectorMetadata(\n                name="createdAt", \n                value="2022-06-21T10:24:36+02:00"\n            )\n        ]\n    )\n])\n\nbroker.submit_bit_vectors(client_2_secret, [\n    BitVector(\n        id="2",\n        value="Zm9vYmF6Cg==",\n        metadata=[\n            BitVectorMetadata(\n                name="createdAt", \n                value="2022-06-21T10:25:25+02:00"\n            )\n        ]\n    )\n])\n\n# wait for matching to finish and check back every second\nwhile broker.get_session_progress(session_secret) < 1:\n    time.sleep(1)\n\n# now print out the results for every client\nfor client_secret in (client_1_secret, client_2_secret):\n    print(f"matches for client {client_secret}")\n\n    for match in broker.get_results(client_secret):\n        print(f"  {match.vector.id} ({round(match.similarity, 3)})")\n\n# finally, cancel the session\nbroker.cancel_session(session_secret)\n```',
+    'author': 'Maximilian Jugl',
+    'author_email': 'Maximilian.Jugl@medizin.uni-leipzig.de',
+    'maintainer': 'Maximilian Jugl',
+    'maintainer_email': 'Maximilian.Jugl@medizin.uni-leipzig.de',
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.10,<4.0',
+}
+
+
+setup(**setup_kwargs)
