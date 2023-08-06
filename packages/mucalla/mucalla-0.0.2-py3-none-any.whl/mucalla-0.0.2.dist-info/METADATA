@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mucalla
+Version: 0.0.2
+Summary: aggregate results from multiple ethereum contract calls
+Author: jin 
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: eth_retry (>=0.1.0,<0.2.0)
+Requires-Dist: web3 (==5.27.0)
