@@ -1,0 +1,11 @@
+setup.py
+try_packaging2_module/__init__.py
+try_packaging2_module/add.py
+try_packaging2_module/subtract.py
+try_packaging2_module.egg-info/PKG-INFO
+try_packaging2_module.egg-info/SOURCES.txt
+try_packaging2_module.egg-info/dependency_links.txt
+try_packaging2_module.egg-info/top_level.txt
+try_packaging2_module/extras/__init__.py
+try_packaging2_module/extras/divide.py
+try_packaging2_module/extras/multiply.py
