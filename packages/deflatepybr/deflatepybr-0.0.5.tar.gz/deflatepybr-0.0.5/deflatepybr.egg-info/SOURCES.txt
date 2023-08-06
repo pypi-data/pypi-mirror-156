@@ -1,0 +1,11 @@
+README.md
+setup.py
+deflatepybr.egg-info/PKG-INFO
+deflatepybr.egg-info/SOURCES.txt
+deflatepybr.egg-info/dependency_links.txt
+deflatepybr.egg-info/requires.txt
+deflatepybr.egg-info/top_level.txt
+deflator/__init__.py
+deflator/api_call.py
+deflator/deflator.py
+deflator/utils.py
