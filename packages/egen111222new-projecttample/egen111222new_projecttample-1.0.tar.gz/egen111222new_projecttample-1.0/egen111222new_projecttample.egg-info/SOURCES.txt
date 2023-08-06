@@ -1,0 +1,6 @@
+setup.py
+egen111222new_projecttample.egg-info/PKG-INFO
+egen111222new_projecttample.egg-info/SOURCES.txt
+egen111222new_projecttample.egg-info/dependency_links.txt
+egen111222new_projecttample.egg-info/top_level.txt
+srs/program.py
