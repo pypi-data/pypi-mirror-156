@@ -1,0 +1,8 @@
+retrying
+beautifulsoup4
+pygrib
+netCDF4
+xarray
+requests
+loguru
+toml

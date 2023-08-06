@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: maesters-nwp
+Version: 0.0.1
+Summary: A package to get Open NWP data in a elegant way
+Home-page: https://github.com/blizhan/Maesters-of-NWP
+Author: blizha
+Author-email: blizhan@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Maesters of NWP(numercial weather prediction)
+
+- A repository focus on how to fecth open-source numerical weather prediction product. 
+  - Deutscher Wetterdientst
+  - Environment and Climate Change Canada
+  - Meteo France
+  - ...
+
