@@ -1,0 +1,6 @@
+setup.py
+pipse/__init__.py
+pipse.egg-info/PKG-INFO
+pipse.egg-info/SOURCES.txt
+pipse.egg-info/dependency_links.txt
+pipse.egg-info/top_level.txt

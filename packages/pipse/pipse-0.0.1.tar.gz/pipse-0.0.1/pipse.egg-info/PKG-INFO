@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pipse
+Version: 0.0.1
+Summary: pip, secured. [temporary placeholder, code is coming soon...]
+Home-page: https://github.com/junpuf/pips
+Author: Junpu Fan
+Author-email: junpufan@gmail.com 
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pipse
+This is a temporary placeholder to register this name on PYPI. I'll add code later.
+
