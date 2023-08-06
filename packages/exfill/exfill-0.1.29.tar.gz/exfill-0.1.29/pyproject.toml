@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "exfill"
+version = "0.1.29"
+description = "A small app to grab job postings from online job boards"
+authors = ["jay-law <jay-law@users.noreply.github.com>"]
+readme = "README.md"
+homepage = "https://github.com/jay-law/job-scraper"
+repository = "https://github.com/jay-law/job-scraper"
+documentation = "https://github.com/jay-law/job-scraper"
+
+[tool.poetry.scripts]
+script-run = "exfill.extractor:main"
+script-tests = "tests.runtests:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+bs4 = "^0.0.1"
+selenium = "^4.1.5"
+setuptools-scm = "^6.4.2"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.19.0"
+black = "^22.3.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+mypy = "^0.950"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ['py38']
+line-length = 79
+include = '\.pyi?$'
+
+[tool.isort]
+src_paths = ["exfill"]
+py_version = 38
+profile = "black"
+line_length = 79
+
+[tool.mypy]
+python_version = "3.8"
+files = ['exfill/']
+
+[tool.pytest.ini_options]
+testpaths = [
+  "tests"
+]
