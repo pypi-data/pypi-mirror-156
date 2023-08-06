@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cloudtrace
+Version: 1.6.0
+Summary: Various packages for traceroute and BGP dump analysis.
+Home-page: https://github.com/alexmarder/traceutils
+Author: Alex Marder
+Requires-Python: >3.6,<3.9
