@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: netbox-juniper-srx
+Version: 0.0.1
+Summary: Juniper SRX NetBox Plugin
+Home-page: https://github.com/cdot65/netbox-juniper-srx
+Author: Calvin Remsburg
+Author-email: cremsburg.dev@gmail.com
+License: Apache LICENSE 2.0
+Keywords: netbox,juniper,firewall,srx,all
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Networking :: Firewalls
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
+
+# Juniper SRX NetBox Plugin
+
+This [Netbox](https://github.com/cdot65/netbox-juniper-srx) plugin will enable you to document the various security components of a Juniper SRX firewall.
+
+## Compatibility
+
+`netbox-juniper-srx` was built with NetBox version 3.2 in mind, please create an Issue if there are any compatibility issues with previous versions.
+
+| Netbox | Plugin |
+|---|---|
+| 3.2 | 0.0.1 |
+
+## Installation
+
+After activating NetBox's virtual environment, follow the [standard Python package installation instructions](https://packaging.python.org/en/latest/tutorials/installing-packages/#installing-from-pypi) to install the `netbox-juniper-srx` plugin.
+
+```bash
+$ source /opt/netbox/venv/bin/activate
+$ pip install netbox-juniper-srx
+```
+
+We will need to tell NetBox to look for our plugin within the `/opt/netbox/netbox/netbox/configuration.py` file
+
+```python
+PLUGINS = ['netbox_juniper_srx']
+```
+
+Add `netbox-juniper-srx` to your local_requirements.txt
+
+```bash
+$ echo 'netbox-juniper-srx' >> /opt/netbox/local_requirements.txt
+```
+
+Restart NetBox with systemd
+
+```bash
+$ systemctl restart netbox.service
+```
+
+## Screenshots
+
+Security Policy Rules
+![Security Policy Rules](https://raw.githubusercontent.com/cdot65/netbox-juniper-srx/main/site/content/assets/images/security_policy_rules.png)
+
+
