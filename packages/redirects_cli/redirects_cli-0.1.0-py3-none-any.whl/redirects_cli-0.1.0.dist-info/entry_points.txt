@@ -1,0 +1,3 @@
+[console_scripts]
+redirects-cli=redirects_cli.__main__:main
+
