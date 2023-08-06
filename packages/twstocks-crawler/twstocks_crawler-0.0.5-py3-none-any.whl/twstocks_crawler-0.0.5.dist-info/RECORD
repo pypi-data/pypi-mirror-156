@@ -1,0 +1,12 @@
+twstocks_crawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twstocks_crawler/log.py,sha256=e3syl2uMUt8-15aMQhZlSSSjhousQg877TWmfR-57S0,2495
+twstocks_crawler/main.py,sha256=WSMAeKGyhZ3yUf8RNYDaAtxeovuXxVpOVHo8xxIB3s4,1475
+twstocks_crawler/utils.py,sha256=bR_sur4hbg8tzNjRa3wiEuf4Hx453KKpOBFptM9JHzo,378
+twstocks_crawler/version.py,sha256=v0zqRembIW__d7HVDd71J2eoXGtALnzdY8JdBVk-BPY,21
+twstocks_crawler/repositories/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twstocks_crawler/repositories/industry_diff.py,sha256=IqSGPug3x1DalDIYOsejl1MAM_lqG-X96fvVVUULt9g,6808
+twstocks_crawler/repositories/stock_profiles.py,sha256=X_-n_rDRoLwNK1IOhsyMQnxtukghWPMti30buIc2OW8,1506
+twstocks_crawler-0.0.5.dist-info/METADATA,sha256=VrcUxULrfLVcV9clrir-M1NBACOS-FrfF1Mz6P6k-PQ,564
+twstocks_crawler-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+twstocks_crawler-0.0.5.dist-info/top_level.txt,sha256=0XgA1dpCYrIjimYl0wD3McSdMMbTWxTpsDmru-2WoBk,17
+twstocks_crawler-0.0.5.dist-info/RECORD,,
