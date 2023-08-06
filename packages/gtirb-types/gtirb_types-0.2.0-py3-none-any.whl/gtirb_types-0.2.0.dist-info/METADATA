@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gtirb-types
+Version: 0.2.0
+Summary: Utilities for dealing with types in GTIRB
+Home-page: UNKNOWN
+Author: GrammaTech, Inc.
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE.txt
+Requires-Dist: gtirb (~=1.10.7.dev0)
+Requires-Dist: graphviz
+
+UNKNOWN
+

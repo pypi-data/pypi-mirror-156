@@ -1,0 +1,3 @@
+[console_scripts]
+gtirb_types = gtirb_types.graph:main
+
