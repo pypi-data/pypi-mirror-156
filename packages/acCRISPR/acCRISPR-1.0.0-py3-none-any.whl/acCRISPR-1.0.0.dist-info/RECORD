@@ -1,0 +1,12 @@
+acCRISPR/CS_FS_guide.py,sha256=qMe_291_FFH4F9YBlQmcLK9AnGtDa7Ij-Lc802NDAno,8536
+acCRISPR/CS_corr_lib.py,sha256=Wesna1bQW-eEIrKpA-3yEIEQRY2HxndR4X_3x-qbwzc,2411
+acCRISPR/FS_gene_calc.py,sha256=eskn2Kx9YEvpD14B586_iAUiY3cGUBtWXm88uVxfPE0,1458
+acCRISPR/FS_to_p_val.py,sha256=TSgXavmz_25Yf67Mo7ZBmLD9tE3ymaB9DjtMF2pa13c,6495
+acCRISPR/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acCRISPR/ac_CRISPR.py,sha256=oKcDFvdn9ATiwznD6tD_iAige4HJI56pwNLyZQG7WKs,5620
+acCRISPR/run_acCRISPR.py,sha256=PLBHFvaguD4wDTGNEgx5uE9yCN10YPlRoH6349ac084,114
+acCRISPR-1.0.0.dist-info/LICENSE,sha256=Io20-2kRzTYbwbVs9w1OejtiwMTujyz78c1MmsCEY_k,1090
+acCRISPR-1.0.0.dist-info/METADATA,sha256=mZGURrHbxxkJThzumIY7xoeqRuk79qhTiMUXO6jgG5c,881
+acCRISPR-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+acCRISPR-1.0.0.dist-info/top_level.txt,sha256=1EvX8Hef7OiWjYJloYY6rOOnA2FSufcdSFR4Y2dMLOo,9
+acCRISPR-1.0.0.dist-info/RECORD,,
