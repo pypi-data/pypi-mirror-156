@@ -1,0 +1,8 @@
+subdomain/__init__.py,sha256=jLlw7s6MAtrPDPRpA_n0fbwthI-X8kx78AJEy4YCjV0,1050
+subdomain/__main__.py,sha256=8vJXZ8Rq5EGD6cJqkA1Sss_4EqsLC9OZGvQzenLRHO8,1870
+subdomain/dict/default.txt,sha256=GmqYNgkCIr4alVrhYoiOBZkOkpE77Gs8z3-j4G4rFqo,869371
+subdomain/dict/test.txt,sha256=OBYBIjJvIK3tqFU5JZJCpWjKWLWeGABKkFOLBY10rzA,2712
+subdomain/subdomain.py,sha256=01kKke4s78hSIZdodus6Rkgx0OYJ9OSwRnj4tCFljuw,7088
+subdomain-0.1.4.9.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+subdomain-0.1.4.9.dist-info/METADATA,sha256=Sz-49DauMcvP3MSqplZX01FKIvIo393fSeq5RlcMDus,1769
+subdomain-0.1.4.9.dist-info/RECORD,,
