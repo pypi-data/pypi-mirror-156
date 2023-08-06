@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+solarsysdaily/__init__.py
+solarsysdaily/plotting.py
+solarsysdaily/utils.py
+solarsysdaily.egg-info/PKG-INFO
+solarsysdaily.egg-info/SOURCES.txt
+solarsysdaily.egg-info/dependency_links.txt
+solarsysdaily.egg-info/top_level.txt
