@@ -1,0 +1,12 @@
+getfilelistpy
+lmdb
+matplotlib
+numpy
+Pillow
+pytorch_lightning
+setuptools
+six
+torch
+torchvision
+torchmeta
+py7zr
