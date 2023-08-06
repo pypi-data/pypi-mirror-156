@@ -1,0 +1,4 @@
+[console_scripts]
+yuhang = yuhang.cli.calc:add
+yuhang-poc = yuhang.cli.calc:sub
+
