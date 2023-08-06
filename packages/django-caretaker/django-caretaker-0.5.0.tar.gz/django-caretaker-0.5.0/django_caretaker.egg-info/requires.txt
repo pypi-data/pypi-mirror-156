@@ -1,0 +1,12 @@
+Django>=4.0
+boto3
+django-click
+humanize
+mock
+moto
+mysqlclient
+pytest
+pytest-django
+python-crontab==2.2.3
+rich
+testfixtures
