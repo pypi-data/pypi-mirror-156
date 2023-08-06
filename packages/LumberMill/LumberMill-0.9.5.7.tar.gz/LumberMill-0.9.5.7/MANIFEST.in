@@ -1,0 +1,4 @@
+include conf
+include conf/example*
+recursive-include scripts *
+recursive-include lumbermill/assets *
