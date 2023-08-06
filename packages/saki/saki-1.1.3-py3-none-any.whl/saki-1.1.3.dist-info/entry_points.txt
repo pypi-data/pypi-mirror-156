@@ -1,0 +1,3 @@
+[console_scripts]
+saki=saki.main:app
+
