@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+emoji.gg_tako.egg-info/PKG-INFO
+emoji.gg_tako.egg-info/SOURCES.txt
+emoji.gg_tako.egg-info/dependency_links.txt
+emoji.gg_tako.egg-info/requires.txt
+emoji.gg_tako.egg-info/top_level.txt
+emoji_gg/emoji.py
+emoji_gg/errors.py
+emoji_gg/stats.py
