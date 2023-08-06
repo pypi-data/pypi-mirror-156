@@ -1,0 +1,9 @@
+astor
+avro<=1.10.2
+black
+hypothesis
+
+[dev]
+pytest>=3.10.1
+pylint>=2.4.4
+mypy>=0.740
