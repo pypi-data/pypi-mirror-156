@@ -1,0 +1,38 @@
+from distutils.core import setup
+
+setup(
+    name="inuits_otel_tracer",
+    version="0.0.9",
+    description="Otel tracer help for tracing in python applications.",
+    classifiers=[
+        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+    ],
+    author="Yasinthan Subakaran",
+    author_email="yasinthan@inuits.eu",
+    license="GPLv2",
+    packages=["inuits_otel_tracer"],
+    install_requires=[
+        "backoff==1.10.0",
+        "Deprecated==1.2.13",
+        "googleapis-common-protos==1.56.3",
+        "grpcio==1.46.3",
+        "opentelemetry-api==1.9.1",
+        "opentelemetry-exporter-otlp==1.9.1",
+        "opentelemetry-exporter-otlp-proto-grpc==1.9.1",
+        "opentelemetry-exporter-otlp-proto-http==1.9.1",
+        "opentelemetry-instrumentation==0.28b1",
+        "opentelemetry-instrumentation-flask==0.28b1",
+        "opentelemetry-instrumentation-requests==0.28b1",
+        "opentelemetry-instrumentation-wsgi==0.28b1",
+        "opentelemetry-proto==1.9.1",
+        "opentelemetry-sdk==1.9.1",
+        "opentelemetry-semantic-conventions==0.28b1",
+        "opentelemetry-util-http==0.28b1",
+        "protobuf==3.20.1",
+        "typing_extensions==4.2.0",
+        "wrapt==1.14.1",
+    ],
+    provides=["inuits_otel_tracer"],
+)
