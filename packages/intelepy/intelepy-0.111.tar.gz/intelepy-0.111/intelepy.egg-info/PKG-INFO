@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: intelepy
+Version: 0.111
+Summary: Intelepeer API Wrapper
+Home-page: https://github.com/MichaelRalston98/intelepy
+Author: Michael Ralston
+Author-email: michaelaaralston2@gmail.com
+License: MIT
+Keywords: Intelepeer,ITSP
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
