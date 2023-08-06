@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+./requirements/requirements.txt
+image_classification_misis.egg-info/PKG-INFO
+image_classification_misis.egg-info/SOURCES.txt
+image_classification_misis.egg-info/dependency_links.txt
+image_classification_misis.egg-info/top_level.txt
