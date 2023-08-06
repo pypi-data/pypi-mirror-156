@@ -1,0 +1,3 @@
+[console_scripts]
+stresstest=stresstest.__main__:main
+
