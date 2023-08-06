@@ -1,0 +1,136 @@
+---
+# https://www.w3.org/TR/NOTE-datetime
+? "unix"
+:
+  desc: "unix timestamp"
+  format: "1495029745"
+  example: "1495029745"
+  note: "seconds since Jan 1 1970"
+  action: "unix_timestamp"
+  url: ""
+
+? "apple"
+:
+  desc: "apple timestamp"
+  format: "?"
+  example: "3577874657"
+  note: "seconds since Jan 1 1904"
+  action: "apple_timestamp"
+  url: ""
+
+? "microsoft"
+:
+  desc: "microsoft timestamp"
+  format: "?"
+  example: "42872.58630787"
+  note: "days since Dec 30 1899"
+  action: "microsoft_timestamp"
+  url: ""
+
+? "filetime"
+:
+  desc: "filetime"
+  format: "?"
+  example: "?"
+  note: "100-nanoseconds since Jan 1 1601"
+  action: "filetime_timestamp"
+  url: ""
+
+? "atom"
+:
+  desc: "atom"
+  format: "?"
+  example: '1975-12-25T14:15:16-05:00'
+  note: ""
+  action: "pendulum"
+  url: ""
+
+? "cookie"
+:
+  desc: "cookie"
+  format: "?"
+  example: 'Thursday, 25-Dec-1975 14:15:16 EST'
+  note: ""
+  action: "pendulum"
+  url: ""
+
+? "8601"
+:
+  desc: "ISO 8601"
+  format: "?"
+  example: '1975-12-25T14:15:16-0500'
+  note: ""
+  action: "pendulum"
+  url: ""
+
+? "822"
+:
+  desc: "RFC 822"
+  format: "?"
+  example: 'Thu, 25 Dec 75 14:15:16 -0500'
+  note: ""
+  action: "pendulum"
+  url: ""
+
+? "850"
+:
+  desc: "RFC 850"
+  format: "?"
+  example: 'Thursday, 25-Dec-75 14:15:16 EST'
+  note: ""
+  action: "pendulum"
+  url: ""
+
+? "1036"
+:
+  desc: "RFC 1036"
+  format: "?"
+  example: 'Thu, 25 Dec 75 14:15:16 -0500'
+  note: ""
+  action: "pendulum"
+  url: ""
+
+? "1123"
+:
+  desc: "RFC 1123"
+  format: "?"
+  example: 'Thu, 25 Dec 1975 14:15:16 -0500'
+  note: ""
+  action: "pendulum"
+  url: ""
+
+? "2822"
+:
+  desc: "RFC 2822"
+  format: "?"
+  example: 'Thu, 25 Dec 1975 14:15:16 -0500'
+  note: ""
+  action: "pendulum"
+  url: ""
+
+? "3339"
+:
+  desc: "RFC 3339"
+  format: "?"
+  example: '1975-12-25T14:15:16-05:00'
+  note: ""
+  action: "pendulum"
+  url: ""
+
+? "rss"
+:
+  desc: "rss"
+  format: "?"
+  example: 'Thu, 25 Dec 1975 14:15:16 -0500'
+  note: ""
+  action: "pendulum"
+  url: ""
+
+? "w3c"
+:
+  desc: "w3c"
+  format: "?"
+  example: '1975-12-25T14:15:16-05:00'
+  note: ""
+  action: "pendulum"
+  url: ""
