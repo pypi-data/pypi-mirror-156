@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: runtime-final
+Version: 1.1.0
+Summary: Declare final Python classes and methods at runtime.
+Home-page: https://github.com/nerdguyahmad/runtime-final
+Author: nerdguyahmad
+License: MIT
+Project-URL: Documentation, https://github.com/nerdguyahmad/runtime-final/wiki
+Project-URL: Issue tracker, https://github.com/nerdguyahmad/runtime-final/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# runtime-final
+Declare final Python classes and methods at runtime.
+
+This module provides a decorator based interface to declare final
+classes and methods. This module is inspired by and is compatible with [`typing.final`](https://docs.python.org/3/library/typing.html#typing.final).
+See [PEP-591](https://www.python.org/dev/peps/pep-0591) for more
+details on this topic.
+
+## Installation
+**Python 3.6 or higher is required.**
+
+You can simply install this module from `pip`.
+```
+python -m pip install runtime-final
+```
+
+## Usage
+The main component of this module is the `final` decorator that
+can be used to decorate classes and methods inside a class. As
+such:
+
+- Classes decorated with @final cannot be subclassed.
+- Methods decorated with @final cannot be overriden in subclasses.
+
+For example with classes:
+
+```py
+from runtime_final import final
+
+@final
+class Foo:
+    ...
+
+class Bar(Foo):  # Raises RuntimeError
+    ...
+```
+And with methods:
+```py
+from runtime_final import final
+
+class User:
+    @final
+    def edit(self):
+        ...
+
+class AnotherUser(User):
+    def edit(self):  # Raises RuntimeError
+        ...
+```
+
+## Documentation
+For more details, see the [documentation](https://runtime-final.readthedocs.io)
