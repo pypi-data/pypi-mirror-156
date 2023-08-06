@@ -1,0 +1,23 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "pybind11>=2.6.4",
+    "cmake>=3.18.2",
+    "scikit-build>=0.12"
+]
+
+build-backend = "setuptools.build_meta"
+
+[tool.cibuildwheel]
+skip = ["pp*", "cp36-*", "*-musllinux*"]
+
+
+test-command = "python -c 'import goss'"
+
+[tool.cibuildwheel.linux]
+archs = ["x86_64"]
+
+[tool.cibuildwheel.macos]
+before-build = "export HOMEBREW_AUTO_UPDATING=0 && brew update && brew install ninja libomp"
+archs = ["x86_64", "arm64"]
