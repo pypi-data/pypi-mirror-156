@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: RLuligoClinicalParsing
+Version: 0.0.1
+Summary: Clinical Notes Python Package
+Home-page: UNKNOWN
+Author: Rolando Ramirez Luligo
+Author-email: rolando.luligo@tempus.com
+License: UNKNOWN
+Keywords: Notes,Clinical
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: pandas
+Requires-Dist: regex
+
+POC to demonstrate how to parse properly clinical text from a csv file
+
+
