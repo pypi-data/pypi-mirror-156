@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: arduino_rpi_taskmaster
+Version: 0.2.0
+Summary: This is a taskmaster python package made for learning how to build a package
+Author: Amalkrishna UR
+Author-email: example@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires: pyserial
+Requires: sockets
+
+UNKNOWN
+

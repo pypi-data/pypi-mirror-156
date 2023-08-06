@@ -1,0 +1,11 @@
+setup.py
+arduino_rpi_taskmaster/__init__.py
+arduino_rpi_taskmaster.egg-info/PKG-INFO
+arduino_rpi_taskmaster.egg-info/SOURCES.txt
+arduino_rpi_taskmaster.egg-info/dependency_links.txt
+arduino_rpi_taskmaster.egg-info/top_level.txt
+arduino_rpi_taskmaster/ServerClient/Client.py
+arduino_rpi_taskmaster/ServerClient/Server.py
+arduino_rpi_taskmaster/ServerClient/__init__.py
+arduino_rpi_taskmaster/ServerClient/c.py
+arduino_rpi_taskmaster/ServerClient/s.py
