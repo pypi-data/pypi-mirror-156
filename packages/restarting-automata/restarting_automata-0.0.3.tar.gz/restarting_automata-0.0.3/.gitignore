@@ -1,0 +1,14 @@
+.idea*
+*.fdb_larexmk
+*.log
+*.synctex.gz
+*.aux
+*.fls
+*.toc
+Dokumentace/rProjekt.fdb_latexmk
+Dokumentace/rProjekt.log
+Dokumentace/rProjekt.synctex.gz
+.vscode*
+*.pyc
+*.sqlite3
+*.swp
