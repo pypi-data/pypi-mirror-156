@@ -1,0 +1,3 @@
+[console_scripts]
+smog = smog.__main__:main
+
