@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+cana_sdoc.egg-info/PKG-INFO
+cana_sdoc.egg-info/SOURCES.txt
+cana_sdoc.egg-info/dependency_links.txt
+cana_sdoc.egg-info/requires.txt
+cana_sdoc.egg-info/top_level.txt
+sdoc/__init__.py
+sdoc/core.py
+sdoc/data/sdoc.csv
+sdoc/data/sdoc.h5

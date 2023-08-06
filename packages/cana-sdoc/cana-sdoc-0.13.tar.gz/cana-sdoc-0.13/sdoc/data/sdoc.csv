@@ -1,0 +1,45 @@
+,id,mid,material,formula,group,phase,temp,wmin,wmax,res,hpath,ref
+0,mol_0,mol,Methanol,CH3OH,ices,amorphous,10K,0.3,4.99002,470,/ices/mol_0,-
+1,mol_1,mol,Methanol,CH3OH,ices,crystalline,120K,0.3,4.99002,470,/ices/mol_1,-
+2,cod_0,cod,Carbon dioxide,CO2,ices,,,0.3,4.99002,468,/ices/cod_0,Warren
+3,amo_0,amo,Ammonia,NH3,ices,,,0.3,4.99002,470,/ices/amo_0,Martonchik
+4,amo_1,amo,Ammonia,NH3,ices,amorphous,,0.3,4.99002,470,/ices/amo_1,Hudson et al 2022
+5,amo_2,amo,Ammonia,NH3,ices,crystalline,,0.3,4.99002,470,/ices/amo_2,Hudson et al 2022
+6,com_0,com,Carbon monoxide,CO,ices,-,,0.3,4.99002,470,/ices/com_0,-
+7,nit_0,nit,Nitrogen,N2,ices,-,,0.3,4.99002,470,/ices/nit_0,B Schmitt
+8,wat_0,wat,Water,H20,ices,amorphous,15K,0.3,4.99002,470,/ices/wat_0,-
+9,wat_1,wat,Water,H20,ices,amorphous,25K,0.3,4.99002,470,/ices/wat_1,-
+10,wat_2,wat,Water,H20,ices,amorphous,40K,0.3,4.99002,470,/ices/wat_2,-
+11,wat_3,wat,Water,H20,ices,crystalline,30K,0.3,4.99002,470,/ices/wat_3,-
+12,wat_4,wat,Water,H20,ices,crystalline,40K,0.3,4.99002,470,/ices/wat_4,-
+13,wat_5,wat,Water,H20,ices,crystalline,50K,0.3,4.99002,470,/ices/wat_5,-
+14,oli_0,oli,Olivine," (Mg, Fe)2SiO4",silicates,-,,0.3,4.99002,470,/silicates/oli_0,Pollack et al. 1994
+15,oli_1,oli,Olivine," (Mg, Fe)2SiO4",silicates,-,,0.3,4.99002,470,/silicates/oli_1,Dorschner et al. 1995
+16,opy_0,opy,Orthopyroxen," (Mg, Fe)SiO3",silicates,-,,0.3,4.99002,470,/silicates/opy_0,Pollack et al. 1994
+17,car_0,car,Carbon,C,carbon,amorphous,,0.3,4.99002,470,/carbon/car_0,Preibisch et al. (1993)
+18,car_1,car,Carbon,C,carbon,amorphous,,0.3,4.99002,470,/carbon/car_1,Jena
+19,car_2,car,Carbon,C,carbon,amorphous,,0.3,4.99002,470,/carbon/car_2,Jena
+20,car_3,car,Carbon,C,carbon,amorphous,,0.3,4.99002,470,/carbon/car_3,Jena
+21,car_4,car,Carbon,C,carbon,amorphous,,0.3,4.99002,470,/carbon/car_4,Jena
+22,car_5,car,Carbon,C,carbon,amorphous,,0.3,4.99002,470,/carbon/car_5,Zubko 1996 ACAR
+23,met_0,met,Methane,CH4,ices,crystalline,40K,0.3,4.99002,470,/ices/met_0,Trotta et al 1995
+24,pyr_0,pyr,Pyroxene, x=0.40,silicates,-,,0.3,4.99002,470,/silicates/pyr_0,Dorschner et al. 1995
+25,pyr_1,pyr,Pyroxene, x=0.50,silicates,-,,0.3,4.99002,470,/silicates/pyr_1,Dorschner et al. 1995
+26,pyr_2,pyr,Pyroxene, x=0.60,silicates,-,,0.3,4.99002,470,/silicates/pyr_2,Dorschner et al. 1995
+27,pyr_3,pyr,Pyroxene, x=0.70,silicates,-,,0.3,4.99002,470,/silicates/pyr_3,Dorschner et al. 1995
+28,pyr_4,pyr,Pyroxene, x=0.80,silicates,-,,0.3,4.99002,470,/silicates/pyr_4,Dorschner et al. 1995
+29,pyr_5,pyr,Pyroxene, x=0.95,silicates,-,,0.3,4.99002,470,/silicates/pyr_5,Dorschner et al. 1995
+30,eth_0,eth,Ethylene,C2H4,ices,amorphous,30K,0.3,4.99002,470,/ices/eth_0,Hudson et al. 2014
+31,eth_1,eth,Ethylene,C2H4,ices,amorphous,40K,0.3,4.99002,470,/ices/eth_1,Hudson et al. 2014
+32,eth_2,eth,Ethylene,C2H4,ices,crystalline,30K,0.3,4.99002,470,/ices/eth_2,Hudson et al. 2014
+33,eth_3,eth,Ethylene,C2H4,ices,crystalline,40K,0.3,4.99002,470,/ices/eth_3,Hudson et al. 2014
+34,eta_0,eta,Ethane,C2H6,ices,crystalline,30K,0.3,4.99002,469,/ices/eta_0,Hudson et al. 2014
+35,eta_1,eta,Ethane,C2H6,ices,crystalline,40K,0.3,4.99002,469,/ices/eta_1,Hudson et al. 2014
+36,eta_2,eta,Ethane,C2H6,ices,amorphous,30K,0.3,4.99002,470,/ices/eta_2,Hudson et al. 2014
+37,eta_3,eta,Ethane,C2H6,ices,amorphous,40K,0.3,4.99002,470,/ices/eta_3,Hudson et al. 2014
+38,tae_0,tae,Titan Aerosol,,organics,-,,0.3,4.99002,470,/organics/tae_0,Rocha & Pilling (2014)
+39,enc_0,enc,Enceladus,,organics,-,80K,0.3,4.99002,470,/organics/enc_0,Rocha & Pilling (2014)
+40,eur_0,eur,Europa,,organics,-,90K,0.3,4.99002,470,/organics/eur_0,Rocha & Pilling (2014)
+41,m01_0,m01,Mixture1,H2O-NH3-CO,mixtures,-,13K,0.3,4.99002,470,/mixtures/m01_0,Rocha & Pilling (2014)
+42,tit_0,tit,Titan Tholin,0.9 N2: 0.1 CH4,organics,-,,0.3,4.99002,470,/organics/tit_0,-
+43,trt_0,trt,Triton Tholin,,organics,-,,0.3,4.99002,470,/organics/trt_0,-
