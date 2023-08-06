@@ -1,0 +1,4 @@
+[d3m.primitives]
+classification.global_causal_discovery.ClassifierRPI = rpi_d3m_primitives_part2.GCD_Classification:GCD_Classification
+regression.global_causal_discovery.RegressorRPI = rpi_d3m_primitives_part2.CBN_Regression:CBN_Regression
+
