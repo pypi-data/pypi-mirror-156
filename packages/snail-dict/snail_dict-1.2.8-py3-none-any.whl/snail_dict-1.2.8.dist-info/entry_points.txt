@@ -1,0 +1,3 @@
+[console_scripts]
+snail-dict-gui=snail_dict.gui:main
+

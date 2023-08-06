@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: snail-dict
+Version: 1.2.8
+Summary: 
+Author: PowerSnail
+Author-email: hj5fb@virginia.edu
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyQt6 (>=6,<7)
+Requires-Dist: PyQt6-WebEngine (>=6,<7)
+Requires-Dist: appdirs (>=1,<2)
+Requires-Dist: attrs (>=21,<22)
+Requires-Dist: docopt-ng (>=0,<1)
+Requires-Dist: python-rapidjson (>=1,<2)
+Requires-Dist: requests (>=2,<3)
+Requires-Dist: selectolax (>=0,<1)
+Requires-Dist: zstandard (>=0,<1)

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/henry/.local/bin/snail-dict-gui
+Name=Snail Dictionary
+StartupNotify=true
+StartupWMClass=snail-dict
+Icon=snail-dict
