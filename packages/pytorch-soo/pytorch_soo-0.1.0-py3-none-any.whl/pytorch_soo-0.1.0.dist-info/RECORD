@@ -1,0 +1,14 @@
+pytorch_soo/__init__.py,sha256=W2k_RYK4oFlH__87aXZdOGBmZXlqJIcbevYJr1W6hcQ,1383
+pytorch_soo/line_search_spec.py,sha256=zDFVpUgeBlGnfiDvj7-6_HM-4HTfJb3aEFJLysCBBpE,327
+pytorch_soo/matrix_free_operators.py,sha256=Tf7DpzNnEd8dk4WHyA-ARwJwqhhFjeRjy5SxLzCOlUo,11600
+pytorch_soo/matrix_operators.py,sha256=eR43rV7luY-h3xrCz7CzMcZp6x5GSfibVy4_6j-8_r8,3710
+pytorch_soo/mfcr_levenberg.py,sha256=inuW9K8iu1uint194dSngTeV9gbO6SlSARsCd_TgWuQ,10924
+pytorch_soo/nonlinear_conjugate_gradient.py,sha256=_cebYyv7hWZZfhcCe1lFxj91znIiSnhom4qHpvvcbew,13185
+pytorch_soo/optim_hfcr_newton.py,sha256=uObsBZsMmVnDjhxcN_yD55XN18lBmK3DOGif_4RHpL4,12415
+pytorch_soo/quasi_newton.py,sha256=WKfxD7YKT90hRIU5YjplBDBJy93hv7X-UwYE7CSK7AE,55978
+pytorch_soo/solvers.py,sha256=jqhlP19lUR7HfSiXYWJJ1gNX2ERYqAs2AcZKHdR5gCw,2646
+pytorch_soo/trust_region.py,sha256=2vSNcdYjg3tL6_StE8qNYFugDL0dOGLTGZh5ltF4dY0,8730
+pytorch_soo-0.1.0.dist-info/LICENSE,sha256=0HSYbwm3P6VgLRf6hjoQZbMD94XRRadAfKHnyJFCRmo,1094
+pytorch_soo-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pytorch_soo-0.1.0.dist-info/METADATA,sha256=YGLjGjF8ovacgdN82bn19S6kBgYEyvrgNOydwfEIzcM,404
+pytorch_soo-0.1.0.dist-info/RECORD,,
