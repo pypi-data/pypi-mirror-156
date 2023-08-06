@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: graphysio
+Version: 2022.6.26
+Summary: Visualizer and analyser for biometric signals
+Home-page: https://github.com/jaj42/GraPhysio
+License: ISC
+Author: Jona Joachim
+Author-email: jona@joachim.cc
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pint (>=0.19.2,<0.20.0)
+Requires-Dist: attrs (>=21.4.0,<22.0.0)
+Requires-Dist: numexpr (>=2.8.3,<3.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: pathvalidate (>=2.5.0,<3.0.0)
+Requires-Dist: physiocurve (>=2022.6.26,<2023.0.0)
+Requires-Dist: pyEDFlib (>=0.1.29,<0.2.0)
+Requires-Dist: pyarrow (>=8.0.0,<9.0.0)
+Requires-Dist: pyqtgraph (>=0.12.4,<0.13.0)
+Requires-Dist: scipy (>=1.8.1,<2.0.0)
+Project-URL: Repository, https://github.com/jaj42/GraPhysio
+Description-Content-Type: text/markdown
+
+# GraPhysio
+GraPhysio is a graphical time series visualizer created for physiologic
+data signals from ICU patient monitors. It is however not limited to this.
+It currently supports reading from CSV files.
+It can handle low frequency and high frequency data as well as aggregating
+and synchronizing signals from different sources.
+GraPhysio supports basic mathematical operations and filters and can help
+selecting and exporting time periods.
+Performance is good depending on your hardware for files up to 1 GB.
+
+## Install instructions
+To make GraPhysio work you need Python 3.6 or greater.
+
+You can then install the latest version of GraPhysio by tying the
+following command:
+
+> python -m pip install graphysio
+
+You can launch GraPhysio by typing:
+
+> python -m graphysio
+
+Alternatively, on Windows, you can use the release binaries.
+
