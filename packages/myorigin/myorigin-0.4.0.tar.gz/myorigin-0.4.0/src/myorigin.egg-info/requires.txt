@@ -1,0 +1,4 @@
+aiohttp
+sqlmodel
+platformdirs
+pytest
