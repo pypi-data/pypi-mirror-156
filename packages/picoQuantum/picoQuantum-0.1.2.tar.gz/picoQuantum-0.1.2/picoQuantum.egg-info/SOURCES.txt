@@ -1,0 +1,13 @@
+setup.py
+picoQuantum/Demo.py
+picoQuantum/__init__.py
+picoQuantum/heat.py
+picoQuantum/heat_1.py
+picoQuantum/heat_2.py
+picoQuantum/heat_3.py
+picoQuantum/io.py
+picoQuantum/sympytest.py
+picoQuantum.egg-info/PKG-INFO
+picoQuantum.egg-info/SOURCES.txt
+picoQuantum.egg-info/dependency_links.txt
+picoQuantum.egg-info/top_level.txt
