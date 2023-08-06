@@ -1,0 +1,14 @@
+junglead/__init__.py,sha256=b56WGmbYf8bBCmfQEbSiu6w3TJsFnQCHc_nbd39E9oM,702
+junglead/datetime_util.py,sha256=G90a9CVmCYLnbOhM9h6AQIdDhBYrdrGHmwhkBEvgz1Q,7196
+junglead/email_util.py,sha256=AbOb5oJ6E7Oeh1WjCz2IfkEobKRHc2mCKirJZm6p_WU,11305
+junglead/json_encoder.py,sha256=LN7O0Phe_8DcCfeGdJiH0YZHr3SHL4s3QSuEXwV_5q8,1175
+junglead/logger_util.py,sha256=iR32h9VcdLl-9Uxy3cp9IgKjvD2rCFt-hoq-mrVnTo0,2928
+junglead/regex_util.py,sha256=4bWrZ5A3YLpgsK-Kh1S-Gdu93jHsxq2vxtTqfKpmk0w,7065
+junglead/model/__init__.py,sha256=_8SarfLixdVpMpL-zmMEQ-TYXFqpepETm2g5XRCrTJo,462
+junglead/model/extend_datetime.py,sha256=xQo6nIKKEQfnsNHu0lwYBk58QjetAfxK8XXVCh5YbOM,2724
+junglead/model/extend_decimal.py,sha256=2b_sKjWyISJl5QnKghFuHofWYHCSHBglfqrrBmNFXc4,1085
+junglead-2.2.dist-info/LICENSE,sha256=eL2YCL0aTms8zUt30XbOhLoUBJrNdtX-C9xy7y1-xZQ,1090
+junglead-2.2.dist-info/METADATA,sha256=pWHO5jWzTaWWOxDRVzyD5z3HDUZtekJdnDONl2DAPtY,3305
+junglead-2.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+junglead-2.2.dist-info/top_level.txt,sha256=cOEhG3a98rEPTm-6XF6YrIbk4U8k2wMGPpPWDWcooPI,9
+junglead-2.2.dist-info/RECORD,,
