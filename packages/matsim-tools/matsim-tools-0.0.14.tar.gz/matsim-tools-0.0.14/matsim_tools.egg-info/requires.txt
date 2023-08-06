@@ -1,0 +1,6 @@
+protobuf>=3.10.0
+xopen
+pandas
+
+[calibration]
+optuna>=2.7.0
