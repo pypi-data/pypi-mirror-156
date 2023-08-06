@@ -1,0 +1,3 @@
+[console_scripts]
+icikt = icikt.__main__:main
+
