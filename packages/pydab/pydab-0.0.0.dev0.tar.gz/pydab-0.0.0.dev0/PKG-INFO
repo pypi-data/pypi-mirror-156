@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pydab
+Version: 0.0.0.dev0
+Summary: A Python package for modifying and converting DAB files
+Home-page: https://github.com/krishnanlab/pydab
+Author: Remy Liu
+Author-email: liurenmi@msu.edu
+License: MIT
+Keywords: Network Data Conversion
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <img src="dab.png" />
+</p>
+
+# pydab
+A (_blazing fast_?) Python package for modifying and converting DAB files
+
+
