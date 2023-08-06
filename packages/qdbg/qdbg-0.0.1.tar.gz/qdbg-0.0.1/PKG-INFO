@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: qdbg
+Version: 0.0.1
+Summary: quick debugging cli tool
+License: GNU Affero General Public License v3
+Author: Jimmy Herman
+Author-email: jimmyherman29@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
