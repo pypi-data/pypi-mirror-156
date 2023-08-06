@@ -1,0 +1,23 @@
+tqdm>=4.27.0
+aiohttp
+pydantic
+
+[:python_version < "3.8"]
+typing_extensions
+
+[docs]
+sphinx
+sphinx-automodapi
+sunpy-sphinx-theme
+sphinx-autodoc-typehints
+
+[ftp]
+aioftp>=0.17.1
+
+[tests]
+pytest
+pytest-localserver
+pytest-asyncio
+pytest-socket
+pytest-cov
+aiofiles
