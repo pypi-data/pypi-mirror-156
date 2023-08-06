@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: PyAFBF
+Version: 0.1.3
+Summary: Sample image textures from anisotropic fractional Brownian fields
+Home-page: https://github.com/fjprichard/PyAFBF/
+Author: Frederic Richard
+Author-email: frederic.richard@univ-amu.fr
+License: GPLv3
+Project-URL: Documentation, https://fjprichard.github.io/PyAFBF/
+Project-URL: Source, https://github.com/fjprichard/PyAFBF/
+Project-URL: Tracker, https://github.com/fjprichard/PyAFBF/issues
+Keywords: image texture,anisotropic fractional Brownian field,simulation
+Platform: Linux
+Platform: MacOSX
+Platform: Windows
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+License-File: LICENSE.rst
+License-File: AUTHORS.rst
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: matplotlib (>=3.3.2)
+Requires-Dist: scipy (>=1.5.2)
+Provides-Extra: dev
+Requires-Dist: doctest ; extra == 'dev'
+
+The Package PyAFBF is intended for the simulation of rough anisotropic image textures. Textures are sampled from a mathematical model called the anisotropic fractional Brownian field. More details can be found on the `documentation <https://fjprichard.github.io/PyAFBF/>`_.
+
+Package features
+================
+
+- Simulation of rough anisotropic textures,
+
+- Computation of field features (semi-variogram, regularity, anisotropy indices) that can serve as texture attributes,
+
+- Random definition of simulated fields,
+
+- Extensions to related fields (deformed fields, intrinsic fields, heterogeneous fields, binary patterns).
+
+
+Installation from sources
+=========================
+
+The package source can be downloaded from the `repository <https://github.com/fjprichard/PyAFBF>`_. 
+
+The package can be installed through PYPI with
+ 
+ pip install PyAFBF
+ 
+To install the package in a Google Collab environment, please type
+
+ !pip install imgaug==0.2.6
+ 
+ !pip install PyAFBF
+
+Communication to the author
+===========================
+
+PyAFBF is developed and maintained by Frédéric Richard. For feed-back, contributions, bug reports, contact directly the `author <https://github.com/fjprichard>`_, or use the `discussion <https://github.com/fjprichard/PyAFBF/discussions>`_ facility.
+
+
+Licence
+=======
+
+PyAFBF is under licence GNU GPL, version 3.
+
+Contents
+========
+
+    - Quick start guide
+       - Getting started
+       - Customed models
+       - Tuning model parameters
+       - Model features
+       - Simulating with turning-band fields
+    - Example gallery
+       - Basic examples
+       - Extended anisotropic fields
+       - Heterogeneous fields
+       - Related anisotropic fields
+    - API: main classes
+       - AFBF (field)
+       - Turning band field (tbfield)
+    - API: auxiliary classes
+       - Periodic functions (perfunction)
+       - Coordinates (coordinates)
+       - Spatial data (sdata)
+       - Process (process)
+       - Turning bands (tbparameters)
+       - ndarray
+
+
+
+Credits
+=======
+
+PyAFBF is written and maintained by Frederic Richard, Professor at Aix-Marseille University, France.
+
+
+
+
