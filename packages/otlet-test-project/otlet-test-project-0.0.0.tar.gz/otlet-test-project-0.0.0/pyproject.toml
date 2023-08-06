@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "otlet-test-project"
+version = "0.0.0"
+description = "do not download. for testing purposes only."
+authors = ["kevinshome <noah.tanner7@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.0"
+otlet = {version = "^1.0.0rc1", markers = "os_name == \"posix\""}
+otlet-cli = {version = "^1.0.0rc4", markers = "sys_platform == \"linux\" and os_name == \"posix\""}
+django = {version = "^4.0.3", markers = "platform_machine == \"aarch64\" and platform_python_implementation == \"CPython\""}
+#pygame = {version = "^2.1.2", marker = "platform_system == \"Windows\""}
+#tensorflow = {version = "^2.9.1", marker = "(python_version > \"3.6\") and extra == \"alleniverson\""}
+#numpy = {version = "1.2.0", marker = "python_version < \"3.5\""}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
