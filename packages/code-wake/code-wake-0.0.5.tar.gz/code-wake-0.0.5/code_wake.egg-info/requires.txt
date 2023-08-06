@@ -1,0 +1,13 @@
+bencode.py==4.0.0
+pyyaml==6.0
+singleton-type==0.0.5
+
+[dev]
+black==22.3.0
+coverage==6.2
+isort==5.10.1
+mypy==0.961
+pytest==7.0.1
+sqlalchemy-utils==0.38.2
+sqlalchemy==1.4.39
+types-pyyaml==6.0.8
