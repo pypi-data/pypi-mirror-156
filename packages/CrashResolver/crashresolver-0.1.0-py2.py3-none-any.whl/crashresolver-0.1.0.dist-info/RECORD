@@ -1,0 +1,10 @@
+CrashResolver/__init__.py,sha256=6RpxC3AMI2bhBZLW8ClaJhPDXDIt08AaGzh6YcHGW0s,617
+CrashResolver/classifier.py,sha256=d2zOc7KgYFFqCNxfS_hUDCQ-U4ELpKkJV0GyKnbSm8M,7836
+CrashResolver/config.py,sha256=9fqbd-peegRnuR5tWapFsomlr9Z6kMo7SJ90TP9hQpM,1342
+CrashResolver/downloader.py,sha256=MALEFFfo2KpXEh6WHij1Dmo6SfS7Iuh_8bRPR2Vg-zk,4226
+CrashResolver/reporter.py,sha256=5ndshJ0RJIJOGIEs7ZUc4WrAELODzWTAUkPA_vaMuz4,4792
+CrashResolver/setup.py,sha256=0GuM-bIDPRtr4LqPFfrkeflp9aWzvbirn1FcNK1kX2o,437
+crashresolver-0.1.0.dist-info/LICENSE,sha256=w0KGFqlYlPh8DHZLgdX8lBXl6hqJN3WsFCuOTvBrAXo,1064
+crashresolver-0.1.0.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+crashresolver-0.1.0.dist-info/METADATA,sha256=rw13ceH8cU1RHfEOHrjM7PtIedgBGqZmPdLNupyKOpo,397
+crashresolver-0.1.0.dist-info/RECORD,,
