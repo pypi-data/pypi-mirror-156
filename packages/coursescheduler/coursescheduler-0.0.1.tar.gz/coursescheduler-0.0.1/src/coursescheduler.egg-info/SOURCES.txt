@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/coursescheduler/__init__.py
+src/coursescheduler/scheduler.py
+src/coursescheduler.egg-info/PKG-INFO
+src/coursescheduler.egg-info/SOURCES.txt
+src/coursescheduler.egg-info/dependency_links.txt
+src/coursescheduler.egg-info/top_level.txt
