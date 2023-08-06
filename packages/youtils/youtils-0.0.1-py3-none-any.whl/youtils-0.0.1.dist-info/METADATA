@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: youtils
+Version: 0.0.1
+Summary: Utils for You
+Home-page: http://github.com/antonitto/youtils
+Author: amarkov
+Author-email: markov.anton.a@gmail.com
+License: MIT
+Keywords: funniest joke comedy flying circus
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: markdown
+
+youtils - Utils for You
+=======================
+
+This is a test package I created to play with various build & distribution tools
