@@ -1,0 +1,3 @@
+[console_scripts]
+image-to-cpp=image_to_cpp.main:main
+
