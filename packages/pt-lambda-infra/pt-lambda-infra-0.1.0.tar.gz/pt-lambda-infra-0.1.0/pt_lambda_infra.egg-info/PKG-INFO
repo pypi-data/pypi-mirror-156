@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pt-lambda-infra
+Version: 0.1.0
+Summary: infrastructure for pt lambda
+Home-page: UNKNOWN
+Author: JimmyMo
+Author-email: UNKNOWN
+License: apache 3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: boto3
