@@ -1,0 +1,11 @@
+ubuntu_ppa_package_version_report/__init__.py,sha256=akMaO_3ZTM-3CB_XAqecexol9LIMIqpkxZQwXvq0_NM,183
+ubuntu_ppa_package_version_report/cli.py,sha256=ca4i1f_4z0Ol54lZhEmg_lQxeoZnrBGhs7nZOmuR4WQ,4381
+ubuntu_ppa_package_version_report/launchpadagent.py,sha256=iAtjAhF8c_JSR8iahOTM7zm5WlmWL5evEdOQpx6P1kc,2995
+ubuntu_ppa_package_version_report/ubuntu_ppa_package_version_report.py,sha256=vTEqqjyCf0qZuoQwKd_rN4M-vgT8ff_6LkVkQxjbpos,873
+ubuntu_ppa_package_version_report-0.0.5.dist-info/AUTHORS.rst,sha256=q7LYFWocRRwSZTUUJfqMrBFbBo2cgzyhF9JXlD-oH5s,162
+ubuntu_ppa_package_version_report-0.0.5.dist-info/LICENSE,sha256=ZEkBIu9J7K1fwDV3zIcZwghYBunlqhd1s9x_EQBjGkI,1584
+ubuntu_ppa_package_version_report-0.0.5.dist-info/METADATA,sha256=x5Ap9G4_qG3XremRuRJJgq5t152x26FLC0Vs9lmTbU0,1904
+ubuntu_ppa_package_version_report-0.0.5.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ubuntu_ppa_package_version_report-0.0.5.dist-info/entry_points.txt,sha256=G7cYTZzCohyiZbJYWZ8OXmnBE33_f__3EI60nfFarls,98
+ubuntu_ppa_package_version_report-0.0.5.dist-info/top_level.txt,sha256=-Px4TFcThkXbb8q_a3Haiu-sfLMafkfAY6qhIHRzM8g,34
+ubuntu_ppa_package_version_report-0.0.5.dist-info/RECORD,,
