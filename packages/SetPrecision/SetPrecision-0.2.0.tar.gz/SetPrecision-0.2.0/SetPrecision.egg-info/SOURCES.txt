@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+SetPrecision/SetPrecision.py
+SetPrecision/__init__.py
+SetPrecision.egg-info/PKG-INFO
+SetPrecision.egg-info/SOURCES.txt
+SetPrecision.egg-info/dependency_links.txt
+SetPrecision.egg-info/requires.txt
+SetPrecision.egg-info/top_level.txt
+SetPrecision/tests/SetPrecision_test.py
+SetPrecision/tests/__init__.py
