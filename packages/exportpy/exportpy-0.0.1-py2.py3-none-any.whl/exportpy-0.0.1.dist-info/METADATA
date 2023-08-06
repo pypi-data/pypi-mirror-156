@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: exportpy
+Version: 0.0.1
+Summary: Serialize Python classes as Python code.
+Author-email: Lamin Labs <laminlabs@gmail.com>
+Description-Content-Type: text/markdown
+Requires-Dist: nbproject
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: nbmake ; extra == "test"
+Project-URL: Home, https://github.com/laminlabs/exportpy
+Provides-Extra: dev
+Provides-Extra: test
+
+# ExportPy: Serialize Python classes as Python code
+
+This package is in private beta at this moment!
+
+Follow https://twitter.com/laminlabs to learn about a first public release.
+
+For beta users: Read the [docs](https://lamin.ai/exportpy).
+
