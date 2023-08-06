@@ -1,0 +1,194 @@
+Metadata-Version: 2.1
+Name: pprl
+Version: 0.3.1
+Summary: Wrapper around PPRL services provided by MDS Group Leipzig
+License: MIT
+Author: Maximilian Jugl
+Author-email: Maximilian.Jugl@medizin.uni-leipzig.de
+Maintainer: Maximilian Jugl
+Maintainer-email: Maximilian.Jugl@medizin.uni-leipzig.de
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Security
+Classifier: Typing :: Typed
+Requires-Dist: requests (>=2.28.0,<3.0.0)
+Project-URL: Documentation, https://pprl.gitlab.io/pprl-python-client/
+Description-Content-Type: text/markdown
+
+# PPRL library
+
+The `pprl` library provides wrappers around the PPRL REST services provided by the Medical Data Science Group Leipzig.
+The main entrypoints are `pprl.encoder`, `pprl.match` and `pprl.broker` which are all submodules for consuming the APIs of the respective services.
+
+## Documentation
+
+The documentation of the latest commit on the `master` branch [can be seen on GitLab](https://pprl.gitlab.io/pprl-python-client/).
+
+## Running tests
+
+Run the linter in the root directory using `poetry run flake8`.
+
+Navigate to the [tests](./tests) directory on the command line and execute `docker compose up -d`.
+This will start a number of services that are required to run the integration tests.
+Once they're up and running (might take a couple minutes), run the following command in the root directory of this repository.
+
+```
+$ PYTEST_BROKER_BASE_URL="http://localhost:8080/broker" \
+    PYTEST_ENCODER_BASE_URL="http://localhost:8080/encoder" \
+    PYTEST_MATCH_BASE_URL="http://localhost:8080/matcher" \
+    poetry run pytest
+```
+
+## Installation
+
+Run `pip install pprl`.
+You can then import the `pprl` module in your project.
+
+## Usage
+
+The following snippet shows how to encode an entity with specific Bloom filter encoding definitions and attribute schemas with the `encoder` submodule.
+Depending on which parameters you choose, some options may be mandatory, despite them being type hinted as optional.
+
+```py
+from pprl import AttributeSchema, BloomFilterConfiguration, Entity
+from pprl.encoder import EncoderClient
+
+encoder = EncoderClient("http://localhost:8080/encoder")
+entities = encoder.encode(
+    config=BloomFilterConfiguration(
+        filter_type="RBF",
+        hash_strategy="RANDOM_SHA256",
+        key="s3cr3t"
+    ),
+    schema_list=[
+        AttributeSchema(
+            attribute_name="name",
+            data_type="string",
+            average_token_count=10,
+            weight=2
+        ),
+        AttributeSchema(
+            attribute_name="age",
+            data_type="integer",
+            average_token_count=3,
+            weight=1
+        )
+    ],
+    entity_list=[
+        Entity(id="1", attributes={
+            "name": "foobar",
+            "age": 42
+        })
+    ]
+)
+
+for entity in entities:
+    print(f"{entity.id} = {entity.value}")
+```
+
+You can use the generated Base64-encoded bit vectors to compute their similarities to one another.
+You will need to make use of the `match` submodule.
+
+```py
+from pprl import MatchConfiguration
+from pprl.match import MatchClient
+
+matcher = MatchClient("http://localhost:8080/matcher")
+matches = matcher.match(
+    config=MatchConfiguration(
+        match_function="JACCARD",
+        match_mode="CROSSWISE",
+        threshold=0.8
+    ),
+    domain_list=["Zm9vYmFyCg=="],
+    range_list=["Zm9vYmF6Cg=="]
+)
+
+for match in matches:
+    print(f"{match.domain} => {match.range} ({round(match.similarity, 3)})")
+```
+
+The `broker` submodule is for consuming the broker service API.
+It is designed for massively parallel distributed record linkage.
+As such, the following example is a bit more complicated, but not by much.
+Effectively, a new session is created.
+Two clients will join the session, submit their bit vectors and receive their results eventually.
+
+```py
+import time
+
+from pprl import BitVector, BitVectorMetadata, BitVectorMetadataSpecification, MatchConfiguration
+from pprl.broker import BrokerClient
+
+broker = BrokerClient("http://localhost:8080/broker")
+
+# we can discard the second argument since we won't receive any cancellation arguments
+# from the "simple" cancellation strategy
+session_secret, _ = broker.create_session(
+    config=MatchConfiguration(
+        match_function="JACCARD",
+        threshold=0.8
+    ),
+    session_cancellation="SIMPLE",
+    metadata_specifications=[
+        BitVectorMetadataSpecification(
+            name="createdAt",
+            data_type="datetime",
+            decision_rule="keepLatest"
+        )
+    ]
+)
+
+# we create two clients identified by different secrets
+client_1_secret = broker.create_client(session_secret)
+client_2_secret = broker.create_client(session_secret)
+
+broker.submit_bit_vectors(client_1_secret, [
+    BitVector(
+        id="1",
+        value="Zm9vYmFyCg==",
+        metadata=[
+            BitVectorMetadata(
+                name="createdAt", 
+                value="2022-06-21T10:24:36+02:00"
+            )
+        ]
+    )
+])
+
+broker.submit_bit_vectors(client_2_secret, [
+    BitVector(
+        id="2",
+        value="Zm9vYmF6Cg==",
+        metadata=[
+            BitVectorMetadata(
+                name="createdAt", 
+                value="2022-06-21T10:25:25+02:00"
+            )
+        ]
+    )
+])
+
+# wait for matching to finish and check back every second
+while broker.get_session_progress(session_secret) < 1:
+    time.sleep(1)
+
+# now print out the results for every client
+for client_secret in (client_1_secret, client_2_secret):
+    print(f"matches for client {client_secret}")
+
+    for match in broker.get_results(client_secret):
+        print(f"  {match.vector.id} ({round(match.similarity, 3)})")
+
+# finally, cancel the session
+broker.cancel_session(session_secret)
+```
