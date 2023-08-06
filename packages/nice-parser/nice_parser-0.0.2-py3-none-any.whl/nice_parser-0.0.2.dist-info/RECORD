@@ -1,0 +1,12 @@
+nice/__init__.py,sha256=Cv0_kaxfcI9DlQIj6qn7lb4XarBqW245td-ze-dE2_I,162
+nice/column.py,sha256=aZGdCg4Up1pDeMGyqqP3odcv4jsCu0UAMM3FblK3afY,642
+nice/database.py,sha256=1-sNuJVmaPbKeUIV64giJ7OjE_gO-BDy2uR7wCpEUWU,1646
+nice/dtypes.py,sha256=1tjtv96n902Ve0B4raQCXG6UQX2m7uYpzg3L-aVBRbA,471
+nice/parser.py,sha256=afSR5-DcuquVzNPqivQPIfEtN8rG2DIV77O5epTWjPo,3782
+nice/query.py,sha256=_Z83bM-RotMY05frBAfNi56L4Pz7FkmQF77Ab-j6n9Y,2063
+nice/table.py,sha256=pl_nluCs8BaeATkXmHGTsg_0J19NY8qaIhJ1Fd6xcYM,1453
+nice_parser-0.0.2.dist-info/LICENSE,sha256=QpsmbGGRBWiDqy827p89CCVz5MVDJ-Ijt1o7V0Fzw5s,1090
+nice_parser-0.0.2.dist-info/METADATA,sha256=IfxUImhVlwlUy3vrjG9Eu5Ba3DaRdxq6R0Md0Z48Smc,3336
+nice_parser-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nice_parser-0.0.2.dist-info/top_level.txt,sha256=9j5orAvwUq6SPAP1sSrtxsykmHTBybDM8_ObZi0fSHs,5
+nice_parser-0.0.2.dist-info/RECORD,,
