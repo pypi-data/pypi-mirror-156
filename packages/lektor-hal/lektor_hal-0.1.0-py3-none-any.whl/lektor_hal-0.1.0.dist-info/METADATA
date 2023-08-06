@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: lektor-hal
+Version: 0.1.0
+Summary: Fetches publications from HAL
+Home-page: http://gilab.com/nicocool84/lektor-hal
+Author: Nicolas Cedilnik
+Author-email: nicoco@nicoco.fr
+License: MIT
+Keywords: Lektor plugin static-site blog
+Platform: UNKNOWN
+Classifier: Framework :: Lektor
+Classifier: Environment :: Web Environment
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# Lektor-HAL
+
+A plugin for [lektor](https://www.getlektor.com) to easily maintain an up-to-date
+list of publications on a static website.
+
+## Configuration
+
+Add `lektor-hal` to the `[packages]` section of your `.lektorproject` file.
+
+In `./configs/hal.ini`, the query field must be specified, following to the
+[HAL docs](https://api.archives-ouvertes.fr/docs/search)
+
+Example:
+
+```
+query = ((authIdHal_s:my-id-hal) OR (authFullName_s:"My Name"))
+```
+
+## Usage
+
+### Example
+
+```jinja2
+<ul class="publications" id="publications">
+  {% for publi in hal_publications %}
+  <li>
+    <a href={{ publi.link }}>{{ publi.title }}</a>
+    @
+    {{ publi.where }} -
+    {{ publi.authors|join(', ') }}
+    ({{ publi.date }})
+  </li>
+  {% endfor %}
+</ul>
+```
+
+Two global variables are available in your jinja template, `hal_publications` and
+`hal_request`.
+
+### `hal_publications`
+
+A list of `Publication`s, a dataclass with the following attributes:
+
+- `raw`: A dict containing everything about this publication returned by the
+  HAL API.
+- `title`: The title of the publication
+- `hal_id`: The HAL ID of the publication
+- `authors`: A list of strings (author names)
+- `date`: A string (`producedDate_s`)
+
+and properties:
+
+- `link`: URL pointing to the HAL resource
+- `where`: returns where the article was published (`journalTitle_s` or `conferenceTitle_s`
+  if missing)
+
+### `hal_request`
+
+URL used of the HAL API request.
+
+## Known caveat
+
+Lektor will not 'know' that the page must be rebuilt when new entries are
+returned by the HAL API request, so you need to either clear the lektor build
+cache (`lektor clean`) or modify the page where the publications are listed.
+I am not certain how to cleanly handle this, any suggestion is welcome!
+
+
