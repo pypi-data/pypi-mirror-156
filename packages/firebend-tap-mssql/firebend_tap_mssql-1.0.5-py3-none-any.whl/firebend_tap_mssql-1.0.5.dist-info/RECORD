@@ -1,0 +1,13 @@
+tap_mssql/__init__.py,sha256=CpNi9u4x_ypL04BuACFZmcciz1EBM9cSYXIlod7yzyg,23629
+tap_mssql/connection.py,sha256=2GwR2IW5NZCcX_mRv9catc3hb8gCP_kjf-4IzE7BT7E,2108
+tap_mssql/sync_strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_mssql/sync_strategies/common.py,sha256=MmuxJrnjob4Y3g39l1q1-r_Iw0Wvr_zMFamHuNXI0sw,8662
+tap_mssql/sync_strategies/full_table.py,sha256=KxpMwrOaKAC5PcGHUD3c7U3uzh_4a8uo8-d27-nu1Kc,2590
+tap_mssql/sync_strategies/incremental.py,sha256=bMkPlOgtNEwHDYEPnBy01blCLJKhoKGp008hXx8x1XI,2729
+tap_mssql/sync_strategies/logical.py,sha256=JjaQS5Abxi5NIqLzyciiHFRXaB1GTUYOQvCzL3Uq1PE,14266
+firebend_tap_mssql-1.0.5.dist-info/LICENSE,sha256=xNuDgLmykYhajKZueHKWS9ZgnCFZ47hzbPCyI5-hs9c,32393
+firebend_tap_mssql-1.0.5.dist-info/METADATA,sha256=T2SSeJxNnibxLef0LPpE5hO43pUb4KOCC69fKjreG0Q,15889
+firebend_tap_mssql-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+firebend_tap_mssql-1.0.5.dist-info/entry_points.txt,sha256=YcQ-L4738nFqeNPPylsPy3OeMmT_r5hkbeqnfb07POA,70
+firebend_tap_mssql-1.0.5.dist-info/top_level.txt,sha256=8Y68tedDbzKLt-xRzwjfk5DoyLWyI_Sk9myZyfdkoq8,10
+firebend_tap_mssql-1.0.5.dist-info/RECORD,,
