@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+demo/mpl_plot.py
+demo/progress.py
+demo/rootwindow.py
+tests/__init__.py
+tests/test_tkthread.py
+tkthread/__init__.py
+tkthread/_version.py
+tkthread/_willdispatch.py
+tkthread.egg-info/PKG-INFO
+tkthread.egg-info/SOURCES.txt
+tkthread.egg-info/dependency_links.txt
+tkthread.egg-info/top_level.txt
