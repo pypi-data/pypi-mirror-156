@@ -1,0 +1,9 @@
+LICENCE.txt
+README.md
+setup.py
+techfin/__init__.py
+techfin.egg-info/PKG-INFO
+techfin.egg-info/SOURCES.txt
+techfin.egg-info/dependency_links.txt
+techfin.egg-info/requires.txt
+techfin.egg-info/top_level.txt
