@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: maglimit
+Version: 0.0.2
+Summary: A package to identify the limiting magnitude of the telescope
+Home-page: https://github.com/iamstarstuff/maglimit
+License: MIT
+License-File: LICENSE
+
