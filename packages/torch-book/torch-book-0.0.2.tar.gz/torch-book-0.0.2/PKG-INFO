@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: torch-book
+Version: 0.0.2
+Summary: Dive into Torch Book.
+Author-email: xinetzone <735613050@qq.com>
+Maintainer-email: xinetzone <735613050@qq.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: sphinx>=4.5
+Requires-Dist: invoke
+Requires-Dist: d2py
+Requires-Dist: xyzstyle
+Requires-Dist: attrs
+Requires-Dist: sphinx-book-theme ; extra == "doc"
+Requires-Dist: ablog ; extra == "doc"
+Requires-Dist: myst-nb ; extra == "doc"
+Requires-Dist: sphinx-thebe ; extra == "doc"
+Requires-Dist: sphinx-copybutton ; extra == "doc"
+Requires-Dist: sphinx-comments ; extra == "doc"
+Requires-Dist: plotly ; extra == "doc"
+Requires-Dist: pandas ; extra == "doc"
+Requires-Dist: matplotlib ; extra == "doc"
+Requires-Dist: sphinxcontrib-mermaid ; extra == "doc"
+Requires-Dist: sphinx-design ; extra == "doc"
+Requires-Dist: sphinx-inline-tabs ; extra == "doc"
+Requires-Dist: sphinx-automodapi ; extra == "doc"
+Requires-Dist: sphinxcontrib-bibtex ; extra == "doc"
+Project-URL: Home, https://github.com/xinetzone/d2py
+Provides-Extra: doc
+
+# Torch Book
+
+[![PyPI](https://img.shields.io/pypi/v/torch-book.svg)](https://pypi.org/project/torch-book/) [![GitHub issues](https://img.shields.io/github/issues/xinetzone/torch-book)](https://github.com/xinetzone/torch-book/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/torch-book)](https://github.com/xinetzone/torch-book/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/torch-book)](https://github.com/xinetzone/torch-book/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/torch-book)](https://github.com/xinetzone/torch-book/blob/main/LICENSE) ![repo size](https://img.shields.io/github/repo-size/xinetzone/torch-book.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/torch-book.svg)](https://github.com/xinetzone/torch-book/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/torch-book.svg)](https://github.com/xinetzone/torch-book/watchers) [![watcher](https://img.shields.io/github/watchers/xinetzone/torch-book.svg)](https://github.com/xinetzone/torch-book/watchers) [![Documentation Status](https://readthedocs.org/projects/torch-book/badge/?version=latest)](https://torch-book.readthedocs.io/zh/latest/?badge=latest) [![Downloads](https://pepy.tech/badge/torch-book/week)](https://pepy.tech/project/torch-book)  [![Downloads](https://pepy.tech/badge/torch-book)](https://pepy.tech/project/torch-book)
+
+## 支持 PyPI
+
+需要安装 `torch-book` 包：
+
+```shell
+pip install torch-book
+```
+
