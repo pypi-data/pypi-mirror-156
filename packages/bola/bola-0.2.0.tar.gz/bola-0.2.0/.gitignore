@@ -1,0 +1,9 @@
+__pycache__
+bola.egg-info
+*.lprof
+*.h5
+*.xdmf
+*.msh
+*.so
+*.jpg
+*build*
