@@ -1,0 +1,13 @@
+bodhi/messages/__init__.py,sha256=5R3PkbDtbYc89zqGMMbgH7Tm57Ghl_OyyifDaPNLRmA,906
+bodhi/messages/schemas/__init__.py,sha256=CDblXforJedJSOhxhdY16nexTbjvn7ufaknH89P29n0,793
+bodhi/messages/schemas/base.py,sha256=2DGyczXdp5TzVMo0xhoOfDEJirogbTdq7pHXOFX_22A,8555
+bodhi/messages/schemas/buildroot_override.py,sha256=BELqFk0G0T7Oarsl8dOTTQ_alytEwfMiDDFn-Jn4BTc,4769
+bodhi/messages/schemas/compose.py,sha256=bhtifSGNe2Wt1hXrlpu2ggu35oIRbQptTo9OKmU_b5w,9227
+bodhi/messages/schemas/errata.py,sha256=ytnoO6YUTogxGljZESYgMN3q_G1XJsYAloP508gXayo,3778
+bodhi/messages/schemas/update.py,sha256=OYWid3F6cB3MV9CPE3-iQHCDNGNupyo0Ru5kRDlI5tQ,26196
+bodhi/messages/utils.py,sha256=mWiTlhi48QjTQWrrfSgtg5swyI3A2viq7fwUXM6j5sM,1271
+bodhi_messages-6.0.1.dist-info/entry_points.txt,sha256=CwZC6AGUBO2Ti_-lpnF3Ya7XJigUt3ORxQRMz2GN8cA,1869
+bodhi_messages-6.0.1.dist-info/COPYING,sha256=bggKngWIsEXAi3MHayPI2PTB43-WQ_PBjFkDU14CIiQ,18018
+bodhi_messages-6.0.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+bodhi_messages-6.0.1.dist-info/METADATA,sha256=HF-zPAkKV3A1ZxyilrnK6lkTxlEvOwxea2nZ1JN1uF0,1157
+bodhi_messages-6.0.1.dist-info/RECORD,,
