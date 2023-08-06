@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yuhang
+Version: 0.0.1
+Summary: 简单的加减运算上传测试
+Home-page: https://www.yuhang.com
+Author: 查米刘
+Author-email: liucm421@163.com
+License: UNKNOWN
+Description: 简单的加减运算上传测试
+Keywords: laipvt
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
