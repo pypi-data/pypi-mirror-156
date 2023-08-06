@@ -1,0 +1,16 @@
+litexplore/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+litexplore/__main__.py,sha256=CvS75G_7-LFpcVObJV2DS23P0r5mnkTA4gu8dUgGGhk,818
+litexplore/app.py,sha256=Vu41MNL1l9C7TEpFGXzyudW0eYfeNaR7caSzVRFi9m8,15285
+litexplore/static/css/pico.min.css,sha256=_DxgpGVYZG-MD0Z_HCk-Dg3YF85-4JPeL3bgjzIfLPI,71395
+litexplore/static/js/htmx.min.js,sha256=bzGSS4QmlJFKScN8CwRQiW8_DWSHr7ETQNezHdCO598,37374
+litexplore/templates/base.html,sha256=OYzSF_EO4ehTDJwQpA35OiQDqKmzDBrropelMThMDME,1344
+litexplore/templates/index.html,sha256=VHrd65tMDxTZghrF0lalvL0LD_0Sz5EnjYi0Yt7YCLE,1303
+litexplore/templates/macros.html,sha256=PHQ7EvxhubnKeA4Vaw06OxAVGyRoNRXqqQo7Qg5bYGk,1558
+litexplore/templates/table-rows.html,sha256=pWi7TEXRpySDgHzzI6S6e-yX_omNCc5XH6m47_bl4yI,567
+litexplore/templates/tables.html,sha256=evz_FtHjnhzLEypwvtiIQWsZwVK9gZliWe4HfDtkKeo,290
+litexplore/templates/view-table.html,sha256=bZBy1s5jLomsyPIkt0bG_KVfZ8nHzrnd_zITtLFHXds,662
+litexplore-0.0.1.dist-info/METADATA,sha256=kuT4swBF-YtU0nMBUMSu_1w4-EAzmS-EcfF0kgrT7X4,2689
+litexplore-0.0.1.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+litexplore-0.0.1.dist-info/entry_points.txt,sha256=sky6WxE5siLAkgjYBHHxtlKr_FIaUfOTlmMSw1q6X9Q,51
+litexplore-0.0.1.dist-info/license_files/LICENSE,sha256=TgkJJ0t9GkpYbhl9C2NvVbQhGSpFKEF3XVHKLV30EGg,1074
+litexplore-0.0.1.dist-info/RECORD,,
