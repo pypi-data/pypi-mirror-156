@@ -1,0 +1,7 @@
+numpy
+matplotlib
+PySerial
+PyUSB
+pyftdi
+opencv-python
+LabJackPython
