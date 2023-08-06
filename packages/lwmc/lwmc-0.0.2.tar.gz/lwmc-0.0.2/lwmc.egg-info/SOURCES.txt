@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+lwmc.egg-info/PKG-INFO
+lwmc.egg-info/SOURCES.txt
+lwmc.egg-info/dependency_links.txt
+lwmc.egg-info/top_level.txt
