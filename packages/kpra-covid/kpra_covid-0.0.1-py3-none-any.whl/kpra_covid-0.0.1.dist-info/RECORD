@@ -1,0 +1,8 @@
+kpra_covid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kpra_covid/covid_tracker.py,sha256=J9yfTSujLIw0Vu5p8F343fv21JcfbYcgaitvQoyEIIs,1565
+kpra_covid/main.py,sha256=FLxErwDa0vBmyBSsYNybwW5Pxb3bifuHc9Q_X1TAPns,3726
+kpra_covid/utils.py,sha256=N4Vs2hS-cpRNC_Hoiqx6IyIH5E4IPzb0rTmlEpeZa9s,792
+kpra_covid-0.0.1.dist-info/METADATA,sha256=OWcpcggFNvkZPSeeMKGPHujqEEu-QS9mUGef3JUXSz8,918
+kpra_covid-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kpra_covid-0.0.1.dist-info/top_level.txt,sha256=7FqQd5F-n6GFV2O8tKsZIN74Aija9uJ4ZXKrHCD_umg,11
+kpra_covid-0.0.1.dist-info/RECORD,,
