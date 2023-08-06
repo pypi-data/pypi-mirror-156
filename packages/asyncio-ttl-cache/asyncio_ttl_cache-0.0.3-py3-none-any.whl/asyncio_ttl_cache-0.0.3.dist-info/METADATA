@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: asyncio-ttl-cache
+Version: 0.0.3
+Summary: Async TTL cache
+Author: Pony Ma
+Author-email: mtf201013@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
