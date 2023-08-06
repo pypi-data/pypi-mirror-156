@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: poetry-demo-james-moon
+Version: 0.1.0
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
