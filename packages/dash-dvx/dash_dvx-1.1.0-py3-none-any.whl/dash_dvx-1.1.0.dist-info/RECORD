@@ -1,0 +1,15 @@
+dash_dvx/DashDvx.py,sha256=_bcmMuX7epN0xFoT1X_AkS1idl1JxDh2T_H2BGkYHDM,1492
+dash_dvx/Filterbuilder.py,sha256=fdYhkCiHE5BYDQhKFd--uhkWMrm5ZzXwW3YLoQp554U,1526
+dash_dvx/Grid.py,sha256=BeGwHLEqEkLgfIAjmb_8Vv3-HXXizIvHWroVhJRfA6E,3746
+dash_dvx/List.py,sha256=by6_kH0ULwS4S99Md2IXHHO5J-9K4BSUvGE5h9Il5Cs,4294
+dash_dvx/__init__.py,sha256=h7TKYSGuCNVlnkGI53jXksAOqsDyp0WC_p7zZYmkT5Q,2578
+dash_dvx/_imports_.py,sha256=3vR5s7OQMlLfLy6Aty1dmHkd0fBbZSxQdLr7FpGfC4U,153
+dash_dvx/dash_dvx.min.js,sha256=DGJJwEISbSQP5GWMyBs1JqHThIWVqkVLHxmmiifc6h8,3210880
+dash_dvx/dash_dvx.min.js.map,sha256=uvVu9Ov-NbvYd2qInK9uduKBLr8GxafPBllnbrhJ__U,92
+dash_dvx/metadata.json,sha256=1pmtD-x5RwlRsSsGB9jlSDQWx7vM8jXvjKpo1D3P4Ww,11452
+dash_dvx/package-info.json,sha256=7nu6KuwOWzaOyUeumhjN7RqH3OAm7y60qZy-4qFj88w,2240
+dash_dvx-1.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dash_dvx-1.1.0.dist-info/METADATA,sha256=FC6cqyYDTIrQt4OxAIMyLk-goafrbe4f8U6oLQt4LUs,826
+dash_dvx-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dash_dvx-1.1.0.dist-info/top_level.txt,sha256=5pEH2JCfQqrprjBaOHBgZGYXQwcwMgee2Z1dfqhVR4M,9
+dash_dvx-1.1.0.dist-info/RECORD,,
