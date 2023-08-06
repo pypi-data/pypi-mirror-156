@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: norm-evolution
+Version: 0.1
+Summary: Simulates which strategy evolves when agents immitate their neighbors
+Home-page: https://github.com/ankur-tutlani/norm-evolution
+Author: ankurtutlani
+Author-email: ankur.tutlani@gmail.com
+License: MIT
+Download-URL: https://github.com/ankur-tutlani/norm-evolution/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: game theory,evolutionary game,social norms,multi-agents,evolution,circular network
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
