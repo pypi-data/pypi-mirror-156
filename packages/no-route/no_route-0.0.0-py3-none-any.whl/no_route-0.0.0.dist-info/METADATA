@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: no-route
+Version: 0.0.0
+Summary: Replaces `@app.route(..., methods=[<method>])` by `@app.<method>(...)`! 📝
+Home-page: https://github.com/Kludex/no-route
+Author: Marcelo Trylesinski
+Author-email: marcelotryle@email.com
+License: MIT
+Project-URL: Twitter, https://twitter.com/marcelotryle
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: libcst
+Requires-Dist: typer
+Provides-Extra: test
+Requires-Dist: coverage[toml] (>=6.2) ; extra == 'test'
+Requires-Dist: pytest (>=6.2.5) ; extra == 'test'
+
+<h1 align="center">
+    <strong>no-route</strong>
+</h1>
+<p align="center">
+    <a href="https://pypi.org/project/no-route" target="_blank">
+        <img src="https://img.shields.io/pypi/v/no-route" alt="Package version">
+    </a>
+    <img src="https://img.shields.io/pypi/pyversions/no-route">
+    <img src="https://img.shields.io/github/license/Kludex/no-route">
+</p>
+
+## Installation
+
+```bash
+pip install no-route
+```
+
+## License
+
+This project is licensed under the terms of the MIT license.
+
+

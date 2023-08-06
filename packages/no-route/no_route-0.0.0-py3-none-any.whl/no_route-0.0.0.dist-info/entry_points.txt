@@ -1,0 +1,3 @@
+[console_scripts]
+no-route = no_route.main:app
+
