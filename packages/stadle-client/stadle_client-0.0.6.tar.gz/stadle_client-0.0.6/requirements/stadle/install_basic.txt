@@ -1,0 +1,17 @@
+certifi
+click
+getmac
+numpy
+protobuf
+pyOpenSSL
+pyblas
+python-xz
+requests
+setuptools
+six
+tensorflow
+tk
+torchvision
+typing-extensions
+websockets==8.1
+wheel
