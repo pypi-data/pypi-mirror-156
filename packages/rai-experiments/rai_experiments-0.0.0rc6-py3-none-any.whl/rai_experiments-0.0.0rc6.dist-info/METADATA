@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: rai-experiments
+Version: 0.0.0rc6
+Summary: Convenience functions and utilities for rai-toolbox tutorials and demonstrations
+Author: Olivia Brown, Justin Goodwin, Ryan Soklaski, Michael Yee
+Author-email: ryan.soklaski@ll.mit.edu
+License: MIT
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: matplotlib (>=2.0.0)
+Requires-Dist: hydra-zen (>=0.7.0)
+Requires-Dist: pytorch-lightning (>=1.5.0)
+Requires-Dist: protobuf (<=3.20.1)
+Requires-Dist: pooch (>=1.6.0)
+
+
+rai-experiments provides convenience functions and utilities for rai-toolbox
+tutorials and demonstrations.
+
+Note that the contents of rai-experiments are not tested or maintained to
+the same fidelity as rai-toolbox. Thus this package is not meant to be relied
+on in production. Use at your own risk!
+
+**Installation**
+
+pip install rai-experiments
+
