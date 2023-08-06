@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: nice-parser
+Version: 0.0.2
+Summary: Identifique e gere querys para normalização de JSONs via AWS Athena
+Author: Leonardo Alves
+Author-email: leonardo.as@compasso.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Nice
+
+Ferramenta para facilitar a normalização de JSON's via Amazon Athena
+
+![Python Version](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-blue)
+
+## Getting Started
+
+Nice é uma aplicação que tem como finalidade a identificação de possíveis tabelas em um JSON, gerando querys para sua `normalização` via Amazon Athena.
+
+## Installation
+
+Instalar o pacote via PyPI:
+
+    pip install nice_parser
+
+## Usage
+
+### Gerar Query
+
+I. Importar Módulos
+
+    from nice import MappingJson
+
+II. Criar Query a partir de JSON, passando como parâmetro a `origem` de seu dado, o nome do `database` e da `tabela`
+
+    parser = MappingJson('path/sample.json', databaseName='database', tableName='table')
+    database = parser.parse()
+    query = database.createQuery()
+    query.Save('output.sql', database)
+
+Um `JSON` com os seguintes valores:
+
+```JSON
+
+{
+   "shipping_address":{
+      "province_code":"TX",
+      "latitude":-87.561414
+   },
+   "buyer_accepts_marketing":true,
+   "token":"a4b8c15d16e42",
+   "total_weight":0,
+   "line_items":[
+      {
+         "destination_location_id":4815162342,
+         "requires_shipping":true,
+         "variant_title":"rb_nice"
+      }
+   ]
+}
+
+```
+
+Será convertido e disponibilizado em um arquivo `.sql`, como no exemplo abaixo:
+
+```SQL
+
+/* ---------------------------------------------*
+ * Descrição: Tabela Principal - tableName      *
+ * ---------------------------------------------*/
+
+ SELECT
+  CAST("json_extract"(table, '$.shipping_address.province_code') AS VARCHAR) "shipping_address_province_code",
+  CAST("json_extract"(table, '$.shipping_address.latitude') AS DECIMAL) "shipping_address_latitude",
+  CAST("json_extract"(table, '$.buyer_accepts_marketing') AS BOOLEAN) "buyer_accepts_marketing",
+  CAST("json_extract"(table, '$.token') AS VARCHAR) "token",
+  CAST("json_extract"(table, '$.total_weight') AS BIGINT) "total_weight"
+ FROM database.table
+
+/* ---------------------------------------------*
+ * Descrição: Tabela Secundária - tableName     *
+ * ---------------------------------------------*/
+
+ SELECT
+  CAST("json_extract"("line_items", '$.destination_location_id') AS BIGINT) "destination_location_id",
+  CAST("json_extract"("line_items", '$.requires_shipping') AS BOOLEAN) "requires_shipping",
+  CAST("json_extract"("line_items", '$.variant_title') AS VARCHAR) "variant_title",
+ FROM
+  (database.table
+ CROSS JOIN UNNEST(CAST("json_extract"(table, '$.line_items') AS array(json))) t (line_items))
+
+...
+
+```
+
+## Getting Help
+
+Para bug report, perguntas ou solicitações, devem ser utilizadas as [*Issues*](https://bitbucket.org/product/guides/basics/bitbucket-interface#issues) do Bitbucket.
+
+## Contributing
+
+Leia o documento `CONTRIBUTING.md` antes de enviar qualquer Issue ou Pull Request, garantindo assim, que tenhamos todas as informações necessárias para responder efetivamente à sua contribuição.
