@@ -1,0 +1,12 @@
+duplicate_image_finder/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+duplicate_image_finder/duplicate_finder.py,sha256=oPGo5WfGP8oX4-5KwL5mjrhz95rhjHcp52EvLRJ-UQY,14404
+duplicate_image_finder/template/bootstrap-theme.min.css,sha256=bHQiqcFbnJb1Qhh61RY9cMh6kR0gTuQY6iFOBj1yj00,23357
+duplicate_image_finder/template/bootstrap.min.css,sha256=MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc,122540
+duplicate_image_finder/template/bootstrap.min.js,sha256=Sk3nkD6mLTMOF0EOpNtsIry-s1CsaqQC1rVLTAy-0yc,36816
+duplicate_image_finder/template/index.html,sha256=KqEMlcpZgwjecUMzNSbc4vPOwwx5HabSch0KPITsJdE,271746
+duplicate_image_finder/template/jquery-2.1.4.min.js,sha256=8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw,84345
+duplicate_image_finder-0.2.8.dist-info/entry_points.txt,sha256=RRsyGF29Rb-85AxPPaX0sVYXFeqLLX2MaFiHwqiTxU8,87
+duplicate_image_finder-0.2.8.dist-info/LICENSE,sha256=zPwtm7TEc4xN-UpTZZI89B6KbwMUad1yNAQ0Sw4qZ9g,1070
+duplicate_image_finder-0.2.8.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+duplicate_image_finder-0.2.8.dist-info/METADATA,sha256=pA4nChandnMjzthODM-2VhBi-iLiXFEIbLrYChBxCBY,3017
+duplicate_image_finder-0.2.8.dist-info/RECORD,,
