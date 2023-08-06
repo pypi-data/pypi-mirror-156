@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: rockeet
+Version: 0.0.1.dev2
+Summary: Python SDK for the Rockeet AI platform
+Home-page: https://github.com/f1ps1
+Author: Philipp Scheer
+Author-email: hi@fipsi.at
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Rockeet SDK
+
+Nothing here yet
+
+
