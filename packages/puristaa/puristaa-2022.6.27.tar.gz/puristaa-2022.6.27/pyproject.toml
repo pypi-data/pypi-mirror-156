@@ -1,0 +1,11 @@
+[tool.pyflow]
+name = "puristaa"
+py_version = "3.8"
+version = "2021.10.24"
+authors = ["Stefan Hagen <stefan@hagen.link>"]
+
+[tool.pyflow.scripts]
+
+[tool.pyflow.dependencies]
+
+[tool.pyflow.dev-dependencies]
