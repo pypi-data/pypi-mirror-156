@@ -1,0 +1,13 @@
+Django<4,>=2.2
+django-cms>=3.7
+django-filer>=1.7
+djangocms-attributes-field>=1
+djangocms-text-ckeditor>=3.1.0
+django-select2
+django-entangled==0.4
+
+[djangocms-icon]
+djangocms-icon>=1.4.0
+
+[reCaptcha]
+django-recaptcha
