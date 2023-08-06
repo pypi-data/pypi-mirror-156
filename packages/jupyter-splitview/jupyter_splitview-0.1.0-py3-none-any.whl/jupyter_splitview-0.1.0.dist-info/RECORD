@@ -1,0 +1,11 @@
+jupyter_splitview/__init__.py,sha256=ndst28PHiC_LWmX0_OWWwf_4fOS0ylGlvyIyxnm7QNI,444
+jupyter_splitview/inject.py,sha256=G0E9DoUqOsLQImNcTjSn5HOLnUnKE0KG_iQkTPteTSo,1564
+jupyter_splitview/inject_dependencies.html,sha256=sTFqdDDUk4r0EgpEHzgZK28oq1VUvNgTlXNcrb3WfoA,1434
+jupyter_splitview/inject_split.html,sha256=QyAqoCHovtPgE_Tfz7cD5Thph4a4N4YLSdwR-ftBpSQ,1218
+jupyter_splitview/sw_cellmagic.py,sha256=ylRESdnUHTcA-CjrgOpymxhfhUsoiEKcyoZTcaEktmQ,2265
+vendor/juxtapose/build/css/juxtapose.css,sha256=SfZxdaZVYlXUcHey45DZNC4_cAJ04FV0Fg7y14JawZE,5740
+vendor/juxtapose/build/js/juxtapose.min.js,sha256=2vTGnkmsvuokxCQX3ZxNb6HYN9eUcPAvPsT5COpnbew,17123
+jupyter_splitview-0.1.0.dist-info/LICENSE,sha256=B6N-_ZEGW07jm5qIiJc0261RELEXD5aHLl8TyKCZcA8,1067
+jupyter_splitview-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+jupyter_splitview-0.1.0.dist-info/METADATA,sha256=fRhuDMe8hd6L-v49DPrM64HYfItwHReoxrGPdwodGSE,5256
+jupyter_splitview-0.1.0.dist-info/RECORD,,
