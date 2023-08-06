@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cohesion-pipeline
+Version: 0.1.0
+Summary: Cohesion measurement to evaluate topic modeling score. call cohesion_df(df)
+Home-page: https://github.com/Berdugo1994
+Author: Eden Berdugo
+Author-email: berdugogo@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## **Cohesion POC** - Topic Detection Measurement
+ 
+
+
+## Cohesion
+The Topic-Detection field deals mainly with providing names to given divisions of documents and lacks a quality measurement that provides a rating for the division, that represent a human-subjective score.
+<br>
+<br>
+Cohesion is here to overcome it, includes NLP techniques and considers intra and inter scores in the cohesion formula.
+<br>
+<br>
+The goal of the POC, it to prove that Cohesion has better correlation with NMI heuristic than Coherence which consider as SOA of Topic-Detecion-Measurement domain.
+<br>
+Part of Final project at SISE: BGU university.
