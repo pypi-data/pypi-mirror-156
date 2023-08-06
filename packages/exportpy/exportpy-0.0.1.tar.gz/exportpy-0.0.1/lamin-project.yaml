@@ -1,0 +1,5 @@
+project_name: ExportPy
+description: Serialize Python classes as Python code
+project_slug: exportpy
+repository_name: exportpy
+package_name: exportpy
