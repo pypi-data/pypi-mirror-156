@@ -1,0 +1,5 @@
+setup.py
+esopt.egg-info/PKG-INFO
+esopt.egg-info/SOURCES.txt
+esopt.egg-info/dependency_links.txt
+esopt.egg-info/top_level.txt
