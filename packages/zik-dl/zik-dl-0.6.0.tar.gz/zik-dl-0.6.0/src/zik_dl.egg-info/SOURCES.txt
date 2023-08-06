@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/zik_dl/__init__.py
+src/zik_dl/arguments.py
+src/zik_dl/downloader.py
+src/zik_dl/files_manager.py
+src/zik_dl/settings.py
+src/zik_dl/utils.py
+src/zik_dl.egg-info/PKG-INFO
+src/zik_dl.egg-info/SOURCES.txt
+src/zik_dl.egg-info/dependency_links.txt
+src/zik_dl.egg-info/entry_points.txt
+src/zik_dl.egg-info/requires.txt
+src/zik_dl.egg-info/top_level.txt

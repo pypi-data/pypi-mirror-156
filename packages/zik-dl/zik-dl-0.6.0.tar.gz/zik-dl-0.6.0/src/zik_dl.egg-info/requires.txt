@@ -1,0 +1,9 @@
+yt-dlp
+music-tag
+pillow
+
+[dev]
+black
+pytest
+pytest-cov
+twine

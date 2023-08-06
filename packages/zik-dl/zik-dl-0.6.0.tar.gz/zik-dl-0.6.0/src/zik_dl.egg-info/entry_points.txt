@@ -1,0 +1,3 @@
+[console_scripts]
+zik-dl = zik_dl:main
+
