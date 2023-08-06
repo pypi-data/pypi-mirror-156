@@ -1,0 +1,6 @@
+setup.py
+Windows11/__init__.py
+Windows11.egg-info/PKG-INFO
+Windows11.egg-info/SOURCES.txt
+Windows11.egg-info/dependency_links.txt
+Windows11.egg-info/top_level.txt
