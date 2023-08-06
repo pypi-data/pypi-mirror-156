@@ -1,0 +1,22 @@
+illyrian/__init__.py, sha256=Sys+XzaE7vLF1U758GTA6t6OqqWxHhku/UZHe/xfDDo=, 107
+illyrian/__main__.py, sha256=NcZKSxUDqXueYBYmSOY57D7A/P4bvkgaPw7JweJX35A=, 123
+illyrian/cpython/__init__.py, sha256=x3ExOnuNHUHUBvV/GO7LfGqNSWuiNRkCInqv5BP89dY=, 19
+illyrian/cpython/code.py, sha256=GWTg6H4lzC0QkV6rhoK6+KwtjsLulgnjqJx4sXNuzZU=, 776
+illyrian/cpython/cpython310.py, sha256=hEU3RRTTMu8ntNv7JXxr3YeJwkL4DIbzgNzbSOCkNGs=, 38413
+illyrian/cpython/cpython37.py, sha256=HkHeHNyTCpbkMv3BIajY/BF0TdloiFMCBe3hSTmHWMk=, 42480
+illyrian/cpython/cpython38.py, sha256=ozXq22sTaOvuZye9Z+jRkcRgM3QEbuOhTqrpjNUiMec=, 45605
+illyrian/cpython/cpython39.py, sha256=CyUaXdHzuhntui0A7xF83WJ0zmKIIiV406uEiVKl+Dk=, 39409
+illyrian/env.py, sha256=ZVk+0xajwYJLRB7c0c5bbt5kgXKO39ct4RteVUBc1S8=, 292
+illyrian/manylinux/__init__.py, sha256=x3ExOnuNHUHUBvV/GO7LfGqNSWuiNRkCInqv5BP89dY=, 19
+illyrian/manylinux/code.py, sha256=92tzDhyfh5YR1yPgcNJPuxdyv2Gxpzulr7wNFPfPsKA=, 1170
+illyrian/run.py, sha256=NkFgMd/gaSHRZFYe9KWJ9cZmZKCwKeTtQlXaM0qIZs4=, 477
+illyrian/version.py, sha256=jR+MaU8LJQObI0Cu6SW/giG/5ix0vJd9Y+RdY4xom0M=, 48
+illyrian/wheel.py, sha256=Ury0StB1yDbL3Af/ZB3S8O1Z7jfFPmSpCiCPmtFm6G4=, 13005
+illyrian/LICENSE, sha256=YnSGopDGJS9GdQ5iKK7kjgkcB9tcrtgilusqFvMPfNc=, 1531
+illyrian/cmake/FindIllyrian.cmake, sha256=jn+wzaC5IDAoQy1jrfrPIcvN6Yn+oJhokV85SFegFlc=, 2584
+illyrian/cmake/illyrian.cmake, sha256=oA5tczEE1eEvaxqHccg4P+7icVSo2NJROPA1eHS3Vpg=, 16005
+illyrian-0.2.0.data/scripts/illyrian, sha256=5/K+L0uEwtptxwS06LKgmZp6GlDWe1ZSlv/I0VMpIBE=, 40
+illyrian-0.2.0.dist-info/METADATA, sha256=jwyW8xPd6ajMFIUdtxgpHBO3+GuVPrzA/R1d1Vgu8j8=, 10640
+illyrian-0.2.0.dist-info/top_list.txt, sha256=RmPEsO8dY6qR0V1leW32nyoOimpxBxBhKVSTQ/8EIfY=, 8
+illyrian-0.2.0.dist-info/WHEEL, sha256=c2kYcqrmRQF4XoXMBtc5PfYarzJFWH7omTONUuuIzes=, 87
+illyrian-0.2.0.dist-info/RECORD, , 
