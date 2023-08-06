@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+kopeechka/__init__.py
+kopeechka/mail_activations.py
+kopeechka.egg-info/PKG-INFO
+kopeechka.egg-info/SOURCES.txt
+kopeechka.egg-info/dependency_links.txt
+kopeechka.egg-info/not-zip-safe
+kopeechka.egg-info/requires.txt
+kopeechka.egg-info/top_level.txt

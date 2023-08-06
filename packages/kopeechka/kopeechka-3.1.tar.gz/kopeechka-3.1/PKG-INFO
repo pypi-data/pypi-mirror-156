@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: kopeechka
+Version: 3.1
+Summary: This code is a representation of the kopeechka.store API in Python
+Home-page: UNKNOWN
+Author-email: rem.game.on@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# kopeechka
+
+**kopeechka** - This module is a representation of the kopeechka.store API in Python
+
+**API documentation RUS** [https://links.kopeechka.store/postapi](https://links.kopeechka.store/postapi)
+
+**API documentation ENG** [https://links.kopeechka.store/postapieng](https://links.kopeechka.store/postapieng)
+
+# Installation
+
+Install the current version with PyPI:
+
+```python
+pip install kopeechka
+```
+
+## Usage
+
+You can get a token in your personal account on the kopeechka.store website
+
+```python
+
+body = Mail_activations(token="TOKEN")
+```
+
+## Example
+
+```python
+from kopeechka import Mail_activations
+
+body = Mail_activations(token="TOKEN")
+
+answer = body.balance() #Balance Request
+print(answer) 
+
+answer = body.mailbox_get_email("site", "mail_type", "sender", "regex", "soft_id", "investor", "subject", "clear", "api") #Mail Request
+print(answer)
+
+answer = body.mailbox_get_message("full", "task_id", "api") #Letter Request
+print(answer)
+
+answer = body.mailbox_cancel("task_id", "api") #Cancel Mail
+print(answer)
+
+answer = body.mailbox_reorder("site", "email", "regex", "subject", "api") #Re-activation request with this mail
+print(answer)
+
+answer = body.mailbox_get_fresh_id("site", "email", "api") #Find out the activation ID by mail and website
+print(answer)
+
+answer = body.mailbox_set_comment("task_id", "comment", "api") #Set a comment to the ordered mail
+print(answer)
+
+answer = body.mailbox_get_bulk("count", "text", "email", "site", "api") #Mailbox search by parameters
+print(answer)
+
+answer = body.domain_add_blacklist("domain", "site", "expire", "api") #Add a domain to the blacklist
+print(answer)
+
+answer = body.domain_exclude_blacklist("domain", "site", "api") #Remove a domain from the blacklist
+print(answer)
+
+answer = body.blacklist_get_service("site", "api") #Get a blacklist
+print(answer)
+
+answer = body.mailbox_get_domains("site", "api") #List of all service domains
+print(answer)
+
+answer = body.mailbox_zones("popular", "zones", "api") #Prices and zones
+print(answer)
+
+answer = body.domain_get_alive("domain", "api") #Find out the lifetime of the domain
+print(answer)
+```
+
