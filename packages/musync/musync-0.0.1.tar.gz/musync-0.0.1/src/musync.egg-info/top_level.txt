@@ -1,0 +1,4 @@
+__main__
+f_m3u8
+f_spoti
+f_ytmusic

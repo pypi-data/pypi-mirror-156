@@ -1,0 +1,6 @@
+spotipy
+ffmpeg
+click
+mutagen
+ytmusicapi
+yt-dlp

@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/__main__.py
+src/f_m3u8.py
+src/f_spoti.py
+src/f_ytmusic.py
+src/musync.egg-info/PKG-INFO
+src/musync.egg-info/SOURCES.txt
+src/musync.egg-info/dependency_links.txt
+src/musync.egg-info/entry_points.txt
+src/musync.egg-info/requires.txt
+src/musync.egg-info/top_level.txt
