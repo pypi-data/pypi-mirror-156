@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wallpaperapi
+Version: 0.0.1
+Summary: Generate random wallpapers
+Home-page: UNKNOWN
+Author: Pigioty
+Author-email: pigiotyreal@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Generate random wallpapers with this libary!
+
+Usage: print(wallpaperapi.wallpaper())
+
+V0.0.1
+=============
+
+- Release
+

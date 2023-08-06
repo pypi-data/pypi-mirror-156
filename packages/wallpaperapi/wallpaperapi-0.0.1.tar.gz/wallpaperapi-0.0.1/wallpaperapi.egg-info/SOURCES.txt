@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+wallpaperapi.egg-info/PKG-INFO
+wallpaperapi.egg-info/SOURCES.txt
+wallpaperapi.egg-info/dependency_links.txt
+wallpaperapi.egg-info/top_level.txt
