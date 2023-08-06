@@ -1,0 +1,3 @@
+[console_scripts]
+boggle=boggle.board:board_cli
+
