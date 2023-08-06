@@ -1,0 +1,9 @@
+tawazi/__init__.py,sha256=DhoG1c9x00RoA46r-lyPVhPym8OTThLRLgrEkSvmD74,521
+tawazi/config.py,sha256=gN7hLRLha9pLdzKPLhF9aqrXICgOm8KmBQSLIPwEY0Q,436
+tawazi/dag.py,sha256=OgvrnTvw7o3P6iLpteiKBxTb3ShMNBlA7fKg-XnW8_c,14926
+tawazi/errors.py,sha256=_wHLzAIh7BVGqsAzQhmb921wkTkEotvQcK3TEtZiSn8,235
+tawazi/ops.py,sha256=Me-27FXPsorofE2RP1pJ6WPyVcHziGQpPImyQ7XB0Oc,5081
+tawazi-0.1.2.dist-info/LICENSE,sha256=75RTSsXOsAYhGpxsHc9U41ep6GS7vrUPufeekgoeOXM,11336
+tawazi-0.1.2.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+tawazi-0.1.2.dist-info/METADATA,sha256=1tlxUovamLCiGwFTbSJZIQQhi4gT4xUgNxVvpObj9LI,3719
+tawazi-0.1.2.dist-info/RECORD,,
