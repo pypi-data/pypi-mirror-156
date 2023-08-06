@@ -1,0 +1,7 @@
+README.md
+setup.py
+SWT_UI_dep.egg-info/PKG-INFO
+SWT_UI_dep.egg-info/SOURCES.txt
+SWT_UI_dep.egg-info/dependency_links.txt
+SWT_UI_dep.egg-info/requires.txt
+SWT_UI_dep.egg-info/top_level.txt
