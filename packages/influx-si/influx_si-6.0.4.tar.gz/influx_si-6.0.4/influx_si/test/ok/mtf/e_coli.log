@@ -1,0 +1,38 @@
+"/home/sokol/.local/bin/influx_s" "--pref" "e_coli" "--pref" "e_coli_growth" "--pref" "../prl_exp/mtf/e_coli_glc1-6n"
+code gen: 2022-06-23 17:23:50
+executing: "/usr/bin/python3" "/home/sokol/.local/bin/ftbl2optR.py" "--tblimit" "0" "--ropts" "TIMEIT=TRUE" "e_coli.ftbl"
+calcul  : 2022-06-23 17:23:52
+load    : 2022-06-23 17:23:53.12 cpu=0.989
+rinit   : 2022-06-23 17:23:53.12 cpu=0.992
+r_flux  : 2022-06-23 17:23:53.12 cpu=0.992
+Afl qr(): 2022-06-23 17:23:53.18 cpu=1.046
+dfl_dffg: 2022-06-23 17:23:53.19 cpu=1.056
+spAbr   : 2022-06-23 17:23:53.19 cpu=1.056
+weight 1: 2022-06-23 17:23:53.19 cpu=1.056
+weight 2: 2022-06-23 17:23:53.19 cpu=1.057
+weight 3: 2022-06-23 17:23:53.19 cpu=1.059
+weight 4: 2022-06-23 17:23:53.20 cpu=1.06
+weight 5: 2022-06-23 17:23:53.20 cpu=1.062
+weight 6: 2022-06-23 17:23:53.20 cpu=1.063
+measure : 2022-06-23 17:23:53.24 cpu=1.11
+ineq    : 2022-06-23 17:23:53.26 cpu=1.129
+preopt  : 2022-06-23 17:23:53.30 cpu=1.168
+labargs : 2022-06-23 17:23:53.31 cpu=1.171
+run    1: 2022-06-23 17:23:53.31 cpu=1.172
+
+Starting point
+res esti: 2022-06-23 17:23:53.31 cpu=1.173
+kvh init: 2022-06-23 17:23:53.32 cpu=1.184
+check ja: 2022-06-23 17:23:53.36 cpu=1.209
+optim   : 2022-06-23 17:23:53.44 cpu=1.294
+it=0	res=33.60668
+it=1	res=8.537147	normstep=0.372971	btk=1
+it=2	res=7.844899	normstep=0.1372184	btk=1
+it=3	res=7.843106	normstep=0.005504594	btk=1
+it=4	res=7.843096	normstep=0.0004985717	btk=1
+it=5	res=7.843096	normstep=2.725573e-05	btk=1
+it=6	res=7.843096	normstep=3.688584e-06	btk=1
+postopt : 2022-06-23 17:23:53.69 cpu=1.518
+linstats: 2022-06-23 17:23:53.82 cpu=1.633
+rend    : 2022-06-23 17:23:54.07 cpu=1.772
+end     : 2022-06-23 17:23:54

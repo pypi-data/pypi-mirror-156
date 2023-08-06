@@ -1,0 +1,80 @@
+"/home/sokol/.local/bin/influx_s" "--pref" "e_coli" "--pref" "e_coli_growth" "--pref" "../prl_exp/mtf/e_coli_glc1-6n"
+code gen: 2022-06-23 17:23:50
+executing: "/usr/bin/python3" "/home/sokol/.local/bin/ftbl2optR.py" "--tblimit" "0" "--ropts" "noscale=TRUE; ln=TRUE; zc=0.0; TIMEIT=TRUE" "../prl_exp/mtf/e_coli_glc1-6n.ftbl"
+calcul  : 2022-06-23 17:23:52
+load    : 2022-06-23 17:23:53.23 cpu=1.106
+rinit   : 2022-06-23 17:23:53.23 cpu=1.108
+r_flux  : 2022-06-23 17:23:53.23 cpu=1.109
+Afl qr(): 2022-06-23 17:23:53.27 cpu=1.141
+dfl_dffg: 2022-06-23 17:23:53.28 cpu=1.153
+spAbr   : 2022-06-23 17:23:53.28 cpu=1.158
+weight 1: 2022-06-23 17:23:53.28 cpu=1.158
+weight 2: 2022-06-23 17:23:53.29 cpu=1.16
+weight 3: 2022-06-23 17:23:53.29 cpu=1.162
+weight 4: 2022-06-23 17:23:53.29 cpu=1.164
+weight 5: 2022-06-23 17:23:53.29 cpu=1.165
+weight 6: 2022-06-23 17:23:53.29 cpu=1.166
+weight 7: 2022-06-23 17:23:53.29 cpu=1.167
+weight 8: 2022-06-23 17:23:53.29 cpu=1.168
+measure : 2022-06-23 17:23:53.36 cpu=1.227
+ineq    : 2022-06-23 17:23:53.49 cpu=1.36
+preopt  : 2022-06-23 17:23:53.70 cpu=1.557
+labargs : 2022-06-23 17:23:53.70 cpu=1.559
+run    1: 2022-06-23 17:23:53.70 cpu=1.56
+
+Starting point
+zc ineq : 2022-06-23 17:23:53.70 cpu=1.561
+The following 1 zerocross inequalities are redundant and are removed:
+zc d.n.v47>=0
+The following 4 ineqalitie(s) are active at starting point:
+f.x.v16>=0
+f.x.v44>=0
+f.x.v7>=0
+zc f.n.v32>=0
+kvh init: 2022-06-23 17:23:53.89 cpu=1.735
+optim   : 2022-06-23 17:23:53.98 cpu=1.801
+it=0	res=22.48825
+it=1	res=22.28502	normstep=77.06274	btk=0.25
+it=2	res=22.11041	normstep=59.86128	btk=1
+it=3	res=22.07043	normstep=19.42764	btk=0.25
+it=4	res=22.05543	normstep=15.36067	btk=0.09042203
+it=5	res=22.03602	normstep=11.18102	btk=0.25
+it=6	res=22.02403	normstep=7.172067	btk=0.25
+it=7	res=22.01652	normstep=4.542532	btk=0.25
+it=8	res=22.01177	normstep=2.866461	btk=0.25
+it=9	res=22.00871	normstep=1.835903	btk=0.25
+it=10	res=22.00676	normstep=1.21946	btk=0.25
+it=20	res=21.99347	normstep=2.707457	btk=0.08528955
+it=30	res=21.97433	normstep=8.396496	btk=0.07371611
+it=40	res=21.94754	normstep=13.27285	btk=0.06485139
+it=50	res=21.90756	normstep=6.037768	btk=1
+secondzc: 2022-06-23 17:24:14.31 cpu=21.338
+The following inequalities are active after first pass
+   of zero crossing strategy and will be inverted:
+zc d.n.v31>=0
+zc f.n.v32>=0
+Second zero crossing pass
+it=0	res=21.90767
+it=1	res=21.90395	normstep=39.88149	btk=0.0625
+it=2	res=21.9019	normstep=32.54406	btk=0.0625
+it=3	res=21.90023	normstep=17.65587	btk=0.1105123
+it=4	res=21.89152	normstep=9.929784	btk=1
+it=5	res=21.86866	normstep=17.78244	btk=1
+it=6	res=21.85953	normstep=7.887982	btk=1
+it=7	res=21.85953	normstep=491.1153	btk=1e-07
+it=8	res=21.85784	normstep=0.6596006	btk=1
+it=9	res=21.85784	normstep=490.9877	btk=1e-07
+it=10	res=21.85783	normstep=0.3095507	btk=1
+it=20	res=21.85783	normstep=4.621615e-05	btk=1
+it=30	res=21.85783	normstep=491.3716	btk=1e-07
+it=39	res=21.85783	normstep=2.853018e-06	btk=0.015625
+last zc : 2022-06-23 17:24:34.47 cpu=41.161
+Last zero crossing pass (free of zc constraints)
+it=0	res=21.85783
+it=1	res=21.85783	normstep=921.7152	btk=1.842163e-06
+it=2	res=21.85783	normstep=7.565946e-06	btk=1
+postopt : 2022-06-23 17:24:35.63 cpu=42.279
+linstats: 2022-06-23 17:24:36.10 cpu=42.593
+rend    : 2022-06-23 17:24:36.41 cpu=42.779
+end     : 2022-06-23 17:24:37
+=>Check ../prl_exp/mtf/e_coli_glc1-6n.err

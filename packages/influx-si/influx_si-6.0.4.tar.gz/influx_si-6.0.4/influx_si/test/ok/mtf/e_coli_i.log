@@ -1,0 +1,47 @@
+"/home/sokol/.local/bin/influx_i" "--pref" "e_coli_i" "--pref" "e_coli_iv" "--pref" "ex_i_2box_var" "--pref" "../prl_exp/mtf/e_coli_GX_prl"
+code gen: 2022-06-23 17:24:39
+executing: "/usr/bin/python3" "/home/sokol/.local/bin/ftbl2optR.py" "--tblimit" "0" "--ropts" "noscale=TRUE; clowp=1e-09; zc=0.0; time_order='2'; TIMEIT=TRUE" "--case_i" "e_coli_i.ftbl"
+calcul  : 2022-06-23 17:24:40
+load    : 2022-06-23 17:24:41.77 cpu=0.981
+rinit   : 2022-06-23 17:24:41.77 cpu=0.987
+r_flux  : 2022-06-23 17:24:41.77 cpu=0.988
+Afl qr(): 2022-06-23 17:24:41.84 cpu=1.047
+dfl_dffg: 2022-06-23 17:24:41.85 cpu=1.056
+spAbr   : 2022-06-23 17:24:41.85 cpu=1.059
+weight 1: 2022-06-23 17:24:41.85 cpu=1.059
+weight 2: 2022-06-23 17:24:41.85 cpu=1.061
+weight 3: 2022-06-23 17:24:41.85 cpu=1.062
+weight 4: 2022-06-23 17:24:41.85 cpu=1.064
+weight 5: 2022-06-23 17:24:41.85 cpu=1.066
+weight 6: 2022-06-23 17:24:41.86 cpu=1.067
+measure : 2022-06-23 17:24:41.90 cpu=1.112
+ineq    : 2022-06-23 17:24:41.92 cpu=1.128
+preopt  : 2022-06-23 17:24:42.03 cpu=1.229
+labargs : 2022-06-23 17:24:42.03 cpu=1.231
+cl expor: 2022-06-23 17:24:42.28 cpu=1.237
+cl sourc: 2022-06-23 17:24:43.13 cpu=1.387
+run    1: 2022-06-23 17:24:43.40 cpu=1.39
+
+Starting point
+zc ineq : 2022-06-23 17:24:43.40 cpu=1.392
+kvh init: 2022-06-23 17:24:43.44 cpu=1.427
+check ja: 2022-06-23 17:24:44.01 cpu=1.454
+optim   : 2022-06-23 17:24:49.33 cpu=1.458
+it=0	res=237.7947
+it=1	res=70.06248	normstep=30.47659	btk=1
+it=2	res=36.43491	normstep=31.35182	btk=1
+it=3	res=21.83319	normstep=0.2793447	btk=1
+it=4	res=21.7384	normstep=0.03332941	btk=1
+it=5	res=21.72383	normstep=0.03867587	btk=1
+it=6	res=21.6348	normstep=0.08885869	btk=1
+it=7	res=21.37745	normstep=0.4890458	btk=0.5
+it=8	res=21.24931	normstep=0.6490092	btk=1
+it=9	res=20.96647	normstep=0.3171006	btk=1
+it=10	res=20.96366	normstep=0.1287473	btk=1
+it=15	res=20.96358	normstep=5.449313e-05	btk=1
+secondzc: 2022-06-23 17:24:58.33 cpu=1.674
+After the first optimization, no zero crossing inequality was activated. So no reoptimization
+postopt : 2022-06-23 17:24:58.34 cpu=1.683
+linstats: 2022-06-23 17:24:58.89 cpu=1.974
+rend    : 2022-06-23 17:24:59.14 cpu=2.113
+end     : 2022-06-23 17:24:59

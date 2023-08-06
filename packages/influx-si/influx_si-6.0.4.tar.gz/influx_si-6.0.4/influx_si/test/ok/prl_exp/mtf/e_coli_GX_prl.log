@@ -1,0 +1,46 @@
+"/home/sokol/.local/bin/influx_i" "--pref" "e_coli_i" "--pref" "e_coli_iv" "--pref" "ex_i_2box_var" "--pref" "../prl_exp/mtf/e_coli_GX_prl"
+code gen: 2022-06-23 17:24:39
+executing: "/usr/bin/python3" "/home/sokol/.local/bin/ftbl2optR.py" "--tblimit" "0" "--ropts" "noscale=TRUE; time_order='1'; TIMEIT=TRUE" "--case_i" "../prl_exp/mtf/e_coli_GX_prl.ftbl"
+calcul  : 2022-06-23 17:24:40
+load    : 2022-06-23 17:24:41.80 cpu=1.064
+rinit   : 2022-06-23 17:24:41.81 cpu=1.069
+r_flux  : 2022-06-23 17:24:41.81 cpu=1.069
+Afl qr(): 2022-06-23 17:24:41.83 cpu=1.085
+dfl_dffg: 2022-06-23 17:24:41.83 cpu=1.092
+spAbr   : 2022-06-23 17:24:41.83 cpu=1.093
+weight 1: 2022-06-23 17:24:41.83 cpu=1.094
+weight 2: 2022-06-23 17:24:41.83 cpu=1.095
+weight 3: 2022-06-23 17:24:41.84 cpu=1.096
+weight 4: 2022-06-23 17:24:41.84 cpu=1.097
+weight 5: 2022-06-23 17:24:41.84 cpu=1.098
+weight 6: 2022-06-23 17:24:41.85 cpu=1.106
+weight 7: 2022-06-23 17:24:41.85 cpu=1.107
+weight 8: 2022-06-23 17:24:41.85 cpu=1.107
+weight 9: 2022-06-23 17:24:41.85 cpu=1.108
+measure : 2022-06-23 17:24:41.88 cpu=1.142
+ineq    : 2022-06-23 17:24:41.97 cpu=1.229
+preopt  : 2022-06-23 17:24:42.08 cpu=1.33
+labargs : 2022-06-23 17:24:42.08 cpu=1.332
+run    1: 2022-06-23 17:24:42.08 cpu=1.332
+
+Starting point
+kvh init: 2022-06-23 17:24:42.09 cpu=1.334
+check ja: 2022-06-23 17:24:44.13 cpu=3.275
+optim   : 2022-06-23 17:24:55.39 cpu=14.341
+it=0	res=46.694
+it=1	res=46.48103	normstep=2.927638	btk=0.25
+it=2	res=46.344	normstep=2.248907	btk=0.25
+it=3	res=46.25468	normstep=1.772153	btk=0.25
+it=4	res=46.19203	normstep=1.431594	btk=0.25
+it=5	res=46.14514	normstep=1.158672	btk=0.25
+it=6	res=46.1077	normstep=0.9127221	btk=0.25
+it=7	res=46.07336	normstep=0.7505174	btk=0.25
+it=8	res=46.03924	normstep=0.6463508	btk=0.25
+it=9	res=46.00498	normstep=0.5895323	btk=0.25
+it=10	res=45.9741	normstep=0.5662715	btk=0.25
+it=20	res=45.88456	normstep=0.005092575	btk=1
+it=27	res=45.88455	normstep=7.951333e-06	btk=0.4931693
+postopt : 2022-06-23 17:25:38.86 cpu=54.938
+linstats: 2022-06-23 17:25:40.10 cpu=55.88
+rend    : 2022-06-23 17:25:40.14 cpu=55.909
+end     : 2022-06-23 17:25:40
