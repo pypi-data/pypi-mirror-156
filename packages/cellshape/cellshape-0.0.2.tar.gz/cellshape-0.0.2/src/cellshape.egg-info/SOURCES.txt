@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/__init__.py
+src/cellshape/__init__.py
+src/cellshape/emaple.py
+src/cellshape.egg-info/PKG-INFO
+src/cellshape.egg-info/SOURCES.txt
+src/cellshape.egg-info/dependency_links.txt
+src/cellshape.egg-info/top_level.txt
