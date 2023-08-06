@@ -1,0 +1,8 @@
+prune .github*
+prune test*
+exclude *.sh
+exclude *.yml
+include README.rst
+include LICENSE
+include requirements.txt
+include version.txt
