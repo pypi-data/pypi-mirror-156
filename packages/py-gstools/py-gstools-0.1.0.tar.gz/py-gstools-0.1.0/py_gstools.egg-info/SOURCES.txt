@@ -1,0 +1,8 @@
+README.md
+setup.py
+gs/__init__.py
+py_gstools.egg-info/PKG-INFO
+py_gstools.egg-info/SOURCES.txt
+py_gstools.egg-info/dependency_links.txt
+py_gstools.egg-info/top_level.txt
+py_gstools.egg-info/zip-safe
