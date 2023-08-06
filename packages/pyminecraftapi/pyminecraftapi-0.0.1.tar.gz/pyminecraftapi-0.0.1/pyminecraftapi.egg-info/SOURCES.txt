@@ -1,0 +1,6 @@
+setup.py
+pyminecraftapi/__init__.py
+pyminecraftapi.egg-info/PKG-INFO
+pyminecraftapi.egg-info/SOURCES.txt
+pyminecraftapi.egg-info/dependency_links.txt
+pyminecraftapi.egg-info/top_level.txt
