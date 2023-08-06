@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: cambriantools
+Version: 0.0.6
+Summary: generic description
+Author: Oscar Pimentel Fuentes
+Author-email: oscarlo.pimentel@gmail.com
+License: MIT licence
+Keywords: experimental
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![](https://img.shields.io/badge/python-3.10-orange) ![](https://img.shields.io/badge/status-in_progress-red)
+# Cambrian Tools 🔧
+
+## Installation
+To install the package run the following script:
+```bash
+pip install cambriantools
+```
+
+## How to use
+To execute [master_run.sh](master_run.sh) just run the following command in the terminal:
+```bash
+bash master_run.sh
+```
+
+## Data
+Public data: https://drive.google.com/drive/folders/19q3OVxoATB-UaoIsvjp07su9Uy2XJQnT?usp=sharing
+
+## References
+- https://github.com/oscarpimentel/fuzzy-tools
+
