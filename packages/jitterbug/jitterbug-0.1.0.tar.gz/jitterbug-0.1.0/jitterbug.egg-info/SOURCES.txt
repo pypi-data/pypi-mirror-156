@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+jitterbug/__init__.py
+jitterbug/__main__.py
+jitterbug/commandline.py
+jitterbug/loader.py
+jitterbug/mutator.py
+jitterbug/utils.py
+jitterbug.egg-info/PKG-INFO
+jitterbug.egg-info/SOURCES.txt
+jitterbug.egg-info/dependency_links.txt
+jitterbug.egg-info/not-zip-safe
+jitterbug.egg-info/requires.txt
+jitterbug.egg-info/top_level.txt
