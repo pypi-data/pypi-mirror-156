@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pysquale/__init__.py
+pysquale/_version.py
+pysquale.egg-info/PKG-INFO
+pysquale.egg-info/SOURCES.txt
+pysquale.egg-info/dependency_links.txt
+pysquale.egg-info/requires.txt
+pysquale.egg-info/top_level.txt
