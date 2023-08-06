@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: aoirint-hg100rclient
+Version: 20220628.2
+Summary: CATV回線用モデムHUMAX HG100R-02JGをHTTP API経由で操作するための非公式パッケージ
+Home-page: https://github.com/aoirint/aoirint_hg100rclient
+Author: aoirint
+Author-email: aoirint@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# aoirint_hg100rclient
+
+CATV回線用インターネットモデムHUMAX HG100R-02JGをHTTP API経由で操作するための非公式パッケージ。
+
+## Usage
+ルータIP`192.168.0.1`、Adminパスワード`password`は適宜置換。
+
+### WAN側IPv4アドレスの取得: hg100r_getwanipv4
+
+```shell
+hg100r_getwanipv4 http://192.168.0.1/api password
+```
+
+WAN未接続時は`0.0.0.0`を返却。
+
+### モデム再起動: hg100r_reboot
+
+```shell
+hg100r_reboot http://192.168.0.1/api password
+```
+
+
