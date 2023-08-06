@@ -1,0 +1,15 @@
+word2emoji/__init__.py,sha256=Eyqy0BvuoJPFI7DI2tXNXFuOeuGv7VspiP7bEPeARkc,68
+word2emoji/create_db.py,sha256=J21eeCmAJvgci8R5Ljyig64eKywDfW1zgoN5WXedwZQ,1516
+word2emoji/flatten_db.py,sha256=CdSCX1nBNSQ3OzTxXv5Eg4khTU9rKnvtFohKy--TkYw,452
+word2emoji/flattened.txt,sha256=PHrsH52ixuA9BX0Ea7zDmQadiyVaF1dn7sMb84IDXIo,143126
+word2emoji/lookup.py,sha256=Rs9Zr_vsy_WUN_cUK2yELY9axQURMV9yaXpLgpeQc14,722
+word2emoji/stem_db.jsz2,sha256=46OIzao-K7h-jYA_GaGg_sa4ipHSB1BhxBkotUminyM,48487
+word2emoji/text_to_training.py,sha256=fJonleUE9e9IcVvZ_u_tiR0COfSUmgm540VMIuLPty4,346
+word2emoji/training.txt,sha256=20kRA2avhNWUTKzpgDjf7uNgTZKVg_VRGkMc8ccvg-o,956
+word2emoji/wiki-100k.txt,sha256=5l2ZzQdHhcLO_CIrMGYgjj8inPt9U_VzSsW0CevqG_I,823537
+word2emoji/words.json,sha256=7Rbk84YE-v8CowWmM982OUU1ttP8ES4ZTQhOJXCzS7U,594830
+word2emoji-0.1.4.dist-info/LICENSE,sha256=fSFK46E_Bu8EPcjpnz5fUHRasWqoC7wrqSHppbi-yLk,1069
+word2emoji-0.1.4.dist-info/METADATA,sha256=3NVaYA7bLlXaZnRtc_XXqI4uJXrXE83DlVVpX2kClJg,3400
+word2emoji-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+word2emoji-0.1.4.dist-info/top_level.txt,sha256=vCzG--sXLNluFmj0AOrKO8iXscZ-OW1Kp2YI39Gg0pI,11
+word2emoji-0.1.4.dist-info/RECORD,,
