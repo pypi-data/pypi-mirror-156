@@ -1,0 +1,11 @@
+win_precise_time/__init__.py,sha256=eptcRHhLT3U-mEiEC0is4wWCH8yvDn6gkLAUtpAIBgU,186
+win_precise_time/_t.c,sha256=4lKgSlL5x9OTqQMi2wHTGdZa3NX0RNpcC_MKDFWYOy8,3867
+win_precise_time/_t.h,sha256=3Msb-MVwauTIgpzyoyYjg1zr9WYIT4jOhYQ_ftWGQYg,419
+win_precise_time/_t.pyi,sha256=xkrfctl4YEojBt5yRPxphoRMNnK-LHv9HJSlB2j7CkI,185
+win_precise_time/_t.pypy38-pp73-win_amd64.pyd,sha256=7ii673gtTgGrwoFpQFd0z663wgKBB3FUJVLL9Vx_bKk,11776
+win_precise_time/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+win_precise_time-1.1.0.dist-info/LICENSE.txt,sha256=q1CxQGSM0KcScJdUdoKf0xp-s05OtVErixKmO2g6LTU,1112
+win_precise_time-1.1.0.dist-info/METADATA,sha256=7HBr8WBtTjpMzbw9tgab8sF1zs2bBcHkTHzHLcUcnSA,2777
+win_precise_time-1.1.0.dist-info/WHEEL,sha256=06TODGy9zsn9QCb4Oo1wjtnM2jOjgiTR78nw1cWltRU,107
+win_precise_time-1.1.0.dist-info/top_level.txt,sha256=ZeX6Z3qDABg1PS72WzFJzVzGFTypXy8P-YQNDHu4nFE,17
+win_precise_time-1.1.0.dist-info/RECORD,,
