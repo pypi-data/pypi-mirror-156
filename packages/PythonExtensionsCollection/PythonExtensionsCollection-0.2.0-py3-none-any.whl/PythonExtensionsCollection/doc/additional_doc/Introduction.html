@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>1. Introduction &#8212; Python Extensions Collection  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. CString module" href="../String.html" />
+    <link rel="prev" title="API Contents" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="introduction">
+<h1><span class="section-number">1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h1>
+<p>The Python Extensions Collection package extends the functionality of Python by some useful functions
+that are not available in Python immediately.</p>
+<p>This covers for example string operations like normalizing a path or searching
+for parent directories within a path.</p>
+<p>The Python Extensions Collection contains several Python modules and every module has to be imported separately
+in case of the functions inside are needed.</p>
+<p><strong>Path normalization</strong></p>
+<p>It’s not easy to handle paths - and especially the path separators - independend from the operating system.</p>
+<p>Under Linux it is obvious that single slashes are used as separator within paths. Whereas the Windows explorer
+uses single backslashes. In both operating systems web addresses contains single slashes as separator
+when displayed in web browsers.</p>
+<p>Using single backslashes within code - as content of string variables - is dangerous because the combination
+of a backslash and a letter can be interpreted as escape sequence - and this is maybe not the effect a user wants to have.</p>
+<p>To avoid unwanted escape sequences backslashes have to be masked (by the usage of two of them: <code class="docutils literal notranslate"><span class="pre">\\</span></code>). But also this
+could not be the best solution because there are also applications (like the Windows explorer) that are not able to handle
+masked backslashes. They expect to get single backslashes within a path.</p>
+<p>Preparing a path for best usage within code also includes collapsing redundant separators and up-level references.
+Python already provides functions to do this, but the outcome (path contains slashes or backslashes) depends on the
+operating system. And like already mentioned above also under Windows backslashes might not be the preferred choice.</p>
+<p>It also has to be considered that redundant separators at the beginning of an address of a local network resource
+(like <code class="docutils literal notranslate"><span class="pre">\\server.com</span></code>) and or inside an internet address (like <code class="docutils literal notranslate"><span class="pre">https:\\server.com</span></code>) must <strong>not</strong> be collapsed!
+Unfortunately the Python function <code class="docutils literal notranslate"><span class="pre">normpath</span></code> does not consider this context.</p>
+<p>To give the user full control about the format of a path, independend from the operating system and independend if it’s
+a local path, a path to a local network resource or an internet address, the function <code class="docutils literal notranslate"><span class="pre">CString::NormalizePath()</span></code> provides
+lot’s of parameters to influence the result.</p>
+<p><strong>Module import</strong></p>
+<p>The modules of the Python Extension Collection and their methods can be accessed in the following ways:</p>
+<p><em>CFile</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">PythonExtensionsCollection.File.CFile</span> <span class="kn">import</span> <span class="n">CFile</span>
+<span class="o">...</span>
+<span class="n">sFile</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;%TMP%\File.txt&quot;</span>
+<span class="n">oFile</span> <span class="o">=</span> <span class="n">CFile</span><span class="p">(</span><span class="n">sFile</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Please consider that <code class="docutils literal notranslate"><span class="pre">oFile</span></code> is an instance of the class <code class="docutils literal notranslate"><span class="pre">CFile</span></code> - <em>and not a file handle</em>.</p>
+<p><em>CString</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">PythonExtensionsCollection.String.CString</span> <span class="kn">import</span> <span class="n">CString</span>
+<span class="o">...</span>
+<span class="n">sPath</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">NormalizePath</span><span class="p">(</span><span class="n">sPath</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="n">bAck</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">StringFilter</span><span class="p">(</span><span class="n">sString</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">bSuccess</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sResult</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><em>CUtils</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">PythonExtensionsCollection.Utils.CUtils</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">...</span>
+<span class="n">PrettyPrint</span><span class="p">(</span><span class="n">oData</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="examples">
+<h1><span class="section-number">2. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h1>
+<section id="file-access-with-cfile">
+<h2><span class="section-number">2.1. </span>File access with CFile<a class="headerlink" href="#file-access-with-cfile" title="Permalink to this heading">¶</a></h2>
+<p>The motivation for the CFile module contains two main topics:</p>
+<ol class="arabic simple">
+<li><p>More user control by introducing further parameter for file access functions. With high priority <code class="docutils literal notranslate"><span class="pre">CFile</span></code> enables the user
+to take care about that nothing existing is overwritten accidently.</p></li>
+<li><p>Hide the file handles und use the mechanism of class variables to avoid access violations independend from
+the way different operation systems like Windows and Unix are handling this.</p></li>
+</ol>
+<p>This shortens the code, eases the implementation and makes tests (in which this module is used) more stable.</p>
+<p><em>Define two variables with path and name of test files.</em></p>
+<p>Under Windows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sFile_1</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;%TMP%\CFile_TestFile_1.txt&quot;</span>
+<span class="n">sFile_2</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;%TMP%\CFile_TestFile_2.txt&quot;</span>
+</pre></div>
+</div>
+<p>Or under Linux:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sFile_1</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;/tmp/CFile_TestFile_1.txt&quot;</span>
+<span class="n">sFile_2</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;/tmp/CFile_TestFile_2.txt&quot;</span>
+</pre></div>
+</div>
+<p><em>The first class instance:</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">oFile_1</span> <span class="o">=</span> <span class="n">CFile</span><span class="p">(</span><span class="n">sFile_1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">oFile_1</span></code> is the instance of a class - <em>and not the file handle</em>. The file handle is hidden, the user has nothing to do with it.</p>
+<p>Every class instance can work with one single file only (during the complete instance lifetime) and has exclusive access to this file.</p>
+<p>No other class instance is allowed to use this file. Therefore the second line in the following code throws an exception:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">oFile_1_A</span> <span class="o">=</span> <span class="n">CFile</span><span class="p">(</span><span class="n">sFile_1</span><span class="p">)</span>
+<span class="n">oFile_1_B</span> <span class="o">=</span> <span class="n">CFile</span><span class="p">(</span><span class="n">sFile_1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It’s more save to implement in this way:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+   <span class="n">oFile_1</span> <span class="o">=</span> <span class="n">CFile</span><span class="p">(</span><span class="n">sFile_1</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>For writing content to files two methods are available: <code class="docutils literal notranslate"><span class="pre">Write()</span></code> and <code class="docutils literal notranslate"><span class="pre">Append()</span></code>.</p>
+<p>Using <code class="docutils literal notranslate"><span class="pre">Write()</span></code> causes the class to open the file for writing (‘w’) - in case of the file is not already opened for writing.
+Using <code class="docutils literal notranslate"><span class="pre">Append()</span></code> causes the class to open the file for appending (‘a’) - in case of the file is not already opened for appending.</p>
+<p>Switching between <code class="docutils literal notranslate"><span class="pre">Write()</span></code> and <code class="docutils literal notranslate"><span class="pre">Append()</span></code> causes an intermediate file handle <code class="docutils literal notranslate"><span class="pre">close()</span></code> internally!</p>
+<p><em>Write some content to file:</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">Write</span><span class="p">(</span><span class="s2">&quot;A B C&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&gt; sResult oFile_1.Write : &#39;</span><span class="si">{</span><span class="n">sResult</span><span class="si">}</span><span class="s2">&#39; / bSuccess : </span><span class="si">{</span><span class="n">bSuccess</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Most of the functions returns at least <code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> and <code class="docutils literal notranslate"><span class="pre">sResult</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> in case of no error occurred.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code> in case of an error occurred.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> is <code class="docutils literal notranslate"><span class="pre">None</span></code> in case of a very fatal error occurred (exceptions).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sResult</span></code> contains details about what happens during computation.</p></li>
+</ul>
+<p>It is possible now to continue with using <code class="docutils literal notranslate"><span class="pre">oFile_1.Write(&quot;...&quot;)</span></code>; the content will be appended - as long as the file is still open for writing.</p>
+<p>Some functions close the file handle (e.g. <code class="docutils literal notranslate"><span class="pre">ReadLines()</span></code>). Therefore sequences like <code class="docutils literal notranslate"><span class="pre">oFile_1.Write(&quot;...&quot;)</span></code>, <code class="docutils literal notranslate"><span class="pre">oFile_1.Readlines(&quot;...&quot;)</span></code>, <code class="docutils literal notranslate"><span class="pre">oFile_1.Write(&quot;...&quot;)</span></code>
+should be avoided - because the <code class="docutils literal notranslate"><span class="pre">Write()</span></code> after the <code class="docutils literal notranslate"><span class="pre">ReadLines()</span></code> starts the file from scratch and the file content written by the previous <code class="docutils literal notranslate"><span class="pre">Write()</span></code> calls is lost.</p>
+<p>For appending content to a file use the function <code class="docutils literal notranslate"><span class="pre">Append()</span></code>.</p>
+<p><em>Append content to file:</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="s2">&quot;A B C&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For reading content from a file use the function <code class="docutils literal notranslate"><span class="pre">ReadLines()</span></code>.</p>
+<p><em>Read from file:</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">listLines_1</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">ReadLines</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">sLine</span> <span class="ow">in</span> <span class="n">listLines_1</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sLine</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Additionally to <code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> and <code class="docutils literal notranslate"><span class="pre">sResult</span></code> the function returnes a list of lines.</p>
+<p>Internally <code class="docutils literal notranslate"><span class="pre">ReadLines()</span></code> takes care about:</p>
+<ul class="simple">
+<li><p>Closing the file - in case the file is still opened</p></li>
+<li><p>Opening the file for reading</p></li>
+<li><p>Reading the content line by line until the end of file is reached</p></li>
+<li><p>Closing the file</p></li>
+</ul>
+<p>To avoid code like this</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">sLine</span> <span class="ow">in</span> <span class="n">listLines_1</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sLine</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>it is also possible to let <code class="docutils literal notranslate"><span class="pre">ReadLines()</span></code> do this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">listLines_1</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">ReadLines</span><span class="p">(</span><span class="n">bToScreen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A function to read a single line from file only is not available, but it is possible to use some filter parameter of <code class="docutils literal notranslate"><span class="pre">ReadLines()</span></code>
+to reduce the amount of content already during the file is read. This prevents the user from implementing further loops.</p>
+<p>Let’s assume the following:</p>
+<ul class="simple">
+<li><p>The file <code class="docutils literal notranslate"><span class="pre">sFile_1</span></code> contains empty lines</p></li>
+<li><p>The file <code class="docutils literal notranslate"><span class="pre">sFile_1</span></code> contains also lines, that are commented out (with a hash ‘<code class="docutils literal notranslate"><span class="pre">#</span></code>’ at the beginning)</p></li>
+<li><p>We want <code class="docutils literal notranslate"><span class="pre">ReadLines()</span></code> to skip empty lines and lines that are commented out</p></li>
+</ul>
+<p>This can be imlemented in the following way.</p>
+<p><em>Read a subset of file content:</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">listLines_1</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">ReadLines</span><span class="p">(</span><span class="n">bSkipBlankLines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                                                   <span class="n">sComment</span><span class="o">=</span><span class="s1">&#39;#&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It is a good practice to close file handles as soon as possible. Therefore <code class="docutils literal notranslate"><span class="pre">CFile</span></code> provides the possibility to do this explicitely.</p>
+<p><em>Close a file handle:</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This makes sense in case of later again access to this file is needed.</p>
+<p>Additionally to that the file handle is closed implicitely:</p>
+<ul class="simple">
+<li><p>in case of it is required (e.g. when switching between read and write access),</p></li>
+<li><p>in case of the class instance is destoyed.</p></li>
+</ul>
+<p>Therefore an alternative to the <code class="docutils literal notranslate"><span class="pre">Close()</span></code> function is the deletion of the class instance:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">oFile_1</span>
+</pre></div>
+</div>
+<p>This makes sense in case of access to this file is not needed any more.</p>
+<p>It is recommended to prefer <code class="docutils literal notranslate"><span class="pre">del</span></code> (instead of <code class="docutils literal notranslate"><span class="pre">Close()</span></code>) to avoid to keep too much not used objects for a too long length of time in memory.</p>
+<p>A file can be copied to another file.</p>
+<p><em>Copy a file:</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">CopyTo</span><span class="p">(</span><span class="n">sFile_2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The destination (<code class="docutils literal notranslate"><span class="pre">sFile_2</span></code> in the example above) can either be a full path and name of a file or the path only.</p>
+<p>It makes a difference if the destination file exists or not. The optional parameter <code class="docutils literal notranslate"><span class="pre">bOverwrite</span></code> controls the behavior of <code class="docutils literal notranslate"><span class="pre">CopyTo()</span></code>.</p>
+<p>The default is that it is not allowed to overwrite an existing destination file: <code class="docutils literal notranslate"><span class="pre">bOverwrite</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code>. <code class="docutils literal notranslate"><span class="pre">CopyTo()</span></code> returns
+<code class="docutils literal notranslate"><span class="pre">bSuccess</span> <span class="pre">=</span> <span class="pre">False</span></code> in this case.</p>
+<p>In case the user want to allow <code class="docutils literal notranslate"><span class="pre">CopyTo()</span></code> to overwrite existing destination files, it has to be coded explicitely:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">CopyTo</span><span class="p">(</span><span class="n">sFile_2</span><span class="p">,</span> <span class="n">bOverwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A file can be moved to another file.</p>
+<p><em>Move a file:</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">MoveTo</span><span class="p">(</span><span class="n">sFile_2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Also <code class="docutils literal notranslate"><span class="pre">MoveTo()</span></code> supports <code class="docutils literal notranslate"><span class="pre">bOverwrite</span></code>. The behavior is the same as <code class="docutils literal notranslate"><span class="pre">CopyTo()</span></code>.</p>
+<p>A file can be deleted.</p>
+<p><em>Delete a file:</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">Delete</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>It is possible to distinguish between two different motivations to delete a file:</p>
+<ol class="arabic">
+<li><p><em>Explicitely do a deletion</em></p>
+<p>This requires that the file to be deleted, does exist.</p>
+</li>
+<li><p><em>Making sure only that the files does not exist</em></p>
+<p>In this case it doesn’t matter that maybe there is nothing to delete because the file already does not exist.</p>
+</li>
+</ol>
+<p>The optional parameter <code class="docutils literal notranslate"><span class="pre">bConfirmDelete</span></code> controls this behavior.</p>
+<p>Default is that <code class="docutils literal notranslate"><span class="pre">Delete()</span></code> requires an existing file to delete:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">Delete</span><span class="p">(</span><span class="n">bConfirmDelete</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In case of the file does not exist, <code class="docutils literal notranslate"><span class="pre">Delete()</span></code> returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span> <span class="pre">=</span> <span class="pre">False</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Delete()</span></code> also returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span> <span class="pre">=</span> <span class="pre">False|None</span></code> in case of an existing file cannot be deleted (e.g. because of an access violation).</p>
+<p>If it doesn’t matter it the file exists or not, it has to be coded explicitely:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">Delete</span><span class="p">(</span><span class="n">bConfirmDelete</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In this case <code class="docutils literal notranslate"><span class="pre">Delete()</span></code> only returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span> <span class="pre">=</span> <span class="pre">False|None</span></code> in case of an existing file cannot be deleted (e.g. because of an access violation).</p>
+<p><strong>Avoid access violations</strong></p>
+<p>Like already mentioned above every instance of <code class="docutils literal notranslate"><span class="pre">CFile</span></code> has an exclusive access to it’s own file.</p>
+<p>Only in case of <code class="docutils literal notranslate"><span class="pre">CopyTo()</span></code> and <code class="docutils literal notranslate"><span class="pre">MoveTo()</span></code> other files are involved: the destination files.</p>
+<p>To avoid access violations it is not possible to copy or move a file to another file, that is under access of another instance of <code class="docutils literal notranslate"><span class="pre">CFile</span></code>.</p>
+<p>In the following example <code class="docutils literal notranslate"><span class="pre">oFile_1.CopyTo(sFile_2)</span></code> returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span> <span class="pre">=</span> <span class="pre">False</span></code> because <code class="docutils literal notranslate"><span class="pre">sFile_2</span></code> is already in access by <code class="docutils literal notranslate"><span class="pre">oFile_2</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">oFile_1</span> <span class="o">=</span> <span class="n">CFile</span><span class="p">(</span><span class="n">sFile_1</span><span class="p">)</span>
+<span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">Write</span><span class="p">(</span><span class="s2">&quot;A B C&quot;</span><span class="p">)</span>
+
+<span class="n">oFile_2</span> <span class="o">=</span> <span class="n">CFile</span><span class="p">(</span><span class="n">sFile_2</span><span class="p">)</span>
+<span class="n">listLines_2</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_2</span><span class="o">.</span><span class="n">ReadLines</span><span class="p">()</span>
+
+<span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">CopyTo</span><span class="p">(</span><span class="n">sFile_2</span><span class="p">)</span>
+
+<span class="k">del</span> <span class="n">oFile_1</span>
+<span class="k">del</span> <span class="n">oFile_2</span>
+</pre></div>
+</div>
+<p>The solution is to delete the class instances as early as possible.</p>
+<p>In the following example the copying is successful:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">oFile_1</span> <span class="o">=</span> <span class="n">CFile</span><span class="p">(</span><span class="n">sFile_1</span><span class="p">)</span>
+<span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">Write</span><span class="p">(</span><span class="s2">&quot;A B C&quot;</span><span class="p">)</span>
+
+<span class="n">oFile_2</span> <span class="o">=</span> <span class="n">CFile</span><span class="p">(</span><span class="n">sFile_2</span><span class="p">)</span>
+<span class="n">listLines_2</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_2</span><span class="o">.</span><span class="n">ReadLines</span><span class="p">()</span>
+<span class="k">del</span> <span class="n">oFile_2</span>
+
+<span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="n">oFile_1</span><span class="o">.</span><span class="n">CopyTo</span><span class="p">(</span><span class="n">sFile_2</span><span class="p">)</span>
+<span class="k">del</span> <span class="n">oFile_1</span>
+</pre></div>
+</div>
+<p>(<em>Last update: 26.01.2022</em>)</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Python Extensions Collection</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#examples">2. Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#file-access-with-cfile">2.1. File access with CFile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../String.html">3. CString module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Utils.html">4. CUtils module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../File.html">5. CFile module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="previous chapter">API Contents</a></li>
+      <li>Next: <a href="../String.html" title="next chapter"><span class="section-number">3. </span>CString module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Queckenstedt Holger (XC-CT/ECA3).
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/additional_doc/Introduction.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

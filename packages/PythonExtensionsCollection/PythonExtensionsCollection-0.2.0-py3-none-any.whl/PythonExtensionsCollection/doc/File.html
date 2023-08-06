@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>5. CFile module &#8212; Python Extensions Collection  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="4. CUtils module" href="Utils.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section class="dl-parameters" id="module-PythonExtensionsCollection.File.CFile">
+<span id="cfile-module"></span><h1><span class="section-number">5. </span>CFile module<a class="headerlink" href="#module-PythonExtensionsCollection.File.CFile" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.CFile">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PythonExtensionsCollection.File.CFile.</span></span><span class="sig-name descname"><span class="pre">CFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/File/CFile.html#CFile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.CFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The class <code class="docutils literal notranslate"><span class="pre">CFile</span></code> provides a small set of file functions with extended parametrization (like switches
+defining if a file is allowed to be overwritten or not).</p>
+<p>Most of the functions at least returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> and <code class="docutils literal notranslate"><span class="pre">sResult</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> in case of no error occurred.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code> in case of an error occurred.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> is <code class="docutils literal notranslate"><span class="pre">None</span></code> in case of a very fatal error occurred (exceptions).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sResult</span></code> contains details about what happens during computation.</p></li>
+</ul>
+<p>Every instance of CFile handles one single file only and forces exclusive access to this file.</p>
+<p>It is not possible to create an instance of this class with a file that is already in use by another instance.</p>
+<p>It is also not possible to use <code class="docutils literal notranslate"><span class="pre">CopyTo</span></code> or <code class="docutils literal notranslate"><span class="pre">MoveTo</span></code> to overwrite files that are already in use by another instance.
+This makes the file handling more save against access violations.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.CFile.Append">
+<span class="sig-name descname"><span class="pre">Append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nVSpaceAfter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sPrefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bToScreen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/File/CFile.html#CFile.Append"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.CFile.Append" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Appends the content of a variable <code class="docutils literal notranslate"><span class="pre">Content</span></code> to file.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">Content</span></code> is not a string, the <code class="docutils literal notranslate"><span class="pre">Write</span></code> method resolves the data structure (therefore <code class="docutils literal notranslate"><span class="pre">Content</span></code> can also be of type
+<code class="docutils literal notranslate"><span class="pre">list</span></code>, <code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <code class="docutils literal notranslate"><span class="pre">set</span></code>, <code class="docutils literal notranslate"><span class="pre">dict</span></code>, <code class="docutils literal notranslate"><span class="pre">dotdict</span></code>).</p>
+<p>Adds vertical space <code class="docutils literal notranslate"><span class="pre">nVSpaceAfter</span></code> (= number of blank lines) after <code class="docutils literal notranslate"><span class="pre">Content</span></code>.</p>
+<p>Prints <code class="docutils literal notranslate"><span class="pre">Content</span></code> also to screen in case of <code class="docutils literal notranslate"><span class="pre">bToScreen</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> (default: <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> and <code class="docutils literal notranslate"><span class="pre">sResult</span></code> (feedback).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.CFile.Close">
+<span class="sig-name descname"><span class="pre">Close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/File/CFile.html#CFile.Close"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.CFile.Close" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Closes the opened file.</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> and <code class="docutils literal notranslate"><span class="pre">sResult</span></code> (feedback).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.CFile.CopyTo">
+<span class="sig-name descname"><span class="pre">CopyTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sDestination</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bOverwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/File/CFile.html#CFile.CopyTo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.CFile.CopyTo" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Copies the current file to <code class="docutils literal notranslate"><span class="pre">sDestination</span></code>, that can either be a path without file name or a path together with a file name.</p>
+<p>In case of the destination file already exists and <code class="docutils literal notranslate"><span class="pre">bOverwrite</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, than the destination file will be overwritten.</p>
+<p>In case of the destination file already exists and <code class="docutils literal notranslate"><span class="pre">bOverwrite</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code> (default), than the destination file will not be overwritten
+and <code class="docutils literal notranslate"><span class="pre">CopyTo</span></code> returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span> <span class="pre">=</span> <span class="pre">False</span></code>.</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> and <code class="docutils literal notranslate"><span class="pre">sResult</span></code> (feedback).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.CFile.Delete">
+<span class="sig-name descname"><span class="pre">Delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bConfirmDelete</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/File/CFile.html#CFile.Delete"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.CFile.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Deletes the current file.</p>
+<p><strong>bConfirmDelete</strong></p>
+<blockquote>
+<div><p>Defines if it will be handled as error if the file does not exist.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>: If the file does not exist, the method indicates an error (<code class="docutils literal notranslate"><span class="pre">bSuccess</span> <span class="pre">=</span> <span class="pre">False</span></code>).</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">False</span></code>: It doesn’t matter if the file exists or not.</p>
+</div></blockquote>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> and <code class="docutils literal notranslate"><span class="pre">sResult</span></code> (feedback).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.CFile.GetFileInfo">
+<span class="sig-name descname"><span class="pre">GetFileInfo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/File/CFile.html#CFile.GetFileInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.CFile.GetFileInfo" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Returns the following informations about the file (encapsulated within a dictionary):</p>
+<p>Key <strong>sFile</strong></p>
+<blockquote>
+<div><p>Path and name of current file</p>
+</div></blockquote>
+<p>Key <strong>bFileIsExisting</strong></p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if file is existing, otherwise not</p>
+</div></blockquote>
+<p>Key <strong>sFileName</strong></p>
+<blockquote>
+<div><p>The name of the current file (incl. extension)</p>
+</div></blockquote>
+<p>Key <strong>sFileExtension</strong></p>
+<blockquote>
+<div><p>The extension of the current file</p>
+</div></blockquote>
+<p>Key <strong>sFileNameOnly</strong></p>
+<blockquote>
+<div><p>The pure name of the current file (without extension)</p>
+</div></blockquote>
+<p>Key <strong>sFilePath</strong></p>
+<blockquote>
+<div><p>The the path to current file</p>
+</div></blockquote>
+<p>Key <strong>bFilePathIsExisting</strong></p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if file path is existing, otherwise not</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.CFile.MoveTo">
+<span class="sig-name descname"><span class="pre">MoveTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sDestination</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bOverwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/File/CFile.html#CFile.MoveTo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.CFile.MoveTo" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Moves the current file to <code class="docutils literal notranslate"><span class="pre">sDestination</span></code>, that can either be a path without file name or a path together with a file name.</p>
+<p>In case of the destination file already exists and <code class="docutils literal notranslate"><span class="pre">bOverwrite</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, than the destination file will be overwritten.</p>
+<p>In case of the destination file already exists and <code class="docutils literal notranslate"><span class="pre">bOverwrite</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code> (default), than the destination file will not be overwritten
+and <code class="docutils literal notranslate"><span class="pre">CopyTo</span></code> returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span> <span class="pre">=</span> <span class="pre">False</span></code>.</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> and <code class="docutils literal notranslate"><span class="pre">sResult</span></code> (feedback).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.CFile.ReadLines">
+<span class="sig-name descname"><span class="pre">ReadLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bCaseSensitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bSkipBlankLines</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sComment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sStartsWith</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sEndsWith</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sStartsNotWith</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sEndsNotWith</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sContains</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sContainsNot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sInclRegEx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sExclRegEx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bLStrip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bRStrip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bToScreen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/File/CFile.html#CFile.ReadLines"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.CFile.ReadLines" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Reads content from current file. Returns an array of lines together with <code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> and <code class="docutils literal notranslate"><span class="pre">sResult</span></code> (feedback).</p>
+<p>The method takes care of opening and closing the file. The complete file content is read by <code class="docutils literal notranslate"><span class="pre">ReadLines</span></code> in one step,
+but with the help of further parameters it is possible to reduce the content by including and excluding lines.</p>
+<p>T.B.C.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.CFile.Write">
+<span class="sig-name descname"><span class="pre">Write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nVSpaceAfter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sPrefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bToScreen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/File/CFile.html#CFile.Write"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.CFile.Write" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Writes the content of a variable <code class="docutils literal notranslate"><span class="pre">Content</span></code> to file.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">Content</span></code> is not a string, the <code class="docutils literal notranslate"><span class="pre">Write</span></code> method resolves the data structure (therefore <code class="docutils literal notranslate"><span class="pre">Content</span></code> can also be of type
+<code class="docutils literal notranslate"><span class="pre">list</span></code>, <code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <code class="docutils literal notranslate"><span class="pre">set</span></code>, <code class="docutils literal notranslate"><span class="pre">dict</span></code>, <code class="docutils literal notranslate"><span class="pre">dotdict</span></code>).</p>
+<p>Adds vertical space <code class="docutils literal notranslate"><span class="pre">nVSpaceAfter</span></code> (= number of blank lines) after <code class="docutils literal notranslate"><span class="pre">Content</span></code>.</p>
+<p>Prints <code class="docutils literal notranslate"><span class="pre">Content</span></code> also to screen in case of <code class="docutils literal notranslate"><span class="pre">bToScreen</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> (default: <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p>
+<p>Returns <code class="docutils literal notranslate"><span class="pre">bSuccess</span></code> and <code class="docutils literal notranslate"><span class="pre">sResult</span></code> (feedback).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.enFileStatiType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PythonExtensionsCollection.File.CFile.</span></span><span class="sig-name descname"><span class="pre">enFileStatiType</span></span><a class="reference internal" href="_modules/PythonExtensionsCollection/File/CFile.html#enFileStatiType"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.enFileStatiType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.enFileStatiType.closed">
+<span class="sig-name descname"><span class="pre">closed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'closed'</span></em><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.enFileStatiType.closed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.enFileStatiType.openedforappending">
+<span class="sig-name descname"><span class="pre">openedforappending</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'openedforappending'</span></em><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.enFileStatiType.openedforappending" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.enFileStatiType.openedforreading">
+<span class="sig-name descname"><span class="pre">openedforreading</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'openedforreading'</span></em><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.enFileStatiType.openedforreading" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.File.CFile.enFileStatiType.openedforwriting">
+<span class="sig-name descname"><span class="pre">openedforwriting</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'openedforwriting'</span></em><a class="headerlink" href="#PythonExtensionsCollection.File.CFile.enFileStatiType.openedforwriting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Python Extensions Collection</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="additional_doc/Introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additional_doc/Introduction.html#examples">2. Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="String.html">3. CString module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils.html">4. CUtils module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. CFile module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Utils.html" title="previous chapter"><span class="section-number">4. </span>CUtils module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Queckenstedt Holger (XC-CT/ECA3).
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/File.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

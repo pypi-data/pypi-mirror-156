@@ -1,0 +1,1221 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PythonExtensionsCollection.String.CString &#8212; Python Extensions Collection  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for PythonExtensionsCollection.String.CString</h1><div class="highlight"><pre>
+<span></span><span class="c1"># **************************************************************************************************************</span>
+<span class="c1">#</span>
+<span class="c1">#  Copyright 2020-2022 Robert Bosch GmbH</span>
+<span class="c1">#</span>
+<span class="c1">#  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="c1">#  you may not use this file except in compliance with the License.</span>
+<span class="c1">#  You may obtain a copy of the License at</span>
+<span class="c1">#</span>
+<span class="c1">#      http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1">#</span>
+<span class="c1">#  Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1">#  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="c1">#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1">#  See the License for the specific language governing permissions and</span>
+<span class="c1">#  limitations under the License.</span>
+<span class="c1">#</span>
+<span class="c1"># **************************************************************************************************************</span>
+<span class="c1">#</span>
+<span class="c1"># CString.py</span>
+<span class="c1">#</span>
+<span class="c1"># XC-CT/ECA3-Queckenstedt</span>
+<span class="c1">#</span>
+<span class="c1"># 26.01.2022</span>
+<span class="c1">#</span>
+<span class="c1"># **************************************************************************************************************</span>
+
+<span class="c1"># -- import standard Python modules</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">ntpath</span><span class="o">,</span> <span class="nn">re</span>
+
+<span class="c1"># **************************************************************************************************************</span>
+
+<div class="viewcode-block" id="CString"><a class="viewcode-back" href="../../../String.html#PythonExtensionsCollection.String.CString.CString">[docs]</a><span class="k">class</span> <span class="nc">CString</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+   <span class="sd">&quot;&quot;&quot;Contains some string computation methods like e.g. normalizing a path.&quot;&quot;&quot;</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1">#TM***</span>
+
+<div class="viewcode-block" id="CString.NormalizePath"><a class="viewcode-back" href="../../../String.html#PythonExtensionsCollection.String.CString.CString.NormalizePath">[docs]</a>   <span class="k">def</span> <span class="nf">NormalizePath</span><span class="p">(</span><span class="n">sPath</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bWin</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sReferencePathAbs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bConsiderBlanks</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">bExpandEnvVars</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">bMask</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">**Method:**</span>
+
+<span class="sd">**NormalizePath**</span>
+
+<span class="sd">   Normalizes local paths, paths to local network resources and internet addresses</span>
+
+<span class="sd">**Args:**</span>
+
+<span class="sd">**sPath** (*string*)</span>
+
+<span class="sd">   The path to be normalized</span>
+
+<span class="sd">**bWin** (*boolean; optional; default: False*)</span>
+
+<span class="sd">   If ``True`` then returned path contains masked backslashes as separator, otherwise slashes</span>
+
+<span class="sd">**sReferencePathAbs** (*string, optional*)</span>
+
+<span class="sd">   In case of ``sPath`` is relative and ``sReferencePathAbs`` (expected to be absolute) is given, then</span>
+<span class="sd">   the returned absolute path is a join of both input paths</span>
+
+<span class="sd">**bConsiderBlanks** (*boolean; optional; default: False*)</span>
+
+<span class="sd">   If ``True`` then the returned path is encapsulated in quotes - in case of the path contains blanks</span>
+
+<span class="sd">**bExpandEnvVars** (*boolean; optional; default: True*)</span>
+
+<span class="sd">   If ``True`` then in the returned path environment variables are resolved, otherwise not.</span>
+
+<span class="sd">**bMask** (*boolean; optional; default: True; requires bWin=True*)</span>
+
+<span class="sd">   If ``bWin`` is ``True`` and ``bMask`` is ``True`` then the returned path contains masked backslashes as separator.</span>
+<span class="sd">   If ``bWin`` is ``True`` and ``bMask`` is ``False`` then the returned path contains single backslashes only - this might be</span>
+<span class="sd">   required for applications, that are not able to handle masked backslashes. In case of ``bWin`` is ``False`` ``bMask`` has no effect.</span>
+
+<span class="sd">**Returns:**</span>
+
+<span class="sd">**sPath** (*string*)</span>
+
+<span class="sd">   The normalized path (is ``None`` in case of ``sPath`` is ``None``)</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="k">if</span> <span class="n">sPath</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+
+         <span class="c1"># -- expand Windows environment variables</span>
+         <span class="k">if</span> <span class="n">bExpandEnvVars</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">sPath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expandvars</span><span class="p">(</span><span class="n">sPath</span><span class="p">)</span>
+
+         <span class="c1"># - remove leading and trailing horizontal space</span>
+         <span class="n">sPath</span> <span class="o">=</span> <span class="n">sPath</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot; </span><span class="se">\t\r\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+         <span class="c1"># - remove leading and trailing quotes</span>
+         <span class="n">sPath</span> <span class="o">=</span> <span class="n">sPath</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+
+         <span class="c1"># - remove once more leading and trailing horizontal space</span>
+         <span class="c1">#   (after the removal of leading and trailing quotes further horizontal space might be there, that has to be removed;</span>
+         <span class="c1">#    but further levels of nesting are not considered)</span>
+         <span class="n">sPath</span> <span class="o">=</span> <span class="n">sPath</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot; </span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
+
+         <span class="k">if</span> <span class="n">sPath</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">sPath</span>
+
+         <span class="c1"># - remove trailing slash or backslash (maybe at end of path to folder)</span>
+         <span class="n">sPath</span> <span class="o">=</span> <span class="n">sPath</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s2">&quot;/</span><span class="se">\\</span><span class="s2">&quot;</span><span class="p">)</span>
+
+         <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+         <span class="c1"># consider internet addresses and local network resources</span>
+         <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+         <span class="c1"># -- local network resource / file server</span>
+         <span class="c1">#    (prepare for Windows explorer)</span>
+         <span class="c1"># either (default)</span>
+         <span class="c1"># //server.com/abc/xyz</span>
+         <span class="c1"># or (with bWin=True); bMask must be False because \\server.com\\abc\\xyz is not allowed</span>
+         <span class="c1"># \\server.com\abc\xyz</span>
+         <span class="c1"># (=&gt; user is allowed to select bWin but not bMask)</span>
+         <span class="c1">#</span>
+         <span class="c1"># -- local network resource / file server</span>
+         <span class="c1">#    (prepare for web browser)</span>
+         <span class="c1"># after &#39;file://///&#39; only single slashes allowed; bWin and bMask must be False</span>
+         <span class="c1"># file://///server.com/abc/xyz</span>
+         <span class="c1"># (=&gt; user is NOT allowed to select bWin and bMask)</span>
+         <span class="c1">#</span>
+         <span class="c1"># -- internet address</span>
+         <span class="c1"># after server name only single slashes allowed; bWin and bMask must be False</span>
+         <span class="c1"># http://server.com/abc/xyz</span>
+         <span class="c1"># https://server.com/abc/xyz</span>
+         <span class="c1"># (=&gt; user is NOT allowed to select bWin and bMask)</span>
+         <span class="c1">#</span>
+         <span class="c1"># - not allowed (=&gt; this method must not return this format):</span>
+         <span class="c1"># http:\\server.com</span>
+         <span class="c1"># https:\\server.com</span>
+         <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+
+         <span class="n">sPathPrefix</span> <span class="o">=</span> <span class="kc">None</span>
+
+         <span class="c1"># In case there is any prefix, we remove this prefix, we compute the remaining part of the path separately,</span>
+         <span class="c1"># we also modify this prefix manually, and at the end we put the new prefix back to the path.</span>
+
+         <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">sPath</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="se">\\\\</span><span class="s2">&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">sPath</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;//&quot;</span><span class="p">)</span> <span class="p">):</span>
+            <span class="n">sPath</span> <span class="o">=</span> <span class="n">sPath</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+            <span class="k">if</span> <span class="n">bWin</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+               <span class="n">sPathPrefix</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\\\\</span><span class="s2">&quot;</span>
+            <span class="k">else</span><span class="p">:</span>
+               <span class="n">sPathPrefix</span> <span class="o">=</span> <span class="s2">&quot;//&quot;</span>
+            <span class="n">bMask</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># !!! this overrules the input parameter value, because masked backslashes are not allowed in remaining path !!!</span>
+         <span class="k">elif</span> <span class="n">sPath</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;file://///&quot;</span><span class="p">:</span> <span class="c1"># exactly this must be given; all other combinations of slashes and backslashes are not handled</span>
+            <span class="n">sPath</span> <span class="o">=</span> <span class="n">sPath</span><span class="p">[</span><span class="mi">10</span><span class="p">:]</span>
+            <span class="n">sPathPrefix</span> <span class="o">=</span> <span class="s2">&quot;file://///&quot;</span>
+            <span class="n">bWin</span>  <span class="o">=</span> <span class="kc">False</span> <span class="c1"># !!! this overrules the input parameter value, because only single slashes allowed in remaining path !!!</span>
+            <span class="n">bMask</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># !!! this overrules the input parameter value, because only single slashes allowed in remaining path !!!</span>
+         <span class="k">elif</span> <span class="p">(</span> <span class="p">(</span><span class="n">sPath</span><span class="p">[:</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;http://&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">sPath</span><span class="p">[:</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;http:</span><span class="se">\\\\</span><span class="s2">&quot;</span><span class="p">)</span> <span class="p">):</span>
+            <span class="n">sPath</span> <span class="o">=</span> <span class="n">sPath</span><span class="p">[</span><span class="mi">7</span><span class="p">:]</span>
+            <span class="n">sPathPrefix</span> <span class="o">=</span> <span class="s2">&quot;http://&quot;</span>
+            <span class="n">bWin</span>  <span class="o">=</span> <span class="kc">False</span> <span class="c1"># !!! this overrules the input parameter value, because only single slashes allowed in remaining path !!!</span>
+            <span class="n">bMask</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># !!! this overrules the input parameter value, because only single slashes allowed in remaining path !!!</span>
+         <span class="k">elif</span> <span class="p">(</span> <span class="p">(</span><span class="n">sPath</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;https://&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">sPath</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;https:</span><span class="se">\\\\</span><span class="s2">&quot;</span><span class="p">)</span> <span class="p">):</span>
+            <span class="n">sPath</span> <span class="o">=</span> <span class="n">sPath</span><span class="p">[</span><span class="mi">8</span><span class="p">:]</span>
+            <span class="n">sPathPrefix</span> <span class="o">=</span> <span class="s2">&quot;https://&quot;</span>
+            <span class="n">bWin</span>  <span class="o">=</span> <span class="kc">False</span> <span class="c1"># !!! this overrules the input parameter value, because only single slashes allowed in remaining path !!!</span>
+            <span class="n">bMask</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># !!! this overrules the input parameter value, because only single slashes allowed in remaining path !!!</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Internet addresses and local network resources handled, now checking for relative paths:</span>
+            <span class="c1"># In case of sPath is a relative path AND an absolute reference path is provided</span>
+            <span class="c1"># merge them to an absolute path; without reference path use standard function to</span>
+            <span class="c1"># convert relative path to absolute path</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">sPath</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">sPath</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;$&quot;</span><span class="p">)</span> <span class="p">):</span>
+               <span class="c1"># If sPath starts with &#39;%&#39; or with &#39;$&#39; it is assumed that the path starts with an environment variable (Windows or Linux).</span>
+               <span class="c1"># But in this case &#39;os.path.isabs(sPath)&#39; will not detect this to be an absolute path and will call</span>
+               <span class="c1"># &#39;sPath = os.path.abspath(sPath)&#39; (depending on sReferencePathAbs). This will accidently merge</span>
+               <span class="c1"># the root path together with the path starting with the environment variable and cause invalid results.</span>
+               <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isabs</span><span class="p">(</span><span class="n">sPath</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sReferencePathAbs</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                     <span class="n">sPath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sReferencePathAbs</span><span class="p">,</span> <span class="n">sPath</span><span class="p">)</span>
+                  <span class="k">else</span><span class="p">:</span>
+                     <span class="n">sPath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">sPath</span><span class="p">)</span>
+
+         <span class="c1"># eof computation of sPathPrefix</span>
+
+         <span class="c1"># - normalize the path (collapse redundant separators and up-level references)</span>
+         <span class="c1">#   on Windows this converts slashes to backward slashes</span>
+         <span class="c1"># sPath = os.path.normpath(sPath) # under Linux this unfortunately keeps redundant separators (in opposite to Windows)</span>
+         <span class="c1"># -- alternative</span>
+         <span class="n">sPath</span> <span class="o">=</span> <span class="n">ntpath</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">sPath</span><span class="p">)</span>
+
+         <span class="c1"># - exchange single backslashes by single slashes (= partly we have to repair the outcome of normpath)</span>
+         <span class="k">if</span> <span class="n">bWin</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+            <span class="n">sPath</span> <span class="o">=</span> <span class="n">sPath</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">)</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">bMask</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+               <span class="n">sPath</span> <span class="o">=</span> <span class="n">sPath</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\\\\</span><span class="s2">&quot;</span><span class="p">)</span>
+
+         <span class="c1"># - restore the path prefix</span>
+         <span class="k">if</span> <span class="n">sPathPrefix</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">sPath</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sPathPrefix</span><span class="si">}{</span><span class="n">sPath</span><span class="si">}</span><span class="s2">&quot;</span>
+
+         <span class="c1"># - consider blanks (prepare path for usage in Windows command line)</span>
+         <span class="k">if</span> <span class="n">bConsiderBlanks</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">sPath</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+               <span class="n">sPath</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="si">{</span><span class="n">sPath</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">&quot;</span>
+
+      <span class="c1"># eof if sPath is not None:</span>
+
+      <span class="k">return</span> <span class="n">sPath</span></div>
+
+   <span class="c1"># eof NormalizePath(sPath=None, bWin=False, sReferencePathAbs=None, bConsiderBlanks=False, bExpandEnvVars=True, bMask=True)</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1">#TM***</span>
+
+<div class="viewcode-block" id="CString.DetectParentPath"><a class="viewcode-back" href="../../../String.html#PythonExtensionsCollection.String.CString.CString.DetectParentPath">[docs]</a>   <span class="k">def</span> <span class="nf">DetectParentPath</span><span class="p">(</span><span class="n">sStartPath</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sFolderName</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sFileName</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">**Method:**</span>
+
+<span class="sd">**DetectParentPath**</span>
+
+<span class="sd">   Computes the path to any parent folder inside a given path. Optionally DetectParentPath is able</span>
+<span class="sd">   to search for files inside the parent folder.</span>
+
+<span class="sd">**Args:**</span>
+
+<span class="sd">**sStartPath** (*string*)</span>
+
+<span class="sd">   The path in which to search for a parent folder</span>
+
+<span class="sd">**sFolderName** (*string*)</span>
+
+<span class="sd">   The name of the folder to search for within ``sStartPath``. It is possible to provide more than one folder name separated by semicolon</span>
+
+<span class="sd">**sFileName** (*string, optional*)</span>
+
+<span class="sd">   The name of a file to search within the detected parent folder</span>
+
+<span class="sd">**Returns:**</span>
+
+<span class="sd">**sDestPath** (*string*)</span>
+
+<span class="sd">   Path and name of parent folder found inside ``sStartPath``, ``None`` in case of ``sFolderName`` is not found inside ``sStartPath``.</span>
+<span class="sd">   In case of more than one parent folder is found ``sDestPath`` contains the first result and ``listDestPaths`` contains all results.</span>
+
+<span class="sd">**listDestPaths** (*list*)</span>
+
+<span class="sd">   If ``sFolderName`` contains a single folder name this list contains only one element that is ``sDestPath``.</span>
+<span class="sd">   In case of ``FolderName`` contains a semicolon separated list of several folder names this list contains all found paths of the given folder names.</span>
+<span class="sd">   ``listDestPaths`` is ``None`` (and not an empty list!) in case of ``sFolderName`` is not found inside ``sStartPath``.</span>
+
+<span class="sd">**sDestFile** (*string*)</span>
+
+<span class="sd">   Path and name of ``sFileName``, in case of ``sFileName`` is given and found inside ``listDestPaths``.</span>
+<span class="sd">   In case of more than one file is found ``sDestFile`` contains the first result and ``listDestFiles`` contains all results.</span>
+<span class="sd">   ``sDestFile`` is ``None`` in case of ``sFileName`` is ``None`` and also in case of ``sFileName`` is not found inside ``listDestPaths``</span>
+<span class="sd">   (and therefore also in case of ``sFolderName`` is not found inside ``sStartPath``).</span>
+
+<span class="sd">**listDestFiles** (*list*)</span>
+
+<span class="sd">   Contains all positions of ``sFileName`` found inside ``listDestPaths``.</span>
+<span class="sd">   ``listDestFiles`` is ``None`` (and not an empty list!) in case of ``sFileName`` is ``None`` and also in case of ``sFileName``</span>
+<span class="sd">   is not found inside ``listDestPaths`` (and therefore also in case of ``sFolderName`` is not found inside ``sStartPath``).</span>
+
+<span class="sd">**sDestPathParent** (*string*)</span>
+
+<span class="sd">   The parent folder of ``sDestPath``, ``None`` in case of ``sFolderName`` is not found inside ``sStartPath`` (``sDestPath`` is ``None``).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sDestPath</span>       <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">listDestPaths</span>   <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">sDestFile</span>       <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">listDestFiles</span>   <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">sDestPathParent</span> <span class="o">=</span> <span class="kc">None</span>
+
+      <span class="k">if</span> <span class="n">sStartPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">return</span> <span class="n">sDestPath</span><span class="p">,</span> <span class="n">listDestPaths</span><span class="p">,</span> <span class="n">sDestFile</span><span class="p">,</span> <span class="n">listDestFiles</span><span class="p">,</span> <span class="n">sDestPathParent</span>
+
+      <span class="k">if</span> <span class="n">sFolderName</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">return</span> <span class="n">sDestPath</span><span class="p">,</span> <span class="n">listDestPaths</span><span class="p">,</span> <span class="n">sDestFile</span><span class="p">,</span> <span class="n">listDestFiles</span><span class="p">,</span> <span class="n">sDestPathParent</span>
+
+      <span class="n">sStartPath</span> <span class="o">=</span> <span class="n">sStartPath</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">sStartPath</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+         <span class="k">return</span> <span class="n">sDestPath</span><span class="p">,</span> <span class="n">listDestPaths</span><span class="p">,</span> <span class="n">sDestFile</span><span class="p">,</span> <span class="n">listDestFiles</span><span class="p">,</span> <span class="n">sDestPathParent</span>
+
+      <span class="n">sFolderName</span> <span class="o">=</span> <span class="n">sFolderName</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">sFolderName</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+         <span class="k">return</span> <span class="n">sDestPath</span><span class="p">,</span> <span class="n">listDestPaths</span><span class="p">,</span> <span class="n">sDestFile</span><span class="p">,</span> <span class="n">listDestFiles</span><span class="p">,</span> <span class="n">sDestPathParent</span>
+
+      <span class="n">listSplit</span> <span class="o">=</span> <span class="n">sFolderName</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+
+      <span class="n">listTopLevelFolders</span> <span class="o">=</span> <span class="p">[]</span>
+      <span class="k">for</span> <span class="n">sFolder</span> <span class="ow">in</span> <span class="n">listSplit</span><span class="p">:</span>
+         <span class="c1"># removing duplicates</span>
+         <span class="n">sFolder</span> <span class="o">=</span> <span class="n">sFolder</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+         <span class="k">if</span> <span class="n">sFolder</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">sFolder</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">listTopLevelFolders</span><span class="p">:</span>
+               <span class="n">listTopLevelFolders</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sFolder</span><span class="p">)</span>
+      <span class="c1"># eof for sFolder in listSplit:</span>
+
+      <span class="n">nNrOfFolders</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">listTopLevelFolders</span><span class="p">)</span>
+      <span class="n">sStartPath</span>   <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">NormalizePath</span><span class="p">(</span><span class="n">sStartPath</span><span class="p">)</span>
+      <span class="n">listLevels</span>   <span class="o">=</span> <span class="n">sStartPath</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+
+      <span class="n">listDestPaths</span> <span class="o">=</span> <span class="p">[]</span>
+
+      <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">listLevels</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+         <span class="c1"># -- merging paths with folder names and search for existing combinations</span>
+         <span class="n">sPathParent</span> <span class="o">=</span> <span class="s2">&quot;/&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">listLevels</span><span class="p">)</span>
+         <span class="k">for</span> <span class="n">sTLFolder</span> <span class="ow">in</span> <span class="n">listTopLevelFolders</span><span class="p">:</span>
+            <span class="n">sSubPath</span> <span class="o">=</span> <span class="n">sPathParent</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="n">sTLFolder</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">sSubPath</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+               <span class="n">listDestPaths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sSubPath</span><span class="p">)</span>
+         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">listTopLevelFolders</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">listDestPaths</span><span class="p">):</span>
+            <span class="c1"># all folders found</span>
+            <span class="k">break</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="n">listLevels</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+      <span class="c1"># eof while len(listLevels) &gt; 0:</span>
+
+      <span class="n">sDestPath</span>       <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">sDestPathParent</span> <span class="o">=</span> <span class="kc">None</span>
+      <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">listDestPaths</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+         <span class="c1"># -- returning sDestPath and sDestPathParent related to first entry in list; just to return anything else than None</span>
+         <span class="n">sDestPath</span> <span class="o">=</span> <span class="n">listDestPaths</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+         <span class="n">sDestPathParent</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">NormalizePath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">sDestPath</span><span class="p">))</span>
+
+      <span class="c1"># -- optionally searching also for a single file</span>
+      <span class="c1"># Input: file name</span>
+      <span class="c1"># Output: full path of file and list of full paths of files (!!! limited to &#39;listDestPaths&#39; !!!)</span>
+
+      <span class="n">listDestFiles</span> <span class="o">=</span> <span class="p">[]</span>
+
+      <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">sFileName</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">listDestPaths</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">):</span>
+         <span class="k">for</span> <span class="n">sDestPathToWalk</span> <span class="ow">in</span> <span class="n">listDestPaths</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">sLocalRootPath</span><span class="p">,</span> <span class="n">listFolderNames</span><span class="p">,</span> <span class="n">listFileNames</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">sDestPathToWalk</span><span class="p">):</span>
+               <span class="k">for</span> <span class="n">sFileNameTmp</span> <span class="ow">in</span> <span class="n">listFileNames</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sFileNameTmp</span> <span class="o">==</span> <span class="n">sFileName</span><span class="p">:</span>
+                     <span class="n">sFile</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">NormalizePath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sLocalRootPath</span><span class="p">,</span> <span class="n">sFileName</span><span class="p">))</span>
+                     <span class="n">listDestFiles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sFile</span><span class="p">)</span>
+            <span class="c1"># eof for sLocalRootPath, listFolderNames, listFileNames in os.walk(sDestPathToWalk):</span>
+         <span class="c1"># eof for sDestPathToWalk in listDestPaths:</span>
+      <span class="c1"># eof if ( (sFileName is not None) and (len(listDestPaths) &gt; 0) ):</span>
+
+      <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">listDestFiles</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+         <span class="n">listDestFiles</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+         <span class="n">sDestFile</span> <span class="o">=</span> <span class="n">listDestFiles</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># just to return anything else than None</span>
+
+      <span class="c1"># -- preparing output (setting empty lists to None, to have unique criteria for results not available)</span>
+      <span class="k">if</span> <span class="n">listDestPaths</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">listDestPaths</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">listDestPaths</span> <span class="o">=</span> <span class="kc">None</span>
+      <span class="k">if</span> <span class="n">listDestFiles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">listDestFiles</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">listDestFiles</span> <span class="o">=</span> <span class="kc">None</span>
+
+      <span class="k">return</span> <span class="n">sDestPath</span><span class="p">,</span> <span class="n">listDestPaths</span><span class="p">,</span> <span class="n">sDestFile</span><span class="p">,</span> <span class="n">listDestFiles</span><span class="p">,</span> <span class="n">sDestPathParent</span></div>
+
+   <span class="c1"># eof def DetectParentPath(sStartPath=None, sFolderName=None, sFileName=None):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1">#TM***</span>
+
+<div class="viewcode-block" id="CString.StringFilter"><a class="viewcode-back" href="../../../String.html#PythonExtensionsCollection.String.CString.CString.StringFilter">[docs]</a>   <span class="k">def</span> <span class="nf">StringFilter</span><span class="p">(</span><span class="n">sString</span>           <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">bCaseSensitive</span>    <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+                    <span class="n">bSkipBlankStrings</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+                    <span class="n">sComment</span>          <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">sStartsWith</span>       <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">sEndsWith</span>         <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">sStartsNotWith</span>    <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">sEndsNotWith</span>      <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">sContains</span>         <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">sContainsNot</span>      <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">sInclRegEx</span>        <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">sExclRegEx</span>        <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">bDebug</span>            <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">During the computation of strings there might occur the need to get to know if this string fulfils certain criteria or not.</span>
+<span class="sd">Such a criterion can e.g. be that the string contains a certain substring. Also an inverse logic might be required:</span>
+<span class="sd">In this case the criterion is that the string does **not** contain this substring.</span>
+
+<span class="sd">It might also be required to combine several criteria to a final conclusion if in total the criterion for a string is fulfilled or not.</span>
+<span class="sd">For example: The string must start with the string *prefix* and must also contain either the string *substring1* or the string *substring2*</span>
+<span class="sd">but must also **not** end with the string *suffix*.</span>
+
+<span class="sd">This method provides a bunch of predefined filters that can be used singly or combined to come to a final conclusion if the string fulfils all criteria or not.</span>
+
+<span class="sd">The filters are divided into three different types:</span>
+
+<span class="sd">1. Filters that are interpreted as raw strings (called &#39;standard filters&#39;; no wild cards supported)</span>
+<span class="sd">2. Filters that are interpreted as regular expressions (called &#39;regular expression based filters&#39;; the syntax of regular expressions has to be considered)</span>
+<span class="sd">3. Boolean switches (e.g. indicating if also an empty string is accepted or not)</span>
+
+<span class="sd">The input string might contain leading and trailing blanks and tabs. This kind of horizontal space is removed from the input string</span>
+<span class="sd">before the standard filters start their work (except the regular expression based filters).</span>
+
+<span class="sd">The regular expression based filters consider the original input string (including the leading and trailing space). </span>
+
+<span class="sd">The outcome is that in case of the leading and trailing space shall be part of the criterion, the regular expression based filters can be used only.</span>
+
+<span class="sd">It is possible to decide if the standard filters shall work case sensitive or not. This decision has no effect on the regular expression based filters.</span>
+
+<span class="sd">The regular expression based filters always work with the original input string that is not modified in any way.</span>
+
+<span class="sd">Except the regular expression based filters it is possible to provide more than one string for every standard filter (must be a semikolon separated list in this case).</span>
+<span class="sd">A semicolon that shall be part of the search string, has to be masked in this way: ``\;``.</span>
+
+<span class="sd">This method returns a boolean value that is ``True`` in case of all criteria are fulfilled, and ``False`` in case of some or all of them are not fulfilled.</span>
+
+<span class="sd">The default value for all filters is ``None`` (except ``bSkipBlankStrings``). In case of a filter value is ``None`` this filter has no influence on the result.</span>
+
+<span class="sd">In case of all filters are ``None`` (default) the return value is ``True`` (except the string itself is ``None``</span>
+<span class="sd">or the string is empty and ``bSkipBlankStrings`` is ``True``).</span>
+
+<span class="sd">In case of the string is ``None``, the return value is ``False``, because nothing concrete can be done with ``None`` strings.</span>
+
+<span class="sd">Internally every filter has his own individual acknowledge that indicates if the criterion of this filter is fulfilled or not.</span>
+
+<span class="sd">The meaning of *criterion fulfilled* of a filter is that the filter supports the final return value ``bAck`` of this method with ``True``.</span>
+
+<span class="sd">The final return value ``bAck`` of this method is a logical join (``AND``) of all individual acknowledges (except ``bSkipBlankStrings`` and ``sComment``;</span>
+<span class="sd">in case of their criteria are **not** fulfilled, immediately ``False`` is returned).</span>
+
+<span class="sd">Summarized:</span>
+
+<span class="sd">* Filters are used to define *criteria*</span>
+<span class="sd">* The return value of this method provides the *conclusion* - indicating if all criteria are fulfilled or not</span>
+
+
+<span class="sd">*The following filters are available:*</span>
+
+<span class="sd">**bSkipBlankStrings**</span>
+
+<span class="sd">   * Like already mentioned above leading and trailing spaces are removed from the input string at the beginning</span>
+<span class="sd">   * In case of the result is an empty string and ``bSkipBlankStrings`` is ``True``, the method immediately returns ``False``</span>
+<span class="sd">     and all other filters are ignored</span>
+
+<span class="sd">**sComment**</span>
+
+<span class="sd">   * In case of the input string starts with the string ``sComment``, the method immediately returns ``False``</span>
+<span class="sd">     and all other filters are ignored</span>
+<span class="sd">   * Leading blanks within the input string have no effect</span>
+<span class="sd">   * The decision also depends on ``bCaseSensitive``</span>
+<span class="sd">   * The idea behind this decision is: Ignore a string that is commented out</span>
+
+<span class="sd">**sStartsWith**</span>
+
+<span class="sd">   * The criterion of this filter is fulfilled in case of the input string starts with the string ``sStartsWith``</span>
+<span class="sd">   * Leading blanks within the input string have no effect</span>
+<span class="sd">   * The decision also depends on ``bCaseSensitive``</span>
+<span class="sd">   * More than one string can be provided (semicolon separated; logical join: ``OR``)</span>
+
+<span class="sd">**sEndsWith**</span>
+
+<span class="sd">   * The criterion of this filter is fulfilled in case of the input string ends with the string ``sEndsWith``</span>
+<span class="sd">   * Trailing blanks within the input string have no effect</span>
+<span class="sd">   * The decision also depends on ``bCaseSensitive``</span>
+<span class="sd">   * More than one string can be provided (semicolon separated; logical join: ``OR``)</span>
+
+<span class="sd">**sStartsNotWith**</span>
+
+<span class="sd">   * The criterion of this filter is fulfilled in case of the input string does **not** start with the string ``sStartsNotWith``</span>
+<span class="sd">   * Leading blanks within the input string have no effect</span>
+<span class="sd">   * The decision also depends on ``bCaseSensitive``</span>
+<span class="sd">   * More than one string can be provided (semicolon separated; logical join: ``AND``)</span>
+
+<span class="sd">**sEndsNotWith**</span>
+
+<span class="sd">   * The criterion of this filter is fulfilled in case of the input string does **not** end with the string ``sEndsNotWith``</span>
+<span class="sd">   * Trailing blanks within the input string have no effect</span>
+<span class="sd">   * The decision also depends on ``bCaseSensitive``</span>
+<span class="sd">   * More than one string can be provided (semicolon separated; logical join: ``AND``)</span>
+
+<span class="sd">**sContains**</span>
+
+<span class="sd">   * The criterion of this filter is fulfilled in case of the input string contains the string ``sContains`` at any position</span>
+<span class="sd">   * Leading and trailing blanks within the input string have no effect</span>
+<span class="sd">   * The decision also depends on ``bCaseSensitive``</span>
+<span class="sd">   * More than one string can be provided (semicolon separated; logical join: ``OR``)</span>
+
+<span class="sd">**sContainsNot**</span>
+
+<span class="sd">   * The criterion of this filter is fulfilled in case of the input string does **not** contain the string ``sContainsNot`` at any position</span>
+<span class="sd">   * Leading and trailing blanks within the input string have no effect</span>
+<span class="sd">   * The decision also depends on ``bCaseSensitive``</span>
+<span class="sd">   * More than one string can be provided (semicolon separated; logical join: ``AND``)</span>
+
+<span class="sd">**sInclRegEx**</span>
+
+<span class="sd">   * *Include* filter based on regular expressions (consider the syntax of regular expressions!)</span>
+<span class="sd">   * The criterion of this filter is fulfilled in case of the regular expression ``sInclRegEx`` matches the input string</span>
+<span class="sd">   * Leading and trailing blanks within the input string are considered</span>
+<span class="sd">   * ``bCaseSensitive`` has no effect</span>
+<span class="sd">   * A semicolon separated list of several regular expressions is **not** supported</span>
+
+<span class="sd">**sExclRegEx**</span>
+
+<span class="sd">   * *Exclude* filter based on regular expressions (consider the syntax of regular expressions!)</span>
+<span class="sd">   * The criterion of this filter is fulfilled in case of the regular expression ``sExclRegEx`` does **not** match the input string</span>
+<span class="sd">   * Leading and trailing blanks within the input string are considered</span>
+<span class="sd">   * ``bCaseSensitive`` has no effect</span>
+<span class="sd">   * A semicolon separated list of several regular expressions is **not** supported</span>
+
+<span class="sd">*Further parameter:*</span>
+
+<span class="sd">**sString**</span>
+
+<span class="sd">  The input string that has to be investigated. </span>
+
+<span class="sd">**bCaseSensitive** (*boolean, optional, default*: ``True``)</span>
+
+<span class="sd">  If ``True``, the standard filters work case sensitive, otherwise not.</span>
+
+<span class="sd">**bDebug** (*boolean, optional, default*: ``False``)</span>
+
+<span class="sd">  If ``True``, additional output is printed to console (e.g. the decision of every single filter), otherwise not.</span>
+
+<span class="sd">*Examples:*</span>
+
+<span class="sd">Returns ``True``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;Speed is 25 beats per minute&quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = &quot;Sp&quot;,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = &quot;beats&quot;,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = None,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+<span class="sd">Returns ``False``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;Speed is 25 beats per minute&quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = &quot;Sp&quot;,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = &quot;minute&quot;,</span>
+<span class="sd">                               sContains         = &quot;beats&quot;,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = None,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+<span class="sd">Returns ``True``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;Speed is 25 beats per minute&quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = None,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = None,</span>
+<span class="sd">                               sContainsNot      = &quot;Beats&quot;,</span>
+<span class="sd">                               sInclRegEx        = None,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+<span class="sd">Returns ``True``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;Speed is 25 beats per minute&quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = None,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = None,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = r&quot;\d{2}&quot;,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+<span class="sd">Returns ``False``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;Speed is 25 beats per minute&quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = &quot;Speed&quot;,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = None,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = r&quot;\d{3}&quot;,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+<span class="sd">Returns ``False``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;Speed is 25 beats per minute&quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = &quot;Speed&quot;,</span>
+<span class="sd">                               sEndsWith         = &quot;minute&quot;,</span>
+<span class="sd">                               sStartsNotWith    = &quot;speed&quot;,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = &quot;beats&quot;,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = r&quot;\d{2}&quot;,</span>
+<span class="sd">                               sExclRegEx        = r&quot;\d{2}&quot;)</span>
+
+<span class="sd">Returns ``False``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;     &quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = None,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = None,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = None,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+<span class="sd">Returns ``False``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;# Speed is 25 beats per minute&quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = &quot;#&quot;,</span>
+<span class="sd">                               sStartsWith       = None,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = &quot;beats&quot;,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = None,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+
+<span class="sd">Returns ``False``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;   Alpha is not beta; and beta is not gamma  &quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = None,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = &quot;   Alpha &quot;,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = None,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+<span class="sd">Because blanks around search strings (here ``&quot;   Alpha &quot;``) are considered, whereas the blanks around the input string are removed before computation.</span>
+<span class="sd">Therefore ``&quot;   Alpha &quot;`` cannot be found within the (shortened) input string.</span>
+
+
+<span class="sd">This alternative solution returns ``True``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;   Alpha is not beta; and beta is not gamma  &quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = None,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = None,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = r&quot;\s{3}Alpha&quot;,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+
+<span class="sd">Returns ``True``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;Alpha is not beta; and beta is not gamma&quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = None,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = &quot;beta; and&quot;,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = None,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+<span class="sd">The meaning of ``&quot;beta; and&quot;`` is: The criterion is fulfilled in case of either ``&quot;beta&quot;`` or ``&quot; and&quot;`` can be found. That&#39;s ``True`` in this example - but this</span>
+<span class="sd">has nothing to do with the fact, that also this string ``&quot;beta; and&quot;`` can be found. A semicolon that shall be part of the search, has to be masked!</span>
+
+<span class="sd">The meaning of ``&quot;beta\; not&quot;`` in the following example is: The criterion is fulfilled in case of ``&quot;beta; not&quot;`` can be found.</span>
+
+<span class="sd">That&#39;s **not** ``True``. Therefore the method returns ``False``:</span>
+
+<span class="sd">.. code::</span>
+
+<span class="sd">   bAck = CString.StringFilter(sString           = &quot;Alpha is not beta; and beta is not gamma&quot;,</span>
+<span class="sd">                               bCaseSensitive    = True,</span>
+<span class="sd">                               bSkipBlankStrings = True,</span>
+<span class="sd">                               sComment          = None,</span>
+<span class="sd">                               sStartsWith       = None,</span>
+<span class="sd">                               sEndsWith         = None,</span>
+<span class="sd">                               sStartsNotWith    = None,</span>
+<span class="sd">                               sEndsNotWith      = None,</span>
+<span class="sd">                               sContains         = r&quot;beta\; not&quot;,</span>
+<span class="sd">                               sContainsNot      = None,</span>
+<span class="sd">                               sInclRegEx        = None,</span>
+<span class="sd">                               sExclRegEx        = None)</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="k">if</span> <span class="n">sString</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">return</span> <span class="kc">False</span> <span class="c1"># hard coded here; no separate filter for that decision</span>
+
+      <span class="c1"># The original string &#39;sString&#39; is used by regular expression filters sInclRegEx and sExclRegEx.</span>
+      <span class="c1"># The stripped string &#39;sStringStripped&#39; is used by all other filters.</span>
+      <span class="n">sStringStripped</span> <span class="o">=</span> <span class="n">sString</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot; </span><span class="se">\t\r\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+      <span class="c1"># -- skipping blank strings or strings commented out; other filters will not be considered any more in this case</span>
+
+      <span class="k">if</span> <span class="n">bSkipBlankStrings</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sStringStripped</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+      <span class="k">if</span> <span class="n">sComment</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sComment</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">bCaseSensitive</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+              <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">sComment</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                 <span class="k">return</span> <span class="kc">False</span>
+            <span class="k">else</span><span class="p">:</span>
+              <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">sComment</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                 <span class="k">return</span> <span class="kc">False</span>
+
+      <span class="c1"># -- consider further filters</span>
+      <span class="c1">#</span>
+      <span class="c1"># No filter set (= no criteria defined) =&gt; use this string (bAck is True).</span>
+      <span class="c1">#</span>
+      <span class="c1"># At least one filter set (except sExclRegEx), at least one set filter fits (except sExclRegEx) =&gt; use this string.</span>
+      <span class="c1"># Filter sExclRegEx is set and fits =&gt; skip this string (final veto).</span>
+      <span class="c1"># At least one filter does not fit (except sExclRegEx) =&gt; skip this string.</span>
+      <span class="c1">#</span>
+      <span class="c1"># All filters (except sExclRegEx) are include filter (bAck is True in case of all set filters fit, also the &#39;not&#39; filters)</span>
+      <span class="c1"># The filter sExclRegEx is an exclude filter and has final veto right (can revoke the True from other filters).</span>
+      <span class="c1">#</span>
+      <span class="c1"># All filters (except sInclRegEx and sExclRegEx) are handled as &#39;raw strings&#39;: no wild cards, just strings, considering bCaseSensitive.</span>
+      <span class="c1"># The filters sInclRegEx and sExclRegEx are handled as regular expressions; bCaseSensitive is not considered here.</span>
+
+      <span class="c1"># -- filter specific flags (containing the names of the criteria within their names)</span>
+      <span class="n">bStartsWith</span>    <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">bEndsWith</span>      <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">bStartsNotWith</span> <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">bEndsNotWith</span>   <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">bContains</span>      <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">bContainsNot</span>   <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">bInclRegEx</span>     <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">bExclRegEx</span>     <span class="o">=</span> <span class="kc">None</span>
+
+      <span class="c1"># Meaning:</span>
+      <span class="c1"># - Flag is None : filter not set =&gt; filter has no effect</span>
+      <span class="c1"># - Flag is True : filter set =&gt; result: use the input string (from this single filter flag point of view)</span>
+      <span class="c1"># - Flag is False: filter set =&gt; result: do not use the input string (from this single filter flag point of view)</span>
+      <span class="c1"># The results of all flags will be merged at the end of this function to one final conclusion to use the input string</span>
+      <span class="c1"># (bAck is True) or not (bAck is False).</span>
+      <span class="c1"># Logical join between all set filters: AND</span>
+
+      <span class="c1"># substitute for the masked filter separator &#39;\n&#39; (hopefully the input string does not contain this substitute)</span>
+      <span class="n">sSeparatorSubstitute</span> <span class="o">=</span> <span class="s2">&quot;#|S#|E#|P#|A#|R#|A#|T#|O#|R#&quot;</span>
+
+      <span class="c1"># -- filter: starts with</span>
+      <span class="c1">#    &gt; several filter strings possible (separated by semicolon; logical join: OR)</span>
+      <span class="k">if</span> <span class="n">sStartsWith</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sStartsWith</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">sStartsWithModified</span> <span class="o">=</span> <span class="n">sStartsWith</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="n">sSeparatorSubstitute</span><span class="p">)</span> <span class="c1"># replace the masked separator by a substitute separator</span>
+            <span class="n">listStartsWith</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">if</span> <span class="n">sStartsWith</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+               <span class="n">listParts</span> <span class="o">=</span> <span class="n">sStartsWithModified</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+               <span class="k">for</span> <span class="n">sPart</span> <span class="ow">in</span> <span class="n">listParts</span><span class="p">:</span>
+                  <span class="n">sPart</span> <span class="o">=</span> <span class="n">sPart</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">sSeparatorSubstitute</span> <span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># recover the original version</span>
+                  <span class="n">listStartsWith</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sPart</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+               <span class="n">sStartsWithModified</span> <span class="o">=</span> <span class="n">sStartsWith</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># convert to unmasked version</span>
+               <span class="n">listStartsWith</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sStartsWithModified</span><span class="p">)</span>
+
+            <span class="n">bStartsWith</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">for</span> <span class="n">sStartsWith</span> <span class="ow">in</span> <span class="n">listStartsWith</span><span class="p">:</span>
+               <span class="k">if</span> <span class="n">bCaseSensitive</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">sStartsWith</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                     <span class="n">bStartsWith</span> <span class="o">=</span> <span class="kc">True</span>
+                     <span class="k">break</span>
+               <span class="k">else</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">sStartsWith</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                     <span class="n">bStartsWith</span> <span class="o">=</span> <span class="kc">True</span>
+                     <span class="k">break</span>
+
+      <span class="c1"># -- filter: ends with</span>
+      <span class="c1">#    &gt; several filter strings possible (separated by semicolon; logical join: OR)</span>
+      <span class="k">if</span> <span class="n">sEndsWith</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sEndsWith</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">sEndsWithModified</span> <span class="o">=</span> <span class="n">sEndsWith</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="n">sSeparatorSubstitute</span><span class="p">)</span> <span class="c1"># replace the masked separator by a substitute separator</span>
+            <span class="n">listEndsWith</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">if</span> <span class="n">sEndsWith</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+               <span class="n">listParts</span> <span class="o">=</span> <span class="n">sEndsWithModified</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+               <span class="k">for</span> <span class="n">sPart</span> <span class="ow">in</span> <span class="n">listParts</span><span class="p">:</span>
+                  <span class="n">sPart</span> <span class="o">=</span> <span class="n">sPart</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">sSeparatorSubstitute</span> <span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># recover the original version</span>
+                  <span class="n">listEndsWith</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sPart</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+               <span class="n">sEndsWithModified</span> <span class="o">=</span> <span class="n">sEndsWith</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># convert to unmasked version</span>
+               <span class="n">listEndsWith</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sEndsWithModified</span><span class="p">)</span>
+
+            <span class="n">bEndsWith</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">for</span> <span class="n">sEndsWith</span> <span class="ow">in</span> <span class="n">listEndsWith</span><span class="p">:</span>
+               <span class="k">if</span> <span class="n">bCaseSensitive</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">sEndsWith</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                     <span class="n">bEndsWith</span> <span class="o">=</span> <span class="kc">True</span>
+                     <span class="k">break</span>
+               <span class="k">else</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">sEndsWith</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                     <span class="n">bEndsWith</span> <span class="o">=</span> <span class="kc">True</span>
+                     <span class="k">break</span>
+
+      <span class="c1"># -- filter: starts not with</span>
+      <span class="c1">#    &gt; several filter strings possible (separated by semicolon; logical join: AND)</span>
+      <span class="k">if</span> <span class="n">sStartsNotWith</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sStartsNotWith</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">sStartsNotWithModified</span> <span class="o">=</span> <span class="n">sStartsNotWith</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="n">sSeparatorSubstitute</span><span class="p">)</span> <span class="c1"># replace the masked separator by a substitute separator</span>
+            <span class="n">listStartsNotWith</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">if</span> <span class="n">sStartsNotWith</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+               <span class="n">listParts</span> <span class="o">=</span> <span class="n">sStartsNotWithModified</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+               <span class="k">for</span> <span class="n">sPart</span> <span class="ow">in</span> <span class="n">listParts</span><span class="p">:</span>
+                  <span class="n">sPart</span> <span class="o">=</span> <span class="n">sPart</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">sSeparatorSubstitute</span> <span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># recover the original version</span>
+                  <span class="n">listStartsNotWith</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sPart</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+               <span class="n">sStartsNotWithModified</span> <span class="o">=</span> <span class="n">sStartsNotWith</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># convert to unmasked version</span>
+               <span class="n">listStartsNotWith</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sStartsNotWithModified</span><span class="p">)</span>
+
+            <span class="n">bStartsNotWith</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">for</span> <span class="n">sStartsNotWith</span> <span class="ow">in</span> <span class="n">listStartsNotWith</span><span class="p">:</span>
+               <span class="k">if</span> <span class="n">bCaseSensitive</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">sStartsNotWith</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                     <span class="n">bStartsNotWith</span> <span class="o">=</span> <span class="kc">False</span>
+                     <span class="k">break</span>
+               <span class="k">else</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">sStartsNotWith</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                     <span class="n">bStartsNotWith</span> <span class="o">=</span> <span class="kc">False</span>
+                     <span class="k">break</span>
+
+      <span class="c1"># -- filter: ends not with</span>
+      <span class="c1">#    &gt; several filter strings possible (separated by semicolon; logical join: AND)</span>
+      <span class="k">if</span> <span class="n">sEndsNotWith</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sEndsNotWith</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">sEndsNotWithModified</span> <span class="o">=</span> <span class="n">sEndsNotWith</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="n">sSeparatorSubstitute</span><span class="p">)</span> <span class="c1"># replace the masked separator by a substitute separator</span>
+            <span class="n">listEndsNotWith</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">if</span> <span class="n">sEndsNotWith</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+               <span class="n">listParts</span> <span class="o">=</span> <span class="n">sEndsNotWithModified</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+               <span class="k">for</span> <span class="n">sPart</span> <span class="ow">in</span> <span class="n">listParts</span><span class="p">:</span>
+                  <span class="n">sPart</span> <span class="o">=</span> <span class="n">sPart</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">sSeparatorSubstitute</span> <span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># recover the original version</span>
+                  <span class="n">listEndsNotWith</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sPart</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+               <span class="n">sEndsNotWithModified</span> <span class="o">=</span> <span class="n">sEndsNotWith</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># convert to unmasked version</span>
+               <span class="n">listEndsNotWith</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sEndsNotWithModified</span><span class="p">)</span>
+
+            <span class="n">bEndsNotWith</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">for</span> <span class="n">sEndsNotWith</span> <span class="ow">in</span> <span class="n">listEndsNotWith</span><span class="p">:</span>
+               <span class="k">if</span> <span class="n">bCaseSensitive</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">sEndsNotWith</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                     <span class="n">bEndsNotWith</span> <span class="o">=</span> <span class="kc">False</span>
+                     <span class="k">break</span>
+               <span class="k">else</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">sEndsNotWith</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                     <span class="n">bEndsNotWith</span> <span class="o">=</span> <span class="kc">False</span>
+                     <span class="k">break</span>
+
+      <span class="c1"># -- filter: contains</span>
+      <span class="c1">#    &gt; several filter strings possible (separated by semicolon; logical join: OR)</span>
+      <span class="k">if</span> <span class="n">sContains</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sContains</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">sContainsModified</span> <span class="o">=</span> <span class="n">sContains</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="n">sSeparatorSubstitute</span><span class="p">)</span> <span class="c1"># replace the masked separator by a substitute separator</span>
+            <span class="n">listContains</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">if</span> <span class="n">sContainsModified</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+               <span class="n">listParts</span> <span class="o">=</span> <span class="n">sContainsModified</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+               <span class="k">for</span> <span class="n">sPart</span> <span class="ow">in</span> <span class="n">listParts</span><span class="p">:</span>
+                  <span class="n">sPart</span> <span class="o">=</span> <span class="n">sPart</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">sSeparatorSubstitute</span> <span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># recover the original version</span>
+                  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- Part: &#39;</span><span class="si">{</span><span class="n">sPart</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+                  <span class="n">listContains</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sPart</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+               <span class="n">sContainsModified</span> <span class="o">=</span> <span class="n">sContains</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># convert to unmasked version</span>
+               <span class="n">listContains</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sContainsModified</span><span class="p">)</span>
+
+            <span class="n">bContains</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">for</span> <span class="n">sContains</span> <span class="ow">in</span> <span class="n">listContains</span><span class="p">:</span>
+               <span class="k">if</span> <span class="n">bCaseSensitive</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">sContains</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                     <span class="n">bContains</span> <span class="o">=</span> <span class="kc">True</span>
+                     <span class="k">break</span>
+               <span class="k">else</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">sContains</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                     <span class="n">bContains</span> <span class="o">=</span> <span class="kc">True</span>
+                     <span class="k">break</span>
+
+      <span class="c1"># -- filter: contains not</span>
+      <span class="c1">#    &gt; several filter strings possible (separated by semicolon; logical join: AND)</span>
+      <span class="k">if</span> <span class="n">sContainsNot</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sContainsNot</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">sContainsNotModified</span> <span class="o">=</span> <span class="n">sContainsNot</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="n">sSeparatorSubstitute</span><span class="p">)</span> <span class="c1"># replace the masked separator by a substitute separator</span>
+            <span class="n">listContainsNot</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">if</span> <span class="n">sContainsNot</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+               <span class="n">listParts</span> <span class="o">=</span> <span class="n">sContainsNotModified</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+               <span class="k">for</span> <span class="n">sPart</span> <span class="ow">in</span> <span class="n">listParts</span><span class="p">:</span>
+                  <span class="n">sPart</span> <span class="o">=</span> <span class="n">sPart</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">sSeparatorSubstitute</span> <span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># recover the original version</span>
+                  <span class="n">listContainsNot</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sPart</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+               <span class="n">sContainsNotModified</span> <span class="o">=</span> <span class="n">sContainsNot</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\;&quot;</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span> <span class="c1"># convert to unmasked version</span>
+               <span class="n">listContainsNot</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sContainsNotModified</span><span class="p">)</span>
+
+            <span class="n">bContainsNot</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">for</span> <span class="n">sContainsNot</span> <span class="ow">in</span> <span class="n">listContainsNot</span><span class="p">:</span>
+               <span class="k">if</span> <span class="n">bCaseSensitive</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">sContainsNot</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                     <span class="n">bContainsNot</span> <span class="o">=</span> <span class="kc">False</span>
+                     <span class="k">break</span>
+               <span class="k">else</span><span class="p">:</span>
+                  <span class="k">if</span> <span class="n">sStringStripped</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">sContainsNot</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                     <span class="n">bContainsNot</span> <span class="o">=</span> <span class="kc">False</span>
+                     <span class="k">break</span>
+
+      <span class="c1"># -- filter: sInclRegEx</span>
+      <span class="c1">#    &gt; (take care to mask special characters that are part of the syntax of regular expressions!)</span>
+      <span class="c1">#    &gt; bCaseSensitive not considered here</span>
+      <span class="k">if</span> <span class="n">sInclRegEx</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sInclRegEx</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">bInclRegEx</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">sInclRegEx</span><span class="p">,</span> <span class="n">sString</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+               <span class="n">bInclRegEx</span> <span class="o">=</span> <span class="kc">True</span>
+
+      <span class="c1"># -- last filter: sExclRegEx (final veto right)</span>
+      <span class="c1">#    &gt; (take care to mask special characters that are part of the syntax of regular expressions!)</span>
+      <span class="c1">#    &gt; bCaseSensitive not considered here</span>
+      <span class="k">if</span> <span class="n">sExclRegEx</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sExclRegEx</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">bExclRegEx</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">sExclRegEx</span><span class="p">,</span> <span class="n">sString</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+               <span class="n">bExclRegEx</span> <span class="o">=</span> <span class="kc">False</span>
+
+      <span class="c1"># -- debug info</span>
+      <span class="k">if</span> <span class="n">bDebug</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">* [sString] : &#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sString</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&#39;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  -&gt; [bStartsWith]    : &#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bStartsWith</span><span class="p">)</span>    <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  -&gt; [bEndsWith]      : &#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bEndsWith</span><span class="p">)</span>      <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  -&gt; [bStartsNotWith] : &#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bStartsNotWith</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  -&gt; [bEndsNotWith]   : &#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bEndsNotWith</span><span class="p">)</span>   <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  -&gt; [bContains]      : &#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bContains</span><span class="p">)</span>      <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  -&gt; [bContainsNot]   : &#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bContainsNot</span><span class="p">)</span>   <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  -&gt; [bInclRegEx]     : &#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bInclRegEx</span><span class="p">)</span>     <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  -&gt; [bExclRegEx]     : &#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bExclRegEx</span><span class="p">)</span>     <span class="o">+</span> <span class="s2">&quot;&#39;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+      <span class="c1"># -- final conclusion (AND condition between filters)</span>
+
+      <span class="n">listDecisions</span> <span class="o">=</span> <span class="p">[]</span>
+      <span class="n">listDecisions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bStartsWith</span><span class="p">)</span>
+      <span class="n">listDecisions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bEndsWith</span><span class="p">)</span>
+      <span class="n">listDecisions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bStartsNotWith</span><span class="p">)</span>
+      <span class="n">listDecisions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bEndsNotWith</span><span class="p">)</span>
+      <span class="n">listDecisions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bContains</span><span class="p">)</span>
+      <span class="n">listDecisions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bContainsNot</span><span class="p">)</span>
+      <span class="n">listDecisions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bInclRegEx</span><span class="p">)</span>
+      <span class="n">listDecisions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bExclRegEx</span><span class="p">)</span>
+
+      <span class="n">bAck</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># initial</span>
+
+      <span class="c1"># -- 1.) no filter set (all None)</span>
+      <span class="n">nCntDecisions</span> <span class="o">=</span> <span class="mi">0</span>
+      <span class="k">for</span> <span class="n">bDecision</span> <span class="ow">in</span> <span class="n">listDecisions</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">bDecision</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">nCntDecisions</span> <span class="o">=</span> <span class="n">nCntDecisions</span> <span class="o">+</span> <span class="mi">1</span>
+      <span class="k">if</span> <span class="n">nCntDecisions</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">listDecisions</span><span class="p">):</span>
+         <span class="n">bAck</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="k">if</span> <span class="n">bDebug</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     &gt; case [1] - bAck: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bAck</span><span class="p">))</span>
+
+      <span class="c1"># -- 2.) final veto from exclude filter</span>
+      <span class="k">if</span> <span class="n">bExclRegEx</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+         <span class="n">bAck</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="k">if</span> <span class="n">bDebug</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     &gt; case [2] - bAck: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bAck</span><span class="p">))</span>
+
+      <span class="c1"># -- 3.) exclude filter not set; decision only made by other filters (include)</span>
+      <span class="k">if</span> <span class="n">bExclRegEx</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="n">bAck</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="k">for</span> <span class="n">bDecision</span> <span class="ow">in</span> <span class="n">listDecisions</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">bDecision</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+               <span class="n">bAck</span> <span class="o">=</span> <span class="kc">False</span>
+               <span class="k">break</span>
+         <span class="k">if</span> <span class="n">bDebug</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     &gt; case [3] - bAck: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bAck</span><span class="p">))</span>
+
+      <span class="c1"># -- 4.) exclude filter is True (only relevant in case of all other filters are not set; otherwise decision only made by other filters (include))</span>
+      <span class="k">if</span> <span class="n">bExclRegEx</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">bStartsWith</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span>
+              <span class="p">(</span><span class="n">bEndsWith</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span>
+              <span class="p">(</span><span class="n">bStartsNotWith</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span>
+              <span class="p">(</span><span class="n">bEndsNotWith</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span>
+              <span class="p">(</span><span class="n">bContains</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span>
+              <span class="p">(</span><span class="n">bContainsNot</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span>
+              <span class="p">(</span><span class="n">bInclRegEx</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="p">):</span>
+            <span class="n">bAck</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">if</span> <span class="n">bDebug</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+               <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     &gt; case [4.1] - bAck: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bAck</span><span class="p">))</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="n">bAck</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">for</span> <span class="n">bDecision</span> <span class="ow">in</span> <span class="n">listDecisions</span><span class="p">:</span>
+               <span class="k">if</span> <span class="n">bDecision</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+                  <span class="n">bAck</span> <span class="o">=</span> <span class="kc">False</span>
+                  <span class="k">break</span>
+            <span class="k">if</span> <span class="n">bDebug</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+               <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     &gt; case [4.2] - bAck: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bAck</span><span class="p">))</span>
+
+      <span class="k">if</span> <span class="n">bDebug</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="nb">print</span><span class="p">()</span>
+
+      <span class="k">return</span> <span class="n">bAck</span></div>
+
+   <span class="c1"># eof def StringFilter(...)</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1">#TM***</span>
+
+<div class="viewcode-block" id="CString.FormatResult"><a class="viewcode-back" href="../../../String.html#PythonExtensionsCollection.String.CString.CString.FormatResult">[docs]</a>   <span class="k">def</span> <span class="nf">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">bSuccess</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sResult</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">**Method:**</span>
+
+<span class="sd">**FormatResult**</span>
+
+<span class="sd">   Formats the result string ``sResult`` depending on ``bSuccess``:</span>
+
+<span class="sd">   * ``bSuccess`` is ``True`` indicates *success*</span>
+<span class="sd">   * ``bSuccess`` is ``False`` indicates an *error*</span>
+<span class="sd">   * ``bSuccess`` is ``None`` indicates an *exception*</span>
+
+<span class="sd">   Additionally the name of the method that causes the result, can be provided (*optional*).</span>
+<span class="sd">   This is useful for debugging.</span>
+
+<span class="sd">   Returns the formatted result string.</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="k">if</span> <span class="n">sMethod</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="n">sMethod</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">sMethod</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">sResult</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">sResult</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sMethod</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">sResult</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">sMethod</span><span class="si">}</span><span class="s2">] : </span><span class="si">{</span><span class="n">sResult</span><span class="si">}</span><span class="s2">&quot;</span>
+      <span class="k">elif</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+         <span class="n">sError</span> <span class="o">=</span> <span class="s2">&quot;!!! ERROR !!!&quot;</span>
+         <span class="k">if</span> <span class="n">sMethod</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">sResult</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sError</span><span class="si">}</span><span class="se">\n</span><span class="s2">[</span><span class="si">{</span><span class="n">sMethod</span><span class="si">}</span><span class="s2">] : </span><span class="si">{</span><span class="n">sResult</span><span class="si">}</span><span class="s2">&quot;</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="n">sResult</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sError</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">sResult</span><span class="si">}</span><span class="s2">&quot;</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="n">sException</span> <span class="o">=</span> <span class="s2">&quot;!!! EXCEPTION !!!&quot;</span>
+         <span class="k">if</span> <span class="n">sMethod</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="n">sResult</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sException</span><span class="si">}</span><span class="se">\n</span><span class="s2">[</span><span class="si">{</span><span class="n">sMethod</span><span class="si">}</span><span class="s2">] : </span><span class="si">{</span><span class="n">sResult</span><span class="si">}</span><span class="s2">&quot;</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="n">sResult</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sException</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">sResult</span><span class="si">}</span><span class="s2">&quot;</span>
+      <span class="k">return</span> <span class="n">sResult</span></div>
+
+   <span class="c1"># eof def FormatResult(sMethod=&quot;&quot;, bSuccess=True, sResult=&quot;&quot;):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1">#TM***</span>
+
+   <span class="c1"># - make the methods static</span>
+
+   <span class="n">NormalizePath</span>    <span class="o">=</span> <span class="nb">staticmethod</span><span class="p">(</span><span class="n">NormalizePath</span><span class="p">)</span>
+   <span class="n">DetectParentPath</span> <span class="o">=</span> <span class="nb">staticmethod</span><span class="p">(</span><span class="n">DetectParentPath</span><span class="p">)</span>
+   <span class="n">StringFilter</span>     <span class="o">=</span> <span class="nb">staticmethod</span><span class="p">(</span><span class="n">StringFilter</span><span class="p">)</span>
+   <span class="n">FormatResult</span>     <span class="o">=</span> <span class="nb">staticmethod</span><span class="p">(</span><span class="n">FormatResult</span><span class="p">)</span></div>
+
+<span class="c1"># eof class CString(object):</span>
+
+<span class="c1"># **************************************************************************************************************</span>
+
+
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">Python Extensions Collection</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../additional_doc/Introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../additional_doc/Introduction.html#examples">2. Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../String.html">3. CString module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Utils.html">4. CUtils module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../File.html">5. CFile module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Queckenstedt Holger (XC-CT/ECA3).
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

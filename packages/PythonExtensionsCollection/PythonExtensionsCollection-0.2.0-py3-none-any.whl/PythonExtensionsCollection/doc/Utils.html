@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>4. CUtils module &#8212; Python Extensions Collection  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5. CFile module" href="File.html" />
+    <link rel="prev" title="3. CString module" href="String.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section class="dl-parameters" id="module-PythonExtensionsCollection.Utils.CUtils">
+<span id="cutils-module"></span><h1><span class="section-number">4. </span>CUtils module<a class="headerlink" href="#module-PythonExtensionsCollection.Utils.CUtils" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.Utils.CUtils.CTypePrint">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PythonExtensionsCollection.Utils.CUtils.</span></span><span class="sig-name descname"><span class="pre">CTypePrint</span></span><a class="reference internal" href="_modules/PythonExtensionsCollection/Utils/CUtils.html#CTypePrint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.Utils.CUtils.CTypePrint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.Utils.CUtils.CTypePrint.TypePrint">
+<span class="sig-name descname"><span class="pre">TypePrint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">oData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bHexFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/Utils/CUtils.html#CTypePrint.TypePrint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.Utils.CUtils.CTypePrint.TypePrint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="PythonExtensionsCollection.Utils.CUtils.PrettyPrint">
+<span class="sig-prename descclassname"><span class="pre">PythonExtensionsCollection.Utils.CUtils.</span></span><span class="sig-name descname"><span class="pre">PrettyPrint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">oData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hOutputFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bToConsole</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nIndent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sPrefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bHexFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/PythonExtensionsCollection/Utils/CUtils.html#PrettyPrint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#PythonExtensionsCollection.Utils.CUtils.PrettyPrint" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Function:</strong></p>
+<p><strong>PrettyPrint</strong></p>
+<blockquote>
+<div><p>Wrapper function to create and use a <code class="docutils literal notranslate"><span class="pre">CTypePrint</span></code> object. This wrapper function is responsible for
+printing out the content to console and to a file (depending on input parameter).</p>
+<p>The content itself is prepared by the method <code class="docutils literal notranslate"><span class="pre">TypePrint</span></code> of class <code class="docutils literal notranslate"><span class="pre">CTypePrint</span></code>. This happens <code class="docutils literal notranslate"><span class="pre">PrettyPrint</span></code> internally.</p>
+<p>The idea behind the <code class="docutils literal notranslate"><span class="pre">PrettyPrint</span></code> function is to resolve also the content of composite data types and provide for every parameter inside:</p>
+<ul class="simple">
+<li><p>the type</p></li>
+<li><p>the total number of elements inside (e.g. the number of keys inside a dictionary)</p></li>
+<li><p>the counter number of the current element</p></li>
+<li><p>the value</p></li>
+</ul>
+<p>Example call:</p>
+<p><code class="docutils literal notranslate"><span class="pre">PrettyPrint(oData)</span></code> (<em>with oData is a Python variable of any type</em>)</p>
+<p>The output can e.g. look like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">DICT</span><span class="p">]</span> <span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">{</span><span class="n">K1</span><span class="p">}</span> <span class="p">[</span><span class="n">STR</span><span class="p">]</span>  <span class="p">:</span>  <span class="s1">&#39;Val1&#39;</span>
+<span class="p">[</span><span class="n">DICT</span><span class="p">]</span> <span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">{</span><span class="n">K2</span><span class="p">}</span> <span class="p">[</span><span class="n">LIST</span><span class="p">]</span> <span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">[</span><span class="n">INT</span><span class="p">]</span>  <span class="p">:</span>  <span class="mi">1</span>
+<span class="p">[</span><span class="n">DICT</span><span class="p">]</span> <span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">{</span><span class="n">K2</span><span class="p">}</span> <span class="p">[</span><span class="n">LIST</span><span class="p">]</span> <span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">[</span><span class="n">STR</span><span class="p">]</span>  <span class="p">:</span>  <span class="s1">&#39;A&#39;</span>
+<span class="p">[</span><span class="n">DICT</span><span class="p">]</span> <span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">{</span><span class="n">K2</span><span class="p">}</span> <span class="p">[</span><span class="n">LIST</span><span class="p">]</span> <span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">[</span><span class="n">INT</span><span class="p">]</span>  <span class="p">:</span>  <span class="mi">2</span>
+<span class="p">[</span><span class="n">DICT</span><span class="p">]</span> <span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">{</span><span class="n">K2</span><span class="p">}</span> <span class="p">[</span><span class="n">LIST</span><span class="p">]</span> <span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">[</span><span class="n">TUPLE</span><span class="p">]</span> <span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">[</span><span class="n">INT</span><span class="p">]</span>  <span class="p">:</span>  <span class="mi">9</span>
+<span class="p">[</span><span class="n">DICT</span><span class="p">]</span> <span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">{</span><span class="n">K2</span><span class="p">}</span> <span class="p">[</span><span class="n">LIST</span><span class="p">]</span> <span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">[</span><span class="n">TUPLE</span><span class="p">]</span> <span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">[</span><span class="n">STR</span><span class="p">]</span>  <span class="p">:</span>  <span class="s1">&#39;Z&#39;</span>
+<span class="p">[</span><span class="n">DICT</span><span class="p">]</span> <span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">{</span><span class="n">K3</span><span class="p">}</span> <span class="p">[</span><span class="n">INT</span><span class="p">]</span>  <span class="p">:</span>  <span class="mi">5</span>
+</pre></div>
+</div>
+<p>Every line of output has to be interpreted strictly from left to right.</p>
+<p>For example the meaning of the fifth line of output</p>
+<p><code class="docutils literal notranslate"><span class="pre">[DICT]</span> <span class="pre">(3/2)</span> <span class="pre">&gt;</span> <span class="pre">{K2}</span> <span class="pre">[LIST]</span> <span class="pre">(4/4)</span> <span class="pre">&gt;</span> <span class="pre">[TUPLE]</span> <span class="pre">(2/1)</span> <span class="pre">&gt;</span> <span class="pre">[INT]</span>&#160; <span class="pre">:</span>&#160; <span class="pre">9</span></code></p>
+<p>is:</p>
+<ul class="simple">
+<li><p>The type of input parameter (<code class="docutils literal notranslate"><span class="pre">oData</span></code>) is <code class="docutils literal notranslate"><span class="pre">dict</span></code></p></li>
+<li><p>The dictionary contains 3 keys</p></li>
+<li><p>The current line gives information about the second key of the dictionary</p></li>
+<li><p>The name of the second key is ‘K2’</p></li>
+<li><p>The value of the second key is of type <code class="docutils literal notranslate"><span class="pre">list</span></code></p></li>
+<li><p>The list contains 4 elements</p></li>
+<li><p>The current line gives information about the fourth element of the list</p></li>
+<li><p>The fourth element of the list is of type <code class="docutils literal notranslate"><span class="pre">tuple</span></code></p></li>
+<li><p>The tuple contains 2 elements</p></li>
+<li><p>The current line gives information about the first element of the tuple</p></li>
+<li><p>The first element of the tuple is of type <code class="docutils literal notranslate"><span class="pre">int</span></code> and has the value 9</p></li>
+</ul>
+<p>Types are encapsulated in square brackets, counter in round brackets and key names are encapsulated in curly brackets.</p>
+</div></blockquote>
+<p><strong>Args:</strong></p>
+<p><strong>oData</strong> (<em>any Python data type</em>)</p>
+<blockquote>
+<div><p>A variable of any Python data type.</p>
+</div></blockquote>
+<p><strong>hOutputFile</strong> (<em>handle to a file opened for writing or appending; optional; default None</em>)</p>
+<blockquote>
+<div><p>If handle is not <code class="docutils literal notranslate"><span class="pre">None</span></code> the content is written to this file, otherwise not.</p>
+</div></blockquote>
+<p><strong>bToConsole</strong> (<em>bool; optional; default: True</em>)</p>
+<blockquote>
+<div><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code> the content is written to console, otherwise not.</p>
+</div></blockquote>
+<p><strong>nIndent</strong> (<em>int; optional; default: 0</em>)</p>
+<blockquote>
+<div><p>Sets the number of additional blanks at the beginning of every line of output (indentation).</p>
+</div></blockquote>
+<p><strong>sPrefix</strong> (<em>str; optional; default: None</em>)</p>
+<blockquote>
+<div><p>Sets a prefix string that is added at the beginning of every line of output.</p>
+</div></blockquote>
+<p><strong>bHexFormat</strong> (<em>bool; optional; default: False</em>)</p>
+<blockquote>
+<div><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code> the output is printed in hexadecimal format (but strings only).</p>
+</div></blockquote>
+<p><strong>Returns:</strong></p>
+<p><strong>listOutLines</strong> (<em>list</em>)</p>
+<blockquote>
+<div><p>List of lines containing the prepared output</p>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Python Extensions Collection</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="additional_doc/Introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additional_doc/Introduction.html#examples">2. Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="String.html">3. CString module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. CUtils module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="File.html">5. CFile module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="String.html" title="previous chapter"><span class="section-number">3. </span>CString module</a></li>
+      <li>Next: <a href="File.html" title="next chapter"><span class="section-number">5. </span>CFile module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Queckenstedt Holger (XC-CT/ECA3).
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/Utils.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,960 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PythonExtensionsCollection.File.CFile &#8212; Python Extensions Collection  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for PythonExtensionsCollection.File.CFile</h1><div class="highlight"><pre>
+<span></span><span class="c1"># **************************************************************************************************************</span>
+<span class="c1">#</span>
+<span class="c1">#  Copyright 2020-2022 Robert Bosch GmbH</span>
+<span class="c1">#</span>
+<span class="c1">#  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="c1">#  you may not use this file except in compliance with the License.</span>
+<span class="c1">#  You may obtain a copy of the License at</span>
+<span class="c1">#</span>
+<span class="c1">#      http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1">#</span>
+<span class="c1">#  Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1">#  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="c1">#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1">#  See the License for the specific language governing permissions and</span>
+<span class="c1">#  limitations under the License.</span>
+<span class="c1">#</span>
+<span class="c1"># **************************************************************************************************************</span>
+<span class="c1">#</span>
+<span class="c1"># CFile.py</span>
+<span class="c1">#</span>
+<span class="c1"># XC-CT/ECA3-Queckenstedt</span>
+<span class="c1">#</span>
+<span class="c1"># 26.01.2022</span>
+<span class="c1">#</span>
+<span class="c1"># **************************************************************************************************************</span>
+
+<span class="c1"># -- import standard Python modules</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">shutil</span><span class="o">,</span> <span class="nn">platform</span>
+
+<span class="c1"># -- import Bosch Python modules</span>
+<span class="kn">from</span> <span class="nn">PythonExtensionsCollection.String.CString</span> <span class="kn">import</span> <span class="n">CString</span>
+
+<span class="c1"># **************************************************************************************************************</span>
+
+<div class="viewcode-block" id="enFileStatiType"><a class="viewcode-back" href="../../../File.html#PythonExtensionsCollection.File.CFile.enFileStatiType">[docs]</a><span class="k">class</span> <span class="nc">enFileStatiType</span><span class="p">:</span>
+   <span class="n">closed</span>             <span class="o">=</span> <span class="s2">&quot;closed&quot;</span>
+   <span class="n">openedforwriting</span>   <span class="o">=</span> <span class="s2">&quot;openedforwriting&quot;</span>
+   <span class="n">openedforappending</span> <span class="o">=</span> <span class="s2">&quot;openedforappending&quot;</span>
+   <span class="n">openedforreading</span>   <span class="o">=</span> <span class="s2">&quot;openedforreading&quot;</span></div>
+
+<span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+
+<div class="viewcode-block" id="CFile"><a class="viewcode-back" href="../../../File.html#PythonExtensionsCollection.File.CFile.CFile">[docs]</a><span class="k">class</span> <span class="nc">CFile</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+   <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">The class ``CFile`` provides a small set of file functions with extended parametrization (like switches</span>
+<span class="sd">defining if a file is allowed to be overwritten or not).</span>
+
+<span class="sd">Most of the functions at least returns ``bSuccess`` and ``sResult``.</span>
+
+<span class="sd">* ``bSuccess`` is ``True`` in case of no error occurred.</span>
+<span class="sd">* ``bSuccess`` is ``False`` in case of an error occurred.</span>
+<span class="sd">* ``bSuccess`` is ``None`` in case of a very fatal error occurred (exceptions).</span>
+
+<span class="sd">* ``sResult`` contains details about what happens during computation.</span>
+
+<span class="sd">Every instance of CFile handles one single file only and forces exclusive access to this file.</span>
+
+<span class="sd">It is not possible to create an instance of this class with a file that is already in use by another instance.</span>
+
+<span class="sd">It is also not possible to use ``CopyTo`` or ``MoveTo`` to overwrite files that are already in use by another instance.</span>
+<span class="sd">This makes the file handling more save against access violations.</span>
+
+<span class="sd">|</span>
+<span class="sd">   &quot;&quot;&quot;</span>
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sFile</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span>            <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">NormalizePath</span><span class="p">(</span><span class="n">sFile</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span>      <span class="o">=</span> <span class="kc">None</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">__oFileStatus</span>      <span class="o">=</span> <span class="n">enFileStatiType</span><span class="o">.</span><span class="n">closed</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">__sLastDestination</span> <span class="o">=</span> <span class="kc">None</span>
+
+      <span class="k">try</span><span class="p">:</span>
+         <span class="n">CFile</span><span class="o">.</span><span class="n">__listFilesInUse</span>
+      <span class="k">except</span><span class="p">:</span>
+         <span class="n">CFile</span><span class="o">.</span><span class="n">__listFilesInUse</span> <span class="o">=</span> <span class="p">[]</span>
+
+      <span class="c1"># exclusive access is required (checked by self.__bIsFreeToUse; relevant for destination in CopyTo and MoveTo)</span>
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span> <span class="ow">in</span> <span class="n">CFile</span><span class="o">.</span><span class="n">__listFilesInUse</span><span class="p">:</span>
+         <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; is already in use by another CFile instance.&quot;</span><span class="p">)</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="n">CFile</span><span class="o">.</span><span class="n">__listFilesInUse</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">)</span>
+
+   <span class="c1"># eof def __init__(self, sFile=None):</span>
+
+   <span class="k">def</span> <span class="fm">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span> <span class="ow">in</span> <span class="n">CFile</span><span class="o">.</span><span class="n">__listFilesInUse</span><span class="p">:</span>
+         <span class="n">CFile</span><span class="o">.</span><span class="n">__listFilesInUse</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">)</span>
+
+   <span class="c1"># eof def __del__(self):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+   <span class="k">def</span> <span class="nf">__bIsFreeToUse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sFile</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+
+      <span class="n">bIsFreeToUse</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># init</span>
+      <span class="k">if</span> <span class="n">sFile</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="n">bIsFreeToUse</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># error handling</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">sFile</span> <span class="ow">in</span> <span class="n">CFile</span><span class="o">.</span><span class="n">__listFilesInUse</span><span class="p">:</span>
+            <span class="n">bIsFreeToUse</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="n">bIsFreeToUse</span> <span class="o">=</span> <span class="kc">True</span>
+      <span class="k">return</span> <span class="n">bIsFreeToUse</span>
+
+   <span class="c1"># eof def __bIsFreeToUse(self, sFile=None):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+   <span class="k">def</span> <span class="nf">__OpenForWriting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Opens a text file for writing.</span>
+
+<span class="sd">Returns ``bSuccess`` and ``sResult`` (feedback).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;CFile::__OpenForWriting&quot;</span>
+
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="s2">&quot;self.__sFile is None; please provide path and name of a file when creating a CFile object.&quot;</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">try</span><span class="p">:</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">__oFileStatus</span> <span class="o">=</span> <span class="n">enFileStatiType</span><span class="o">.</span><span class="n">openedforwriting</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;File &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; is open for writing&quot;</span>
+      <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Not possible to open file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; for writing.</span><span class="se">\n</span><span class="s2">Reason: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+
+      <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+   <span class="c1"># eof def __OpenForWriting(self):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+   <span class="k">def</span> <span class="nf">__OpenForAppending</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Opens a text file for appending.</span>
+
+<span class="sd">Returns ``bSuccess`` and ``sResult`` (feedback).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;CFile::__OpenForAppending&quot;</span>
+
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="s2">&quot;self.__sFile is None; please provide path and name of a file when creating a CFile object.&quot;</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">try</span><span class="p">:</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">__oFileStatus</span> <span class="o">=</span> <span class="n">enFileStatiType</span><span class="o">.</span><span class="n">openedforappending</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;File &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; is open for appending&quot;</span>
+      <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Not possible to open file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; for appending.</span><span class="se">\n</span><span class="s2">Reason: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+
+      <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+   <span class="c1"># eof def __OpenForAppending(self):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+   <span class="k">def</span> <span class="nf">__OpenForReading</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Opens a text file for reading.</span>
+
+<span class="sd">Returns ``bSuccess`` and ``sResult`` (feedback).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;CFile::__OpenForReading&quot;</span>
+
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="s2">&quot;self.__sFile is None; please provide path and name of a file when creating a CFile object.&quot;</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">try</span><span class="p">:</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">__oFileStatus</span> <span class="o">=</span> <span class="n">enFileStatiType</span><span class="o">.</span><span class="n">openedforreading</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;File &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; is open for reading&quot;</span>
+      <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Not possible to open file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; for reading.</span><span class="se">\n</span><span class="s2">Reason: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+
+      <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+   <span class="c1"># eof def __OpenForReading(self):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+<div class="viewcode-block" id="CFile.Close"><a class="viewcode-back" href="../../../File.html#PythonExtensionsCollection.File.CFile.CFile.Close">[docs]</a>   <span class="k">def</span> <span class="nf">Close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Closes the opened file.</span>
+
+<span class="sd">Returns ``bSuccess`` and ``sResult`` (feedback).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;CFile::Close&quot;</span>
+
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;File &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; closed&quot;</span>
+         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+            <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Exception while closing file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39;.</span><span class="se">\n</span><span class="s2">Reason: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span> <span class="o">=</span> <span class="kc">None</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="s2">&quot;Done&quot;</span>
+
+      <span class="bp">self</span><span class="o">.</span><span class="n">__oFileStatus</span> <span class="o">=</span> <span class="n">enFileStatiType</span><span class="o">.</span><span class="n">closed</span>
+
+      <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span></div>
+
+   <span class="c1"># eof def Close(self):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+<div class="viewcode-block" id="CFile.Delete"><a class="viewcode-back" href="../../../File.html#PythonExtensionsCollection.File.CFile.CFile.Delete">[docs]</a>   <span class="k">def</span> <span class="nf">Delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bConfirmDelete</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Deletes the current file.</span>
+
+<span class="sd">**bConfirmDelete**</span>
+
+<span class="sd">   Defines if it will be handled as error if the file does not exist.</span>
+
+<span class="sd">   If ``True``: If the file does not exist, the method indicates an error (``bSuccess = False``).</span>
+
+<span class="sd">   If ``False``: It doesn&#39;t matter if the file exists or not.</span>
+
+<span class="sd">Returns ``bSuccess`` and ``sResult`` (feedback).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;CFile::Delete&quot;</span>
+
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="s2">&quot;self.__sFile is None; please provide path and name of a file when creating a CFile object.&quot;</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">bConfirmDelete</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Nothing to delete. The file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; does not exist.&quot;</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">try</span><span class="p">:</span>
+         <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">)</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;File &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; deleted.&quot;</span>
+      <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Exception while deleting file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39;.</span><span class="se">\n</span><span class="s2">Reason: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+
+      <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span></div>
+
+   <span class="c1"># eof def Delete(self, bConfirmDelete=True):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+   <span class="k">def</span> <span class="nf">__PrepareOutput</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Content</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Helper for ``Write`` and ``Append`` (consideration of composite data types).</span>
+
+<span class="sd">Returns a list of strings (that will be written to file).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">listOut</span> <span class="o">=</span> <span class="p">[]</span>
+
+      <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">Content</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">:</span>
+         <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">Content</span><span class="p">:</span>
+            <span class="n">listOut</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">element</span><span class="p">))</span>
+      <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">Content</span><span class="p">)</span> <span class="o">==</span> <span class="nb">tuple</span><span class="p">:</span>
+         <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">Content</span><span class="p">:</span>
+            <span class="n">listOut</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">element</span><span class="p">))</span>
+      <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">Content</span><span class="p">)</span> <span class="o">==</span> <span class="nb">set</span><span class="p">:</span>
+         <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">Content</span><span class="p">:</span>
+            <span class="n">listOut</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">element</span><span class="p">))</span>
+      <span class="k">elif</span> <span class="nb">type</span><span class="p">(</span><span class="n">Content</span><span class="p">)</span> <span class="o">==</span> <span class="nb">dict</span><span class="p">:</span>
+         <span class="n">listKeys</span> <span class="o">=</span> <span class="n">Content</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+         <span class="n">nRJust</span> <span class="o">=</span> <span class="mi">0</span>
+         <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">listKeys</span><span class="p">:</span>
+            <span class="n">sKey</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="c1"># because also numerical values can be keys</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sKey</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">nRJust</span><span class="p">:</span>
+               <span class="n">nRJust</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sKey</span><span class="p">)</span>
+         <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">listKeys</span><span class="p">:</span>
+            <span class="n">sKey</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="c1"># because also numerical values can be keys</span>
+            <span class="n">sOut</span> <span class="o">=</span> <span class="n">sKey</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="n">nRJust</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; : &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Content</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+            <span class="n">listOut</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sOut</span><span class="p">)</span>
+      <span class="k">elif</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">Content</span><span class="p">))</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;dotdict&#39;</span><span class="p">)</span> <span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+         <span class="k">try</span><span class="p">:</span>
+            <span class="n">listKeys</span> <span class="o">=</span> <span class="n">Content</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+            <span class="n">nRJust</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">listKeys</span><span class="p">:</span>
+               <span class="n">sKey</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="c1"># because also numerical values can be keys</span>
+               <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sKey</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">nRJust</span><span class="p">:</span>
+                  <span class="n">nRJust</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sKey</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">listKeys</span><span class="p">:</span>
+               <span class="n">sKey</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="c1"># because also numerical values can be keys</span>
+               <span class="n">sOut</span> <span class="o">=</span> <span class="n">sKey</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="n">nRJust</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; : &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Content</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+               <span class="n">listOut</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sOut</span><span class="p">)</span>
+         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+            <span class="n">listOut</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">Content</span><span class="p">))</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="n">listOut</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">Content</span><span class="p">))</span>
+
+      <span class="k">return</span> <span class="n">listOut</span>
+
+   <span class="c1"># eof def __PrepareOutput(self, Content=&quot;&quot;):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+<div class="viewcode-block" id="CFile.Write"><a class="viewcode-back" href="../../../File.html#PythonExtensionsCollection.File.CFile.CFile.Write">[docs]</a>   <span class="k">def</span> <span class="nf">Write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Content</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">nVSpaceAfter</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">sPrefix</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bToScreen</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Writes the content of a variable ``Content`` to file.</span>
+
+<span class="sd">If ``Content`` is not a string, the ``Write`` method resolves the data structure (therefore ``Content`` can also be of type</span>
+<span class="sd">``list``, ``tuple``, ``set``, ``dict``, ``dotdict``).</span>
+
+<span class="sd">Adds vertical space ``nVSpaceAfter`` (= number of blank lines) after ``Content``.</span>
+
+<span class="sd">Prints ``Content`` also to screen in case of ``bToScreen`` is ``True`` (default: ``False``).</span>
+
+<span class="sd">Returns ``bSuccess`` and ``sResult`` (feedback).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;CFile::Write&quot;</span>
+
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__oFileStatus</span> <span class="o">!=</span> <span class="n">enFileStatiType</span><span class="o">.</span><span class="n">openedforwriting</span><span class="p">:</span>
+         <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__OpenForWriting</span><span class="p">()</span>
+         <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="n">listOut</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__PrepareOutput</span><span class="p">(</span><span class="n">Content</span><span class="p">)</span>
+
+      <span class="k">for</span> <span class="n">nCnt</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nVSpaceAfter</span><span class="p">):</span>
+         <span class="n">listOut</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+      <span class="k">if</span> <span class="n">bToScreen</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="k">for</span> <span class="n">sOut</span> <span class="ow">in</span> <span class="n">listOut</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">sPrefix</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">sOut</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">):</span>
+               <span class="n">sOut</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sPrefix</span><span class="si">}{</span><span class="n">sOut</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">sOut</span><span class="p">)</span>
+
+      <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+      <span class="n">sResult</span>  <span class="o">=</span> <span class="s2">&quot;Done&quot;</span>
+      <span class="k">try</span><span class="p">:</span>
+         <span class="k">for</span> <span class="n">sOut</span> <span class="ow">in</span> <span class="n">listOut</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">sPrefix</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">sOut</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">):</span>
+               <span class="n">sOut</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sPrefix</span><span class="si">}{</span><span class="n">sOut</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">sOut</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+      <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Not possible to write to file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39;.</span><span class="se">\n</span><span class="s2">Reason: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+
+      <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span></div>
+
+   <span class="c1"># eof def Write(self, Content=&quot;&quot;, nVSpaceAfter=0, sPrefix=None, bToScreen=False):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+<div class="viewcode-block" id="CFile.Append"><a class="viewcode-back" href="../../../File.html#PythonExtensionsCollection.File.CFile.CFile.Append">[docs]</a>   <span class="k">def</span> <span class="nf">Append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Content</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">nVSpaceAfter</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">sPrefix</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bToScreen</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Appends the content of a variable ``Content`` to file.</span>
+
+<span class="sd">If ``Content`` is not a string, the ``Write`` method resolves the data structure (therefore ``Content`` can also be of type</span>
+<span class="sd">``list``, ``tuple``, ``set``, ``dict``, ``dotdict``).</span>
+
+<span class="sd">Adds vertical space ``nVSpaceAfter`` (= number of blank lines) after ``Content``.</span>
+
+<span class="sd">Prints ``Content`` also to screen in case of ``bToScreen`` is ``True`` (default: ``False``).</span>
+
+<span class="sd">Returns ``bSuccess`` and ``sResult`` (feedback).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;CFile::Append&quot;</span>
+
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__oFileStatus</span> <span class="o">!=</span> <span class="n">enFileStatiType</span><span class="o">.</span><span class="n">openedforappending</span><span class="p">:</span>
+         <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__OpenForAppending</span><span class="p">()</span>
+         <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="n">listOut</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__PrepareOutput</span><span class="p">(</span><span class="n">Content</span><span class="p">)</span>
+
+      <span class="k">for</span> <span class="n">nCnt</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nVSpaceAfter</span><span class="p">):</span>
+         <span class="n">listOut</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+      <span class="k">if</span> <span class="n">bToScreen</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="k">for</span> <span class="n">sOut</span> <span class="ow">in</span> <span class="n">listOut</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">sPrefix</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">sOut</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">):</span>
+               <span class="n">sOut</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sPrefix</span><span class="si">}{</span><span class="n">sOut</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">sOut</span><span class="p">)</span>
+
+      <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+      <span class="n">sResult</span>  <span class="o">=</span> <span class="s2">&quot;Done&quot;</span>
+      <span class="k">try</span><span class="p">:</span>
+         <span class="k">for</span> <span class="n">sOut</span> <span class="ow">in</span> <span class="n">listOut</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">sPrefix</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">sOut</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">):</span>
+               <span class="n">sOut</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sPrefix</span><span class="si">}{</span><span class="n">sOut</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">sOut</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+      <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Not possible to append to file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39;.</span><span class="se">\n</span><span class="s2">Reason: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+
+      <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span></div>
+
+   <span class="c1"># eof def Append(self, Content=&quot;&quot;, nVSpaceAfter=0, sPrefix=None, bToScreen=False):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+<div class="viewcode-block" id="CFile.ReadLines"><a class="viewcode-back" href="../../../File.html#PythonExtensionsCollection.File.CFile.CFile.ReadLines">[docs]</a>   <span class="k">def</span> <span class="nf">ReadLines</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                 <span class="n">bCaseSensitive</span>  <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+                 <span class="n">bSkipBlankLines</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+                 <span class="n">sComment</span>        <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">sStartsWith</span>     <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">sEndsWith</span>       <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">sStartsNotWith</span>  <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">sEndsNotWith</span>    <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">sContains</span>       <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">sContainsNot</span>    <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">sInclRegEx</span>      <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">sExclRegEx</span>      <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">bLStrip</span>         <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+                 <span class="n">bRStrip</span>         <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+                 <span class="n">bToScreen</span>       <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Reads content from current file. Returns an array of lines together with ``bSuccess`` and ``sResult`` (feedback).</span>
+
+<span class="sd">The method takes care of opening and closing the file. The complete file content is read by ``ReadLines`` in one step,</span>
+<span class="sd">but with the help of further parameters it is possible to reduce the content by including and excluding lines.</span>
+
+<span class="sd">T.B.C.</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;[CFile::ReadLines]&quot;</span>
+
+      <span class="n">listLines</span> <span class="o">=</span> <span class="p">[]</span>
+
+      <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;The file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; does not exist.&quot;</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">listLines</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="c1"># !!! independend from:  self.__oFileStatus != enFileStatiType.openedforreading: !!!</span>
+      <span class="c1"># Reason: Repeated call of ReadLines needs to have the read pointer at the beginning of the file.</span>
+      <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__OpenForReading</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">listLines</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">try</span><span class="p">:</span>
+         <span class="n">sFileContent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__oFileHandle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+      <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Not possible to read from file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39;.</span><span class="se">\n</span><span class="s2">Reason: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">listLines</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">listLines</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="n">listFileContent</span> <span class="o">=</span> <span class="n">sFileContent</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span> <span class="c1"># in opposite to readlines this is OS independend!</span>
+
+      <span class="k">for</span> <span class="n">sLine</span> <span class="ow">in</span> <span class="n">listFileContent</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">CString</span><span class="o">.</span><span class="n">StringFilter</span><span class="p">(</span><span class="n">sString</span>           <span class="o">=</span> <span class="n">sLine</span><span class="p">,</span>
+                                 <span class="n">bCaseSensitive</span>    <span class="o">=</span> <span class="n">bCaseSensitive</span><span class="p">,</span>
+                                 <span class="n">bSkipBlankStrings</span> <span class="o">=</span> <span class="n">bSkipBlankLines</span><span class="p">,</span>
+                                 <span class="n">sComment</span>          <span class="o">=</span> <span class="n">sComment</span><span class="p">,</span>
+                                 <span class="n">sStartsWith</span>       <span class="o">=</span> <span class="n">sStartsWith</span><span class="p">,</span>
+                                 <span class="n">sEndsWith</span>         <span class="o">=</span> <span class="n">sEndsWith</span><span class="p">,</span>
+                                 <span class="n">sStartsNotWith</span>    <span class="o">=</span> <span class="n">sStartsNotWith</span><span class="p">,</span>
+                                 <span class="n">sEndsNotWith</span>      <span class="o">=</span> <span class="n">sEndsNotWith</span><span class="p">,</span>
+                                 <span class="n">sContains</span>         <span class="o">=</span> <span class="n">sContains</span><span class="p">,</span>
+                                 <span class="n">sContainsNot</span>      <span class="o">=</span> <span class="n">sContainsNot</span><span class="p">,</span>
+                                 <span class="n">sInclRegEx</span>        <span class="o">=</span> <span class="n">sInclRegEx</span><span class="p">,</span>
+                                 <span class="n">sExclRegEx</span>        <span class="o">=</span> <span class="n">sExclRegEx</span><span class="p">,</span>
+                                 <span class="n">bDebug</span>            <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">bLStrip</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+               <span class="n">sLine</span> <span class="o">=</span> <span class="n">sLine</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s2">&quot; </span><span class="se">\t\r\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">bRStrip</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+               <span class="n">sLine</span> <span class="o">=</span> <span class="n">sLine</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s2">&quot; </span><span class="se">\t\r\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">bToScreen</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+               <span class="nb">print</span><span class="p">(</span><span class="n">sLine</span><span class="p">)</span>
+
+            <span class="n">listLines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sLine</span><span class="p">)</span>
+
+      <span class="c1"># eof for sLine in listFileContent:</span>
+
+      <span class="k">del</span> <span class="n">listFileContent</span>
+
+      <span class="n">nNrOfLines</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">listLines</span><span class="p">)</span>
+
+      <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+      <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Read </span><span class="si">{</span><span class="n">nNrOfLines</span><span class="si">}</span><span class="s2"> lines from &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39;.&quot;</span>
+      <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">listLines</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span></div>
+
+   <span class="c1"># eof def ReadLines(...)</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+<div class="viewcode-block" id="CFile.GetFileInfo"><a class="viewcode-back" href="../../../File.html#PythonExtensionsCollection.File.CFile.CFile.GetFileInfo">[docs]</a>   <span class="k">def</span> <span class="nf">GetFileInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Returns the following informations about the file (encapsulated within a dictionary):</span>
+
+<span class="sd">Key **sFile**</span>
+
+<span class="sd">   Path and name of current file</span>
+
+<span class="sd">Key **bFileIsExisting**</span>
+
+<span class="sd">   ``True`` if file is existing, otherwise not</span>
+
+<span class="sd">Key **sFileName**</span>
+
+<span class="sd">   The name of the current file (incl. extension)</span>
+
+<span class="sd">Key **sFileExtension**</span>
+
+<span class="sd">   The extension of the current file</span>
+
+<span class="sd">Key **sFileNameOnly**</span>
+
+<span class="sd">   The pure name of the current file (without extension)</span>
+
+<span class="sd">Key **sFilePath**</span>
+
+<span class="sd">   The the path to current file</span>
+
+<span class="sd">Key **bFilePathIsExisting**</span>
+
+<span class="sd">   ``True`` if file path is existing, otherwise not</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;CFile::GetFileInfo&quot;</span>
+
+      <span class="n">dFileInfo</span> <span class="o">=</span> <span class="p">{}</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFile&#39;</span><span class="p">]</span>               <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;bFileIsExisting&#39;</span><span class="p">]</span>     <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFileName&#39;</span><span class="p">]</span>           <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFileExtension&#39;</span><span class="p">]</span>      <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFileNameOnly&#39;</span><span class="p">]</span>       <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFilePath&#39;</span><span class="p">]</span>           <span class="o">=</span> <span class="kc">None</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;bFilePathIsExisting&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="k">return</span> <span class="kc">None</span>
+
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFile&#39;</span><span class="p">]</span>           <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;bFileIsExisting&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">)</span>
+
+      <span class="n">sFileName</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">)</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFileName&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sFileName</span>
+
+      <span class="n">sFileExtension</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+      <span class="n">sFileNameOnly</span>  <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+      <span class="n">listParts</span> <span class="o">=</span> <span class="n">sFileName</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+      <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">listParts</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+         <span class="n">sFileExtension</span> <span class="o">=</span> <span class="n">listParts</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">listParts</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+         <span class="n">sFileNameOnly</span>  <span class="o">=</span> <span class="n">sFileName</span><span class="p">[:</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">sFileExtension</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="n">sFileExtension</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+         <span class="n">sFileNameOnly</span>  <span class="o">=</span> <span class="n">sFileName</span>
+
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFileExtension&#39;</span><span class="p">]</span>      <span class="o">=</span> <span class="n">sFileExtension</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFileNameOnly&#39;</span><span class="p">]</span>       <span class="o">=</span> <span class="n">sFileNameOnly</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFilePath&#39;</span><span class="p">]</span>           <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">)</span>
+      <span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;bFilePathIsExisting&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">dFileInfo</span><span class="p">[</span><span class="s1">&#39;sFilePath&#39;</span><span class="p">])</span>
+
+      <span class="k">return</span> <span class="n">dFileInfo</span></div>
+
+   <span class="c1"># eof def GetFileInfo(self):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+<div class="viewcode-block" id="CFile.CopyTo"><a class="viewcode-back" href="../../../File.html#PythonExtensionsCollection.File.CFile.CFile.CopyTo">[docs]</a>   <span class="k">def</span> <span class="nf">CopyTo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sDestination</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bOverwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Copies the current file to ``sDestination``, that can either be a path without file name or a path together with a file name.</span>
+
+<span class="sd">In case of the destination file already exists and ``bOverwrite`` is ``True``, than the destination file will be overwritten.</span>
+
+<span class="sd">In case of the destination file already exists and ``bOverwrite`` is ``False`` (default), than the destination file will not be overwritten</span>
+<span class="sd">and ``CopyTo`` returns ``bSuccess = False``.</span>
+
+<span class="sd">Returns ``bSuccess`` and ``sResult`` (feedback).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;CFile::CopyTo&quot;</span>
+
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="s2">&quot;self.__sFile is None; please provide path and name of a file when creating a CFile object.&quot;</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;The file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; does not exist, therefore nothing can be copied.&quot;</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">if</span> <span class="n">sDestination</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="s2">&quot;sDestination is None; please provide path and name of destination file. Or at least the destination path. In this case the file name will be taken over.&quot;</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="n">sDestination</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">NormalizePath</span><span class="p">(</span><span class="n">sDestination</span><span class="p">)</span>
+
+      <span class="n">bDeleteDestFile</span> <span class="o">=</span> <span class="kc">False</span>
+
+      <span class="n">sDestFile</span> <span class="o">=</span> <span class="n">sDestination</span> <span class="c1"># default</span>
+
+      <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">sDestination</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="n">sFileName</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">)</span>
+         <span class="n">sDestFile</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">sDestination</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">sFileName</span><span class="si">}</span><span class="s2">&quot;</span> <span class="c1"># file name in destination is required for: shutil.copyfile</span>
+
+      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__bIsFreeToUse</span><span class="p">(</span><span class="n">sDestFile</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;The destination file &#39;</span><span class="si">{</span><span class="n">sDestFile</span><span class="si">}</span><span class="s2">&#39; is already in use by another CFile instance.&quot;</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="bp">self</span><span class="o">.</span><span class="n">__sLastDestination</span> <span class="o">=</span> <span class="n">sDestFile</span>
+
+      <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">sDestFile</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="c1"># destination file already exists</span>
+         <span class="k">if</span> <span class="n">sDestFile</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">:</span>
+            <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Source file and destination file are the same: &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39;. Therefore nothing to do.&quot;</span>
+            <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+         <span class="k">if</span> <span class="n">bOverwrite</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">bDeleteDestFile</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Not allowed to overwrite existing destination file &#39;</span><span class="si">{</span><span class="n">sDestFile</span><span class="si">}</span><span class="s2">&#39;. Therefore nothing to do.&quot;</span>
+            <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="c1"># destination file not yet exists</span>
+         <span class="c1"># (we assume here that the destination shall be a file because we already have figured out that the destination is not a folder)</span>
+         <span class="c1"># =&gt; we have to check if the path to the file exists</span>
+         <span class="n">sDestFilePath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">sDestFile</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">sDestFilePath</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">bDeleteDestFile</span> <span class="o">=</span> <span class="kc">False</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;The destination path &#39;</span><span class="si">{</span><span class="n">sDestFilePath</span><span class="si">}</span><span class="s2">&#39; does not exist. The file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; cannot be copied.&quot;</span>
+            <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="c1"># eof else - if os.path.isfile(sDestFile) is True:</span>
+
+      <span class="c1"># analysis done, now the action</span>
+
+      <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">if</span> <span class="n">bDeleteDestFile</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="c1"># To delete the destination file explicitely before executing any copy-function is an addon here in this library.</span>
+         <span class="c1"># The purpose is to be independend from the way the used copy function is handling existing destination files.</span>
+         <span class="c1"># But this makes only sense under Windows and not under Linux, because Windows is much more strict with access</span>
+         <span class="c1"># violations than Linux. Therefore we avoid such kind of additional steps in case of the platform is not Windows.</span>
+         <span class="k">if</span> <span class="n">platform</span><span class="o">.</span><span class="n">system</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Windows&quot;</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+               <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">sDestFile</span><span class="p">)</span>
+               <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+               <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;File &#39;</span><span class="si">{</span><span class="n">sDestFile</span><span class="si">}</span><span class="s2">&#39; deleted.&quot;</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+               <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+               <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Exception while deleting destination file &#39;</span><span class="si">{</span><span class="n">sDestFile</span><span class="si">}</span><span class="s2">&#39;.</span><span class="se">\n</span><span class="s2">Reason: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+               <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+               <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">try</span><span class="p">:</span>
+         <span class="n">shutil</span><span class="o">.</span><span class="n">copyfile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="p">,</span> <span class="n">sDestFile</span><span class="p">)</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;File &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; copied to &#39;</span><span class="si">{</span><span class="n">sDestFile</span><span class="si">}</span><span class="s2">&#39;.&quot;</span>
+      <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">reason</span><span class="p">:</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Exception while copying file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; to &#39;</span><span class="si">{</span><span class="n">sDestFile</span><span class="si">}</span><span class="s2">&#39;.</span><span class="se">\n</span><span class="s2">Reason: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
+
+      <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span></div>
+
+   <span class="c1"># eof def CopyTo(self, sDestination=None, bOverwrite=False):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+<div class="viewcode-block" id="CFile.MoveTo"><a class="viewcode-back" href="../../../File.html#PythonExtensionsCollection.File.CFile.CFile.MoveTo">[docs]</a>   <span class="k">def</span> <span class="nf">MoveTo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sDestination</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bOverwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">|</span>
+
+<span class="sd">Moves the current file to ``sDestination``, that can either be a path without file name or a path together with a file name.</span>
+
+<span class="sd">In case of the destination file already exists and ``bOverwrite`` is ``True``, than the destination file will be overwritten.</span>
+
+<span class="sd">In case of the destination file already exists and ``bOverwrite`` is ``False`` (default), than the destination file will not be overwritten</span>
+<span class="sd">and ``CopyTo`` returns ``bSuccess = False``.</span>
+
+<span class="sd">Returns ``bSuccess`` and ``sResult`` (feedback).</span>
+
+<span class="sd">|</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+
+      <span class="n">sMethod</span> <span class="o">=</span> <span class="s2">&quot;CFile::MoveTo&quot;</span>
+
+      <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">CopyTo</span><span class="p">(</span><span class="n">sDestination</span><span class="p">,</span> <span class="n">bOverwrite</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__sLastDestination</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+         <span class="c1"># the copied file should exist at new location</span>
+         <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">None</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Someting went wrong while copying the file &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; to &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sLastDestination</span><span class="si">}</span><span class="s2">&#39;. Aborting.&quot;</span>
+         <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+         <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Delete</span><span class="p">()</span>
+         <span class="k">if</span> <span class="n">bSuccess</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">sResult</span> <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span>
+
+      <span class="n">bSuccess</span> <span class="o">=</span> <span class="kc">True</span>
+      <span class="n">sResult</span>  <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;File moved from &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sFile</span><span class="si">}</span><span class="s2">&#39; to &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__sLastDestination</span><span class="si">}</span><span class="s2">&#39;&quot;</span>
+      <span class="n">sResult</span>  <span class="o">=</span> <span class="n">CString</span><span class="o">.</span><span class="n">FormatResult</span><span class="p">(</span><span class="n">sMethod</span><span class="p">,</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">bSuccess</span><span class="p">,</span> <span class="n">sResult</span></div></div>
+
+   <span class="c1"># eof def MoveTo(self, sDestination=None, bOverwrite=False):</span>
+
+   <span class="c1"># --------------------------------------------------------------------------------------------------------------</span>
+   <span class="c1"># TM***</span>
+
+<span class="c1"># eof class CFile(object):</span>
+
+<span class="c1"># **************************************************************************************************************</span>
+
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">Python Extensions Collection</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../additional_doc/Introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../additional_doc/Introduction.html#examples">2. Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../String.html">3. CString module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Utils.html">4. CUtils module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../File.html">5. CFile module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Queckenstedt Holger (XC-CT/ECA3).
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
