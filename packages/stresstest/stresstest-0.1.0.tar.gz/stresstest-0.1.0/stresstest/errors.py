@@ -1,0 +1,2 @@
+class TestWasNotRunYet(Exception):
+    pass
