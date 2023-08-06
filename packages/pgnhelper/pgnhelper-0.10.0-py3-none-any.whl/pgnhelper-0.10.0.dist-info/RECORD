@@ -1,0 +1,17 @@
+pgnhelper/__init__.py,sha256=9YUgRU_vJwozZOPutgQOtTtynJolbWCxEB4I9gYVepE,134
+pgnhelper/__main__.py,sha256=IqJG9Ml-t5gZnVFJosvL6IlgrZw5LcKY1Ykfrr8CSog,8128
+pgnhelper/app.py,sha256=G2LFFS9ncy66M0c079f34iaPoKYoxhPra5A8e9uPJYg,3404
+pgnhelper/eco.py,sha256=DW-iOw0yXq4eIQNpuavJWBEm_zncDLs-I5SCVPNQBmc,5500
+pgnhelper/elo.py,sha256=GRKWUgYqkgKf9TNGhUMVzJ4gQSao0XAFXaywPXmbc4Q,3605
+pgnhelper/record.py,sha256=0FDivf_m9G46SSUKrcK-Xewi8vY5RSUHuYItt1tXR0g,2488
+pgnhelper/roundrobin.py,sha256=yCMVjxABUtXRVydZG5weL4HO9F9svvHc66KBBrEwJYE,10470
+pgnhelper/sort.py,sha256=OpMgZf4wufRdH4_98n3nmYq1nZike_Iqnc2PNeyz80g,3551
+pgnhelper/swiss.py,sha256=GbdWNsTAHKUiAqPGWgr09kWqIsfGqM8aosgJiEvgy_w,10347
+pgnhelper/tiebreak.py,sha256=D2ryxY88uYIdT4sizDRS9aJ7R8A22m8tx2z-pApJJhg,11311
+pgnhelper/utility.py,sha256=t5BZ4el0H9CQm6PtwG6fuFUrDOg54kx-_CP9pe0Y4vk,5704
+pgnhelper-0.10.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pgnhelper-0.10.0.dist-info/METADATA,sha256=erJ-8WYpQxSrf8k_pImdkxI1CPmGgHiScLklhFsmvXI,2440
+pgnhelper-0.10.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pgnhelper-0.10.0.dist-info/entry_points.txt,sha256=TOqQckkf3Ptq9Bif0NHNd3VmbYGDCZfPszKufSrUi30,45
+pgnhelper-0.10.0.dist-info/top_level.txt,sha256=1FZvypUbzIkj3A8J_yteYK06Lr3Zz71XaRdM47KePrQ,10
+pgnhelper-0.10.0.dist-info/RECORD,,
