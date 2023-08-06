@@ -1,0 +1,6 @@
+beautifulsoup4
+pyyaml
+requests
+rich
+tqdm
+twine
