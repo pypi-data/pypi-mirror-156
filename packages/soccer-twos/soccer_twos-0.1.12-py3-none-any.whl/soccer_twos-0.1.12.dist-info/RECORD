@@ -1,0 +1,13 @@
+soccer_twos/__init__.py,sha256=kdPCBvWg61w4Ad2kKqWx54M_p7QIusdQWwq-sMRU2iY,5677
+soccer_twos/agent_interface.py,sha256=kvjXKLBhYxXMouwwu5O4roEb4nBixu9hu-1jNpLp9tk,722
+soccer_twos/evaluate.py,sha256=MQsfTgBVdF7AsyNZlp5m5S14EnVR6d_JmBohX_bZDo0,9590
+soccer_twos/package.py,sha256=8E4m9m_Yj0kwj7T6lrjlQuWpDjRDNbje15Rr6hugWlk,2851
+soccer_twos/side_channels.py,sha256=vpuiipkZKqDAzirZIsNEhSEuV2jODMzKJqX_O8SLGqw,3976
+soccer_twos/utils.py,sha256=vNBxpEKb6hj6pf_BuZn0d_FVcGIjYAHXN5elw0bGVeg,756
+soccer_twos/watch.py,sha256=qQbMyIgbLhwd8S8ZBnjKmyMo2GdyMvdNiWlMSPAtUho,2741
+soccer_twos/wrappers.py,sha256=0ajvlato_LKEIOqIy5oAu7J4lQRKBQPNlfWyVn7zmuQ,23339
+soccer_twos-0.1.12.dist-info/LICENSE,sha256=ZOorHdtB4Q526fLUpZUM7z4kMFGfl1q3tdb6g5X5mDA,1062
+soccer_twos-0.1.12.dist-info/METADATA,sha256=yQV5gLQ1shz9wyj8QrvVbMCCih4hY4stC3AzPyNpSd4,11532
+soccer_twos-0.1.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+soccer_twos-0.1.12.dist-info/top_level.txt,sha256=kPZ7rVmPuE2NDVtxWY4CyfB5pEzwIgN499CANDJJ91A,12
+soccer_twos-0.1.12.dist-info/RECORD,,
