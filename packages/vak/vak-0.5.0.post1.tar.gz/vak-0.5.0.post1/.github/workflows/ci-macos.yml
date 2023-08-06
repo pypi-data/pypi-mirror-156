@@ -1,0 +1,26 @@
+name: MacOS
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.8, 3.9, "3.10"]
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: run tests
+        run: |
+          make test-data-download-source
+          make test-data-download-generated-ci
+          pip install '.[test]'
+          python ./tests/scripts/fix_prep_csv_paths.py
+          pytest --models teenytweetynet  --cov=./ --cov-report=xml
