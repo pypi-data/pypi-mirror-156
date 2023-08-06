@@ -1,0 +1,178 @@
+Metadata-Version: 2.1
+Name: assembled
+Version: 0.0.2
+Summary: Efficiently Benchmarking Ensembles in AutoML
+Author-email: Lennart Purucker <lennart.purucker@uni-siegen.de>
+Project-URL: Homepage, https://github.com/ISG-Siegen/assembled
+Project-URL: Bug Tracker, https://github.com/ISG-Siegen/assembled/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (~=1.22.3)
+Requires-Dist: pandas (~=1.4.1)
+Requires-Dist: scikit-learn (~=1.0.2)
+Requires-Dist: scipy (~=1.8.0)
+Requires-Dist: tables (~=3.7.0)
+Provides-Extra: openml
+Requires-Dist: openml (~=0.12.2) ; extra == 'openml'
+Requires-Dist: requests (~=2.27.1) ; extra == 'openml'
+Provides-Extra: test
+Requires-Dist: pre-commit (==2.15.0) ; extra == 'test'
+Requires-Dist: pytest (==6.2.5) ; extra == 'test'
+
+# Assembled
+
+Assembled is planed to be a framework for ensemble evaluation. It shall be able to run, benchmark, and evaluate ensemble
+techniques without the overhead of training base models.
+
+Currently, its main features are:
+
+* **Metatasks**: A metatasks is a meta-dataset and a class interface. Metatasks contain the predictions and
+  confidences (e.g. sklearn's predict_proba) of specific base models and the data of an original (OpenML) task.
+  Moreover, its class interface contains several useful method to simplify the evaluation and benchmarking of ensemble
+  techniques. A collection of metatasks can be used to benchmark ensemble techniques without the computational overhead
+  of training and evaluating base models.
+* **Assembled-OpenML**: an extension of Assembled to build metatasks with data from OpenML. Only a OpenML Task ID must
+  be passed to the code to generate a metatask for a specific OpenML task. Technically, any ID can be passed. In
+  practice, only supervised classification tasks are supported so far. Moreover, this tool was build for and tested
+  against curated benchmarks (like tasks in OpenMLCC-18). Other classification tasks should be supported as well but
+  bugs might be more likely.
+* **FakedClassifiers**: Code to simulate the behavior of a base model by passing appropriate data to it during the
+  initialization. Allows us to evaluate most ensemble techniques without code changes to the original implementation's
+  code.
+* **Supporting Ensemble Techniques** We created code to make ensemble techniques usable with (pre-fitted) base models.
+  This is not part of Assembled itself but rather additional example on how to use ensemble techniques with Assembled.
+  Some implementation support base models by default other do not. See `/ensemble_techniques/` for more details.
+
+Currently, is main use-cases are:
+
+* Ensembles After AutoML (Post-Processing)
+
+This repository/branch also contains the Assembled-OpenML extension.
+
+### Assembled-OpenML
+
+_For the original code of the workshop paper on Assembled-OpenML, see the `automl_workshop_paper` branch_
+
+Assembled-OpenML builds Metatasks from OpenML. In this first version of Assembled-OpenML, the predictions correspond to
+the top-n best runs (configurations) of an OpenML task. It shall simulate the use case of post-processing an AutoML
+tool's top-n set of configurations.
+
+Assembled-OpenML enables the user to quickly generate a benchmark set by entering a list of OpenML Task IDs as input
+(see our code examples). In general, Assembled-OpenML is an affordable/efficient alternative to creating benchmarks by
+hand. It is affordable/efficient, because you do not need to train and evaluate the base models but can directly
+evaluate ensemble techniques.
+
+## Installation
+
+To install Assembled and Assembled-OpenML, use:
+
+```bash
+pip install assembled[openml]
+```
+
+If you only want to use Assembled, leave away `[openml]`.
+
+To install the newest version (from the main branch), use:
+
+```bash
+pip install git+https://github.com/ISG-Siegen/assembled.git#egg=assembled[openml]
+```
+
+### Other Installations
+
+For experiments, work-in-progress code, or other non-packaged code stored in this repository, we
+provide `requirements.txt` files. These can be used to re-create the environments needed for the code.
+
+An example workflow for the installation on Linux is:
+
+```bash
+git clone https://github.com/ISG-Siegen/assembled.git
+cd assembled
+python3 -m venv venv_assembled
+source venv_assembled/bin/activate
+pip install -r requirements.txt
+```
+
+Please be aware that any relevant-enough subdirectory keeps track of its own requirements through a `requirements.txt`.
+Hence, if you want to use only parts of this project, it might be a better idea to only install the requirements of the
+code that you want to use.
+
+## Usage
+
+To see the example usage of Assembled-OpenML, see the `./examples/` directory for code examples and more details.
+
+A simple example of using Assembled-OpenML to get a Metatask and using Assembled to evaluate an ensemble technique on
+the Metatask is:
+
+```python
+from assembledopenml.openml_assembler import OpenMLAssembler
+
+from sklearn.compose import ColumnTransformer
+from sklearn.compose import make_column_selector
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.impute import SimpleImputer
+
+# -- Use Assembled-OpenML to build a metatask for the OpenML task with ID 3
+omla = OpenMLAssembler(nr_base_models=50)
+mt = omla.run(openml_task_id=3)
+
+# -- Get a preprocessor
+preprocessor = ColumnTransformer(
+    transformers=[
+        ("num", SimpleImputer(strategy="constant", fill_value=-1),
+         make_column_selector(dtype_exclude="category")),
+        ("cat", OneHotEncoder(handle_unknown="ignore", drop="first"),
+         make_column_selector(dtype_include="category")),
+    ],
+    sparse_threshold=0
+)
+
+# -- Get an ensemble technique
+# Import an adapted version of auto-sklearn's Ensemble Selection
+# (requires the ensemble_techniques directory to be in your local directory)
+from ensemble_techniques.autosklearn.ensemble_selection import EnsembleSelection
+from ensemble_techniques.util.metrics import OpenMLAUROC
+
+# -- Benchmark the ensemble technique on the metatask
+technique_run_args = {"ensemble_size": 50, "metric": OpenMLAUROC}
+fold_scores = mt.run_ensemble_on_all_folds(EnsembleSelection, technique_run_args, "autosklearn.EnsembleSelection",
+                                           pre_fit_base_models=True, preprocessor=preprocessor,
+                                           meta_train_test_split_fraction=0.5, meta_train_test_split_random_state=0,
+                                           return_scores=OpenMLAUROC)
+print(fold_scores)
+print("Average Performance:", sum(fold_scores) / len(fold_scores))
+```
+
+To re-use our evaluation code, coined Assembled-Evaler for now, a benchmark must have been run first,
+see `example_run_benchmark.py` and `example_rebuild_benchmark_data.py`. Afterwards,
+see `example_evaluation_and_analysis.py` to run our pre-defined evaluation code.
+
+## Limitations
+
+* **Regression is not supported** so far as OpenML has not enough data (runs) on Regression tasks. Would require some
+  additional implementations.
+* Assembled-OpenML ignores OpenML repetitions (most runs/datasets do not provide repetitions).
+* The file format for the predictions file is not fully standardized in OpenML and hence requires manually adjustment to
+  all used formats. Hopefully, we found most of the relevant formats with Assembled-OpenML.
+* Some files, which store predictions, seem to have malicious or corrupted predictions/confidence values. If we can not
+  fix such a case, we store these bad predictors in the Metatask object to be manually validated later on. Moreover,
+  these predictors can be filtered from the Metatask if one wants to (we do this for every example or experiment).
+
+## A Comment on Validation Data
+
+By default, and by design, Metatask created only from OpenML data do not have inner fold validation data. To train an
+ensemble techniques on metataks created only from OpenML data, we split a fold's predictions on the fold's test data of
+into ensemble_train and ensemble_test data. With ensemble_train being used to build/train the ensemble and ensemble_test
+being used to evaluate the ensemble.
+
+Alternatively, if a metatask and the base models stored in the metatask were initialized / created with validation data,
+we can also use the validation data to train the ensemble technique and then test it on all test data/predictions of a
+fold.
+
+## Citation
+
+The Paper related to Assembled-OpenML (the first version of this project) is not yet public.
