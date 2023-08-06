@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+media_mgmt_cli/__init__.py
+media_mgmt_cli/__main__.py
+media_mgmt_cli/aws.py
+media_mgmt_cli/cli.py
+media_mgmt_cli/config.py
+media_mgmt_cli/utils.py
+media_mgmt_cli.egg-info/PKG-INFO
+media_mgmt_cli.egg-info/SOURCES.txt
+media_mgmt_cli.egg-info/dependency_links.txt
+media_mgmt_cli.egg-info/entry_points.txt
+media_mgmt_cli.egg-info/requires.txt
+media_mgmt_cli.egg-info/top_level.txt

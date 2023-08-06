@@ -1,0 +1,2 @@
+[console_scripts]
+mmgmt = media_mgmt_cli.cli:cli
