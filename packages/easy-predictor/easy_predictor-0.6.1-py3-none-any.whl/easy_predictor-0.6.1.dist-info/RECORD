@@ -1,0 +1,9 @@
+easy_predictor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_predictor/classification.py,sha256=MISItvB4mfaihjkngEfPq0RlwDixRA_QvW8eqf8J6cI,1567
+easy_predictor/linear.py,sha256=vNE7RX_Y8Fz0shE6MUJZuMqG5UDZu921rZWeEUtj-j4,1117
+easy_predictor/table.py,sha256=l4UOKCxTfR5iBwWHWv7cf2HAfeJKCPrqYQzeP9uhAcE,389
+easy_predictor-0.6.1.dist-info/LICENSE,sha256=26fFZgTljVw4sEACA4dYZ3xGK5W1K7VpHeylfH57Oco,2178
+easy_predictor-0.6.1.dist-info/METADATA,sha256=kur37xcAsOG3gVpP27n0exo_w0K63Gpcm3HMtBjHhrg,1970
+easy_predictor-0.6.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+easy_predictor-0.6.1.dist-info/top_level.txt,sha256=0MvkacnOGhhSDwrdt_rP0dw8bt2rHv3dimMPg_k7u8Q,15
+easy_predictor-0.6.1.dist-info/RECORD,,
