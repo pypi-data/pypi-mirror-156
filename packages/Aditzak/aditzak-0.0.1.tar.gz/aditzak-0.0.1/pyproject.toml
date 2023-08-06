@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Aditzak"
+version = "0.0.1"
+authors = [
+  { name="Henry Cook", email="henryscookolaizola@gmail.com" },
+  { name="Alejandro Sempere", email="asempere@colegioaleman.net"},
+  { name="Pablo Pérez"}
+]
+description = "A python package to analyse and build  Euskera verbs"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/HCook86/Aditzak"
