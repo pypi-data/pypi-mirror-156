@@ -1,0 +1,25 @@
+name: py-cordex-docs
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.7
+  - xarray
+  - docutils==0.16
+  - nbconvert
+  - numpydoc
+  - pillow
+  - pip
+  - nbsphinx
+  - nbsphinx-link
+  - ipython
+  - cftime
+  - pooch
+  - sphinx==4.2.0
+  - sphinx_rtd_theme==1.0.0
+  - sphinx-book-theme
+  - jinja2==3.0.0
+  - pip:
+    - sphinxcontrib-mockautodoc
