@@ -1,0 +1,6 @@
+setup.py
+bukkit/__init__.py
+bukkit.egg-info/PKG-INFO
+bukkit.egg-info/SOURCES.txt
+bukkit.egg-info/dependency_links.txt
+bukkit.egg-info/top_level.txt
