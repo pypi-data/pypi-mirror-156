@@ -1,0 +1,110 @@
+add : adicionar
+aff : suspiro
+ajd : ajuda
+aka : também conhecido como
+aki : aqui
+amg : amigo
+aq : aqui
+asap : assim que possível
+att : atenciosamente
+atte : atenciosamente
+bbk : babaca
+bbq : babaca
+bff : melhor amigo para sempre
+bffs : melhores amigos para sempre
+bj : beijo
+bjo : beijo
+bjos : beijos
+bjs : beijos
+blz : beleza
+bnt : bonito
+brb : estarei de volta em breve
+brinks : brincadeira
+btw : a propósito
+cc : em cópia
+clr : claro
+cm : com
+cmg : comigo
+crt : certo
+ctz : certeza
+cvs : conversar
+diy : faça você mesmo
+dm : mensagem direta
+dnv : denovo
+dps : depois
+flw : falou
+fml : foi mal
+ft : foto
+fut : futebol
+fyi : para seu conhecimento
+fzr : fazer
+glr : galera
+gnt : gente
+hr : hora
+hrs : horas
+idk : eu não sei
+lol : rindo alto
+mddc : meu deus do céu
+mds : meu deus
+mlr : melhor
+mlhr : melhor
+mn : mano
+msg : mensagem
+msm : mesmo
+n : não
+nd : nada
+ngc : negócio
+ngm : ninguém
+nn : não
+nnn : não
+obg : obrigado
+obgd : obrigado
+obgda : obrigada
+obgdo : obrigado
+omg : oh meu deus
+pdc : pode crer
+pft : perfeito
+pfv : por favor
+pfvr : por favor
+plmdds : pelo amor de deus
+plmns : pelo menos
+pls : por favor
+plz : por favor
+pprt : papo reto
+pq : por que
+psc : para seu conhecimento
+pv : privado
+qria : queria
+qser : quiser
+qt : quanto
+rlx : relaxa
+s : sim
+sdd : saudade
+sdds : saudades
+sdv : segue de volta
+sla : sei lá
+slk : você é louco
+sm : sem
+sqn : só que não
+ss : sim 
+sss : sim
+tb : também
+tbc : a ser continuado
+tbd : a ser determinado
+tbt : quinta-feira de saudades
+tlgd : está ligado
+tm : estamos
+tmb : também
+tmj : estamos junto
+trd : tarde
+vc : você
+vce : você
+vces : vocês
+vcs : vocês
+vdd : verdade
+vlw : valeu
+vms : vamos
+wtf : o que é isso?
+xoxo : beijos e abraços
+yep : sim
+yolo : só se vive uma vez
