@@ -1,0 +1,12 @@
+shortcutml/feature_selection/UnivariateFeatureSelection.py,sha256=bDyMUDH5VLgLMQeJjc9_OfziG5TI4VeveHGhsKLLF0g,7380
+shortcutml/feature_selection/__init__.py,sha256=7ITXLi8adm1M0VqhEhsCAphgx2XlVSfxbTBZhGY1EBI,66
+shortcutml/model_selection/AutoSearchCV.py,sha256=R_oksi5BCzMqgWAFv7XKLPSlDZIQ1hhuu5euvAlj7vs,10483
+shortcutml/model_selection/BaselineModel.py,sha256=Tl_ihYNaJa9llhJwZN_3kZqcC95soK2mgKbs4zGduuw,8506
+shortcutml/model_selection/__init__.py,sha256=rPpvGxcNPpwAAQyE1GTAphCmPhiVqnvzbqsY8kyGMwY,79
+shortcutml/preprocessing/TextCleaningIndo.py,sha256=uGekBanxJJ_hPu6PVFAd9F25C4v64u1kHPRxz0iiyvc,2387
+shortcutml/preprocessing/__init__.py,sha256=H1tVM5X2PG9nH91Qb-_0qTRRIOOiIbNNMOtwAxPTgvc,46
+shortcutml-0.8.dist-info/LICENSE,sha256=xCJPB9uv60fsO7PKuuhPJycR4BuOPx2Y9ypwLDsAqBw,1077
+shortcutml-0.8.dist-info/METADATA,sha256=dVNNImUGRR1lJeGjd2R_MjlEud7mXWVMASNeiNbrGKk,3148
+shortcutml-0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shortcutml-0.8.dist-info/top_level.txt,sha256=yf-s_gqFTXpGPpqQgQfOyXyRPZuQcG2lJr2ZIEWYaWE,11
+shortcutml-0.8.dist-info/RECORD,,
