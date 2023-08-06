@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+config_formatter.py
+pyproject.toml
+setup.cfg
+config_formatter.egg-info/PKG-INFO
+config_formatter.egg-info/SOURCES.txt
+config_formatter.egg-info/dependency_links.txt
+config_formatter.egg-info/requires.txt
+config_formatter.egg-info/top_level.txt
+tests/test_prettify.py
