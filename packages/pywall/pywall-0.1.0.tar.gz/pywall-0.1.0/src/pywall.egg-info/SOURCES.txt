@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/pywall/__init__.py
+src/pywall/pywall.py
+src/pywall.egg-info/PKG-INFO
+src/pywall.egg-info/SOURCES.txt
+src/pywall.egg-info/dependency_links.txt
+src/pywall.egg-info/entry_points.txt
+src/pywall.egg-info/not-zip-safe
+src/pywall.egg-info/requires.txt
+src/pywall.egg-info/top_level.txt
