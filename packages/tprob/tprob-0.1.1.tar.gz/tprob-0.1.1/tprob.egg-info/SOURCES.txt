@@ -1,0 +1,13 @@
+setup.py
+tprob/__init__.py
+tprob/ka.py
+tprob/prac_tasks.py
+tprob/q.py
+tprob/teor.py
+tprob/ve.py
+tprob/zadanie_6.py
+tprob.egg-info/PKG-INFO
+tprob.egg-info/SOURCES.txt
+tprob.egg-info/dependency_links.txt
+tprob.egg-info/requires.txt
+tprob.egg-info/top_level.txt
