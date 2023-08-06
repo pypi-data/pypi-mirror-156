@@ -1,0 +1,11 @@
+econ_jp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+econ_jp/econ_jp.py,sha256=4my7m38u4uvAMuKLXYM00Kw85pdCviFMgc7Ra5dv9yI,9953
+econ_jp/econ_kobe.py,sha256=Rax24PjynGw-Y2Zq9oWoP3g_YuayRbDgRO0a9nL-l5A,4921
+econ_jp/econ_kyoto.py,sha256=ZApLaW2R7EA-eLwLQdtopnb0289Km9qS-euznSO-PgA,5954
+econ_jp/econ_osaka.py,sha256=3IYJbUsYXZ4xjZNUPIdgq8hj3cTArWj6UM9ZTEZVXBY,4157
+econ_jp/util.py,sha256=bBtdaZiDIYAQvoJBTTmxcBqKXedJqilsjGgTlPT0KgE,1200
+econ_jp-0.1.12.dist-info/LICENSE,sha256=BzTDS88pigJkpAz8IzrNhXVj50w05KZrZbWqJ6uquVs,1064
+econ_jp-0.1.12.dist-info/METADATA,sha256=uvsON7Cb5y2ZCaao33ZKE4HkyN83RveUCcyBHSQFLzk,471
+econ_jp-0.1.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+econ_jp-0.1.12.dist-info/top_level.txt,sha256=jqMuJujKt_Lj797zSiDJ7-KcT-JvgIpW-7gThI21OOY,8
+econ_jp-0.1.12.dist-info/RECORD,,
