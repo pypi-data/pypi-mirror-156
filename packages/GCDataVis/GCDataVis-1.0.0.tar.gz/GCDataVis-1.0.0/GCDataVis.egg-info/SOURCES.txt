@@ -1,0 +1,8 @@
+README.md
+setup.py
+GCDataVis/__init__.py
+GCDataVis/visualize_data.py
+GCDataVis.egg-info/PKG-INFO
+GCDataVis.egg-info/SOURCES.txt
+GCDataVis.egg-info/dependency_links.txt
+GCDataVis.egg-info/top_level.txt
