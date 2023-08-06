@@ -1,0 +1,13 @@
+FRAPP/FRAPP.py,sha256=Ymnme_4scGPIDzi64mmqDLuHOUTOV2Fuoakj15cqEiI,8795
+FRAPP/PDF.py,sha256=Vau3on81ajMdwEmemWT2acx32DVgfxNKnvobz_jb3KI,431
+FRAPP/__init__.py,sha256=oYCkQRB5oX49XmSJOyzaXEsV5AqtvOfZjwEA4Uay4rM,179
+FRAPP/loadarxiv.py,sha256=kMov_MFYL_eYtvKgOZqlpAHeorTrCc5tizG2Kl4gUwY,4774
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_bold_letter.py,sha256=JQME1RVQ0ytUAFgzpdsi-XDmouUeptkVY_RUdCL12So,433
+tests/test_end_to_end.py,sha256=7NQSgG1-KtI6J6XHE_MNMcCi-vw4U8oy6J7frObtjGs,495
+tests/test_modify_word_font.py,sha256=sAhu1OY1ktqEWuDpfBmDWtmkm24rB5Gk5Td8dr84DkE,1180
+tests/test_setup_file.py,sha256=4bxraJumjVn9sf5NigqyFM7JJwZRyF38W-oSgfbBR3U,945
+FRAPP-1.1.1.dist-info/METADATA,sha256=2D2XdpctrNHdUzDU8pBO6wNPuK7drmMyvI7JMrNrU2Y,222
+FRAPP-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+FRAPP-1.1.1.dist-info/top_level.txt,sha256=3LehRh6J0llBNaop0iRIxc_G1lq1xeKPfA0lURPsL0o,12
+FRAPP-1.1.1.dist-info/RECORD,,
