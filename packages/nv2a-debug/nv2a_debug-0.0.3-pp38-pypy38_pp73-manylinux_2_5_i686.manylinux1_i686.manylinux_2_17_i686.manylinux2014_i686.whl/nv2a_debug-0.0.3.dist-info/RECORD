@@ -1,0 +1,11 @@
+_nv2a_vsh_cpu.pypy38-pp73-x86-linux-gnu.so,sha256=yPePQF5pAR1oOebnCwT0A8U_emUg6MBYnn2n42bLYbQ,37680
+nv2a_debug-0.0.3.dist-info/top_level.txt,sha256=z3nPthuVPVlgCAJnl-RjoPRGhZO012wK-t-uC1vWLpI,22
+nv2a_debug-0.0.3.dist-info/entry_points.txt,sha256=IHh-TgAfSwbcz8q16vsYG7gbxHszhwjh1REL7NTofU0,40
+nv2a_debug-0.0.3.dist-info/WHEEL,sha256=kYh15Uwzu5_Q4bc9GfMgYNjOR4zpDvT6hqRAHh5JXtU,237
+nv2a_debug-0.0.3.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+nv2a_debug-0.0.3.dist-info/METADATA,sha256=S1rytkdZIZcHiYAcdExD8kMy6-foWTkebO71ZrnN2Uk,7570
+nv2a_debug-0.0.3.dist-info/RECORD,,
+nv2adbg/debugger.py,sha256=tT-vlNxJjEvxqK0MzIedvqNxOdwJBj4aST4BBVeOL-M,33960
+nv2adbg/simulator.py,sha256=50C1sLMoZEt1byGmJKBFQw84AWgWjU6o0mADdScUowM,6501
+nv2adbg/__init__.py,sha256=E1K_8z35YOxt4LAxE-M0NYNekJVCfJA4iMuYMq_zqt0,132
+nv2adbg/py_nv2a_vsh_emu.py,sha256=a0rgqZPplXAw0iPEXfA2yLB17-7zCOue_wNMXmnuHng,6437
