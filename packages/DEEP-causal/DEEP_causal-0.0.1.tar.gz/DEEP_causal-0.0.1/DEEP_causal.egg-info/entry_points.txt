@@ -1,0 +1,4 @@
+[console_scripts]
+test1 = DEEP_causal:test1
+test2 = DEEP_causal:test2
+
