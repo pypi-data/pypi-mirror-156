@@ -1,0 +1,58 @@
+{% set name = "efishent" %}
+{% set version = "0.0.1" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/efishent-{{ version }}.tar.gz
+  sha256: f543b9f7e5e7f34901eb09d1ecc754596c4e2e86ba4ccd6ae5a14731d92b1535
+
+build:
+  entry_points:
+    - efishent = efishent.cli:main
+    - eFISHent = efishent.cli:main
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
+
+requirements:
+  host:
+    - pip
+    - python >=3.9
+  run:
+    - biopython
+    - gtfparse
+    - luigi
+    - matplotlib-base
+    - numpy
+    - pandas
+    - pyomo
+    - python >=3.9
+    - tqdm
+    - rnastructure
+    - pyarrow
+    - jellyfish
+    - bowtie
+    - blast
+    - samtools
+
+test:
+  imports:
+    - efishent
+  commands:
+    - pip check
+    - efishent --help
+  requires:
+    - pip
+
+about:
+  home: https://github.com/bbquercus/eFISHent/
+  summary: RNA FISH oligos/probes design tool.
+  license: MIT
+  license_file: license.txt
+
+extra:
+  recipe-maintainers:
+    - BBQuercus
