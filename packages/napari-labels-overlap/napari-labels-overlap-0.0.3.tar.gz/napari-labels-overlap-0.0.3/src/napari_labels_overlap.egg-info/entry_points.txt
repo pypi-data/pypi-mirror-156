@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-labels-overlap = napari_labels_overlap:napari.yaml
