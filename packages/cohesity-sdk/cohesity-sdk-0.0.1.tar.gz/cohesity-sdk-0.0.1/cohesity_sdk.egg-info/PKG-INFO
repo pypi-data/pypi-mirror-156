@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cohesity-sdk
+Version: 0.0.1
+Summary: Cohesity REST API
+Home-page: UNKNOWN
+Author: OpenAPI Generator community
+License: UNKNOWN
+Keywords: OpenAPI,OpenAPI-Generator,Cohesity REST API
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+    Cohesity API provides a RESTful interface to access the various data management operations on Cohesity cluster and Helios.  # noqa: E501
+    
+
