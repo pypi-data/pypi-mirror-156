@@ -1,0 +1,10 @@
+egobox-0.3.1.dist-info/METADATA,sha256=5pNemKyLoP8UgualeU0j0bBI_-xMJyJ8Q6EDVgd39s0,8430
+egobox-0.3.1.dist-info/WHEEL,sha256=eYF6dcUEPeSSPYZICcKZYjGYVnadHWeFkfxyB0e2vmY,96
+egobox-0.3.1.dist-info/license_files/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+egobox/egobox.pyd,sha256=C4ZzFT3QbG6O729qOUJRo2IJWjagkdmljlpHBFE0Jps,12867072
+egobox/tests/test_egor.py,sha256=XsNPBp3mVMKfMon4ovi5ttVE05b-S-TV5zErguiHVqQ,5125
+egobox/tests/test_mixintegor.py,sha256=PiqgWN2kHbpEvcHLGxgHm7RO2nK7M5uShGu4oYO4xCc,783
+egobox/tests/test_utils.py,sha256=vCwZXa_2XQKAJo1h-K2-V3R5gl3IybBIEtIfVBj3NUU,980
+egobox/__init__.py,sha256=UCup-J4YiXvMFyxafP3ZCQCCzKs8Ygp7407p46yXSTw,23
+egobox/egobox.cp39-win_amd64.pyd,sha256=yeqzVkabfKhOP5Y2JyHs0DjTPED8H2Wx2fCpVaVOyxI,12864512
+egobox-0.3.1.dist-info/RECORD,,
