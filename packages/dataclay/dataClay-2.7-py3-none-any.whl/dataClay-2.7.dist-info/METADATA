@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: dataClay
+Version: 2.7
+Summary: Python library for dataClay
+Home-page: https://www.bsc.es/dataclay
+License: BSD License
+Project-URL: Documentation, https://pyclay.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/bsc-dom/pyclay
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: decorator (~=5.1.1)
+Requires-Dist: grpcio (~=1.46.3)
+Requires-Dist: Jinja2 (~=3.0.3)
+Requires-Dist: lru-dict (~=1.1.7)
+Requires-Dist: MarkupSafe (~=2.0.1)
+Requires-Dist: numpy (~=1.19)
+Requires-Dist: protobuf (~=3.19.0)
+Requires-Dist: psutil (~=5.9.1)
+Requires-Dist: PyYAML (~=6.0)
+Requires-Dist: six (~=1.16.0)
+Provides-Extra: dev
+Requires-Dist: grpcio-tools ; extra == 'dev'
+
+[![Build status](https://ci.appveyor.com/api/projects/status/g2q9140ejkt92b6m/branch/develop?retina=true)](https://ci.appveyor.com/project/support-dataclay/pyclay/branch/develop)
+[![Build status](https://ci.appveyor.com/api/projects/status/g2q9140ejkt92b6m/branch/develop?svg=true&passingText=Passing+functional+tests&pendingText=Building+functional+tests)](https://dataclay.bsc.es/testing-report/)
+
+[![Documentation Status](https://readthedocs.org/projects/pyclay/badge/?version=latest)](https://pyclay.readthedocs.io/en/latest/?badge=latest)
+![PyPI - Status](https://img.shields.io/pypi/status/dataclay)
+![PyPI - Format](https://img.shields.io/pypi/format/dataclay)
+[![License](https://img.shields.io/github/license/bsc-dom/pyclay)](https://github.com/bsc-dom/pyclay/blob/develop/LICENSE.txt)
+[![PyPI version](https://badge.fury.io/py/dataClay.png)](https://badge.fury.io/py/dataClay)
+[![Pypi Downloads](https://pepy.tech/badge/dataclay)](https://pepy.tech/project/dataclay)
+<br/>
+
+[![Test Pypi](https://img.shields.io/badge/testpypi-2.7.dev-green)](https://test.pypi.org/project/dataClay/)
+
+# dataClay Python codebase
+
+This repository holds the `pyclay` Python package. This package is used both
+by the dataClay Python clients and also for the dataClay service Execution
+Environment.
+
+## Installation
+
+This package is available from PyPI, so just `pip` it:
+
+    $ pip install dataClay
+
+## Documentation
+
+Official documentation available at [read the docs](https://pyclay.readthedocs.io/en/latest/)
+
+## Other resources
+
+[BSC official dataClay webpage](https://www.bsc.es/dataclay)
+
+---
+
+![dataClay logo](https://www.bsc.es/sites/default/files/public/styles/bscw2_-_simple_crop_style/public/bscw2/content/software-app/logo/logo_dataclay_web_bsc.jpg)
