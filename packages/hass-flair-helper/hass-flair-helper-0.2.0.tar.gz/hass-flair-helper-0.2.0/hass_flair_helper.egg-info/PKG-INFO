@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hass-flair-helper
+Version: 0.2.0
+Summary: A Python library for home-assistant-flair to help utilize the Flair Python API 
+Home-page: https://github.com/RobertD502/hass-flair-helper
+Author: Robert Drinovac
+Author-email: unlisted@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/RobertD502/hass-flair-helper/issues
+Project-URL: Source, https://github.com/RobertD502/hass-flair-helper/
+Description: # Hass-Flair-Helper
+        Flair API helper used by home-assistant-flair component
+        
+Keywords: flair,flair vents,flair api,flair home assistant
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
