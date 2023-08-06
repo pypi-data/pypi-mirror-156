@@ -1,0 +1,6 @@
+setup.py
+academylibrary.egg-info/PKG-INFO
+academylibrary.egg-info/SOURCES.txt
+academylibrary.egg-info/dependency_links.txt
+academylibrary.egg-info/requires.txt
+academylibrary.egg-info/top_level.txt
