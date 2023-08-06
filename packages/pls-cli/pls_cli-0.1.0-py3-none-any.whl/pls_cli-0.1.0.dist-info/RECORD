@@ -1,0 +1,11 @@
+README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pls_cli/__init__.py,sha256=Frllag7lJicOgXGbUgOnrdg0vyg_SqzEC6hda5JI1Q0,86
+pls_cli/please.py,sha256=QwSPcE5X7IwGPVIX3lfswWjfQROMo0kBrfDsXnIRxzQ,12605
+pls_cli/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pls_cli/utils/quotes.json,sha256=esae_4fRISgAVhCRsbTVBZ1YMorIxO2iwONfy9b0IGU,143575
+pls_cli/utils/quotes.py,sha256=EIVsUAnUTWaePohO1Mu2z7FJRuJdMbNpvhJO8yw5nwM,363
+pls_cli/utils/settings.py,sha256=pdZ9OtTBqv5FKqgxHfaR7Mk2qnl-AFIfK3tTf5WaH8s,2120
+pls_cli-0.1.0.dist-info/entry_points.txt,sha256=expIJUd5G4w38c644b1tEa5zcrwfTuT4OO2Ld9zPpwE,42
+pls_cli-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pls_cli-0.1.0.dist-info/METADATA,sha256=5TY7g6trUCZtcxMakma_nbnWO1DR1EVltKHP3TkYvIY,734
+pls_cli-0.1.0.dist-info/RECORD,,
