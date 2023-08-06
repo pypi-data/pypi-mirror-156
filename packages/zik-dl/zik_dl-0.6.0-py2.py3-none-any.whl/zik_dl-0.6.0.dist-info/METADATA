@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: zik-dl
+Version: 0.6.0
+Summary: Command-line program to download music from YouTube and other websites.
+Home-page: https://gitlab.com/rafutek/zik-dl
+Author: Raphaël Roy
+Author-email: raphaelroy@tutanota.com
+License: GNU AGPLv3
+Keywords: music,download,cli,youtube-dl
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Internet
+Classifier: Intended Audience :: End Users/Desktop
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: yt-dlp
+Requires-Dist: music-tag
+Requires-Dist: pillow
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+```
+usage: zik-dl [-h] [--artists ARTISTS] [--album ALBUM] [--split] url
+
+Linux command-line program to download music from YouTube and other websites.
+
+positional arguments:
+  url                URL of the song/album to download
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --artists ARTISTS  comma-separated artists names like "Louis Armstrong,Ella Fitzgerald"
+  --album ALBUM      album name
+  --split            split song in multiple songs based on timestamps (youtube video description)
+  --cover            cover path like "~/Images/cover1.jpg"
+```
+
+

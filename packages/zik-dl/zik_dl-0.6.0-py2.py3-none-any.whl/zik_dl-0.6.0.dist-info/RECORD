@@ -1,0 +1,12 @@
+zik_dl/__init__.py,sha256=1k8Fl7L_F8OImoAZjxTWzpQQXboM-wR9iHcf3f8k3yw,733
+zik_dl/arguments.py,sha256=kq4mYWMDCxIsE_kZHAser2wxqaymo6cV2vhD9evx2B8,1568
+zik_dl/downloader.py,sha256=aGmJpkx_vJfLginQKM7hWnsKR7zmju9vOL5X7XWUkgM,970
+zik_dl/files_manager.py,sha256=TuEB77CPCMQkfivyzh1LfJnI1ioidQkSZXR3wEZc8DU,1341
+zik_dl/settings.py,sha256=_XOLafmrK7-kqMpOEVdfzMw0Y69CMZTZSRRH25qjekE,45
+zik_dl/utils.py,sha256=CM9T3KTvrp7qwbFDwn764mjacJtcNfhhH-X4aLMJAu8,398
+zik_dl-0.6.0.dist-info/LICENSE,sha256=JedRSmmwKNH1K-TVuMEMlS1hoEwWbDoz2RGKWacNlMY,34449
+zik_dl-0.6.0.dist-info/METADATA,sha256=og_wxrNQL8TefbH3NMIffVTzpWIYn_S1hRr-Xk2y4zA,1464
+zik_dl-0.6.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+zik_dl-0.6.0.dist-info/entry_points.txt,sha256=z8981cMMheF3a6GUAboYMjiuqdr4woikmGpq3NRAvhc,40
+zik_dl-0.6.0.dist-info/top_level.txt,sha256=8qd40VrSt7EoUKnG1t5OJVY8ZNZFBjSt0S2t8jc-66Q,7
+zik_dl-0.6.0.dist-info/RECORD,,
