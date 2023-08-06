@@ -1,0 +1,2 @@
+[console_scripts]
+randsymbols = randsymbols.__main__:app
