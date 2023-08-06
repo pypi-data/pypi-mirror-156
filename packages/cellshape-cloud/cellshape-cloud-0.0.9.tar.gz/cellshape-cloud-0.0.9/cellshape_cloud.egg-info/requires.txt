@@ -1,0 +1,17 @@
+torch
+torchvision
+pyntcloud
+numpy
+matplotlib
+tqdm
+datetime
+
+[dev]
+black
+pytest-cov
+pytest
+gitpython
+coverage>=5.0.3
+bump2version
+pre-commit
+flake8
