@@ -1,0 +1,8 @@
+cpeparser/__init__.py,sha256=7mDjfK-XqRu8dJyjxnJ0Q9RnKu8jeHD6drXPbd2p1Sc,123
+cpeparser/cpe.py,sha256=0QX3akxEJ3Cl8Bxx0xlB0LlR0hc3lcOkbuKAud9wsrA,981
+cpeparser/errors.py,sha256=0Fob7c6lZcE9_SsJzgiAIap2BPx5gVaUGTj3xHv0Y_8,167
+cpeparser/parser.py,sha256=guRQTrUMpZTvA4fwWDgIqVvrbtqHkPuFKKhero6yPdI,2446
+cpeparser/test_cpe.py,sha256=O2gEpINmTwoAE0O4pKlkwQwGwESHp4znS3Vgd_QhE94,1131
+cpeparser-0.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+cpeparser-0.0.1.dist-info/METADATA,sha256=_4UWe5EBIulwSPYiJKEOvlRHsKv9rActEt492AyLDuE,1660
+cpeparser-0.0.1.dist-info/RECORD,,
