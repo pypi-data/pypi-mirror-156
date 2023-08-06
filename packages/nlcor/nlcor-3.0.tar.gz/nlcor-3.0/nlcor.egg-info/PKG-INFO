@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nlcor
+Version: 3.0
+Summary: Nlcor uses a dynamic partitioning approach with adaptive segmentation for a more precise nonlinear correlation estimation.
+Home-page: https://github.com/ProcessMiner/nlcorpython
+Author: Chitta Ranjan, Devleena Banerjee
+Author-email: cranjan@processminer.com, dbanerjee@processminer.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+

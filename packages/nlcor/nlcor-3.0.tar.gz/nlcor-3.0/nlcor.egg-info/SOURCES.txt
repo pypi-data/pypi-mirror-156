@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+nlcor.egg-info/PKG-INFO
+nlcor.egg-info/SOURCES.txt
+nlcor.egg-info/dependency_links.txt
+nlcor.egg-info/requires.txt
+nlcor.egg-info/top_level.txt
