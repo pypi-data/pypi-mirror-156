@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: topiary-asr
+Version: 0.0.1
+Summary: Python framework for doing ancestral sequence reconstruction using pandas dataframes and ete3 trees as the primary data structures.
+Home-page: https://github.com/harmslab/topiary
+Author: Michael J. Harms
+Author-email: harmsm@gmail.com
+License: MIT
+Keywords: phylogenetics ASR
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+
+# topiary
+
+Python framework for doing ancestral sequence reconstruction using pandas dataframes and ete3 trees as the primary data structures.
+
+*Under heavy development.*
+
+[Documentation](https://topiary-asr.readthedocs.io/en/latest/)
+
+
+
