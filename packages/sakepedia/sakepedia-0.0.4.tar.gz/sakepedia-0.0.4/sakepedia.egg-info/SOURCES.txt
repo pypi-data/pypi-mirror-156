@@ -1,0 +1,10 @@
+README.md
+setup.py
+sakepedia/SakeData.py
+sakepedia/SakepediaAPI.py
+sakepedia/__init__.py
+sakepedia.egg-info/PKG-INFO
+sakepedia.egg-info/SOURCES.txt
+sakepedia.egg-info/dependency_links.txt
+sakepedia.egg-info/requires.txt
+sakepedia.egg-info/top_level.txt
