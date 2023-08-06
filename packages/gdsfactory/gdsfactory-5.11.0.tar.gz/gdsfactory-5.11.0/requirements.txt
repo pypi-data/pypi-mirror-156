@@ -1,0 +1,23 @@
+-e .
+click
+flatdict
+gdspy
+jsondiff
+loguru
+matplotlib
+numpy
+omegaconf
+orjson
+pandas
+phidl==1.6.1
+picwriter==0.5
+pydantic
+pyyaml
+rectpack
+scipy
+shapely
+toolz
+tqdm
+types-PyYAML
+typing_extensions
+xmltodict
