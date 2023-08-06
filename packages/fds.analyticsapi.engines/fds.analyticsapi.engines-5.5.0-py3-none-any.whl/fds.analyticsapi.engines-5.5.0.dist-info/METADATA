@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fds.analyticsapi.engines
+Version: 5.5.0
+Summary: Engines API
+Home-page: https://github.com/factset/analyticsapi-engines-python-sdk
+Author: Analytics API Support
+Author-email: analytics.api.support@factset.com
+License: Apache License 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Engines API
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: python-dateutil
+Requires-Dist: fds.protobuf.stach.extensions (<2.0.0)
+
+Allow clients to fetch Analytics through APIs.  # noqa: E501
+
+
