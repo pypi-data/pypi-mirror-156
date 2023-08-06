@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pysquale
+Version: 0.0.2
+Summary: Useful lib for text processing in Portuguese
+Home-page: https://pysquale.readthedocs.io/
+Author: Henrique Santana
+Author-email: santana@cloudhumans.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/santana-ai/pysquale/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nltk (>=3.7)
+
+# pysquale
+Useful lib for text processing in Portuguese.
+
+The name of the lib was inspired by the name of the famous Brazilian Teacher [Pasquale](https://pt.wikipedia.org/wiki/Pasquale_Cipro_Neto)
+
+<br/>
+
+## Usage
+
+```python
+from pysquale.common.pipeline import ReducerPipeline
+from pysquale.words.cleaning import remove_accentuation, remove_punctuation, to_lower
+
+func_list = [to_lower, remove_accentuation, remove_punctuation]
+text = "Olá, quem é você?"
+pipe = ReducerPipeline(target=text, items=func_list)
+output = pipe.run()
+print(output)
+
+# Should print:
+# ola quem e voce"
+```
+
+<br/>
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+<br/>
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
