@@ -1,0 +1,8 @@
+TestScripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TestScripts/useful/__init__.py,sha256=OvrMB2mvBzRtwnDWFo44Lf4Q1IbF4NAvcLSvzKAceUA,74
+TestScripts/useful/testFeatures.py,sha256=zlNRNt31xlVO0v5bLzdcmc4-pP4J474FKU8ClmjlD5I,4003
+TestScripts/useful/testModels.py,sha256=9xM7CPiuUpq9j6ZngVDC08f_dZ5SwWd-KsNSKf0v1Dk,8900
+EasyMLLIB-0.0.1.dist-info/METADATA,sha256=pa_3_I4QIu-MAe8vcTkoGwvSDbF0DMgu33_9DeVE0A8,1320
+EasyMLLIB-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+EasyMLLIB-0.0.1.dist-info/top_level.txt,sha256=xWkqq7dYsZuV6psYtV55zNksghRme8MK25QF2E-nwjo,12
+EasyMLLIB-0.0.1.dist-info/RECORD,,
