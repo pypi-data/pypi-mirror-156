@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: frequsefuncs
+Version: 0.0.2
+Summary: python package of frequently used functions
+Home-page: UNKNOWN
+Author: y
+Author-email: <y@outlook.com>
+License: UNKNOWN
+Description: python package of frequently used functions
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
