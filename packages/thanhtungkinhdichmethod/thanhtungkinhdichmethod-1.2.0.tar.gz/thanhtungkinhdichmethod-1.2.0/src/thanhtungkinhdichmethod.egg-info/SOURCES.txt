@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/thanhtungkinhdichmethod/__init__.py
+src/thanhtungkinhdichmethod/method.py
+src/thanhtungkinhdichmethod.egg-info/PKG-INFO
+src/thanhtungkinhdichmethod.egg-info/SOURCES.txt
+src/thanhtungkinhdichmethod.egg-info/dependency_links.txt
+src/thanhtungkinhdichmethod.egg-info/top_level.txt
