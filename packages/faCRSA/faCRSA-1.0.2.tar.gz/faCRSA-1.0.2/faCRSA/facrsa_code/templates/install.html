@@ -1,0 +1,67 @@
+{% extends 'public/base.html' %}
+{% block index %}
+    <section class="py-5">
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h1 class="fw-bolder">faCRSA V1.0.0</h1>
+                <p class="text-muted mb-0">Last updated: 2022.06.23</p>
+                <p class="lead fw-normal text-muted mb-0">Please follow the installation instructions in the <a
+                        href="#!">Github page</a>.</p>
+            </div>
+            <div class="row gx-5 row-cols-sm-2 row-cols-sm-3 py-5 bg-light">
+                <div class="col">
+                    <div class="text-center" style="padding: 0 56px;padding-top: 50px;">
+                        <img src="../static/assets/windows.svg">
+                        <p style="font-size: 30px;">Windows</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center" style="padding: 0 56px;padding-top: 50px;">
+                        <img src="../static/assets/linux.svg">
+                        <p style="font-size: 30px;">Linux</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center" style="padding: 0 56px; padding-top: 50px;">
+                        <img src="../static/assets/mac.svg">
+                        <p style="font-size: 30px;">MacOS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5 row-cols-2 row-cols-lg-3 py-5 align-items-center justify-content-center pb-5 bg-light">
+                <button type="button" class="btn btn-large" style="  border: 1px solid #dae0e5;color: #6c757d;"
+                        id="clipboard" data-clipboard-text="pip install faCRSA">
+                    <code class="h4">
+                        <span class="text-muted">$</span> pip install faCRSA
+                    </code>
+                    <i class="bi bi-clipboard"></i>
+                </button>
+            </div>
+            <div class="container px-5 my-5">
+                <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+                    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                        <div class="mb-4 mb-xl-0">
+                            <div class="fs-3 fw-bold text-white">New information, delivered to you.</div>
+                            <div class="text-white-50">Sign up for our newsletter for the latest updates.</div>
+                        </div>
+                        <div class="ms-xl-4">
+                            <div class="input-group mb-2">
+                                <input class="form-control" type="text" placeholder="Email address..."
+                                       aria-label="Email address..." aria-describedby="button-newsletter">
+                                <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up
+                                </button>
+                            </div>
+                            <div class="small text-white-50">We care about privacy, and will never share your data.
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+    </section>
+{% endblock %}
+{% block js %}
+    <script src="{{ url_for('static', filename = 'js/vendors.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/clipboard.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'layui/layer/layer.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/page/install.js') }}"></script>
+{% endblock %}
