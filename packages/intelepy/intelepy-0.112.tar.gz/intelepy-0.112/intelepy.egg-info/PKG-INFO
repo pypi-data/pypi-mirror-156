@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: intelepy
+Version: 0.112
+Summary: Intelepeer Python SDK
+Home-page: https://github.com/MikeRalston98/intelepy
+Author: Michael Ralston
+Author-email: michaelaaralston2@gmail.com
+License: MIT
+Keywords: Intelepeer,ITSP
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
