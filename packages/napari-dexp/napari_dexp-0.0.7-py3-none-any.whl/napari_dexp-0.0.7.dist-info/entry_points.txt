@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-dexp = napari_dexp:napari.yaml

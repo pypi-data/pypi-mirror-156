@@ -1,0 +1,13 @@
+napari_dexp/__init__.py,sha256=QzuF-quWRB57pzdep0rp8pti51ZwYCES8klZq393imM,223
+napari_dexp/_reader.py,sha256=ACWxVwl8yVy4A0BcnuA2eTlhGg98CaLcE2bTimqq9b0,4156
+napari_dexp/_version.py,sha256=ux6sLeYcXzSzwhV0vVh_os6okudHOLIlmj0_gz8adjo,176
+napari_dexp/_writer.py,sha256=F52mvuEN6q1QoVXPaHEplWNsNSOd-cafRJzmxQIOOPI,1225
+napari_dexp/napari.yaml,sha256=i7__nWupPZt0BH-LTqqg82aLG9kEV-aHm00quqMim3w,827
+napari_dexp/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_dexp/_tests/test_io.py,sha256=box8_ZXjOByawOix369Yp6iE8-reF9sQkLELevuFJaI,1231
+napari_dexp-0.0.7.dist-info/LICENSE,sha256=_hqPCaAEjtXMP01AZzUNWj5OjQAe_ILRfZdxaFcG04g,1487
+napari_dexp-0.0.7.dist-info/METADATA,sha256=r6tA9yo1R_e4LCyukO0viJqBXBKPtLPPMuTSoYgE6Ao,3338
+napari_dexp-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_dexp-0.0.7.dist-info/entry_points.txt,sha256=EJWt5PsVBrK-vfiVAO_JN8sMipM4IyP9ZPc-Oa696FE,56
+napari_dexp-0.0.7.dist-info/top_level.txt,sha256=BleHyFrP3wYJ1CLO7cFk0o1GO2MKjuCdUsFnQVfrhfA,12
+napari_dexp-0.0.7.dist-info/RECORD,,
