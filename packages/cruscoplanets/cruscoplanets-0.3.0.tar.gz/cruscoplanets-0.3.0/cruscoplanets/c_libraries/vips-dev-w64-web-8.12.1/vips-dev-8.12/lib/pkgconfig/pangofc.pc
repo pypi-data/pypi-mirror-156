@@ -1,0 +1,9 @@
+prefix=/data/mxe/usr/x86_64-w64-mingw32.shared.posix.web
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: Pango FC
+Description: Fontconfig support for Pango
+Version: 1.49.3
+Requires: pangoft2
+Cflags: -I${includedir}/pango-1.0
