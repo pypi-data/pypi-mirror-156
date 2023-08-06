@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+basesofamodel.egg-info/PKG-INFO
+basesofamodel.egg-info/SOURCES.txt
+basesofamodel.egg-info/dependency_links.txt
+basesofamodel.egg-info/top_level.txt
