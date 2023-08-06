@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: hillmaker
+Version: 0.3.2
+Summary: Occupancy analysis tool for systems having time of day and day of week effects
+Home-page: http://github.com/misken/hillmaker/
+Author: Mark Isken
+Author-email: isken@oakland.edu
+Project-URL: Source, http://github.com/misken/hillmaker
+Project-URL: Examples, https://github.com/misken/hillmaker-examples
+Platform: any
+Classifier: Programming Language :: Python :: 3 
+Classifier: Programming Language :: Python :: 3.7 
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: pandas (>=1.2.0)
+
