@@ -1,0 +1,12 @@
+IQS_algorithm/IQS.py,sha256=dxO0f709Z5QwZiL4Q37bTjG5JmUUHEATaABVfL2VuoQ,608
+IQS_algorithm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+IQS_algorithm/IQS_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+IQS_algorithm/IQS_utils/funcIQS.py,sha256=-AKEDioPRRBBNdEYNw7nRd51_bTmCtrULvTbEhC3pL4,18406
+IQS_algorithm/IQS_utils/RelevantFiles/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+IQS_algorithm/IQS_utils/RelevantFiles/glove-wiki-gigaword-50.txt,sha256=exyrEOcI75lpmVevHj8FhjiYS_tEtRieGYXAhG5970U,171750090
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+IQS_algorithm-0.0.5.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+IQS_algorithm-0.0.5.dist-info/METADATA,sha256=qAdOx7ZXynH-p1k7hFNDI_8LX9YH67CaroQgu_-xrio,964
+IQS_algorithm-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+IQS_algorithm-0.0.5.dist-info/top_level.txt,sha256=RiBrbjrDKcn2LAwUYZp3PsTtaNHSfrr5Tztb1GmFiv4,20
+IQS_algorithm-0.0.5.dist-info/RECORD,,
