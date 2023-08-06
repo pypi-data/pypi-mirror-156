@@ -1,0 +1,12 @@
+pyscratch/__init__.py,sha256=Dj5jL49yDIyvanpgKpp7ZUax9UyOIHmmy4Y7lEHpPYs,80
+pyscratch/block_name_mapping.csv,sha256=qkHWIcZ9A_kUPB2AXPnYcSDmr92DnOvTkwMwTW5h6k8,551
+pyscratch/main.py,sha256=zO8O1evPE2dQCuv2ZIn7fT03JZ23qXgOPpsHbjmKBow,894
+pyscratch/parser.py,sha256=x14stWmf_pidsyfbNbCpGjALRQyf0YMIKMMd18LLOT8,11399
+pyscratch/scratch.py,sha256=8DJ5rZMPsBOTD9gL9u9YQzyjkhqTyECD-L2iE8Ou1os,45851
+pyscratch/scratchtext.ebnf,sha256=ZBWtO8KQ_HbBP7IuXow3EsWHUsLbwsIC1jLSjXjdPVI,958
+scratch_python-0.1.3a0.dist-info/LICENSE.txt,sha256=ZobymPke4IRUnAihpaWAQDHJVgNG44zbVZbuqt1LkVY,1074
+scratch_python-0.1.3a0.dist-info/METADATA,sha256=wvXhkQJsSR2uT0kBiGlF6p4Rt_oFZblh2Zd104ct9UQ,8178
+scratch_python-0.1.3a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scratch_python-0.1.3a0.dist-info/entry_points.txt,sha256=grwhsJgcyJDgpVdAbvPbP6T9SG53b9J4iTn8bCEZ2-I,51
+scratch_python-0.1.3a0.dist-info/top_level.txt,sha256=puTFgQIwqAeQqUMlOI4QPifQ-WPxVEOyziBjnzR4tZw,10
+scratch_python-0.1.3a0.dist-info/RECORD,,
