@@ -1,0 +1,2 @@
+mitol-django-common~=2.2.4
+setuptools

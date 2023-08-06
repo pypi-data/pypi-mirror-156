@@ -1,0 +1,16 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+mitol/__init__.py
+mitol/google_sheets/CHANGELOG.md
+mitol/google_sheets/README.md
+mitol/google_sheets/__init__.py
+mitol/google_sheets/apps.py
+mitol/google_sheets/py.typed
+mitol_django_google_sheets.egg-info/PKG-INFO
+mitol_django_google_sheets.egg-info/SOURCES.txt
+mitol_django_google_sheets.egg-info/dependency_links.txt
+mitol_django_google_sheets.egg-info/namespace_packages.txt
+mitol_django_google_sheets.egg-info/requires.txt
+mitol_django_google_sheets.egg-info/top_level.txt
+mitol_django_google_sheets.egg-info/zip-safe
