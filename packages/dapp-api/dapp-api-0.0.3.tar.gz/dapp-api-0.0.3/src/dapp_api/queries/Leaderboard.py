@@ -1,0 +1,26 @@
+import sgqlc.types
+import sgqlc.operation
+import dapp_api.schema
+
+_schema = dapp_api.schema
+_schema_root = _schema.schema
+
+__all__ = ('Operations',)
+
+
+def query_leaderboard():
+    _op = sgqlc.operation.Operation(_schema_root.query_type, name='Leaderboard', variables=dict(orderBy=sgqlc.types.Arg(sgqlc.types.list_of(sgqlc.types.non_null(_schema.TopUsersOrderBy)))))
+    _op_top_users = _op.top_users(order_by=sgqlc.types.Variable('orderBy'), first=100)
+    _op_top_users_nodes = _op_top_users.nodes()
+    _op_top_users_nodes.user_id()
+    _op_top_users_nodes.submitted_statement_count()
+    _op_top_users_nodes.accepted_statement_count()
+    return _op
+
+
+class Query:
+    leaderboard = query_leaderboard()
+
+
+class Operations:
+    query = Query
