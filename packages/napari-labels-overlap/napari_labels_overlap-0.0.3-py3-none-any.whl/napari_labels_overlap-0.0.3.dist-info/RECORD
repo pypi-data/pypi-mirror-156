@@ -1,0 +1,11 @@
+napari_labels_overlap/__init__.py,sha256=-Y4Qr-4lcAaq_WVySsHYwjJLQIMjZ5BJe2DQGmPsx-4,69
+napari_labels_overlap/_dock_widget.py,sha256=TJpdrTdSV185sBJYn_c__dDsfrkgPP7IJ5TlYbFvViQ,1411
+napari_labels_overlap/napari.yaml,sha256=JVBbVrxythinDAQlODQjYeapfpGoY3buU3EQGvrtmgU,346
+napari_labels_overlap/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_labels_overlap/_tests/test_dock_widget.py,sha256=1xiXeOpslwZDbSJY_gJmQeesDIirN2f7cGQdU4l6rDU,720
+napari_labels_overlap-0.0.3.dist-info/LICENSE,sha256=vvZ2mXyG51caomtq56VDAtMi3Ft0dngPQIVNvy3rjgU,1491
+napari_labels_overlap-0.0.3.dist-info/METADATA,sha256=7socuLDxrII7B9KYp4VYOOHPg47C4YHFlyZC--nMx-w,4862
+napari_labels_overlap-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_labels_overlap-0.0.3.dist-info/entry_points.txt,sha256=MyMPwZc5ziX0XWDnqyMVhZds9hBYCPNzRje1MjO0s7M,76
+napari_labels_overlap-0.0.3.dist-info/top_level.txt,sha256=yWPbxgOJcVhZS9Gt2wDMFv0EKGJLrOl7FLuCL4_xqdA,22
+napari_labels_overlap-0.0.3.dist-info/RECORD,,
