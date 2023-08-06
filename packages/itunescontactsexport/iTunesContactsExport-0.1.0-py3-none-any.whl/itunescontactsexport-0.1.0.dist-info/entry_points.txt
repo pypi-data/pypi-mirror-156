@@ -1,0 +1,3 @@
+[console_scripts]
+iTunesContactsExport=iTunesContactsExport.__main__:main
+

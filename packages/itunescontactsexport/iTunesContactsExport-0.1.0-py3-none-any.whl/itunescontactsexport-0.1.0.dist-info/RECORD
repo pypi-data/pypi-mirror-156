@@ -1,0 +1,12 @@
+iTunesContactsExport/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iTunesContactsExport/__main__.py,sha256=9SWcV_JLXUUWCpcbKc-wmx4db6bwx2NOdOWaJ8YExyI,5418
+iTunesContactsExport/iTunesDatabase/__init.py__,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iTunesContactsExport/iTunesDatabase/iPhoneAddressBookDAO.py,sha256=IrrzCiy5nA52zkSRE1u4MfgMLdswV9mvWEHwgz1JmR8,5476
+iTunesContactsExport/iTunesDatabase/iPhoneAddressBookImagesDAO.py,sha256=wJ1H90S8yYdfdT_dYNaIBwtt9rRuhUk7V5bBJWukph4,1180
+iTunesContactsExport/iTunesDatabase/iPhoneManifestDAO.py,sha256=F2qwsx9eXKm297qQCd5hiWBrblSQP1sCzm5HCCEw2w8,691
+iTunesContactsExport/vCard/vCardBuilder.py,sha256=8ZygihqJWmwm1dgQZ34I9roUP5EZS9ghQWkIFa9SinQ,4649
+itunescontactsexport-0.1.0.dist-info/entry_points.txt,sha256=bVoKKex__daHo2qpBG8p-Bzcl2ujkGJyvczF7MwTfq0,75
+itunescontactsexport-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+itunescontactsexport-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+itunescontactsexport-0.1.0.dist-info/METADATA,sha256=g2CBLXTKRlvEvkGPxndRPqjxL4mJW3somb1Q2q7wRY4,3979
+itunescontactsexport-0.1.0.dist-info/RECORD,,
