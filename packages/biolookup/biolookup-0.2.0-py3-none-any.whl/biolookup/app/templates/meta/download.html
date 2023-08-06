@@ -1,0 +1,70 @@
+{% extends "prose.html" %}
+
+{% block title %}Biolookup Service Downloads{% endblock %}
+
+{% block content %}
+    <h2>Downloads</h2>
+    <p>
+        The content of the Biolookup Service's underlying database is broken into several pieces:
+    </p>
+
+    <h3>Names</h3>
+    <p>
+        The names dataframe has three columns: prefixes, identifiers, and names.
+        <br/>
+        <a href="https://doi.org/10.5281/zenodo.4660694"><img
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.4660694.svg" alt="DOI"></a>
+    </p>
+
+    <h3>Species</h3>
+    <p>
+        The species dataframe has three columns: prefixes, identifiers, and species denoted with <a
+            href="http://bioregistry.io/registry/ncbitaxon">NCBI taxonomy identifiers</a>.
+        <br/>
+        <a href="https://doi.org/10.5281/zenodo.5334738"><img
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.5334738.svg" alt="DOI"></a>
+    </p>
+
+    <h3>Definitions</h3>
+    <p>
+        The definitions dataframe has three columns: prefixes, identifiers, and text descriptions.
+        <br/>
+        <a href="https://doi.org/10.5281/zenodo.4662925"><img
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.4662925.svg" alt="DOI"></a>
+    </p>
+
+    <h3>Alternative Identifiers</h3>
+    <p>
+        The alternative identifiers dataframe has three columns: prefixes, identifiers, and alternative identifiers.
+        <br/>
+        <a href="https://doi.org/10.5281/zenodo.4661368"><img
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.4661368.svg" alt="DOI"></a>
+    </p>
+
+    <h3>Synonyms</h3>
+    <p>
+        The synonyms dataframe has three columns: prefixes, identifiers, and synonyms.
+        <br/>
+        <a href="https://doi.org/10.5281/zenodo.5768614"><img
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.5768614.svg" alt="DOI"></a>
+    </p>
+
+    <h3>Cross-References</h3>
+    <p>
+        The cross-references dataframe has five columns: prefixes, identifiers, xref prefix, xref identifier, and
+        source.
+        <br/>
+        <a href="https://doi.org/10.5281/zenodo.5768625"><img
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.5768625.svg" alt="DOI"></a>
+    </p>
+
+    <h3>Relations</h3>
+    <p>
+        The cross-references dataframe has six columns: prefixes, identifiers, relation prefix, relation identifier,
+        target prefix, and target identifier.
+        <br/>
+        <a href="https://doi.org/10.5281/zenodo.5770315"><img
+                src="https://zenodo.org/badge/DOI/10.5281/zenodo.5770315.svg" alt="DOI"></a>
+    </p>
+
+{% endblock %}

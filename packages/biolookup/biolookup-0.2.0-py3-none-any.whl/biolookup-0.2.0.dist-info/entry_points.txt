@@ -1,0 +1,2 @@
+[console_scripts]
+biolookup = biolookup.cli:main
