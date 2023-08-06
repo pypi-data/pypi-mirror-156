@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: deepsignal2
+Version: 0.1.3
+Summary: A deep-learning method for detecting DNA methylation state from Oxford Nanopore sequencing reads
+Home-page: https://github.com/PengNi/deepsignal2
+Author: Peng Ni
+Author-email: 543943952@qq.com
+License: GNU General Public License v3 (GPLv3)
+Download-URL: https://github.com/PengNi/deepsignal2/archive/0.1.3.tar.gz
+Description-Content-Type: UNKNOWN
+Description: deepsignal2
+        ===========
+        
+        
+        Release
+        -------
+        0.1.3
+        -----
+        bug fixes in train module
+        
+        multi-gpu support in call_mods module
+        
+        updates dependences/requirements
+        
+        
+        0.1.2
+        -----
+        make sure results of each read be written together in call_mods' output
+        
+        make `--reference_path` not a required input in *extract* and *call_mods* module
+        
+        
+        0.1.1
+        -----
+        add `init_model` option in train module,
+        
+        fix bug of extrating contig name from fast5s
+        
+        
+        0.1.0
+        -----
+        Release the first vesrion of deepsignal2
+Keywords: methylation,nanopore,neural network
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
