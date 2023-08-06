@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+spacyturk/__init__.py
+spacyturk/__main__.py
+spacyturk/api.py
+spacyturk/pkg.py
+spacyturk.egg-info/PKG-INFO
+spacyturk.egg-info/SOURCES.txt
+spacyturk.egg-info/dependency_links.txt
+spacyturk.egg-info/entry_points.txt
+spacyturk.egg-info/requires.txt
+spacyturk.egg-info/top_level.txt
