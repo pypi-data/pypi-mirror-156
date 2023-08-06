@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/c1algo2.egg-info/PKG-INFO
+src/c1algo2.egg-info/SOURCES.txt
+src/c1algo2.egg-info/dependency_links.txt
+src/c1algo2.egg-info/top_level.txt
+src/forecaster/Backend.py
+src/forecaster/Data.py
+src/forecaster/Predictor.py
+src/forecaster/__init__.py
+src/forecaster/forecaster.py
+src/tools/GraphingTools/graph.py
+src/tools/InputProcessor/ConfigThings.py
+src/tools/InputProcessor/DataProcessor.py
+src/tools/InputProcessor/Helper.py
+src/tools/InputProcessor/clean_up_data.py
