@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+src/parserfromgary.py
+src/settings.py
+src/tag.py
+src/mwparallelparserfromgary.egg-info/PKG-INFO
+src/mwparallelparserfromgary.egg-info/SOURCES.txt
+src/mwparallelparserfromgary.egg-info/dependency_links.txt
+src/mwparallelparserfromgary.egg-info/top_level.txt
