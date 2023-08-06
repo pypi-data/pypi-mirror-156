@@ -1,0 +1,14 @@
+grep_ips/__init__.py,sha256=c2edJtZ02oHMYkkJ7q5rXX8RM_YWiUIBhWKOBhi6Dn8,30
+grep_ips/grep_ips.py,sha256=ABzeUBPeOHfhfOx7EtM7xF7zRX78bo7hCv-kc7G4V0k,1345
+grep_ips/grep_ips_test.py,sha256=LAMBZzDGAfWdNe9idPI6pFqjivbESpwwpbx4jeKoBjw,1788
+myorigin/__init__.py,sha256=Tg9K-frqST6qA8M63szgIsoVMVH2Tt1AKMcHYrfQFF0,56
+myorigin/flock_data.py,sha256=8R93q9NqxVGrm31pM9462LuaxKCJNQiWEI05wfUrqxg,24361
+myorigin/myorigin.py,sha256=VX-DUt3SI9YcJ6Y7lcjFPoJGaeEd9VaNCM5QMJJV2G0,19536
+myorigin/myorigin_test.py,sha256=FRR7QDYNes9DF4qm3JYgRtbv5Wb14k5-rt0MAzpLS4U,13940
+myorigin/parrots.py,sha256=nIrnAEmvURS0sJHQktygY2rmjkDFwcUgO2zZ0jROH4w,7992
+myorigin-0.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+myorigin-0.4.0.dist-info/METADATA,sha256=q1bUTkGnQS-fzKNajL8bk8U5G-xaQvOa9N6Jxp3tmx8,6391
+myorigin-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+myorigin-0.4.0.dist-info/entry_points.txt,sha256=CWLj49l5HThAiUWJV5-eqginDXcSHtwZx1GiKzVW_R8,51
+myorigin-0.4.0.dist-info/top_level.txt,sha256=0s9WzKbRrU3lS6PQF-7MnqzJtQmelWWy_5oHANwUzUs,18
+myorigin-0.4.0.dist-info/RECORD,,
