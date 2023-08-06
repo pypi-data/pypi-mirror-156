@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: console-interface
+Version: 0.1
+Summary: A tool for interact with user in the console.
+Home-page: https://github.com/luisfcaldeira/console_interface
+Author: Luís Fernando Oliveira Caldeira
+Author-email: luisfcaldeira@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# An interface for interacting with user
+
+## Reading
+
+For reading inputs from user, you can use this tool like this:
+
+```python
+console_reader = ConsoleReader()
+console_reader.read_input()
+```
+## Writting
+
+You can use ```ConsoleLogger()``` for the purpose of writting something to user. 
+
+```python
+
+c = ConsoleLogger()
+c.log_this(msg="Message", profile=ErrorLoggerProfile()) #this will write in the red color. 
+```
+
+
