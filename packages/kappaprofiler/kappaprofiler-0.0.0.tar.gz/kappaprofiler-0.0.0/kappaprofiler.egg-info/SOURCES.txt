@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+kappaprofiler/__init__.py
+kappaprofiler.egg-info/PKG-INFO
+kappaprofiler.egg-info/SOURCES.txt
+kappaprofiler.egg-info/dependency_links.txt
+kappaprofiler.egg-info/top_level.txt
