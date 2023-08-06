@@ -1,0 +1,9 @@
+macos_utils/__init__.py,sha256=6qLjEe2QCAcYlnZTqqS2D-4xCO-3Tq2msuP0dKTsHzE,51
+macos_utils/add_dir_to_spotlight_exclusions_list.py,sha256=T51CtVAk1m4bWWfQ-TEYR1M9a5d-uWJ7wm8rbaTZcXs,4660
+macos_utils/config.py,sha256=qZTmHEqo3fG4xNk632aVUAdE9n5QQ0ITRUqeph6uQWM,225
+macos_utils/utils.py,sha256=mo99zGhSXf0DyNQyMWkSbBgGUzy0io8vYAyy_RW2io0,2138
+macos_utils-0.1.1.dist-info/entry_points.txt,sha256=I37s4Cy080bgmuyK2GMo9FypH-FtAKV564jv3MNlRxs,91
+macos_utils-0.1.1.dist-info/LICENSE,sha256=ourMoCbjPM42xNPF2hgFj17PLKzS8tWahPGttjH_Gpk,1106
+macos_utils-0.1.1.dist-info/WHEEL,sha256=FWzWAvOOsDP6aqtZj_z3pIhVEk8S9F03Xwafa0tLqIY,90
+macos_utils-0.1.1.dist-info/METADATA,sha256=MG3NhvcwHy9t7qsRrTBxdgzMIW-Fb-ecPp5H2kuhVkk,621
+macos_utils-0.1.1.dist-info/RECORD,,
