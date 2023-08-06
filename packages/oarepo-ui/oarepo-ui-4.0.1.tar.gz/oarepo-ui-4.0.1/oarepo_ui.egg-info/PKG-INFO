@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: oarepo-ui
+Version: 4.0.1
+Summary: UI module for invenio 3.5+
+Home-page: https://github.com/oarepo/oarepo-ui
+Author: Mirek Simek
+Author-email: miroslav.simek@vscht.cz
+License: MIT
+Description: # OARepo API for UI
+        
+Keywords: oarepo ui
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: tests
