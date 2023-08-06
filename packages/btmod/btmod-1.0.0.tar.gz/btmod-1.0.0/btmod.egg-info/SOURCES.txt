@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+btm/__init__.py
+btm/collections.py
+btm/core.py
+btm/info.py
+btmod.egg-info/PKG-INFO
+btmod.egg-info/SOURCES.txt
+btmod.egg-info/dependency_links.txt
+btmod.egg-info/entry_points.txt
+btmod.egg-info/not-zip-safe
+btmod.egg-info/top_level.txt
