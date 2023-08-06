@@ -1,0 +1,3 @@
+[console_scripts]
+ws_ignore_alerts = ws_ignore_alerts.ignore_alerts:main
+
