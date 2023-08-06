@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+extract_mailchimp/__init__.py
+extract_mailchimp/mail_chimp.py
+extract_mailchimp.egg-info/PKG-INFO
+extract_mailchimp.egg-info/SOURCES.txt
+extract_mailchimp.egg-info/dependency_links.txt
+extract_mailchimp.egg-info/requires.txt
+extract_mailchimp.egg-info/top_level.txt
