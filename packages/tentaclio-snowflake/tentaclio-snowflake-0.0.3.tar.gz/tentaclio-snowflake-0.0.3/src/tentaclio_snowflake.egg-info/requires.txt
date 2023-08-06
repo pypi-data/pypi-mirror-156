@@ -1,0 +1,2 @@
+tentaclio>=1.0.0
+snowflake-sqlalchemy
