@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: simplestapi
+Version: 0.0.5
+Summary: SimpleAPI is a minimalistic, unopinionated web framework for Python, inspired by FastAPI & Flask
+Project-URL: Bug Tracker, https://github.com/adhamsalama/simpleapi/issues
+Project-URL: Homepage, https://github.com/adhamsalama/simpleapi
+Author-email: Adham Salama <adhamsalama@zohomail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pydantic
+Description-Content-Type: text/markdown
+
+# SimpleAPI
+
+SimpleAPI is a minimalistic, unopinionated web framework for Python, inspired by FastAPI & Flask.
+
+This is a hobby project made for educational purposes because I want to try learning writing a web server framework.
+
+So, this is obviously not meant for production environments.
+
+Development of SimpleAPI is tracked at [this](https://github.com/users/adhamsalama/projects/1) GitHub project.
+
+How to install:
+
+`pip install simplestapi`
+
+An example of using SimpleAPI:
+
+```python
+from simpleapi import SimpleAPI, Request, JSONResponse
+
+app = SimpleAPI()
+
+@app.get("/hello")
+def hello(request: Request):
+    """Returns hello world in JSON format"""
+    return JSONResponse(message={"hello": "world"})
+
+app.run(port=8000)
+
+```
+
+More examples can be found in /examples
