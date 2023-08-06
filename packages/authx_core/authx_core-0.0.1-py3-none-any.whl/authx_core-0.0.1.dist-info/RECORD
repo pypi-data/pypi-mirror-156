@@ -1,0 +1,10 @@
+authx_core/__init__.py,sha256=HX5gJaaCpT_L1zKTj1Vs-X7xvS4Ypf1bGlsmeh7-14w,290
+authx_core/engine/__init__.py,sha256=9G_kbIUvFTo01jXUuKfLK0fSQqSoplMsEbHmmre2n6Y,591
+authx_core/engine/session.py,sha256=VBmUtkOqaf8_hC4Ll-Nr_vbfZKMmR-T-4IO9ezrcjNQ,5161
+authx_core/guid/__init__.py,sha256=rc7pGeIcYa5y_b71ozUeNKcTyc3SGZx06BDx6PKs0aY,544
+authx_core/guid/_guide.py,sha256=Jyq9-kV9oZAw-Ttq6K9vHBCiqukRs-8MiOVxMNDS-BM,515
+authx_core/guid/type.py,sha256=WvGA-_9ukNVIQ1kiWarKvYAWyRKf27dvk9T7GUnQ3BE,1932
+authx_core-0.0.1.dist-info/LICENSE,sha256=VO5dwbZJpTzdaMj7h6f5DAXrPYfzt0CGk5pEN9Y-vvo,1070
+authx_core-0.0.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+authx_core-0.0.1.dist-info/METADATA,sha256=VyAGpcOeVqwZox3E7KMPHMwswysn706z9tijGGeQ5JI,3566
+authx_core-0.0.1.dist-info/RECORD,,
