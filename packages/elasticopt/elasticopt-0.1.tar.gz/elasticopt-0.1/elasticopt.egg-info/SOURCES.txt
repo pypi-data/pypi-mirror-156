@@ -1,0 +1,7 @@
+setup.py
+elasticopt.egg-info/PKG-INFO
+elasticopt.egg-info/SOURCES.txt
+elasticopt.egg-info/dependency_links.txt
+elasticopt.egg-info/top_level.txt
+esopt/__init__.py
+esopt/esopt.py
