@@ -1,0 +1,7 @@
+pipdisttest2/__init__.py,sha256=7VI4Cz6TvOpgBlTMlyLC6G0eRyS5lyba5hqa6AE_iRE,211
+pipdisttest2/hello.py,sha256=wrGjwaWqf1emXVUgC4UhFnt9yDzNgfdrko3nmHH_6S4,72
+pipdisttest2/test.py,sha256=3qXZXXfTtFJxFBxM95CiVHCXMJIQL0qQdvQMMnvMyWw,287
+pipdisttest2-0.0.1.dist-info/METADATA,sha256=gB2WGAYeKMpW7Qkn9peavqX8QBIGLNc97YPhNO9jq20,570
+pipdisttest2-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pipdisttest2-0.0.1.dist-info/top_level.txt,sha256=Ep7noiqBERSxqnjaa1-7aEOJT-x10JgKfupdjb6Av9o,13
+pipdisttest2-0.0.1.dist-info/RECORD,,
