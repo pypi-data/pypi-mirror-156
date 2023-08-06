@@ -1,0 +1,16 @@
+LICENSE
+README.md
+ecfeed.py
+ecfeed_cli.py
+pyproject.toml
+setup.cfg
+setup.py
+ecfeed.egg-info/PKG-INFO
+ecfeed.egg-info/SOURCES.txt
+ecfeed.egg-info/dependency_links.txt
+ecfeed.egg-info/entry_points.txt
+ecfeed.egg-info/requires.txt
+ecfeed.egg-info/top_level.txt
+test/test_config.py
+test/test_default.py
+test/test_feedback.py
