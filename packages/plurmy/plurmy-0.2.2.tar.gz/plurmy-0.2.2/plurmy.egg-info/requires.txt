@@ -1,0 +1,4 @@
+hiredis
+python>=3.7
+redis
+redis-py

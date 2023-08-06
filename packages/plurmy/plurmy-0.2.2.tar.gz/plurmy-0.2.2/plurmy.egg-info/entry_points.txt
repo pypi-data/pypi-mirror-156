@@ -1,0 +1,2 @@
+[console_scripts]
+plurmy = plurmy.orchestrate:main
