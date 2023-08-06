@@ -1,0 +1,7 @@
+setup.py
+Name_Print_by_input.egg-info/PKG-INFO
+Name_Print_by_input.egg-info/SOURCES.txt
+Name_Print_by_input.egg-info/dependency_links.txt
+Name_Print_by_input.egg-info/top_level.txt
+printName/__init__.py
+printName/pN.py
