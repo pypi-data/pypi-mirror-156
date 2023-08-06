@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/strawhat/__init__.py
+src/strawhat/api.py
+src/strawhat/aws.py
+src/strawhat/files.py
+src/strawhat/misc.py
+src/strawhat.egg-info/PKG-INFO
+src/strawhat.egg-info/SOURCES.txt
+src/strawhat.egg-info/dependency_links.txt
+src/strawhat.egg-info/requires.txt
+src/strawhat.egg-info/top_level.txt
+test/test_aws.py
