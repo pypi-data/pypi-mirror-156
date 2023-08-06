@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: planekit
+Version: 0.1.9
+Summary: Developer Tools for Fixed-wing
+Home-page: https://github.com/msasen/planekit
+Author: Musa Şen
+Author-email: m42@gmail.com
+License: MIT
+Download-URL: https://github.com/msasen/planekit0.1.9.tar.gz
+Keywords: Planekit,plane,autonomous,fixed-wing
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pymavlink (==2.4.29)
+Requires-Dist: pyserial (==3.5)
+
+# A 
+demo
+
