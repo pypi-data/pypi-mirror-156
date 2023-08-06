@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+diagrams-magic/__init__.py
+diagrams_magic.egg-info/PKG-INFO
+diagrams_magic.egg-info/SOURCES.txt
+diagrams_magic.egg-info/dependency_links.txt
+diagrams_magic.egg-info/requires.txt
+diagrams_magic.egg-info/top_level.txt
