@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+My_Test_Project_Rawa.egg-info/PKG-INFO
+My_Test_Project_Rawa.egg-info/SOURCES.txt
+My_Test_Project_Rawa.egg-info/dependency_links.txt
+My_Test_Project_Rawa.egg-info/entry_points.txt
+My_Test_Project_Rawa.egg-info/top_level.txt
+bootstrap/__init__.py
+bootstrap/__main__.py
+bootstrap/bootstrap.py
+bootstrap/stuff.py
