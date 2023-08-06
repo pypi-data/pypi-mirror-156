@@ -1,0 +1,10 @@
+id: 75410c6f-5926-4077-9409-38e2d2613572
+label: 'Web Map Service (WMS)'
+category: PROTOCOL
+factory:
+  name: wms
+  classpath: 'drb_impl_wms.factory:WmsFactory'
+signatures:
+  - python: |
+      return '+wms' in node.path.scheme 
+
