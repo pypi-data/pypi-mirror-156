@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: yr-mess-client
+Version: 0.1.0
+Summary: Mess Client
+Home-page: UNKNOWN
+Author: Yury Rozhkov
+Author-email: yrozhkov1983@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+Requires-Dist: sqlalchemy
+
+UNKNOWN
+
+
