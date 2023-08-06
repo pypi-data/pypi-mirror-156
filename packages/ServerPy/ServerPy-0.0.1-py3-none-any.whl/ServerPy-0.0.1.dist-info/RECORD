@@ -1,0 +1,16 @@
+servpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+servpy/constants.py,sha256=7XB3ZRUWUt4pATdL73ae3Yj5BT6n0aqiPA2wAaCmJvg,1171
+servpy/discovery_server.py,sha256=ijmWYeqrA_RTTD6wRrfW9Fku45Pti2TfOLrKaACcj0s,3652
+servpy/input_processor.py,sha256=-wcNLPcF_lqSDDXSzVOIzjssc-9h3o2BqZ0GEYugjVU,8343
+servpy/main.py,sha256=AsNDTm-r11KfQLuKKFoRLTurcy96MSZY4O2D77pm0DQ,1423
+servpy/models.py,sha256=sq-xbIjXicmGDmkAzVjZ8trHWwIlrpO6Vw89Ze82ACo,6110
+servpy/request_processor.py,sha256=KeH_IGoYVUSw7ZManRgtB2WdBtzzy3ZU1bP4Zrv7SYo,5613
+servpy/service_configuration.py,sha256=O6vIa3-FgTK7qdDanZ7n3Fo0kJlAB5Jq4qYG9furZuM,1029
+servpy/utils.py,sha256=_8BcUCMT0X0s92YM8JxvbmcM5cfXirFzun42w_bpA9Y,2130
+servpy/watchdog.py,sha256=VJ5yA9jWuOckMlyZ7uYC8QF2iYk-4QWPM_lO9e9I1cA,2681
+ServerPy-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ServerPy-0.0.1.dist-info/METADATA,sha256=1TfK1na9rAPKkFmqsfobMC49-CxqlZbMXM8iKlYp4Qc,524
+ServerPy-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ServerPy-0.0.1.dist-info/entry_points.txt,sha256=XEfpDYN5qzyM9c7yaDdK17G685trzwR-nyJ1xMgnsuQ,47
+ServerPy-0.0.1.dist-info/top_level.txt,sha256=JPXJb2yN0G1UeIZN0HtYGpTZAfTtIYE1eEVgQR9tPqY,7
+ServerPy-0.0.1.dist-info/RECORD,,
