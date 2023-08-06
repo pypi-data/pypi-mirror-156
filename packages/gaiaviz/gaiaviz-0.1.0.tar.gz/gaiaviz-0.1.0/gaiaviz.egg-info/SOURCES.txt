@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gaiaviz/SkyPatch.py
+gaiaviz/__init__.py
+gaiaviz.egg-info/PKG-INFO
+gaiaviz.egg-info/SOURCES.txt
+gaiaviz.egg-info/dependency_links.txt
+gaiaviz.egg-info/top_level.txt
