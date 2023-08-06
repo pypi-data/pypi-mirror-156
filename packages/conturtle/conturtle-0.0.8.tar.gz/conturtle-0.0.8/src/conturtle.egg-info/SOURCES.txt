@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/conturtle/__init__.py
+src/conturtle/main.py
+src/conturtle.egg-info/PKG-INFO
+src/conturtle.egg-info/SOURCES.txt
+src/conturtle.egg-info/dependency_links.txt
+src/conturtle.egg-info/top_level.txt
