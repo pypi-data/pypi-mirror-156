@@ -1,0 +1,5 @@
+opencv-python
+sanic
+cryptography
+numpy
+pytest
