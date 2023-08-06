@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CelestPlot
+Version: 0.1
+Summary: RA and Dec Conversion package
+Home-page: UNKNOWN
+Author: Aditi Das
+Author-email: <aditi.das1601@gmail.com>
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: astropy
+
+UNKNOWN
+
+
