@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gllib
+Version: 0.1.0
+Summary: Wrapper over (Py)OpenGL and other 3D/graphics programming constructs
+Home-page: https://github.com/aib/python-gllib
+Author: aib
+Author-email: aibok42@gmail.com
+License: MIT
+Keywords: opengl,3d,graphics,utility
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gllib
+
+This library is a wrapper over (Py)OpenGL and other 3D/graphics programming constructs.
+
+It is intended for my personal use.
