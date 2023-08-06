@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: microtvm-device
+Version: 0.2.0
+Summary: 
+Home-page: https://github.com/mehrdadh/microtvm-device
+License: Apache
+Keywords: microTVM,tvm,device
+Author: mehrdadh
+Author-email: mehrdad.hessar@gmail.com
+Requires-Python: >=3.6.9,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: grpcio (>=1.39.0,<2.0.0)
+Requires-Dist: grpcio-tools (>=1.39.0,<2.0.0)
+Requires-Dist: pytest (>=6.2.4,<7.0.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Project-URL: Repository, https://github.com/mehrdadh/microtvm-device
+Description-Content-Type: text/markdown
+
+# MicroTVM Device Python Package
+
+A python package for managing microTVM devices on a server for the purpose of hardware CI testing, autotuning, etc.
+
+## Installation
+
+```
+pip3 install microtvm_device
+```
+
+## Setup Device Server
+To run the device server run command bellow with a JSON file including information about various devices. [Here](./config/device_table.template.json) is a template of JSON file.
+```
+python -m microtvm_device.device_server --table-file=[DEVICE TABLE JSON FILE] <--port=[SERVER PORT]>
+```
+
+## Use Device Client
+
+After running server you can run various command using device_client. Command includes `attach`, `detach`, `release`, `request` and `query`.
+
+```
+python -m microtvm_device.device_client <--port=[SERVER PORT]> COMMAND 
+```
+

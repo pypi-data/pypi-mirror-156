@@ -1,0 +1,10 @@
+microtvm_device/__init__.py,sha256=a5c9lTAnCa-JxitVKIomQsGPW0C_7fy18-Vxt51n08o,783
+microtvm_device/device_client.py,sha256=Smo7ta70e64QIOoZSTae4aUPxtdId0ipcXEWx7FhZ7Q,10817
+microtvm_device/device_server.py,sha256=j2h7SC8krWX7Bh9ILDioyeOXk7TYs3gENiFQyVFZD4c,6616
+microtvm_device/device_utils.py,sha256=R0NL94mvh-_HGZLNKbSaT-JW-dy-azoe5ol5et8FRno,15246
+microtvm_device/microDevice_pb2.py,sha256=OVbRN0BbAi7hf64xWrLUGn6jhLMmvmCPQIfrdZeNips,13504
+microtvm_device/microDevice_pb2_grpc.py,sha256=iWgQVXtjkrChXz1kSmivHOYdRzb6rVceIxi1Y1sjwYo,16222
+microtvm_device-0.2.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+microtvm_device-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+microtvm_device-0.2.0.dist-info/METADATA,sha256=8B60YMY6J_yTxzNBzbg2xg9Ex3ceiD1VkpuaMgoFHKg,1594
+microtvm_device-0.2.0.dist-info/RECORD,,
