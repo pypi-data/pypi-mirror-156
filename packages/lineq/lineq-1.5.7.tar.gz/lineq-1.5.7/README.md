@@ -1,0 +1,1 @@
+This module returns the equation of the linear fitted curve!

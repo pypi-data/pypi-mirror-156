@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/lineq/__init__.py
+src/lineq/lineq.py
+src/lineq.egg-info/PKG-INFO
+src/lineq.egg-info/SOURCES.txt
+src/lineq.egg-info/dependency_links.txt
+src/lineq.egg-info/requires.txt
+src/lineq.egg-info/top_level.txt
