@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: supermail
+Version: 1.2
+Summary: An email client for reading and sending emails.
+Home-page: https://github.com/dros1986/EmailClient
+Author: Flavio Piccoli
+Author-email: dros1986@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+## Installation via pip
+```bash
+pip install git+https://github.com/dros1986/EmailClient.git
+```
+
+## Usage
+This library is really easy to use:
+
+```python
+from supermail import EmailClient
+
+email_address = "your_email@gmail.com"
+email_pwd = "your_password"
+imap_server = "imap.gmail.com"
+imap_port   = 993
+smtp_server='smtp.gmail.com'
+smtp_port=587
+
+# define email client
+gmail = EmailClient(email_address, email_pwd, imap_server, imap_port, smtp_server, smtp_port)
+
+# get all messages
+messages = gmail.read() # if you need only unread, set filter=['UNSEEN']
+
+# for each message
+for msg in messages:
+	# get message info
+	print(msg.subject())
+	print(msg.message())
+	print(msg.sender())
+	# get attachments
+	attachments = msg.attachments('./temp') # returns a list of filenames
+	print('---')
+
+# send a message with attachments
+gmail.send('recipient@gmail.com', 'Nice subject', 'Nice message', \
+	cc='xxx@domain.it',
+	attachments=['/path/to/pdf.pdf', '/path/to/image.png'])
+```
+
+## Note
+In order to use GMail, you need to log into [your security page](https://myaccount.google.com/security) and:
+1. enable two-step verification
+2. right below, it will appear an option called **App Password**. Create a new one that you will be able to use with EmailClient.
+
+
+[Less secure apps.](https://myaccount.google.com/lesssecureapps) no longer works.

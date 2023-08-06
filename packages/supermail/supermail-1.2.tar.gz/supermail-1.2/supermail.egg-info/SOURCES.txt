@@ -1,0 +1,8 @@
+setup.py
+supermail/EmailClient.py
+supermail/__init__.py
+supermail.egg-info/PKG-INFO
+supermail.egg-info/SOURCES.txt
+supermail.egg-info/dependency_links.txt
+supermail.egg-info/requires.txt
+supermail.egg-info/top_level.txt
