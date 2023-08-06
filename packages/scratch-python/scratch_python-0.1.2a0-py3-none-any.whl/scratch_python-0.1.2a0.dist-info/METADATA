@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: scratch-python
+Version: 0.1.2a0
+Summary: A framework for creating Scratch blocks and projects with Python.
+Home-page: https://github.com/IfanSnek/PyScratch
+Author: Ethan Porcaro
+Author-email: ethan@ethanporcaro.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: lark (~=1.1.2)
+
+README.md
