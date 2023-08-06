@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: AcademicEmailVerifier
+Version: 1.0
+Summary: Identifies email addresses or domains names that belong to colleges or universities.
+Home-page: https://github.com/yervandgaloyan/AcademicEmailVerifier/
+Author: Yervand Galoyan
+Author-email: yervandgaloyan26@gmail.com
+License: MIT
+Download-URL: https://github.com/yervandgaloyan/AcademicEmailVerifier/archive/refs/tags/v_10.tar.gz
+Description: UNKNOWN
+Keywords: EMAIL,ACADEMIC,VERIFIER
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
