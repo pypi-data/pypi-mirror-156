@@ -1,0 +1,12 @@
+msbff/__init__.py,sha256=v0zqRembIW__d7HVDd71J2eoXGtALnzdY8JdBVk-BPY,21
+msbff/default.py,sha256=GI4ADt2qiE95i-ZozCtbhRtuCRVZpApZ-CLZIJfz7hg,959
+msbff/msbff_pipeline.py,sha256=0o-ru3t3AKlM5q59NVtH1-dqcd8Zh91N4EkOzA_XXoE,3341
+msbff/preprocessing.py,sha256=GlLPhxeN0Rap0wPJGTZTlzAi1W8rKfoD9FYUQHbNNyY,4988
+msbff/processing.py,sha256=Sh0pTQ4GfRlk-Ag8gL-oWK6R_kZ1NgEvEe01IywVNg0,2566
+msbff/visualization.py,sha256=nUoipUndfEhVvHUzae4b_zcVMT87vvKGwslKPH9LrTk,5322
+msbff-0.0.5.data/scripts/msbff,sha256=tIpMYJ_6wFDltRY4lneV59178T8cofyqeyko2AKgY8c,2948
+msbff-0.0.5.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+msbff-0.0.5.dist-info/METADATA,sha256=ODf6d9_bZt3U2Ap-ynR3QIcoKLNlgkyNpHLGJBiZmEg,493
+msbff-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+msbff-0.0.5.dist-info/top_level.txt,sha256=myVLDPxswMwSoMIf3Wk_WEeMy8GTaDf0vjjfBSR8huM,6
+msbff-0.0.5.dist-info/RECORD,,

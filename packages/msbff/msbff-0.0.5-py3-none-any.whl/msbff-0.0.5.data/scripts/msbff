@@ -1,0 +1,73 @@
+#!python
+
+import argparse
+from msbff.msbff_pipeline import run_bioff_pipeline
+import msbff
+
+parser = argparse.ArgumentParser(
+    prog='msbff',
+    formatter_class=argparse.RawDescriptionHelpFormatter,
+    description='''Bioactive Fractions Filtering''',
+    epilog='''msbff -i rawdata.csv -o result'''
+)
+
+parser.add_argument("-v", "--version", action="version", version="%(prog)s version {}".format(msbff.__version__))
+
+parser.add_argument('-i', '--input_csv', required=True,
+                    type=str, help='Raw input data in csv format.')
+
+parser.add_argument('-o', '--output_folder', required=True,
+                    type=str, help='Folder path where the output files are saved.')
+
+parser.add_argument('-p', '--pcc_threshold', type=float, default=0,
+                    help='Pearson correlation coefficient threshold. (default: >%(default)s)')
+
+parser.add_argument('-r', '--reliability_threshold', type=float, default=0.4,
+                    help='Reliability threshold. (default: >=%(default)s)')
+
+parser.add_argument('-mzl', '--mz_lower', type=float, default=100,
+                    help='Lower limit of the average Mz. (default: > %(default)s)')
+
+parser.add_argument('-mzu', '--mz_upper', type=float, default=700,
+                    help='Upper limit of the average Mz. (default: <=%(default)s)')
+
+parser.add_argument('-s', '--sn_threshold', type=float, default=100,
+                    help='S/N average threshold. (default: >%(default)s)')
+
+parser.add_argument('-rtl', '--rt_lower', type=float, default=0,
+                    help='Lower limit of the Average Rt(min). (default: >%(default)s)')
+
+parser.add_argument('-rtu', '--rt_upper', type=float, default=7,
+                    help='Upper limit of the Average Rt(min). (default: <=%(default)s)')
+
+parser.add_argument('-f', '--fdr_threshold', type=float, default=0.05,
+                    help='FDR threshold. (default: <=%(default)s)')
+
+parser.add_argument('-rtb', '--rt_binning', type=float, default=1,
+                    help='Rt binning. (default: %(default)s)')
+
+parser.add_argument('-mzb', '--mz_binning', type=float, default=100,
+                    help='Mz binning. (default: %(default)s)')
+
+
+def main():
+    args = parser.parse_args()
+
+    run_bioff_pipeline(input_csv=args.input_csv,
+                       output_folder=args.output_folder,
+                       pcc_threshold=args.pcc_threshold,
+                       reliability_threshold=args.reliability_threshold,
+                       mz_lower=args.mz_lower,
+                       mz_upper=args.mz_upper,
+                       sn_threshold=args.sn_threshold,
+                       rt_lower=args.rt_lower,
+                       rt_upper=args.rt_upper,
+                       fdr_threshold=args.fdr_threshold,
+                       rt_binning=args.rt_binning,
+                       mz_binning=args.mz_binning
+                       )
+    print("BioFF Finished!")
+
+
+if __name__ == '__main__':
+    main()
