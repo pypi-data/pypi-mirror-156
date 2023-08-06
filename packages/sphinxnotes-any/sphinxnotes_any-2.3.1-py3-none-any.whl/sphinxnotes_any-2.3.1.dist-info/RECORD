@@ -1,0 +1,16 @@
+sphinxnotes_any-2.3.1-py3.10-nspkg.pth,sha256=N229lZo2i2njuxnDocPI8v09D8KukExUhPWUeR8fxAc,564
+sphinxnotes/any/__init__.py,sha256=W_wwmxeYe6K7WP2h6rtdENlT-tgv8QT1fE-v3_BtXTk,1571
+sphinxnotes/any/directives.py,sha256=qPl-4xlnaq8_Z8LeIjls8xnk8CoO834aAEJNcMk0SiY,7477
+sphinxnotes/any/domain.py,sha256=ERPVqx__EiI-9r1LHMhiRv2-czRAveP65yN3y4KVDzc,8379
+sphinxnotes/any/errors.py,sha256=aExXRspB_Iz-x7bl1PeIos0KiBcygj3bdkBrotERPC0,244
+sphinxnotes/any/indices.py,sha256=3_3jv-GBLOgajZhXFXG-N1mGEkTl-P931Y814Rda1p4,2958
+sphinxnotes/any/perset.py,sha256=0O5S8Xj060GIbGqpJGblOiwEL1IZDiONm03kPaIFTeM,729
+sphinxnotes/any/roles.py,sha256=yfffyB31FPer5EsTJAmhFxEPmXLg7p82zsOz_AsQ048,937
+sphinxnotes/any/schema.py,sha256=V4PJjC-vij8XkQrlP85xnsFEO5_rthbRfIkVKE-IdVU,12749
+sphinxnotes/any/template.py,sha256=qzKev8wcLIFU7rLBwGEEwoU_ExQQzkUnZ5JPxowAvPY,5277
+sphinxnotes_any-2.3.1.dist-info/LICENSE,sha256=d-hqtBASCR7s1N4MHOrHUbsHn5HLbDsNn76InuMvc4Q,1520
+sphinxnotes_any-2.3.1.dist-info/METADATA,sha256=MqtPYgR59JsbwzazTH-MjyB-c9XpvKuKDH_yQpDEqdA,1061
+sphinxnotes_any-2.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sphinxnotes_any-2.3.1.dist-info/namespace_packages.txt,sha256=V-VWtuPpvntuonwz7_KceUnT4-CbPR1gJ26BTFpvcJI,12
+sphinxnotes_any-2.3.1.dist-info/top_level.txt,sha256=V-VWtuPpvntuonwz7_KceUnT4-CbPR1gJ26BTFpvcJI,12
+sphinxnotes_any-2.3.1.dist-info/RECORD,,
