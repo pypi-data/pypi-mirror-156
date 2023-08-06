@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: otkerneldesign
+Version: 0.1.2
+Summary: Design of experiments based on kernel methods
+Home-page: https://github.com/efekhari27/otkerneldesign
+Author: Elias Fekhari, Joseph Muré
+Author-email: elias.fekhari@edf.fr
+License: LGPLv3+
+Keywords: OpenTURNS,KernelHerding
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+License-File: COPYING
+License-File: COPYING.LESSER
+
+UNKNOWN
+
