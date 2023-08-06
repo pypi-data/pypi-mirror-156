@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fpdf-table
+Version: 1.0.0
+Summary: PDF table reports library
+Home-page: https://fpdf-table.readthedocs.io/
+Author: Matias Gabriel Martinez Rebori
+Author-email: martinezrebori@gmail.com
+License: MIT
+Requires-Dist: fpdf2
+
+# FPDFTable
+
+
