@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+SysBoxer/__init__.py
+SysBoxer/app.py
+SysBoxer.egg-info/PKG-INFO
+SysBoxer.egg-info/SOURCES.txt
+SysBoxer.egg-info/dependency_links.txt
+SysBoxer.egg-info/requires.txt
+SysBoxer.egg-info/top_level.txt
