@@ -1,0 +1,7 @@
+atlasai/streamlit/auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atlasai/streamlit/auth/auth0_service.py,sha256=m37krpjb0jEr02R5FG9xnvg3BE_3v6k1gHqHiEdAsWY,3756
+atlasai/streamlit/auth/guard.py,sha256=igG-neKygPRzmVK-jUxWSWDDtto_7Ub6Xw4bHz6EG1M,372
+streamlit_auth0_service-0.0.11.dist-info/METADATA,sha256=qJzeizLq8EZuxKVNXWqoukme4SduphZ9AaFofJYuJPs,529
+streamlit_auth0_service-0.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+streamlit_auth0_service-0.0.11.dist-info/top_level.txt,sha256=QZM9-jss8sHdhkkgKvo-ggNye2xbqVno3UUUxUuXxGM,32
+streamlit_auth0_service-0.0.11.dist-info/RECORD,,
