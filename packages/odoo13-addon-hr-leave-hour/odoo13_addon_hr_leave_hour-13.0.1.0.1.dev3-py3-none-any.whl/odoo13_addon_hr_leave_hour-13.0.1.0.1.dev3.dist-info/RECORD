@@ -1,0 +1,16 @@
+odoo/addons/hr_leave_hour/README.rst,sha256=ThVkb7ScAKJCglYKBtFZf91JlM7fR4hUTeidzWsGj_s,2845
+odoo/addons/hr_leave_hour/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/hr_leave_hour/__manifest__.py,sha256=pzH0wA9xo8X9HSq2nZTzHv_M8MlbjU48lCWigN7vdE0,433
+odoo/addons/hr_leave_hour/i18n/hr_leave_hour.pot,sha256=jW1ni7i-jdAWfISib9M1eKa_pIEpOTCb7ZKG3kTrQKk,1075
+odoo/addons/hr_leave_hour/models/__init__.py,sha256=Jnnh_FOcJdjkYlh0VGEwTEMvfXRPkll2fzHvD0q0VKc,23
+odoo/addons/hr_leave_hour/models/hr_leave.py,sha256=orK7SspnCt3vb7pdUuc6txd6QgzjYXaDWQlrnTPpmKI,1133
+odoo/addons/hr_leave_hour/readme/CONTRIBUTORS.rst,sha256=Ktkn-XchMlYyhAQzYadNwFTd7XE_D8BlBvIA2pzPx80,58
+odoo/addons/hr_leave_hour/readme/DESCRIPTION.rst,sha256=IX8ntYi10zYwfTz5dy3LS7VnJa53r_8I_yyd_l__54s,85
+odoo/addons/hr_leave_hour/readme/USAGE.rst,sha256=PvE6N-C6k8ASgaa9sQ0oNDfhHsXVn5fM2-9d3GW40jw,266
+odoo/addons/hr_leave_hour/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/hr_leave_hour/static/description/index.html,sha256=JqS6tc_wCHydhtufpBdd-m7jUeykDLVTH7u2N7LnQtY,12278
+odoo/addons/hr_leave_hour/views/hr_leave.xml,sha256=sB9SER_QvFMEdWAZdui9Or-8W-AfcZmMHDkJRK94j1I,1784
+odoo13_addon_hr_leave_hour-13.0.1.0.1.dev3.dist-info/METADATA,sha256=-s3AsQiJac_8H95Pbds8rpQXdvOra9GwRyLYyWEVBb0,3382
+odoo13_addon_hr_leave_hour-13.0.1.0.1.dev3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo13_addon_hr_leave_hour-13.0.1.0.1.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_hr_leave_hour-13.0.1.0.1.dev3.dist-info/RECORD,,
