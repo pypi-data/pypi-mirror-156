@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: example-package-jfb
+Version: 1.0.0
+Summary: A small example package
+Project-URL: GNU Homepage, https://gnu.org
+Author-email: Jeremy Bryant <jb@jeremybryant.net>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+Welcome to this test package.

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "example_package_jfb"
+version = "1.0.0"
+authors = [
+	{ name = "Jeremy Bryant", email="jb@jeremybryant.net"},
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classfiers = [
+	   "Programming Language :: Python :: 3",
+	   "License :: GPL",
+	   "Operating System :: OS Independent",
+]
+
+[project.urls]
+"GNU Homepage" = "https://gnu.org"
