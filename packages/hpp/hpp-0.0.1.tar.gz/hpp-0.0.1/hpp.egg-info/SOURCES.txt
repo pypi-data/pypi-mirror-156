@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+hpp/__info__.py
+hpp/__init__.py
+hpp.egg-info/PKG-INFO
+hpp.egg-info/SOURCES.txt
+hpp.egg-info/dependency_links.txt
+hpp.egg-info/requires.txt
+hpp.egg-info/top_level.txt
