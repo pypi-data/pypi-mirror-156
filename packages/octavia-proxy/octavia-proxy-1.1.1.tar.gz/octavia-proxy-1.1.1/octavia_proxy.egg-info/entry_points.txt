@@ -1,0 +1,16 @@
+[console_scripts]
+octavia-proxy = octavia_proxy.cmd.api:main
+
+[octavia_proxy.api.drivers]
+elbv2 = octavia_proxy.api.drivers.elbv2.driver:ELBv2Driver
+elbv3 = octavia_proxy.api.drivers.elbv3.driver:ELBv3Driver
+
+[oslo.policy.enforcer]
+octavia = octavia_proxy.common.policy:get_no_context_enforcer
+
+[oslo.policy.policies]
+octavia = octavia_proxy.policies:list_rules
+
+[wsgi_scripts]
+octavia-proxy-wsgi = octavia_proxy.api.app:setup_app
+

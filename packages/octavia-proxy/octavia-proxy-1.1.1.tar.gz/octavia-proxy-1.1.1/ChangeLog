@@ -1,0 +1,78 @@
+CHANGES
+=======
+
+1.1.1
+-----
+
+* fix driver for eu-de region (#111)
+* sorting tz fix (#116)
+* add bindep (#115)
+
+1.1.0
+-----
+
+* publish to pypi job (#108)
+* Handle 'ip address is in use exception' for load balancer (#96)
+* Endpoint override from octavia-proxy (#102)
+* change doc template for api-ref (#107)
+* Change doc publishing template (#106)
+* Change parent in \`octavia-proxy-build-image\` job (#104)
+* prepare the api pdf generation (#100)
+* Add codeowners file (#99)
+* Filter fields tests (#66)
+* controllers unit tests (#97)
+* Pagination (#94)
+* Complex create (#74)
+
+1.0.0
+-----
+
+* release notes for release (#92)
+* Adapt to the newest validatetoken middleware (#93)
+* Quota types to octavia style (#91)
+* Quota handling (#89)
+* Az list (#88)
+* Tags for elbv2 (#86)
+* Elbv3 flavor param support (#80)
+* project\_id assigment and subnet validation (#84)
+* update image tag used in propose job (#85)
+* add promote jobs (#81)
+* parallel execution (#77)
+* added testcases with tags loadbalancer/listener - currently unsupported, thus blacklisted (#70)
+* ability to create elbv3 with multiple az's (#78)
+* tags support (#71)
+* Driver invocation (#64)
+* set project\_id from token in octavia context (#68)
+* add api-ref job template (#67)
+* functional tests + further fixes (#36)
+* fix lb creation after removing octavia dependencies (#65)
+* l7 rule for elbv3 (#61)
+* Fix provider finding (#60)
+* l7rule for elbv2 (#59)
+* elbv3 cascade delete (#58)
+* elbv3 l7policy driver (#56)
+* L7policy controller (#55)
+* elb additional validations and mapping (#54)
+* Healthmonitor for elbv2 (#53)
+* L7 policy elbv2 driver (#52)
+* health monitor v3 (#51)
+* add compatibility matrix (#47)
+* Member for elbv2 (#50)
+* member v3 (#48)
+* Pool driver and controller elbv2 (#37)
+* fix now broken octavia\_lib dep (#49)
+* Elb v3 pool (#46)
+* Add driver v2 for health monitors (#45)
+* Elb v3 listener (#43)
+* elb v3 driver lb and, flavors (#42)
+* Add unit tests for ELBv2 driver (#39)
+* elbv3 types (#38)
+* Add region awareness (#34)
+* tune logging in the container (#32)
+* Initialize functional testing (#30)
+* Add container image building jobs (#31)
+* Init docs and more unittests (#4)
+* Drop Octavia dependency (#3)
+* Fix zuul jobs (#2)
+* Fix zuul setup (#1)
+* Initial import

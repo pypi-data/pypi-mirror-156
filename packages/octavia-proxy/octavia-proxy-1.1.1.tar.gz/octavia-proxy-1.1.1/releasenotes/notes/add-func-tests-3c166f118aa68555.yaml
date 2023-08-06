@@ -1,0 +1,4 @@
+---
+other:
+  - |
+    Initialize ``functional`` testing (`#30 <https://github.com/opentelekomcloud-infra/octavia-proxy/pull/30>`_)
