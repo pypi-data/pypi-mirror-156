@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+DPyramid.egg-info/PKG-INFO
+DPyramid.egg-info/SOURCES.txt
+DPyramid.egg-info/dependency_links.txt
+DPyramid.egg-info/top_level.txt
+PyramidClass/Alphatriangle.py
+PyramidClass/Alphatriangle2.py
+PyramidClass/Rtriangle.py
+PyramidClass/Rtriangle2.py
+PyramidClass/Triangle.py
+PyramidClass/__init__.py
