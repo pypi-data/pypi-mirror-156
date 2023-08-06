@@ -1,0 +1,12 @@
+scine_database/LICENSE.txt,sha256=HL7XYi_sSTmCYI_nS-recOmhyZb7qNS9Fx2HejGhjlo,1498
+scine_database/__init__.py,sha256=_RR-YLO3u-ChGWFdmMrXHJzGUpCNMuWacBjOkUkMmGQ,887
+scine_database/__init__.pyi,sha256=wFzz4JJgycizNA0_ohpLMzO4s5jP6zZOJ_xqU5MIcvM,82655
+scine_database/libcore.so,sha256=FOzcIBYLECKYD4ClrIe2ZmMGfjaohupekwezEO8Y3G4,328896
+scine_database/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scine_database/scine_database.cpython-38-x86_64-linux-gnu.so,sha256=Yw7O25syHmBFZBUUM0xOu2xUcibuPH9pCfnqfZZ1sp0,18190776
+scine_database/layout/__init__.pyi,sha256=Koeo8vqKSOT-plVZYCzWV1qdo1LVQ4AGXl6Aah_rgEo,1632
+scine_database-1.0.0.dist-info/METADATA,sha256=34c5AGz5-S1ioSyv_dpXxYikl_lSoojSQX7_ZqshMEE,3411
+scine_database-1.0.0.dist-info/WHEEL,sha256=-ijGDuALlPxm3HbhKntps0QzHsi-DPlXqgerYTTJkFE,148
+scine_database-1.0.0.dist-info/top_level.txt,sha256=2ar03obJGDWs8hdbbNEGCvwyf_N8V3VBFaz0Zbgn0uU,15
+scine_database-1.0.0.dist-info/RECORD,,
+scine_database.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
