@@ -1,0 +1,10 @@
+sheet_loader/__init__.py,sha256=AwZl24Q0zRXp1-loSbmQoW-rPba6Y9k5ovnTTGzv-iA,52
+sheet_loader/detecting_buffer.py,sha256=9UHR9UZtGZoxbb5yh2EVK-WSEiD7di_HRv2ygiwEHV4,7009
+sheet_loader/helpers.py,sha256=QNnZ0wDufrPChRqE23JpSDpSgJfgCaspKYonb53WK0o,2741
+sheet_loader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sheet_loader/sheet_loader.py,sha256=O_FCUOdkiRtXiXizr_9-KcahwHHo8JHyCP0mcVz7Dpw,5352
+sheet_loader/types.py,sha256=ZtWaiDigXQAjnHQsP9w88LKKraUi7AO3APNdhbQU1A4,974
+sheet_loader-1.0.0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+sheet_loader-1.0.0.dist-info/WHEEL,sha256=FWzWAvOOsDP6aqtZj_z3pIhVEk8S9F03Xwafa0tLqIY,90
+sheet_loader-1.0.0.dist-info/METADATA,sha256=ekjv8xkFPr_C7hR6orXBWpqA-ha-NakIPvv2hP5SRQQ,839
+sheet_loader-1.0.0.dist-info/RECORD,,
