@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: EasyRoman
+Version: 0.0.3
+Summary: A simple library written for python to interchange Roman and Integer Numbers
+Home-page: https://github.com/PannagSDesai/RomanLibrary.git
+Author: Pannag Desai
+Author-email: pannag.desai@outlook.com
+License: MIT
+Download-URL: https://github.com/PannagSDesai/EasyRoman/archive/refs/tags/Numbers.tar.gz
+Keywords: Number system conversion
+Platform: UNKNOWN
+License-File: LICENSE
+
+This library is a simple interface to convert Roman to integer or Integer to Roman
+

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+EasyRoman/EasyRoman.py
+EasyRoman/__init__.py
+EasyRoman.egg-info/PKG-INFO
+EasyRoman.egg-info/SOURCES.txt
+EasyRoman.egg-info/dependency_links.txt
+EasyRoman.egg-info/top_level.txt
