@@ -1,0 +1,15 @@
+deepprojection/CARE_projection.py,sha256=iikR4aTpTiKBMZB9VCuRJqnbmiwJz4MNjQNL5LCenhg,2096
+deepprojection/GUI.py,sha256=jFuP2js0W7lObuLib27Ae9YWzml9xawmPGrU7EreZEQ,14132
+deepprojection/ProjNet.py,sha256=jtusKNl9ESSeCQYt6j2tlHurCb3eMSx3yWg67g6dJL8,4283
+deepprojection/__init__.py,sha256=r5S-pIByoqpAizppHSSCW4qxadH34_-xWDAVcTss8Y8,255
+deepprojection/__main__.py,sha256=JJch-U_VNWIggitcw_Uh-IBP21NMxpAQEtb9FWBAOxo,131
+deepprojection/data.py,sha256=mORfrDfhmshssnr4epM__6Y7WbJ5IZ8FYUa3ntLOSS0,11858
+deepprojection/postprocess.py,sha256=N9SivZ8Ft0PQAimrquBqDcr1nH8yco8xC2-25MfU8JA,10058
+deepprojection/predict.py,sha256=QrV9dYq5Gqk8ubgxhSxYw3SnUxhezqelxE7xmiAZusQ,5207
+deepprojection/project.py,sha256=UwH0ZvuuD3AenHp0YCWBHylDnw5OmaJ_1l62iH1Exag,7618
+deepprojection/train.py,sha256=-LdegkcL0J3Ck6fykG_MHLCrodpbjcieRzpXjXFwolA,7758
+deepprojection/utils.py,sha256=OPu7qFv3U915S1NJbVyd6otMPo38MtW3GfvznXDu8Fw,15207
+deepprojection-1.0.0a0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+deepprojection-1.0.0a0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+deepprojection-1.0.0a0.dist-info/METADATA,sha256=Vgtv49tJ0QPn5O2bFigxkh9J4cuWCOlrFmDg6c7-fbA,700
+deepprojection-1.0.0a0.dist-info/RECORD,,
