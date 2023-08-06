@@ -1,0 +1,8 @@
+
+https://en.wikipedia.org/wiki/Xpath
+# social
+https://news.ycombinator.com/item?id=3846528
+https://stackoverflow.com/questions/5686206/
+# codes
+https://github.com/buriy/python-readability
+https://raw.githubusercontent.com/python/cpython/master/Lib/textwrap.py
