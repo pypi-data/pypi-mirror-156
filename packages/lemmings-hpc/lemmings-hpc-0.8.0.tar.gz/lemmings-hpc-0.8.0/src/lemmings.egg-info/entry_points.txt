@@ -1,0 +1,6 @@
+[console_scripts]
+lem_sandbox = lemmings_hpc.sandbox.sandbox_cli:sandbox_cli
+lemmings = lemmings_hpc.cli:main_cli
+lemmings-farming = lemmings_hpc.cli_farming:main_cli
+lemmings-hpc = lemmings_hpc.cli:fallback_clihpc
+
