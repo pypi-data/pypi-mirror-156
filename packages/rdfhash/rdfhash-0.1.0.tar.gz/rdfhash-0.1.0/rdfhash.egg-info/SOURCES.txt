@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+bin/rdfhash
+rdfhash/__init__.py
+rdfhash/helper.py
+rdfhash/logger.py
+rdfhash.egg-info/PKG-INFO
+rdfhash.egg-info/SOURCES.txt
+rdfhash.egg-info/dependency_links.txt
+rdfhash.egg-info/requires.txt
+rdfhash.egg-info/top_level.txt
+test/conftest.py
+test/test_examples.py
