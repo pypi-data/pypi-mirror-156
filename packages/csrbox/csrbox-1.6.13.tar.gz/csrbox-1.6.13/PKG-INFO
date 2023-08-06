@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: csrbox
+Version: 1.6.13
+Summary: RISC-V CSR-Box Generator
+Home-page: https://gitlab.com/incoresemi/ex-box/csrbox
+Author: IIT-Madras, InCore Semiconductors Pvt. Ltd.
+Author-email: shakti.iitm@gmail.com
+License: BSD-3-Clause
+Keywords: csrbox,riscv
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6.0
+License-File: LICENSE.iitm
+License-File: LICENSE.incore
+
+CSRBOX
+######
+
+Latest documentation of csrbox: https://csrbox.readthedocs.io
+
+
+
+
