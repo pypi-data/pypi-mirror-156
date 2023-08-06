@@ -1,0 +1,10 @@
+return_data = ['mail.de', 'Wunschdomain.xy', 'yandex.ru', 'yahoo.de', 'mail.ru', 'aol.de', 'eclipso.de', 'eclipso.ch',
+               'eclipso.at', 'eclipso.eu', 'maills.de', 'maills.ch', 'spamfreemail.de', 'gmail.com', 'firemail.de',
+               '24-mail.de', 'mailjunky.de', 'maili.de', 'hotmail.de', 'emailn.de', 'outlook.com', 'fmail.com',
+               'simbamail.de', 'lycos.com', 'directbox.com', 'directbox.net', 'new-post.de', 'gmx.de', 'gmx.net',
+               'slucia.com', '5x2.de', 'smart-mail.de', 'spl.at', 't-online.de', 'compu-freemail.de', 'web.de',
+               'x-mail.net', 'k.st', 'mc-free.com', 'freenet.de', 'k-bg.de', 'overmail.de', 'anpa.de',
+               'freemailer.ch', 'vcmail.de', 'mail4nature.org', 'uims.de', '1vbb.de', 'uni.de', 'techmail.com',
+               'hushmail.com', 'freemail-24.com', 'guru.de', 'as-paf-paf_tools-email.lu', '1email.eu', 'canineworld.com',
+               'zelx.de',
+               'sify.com', 'softhome.net', 'kuekomail.net', 'mailde.de', 'mail-king.com']

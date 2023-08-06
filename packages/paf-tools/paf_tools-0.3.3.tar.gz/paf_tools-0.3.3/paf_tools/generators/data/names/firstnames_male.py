@@ -1,0 +1,10 @@
+return_data = ["Wilhelm", "Carl", "Hans", "Otto", "Walter", "Heinrich", "Ernst", "Hermann", "Willi", "Friedrich",
+         "Rudolf", "Albert", "Max", "Paul", "Johannes", "Alfred", "Artur", "Emil", "Erich", "Franz", "Johann",
+         "Richard", "Curt", "August", "Fritz", "Ben", "Jonas", "Leon", "Elias", "Finn", "Noah", "Luis", "Lukas",
+         "Luca", "Felix", "Maximilian", "Henry", "Moritz", "Jakob", "Niklas", "Tim", "Julian", "Oskar", "Anton",
+         "Philipp", "David", "Liam", "Alexander", "Theo", "Tom", "Mats", "Jan", "Matteo", "Samuel", "Erik",
+         "Fabian", "Milan", "Leo", "Jonathan", "Rafael", "Simon", "Vincent", "Lennard", "Linus", "Hannes",
+         "Jona", "Mika", "Jannik", "Nico", "Till", "Stefan", "Michael", "Andreas", "Thomas", "Frank", "Markus",
+         "Christian", "Oliver", "Matthias", "Torsten", "Martin", "Sven", "Dirk", "Karsten", "Ralf", "Jörg",
+         "Marc", "Peter", "Olaf", "Marco", "Jens", "Lars", "Andre", "Holger", "Heiko", "Kai", "Ingo", "Volker",
+         "Maik", "Klaus", "Jürgen", "Robert", "Tobias"]
