@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+mpl_fontkit/__init__.py
+mpl_fontkit/core.py
+mpl_fontkit/download.py
+mpl_fontkit/showcase.py
+mpl_fontkit.egg-info/PKG-INFO
+mpl_fontkit.egg-info/SOURCES.txt
+mpl_fontkit.egg-info/dependency_links.txt
+mpl_fontkit.egg-info/requires.txt
+mpl_fontkit.egg-info/top_level.txt
