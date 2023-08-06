@@ -1,0 +1,12 @@
+
+[aiohttp]
+aiohttp>=3.8.1
+
+[orjson]
+orjson>=3.6.8
+
+[ujson]
+ujson>=5.2.0
+
+[uvloop]
+uvloop>=0.12.1
