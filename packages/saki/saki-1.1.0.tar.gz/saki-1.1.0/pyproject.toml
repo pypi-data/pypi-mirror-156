@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "saki"
+version = "1.1.0"
+description = "A simple alternative to the cat command line tool"
+authors = ["Luke Pitstick <lukepitstick06@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+saki = "saki.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+typer = {extras = ["all"], version = "^0.4.1"}
+npyscreen = "^4.10.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
