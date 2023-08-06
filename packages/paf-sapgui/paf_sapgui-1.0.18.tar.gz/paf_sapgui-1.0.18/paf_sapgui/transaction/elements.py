@@ -1,0 +1,1 @@
+ok_code = "wnd[0]/tbar[0]/okcd"
