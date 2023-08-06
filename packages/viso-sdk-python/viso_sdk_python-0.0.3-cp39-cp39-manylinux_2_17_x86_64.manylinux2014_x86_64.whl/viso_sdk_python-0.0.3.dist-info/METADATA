@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: viso-sdk-python
+Version: 0.0.3
+Summary: Viso SDK for Python
+Home-page: https://gitlab.com/TopKamera/03_edge/Base/viso-sdk-python-public.git
+Author: Shane Carlyon
+Author-email: s.carlyon@viso.ai
+License: LGPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: COPYING
+License-File: AUTHORS
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: paho-mqtt
+Requires-Dist: redis
+Requires-Dist: opencv-python (==4.5.1.48) ; platform_machine != "aarch64" and platform_machine != "armv6l" and platform_machine != "armv7l" and python_version != "3.10"
+Requires-Dist: opencv-python (==4.5.4.58) ; platform_machine != "aarch64" and platform_machine != "armv6l" and platform_machine != "armv7l" and python_version == "3.10"
+Requires-Dist: opencv-python (==4.4.0.46) ; platform_machine == "armv6l" or platform_machine == "armv7l"
+Provides-Extra: autocompletion
+Requires-Dist: argcomplete (<3,>=1.10.0) ; extra == 'autocompletion'
+Provides-Extra: yaml
+Requires-Dist: PyYaml (>=5.2) ; extra == 'yaml'
+
+# viso-sdk-python
+
+**viso-sdk-python** is a utility for [viso.ai](https://viso.ai) containers.
+
+## Installation
+
+Use `pip` to install the latest stable version of **viso-sdk-python**:
+
+```shell
+pip install viso-sdk-python
+```
+
+
