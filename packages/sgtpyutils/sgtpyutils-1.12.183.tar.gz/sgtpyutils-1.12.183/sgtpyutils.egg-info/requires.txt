@@ -1,0 +1,3 @@
+pycryptodome
+colorlog
+openpyxl
