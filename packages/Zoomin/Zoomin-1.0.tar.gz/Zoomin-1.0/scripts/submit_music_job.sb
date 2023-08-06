@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --time=00:30:00
+#SBATCH --job-name=music
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=8
+#SBATCH --mem=32G
+
+if [[ -z "${WORKING_DIR}" ]]; then
+    echo "WORKING_DIR environment variable has not been set. Exiting."
+    exit
+fi
+
+if [[ -z "${MUSIC_CONF_FILE}" ]]; then
+    echo "MUSIC_CONF_FILE environment variable has not been set. Exiting."
+    exit
+fi
+
+module purge
+module load GCC/11.2.0  OpenMPI/4.1.1 FFTW/3.3.10 GSL/2.7
+
+cd ${WORKING_DIR}
+
+MUSIC ${MUSIC_CONF_FILE}

@@ -1,0 +1,84 @@
+
+[ZoominSettings]
+#directory where outputs will be saved
+zoomin_dir = ./tests
+
+# This is just a name to assign to the simulation
+# Used as a prefix for the level-specific directories
+simulation_name = Test
+
+# appends this to the end of all generated files and outputs
+# with the current refinement level
+# the last character will always be replaced with the level number
+level_suffix = _LX
+
+# id of the halo in the corresponding halo catalog
+halo_id = 0
+
+# Initial and final refinement level
+# These do not represent the actual level of refinement, 
+# but rather, which stage of iteration we are on
+# The actual refinement level is determined by the MUSIC
+# config script and the zoomin current level is added to 
+# whatever the levelmin value has been set to.
+initial_level = 0
+final_level = 3
+
+# length of simulation box in Mpc/h
+# this does not override settings in enzo or MUSIC parameter files
+# and is only used for normalizing distance values in halo catalogs
+box_length = 25
+
+# halo catalog file corresponding to last enzo output
+halo_catalog_file = ./tests/halo_catalog.ascii
+
+#submission command
+#sub_cmd = qsub
+sub_cmd = sbatch
+
+# location of job submission script for performing particle collection
+particle_sub = ./scripts/submit_particle_job.sb
+
+# if set to true, enzo and MUSIC will not be run
+# and particle collection will not be run
+# but parameter files will still be generated
+# and the relevant outputs will be copied from the solutions
+# directory
+#dry_run = True
+dry_run = False
+
+# perform unit tests with this run
+# Note that unit tests will fail if not run with the example.cfg 
+# that comes with the code
+# Test failure does not cause the program to stop running
+run_test = True
+#run_test = False
+
+[MusicSettings]
+#music config base file
+music_conf_base = ./tests/MUSIC_base.conf
+
+# location of job submission script for running music
+music_sub = ./scripts/submit_music_job.sb
+
+# last file music outputs, lets us know that music is finished running
+music_run_finished = ParticleDisplacements_z
+
+transfer_function_data_file = ./tests/wmap9_transfer_function_z99.dat
+
+[EnzoSettings]
+# enzo parameter base file
+enzo_par_base = ./tests/enzo_base.enzo
+
+# location of job submission script for running Enzo
+enzo_sub = ./scripts/submit_enzo_job.sb
+
+# last file Enzo outputs, lets us know that Enzo is finished running
+enzo_run_finished = RunFinished
+
+# enzo outputs
+last_enzo_out = RD0076
+first_enzo_out = RD0000
+
+grackle_data_file = ./tests/CloudyData_UVB=HM2012_shielded.h5
+

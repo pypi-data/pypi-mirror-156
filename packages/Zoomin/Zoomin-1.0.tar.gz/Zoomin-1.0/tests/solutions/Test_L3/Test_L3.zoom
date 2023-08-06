@@ -1,0 +1,28 @@
+[ZoominSettings]
+zoomin_dir = /mnt/ufs18/home-119/llorente/zoomin/tests
+simulation_name = Test
+level_suffix = _LX
+halo_id = 0
+initial_level = 3
+final_level = 3
+box_length = 25
+halo_catalog_file = /mnt/ufs18/home-119/llorente/zoomin/tests/halo_catalog.ascii
+sub_cmd = sbatch
+particle_sub = /mnt/ufs18/home-119/llorente/zoomin/submit_particle_job.sb
+dry_run = False
+run_test = False
+
+[MusicSettings]
+music_conf_base = /mnt/ufs18/home-119/llorente/zoomin/tests/MUSIC_base.conf
+music_sub = /mnt/ufs18/home-119/llorente/zoomin/submit_music_job.sb
+music_run_finished = ParticleDisplacements_z
+transfer_function_data_file = /mnt/ufs18/home-119/llorente/zoomin/tests/wmap9_transfer_function_z99.dat
+
+[EnzoSettings]
+enzo_par_base = /mnt/ufs18/home-119/llorente/zoomin/tests/enzo_base.enzo
+enzo_sub = /mnt/ufs18/home-119/llorente/zoomin/submit_enzo_job.sb
+enzo_run_finished = RunFinished
+last_enzo_out = RD0076
+first_enzo_out = RD0000
+grackle_data_file = /mnt/ufs18/home-119/llorente/zoomin/tests/CloudyData_UVB=HM2012_shielded.h5
+

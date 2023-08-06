@@ -1,0 +1,27 @@
+#!/bin/bash
+#SBATCH --time=00:30:00
+#SBATCH --job-name=enzo
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=8
+#SBATCH --mem=32G
+
+echo ${WORKING_DIR}
+echo ${ENZO_PAR_FILE}
+
+if [[ -z "${WORKING_DIR}" ]]; then
+    echo "WORKINGDIR environment variable has not been set. Exiting."
+    exit
+fi
+
+if [[ -z "${ENZO_PAR_FILE}" ]]; then
+    echo "ENZOPARFILE environment variable has not been set. Exiting."
+    exit
+fi
+
+module purge
+module load intel/2021a
+export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so
+
+cd ${WORKING_DIR}
+
+srun -n 8 enzo ${ENZO_PAR_FILE}

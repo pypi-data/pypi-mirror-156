@@ -1,0 +1,35 @@
+#!/usr/bin/env python
+
+import argparse
+from Zoomer import Zoomer
+
+from mpi4py import MPI
+
+COMM = MPI.COMM_WORLD
+COMM_SIZE = COMM.Get_size()
+RANK = COMM.Get_rank()
+
+description = """
+Runs the particle collection stage of the pipeline. 
+"""
+
+zoomin_config_help_msg = """Name of the Zoomin config file.
+The Zoomin config file specifies all necessary environmental paramters that 
+are required for it to run, such as the location of enzo and MUSIC executables, 
+all simulation outputs, and template config/parameter files.
+"""
+
+if __name__ == "__main__":
+
+    parse = argparse.ArgumentParser(description=description)
+    parse.add_argument("zoomin_cfg", help=zoomin_config_help_msg)
+
+    args = vars(parse.parse_args())
+
+    zoomer = Zoomer(args["zoomin_cfg"])
+    
+    if COMM_SIZE == 1:
+        zoomer.collect_halo_particles()
+    else :
+        zoomer.collect_halo_particles_parallel(COMM)
+
