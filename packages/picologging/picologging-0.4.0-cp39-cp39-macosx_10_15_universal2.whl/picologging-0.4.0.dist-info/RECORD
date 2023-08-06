@@ -1,0 +1,8 @@
+picologging/__init__.py,sha256=0nXjKoTAnBeUf1wqTS438RuFjarqZqfC64JWHvJXMJY,13922
+picologging/_picologging.cpython-39-darwin.so,sha256=Y9qkJHTtbswWzYKXAtGk4IK0qVNOYcIWkr2EfFQj0YM,372552
+picologging/handlers.py,sha256=bn-laGDtHHlhsWERxAjJR9GpnT14HYjf1dc4UEljKGI,5271
+picologging-0.4.0.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+picologging-0.4.0.dist-info/METADATA,sha256=JnFoKbfaxZUxQFoqhO20UIs__b8xrZvBivXYlJ3mUu8,5076
+picologging-0.4.0.dist-info/WHEEL,sha256=Ss_1UxLar7QtnXkPG1yX3-abzbHuFeEzTBbXzSCXxMM,108
+picologging-0.4.0.dist-info/top_level.txt,sha256=6tTFxD0eMWuY7YICfAuDId2wyC9JnrwV4ms--9fNSWk,12
+picologging-0.4.0.dist-info/RECORD,,
