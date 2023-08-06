@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+PySimpleDB/__init__.py
+PySimpleDB.egg-info/PKG-INFO
+PySimpleDB.egg-info/SOURCES.txt
+PySimpleDB.egg-info/dependency_links.txt
+PySimpleDB.egg-info/top_level.txt
