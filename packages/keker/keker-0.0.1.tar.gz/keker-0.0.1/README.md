@@ -1,0 +1,1 @@
+This package can make making checkers much easier and faster!
