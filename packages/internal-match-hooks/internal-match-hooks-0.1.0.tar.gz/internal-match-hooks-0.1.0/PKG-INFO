@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: internal-match-hooks
+Version: 0.1.0
+Summary: A replaCy match hoold lib
+Home-page: https://github.writer.ai/nlp/internal-match-hooks
+License: Proprietary
+Author: Sam Havens
+Author-email: sam.havens@writer.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.writer.ai/nlp/internal-match-hooks
+Description-Content-Type: text/markdown
+
+# internal-match-hooks
+shared lib for replacy match hooks 
