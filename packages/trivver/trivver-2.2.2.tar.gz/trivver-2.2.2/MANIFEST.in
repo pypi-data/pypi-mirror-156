@@ -1,0 +1,5 @@
+include .editorconfig
+include tox.ini
+include trivver.scd
+recursive-include src/test_cargo *.py *.sh
+recursive-include unit_tests *.py *.sh
