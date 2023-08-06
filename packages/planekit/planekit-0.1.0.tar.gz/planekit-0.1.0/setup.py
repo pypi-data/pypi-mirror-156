@@ -1,0 +1,38 @@
+from distutils.core import setup
+import setuptools
+
+
+VERSION = "0.1.0"  # BURAYI AKLINIZDA TUTUN (Değiştirebilirsiniz)
+long_description = ""
+with open("README.md", "r", encoding="utf-8") as file:
+    long_description = file.read()
+setup(
+    name='planekit',
+    packages=setuptools.find_packages(),
+    install_requires=['pymavlink==2.4.29', 'pyserial==3.5'],
+    version='0.1.0',
+    license='MIT',
+    description='Developer Tools for Fixed-wing',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author='Musa Şen',
+    author_email='m42@gmail.com',
+    url='https://github.com/msasen/planekit',
+
+    download_url=f'https://github.com/msasen/planekit{VERSION}.tar.gz',
+    keywords=['Planekit', 'plane', 'autonomous', 'fixed-wing'],
+    classifiers=[
+        # Define that your audience are developers
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        'License :: OSI Approved :: MIT License',  # Again, pick a license
+        # Specify which pyhton versions that you want to support
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+    ],
+)
