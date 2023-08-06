@@ -1,0 +1,1 @@
+{"": "", "Blocks": "Blocchi", "Chunk:": "", "Devices": "Dispositivi", "Devices down:": "Dispositivi sotto:", "Metadata": "Metadati", "Name": "Nome", "No array detected!": "", "Progress:": "", "Remaining:": "", "Speed:": "", "State": "Stato", "Superblock:": "Superblocco:", "Type": "Tipo", "Softraid": "Softraid"}

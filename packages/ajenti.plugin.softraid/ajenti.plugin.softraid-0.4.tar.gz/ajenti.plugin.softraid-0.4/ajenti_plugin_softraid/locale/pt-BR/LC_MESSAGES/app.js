@@ -1,0 +1,1 @@
+{"": "", "Blocks": "Blocos", "Chunk:": "Chunk:", "Devices": "Dispositivos", "Devices down:": "Dispositivos inativos:", "Metadata": "Metadados", "Name": "Nome", "No array detected!": "Nenhum array detectado!", "Progress:": "Progresso:", "Remaining:": "Restando:", "Speed:": "Velocidade:", "State": "Estado", "Superblock:": "Superbloco:", "Type": "Tipo", "Softraid": "Softraid"}
