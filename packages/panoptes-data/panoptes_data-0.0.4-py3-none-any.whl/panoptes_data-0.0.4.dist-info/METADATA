@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: panoptes-data
+Version: 0.0.4
+Summary: Tools for working with PANOPTES data.
+Home-page: https://github.com/panoptes/panoptes-data
+Author: Wilfred Tyler Gee
+Author-email: wtylergee@gmail.com
+License: MIT
+Project-URL: Documentation, https://projectpanoptes.org/
+Project-URL: Source, https://github.com/panoptes/panoptes-data/
+Project-URL: Download, https://pypi.org/project/panoptes-data/#files
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE.txt
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: panoptes-utils[images]
+Requires-Dist: pip
+Requires-Dist: pydantic
+Requires-Dist: python-dateutil
+Requires-Dist: tqdm
+Requires-Dist: typer
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: tox ; extra == 'testing'
+
+# PANOPTES Data tools
+
+Tools for working with PANOPTES data.
+
+## Install
+
+Install from pip:
+
+```bash
+pip install panoptes-data
+```
+
+## Examples
+
+> See example Jupyter Notebooks in the [`notebooks`](notebooks/) folder.
+
+### Finding observations
+
+```py
+>>> from panoptes.data.search import search_observations
+>>> from panoptes.data.observations import ObservationInfo
+
+>>> # Find some observations
+>>> results = search_observations(by_name='M42')
+
+>>> # Use last result entry to create ObservationInfo object.
+>>> obs_info = ObservationInfo(meta=results.iloc[0])
+>>> obs_info.meta
+
+camera_id                                           14d3bd
+camera_lens_serial_number                        HA0028608
+camera_serial_number                           12070048413
+coordinates_mount_dec                            -6.229778
+coordinates_mount_ra                               76.0815
+exptime                                              120.0
+field_name                                         Wasp 35
+num_images                                            28.0
+sequence_id                  PAN001_14d3bd_20180113T052325
+software_version                                POCSv0.6.0
+time                             2018-01-13 05:23:25+00:00
+total_exptime                                       3360.0
+unit_id                                             PAN001
+Name: 6121, dtype: object
+
+>>> # Create an ObservationInfo object directly from a sequence_id.
+>>> obs_info = ObservationInfo('PAN001_14d3bd_20180113T052325')
+>>> # But then there is no metadata:
+>>> obs_info.meta
+
+{}
+```
+
+### Downloading images
+
+The `ObservationInfo` object makes it easy to download the files:
+
+```py
+>>> obs_info.download_images()
+```
