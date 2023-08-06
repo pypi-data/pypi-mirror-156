@@ -1,0 +1,11 @@
+graph_embeddings/__init__.py,sha256=puKMkxkt7Dk3TDvRmaZIM0nfX7nTRdo2DcYDZru4OhE,128
+graph_embeddings/_version.py,sha256=ePKnbv5rHU0s9YNZCPoVagMvxTvs_zxcIdmA3zT5NvU,34
+graph_embeddings/algorithms/__init__.py,sha256=lDyb2KCbGcxT6bDzJJWD-FacuTMZQFovZyaEX_XIJps,72
+graph_embeddings/algorithms/node2vec.py,sha256=42PWqfkC0qT1LrR-YpM9RBvD-D2JFm83J_SDGNx5ulc,5036
+graph_embeddings/algorithms/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+graph_embeddings/algorithms/tests/test_node2vec.py,sha256=8uia7VjTReqMCstZqqtBzO6jRmN4Ev7vFh1xBcbL1nM,1043
+graph_embeddings-0.0.0.dev0.dist-info/LICENSE,sha256=bGxk70T4hgy2RKgD_ZLqbGEry6vIOKek7hjUmxJV_4A,1092
+graph_embeddings-0.0.0.dev0.dist-info/METADATA,sha256=mSWxHDHmc-nF8R6JbmSKCIpz3h7BWPG-_s4NOFpwXbU,4252
+graph_embeddings-0.0.0.dev0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+graph_embeddings-0.0.0.dev0.dist-info/top_level.txt,sha256=qF2GJGkEZkWUVfpeZxdsz2LdiWrJH0IWp1GEdVqkovk,17
+graph_embeddings-0.0.0.dev0.dist-info/RECORD,,
