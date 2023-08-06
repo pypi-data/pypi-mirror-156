@@ -1,0 +1,15 @@
+sc_utilities/__init__.py,sha256=Jlgorzmb6VI_oGJLzIdMHI7skVWoACWlZYe83GrvFJM,1477
+sc_utilities/excel_utils.py,sha256=1YLDiHaOhFQgA9xC6AKGgFJRie4qBj7QVSxovE9AtxI,2175
+sc_utilities/exceptions.py,sha256=bz2aqEfV5s1obe2KHtY7lqjFb3M-wot9ox8R4UNL0QA,1221
+sc_utilities/file_utils.py,sha256=6-x7V2ZPadRfuAisww4pqeKhIl9H73Aus9PSAp2qqWA,1368
+sc_utilities/log_utils.py,sha256=VkwsEMh7nJVPBy9WJKyKiLtX2-V10uR5qMUgsrLhzcE,3003
+sc_utilities/singleton.py,sha256=dfOhdqrTS2YkicCM93sEkHtWECmJoV5yWJoV3vDF_5I,1990
+sc_utilities/tests/__init__.py,sha256=geiVmsc9iPhOzHUHdCPrdVcoT42GBjMoafy2eT_JloI,1133
+sc_utilities/tests/excel_utils_tests.py,sha256=C-NQZNehFkOd4sEgZRDJmNh9ZqOmQd-A-qkI_8pQXKY,1614
+sc_utilities/tests/singleton/__init__.py,sha256=geiVmsc9iPhOzHUHdCPrdVcoT42GBjMoafy2eT_JloI,1133
+sc_utilities/tests/singleton/singleton_test.py,sha256=BgW0ApO6r2DdeE6NbYvwYEGD_zNKQaHTMD954uPSAsw,1876
+sc_utilities-0.0.9.dist-info/LICENSE,sha256=cXbz9rqykGAwRK7AtRJJuBioOhncE0mcNu1-R867W64,1078
+sc_utilities-0.0.9.dist-info/METADATA,sha256=ERuXGwllP7RDrHY8xmTFvhRz9jObOhLHB7rzPO98De4,1484
+sc_utilities-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sc_utilities-0.0.9.dist-info/top_level.txt,sha256=VEP9pm8-_CrapXjBSVHESw7LmScyvDNBD5mMvN5_e4c,13
+sc_utilities-0.0.9.dist-info/RECORD,,
