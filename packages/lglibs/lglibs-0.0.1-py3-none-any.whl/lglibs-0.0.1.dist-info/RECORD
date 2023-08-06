@@ -1,0 +1,9 @@
+lglibs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lglibs/color.py,sha256=O0Rwgrz4d4_sGECV9s8d1GWmO365kil48KJB1RXpjHo,1366
+lglibs/file.py,sha256=612I2aTxVSCDec10XK6eVZw8fTh9rp9IzscFTR8phBM,12095
+lglibs/template.py,sha256=MXtkxwWbDY48oiOMfS607OPlgz53tJ_oJZcjxxDzS4M,3866
+lglibs-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+lglibs-0.0.1.dist-info/METADATA,sha256=28pruJ0r4efLNNI-PJ3qBDAMma6KWmuyzlzS_GH6ocY,266
+lglibs-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lglibs-0.0.1.dist-info/top_level.txt,sha256=G0CCDDKrpnPf9AdCuTg5haBI6MYt5eaob0Zds8Cy9YI,7
+lglibs-0.0.1.dist-info/RECORD,,
