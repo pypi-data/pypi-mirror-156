@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: stellar-plots
+Version: 0.0.3
+Summary: Package to visualize information about star targets from SDSS, Gaia and TESS
+Home-page: https://stellar-plots.readthedocs.io/en/latest/
+Author: Isabella & Maryum
+License-File: LICENSE.md
