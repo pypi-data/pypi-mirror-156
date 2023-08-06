@@ -1,0 +1,12 @@
+cython
+d3m
+graspy==0.3.0
+hyppo==0.1.3
+jinja2
+lapjv!=1.3.13,<2.0.0,>=1.2.0
+networkx
+numba>=0.52.0
+numpy
+scipy
+scipy
+typing
