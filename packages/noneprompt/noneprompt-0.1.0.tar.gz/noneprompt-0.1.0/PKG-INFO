@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: noneprompt
+Version: 0.1.0
+Summary: Prompt toolkit for console interaction
+Home-page: https://github.com/nonebot/noneprompt
+License: MIT
+Keywords: prompt,inquirer,prompt-toolkit
+Author: yanyongyu
+Author-email: yyy@nonebot.dev
+Requires-Python: >=3.7.3,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: prompt-toolkit (>=3.0.19,<4.0.0)
+Project-URL: Documentation, https://github.com/nonebot/noneprompt
+Project-URL: Repository, https://github.com/nonebot/noneprompt
+Description-Content-Type: text/markdown
+
+# NonePrompt
+
+Prompt toolkit for console interaction
+
