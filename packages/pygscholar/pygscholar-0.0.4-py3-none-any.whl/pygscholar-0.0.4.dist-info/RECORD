@@ -1,0 +1,14 @@
+pygscholar/__init__.py,sha256=kPUrhj_s-UfdIGVn3LHzc4t0JVlUTuB5Sf5OMcS4DBU,656
+pygscholar/__main__.py,sha256=BBVadYnOFTWLy9PipUhyKjB8kd4Qqm-cNwCZjuAtEes,77
+pygscholar/author.py,sha256=iw9b9MK7aBpVP4QoXvas3I_ISCwNX6jFx9UPqrobGRQ,2101
+pygscholar/cli.py,sha256=sDJZvk82Y5InUbTHMEhpDbufFHvh1onTDnTHQAEhHbk,9186
+pygscholar/department.py,sha256=j3e4FPyCdQuIOCIhA3y83s1oUiIn61iTLMSMdLOXhPY,3027
+pygscholar/publication.py,sha256=aNkI--HqulJ14ark1GXTjferPc-HpzuLPP8Jp2rSwSc,3923
+pygscholar/scholar_api.py,sha256=F5fUS3zhTDcRVeKx228N5xq2Z5LGmJjC9fxBKQJ5ezc,2195
+pygscholar/utils.py,sha256=j6uqMeB9mzdmjKANVwLEy21LbDZYaRYhIUv-G1pcyEY,317
+pygscholar-0.0.4.dist-info/LICENSE,sha256=7jzvZZKooZSMB1290zZBPzfQH2Ye7o2NiQ5i1GmrRYI,1072
+pygscholar-0.0.4.dist-info/METADATA,sha256=4MnGJt3Qr2rKMFFFRWgOFYJlqS37WfJz4MNVYeuGnpA,2780
+pygscholar-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pygscholar-0.0.4.dist-info/entry_points.txt,sha256=inblgpD6tIQZHkgvB1Ehv924rY22KcH3NDJgwcMvEos,47
+pygscholar-0.0.4.dist-info/top_level.txt,sha256=QpLjushhGW4pswH0pPayiQWe9a3HonpItcIjAQwIlXw,11
+pygscholar-0.0.4.dist-info/RECORD,,
