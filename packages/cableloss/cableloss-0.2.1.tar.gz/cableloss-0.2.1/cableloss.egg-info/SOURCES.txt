@@ -1,0 +1,11 @@
+AUTHORS.md
+LICENSE.txt
+MANIFEST.in
+README.md
+cableloss.py
+setup.cfg
+setup.py
+cableloss.egg-info/PKG-INFO
+cableloss.egg-info/SOURCES.txt
+cableloss.egg-info/dependency_links.txt
+cableloss.egg-info/top_level.txt
