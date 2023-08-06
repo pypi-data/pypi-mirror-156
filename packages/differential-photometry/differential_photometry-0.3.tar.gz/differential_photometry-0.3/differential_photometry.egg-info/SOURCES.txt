@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+differential_photometry/__init__.py
+differential_photometry/demo.py
+differential_photometry/differential_photometry.py
+differential_photometry.egg-info/PKG-INFO
+differential_photometry.egg-info/SOURCES.txt
+differential_photometry.egg-info/dependency_links.txt
+differential_photometry.egg-info/top_level.txt
