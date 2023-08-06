@@ -1,0 +1,2 @@
+[console_scripts]
+moonshine = moonshine.doomsday:xocli
