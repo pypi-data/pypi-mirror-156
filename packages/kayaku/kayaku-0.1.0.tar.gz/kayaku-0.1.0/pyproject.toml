@@ -1,0 +1,48 @@
+[project]
+authors = [
+    { name = "BlueGlassBlock", email = "blueglassblock@outlook.com" },
+]
+requires-python = ">=3.8,<4.0"
+dependencies = [
+    "pydantic<2.0.0,>=1.8.0",
+    "importlib-metadata>=3.6",
+]
+name = "kayaku"
+version = "0.1.0"
+description = "An powerful and flexible configuration solution."
+readme = "README.md"
+classifiers = [
+    "Typing :: Typed",
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+
+[project.optional-dependencies]
+
+[project.entry-points."kayaku.providers"]
+toml_ro = "kayaku.providers.toml:TOMLReadOnlyProvider"
+toml_rw = "kayaku.providers.toml:TOMLReadWriteProvider"
+
+[tool.pdm]
+includes = [
+    "src/kayaku",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black<23.0.0,>=22.3.0",
+    "isort<6.0.0,>=5.10.1",
+    "tomli<3.0.0,>=2.0.1",
+    "tomlkit>=0.11.0",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
