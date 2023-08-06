@@ -1,0 +1,10 @@
+pyperclip
+haralyzer
+python3-saml
+cryptography
+networkx
+lxml<4.7.1
+defusedxml
+dash
+Flask==1.1.2
+dash-extensions==0.0.71
