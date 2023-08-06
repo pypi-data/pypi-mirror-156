@@ -1,0 +1,10 @@
+LICENSE
+README.md
+gadwall.py
+pyproject.toml
+setup.cfg
+gadwall.egg-info/PKG-INFO
+gadwall.egg-info/SOURCES.txt
+gadwall.egg-info/dependency_links.txt
+gadwall.egg-info/requires.txt
+gadwall.egg-info/top_level.txt
