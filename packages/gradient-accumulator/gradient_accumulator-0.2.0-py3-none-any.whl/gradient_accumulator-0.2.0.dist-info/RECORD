@@ -1,0 +1,13 @@
+GradientAccumulator/GAModelWrapper.py,sha256=c65T9tVpGHce64wA-JcseSi6G5CzTflHC1m-Jp4klb0,3240
+GradientAccumulator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GradientAccumulator/accumulator.py,sha256=YSeBPosmEiwtAxTGE0oZWz325MamgNsA9SVao9b4qgY,8801
+gradient_accumulator/GAModelWrapper.py,sha256=MVCeZLOx_Ng-VAmz40BjZIY-n_hAiXlXiAWiSI_6XcE,3921
+gradient_accumulator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gradient_accumulator/accumulator.py,sha256=YSeBPosmEiwtAxTGE0oZWz325MamgNsA9SVao9b4qgY,8801
+gradient_accumulator/agc.py,sha256=Hd3JvXsC69fzcciXRUgIaCfLK35cy0V3EkDJNT4XZpQ,1931
+gradient_accumulator/layers.py,sha256=jsUla_X8G_Sehx6-VxCRunMqGhHh6Jz0C2t9d91-HFM,772
+gradient_accumulator-0.2.0.dist-info/LICENSE,sha256=cVAo20hCq4TXy0eRVKpErcTcK0OXMD28RD5iyis05rA,1091
+gradient_accumulator-0.2.0.dist-info/METADATA,sha256=Ne-K0ZGEq6EoYs4DAdEZO06x8CsVlCxsy_XP17XAH5U,7216
+gradient_accumulator-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gradient_accumulator-0.2.0.dist-info/top_level.txt,sha256=mHo0FBRNoFexbvnWAZzVV3_88pFduecv6RqhUh9Lzr4,21
+gradient_accumulator-0.2.0.dist-info/RECORD,,
