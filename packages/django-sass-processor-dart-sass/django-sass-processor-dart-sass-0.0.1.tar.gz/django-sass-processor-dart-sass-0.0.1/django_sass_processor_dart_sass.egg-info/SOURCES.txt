@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+sass.py
+django_sass_processor_dart_sass.egg-info/PKG-INFO
+django_sass_processor_dart_sass.egg-info/SOURCES.txt
+django_sass_processor_dart_sass.egg-info/dependency_links.txt
+django_sass_processor_dart_sass.egg-info/top_level.txt
