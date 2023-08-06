@@ -1,0 +1,9 @@
+setup.py
+docxt/fastaqc.py
+docxt/report.py
+docxt.egg-info/PKG-INFO
+docxt.egg-info/SOURCES.txt
+docxt.egg-info/dependency_links.txt
+docxt.egg-info/requires.txt
+docxt.egg-info/top_level.txt
+docxt/utils/html.py
