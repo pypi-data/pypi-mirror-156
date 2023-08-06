@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: neofti-ticsummary-sochi
+Version: 0.0.30
+Summary: TIC data viewer sochi from pc
+Home-page: UNKNOWN
+Author: DmitryKorovkin
+Author-email: d.korovkin69@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: pyqtgraph
+Requires-Dist: numpy
+Requires-Dist: pyqt6mysql-connector-python
+Requires-Dist: matplotlib
+Requires-Dist: mysql
+
+UNKNOWN
+
