@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+airflow_provider_flyte.egg-info/PKG-INFO
+airflow_provider_flyte.egg-info/SOURCES.txt
+airflow_provider_flyte.egg-info/dependency_links.txt
+airflow_provider_flyte.egg-info/entry_points.txt
+airflow_provider_flyte.egg-info/requires.txt
+airflow_provider_flyte.egg-info/top_level.txt
+flyte_provider/__init__.py
+flyte_provider/hooks/__init__.py
+flyte_provider/hooks/flyte.py
+flyte_provider/operators/__init__.py
+flyte_provider/operators/flyte.py
+flyte_provider/sensors/__init__.py
+flyte_provider/sensors/flyte.py
