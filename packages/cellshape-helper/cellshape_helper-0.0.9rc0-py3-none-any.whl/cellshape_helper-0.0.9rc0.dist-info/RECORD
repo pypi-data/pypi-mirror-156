@@ -1,0 +1,8 @@
+cellshape_helper/__init__.py,sha256=I-LXhn4iFGyaEdHNmWX4pA4Issx4jkFt2PjsnoK4YmA,114
+cellshape_helper/conversions.py,sha256=Ve_Y2P3oA00LCl_Rove4pXM72pO1WEM6po2KWpyJ1Yk,2664
+cellshape_helper/segmentation.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cellshape_helper/util.py,sha256=QyHqtTsP8TOwoX390iLdxcfYAkgT85cx4tC1fb6WxFg,149
+cellshape_helper-0.0.9rc0.dist-info/METADATA,sha256=_YnanCcmdwDWx8ZPuN9ez9ILyQD8C26-2hxgNljAn7c,3845
+cellshape_helper-0.0.9rc0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cellshape_helper-0.0.9rc0.dist-info/top_level.txt,sha256=K0EJ2oMAROzWBqnBBygnl-b2z4BuxgFMSnMdfa9xTbs,17
+cellshape_helper-0.0.9rc0.dist-info/RECORD,,
