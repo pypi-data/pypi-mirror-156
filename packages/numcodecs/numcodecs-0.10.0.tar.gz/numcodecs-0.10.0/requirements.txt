@@ -1,0 +1,6 @@
+cython
+numpy
+msgpack
+pytest
+zfpy
+typing-extensions
