@@ -1,0 +1,4 @@
+[console_scripts]
+felt-aggregate = feltoken.algorithm.aggregate:main
+felt-train = feltoken.algorithm.train:main
+
