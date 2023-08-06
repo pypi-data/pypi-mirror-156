@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sithom
+Version: 0.0.1
+Summary: General utility scripts
+Home-page: https://github.com/sdat2/sithom
+Author: Simon Thomas
+Author-email: sdat2@cam.ac.uk
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sithom README
+
+[![Python package](https://github.com/sdat2/sithom/actions/workflows/python-package.yml/badge.svg)](https://github.com/sdat2/sithom/actions/workflows/python-package.yml)
+
+A package for shared utility scripts that I use in my research projects.
+
+I realised I was copying functionality from project to project. So instead, here it is.

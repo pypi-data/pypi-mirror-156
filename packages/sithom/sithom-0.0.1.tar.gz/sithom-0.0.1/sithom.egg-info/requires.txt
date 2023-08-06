@@ -1,0 +1,7 @@
+matplotlib
+seaborn
+jupyterthemes
+cmocean
+xarray
+uncertainties
+pooch
