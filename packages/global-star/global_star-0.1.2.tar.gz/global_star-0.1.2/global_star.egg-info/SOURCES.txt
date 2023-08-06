@@ -1,0 +1,8 @@
+setup.py
+global_star/__init__.py
+global_star.egg-info/PKG-INFO
+global_star.egg-info/SOURCES.txt
+global_star.egg-info/dependency_links.txt
+global_star.egg-info/top_level.txt
+global_star/pkg/__init__.py
+global_star/pkg/test.py
