@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/filehole/__init__.py
+src/filehole.egg-info/PKG-INFO
+src/filehole.egg-info/SOURCES.txt
+src/filehole.egg-info/dependency_links.txt
+src/filehole.egg-info/top_level.txt
