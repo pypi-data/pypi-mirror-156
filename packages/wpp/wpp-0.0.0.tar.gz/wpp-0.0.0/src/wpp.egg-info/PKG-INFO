@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wpp
+Version: 0.0.0
+Summary: Python WPP logging
+Author-email: Uri Mann <abba.mann@gmail.com>
+Project-URL: Homepage, https://github.com/urielmann/wpp
+Project-URL: Bug Tracker, https://github.com/urielmann/wpp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wpp
+Python WPP logging
+
+Coming soon...

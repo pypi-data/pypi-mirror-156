@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/wpp/__init__.py
+src/wpp.egg-info/PKG-INFO
+src/wpp.egg-info/SOURCES.txt
+src/wpp.egg-info/dependency_links.txt
+src/wpp.egg-info/top_level.txt
