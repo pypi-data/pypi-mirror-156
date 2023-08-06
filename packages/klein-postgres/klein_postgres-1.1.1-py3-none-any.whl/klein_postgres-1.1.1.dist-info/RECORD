@@ -1,0 +1,9 @@
+klein_postgres/__init__.py,sha256=-dc6d0TvO9UiaJ9hfSYfCgiOMUgJi-DKauZ24nepMnw,152
+klein_postgres/connect.py,sha256=_09j3jfzMLa5iFcFpjdc0pJ4znY4Faoi8cnm4YcUjoY,3487
+klein_postgres/postgres.py,sha256=epcY6hA8Ui0b6GQEE4H3NYzMumdhW8y5RuAJg0fgnkE,941
+klein_postgres-1.1.1.dist-info/LICENSE.txt,sha256=DOwG4OVfvD3FzuT8qbYH9my49OTbzzs8ATWU3RVnMuk,10173
+klein_postgres-1.1.1.dist-info/METADATA,sha256=if1rzLVHeX3oUC0s9JNDinBoeFB86Rir5WXgI9rVEzk,390
+klein_postgres-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+klein_postgres-1.1.1.dist-info/top_level.txt,sha256=TtlFDIHX8Dd5zZsAhHlZE-Nww-QxgY_DhU_w5f_Jt7I,15
+klein_postgres-1.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+klein_postgres-1.1.1.dist-info/RECORD,,
