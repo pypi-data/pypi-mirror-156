@@ -1,0 +1,8 @@
+requests
+cloudpickle==2.0.0
+pydantic==1.9.0
+
+[pytorch]
+torch
+torchvision
+torchdata
