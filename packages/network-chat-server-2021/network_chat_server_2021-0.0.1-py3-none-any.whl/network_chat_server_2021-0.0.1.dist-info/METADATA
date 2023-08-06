@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: network-chat-server-2021
+Version: 0.0.1
+Summary: Network Chat Server
+Home-page: UNKNOWN
+Author: Omega Omega
+Author-email: om.om@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
+
