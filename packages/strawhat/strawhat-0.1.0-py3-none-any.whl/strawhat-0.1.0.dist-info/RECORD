@@ -1,0 +1,10 @@
+strawhat/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+strawhat/api.py,sha256=IyZu7KhKLl6uw28WQT3-ydF3egmzQn4Iv5TrcZH3D28,1610
+strawhat/aws.py,sha256=NhBZN3O5_g-w5gGO-4TNxvFx1bVFBio0exMzz8MEDkE,4608
+strawhat/files.py,sha256=Za8VqEq8I03kGQdsGCSUZL0JSCAbkjCVIqcX-58lGbc,833
+strawhat/misc.py,sha256=HYc1yNgE_r_f5aPtFuFVE9KqzCkHSCkMGMNqPdKg4kc,859
+strawhat-0.1.0.dist-info/LICENSE,sha256=lVXG7TZJTjE8Q3ZSrxuk5jfzukuDbQe6wRce2Iq3h94,1068
+strawhat-0.1.0.dist-info/METADATA,sha256=TWF2EeVfAz79TJf_NCPEbI0k80802u0fGagRiIJcIvY,3365
+strawhat-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+strawhat-0.1.0.dist-info/top_level.txt,sha256=5Z17B4jRn0XKyNJ6_mt7nVb5Iz9LbGzZzhzX332bLpA,9
+strawhat-0.1.0.dist-info/RECORD,,
