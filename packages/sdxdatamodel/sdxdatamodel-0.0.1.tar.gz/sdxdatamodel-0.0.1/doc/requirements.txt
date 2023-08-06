@@ -1,0 +1,101 @@
+1. topology.json
+{
+    "type": "object",
+    "properties": {
+        "id": {  // must be provided by SDX, not by OXPO// source IP of the OXPO?
+            "type": "string"
+        },
+        "links": ["repository://"],  // urn:sdx:link:amlight:novi01_2_novi02_2
+        "name": "AmLight",
+        "nodes": ["repository://Node_novi01", "repository://Node_novi02", "repository://Node_novi03"],
+        "time_stamp": "06-31-2021-11:23:59",  // is residual bandwidth going to change the timestamp?
+        "version": "1",  // is residual bandwidth going to change the version?
+        "domain_service": {
+            "$ref": "repository://Service"
+        }
+    },
+    "title": "Topology"
+}
+
+Are "Links" for inter-domain as well?
+how to specify the inter-domain connections?
+
+Each attribute must have a qualifier for private or public
+how to push for updates (full topology, just the change, or just a notification of a change)
+
+Future:
+topology capabilities: INT/JTI, counters
+
+
+2. port.json
+{
+    "type": "object",
+    "properties": {
+        "id": "2", // ID used by the equipment (of_port or ifIndex) maybe URN?
+        "short_name": "???? What fields are mandatory or optional",
+        "name": "2", // "Examples: Juniper: xe-1/1/0, Brocade: eth2/5, Dell Hu-1/2"
+        "node": "repository://Node_novi01",
+        "type": "100GbpsE",
+        "encapsulation": "VLAN",  // what's the difference between label and encapsulation?
+        "label": "vlan",
+        "swapping_capability": {
+            "type": "string",
+            "enum": [
+                "vlan" // ?
+            ]
+        },
+        "label_range": [[1, 5], [100, 200], [34, 34]],
+        // mtu is desired because of INT and VXLAN
+        "inter-domain": "SAX:Switch1:Port2",  // full URN
+        "inter-domain": "sfsadfsadfdsfgsdfgfdsgfsdgfdsgfsd",   // shared string
+        // description
+        "status": "?????? // state and status could be multivalue. Boolean not enough [provisioning|decom|maintenance|up|down|optimal|suboptimal]"
+    },
+    "title": "Port"
+}
+
+3. link.json
+{
+    "type": "object",
+    "properties": {
+        "id": "urn:sdx:link:amlight:novi01_2_novi02_2",
+        "short_name": "",
+        "name": "novi01_2_novi02_2",
+        "ports": ["repository://Port_novi01_02", "repository://Port_novi02_02"],
+        "total_bandwidth":  // no an SDX issue. I suggest removing it.
+        {  //unit bps? minimum and maximum must be conditioned to the interface.type (10GE for instance)
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "bandwidth": { // 10Mbps - 1Tbps
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1000000 // no max, just > 0
+        },
+        "latency": {  // ns or ms?
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1000000 // no max, just > 0
+        },
+        "packet loss": { // %
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "availability": { // %
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "residual_bw": { // based on the last X time? what is X? // array with last 30s, last 5min, last hour, last day, last week
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        }
+    },
+    "title": "Link"
+}
+
+4. node.json
+

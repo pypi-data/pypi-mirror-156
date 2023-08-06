@@ -1,0 +1,11 @@
+{
+    "id": "id",
+    "label_range": [
+      "label_range",
+      "label_range"
+    ],
+    "name": "urn:sdx:port:amlight.net:Novi06:9",
+    "node": "urn:sdx:port:amlight.net:Novi06",
+    "short_name": "9",
+    "status": "up"
+  }

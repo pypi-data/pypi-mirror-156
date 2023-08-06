@@ -1,0 +1,45 @@
+{
+    "id": "urn:sdx:topology:",
+    "links":[
+        {
+            "id":"urn:sdx:link::Ampath5/177_JAX/249",
+            "name":"Ampath5/177_JAX/249",
+            "ports":[
+                {
+                    "id" : "urn:sdx:port::Ampath5:177"
+                },
+                {
+                    "id" : "urn:sdx:port::JAX:249"
+                }
+            ]
+        }
+    ],
+    "model_version":"1.0.0",
+    "name":"AmLight-OXP",
+    "nodes":[
+        {
+            "id":"urn:sdx:node::Ampath3",
+            "location":{
+                "address":"",
+                "latitude":"0.0",
+                "longitude":"-20.0"
+            },
+            "name":"Ampath3",
+            "ports":[
+                {
+                    "id":"urn:sdx:port::Ampath3:149",
+                    "mtu":"1500",
+                    "name":"Ampath3-eth149",
+                    "nni":"False",
+                    "node":"urn:sdx:node::Ampath3",
+                    "services":"l2vpn",
+                    "state":"enabled",
+                    "status":"up",
+                    "type":"10GE"
+                }
+            ]
+        }
+    ],
+    "timestamp":"20210811-214909",
+    "version":2
+}

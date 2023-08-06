@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Path",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "bandwidth_required": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "bandwidth_measured": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "latency_required": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "latency_measured": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "packetloss_required": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "packetloss_measured": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "links": {
+            "type": "array",
+            "items": [
+                {
+                    "$ref": "Link"
+                }
+            ]
+        }
+    },
+    "required": ["id", "name", "links"]
+}

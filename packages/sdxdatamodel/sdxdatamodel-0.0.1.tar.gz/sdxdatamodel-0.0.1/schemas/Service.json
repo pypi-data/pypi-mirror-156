@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Service",
+    "type": "object",
+    "properties": {
+        "owner": {
+            "type": "string"
+        },
+        "provisioning_system": {
+            "type": "string"
+        },
+        "provisioning_url": {
+            "type": "string"
+        },
+        "vendor": {
+            "not": [
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "monitoring_capability": {
+            "anyOf": [
+                {
+                    "enum": [
+                        "INT",
+                        "JTI",
+                        "counters"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": []
+}

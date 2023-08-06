@@ -1,0 +1,118 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Connection",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "class": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 7
+        },
+        "ingress_port": {
+            "$ref": "Port"
+        },
+        "egress_port": {
+            "$ref": "Port"
+        },
+        "end_time": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "start_time": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "multi_path": {
+            "type": "boolean"
+        },
+        "preempt": {
+            "type": "boolean"
+        },
+        "backup_path_type": {
+            "type": "string",
+            "enum": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        "exclusive_links": {
+            "type": "array",
+            "items": [
+                {
+                    "$ref": "Link"
+                }
+            ]
+        },
+        "inclusive_links": {
+            "type": "array",
+            "items": {
+                "$ref": "Link"
+            }
+        },
+        "bandwidth_required": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "bandwidth_measured": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "latency_required": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "latency_measured": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "packetloss_required": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "packetloss_measured": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "availability_required": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "availability_measured": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "paths": {
+            "type": "array",
+            "items": [
+                {
+                    "$ref": "Path"
+                }
+            ]
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "up",
+                "down",
+                "error"
+            ]
+        }
+    },
+    "required": ["id", "name", "ingress_port", "egress_port"]
+}

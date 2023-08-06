@@ -1,0 +1,44 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "sdxdatamodel"
+version = "0.0.1"
+authors = [
+    { name = "Y. Xin", email = "yxin@renci.org" }
+]
+description = "Topology and request description data model in JSON"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "grenml",
+    "networkx"
+]
+
+[project.urls]
+Home = "https://github.com/atlanticwave-sdx/datamodel"
+Issues = "https://github.com/atlanticwave-sdx/datamodel/issues"
+
+[project.optional-dependencies]
+test = [
+    "pytest >= 7.1.2",
+    "pytest-cov >= 3.0.0",
+    "matplotlib"
+]
+
+[options.packages.find]
+where = "."
+exclude = ["docs", "test"]
+
+[tool.pytest.ini_options]
+addopts = "--cov --cov-report html --cov-report term-missing"
+testpaths = [
+    "tests"
+]

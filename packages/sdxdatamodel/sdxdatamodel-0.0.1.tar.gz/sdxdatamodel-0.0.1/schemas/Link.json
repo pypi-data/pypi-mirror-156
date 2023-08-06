@@ -1,0 +1,92 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Link",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "short_name": {
+            "type": "string"
+        },
+        "ports": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "uniqueItems": true,
+            "items": [
+                {
+                    "$ref": "Port"
+                }
+            ]
+        },
+        "time_stamp": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "bandwidth": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "residual_bandwidth": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "latency": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 1000000
+        },
+        "packet_loss": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "availability": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "up",
+                "down",
+                "error"
+            ]
+        },
+        "state": {
+            "type": "string",
+            "enum": [
+                "enabled",
+                "disabled",
+                "maintenance"
+            ]
+        },
+        "private_attributes": {
+            "description": "This property is used to define a list of private properties that will not be exposed to outside users of SDX",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "measurement_period": {
+            "description": "This perperty is used to define the time period for measurement metrics, for example, 1 second, 1 day",
+            "type": "object",
+            "properties": {
+                "time_unit": {
+                    "type": "string"
+                },
+                "period": {
+                    "type": "number"
+                }
+            }
+        }
+    },
+    "required": ["id", "name", "ports"]
+}
