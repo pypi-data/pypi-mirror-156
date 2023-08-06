@@ -1,0 +1,11 @@
+version_handle/__init__.py,sha256=ScKoeB5zvpHUcBfS4BlmlkVF_ZxAUtBDirHEy1qOY0c,274
+version_handle/__version__.py,sha256=a1WV0b7IInmM0_ePhOFH4re_ORREGQynYxn6yUOXs9k,219
+version_handle/compare.py,sha256=r7tefjm-XelaVImEI2n94NrZKKBTW0_KSlimpCwXNi0,350
+version_handle/entities.py,sha256=yYXy2oQ8W-ChgsXDWDJghRA3CLtaT8QU14zNYGSpKWk,1952
+version_handle/generate.py,sha256=VQl8CJhadkFOtUsJc_eRxpOWiz8bhdMRBtn7v7jVa2k,309
+version_handle/python.py,sha256=XUmKLDwAbHPmZmvpVmTv1RI_D1hGF8FnObBTQDObQMo,206
+version_handle-0.1.1.dist-info/LICENSE,sha256=5mGKT-8JivLkYytFwVxN4KGDFE_yBq8WU3VdjGwRQ7k,1060
+version_handle-0.1.1.dist-info/METADATA,sha256=KHXDAZAGxCKOCu6rpMVL9yJhgHD61JYWU4-GvaLvFJA,2815
+version_handle-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+version_handle-0.1.1.dist-info/top_level.txt,sha256=6--ZfqixD-HAzosUBpFsKt3YBekzlITIuASR192Nds4,15
+version_handle-0.1.1.dist-info/RECORD,,
