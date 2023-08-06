@@ -1,0 +1,13 @@
+bsb_hdf5/__init__.py,sha256=NyM3SSN9DMx7PKr5fNBUI4-qkMuPIuxRH3CNMGpWWFM,2667
+bsb_hdf5/chunks.py,sha256=uuM-We2FcmycEVsTfIRAD1l3umS1rGPUnEQxS3nExGk,9668
+bsb_hdf5/connectivity_set.py,sha256=J9UoiIAor75qPIV2nMM9qvVEiMAx5AxxU5f1OWn_sCQ,12034
+bsb_hdf5/file_store.py,sha256=Dybo2v2Nl3AxJbZ8qmpcbO6Q6RWbDBu7zfo2-m-5BYU,2776
+bsb_hdf5/morphology_repository.py,sha256=GtSehV0JqoOKuqbeT3ZVJPP_QjdH5RZnZsMGKxtbVug,6639
+bsb_hdf5/placement_set.py,sha256=2TxgmV2KL4EYqb96rlrDojwzaSDisOBSzEiqLmMR7TM,8756
+bsb_hdf5/resource.py,sha256=fCfQ_fT3URgYELeW5R6sAWjmlQ1bW4kHOWDWTOhFwvA,3316
+bsb_hdf5-0.1.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+bsb_hdf5-0.1.1.dist-info/METADATA,sha256=i1AwNUlb26z4aa7WTByGf5GaAyk9Nj7tqn4FBH7QtNg,898
+bsb_hdf5-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bsb_hdf5-0.1.1.dist-info/entry_points.txt,sha256=QajDp3X4BkUavZA7aAsWxGnWWVcN2iqvWOjtnAe8-bg,31
+bsb_hdf5-0.1.1.dist-info/top_level.txt,sha256=sCXFG_Ve-Fc_F0WAuqYnYphjzkUoiGMwZ5lWsjhZsBg,9
+bsb_hdf5-0.1.1.dist-info/RECORD,,
