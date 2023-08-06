@@ -1,0 +1,11 @@
+pyjwt<3.0.0,>=2.1.0
+
+[all]
+Sphinx
+Jinja2<3.1
+Sphinx
+Jinja2<3.1
+
+[docs]
+Sphinx
+Jinja2<3.1
