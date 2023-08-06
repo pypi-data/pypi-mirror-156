@@ -1,0 +1,11 @@
+/home/u37166/pythonnet/pythonnet/runtime/Python.Runtime.deps.json
+/home/u37166/pythonnet/pythonnet/runtime/Python.Runtime.dll
+/home/u37166/pythonnet/pythonnet/runtime/Python.Runtime.pdb
+/home/u37166/pythonnet/src/runtime/obj/release/Python.Runtime.csproj.AssemblyReference.cache
+/home/u37166/pythonnet/src/runtime/obj/release/Python.Runtime.GeneratedMSBuildEditorConfig.editorconfig
+/home/u37166/pythonnet/src/runtime/obj/release/Python.Runtime.AssemblyInfoInputs.cache
+/home/u37166/pythonnet/src/runtime/obj/release/Python.Runtime.AssemblyInfo.cs
+/home/u37166/pythonnet/src/runtime/obj/release/Python.Runtime.csproj.CoreCompileInputs.cache
+/home/u37166/pythonnet/src/runtime/obj/release/Python.Runtime.sourcelink.json
+/home/u37166/pythonnet/src/runtime/obj/release/Python.Runtime.dll
+/home/u37166/pythonnet/src/runtime/obj/release/Python.Runtime.pdb

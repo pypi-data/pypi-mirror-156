@@ -1,0 +1,16 @@
+/home/u37166/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Test.deps.json
+/home/u37166/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Test.runtimeconfig.json
+/home/u37166/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Test.runtimeconfig.dev.json
+/home/u37166/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Test.dll
+/home/u37166/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Test.pdb
+/home/u37166/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Runtime.dll
+/home/u37166/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Runtime.pdb
+/home/u37166/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.csproj.AssemblyReference.cache
+/home/u37166/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.GeneratedMSBuildEditorConfig.editorconfig
+/home/u37166/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.AssemblyInfoInputs.cache
+/home/u37166/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.AssemblyInfo.cs
+/home/u37166/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.csproj.CoreCompileInputs.cache
+/home/u37166/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.csproj.CopyComplete
+/home/u37166/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.dll
+/home/u37166/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.pdb
+/home/u37166/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.genruntimeconfig.cache

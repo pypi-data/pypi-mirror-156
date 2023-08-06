@@ -1,0 +1,9 @@
+/tmp/tmp22hw8v0f/Python.Test.dll
+/tmp/tmp22hw8v0f/Python.Test.runtimeconfig.json
+/tmp/tmp22hw8v0f/Python.Test.pdb
+/tmp/tmp22hw8v0f/Microsoft.CSharp.dll
+/tmp/tmp22hw8v0f/System.Reflection.Emit.dll
+/tmp/tmp22hw8v0f/System.Reflection.Emit.ILGeneration.dll
+/tmp/tmp22hw8v0f/Python.Runtime.dll
+/tmp/tmp22hw8v0f/Python.Runtime.pdb
+/tmp/tmp22hw8v0f/Python.Test.deps.json
