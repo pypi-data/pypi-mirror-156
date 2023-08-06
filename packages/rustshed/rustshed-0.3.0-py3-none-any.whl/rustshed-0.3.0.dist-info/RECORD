@@ -1,0 +1,11 @@
+rustshed/__init__.py,sha256=z5a8eKiplnweZ910xq3viHhT4Nd8pf1wZhIGNqIqaIs,511
+rustshed/option_result.py,sha256=G1GipZEpXgfEMOEGTSBtHWLrGkETz85hf3ZLAktQmR0,27017
+rustshed/option_shortcut.py,sha256=lzu1VLjYAnL63ns06QtwlKWkDsUyWi8ABhlm1aP-4u0,469
+rustshed/panic.py,sha256=nq_rwzv-S4sU2RcZHUFwqkm8Fn3l2i57JqTfuxZV6d4,55
+rustshed/result_shortcut.py,sha256=z3cljr90iJPtJ0ewwZ9Mss5G7GSY4FxAxdeKxh6FTu0,504
+rustshed/to_option.py,sha256=m9qGfOeVypbErQLX7WDAHamwbIhJE4M39bqKQNdKUBI,774
+rustshed/to_result.py,sha256=GcbKr2rv38glhdaqQzfIn3vuKlsNywNJcXtcNH113rQ,1425
+rustshed-0.3.0.dist-info/LICENSE,sha256=dEh7oflRLG0rW-_fPOUyAdm0ajLa5HtGH6iDAVak4eI,1069
+rustshed-0.3.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+rustshed-0.3.0.dist-info/METADATA,sha256=uELY3dekT9pJlijRRqZaR1Ye-chkOUUK4wylP3daFeg,3466
+rustshed-0.3.0.dist-info/RECORD,,
