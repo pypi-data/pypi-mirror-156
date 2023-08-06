@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/myOOP/__init__.py
+src/myOOP.egg-info/PKG-INFO
+src/myOOP.egg-info/SOURCES.txt
+src/myOOP.egg-info/dependency_links.txt
+src/myOOP.egg-info/top_level.txt
+src/myOOP/class_factories/__init__.py
+src/myOOP/class_factories/named_tuple.py
