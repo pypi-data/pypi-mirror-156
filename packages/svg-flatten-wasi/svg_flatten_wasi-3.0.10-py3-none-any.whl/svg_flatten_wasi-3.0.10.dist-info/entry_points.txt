@@ -1,0 +1,2 @@
+[console_scripts]
+wasi-svg-flatten = svg_flatten_wasi:run_svg_flatten
