@@ -1,0 +1,12 @@
+certifi
+chardet
+charset-normalizer
+idna
+lxml
+peewee
+python-utils
+requests
+six
+tqdm
+unidecode
+urllib3
