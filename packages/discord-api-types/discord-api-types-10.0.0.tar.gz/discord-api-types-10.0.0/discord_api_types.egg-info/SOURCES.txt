@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+discord_api_types/__init__.py
+discord_api_types/applications.py
+discord_api_types/teams.py
+discord_api_types/users.py
+discord_api_types.egg-info/PKG-INFO
+discord_api_types.egg-info/SOURCES.txt
+discord_api_types.egg-info/dependency_links.txt
+discord_api_types.egg-info/top_level.txt

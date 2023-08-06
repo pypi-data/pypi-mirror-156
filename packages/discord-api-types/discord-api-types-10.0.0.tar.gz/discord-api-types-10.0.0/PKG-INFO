@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: discord-api-types
+Version: 10.0.0
+Summary: This is for discord api.
+Home-page: https://github.com/discord-api-py-org/discord-api-types
+Author: mc-fdc
+Author-email: masato190411@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# discord-api-types
+
