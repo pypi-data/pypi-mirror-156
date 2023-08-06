@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: GPRMC
+Version: 0.0.1
+Summary: convert gprmc data
+Home-page: https://gitlab.com/ak080495/gprmc
+Author: arunkumar
+Author-email: ak080495@gmail.com
+Project-URL: Bug Tracker, https://gitlab.com/ak080495/gprmc/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+long_description
