@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zincsearch-sdk
+Version: 0.2.4
+Summary: Zinc Search engine API
+Home-page: https://github.com/zinclabs/sdk-python-zincsearch
+Author: Zinc Search
+Author-email: team@openapitools.org
+License: Apache 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Zinc Search engine API
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+    Zinc Search engine API documents https://docs.zincsearch.com  # noqa: E501
+    
+
