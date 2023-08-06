@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+sinais.egg-info/PKG-INFO
+sinais.egg-info/SOURCES.txt
+sinais.egg-info/dependency_links.txt
+sinais.egg-info/requires.txt
+sinais.egg-info/top_level.txt
