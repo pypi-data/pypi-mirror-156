@@ -1,0 +1,7 @@
+requests
+click
+setuptools
+beautifulsoup4
+phonenumbers
+pyyaml
+tqdm
