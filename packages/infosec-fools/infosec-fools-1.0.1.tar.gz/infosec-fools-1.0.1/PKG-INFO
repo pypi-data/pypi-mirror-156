@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: infosec-fools
+Version: 1.0.1
+Summary: Are you going to Hacker Summer Camp 2022?
+License: MIT
+Author: Leron Gray
+Author-email: daddycocoaman@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: rich (>=12.4.4,<13.0.0)
+Requires-Dist: typer (>=0.4.1,<0.5.0)
+Description-Content-Type: text/markdown
+
+# infosec-fools
+
+<p align="center">
+  <img width="500" height="500" src="https://raw.githubusercontent.com/daddycocoaman/infosec-fools/main/docs/logo.png">
+
+
+Are you going to Hacker Summer Camp, [you fools](https://twitter.com/kim_crawley/status/1539701262802878467)? It's a basic yes or no question.
+
+## Installation and Usage
+
+```
+pipx install infosec-fools
+infosec-fools
+```
+
+## Screenshots
+
+ <img src="https://raw.githubusercontent.com/daddycocoaman/infosec-fools/main/docs/screenshot.png">
+
+
+</p>
