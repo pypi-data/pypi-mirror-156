@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/mplot.py
+src/mplot_plots.egg-info/PKG-INFO
+src/mplot_plots.egg-info/SOURCES.txt
+src/mplot_plots.egg-info/dependency_links.txt
+src/mplot_plots.egg-info/not-zip-safe
+src/mplot_plots.egg-info/top_level.txt
