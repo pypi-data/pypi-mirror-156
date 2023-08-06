@@ -1,0 +1,9 @@
+numpy
+scipy
+lmfit
+PyQt5
+matplotlib
+mne
+rpy2
+scikit-image
+pyexcel_ods

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: finnpy
+Version: 1.0.0
+Summary: Toolbox for the analysis of electrophysiological data
+Home-page: https://github.com/VoodooCode14/FiNN
+Download-URL: https://github.com/VoodooCode14/FiNN
+Author: Maximilian Scherer
+Author-email: maximilian.scherer@posteo.net
+License: GPLv3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+License-File: LICENSE
+
+A Python based toolbox for the analysis of electrophysiological data with a focus on the investigation of connectivity estimates.
