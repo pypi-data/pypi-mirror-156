@@ -1,0 +1,3 @@
+[celery.commands]
+prometheus = celery_redis_prometheus.exporter:main
+

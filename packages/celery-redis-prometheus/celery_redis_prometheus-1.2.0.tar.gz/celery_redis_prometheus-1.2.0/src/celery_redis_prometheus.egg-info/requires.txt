@@ -1,0 +1,7 @@
+celery>=5.0.0.dev0
+click
+prometheus_client
+setuptools
+
+[test]
+pytest
