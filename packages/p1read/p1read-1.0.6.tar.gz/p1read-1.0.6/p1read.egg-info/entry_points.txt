@@ -1,0 +1,2 @@
+[console_scripts]
+p1read = p1read.__main__:main

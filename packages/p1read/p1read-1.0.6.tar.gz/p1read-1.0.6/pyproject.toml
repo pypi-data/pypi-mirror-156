@@ -1,0 +1,30 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "p1read"
+version = "1.0.6"
+description = "Library and cmdline app for reading P1 energy monitor"
+readme = "README.md"
+authors = [{ name = "Niels Sterrenburg", email = "niels.sterrenburg@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["feed", "reader", "tutorial"]
+requires-python = ">=3.8"
+
+#[project.optional-dependencies]
+#dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/niels-sterrenburg/p1read"
+
+[project.scripts]
+p1read = "p1read.__main__:main"
+
