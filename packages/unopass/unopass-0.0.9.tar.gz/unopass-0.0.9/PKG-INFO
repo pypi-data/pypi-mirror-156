@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: unopass
+Version: 0.0.9
+Summary: unopass is a simple to use 1Password CLI python module to retrieve secrets using your biometrics in local scripts
+Home-page: https://github.com/amadotejada/unopass
+Author: Amado Tejada
+Author-email: tejada.amado@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# unopass
+
+##### Written by [Amado Tejada](https://www.linkedin.com/in/amadotejada/)
+
+
+### What is unopass?
+
+To move away from using secrets in env variables, or conf files, I needed a simple python solution for macOS to retrieve 1Password secrets via biometrics and use them in my local python code. I tried several solutions from 1Password and 3rdparty, but were lacking or overkill for my use case.
+
+*unopass* is a simple to use [1Password CLI](https://1password.com/downloads/command-line/) python module that allows you to retrieve secrets using your biometrics (via Touch ID) in scripts.
+
+<img src="https://i.ibb.co/rkqdTfY/gif1.gif" width="100%">
+
+Note: *unopass* is early alpha software and is not supported by 1Password.
+
+#### Requirements:
+ * [ 1Password CLI ](https://developer.1password.com/docs/cli/get-started#install) v2.4.1 or higher
+ * [ 1Password Mac App ](https://1password.com/mac/) v8.7.1 or higher
+ *  [Biometrics](https://developer.1password.com/docs/cli/get-started#turn-on-biometric-unlock) (Touch ID) enabled
+ * macOS 12.4 or higher
+
+### Security
+Authorization expires after 10 minutes of inactivity in the session. There's a hard limit of 12 hours, after which you must reauthorize.
+
+Learn about 1Password Biometrics Security [here](https://developer.1password.com/docs/cli/biometric-security)
+
+### Install
+
+Pypi:
+```bash
+pip3 install unopass
+```
+
+You can also import *unopass* from source.
+
+### How to use?
+Once the requirements are met, use *unopass* following the example below:
+
+```python
+from unopass import unopass as secret
+
+
+"""
+secret.unopass({VAULT}, {ITEM}, {FIELD})
+
+OPTIONAL: signout of the 1Password CLI session:
+    call signout() with deauthorize=True to signout of the 1Password session
+"""
+
+username = secret.unopass("work", "server", "username")
+password = secret.unopass("work", "server", "password")
+
+secret.signout(deauthorize=True)
+
+
+print(f"user: {username}\npass: {password}")
+```
+
+##
+### Disclaimer
+
+This software {*unopass*} has not been endorsed or supported by 1Password, AgileBits Inc. and is in no way associated with them and/or its subsidiaries or affiliate.
+
+### License
+
+*unopass* is released under the [MIT License](https://github.com/amadotejada/unopass/blob/main/LICENSE)
+####
