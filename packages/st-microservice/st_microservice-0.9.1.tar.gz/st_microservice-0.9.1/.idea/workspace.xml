@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="482470d1-710a-49dc-a996-7dc2662bf69a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GraphQL File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1woLCE8zNvttCxYqdX0VL8IxEfG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rtrad/PycharmProjects/ST-Microservice-Backend/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rtrad\PycharmProjects\ST-Microservice-Backend\src" />
+      <recent name="C:\Users\rtrad\PycharmProjects\ST-Microservice-Backend\src\st_microservice" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rtrad\PycharmProjects\ST-Microservice-Backend\src\st_microservice" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Build and Upload" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="py -m build ; py -m twine upload dist/*" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="482470d1-710a-49dc-a996-7dc2662bf69a" name="Changes" comment="" />
+      <created>1629119869692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629119869692</updated>
+      <workItem from="1629119871708" duration="1068000" />
+      <workItem from="1629122365676" duration="1292000" />
+      <workItem from="1629125063385" duration="718000" />
+      <workItem from="1629720842714" duration="610000" />
+      <workItem from="1629889096754" duration="106000" />
+      <workItem from="1631533528248" duration="1145000" />
+      <workItem from="1631620038476" duration="1876000" />
+      <workItem from="1631627042361" duration="907000" />
+      <workItem from="1632831812014" duration="254000" />
+      <workItem from="1632834325886" duration="192000" />
+      <workItem from="1632902655011" duration="122000" />
+      <workItem from="1632905098655" duration="463000" />
+      <workItem from="1633004825172" duration="236000" />
+      <workItem from="1635344245312" duration="1390000" />
+      <workItem from="1635417947147" duration="3103000" />
+      <workItem from="1635422905968" duration="3005000" />
+      <workItem from="1635500971893" duration="3754000" />
+      <workItem from="1635859773737" duration="1141000" />
+      <workItem from="1635861040603" duration="19000" />
+      <workItem from="1636458130353" duration="200000" />
+      <workItem from="1636462564093" duration="1080000" />
+      <workItem from="1636982865290" duration="465000" />
+      <workItem from="1637245398817" duration="486000" />
+      <workItem from="1637932313958" duration="914000" />
+      <workItem from="1638278408025" duration="728000" />
+      <workItem from="1638351720531" duration="1417000" />
+      <workItem from="1638357546131" duration="600000" />
+      <workItem from="1638359004373" duration="1575000" />
+      <workItem from="1638450968710" duration="19000" />
+      <workItem from="1641991278909" duration="269000" />
+      <workItem from="1641991722793" duration="13000" />
+      <workItem from="1642082147631" duration="788000" />
+      <workItem from="1642087673967" duration="77000" />
+      <workItem from="1642593046621" duration="636000" />
+      <workItem from="1642593694254" duration="81000" />
+      <workItem from="1643286812323" duration="135000" />
+      <workItem from="1643288159701" duration="462000" />
+      <workItem from="1643806969690" duration="723000" />
+      <workItem from="1644829249174" duration="236000" />
+      <workItem from="1644829527617" duration="865000" />
+      <workItem from="1645438109895" duration="15000" />
+      <workItem from="1645535989353" duration="633000" />
+      <workItem from="1646142431931" duration="126000" />
+      <workItem from="1646142660604" duration="200000" />
+      <workItem from="1647370303899" duration="869000" />
+      <workItem from="1647437446491" duration="772000" />
+      <workItem from="1647447271748" duration="134000" />
+      <workItem from="1647610827691" duration="22000" />
+      <workItem from="1647620300950" duration="566000" />
+      <workItem from="1648125167336" duration="82000" />
+      <workItem from="1648452066060" duration="877000" />
+      <workItem from="1648722788242" duration="638000" />
+      <workItem from="1648723528837" duration="31000" />
+      <workItem from="1648723863277" duration="775000" />
+      <workItem from="1650720401247" duration="55000" />
+      <workItem from="1650728077539" duration="806000" />
+      <workItem from="1651672393112" duration="647000" />
+      <workItem from="1651748870054" duration="602000" />
+      <workItem from="1651758493824" duration="143000" />
+      <workItem from="1651759646492" duration="563000" />
+      <workItem from="1652087591419" duration="4000" />
+      <workItem from="1654608263115" duration="2087000" />
+      <workItem from="1654672375613" duration="141000" />
+      <workItem from="1654686848692" duration="24000" />
+      <workItem from="1655985070532" duration="3353000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init">
+      <created>1629120018367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629120018367</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Moved authentication directive to field instead of resolver&#10;Added utils">
+      <created>1629889191185</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629889191185</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Made mutations automatically strict&#10;Added @filter directive">
+      <created>1632834507110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632834507110</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created Simple Table Resolver&#10;Adapted to TypeInspector to FieldDetail Object instead of separate filter and edit fields">
+      <created>1635345850122</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635345850122</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Renamed graphql to graphql_app&#10;Return graphq app instead of mounting it&#10;Use Route objects in starlette instead of add_route method">
+      <created>1635505612338</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1635505612338</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added boolean filter parser">
+      <created>1636463637539</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1636463637539</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed bug with field_type for filtering on decimal.Decimal">
+      <created>1636983317514</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1636983317514</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added db_model directive to link GQL Type to database model&#10;Added type_loader resolver&#10;Return primary keys along with type info&#10;Nicer way of handling session in DBmiddleware&#10;Updated to Ariadne 0.14.0">
+      <created>1638353591307</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638353591307</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Moved ModelTypes to utils">
+      <created>1638362002824</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638362002824</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added date type and filtering&#10;Fixed parsers returning typing">
+      <created>1642083636905</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642083636905</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Removed parse_date and use Date scalar from now on&#10;Added version of fallback resolver that raises an error on missing attribute instead of returning None&#10;Added requirement for correct graphql-core version">
+      <created>1643288612814</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643288612814</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Made string filter case insensitive">
+      <created>1643807587455</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643807587455</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated package requirements">
+      <created>1644831930814</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644831930814</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Split Security into its own module&#10;Added websocket support&#10;Added external script executor&#10;ignore permissions for __schema query&#10;Stopped slash redirects">
+      <created>1646142853583</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1646142853583</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Changed exeternal script executor to module mode for proper import mechanics">
+      <created>1647371169469</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1647371169469</updated>
+    </task>
+    <task id="LOCAL-00016" summary="External module executor redirects STDERR to STDOUT to combine them.">
+      <created>1647447398283</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1647447398283</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added permission and error handling to Subscriptions">
+      <created>1647620861624</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1647620861624</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added handling of Enum filtering">
+      <created>1648452938782</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1648452938782</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Updated subscription_permission_check to handle args">
+      <created>1648723406129</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1648723406129</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Updated external_module_executor to handle args&#10;Added websockets to requirements">
+      <created>1648732183723</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1648732183723</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Allow filtering on lists of primitives">
+      <created>1650729122930</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1650729122930</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added separate_filters function&#10;Handling type_inspector for non-null lists">
+      <created>1651760200575</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1651760200575</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Moved get_user functions here">
+      <created>1654612814028</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1654612814028</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <MESSAGE value="Moved authentication directive to field instead of resolver&#10;Added utils" />
+    <MESSAGE value="Made mutations automatically strict&#10;Added @filter directive" />
+    <MESSAGE value="Created Simple Table Resolver&#10;Adapted to TypeInspector to FieldDetail Object instead of separate filter and edit fields" />
+    <MESSAGE value="Renamed graphql to graphql_app&#10;Return graphq app instead of mounting it&#10;Use Route objects in starlette instead of add_route method" />
+    <MESSAGE value="Added boolean filter parser" />
+    <MESSAGE value="Fixed bug with field_type for filtering on decimal.Decimal" />
+    <MESSAGE value="Added db_model directive to link GQL Type to database model&#10;Added type_loader resolver&#10;Return primary keys along with type info&#10;Nicer way of handling session in DBmiddleware&#10;Updated to Ariadne 0.14.0" />
+    <MESSAGE value="Moved ModelTypes to utils" />
+    <MESSAGE value="Added date type and filtering&#10;Fixed parsers returning typing" />
+    <MESSAGE value="Removed parse_date and use Date scalar from now on&#10;Added version of fallback resolver that raises an error on missing attribute instead of returning None&#10;Added requirement for correct graphql-core version" />
+    <MESSAGE value="Made string filter case insensitive" />
+    <MESSAGE value="Updated package requirements" />
+    <MESSAGE value="Split Security into its own module&#10;Added websocket support&#10;Added external script executor&#10;ignore permissions for __schema query&#10;Stopped slash redirects" />
+    <MESSAGE value="Changed exeternal script executor to module mode for proper import mechanics" />
+    <MESSAGE value="External module executor redirects STDERR to STDOUT to combine them." />
+    <MESSAGE value="Added permission and error handling to Subscriptions" />
+    <MESSAGE value="Added handling of Enum filtering" />
+    <MESSAGE value="Updated subscription_permission_check to handle args" />
+    <MESSAGE value="Updated external_module_executor to handle args&#10;Added websockets to requirements" />
+    <MESSAGE value="Allow filtering on lists of primitives" />
+    <MESSAGE value="Added separate_filters function&#10;Handling type_inspector for non-null lists" />
+    <MESSAGE value="Moved get_user functions here" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved get_user functions here" />
+  </component>
+</project>
