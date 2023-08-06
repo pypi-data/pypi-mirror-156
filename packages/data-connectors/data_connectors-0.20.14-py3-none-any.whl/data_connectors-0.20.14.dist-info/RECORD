@@ -1,0 +1,12 @@
+data_connectors/__init__.py,sha256=VRob0uAvjoFPOBvpqf_1rd-laH4IOEd2qfqT2VtDzqs,391
+data_connectors/bigquery.py,sha256=xzrIBtCPErd9wurJPF1DlWryuSQkPIqMv_1PsrCRqIY,8773
+data_connectors/calendar.py,sha256=KiNq_YWO05HhgA4gdprPCk-xSfrOn58d95cBnoqz4-E,1733
+data_connectors/creds.py,sha256=kwCD5vbAU1JfMmtykK26p6GgFvDGdB57-Jv_i7T-VkM,363
+data_connectors/drive.py,sha256=58mAQ0FOqiave2ugYQ6AlG6CaraEixXA-IgaKLzGIQk,3011
+data_connectors/gsheets.py,sha256=7mh5a5zj-gF2H2AQly1XEwyvI1zCmN_LfARgiNW-V3U,1208
+data_connectors/mssql.py,sha256=eftRyljZ8OAjSQ_5NfBTiFE2r3tGeTntSOzk2dS7N5g,467
+data_connectors/slack.py,sha256=5BXMozyYuM9p-hBivqdnKQezB3A4nsHDyRTzj0JB3dQ,1800
+data_connectors/transform.py,sha256=xkqRDYO-xSZ6yIn9LZEwmsvmRWI-gOKJgyhwGS98YiA,1480
+data_connectors-0.20.14.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+data_connectors-0.20.14.dist-info/METADATA,sha256=gO51mdkFAi-9P9_S8zYfEjH3IB0Zroa8kMiHfDhXMbY,950
+data_connectors-0.20.14.dist-info/RECORD,,
