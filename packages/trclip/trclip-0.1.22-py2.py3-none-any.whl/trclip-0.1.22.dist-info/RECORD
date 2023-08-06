@@ -1,0 +1,10 @@
+trclip/__init__.py,sha256=E5gyz-D1fc8PBKTxEE3rRIdUYE_k-OJSlXBHJ7Z6nis,123
+trclip/cli.py,sha256=XlHXp3F496MCwp5QMfq_I4y44_Q1ijNjDgqMQ_ciCmk,396
+trclip/trclip.py,sha256=35nnRamHVAdWaPnjK2y9cpNqYeQsEkqNjZJCMwRgMHg,5215
+trclip/visualizer.py,sha256=TlYC_vOws-SJune9GwVBOkjseNGBTzwUY7ivGeK0G4Y,8225
+trclip-0.1.22.dist-info/LICENSE,sha256=Av_zpXNQcvtsKyJyguCkrdZEr3i6Upbz8umE5QGPYIY,1068
+trclip-0.1.22.dist-info/METADATA,sha256=QQOzlZJa7QFSX_qPCeh7ETD3ozY5qLV8vw9b5333TyY,1600
+trclip-0.1.22.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+trclip-0.1.22.dist-info/entry_points.txt,sha256=HyY550xSP4FkDK_Yf-c5A21JgSYS5VUiq9OHKzw4VgQ,44
+trclip-0.1.22.dist-info/top_level.txt,sha256=Xha01wmiXBBaSb14RE1UACOuCJjTsyTVrUO5R9DdYV0,7
+trclip-0.1.22.dist-info/RECORD,,
