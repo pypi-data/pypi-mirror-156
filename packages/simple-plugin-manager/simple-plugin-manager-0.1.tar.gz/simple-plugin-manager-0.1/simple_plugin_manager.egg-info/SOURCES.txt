@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+simple_plugin_manager/__init__.py
+simple_plugin_manager/loading.py
+simple_plugin_manager/plugin_manager.py
+simple_plugin_manager/test_plugins.py
+simple_plugin_manager.egg-info/PKG-INFO
+simple_plugin_manager.egg-info/SOURCES.txt
+simple_plugin_manager.egg-info/dependency_links.txt
+simple_plugin_manager.egg-info/top_level.txt
