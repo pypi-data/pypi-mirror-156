@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/racing/__init__.py
+src/racing/racing.py
+src/report_racing_pack.egg-info/PKG-INFO
+src/report_racing_pack.egg-info/SOURCES.txt
+src/report_racing_pack.egg-info/dependency_links.txt
+src/report_racing_pack.egg-info/top_level.txt
