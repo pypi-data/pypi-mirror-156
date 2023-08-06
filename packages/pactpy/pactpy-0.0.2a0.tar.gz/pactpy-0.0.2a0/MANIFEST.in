@@ -1,0 +1,4 @@
+include *.org
+recursive-include pactpy *.org
+recursive-include pactpy *.py
+recursive-include pactpy *.txt
