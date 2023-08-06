@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: rackfan
+Version: 0.3.0
+Summary: CLI utility to control NZXT grid+ fan
+Home-page: https://github.com/anroots/rackfan
+Author: Ando Roots
+Author-email: ando@sqroot.eu
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/anroots/rackfan
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+
+A fan controller script for the NZXT Grid+ v2 USB fan controller. Mainly for personal use; work in progress.
+
