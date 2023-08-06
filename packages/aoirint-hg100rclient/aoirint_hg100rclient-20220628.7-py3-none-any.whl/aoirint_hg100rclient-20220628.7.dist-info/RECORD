@@ -1,0 +1,10 @@
+aoirint_hg100rclient/__init__.py,sha256=rZjJU8VTlGmwFP5McRs_VJ4wJqG7z04WZ02ixBwtEWU,274
+aoirint_hg100rclient/client.py,sha256=-FRJd6nWBCs8Qf4_X-f0SgcZYHgGSoGjKFYG0SKnPW8,3385
+aoirint_hg100rclient/config.py,sha256=4PCFnwBlKRnXnCoIIZhsek7MOu0sxDS6gILPgRGEwts,1311
+aoirint_hg100rclient/script.py,sha256=k8zCQdAhu8Jmy31xNfJ35UhpBRWaZKKtPxwiKgGTQj4,1089
+aoirint_hg100rclient-20220628.7.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+aoirint_hg100rclient-20220628.7.dist-info/METADATA,sha256=EmOVLhSZPn7NbZ5yUHHMYgoA0cSGsOH_w9imWlONukQ,1307
+aoirint_hg100rclient-20220628.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aoirint_hg100rclient-20220628.7.dist-info/entry_points.txt,sha256=HsQ3iiJWd1nin7pNAZ62jAMn0lrIDOpoirlKKyhWG4I,61
+aoirint_hg100rclient-20220628.7.dist-info/top_level.txt,sha256=DXXJKzGfSwWBGCAkCiJ4u3zZGyJeUb9jlRwqyDIjgmE,21
+aoirint_hg100rclient-20220628.7.dist-info/RECORD,,
