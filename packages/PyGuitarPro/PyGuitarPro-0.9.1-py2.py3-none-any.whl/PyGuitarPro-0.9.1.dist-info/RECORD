@@ -1,0 +1,13 @@
+guitarpro/__init__.py,sha256=69bC71_VTm6Vw5TYQggLZUXCHFRMOOhV8rb9knFtFyU,90
+guitarpro/gp3.py,sha256=oWelyMfVSdUo8Wxy7-AXPEMoBNASsUT1-jT77T4G8ys,52478
+guitarpro/gp4.py,sha256=lWDICNJUHnN4zTQxKB9IYWajhBy2BYTa4SkKMMuPyAM,25355
+guitarpro/gp5.py,sha256=BXPhsUuXlbGSpzn2SciU2PSyrDRwsI8fC5gsu133QQA,49394
+guitarpro/io.py,sha256=YJpXiFXA53VtLf4w0f0WhzCDMFhEZDb2wnqL5VhuMEk,3920
+guitarpro/iobase.py,sha256=OyWD0Klm3pvBgzMnYbj1x4qikKhrtUF0-7GsEqaseAU,7214
+guitarpro/models.py,sha256=q1wHBYQf-dt69tA8otIJ6caPQV2vIjf3dbyK2fJ5EMo,37160
+guitarpro/utils.py,sha256=7YomMIp-HgMG8iHO30aCVMIuUPY-7kIVSmmH9LCMos8,382
+PyGuitarPro-0.9.1.dist-info/LICENSE,sha256=jhxgj_Bo2unwLKfth30xD0h3N28guEWKtWgVIpcDHvw,7651
+PyGuitarPro-0.9.1.dist-info/METADATA,sha256=s7fdihTlrY8DC2ERY7AY_QnJh0SD5kJCb2iR_KnCnw0,3420
+PyGuitarPro-0.9.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+PyGuitarPro-0.9.1.dist-info/top_level.txt,sha256=SuwjxgqhK-XJaY_XKcrY4GzC6Xywi6cVfrJvBf4UaXc,10
+PyGuitarPro-0.9.1.dist-info/RECORD,,
