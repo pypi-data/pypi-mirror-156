@@ -1,0 +1,7 @@
+Ninja
+joblib
+numpy
+pandas
+scikit-learn
+setuptools
+torch>=1.10.0
