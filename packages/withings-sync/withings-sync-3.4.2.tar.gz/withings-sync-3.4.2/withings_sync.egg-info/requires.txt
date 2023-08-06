@@ -1,0 +1,5 @@
+lxml
+requests
+charset-normalizer~=2.0.0
+httpx
+httpx[http2]
