@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: cdfutils
+Version: 1.0.3
+Summary: A general utility library of miscellaneous functions and classes
+Home-page: https://github.com/cdfarrow/cdfutils
+Author: Craig Farrow
+Platform: Windows
+Platform: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+License-File: LICENSE.txt
+
+# cdfutils
+
+A library of miscellaneous utility functions and classes
+that I've created for various projects. 
+
+## Config
+
++ ConfigStore: A generic configuration class that persists values in a text file.
+    
+## DotNet
+
+Some general helper classes for use with .NET Windows.Forms:
+
++ CustomMainMenu: Builds a full MainMenu from a supplied configuration.
++ CustomToolBar: Build a ToolBar from a supplied configuration.
+
+## Textfile
+
+Utility functions for reading from text files:
+
++ randomLine(): return a random line from a file.
++ randomSection(): return a random section (delimited by lines starting 
+    with #) from a file.
