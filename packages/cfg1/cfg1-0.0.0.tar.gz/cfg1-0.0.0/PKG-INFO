@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cfg1
+Version: 0.0.0
+Summary: A configuration library for Python3 projects
+Author: Dan Sikes
+Author-email: dansikes7@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
