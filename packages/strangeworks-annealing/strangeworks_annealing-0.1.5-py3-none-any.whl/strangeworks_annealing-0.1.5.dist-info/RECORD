@@ -1,0 +1,8 @@
+strangeworks/annealing/__init__.py,sha256=FD0jTnw_zaDxbaJDS-X7kk_OgLHr_dRU7dGkWZ_rLfA,225
+strangeworks/annealing/problem.py,sha256=RERs6ExZw7O-8f6_XSv8G92jcBMS1Ds2k9WnhCTHutI,1888
+strangeworks/annealing/sampler.py,sha256=fHMVxgYIX5ZXtpOdsOzWVJqahmcDY6p04KFsIR-DvyI,3574
+strangeworks/annealing/solver.py,sha256=bR_5Y4qiBhV1akZhWFh5P737w1pgMnnAl82tyhJjnqo,8222
+strangeworks_annealing-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+strangeworks_annealing-0.1.5.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+strangeworks_annealing-0.1.5.dist-info/METADATA,sha256=dbdBZ9pd5ZN5LMAGA__6y00aYtVaIgpj6eETwkRvih4,1196
+strangeworks_annealing-0.1.5.dist-info/RECORD,,
