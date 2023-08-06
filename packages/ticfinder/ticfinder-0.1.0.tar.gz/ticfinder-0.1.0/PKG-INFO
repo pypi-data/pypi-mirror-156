@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ticfinder
+Version: 0.1.0
+Summary: 
+Author: Christina Hedges
+Author-email: christina.l.hedges@nasa.gov
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: astropy (>=5.1,<6.0)
+Requires-Dist: astroquery (>=0.4.6,<0.5.0)
+Requires-Dist: mkdocs-include-markdown-plugin (>=3.4.0,<4.0.0)
+Requires-Dist: mkdocstrings-python (>=0.7.1,<0.8.0)
+Requires-Dist: numpy (>=1.23.0,<2.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: ticgen (>=1.0.4,<2.0.0)
+Requires-Dist: tqdm (>=4.64.0,<5.0.0)
