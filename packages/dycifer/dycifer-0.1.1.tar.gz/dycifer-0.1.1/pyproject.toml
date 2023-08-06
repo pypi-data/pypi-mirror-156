@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "dycifer"
+version = "0.1.1"
+description = "DYCIFER (Dynamic Circuits Performance Evaluation Tool) is a tool dedicated to the calculation of the performance indicators of integrated circuits operating at relatively high frequencies."
+authors = ["Diogo André S. Dias <das.dias6@gmail.com>"]
+keywords = ["dynamic integrated circuit", "performance evaluation", "tool", "eda"]
+license = "MIT"
+repository = "https://github.com/das-dias/dyciferpy"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+numpy = "^1.22.4"
+pandas = "^1.4.2"
+pyfiglet = "^0.8.post1"
+matplotlib = "^3.5.2"
+argparse = "^1.4.0"
+loguru = "^0.6.0"
+modelling-utils = "^0.2.11"
+tabulate = "^0.8.9"
+colorama = "^0.4.5"
+plotext = "^5.0.2"
+toml = "^0.10.2"
+Markdown = "^3.3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.autohooks]
+mode = "pipenv"
+pre-commit = ["autohooks.plugins.black"]
+
+[tool.autohooks.plugins.black]
+arguments = ["--fast"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dycifer = "dycifer.dycifer:cli"
+
+# convertion from pyproject to setup.py
+[tool.dephell.main]
+from={fromat="poetry", path="pyproject.toml"}
+to={format="setuppy", path="setup.py"}
