@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gameoflife_ndimage/__init__.py
+src/gameoflife_ndimage/simulation.py
+src/gameoflife_ndimage/video.py
+src/gameoflife_ndimage.egg-info/PKG-INFO
+src/gameoflife_ndimage.egg-info/SOURCES.txt
+src/gameoflife_ndimage.egg-info/dependency_links.txt
+src/gameoflife_ndimage.egg-info/requires.txt
+src/gameoflife_ndimage.egg-info/top_level.txt
