@@ -1,0 +1,9 @@
+sqlalchemy_ibmi/__init__.py,sha256=WYjTELCq_kMnXWuGJsK0BNWvKEc2yJNTU0Fr04rdOKU,1498
+sqlalchemy_ibmi/base.py,sha256=54Yq3d_RrVeHT8FPTO3Xu_G5uZp2fJOiYrKkQxgaRxk,47459
+sqlalchemy_ibmi/constants.py,sha256=nZ4tPOTPICM19e1dHHfsKBI0LVroU4fsKFGvWu1I9ZI,7431
+sqlalchemy_ibmi/requirements.py,sha256=mwBN7ZZrn4e_FtgI-smdloHZOqpgv8g8TwKjjtRjyPY,3582
+crazy_ibmi-0.9.4.dist-info/entry_points.txt,sha256=3CCpggWFadUnpDg8VTSD0muCw4sKaYuBhocHj0ZbP_4,64
+crazy_ibmi-0.9.4.dist-info/LICENSE,sha256=-1MUh_ZmkJ1IcjnaYTDiJW2MhvJuwmdM5qpXY7x_jFY,9164
+crazy_ibmi-0.9.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+crazy_ibmi-0.9.4.dist-info/METADATA,sha256=bZgh-i4wvltJTnHeCYqpE9wK9iNz65e-u826CnP7iJo,4623
+crazy_ibmi-0.9.4.dist-info/RECORD,,
