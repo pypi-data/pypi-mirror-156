@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vatic
+Version: 0.0.1
+Summary: Interface with prediction markets
+Home-page: https://ineffectivetheory.com/
+Author: Scott Lawrence
+Author-email: scott.lawrence-1@colorado.edu
+Project-URL: Nothing, https://example.com/
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Vatic
+

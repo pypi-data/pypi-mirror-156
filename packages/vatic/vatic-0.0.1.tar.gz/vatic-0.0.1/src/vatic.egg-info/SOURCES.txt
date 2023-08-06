@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/vatic/__init__.py
+src/vatic/__main__.py
+src/vatic/kalshi.py
+src/vatic/manifold.py
+src/vatic/metaculus.py
+src/vatic/predictit.py
+src/vatic.egg-info/PKG-INFO
+src/vatic.egg-info/SOURCES.txt
+src/vatic.egg-info/dependency_links.txt
+src/vatic.egg-info/top_level.txt
