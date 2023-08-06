@@ -1,0 +1,9 @@
+subscriber/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subscriber/podaac_access.py,sha256=N8wjsZw1gvwJznMGTWuzWmSz0VagfLSTiCRVHpgsSEc,15586
+subscriber/podaac_data_downloader.py,sha256=7BfBOtgVIfLohht3TGtpGar3TPdh1528EQZrbEHMpnU,13391
+subscriber/podaac_data_subscriber.py,sha256=vhp6x94boC0b1fTFKoEL3pOiai_IWqbyWooOeTimNT4,14765
+podaac_data_subscriber-1.10.2.dist-info/entry_points.txt,sha256=5OBEo3YDYRxuN0qnmaPHKVQXfE1sJLwtUmvc26DXQYE,143
+podaac_data_subscriber-1.10.2.dist-info/LICENSE,sha256=R7dyh1qASSepLWmOCpxRuWQn3iT3VFLfjmyCMSfCx1Q,11336
+podaac_data_subscriber-1.10.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+podaac_data_subscriber-1.10.2.dist-info/METADATA,sha256=3APGNX7UGmhxStiGICHN2tdwhk8xkoyyrHuMsi-fTYo,6479
+podaac_data_subscriber-1.10.2.dist-info/RECORD,,
