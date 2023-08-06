@@ -1,0 +1,28 @@
+from distutils.core import setup
+
+setup(
+  name = 'emoji.gg-tako',
+  packages = ['emojigg'],
+  version = '0.0.6',
+  license= 'MIT',
+  description = 'Unofficial API Wrapper for emoji.gg',
+  long_description_content_type="text/markdown",
+  long_description="# Please visit [the Repo](https://github.com/kayano-bot/EmojiGG-Wrapper#readme) for the README",
+  author = 'Pukima',
+  author_email = 'pukima@pukima.site',
+  url = 'https://github.com/kayano-bot/EmojiGG-Wrapper',
+  keywords = ['apiwrapper', 'emojigg'],
+  install_requires=[
+    'aiohttp',
+  ],
+  classifiers=[
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+  ],
+)
