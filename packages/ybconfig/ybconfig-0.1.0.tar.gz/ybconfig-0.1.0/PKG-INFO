@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ybconfig
+Version: 0.1.0
+Summary: Basic configuration management for YB
+Home-page: https://github.com/yellow-bird-consult/yb_config
+Author: Maxwell Flitton
+Author-email: maxwellflitton@gmail.com
+License: UNKNOWN
+Description: # yb_config
+        Basic pip module for managing config files 
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
