@@ -1,0 +1,3 @@
+[console_scripts]
+cruscoplanets_gui = cruscoplanets_gui.main_window:main
+
