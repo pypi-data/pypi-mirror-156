@@ -1,0 +1,11 @@
+vincaweb/__init__.py,sha256=aDCS7Jou6FjLYt_tyLDvvYf4xG_BvUM1csd7NxK1k4k,104
+vincaweb/routes.py,sha256=f26Wu3Cu2tApjUQaZxqVr9I6sUxjaRsFd8VgwXdJxwU,5955
+vincaweb/templates/basic_action_links.tpl,sha256=dagRrVSKI6FJKlAqpry0_a8zofaVDXzb_77A3lyKUkY,9155
+vincaweb/templates/edit.tpl,sha256=RR9dBAHgGHYylakumU9Uv_iYQEpDyvED3sOzPM7-gS0,2893
+vincaweb/templates/home_filter_form.tpl,sha256=GvH_hbn-DGJHbucX2qIkQEMIx6fbY82uI4Wi-8b9f0A,5908
+vincaweb/templates/preview_basic.tpl,sha256=eq5y_wf920klsvyxschDHr2M3va3R-tHmh5c5EXZPlg,1505
+vincaweb/templates/review_basic.tpl,sha256=A6FLMnexFpdmekDksYsW7Dx0bmtNonzww1paWOw-VJA,2956
+vincaweb/templates/review_verses.tpl,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vincaweb-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+vincaweb-0.1.0.dist-info/METADATA,sha256=XiNYw_HQo1kMDlLp7zbDqHcT3M2__9YKGIfvmBE1WJ8,480
+vincaweb-0.1.0.dist-info/RECORD,,
