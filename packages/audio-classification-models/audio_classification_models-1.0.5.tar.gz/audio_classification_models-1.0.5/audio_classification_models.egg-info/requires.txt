@@ -1,0 +1,10 @@
+numpy>=1.19.5
+gdown>=4.4.0
+tensorflow~=2.6
+ensorflow_probability~=0.14.1
+tensorflow_addons~=0.15.0
+tensorflow-io~=0.20
+tensorflow-gpu~=2.6
+ensorflow_probability~=0.14.1
+tensorflow_addons~=0.15.0
+tensorflow-io~=0.20
