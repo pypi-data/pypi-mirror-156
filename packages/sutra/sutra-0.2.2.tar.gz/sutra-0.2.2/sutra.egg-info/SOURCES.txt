@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+sutra/__init__.py
+sutra/removal_functions.py
+sutra.egg-info/PKG-INFO
+sutra.egg-info/SOURCES.txt
+sutra.egg-info/dependency_links.txt
+sutra.egg-info/requires.txt
+sutra.egg-info/top_level.txt
+testing/__init__.py
+testing/test_removal_functions.py
