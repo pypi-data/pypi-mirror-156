@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: p1read
+Version: 1.0.6
+Summary: Library and cmdline app for reading P1 energy monitor
+Author-email: Niels Sterrenburg <niels.sterrenburg@gmail.com>
+Project-URL: Homepage, https://github.com/niels-sterrenburg/p1read
+Keywords: feed,reader,tutorial
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
