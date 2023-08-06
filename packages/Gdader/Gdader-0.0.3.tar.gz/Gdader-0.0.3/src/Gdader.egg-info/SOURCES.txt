@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+src/Blammer/__init__.py
+src/Gdader.egg-info/PKG-INFO
+src/Gdader.egg-info/SOURCES.txt
+src/Gdader.egg-info/dependency_links.txt
+src/Gdader.egg-info/top_level.txt
