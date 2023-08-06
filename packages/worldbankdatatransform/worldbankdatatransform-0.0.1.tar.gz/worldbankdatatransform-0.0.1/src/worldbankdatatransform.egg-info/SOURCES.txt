@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/worldbankdatatransform.py
+src/worldbankdatatransform.egg-info/PKG-INFO
+src/worldbankdatatransform.egg-info/SOURCES.txt
+src/worldbankdatatransform.egg-info/dependency_links.txt
+src/worldbankdatatransform.egg-info/requires.txt
+src/worldbankdatatransform.egg-info/top_level.txt
