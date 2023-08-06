@@ -1,0 +1,10 @@
+boto3
+ccxt
+DateTimeRange
+fire
+pandas
+pyarrow
+pynamodb
+python-json-logger
+s3fs
+tqdm
