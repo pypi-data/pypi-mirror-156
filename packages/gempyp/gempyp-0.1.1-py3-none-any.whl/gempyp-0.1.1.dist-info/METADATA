@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: gempyp
+Version: 0.1.1
+Summary: An ecosystem of libraries useful for software development
+Home-page: https://github.com/Gemini-Solutions/gempyp
+License: MIT
+Author: Gemini Solutions-QA
+Requires-Python: >=3.10.4,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: certifi (>=2022.6.15,<2023.0.0)
+Requires-Dist: cffi (>=1.15.0,<2.0.0)
+Requires-Dist: charset-normalizer (>=2.0.12,<3.0.0)
+Requires-Dist: coloredlogs (>=15.0.1,<16.0.0)
+Requires-Dist: cryptography (>=37.0.2,<38.0.0)
+Requires-Dist: humanfriendly (>=10.0,<11.0)
+Requires-Dist: idna (>=3.3,<4.0)
+Requires-Dist: lxml (>=4.9.0,<5.0.0)
+Requires-Dist: ntlm-auth (>=1.5.0,<2.0.0)
+Requires-Dist: numpy (>=1.22.4,<2.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: pycparser (>=2.21,<3.0)
+Requires-Dist: pyreadline3 (>=3.4.1,<4.0.0)
+Requires-Dist: pytest (>=6.2.4,<7.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: pytz (>=2022.1,<2023.0)
+Requires-Dist: requests (>=2.28.0,<3.0.0)
+Requires-Dist: requests-ntlm (>=1.1.0,<2.0.0)
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Requires-Dist: urllib3 (>=1.26.9,<2.0.0)
+Project-URL: Documentation, https://gempyp.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/Gemini-Solutions/gempyp
+Description-Content-Type: text/markdown
+
+# pygem 
+
+[![Python](https://img.shields.io/badge/python-3.7-blue)]()
+[![codecov](https://codecov.io/gh/gem-shubhamshukla/pygem/branch/main/graph/badge.svg)](https://codecov.io/gh/gem-shubhamshukla/pygem)
+[![Documentation Status](https://readthedocs.org/projects/pygem/badge/?version=latest)](https://pygem.readthedocs.io/en/latest/?badge=latest)
+
+
+## Installation
+
+```bash
+$ pip install -i https://test.pypi.org/simple/ pygem
+```
+
+## Features
+
+- TODO
+
+## Dependencies
+
+- TODO
+
+## Usage
+
+- TODO
+
+## Documentation
+
+The official documentation is hosted on Read the Docs: https://pygem.readthedocs.io/en/latest/
+
+## Contributors
+
+We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/gem-shubhamshukla/pygem/graphs/contributors).
+
+### Credits
+
+This package was created with Cookiecutter and the UBC-MDS/cookiecutter-ubc-mds project template, modified from the [pyOpenSci/cookiecutter-pyopensci](https://github.com/pyOpenSci/cookiecutter-pyopensci) project template and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage).
+
