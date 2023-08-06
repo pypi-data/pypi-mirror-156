@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "odd-ge-adapter"
+version = "0.2.12"
+description = "ODD adapter to Great Expectations"
+license = "Apache-2.0"
+authors = ["Open Data Discovery <pypi@opendatadiscovery.org>"]
+homepage = "https://github.com/opendatadiscovery/odd-ge-adapter"
+repository = "https://github.com/opendatadiscovery/odd-ge-adapter"
+readme = 'README.md'
+keywords = ['great expectations', 'metadata', 'odd', 'open data discovery']
+
+[tool.poetry.dependencies]
+python = "^3.7"
+oddrn-generator = "^0.1.37"
+black = "^22.3.0"
+pytest = "^7.1.2"
+s3 = "^3.0.0"
+boto3 = "1.21.21"
+odd-collector-sdk = "0.2.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
