@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyuptimekuma
+Version: 0.0.1
+Summary: Simple Python wrapper for Uptime Kuma
+Home-page: https://github.com/jayakornk/pyuptimekuma
+Author: Jayakorn Karikan
+Author-email: jayakornk@gmail.com
+License: MIT License
+Keywords: pyuptimekuma,setuptools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# pyuptimekuma
+Simple Python wrapper for Uptime Kuma
