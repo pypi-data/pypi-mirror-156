@@ -1,0 +1,184 @@
+```
+usage: yawp [-h] [-H] [-V] [-v] [-N] [-U] [-g] [-w CHARS_PER_LINE] [-l]
+            [-c CONTENTS_TITLE] [-f FIGURES_TITLE] [-F CAPTION_PREFIX]
+            [-i INDEX_TITLE] [-j] [-J] [-e EVEN_LEFT] [-E EVEN_RIGHT]
+            [-o ODD_LEFT] [-O ODD_RIGHT] [-a] [-X] [-Y VIEW_PDF_BY]
+            [-P FILE_PDF] [-W CHAR_WIDTH] [-A CHAR_ASPECT] [-S PAPER_SIZE]
+            [-Z] [-L LEFT_MARGIN] [-R RIGHT_MARGIN] [-T TOP_MARGIN]
+            [-B BOTTOM_MARGIN] [-C]
+            [file]
+
+Yet Another Word Processor, an automatic word processor for text files, with PDF export
+
+                       I sound my barbaric yawp over the roofs of the world
+
+                                                               Walt Whitman
+
+The  name  "yawp"  here  means  Yet  Another Word Processor, and yawp is an
+automatic  (batch,  not  interactive)  word processor for plain text files,
+with  PDF  export.  If  you  really need all the features of a full-fledged
+WYSIWYG  word  processor as LibreOffice Writer, yawp is not for you. But if
+you  just  want to create a simple quick-and-dirty no-frills document, with
+yawp you can:
+
+    • edit a text file by your favorite editor
+    • run yawp in order to:
+        • backup read format and rewrite the text file
+        • export the text file into a PDF file
+        • view the PDF file for check or print
+    • possibly go back to the editor and update the text file, or finish
+
+                                           ┌───────┐
+                                           │backup │
+                                           │       │
+                                           │ file  │
+                                           └─────┬─┘    ┌─────────┐
+                                             △   │      │messages │
+                                             │   │undo  └─────────┘
+                                       backup│   │           △
+                                             │   ▽           │
+ ┌───────────┐                           ┌───┴───────┐       │
+ │           │         ┌───────┐  read   │           │ show  │
+ │           │  edit   │ text  ├────────▷│           ├───────┘    ┌───────┐
+ │  editor   ├────────▷│       │         │   yawp    │            │ PDF   │
+ │           │         │ file  │◁────────┤           ├───────────▷│       │
+ │           │         └───────┘ rewrite │           │ export     │ file  │
+ └───────────┘                           └───────────┘            └───┬───┘
+       △                                                              │
+       │                          check                               │
+       └──────────────────────────────────────────────────────────────┘
+
+Main features are:
+
+    • yawp  processes  in place a single text file, hereinafter referred to
+      simply as "the file"
+    • yawp  before  processing  creates  a  timestamped backup of the file,
+      allowing undo operation
+    • yawp  processing  is  driven by the text in the file and by arguments
+      only, not by commands or tags embedded in text
+    • yawp justifies text at left and right in:
+        • unindented paragraphs
+        • dot-marked indented paragraphs (as this one)
+    • yawp  accepts  unjustified  pictures  (as  schemas,  tables  and code
+      examples) freely intermixed with text
+    • yawp  adopts  an  ad  hoc  policy  for  Python  files, formatting the
+      docstrings but not the Python code
+    • yawp  performs  automatic  multi-level  renumbering  of  chapters and
+      inserts an automatic contents chapter in the file
+    • yawp performs automatic renumbering of figure captions and inserts an
+      automatic figures chapter in the file
+    • yawp  recognizes  relevant  subjects  (quoted  by '"') and inserts an
+      automatic index chapter in the file
+    • yawp cuts the file in pages, by inserting 2-lines page headers
+    • yawp  also has some limited graphic features, you can sketch pictures
+      with  segments (by '`') and arrowheads (by '^'), yawp redraws them by
+      suitable graphic characters (as in Figure above)
+    • yawp  exports  the  resulting  lines in PDF format, with control over
+      character  size  and page layout, and lets you view the generated PDF
+      file for check or print
+    • yawp  corrects  errors  made  by  CUPS-PDF  about  font size and page
+      margins, you can use default corrections or redefine them by yawp.cfg
+    • yawp is "stable", namely if after a yawp execution you run yawp again
+      on  the  same  file with the same arguments, the file content doesn't
+      change
+
+Believe it or not, everything has been kept as simple as possible.
+
+As  an  example, the Yawp Manual has been created as yawp.pdf from yawp.txt
+by typing:
+
+    │ $ yawp -v -w 80 -J -E 'Yawp 0.7.1 Manual' -X yawp.txt
+
+In order to install yawp, type:
+
+    │ $ sudo apt-get -y update
+    │ $ sudo apt-get -y install printer-driver-cups-pdf
+
+If you don't have pip, type:
+
+    │ $ sudo apt-get -y install python3-pip
+
+If you type at terminal:
+
+    │ $ pip3 install --upgrade yawp
+
+this command will:
+
+    • install current version of yawp if not present
+    • upgrade yawp to the current version if already installed
+
+If you see a message like this:
+
+    │ WARNING: The script yawp is installed in ... which is not on PATH.
+
+don't worry, a reboot should fix the problem.
+
+In  order  to use yawp, you need to know how it works. For any detail, view
+the yawp-generated Yawp Manual by typing:
+
+    │ $ yawp -H
+
+positional arguments:
+  file                  text file to be processed
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -H, --manual          view yawp-generated PDF Yawp Manual and exit
+  -V, --version         show program's version number and exit
+  -v, --verbose         display information and warning messages on stderr
+  -N, --no-format       run in no-format mode (default: run in format mode)
+  -U, --undo            run in undo mode (default: run in format mode)
+  -g, --graphics        redraw '`'-segments and '^'-arrowheads
+  -w CHARS_PER_LINE, --chars-per-line CHARS_PER_LINE
+                        line width in characters per line (default: '0' =
+                        automatic)
+  -l, --left-only       justify text lines at left only (default: at left and
+                        right)
+  -c CONTENTS_TITLE, --contents-title CONTENTS_TITLE
+                        title of contents chapter (default: 'contents')
+  -f FIGURES_TITLE, --figures-title FIGURES_TITLE
+                        title of figures chapter (default: 'figures')
+  -F CAPTION_PREFIX, --caption-prefix CAPTION_PREFIX
+                        first word of figure captions (default: 'figure')
+  -i INDEX_TITLE, --index-title INDEX_TITLE
+                        title of index chapter (default: 'index')
+  -j, --eject           insert page headers on full page
+  -J, --eject-pict-chap
+                        insert page headers on full page, on broken picture,
+                        and before level-1/contents/figures/index chapters
+  -e EVEN_LEFT, --even-left EVEN_LEFT
+                        headers of even pages, left (default: '%n/%N')
+  -E EVEN_RIGHT, --even-right EVEN_RIGHT
+                        headers of even pages, right (default: '%f.%e %Y-%m-%d
+                        %H:%M:%S')
+  -o ODD_LEFT, --odd-left ODD_LEFT
+                        headers of odd pages, left (default: '%c')
+  -O ODD_RIGHT, --odd-right ODD_RIGHT
+                        headers of odd pages, right (default: '%n/%N')
+  -a, --all-pages-E-e   put in all page headers -E at left and -e at right
+  -X, --export-view-pdf
+                        at end export and view PDF file
+  -Y VIEW_PDF_BY, --view-pdf-by VIEW_PDF_BY
+                        viewer for the exported PDF file (default: 'xdg-open')
+  -P FILE_PDF, --file-pdf FILE_PDF
+                        exported PDF file (default: '%P/%f.pdf')
+  -W CHAR_WIDTH, --char-width CHAR_WIDTH
+                        character width (default: '0' = automatic, unit:
+                        pt/in/mm/cm)
+  -A CHAR_ASPECT, --char-aspect CHAR_ASPECT
+                        character aspect ratio = char width / char height
+                        (default: '3/5', '1' = square grid)
+  -S PAPER_SIZE, --paper-size PAPER_SIZE
+                        portrait paper size width x height (default: 'A4' =
+                        '210x297mm', unit: pt/in/mm/cm)
+  -Z, --landscape       turn page by 90 degrees (default: portrait)
+  -L LEFT_MARGIN, --left-margin LEFT_MARGIN
+                        left margin (default: '2cm', unit: pt/in/mm/cm)
+  -R RIGHT_MARGIN, --right-margin RIGHT_MARGIN
+                        right margin (default: '-L', unit: pt/in/mm/cm)
+  -T TOP_MARGIN, --top-margin TOP_MARGIN
+                        top margin (default: '2cm', unit: pt/in/mm/cm)
+  -B BOTTOM_MARGIN, --bottom-margin BOTTOM_MARGIN
+                        bottom margin (default: '-T', unit: pt/in/mm/cm)
+  -C, --calibration     don't correct character size and page margins
+```
