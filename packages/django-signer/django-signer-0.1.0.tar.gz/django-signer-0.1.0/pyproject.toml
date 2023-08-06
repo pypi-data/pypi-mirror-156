@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "django-signer"
+version = "0.1.0"
+description = "A lightweight implementation of a signer based on Django TimestampSigner."
+authors = ["Natan Lima Viana <natanvianat16@gmail.com>"]
+license = "BSD-3-Clause"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
