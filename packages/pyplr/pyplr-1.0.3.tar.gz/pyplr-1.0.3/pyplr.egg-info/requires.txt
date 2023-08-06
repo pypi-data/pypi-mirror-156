@@ -1,0 +1,11 @@
+scipy
+matplotlib
+msgpack
+pyzmq
+requests
+numpy
+seaborn
+seabreeze
+numexpr
+tables
+pandas
