@@ -1,0 +1,2 @@
+[console_scripts]
+aswfdocker = aswfdocker.cli.aswfdocker:cli
