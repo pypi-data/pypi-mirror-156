@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-25 11:24+0200\n"
+"PO-Revision-Date: 2022-06-25 13:11+0000\n"
+"Last-Translator: Jonathan Weth <teckids@jonathanweth.de>\n"
+"Language-Team: Ukrainian <https://translate.edugit.org/projects/aleksis/"
+"aleksis-app-stoelindeling/uk/>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 "
+"? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > "
+"14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % "
+"100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"X-Generator: Weblate 4.12.1\n"
+
+#: aleksis/apps/stoelindeling/forms.py:41
+#: aleksis/apps/stoelindeling/forms.py:98
+#, fuzzy
+msgid "The group you selected has a fixed subject ({}). You are not allowed to use another subject than it."
+msgstr ""
+"Вибрана вами група має фіксовану тему ({}). Вам заборонено використовувати "
+"іншу тему, крім неї."
+
+#: aleksis/apps/stoelindeling/forms.py:90
+#, fuzzy
+msgid "Group cannot be the same as the original."
+msgstr "Група не може бути такою ж, як оригінал."
+
+#: aleksis/apps/stoelindeling/menus.py:6
+#: aleksis/apps/stoelindeling/models.py:33
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/list.html:8
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/list.html:9
+#, fuzzy
+msgid "Seating plans"
+msgstr "Плани розсаджень"
+
+#: aleksis/apps/stoelindeling/models.py:13
+msgid "Group"
+msgstr "Група"
+
+#: aleksis/apps/stoelindeling/models.py:15
+msgid "Subject"
+msgstr "Предмет"
+
+#: aleksis/apps/stoelindeling/models.py:17
+msgid "Room"
+msgstr "Кімната"
+
+#: aleksis/apps/stoelindeling/models.py:32
+#: aleksis/apps/stoelindeling/models.py:50
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/edit.html:47
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/view.html:6
+msgid "Seating plan"
+msgstr "План розміщення"
+
+#: aleksis/apps/stoelindeling/models.py:54
+msgid "Person"
+msgstr "Особа"
+
+#: aleksis/apps/stoelindeling/models.py:56
+#, fuzzy
+msgid "X position"
+msgstr "Позиція X"
+
+#: aleksis/apps/stoelindeling/models.py:57
+#, fuzzy
+msgid "Y position"
+msgstr "Y положення"
+
+#: aleksis/apps/stoelindeling/models.py:59
+#, fuzzy
+msgid "Seated"
+msgstr "Сидячи"
+
+#: aleksis/apps/stoelindeling/models.py:62
+#, fuzzy
+msgid "Seat"
+msgstr "Сидіння"
+
+#: aleksis/apps/stoelindeling/models.py:63
+#, fuzzy
+msgid "Seats"
+msgstr "Сидіння"
+
+#: aleksis/apps/stoelindeling/tables.py:15
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/view.html:27
+msgid "Edit"
+msgstr "Редагувати"
+
+#: aleksis/apps/stoelindeling/tables.py:21
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/view.html:33
+msgid "Delete"
+msgstr "Видалити"
+
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/copy.html:6
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/copy.html:7
+#, fuzzy
+msgid "Copy seating plan"
+msgstr "Копія плану розсадки"
+
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/copy.html:16
+#, fuzzy
+msgid "Seating plan to copy"
+msgstr "План місць для копіювання"
+
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/create.html:6
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/create.html:7
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/list.html:16
+#, fuzzy
+msgid "Create seating plan"
+msgstr "Створіть план розсадки"
+
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/edit.html:6
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/edit.html:12
+#, fuzzy
+msgid "Edit seating plan"
+msgstr "Редагувати план розсадки"
+
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/edit.html:10
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/view.html:11
+msgid "Back"
+msgstr "Назад"
+
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/edit.html:36
+#, fuzzy
+msgid "Available persons"
+msgstr "Доступні особи"
+
+#: aleksis/apps/stoelindeling/templates/stoelindeling/seating_plan/view.html:13
+#, fuzzy, python-format
+msgid "Seating plan: %(plan)s"
+msgstr "План місць: %(plan)s"
+
+#: aleksis/apps/stoelindeling/views.py:56
+#, fuzzy
+msgid "The seating plan has been created."
+msgstr "План розсадки створений."
+
+#: aleksis/apps/stoelindeling/views.py:80
+#, fuzzy
+msgid "The seating plan has been saved."
+msgstr "План місць збережено."
+
+#: aleksis/apps/stoelindeling/views.py:131
+#, fuzzy
+msgid "The seating plan has been updated."
+msgstr "План розсаджень оновлено."
+
+#: aleksis/apps/stoelindeling/views.py:170
+#, fuzzy
+msgid "The seating plan has been copied successfully."
+msgstr "План місць успішно скопійовано."
+
+#: aleksis/apps/stoelindeling/views.py:184
+msgid "The seating plan has been deleted."
+msgstr "План місць видалено."
