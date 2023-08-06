@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+dataoutsider/__init__.py
+dataoutsider/bubble_series.py
+dataoutsider/multi_chord.py
+dataoutsider/pie_tree.py
+dataoutsider.egg-info/PKG-INFO
+dataoutsider.egg-info/SOURCES.txt
+dataoutsider.egg-info/dependency_links.txt
+dataoutsider.egg-info/requires.txt
+dataoutsider.egg-info/top_level.txt
+dataoutsider/data/aircraft_2020.csv
+dataoutsider/data/athlete_events.csv
