@@ -1,0 +1,12 @@
+cobra>0.13
+bokeh>=0.12.1
+networkx
+optlang
+pytest
+scipy
+tqdm
+
+[equilibrator]
+equilibrator_cache>=0.2.6
+python_version>="3.6"
+equilibrator_api
