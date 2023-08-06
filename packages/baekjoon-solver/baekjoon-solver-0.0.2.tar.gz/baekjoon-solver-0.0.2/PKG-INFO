@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: baekjoon-solver
+Version: 0.0.2
+Summary: baekjoon solver 문제 풀이
+Home-page: https://github.com/2ykwang/baekjoon-solver
+License: MIT
+Keywords: baekjoon,online judge
+Author: Youngkwang Yang
+Author-email: immutable000@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Console
+Classifier: Framework :: Flake8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: beautifulsoup4 (==4.11.1)
+Requires-Dist: colorama (==0.4.5)
+Requires-Dist: httpx (==0.23.0)
+Project-URL: Repository, https://github.com/2ykwang/baekjoon-solver
+Description-Content-Type: text/markdown
+
+## baekjoon-solver
+
+### Installation
+```shell
+$ pip install baekjoon_solver
+```
+
+### Usage
+```shell
+$ solve <filename> -p <problem_id> # or
+$ solve <filename> # 문제 파일 가장 상단에 주석으로 문제번호 명시 (# <problem _id>)
+
+
+# ex)
+$ solve test.py -p 11403
+
+테스트 케이스 1
+============================= 통과 0.024250507354736328s =============================
+테스트 케이스 2
+============================= 통과 0.02342987060546875s =============================
+```
+
