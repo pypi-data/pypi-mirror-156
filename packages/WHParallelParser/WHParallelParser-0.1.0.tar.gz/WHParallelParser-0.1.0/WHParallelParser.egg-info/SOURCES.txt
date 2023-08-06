@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+./WHParallelParser/Iterator.py
+./WHParallelParser/Rules.py
+./WHParallelParser/WHParallelParser.py
+./WHParallelParser/__init__.py
+./WHParallelParser/api.py
+./WHParallelParser/data.py
+./WHParallelParser.egg-info/PKG-INFO
+./WHParallelParser.egg-info/SOURCES.txt
+./WHParallelParser.egg-info/dependency_links.txt
+./WHParallelParser.egg-info/requires.txt
+./WHParallelParser.egg-info/top_level.txt
