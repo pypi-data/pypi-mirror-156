@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/pynometrics.py
+src/pynometrics.egg-info/PKG-INFO
+src/pynometrics.egg-info/SOURCES.txt
+src/pynometrics.egg-info/dependency_links.txt
+src/pynometrics.egg-info/not-zip-safe
+src/pynometrics.egg-info/top_level.txt
