@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: models-manager
+Version: 1.0.1
+Summary: Models Manager
+Home-page: https://github.com/Nikita-Filonov/models_manager
+Author: Nikita Filonov
+Author-email: filonov.nikitkaa@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Models Manager
+
+Library for creating object models and for interacting with the database. Provides simple interface for that. For
+databases only PostgreSQL supported from the box.
+
+[Read the docs](https://nikita-filonov.github.io/models_manager/)
+
+
+Install library
+---
+
+```bash
+pip install models-manager
+```
+
