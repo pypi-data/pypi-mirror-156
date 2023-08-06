@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: oarepo-ui
+Version: 4.0.0
+Summary: UI module for invenio 3.5+
+Home-page: https://github.com/oarepo/oarepo-ui
+Author: Mirek Simek
+Author-email: miroslav.simek@vscht.cz
+License: MIT
+Keywords: oarepo ui
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Babel (>=2.8)
+Requires-Dist: Flask (>=2.1.2)
+Requires-Dist: invenio-records-resources (>=0.19.1)
+Provides-Extra: tests
+Requires-Dist: invenio-db (>=1.0.8) ; extra == 'tests'
+Requires-Dist: invenio-search[elasticsearch7] (<1.5.0,>=1.4.2) ; extra == 'tests'
+
+# OARepo API for UI
+
+
