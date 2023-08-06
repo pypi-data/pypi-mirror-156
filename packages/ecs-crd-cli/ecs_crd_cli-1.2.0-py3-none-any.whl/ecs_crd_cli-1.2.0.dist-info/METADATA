@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ecs-crd-cli
+Version: 1.2.0
+Summary: ECS Canary Release Command LIne deploy
+Home-page: https://github.com/AdventielFr/ecs-crd-cli.git
+Author: Adventiel
+Author-email: gwendall.garnier.fr@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: bleach (==3.1.0)
+Requires-Dist: boto3 (==1.9.220)
+Requires-Dist: botocore (==1.12.220)
+Requires-Dist: certifi (==2019.6.16)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: Click (==7.0)
+Requires-Dist: docutils (==0.15.2)
+Requires-Dist: humanfriendly (==4.18)
+Requires-Dist: idna (==2.8)
+Requires-Dist: jmespath (==0.9.4)
+Requires-Dist: pkginfo (==1.5.0.1)
+Requires-Dist: Pygments (==2.4.2)
+Requires-Dist: python-dateutil (==2.8.0)
+Requires-Dist: PyYAML (==5.1.2)
+Requires-Dist: readme-renderer (==24.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: s3transfer (==0.2.1)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: tqdm (==4.35.0)
+Requires-Dist: urllib3 (==1.25.3)
+Requires-Dist: webencodings (==0.5.1)
+
