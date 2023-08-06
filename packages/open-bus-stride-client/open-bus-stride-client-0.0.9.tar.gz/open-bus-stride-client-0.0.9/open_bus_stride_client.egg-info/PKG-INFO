@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: open-bus-stride-client
+Version: 0.0.9
+Provides-Extra: cli
+Provides-Extra: notebooks
+Provides-Extra: all
+License-File: LICENSE
