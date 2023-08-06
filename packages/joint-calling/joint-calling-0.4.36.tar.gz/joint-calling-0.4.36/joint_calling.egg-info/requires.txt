@@ -1,0 +1,8 @@
+cpg-utils
+pandas
+hail>=0.2.91
+click
+google-cloud-storage
+google-cloud-secret-manager
+gnomad
+analysis-runner
