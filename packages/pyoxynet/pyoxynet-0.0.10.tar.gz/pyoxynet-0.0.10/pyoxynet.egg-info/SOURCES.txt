@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyoxynet/__init__.py
+pyoxynet/utilities.py
+pyoxynet.egg-info/PKG-INFO
+pyoxynet.egg-info/SOURCES.txt
+pyoxynet.egg-info/dependency_links.txt
+pyoxynet.egg-info/requires.txt
+pyoxynet.egg-info/top_level.txt
+pyoxynet/data_test/__init__.py
