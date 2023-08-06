@@ -1,0 +1,6 @@
+setup.py
+yourfather/__init__.py
+yourfather.egg-info/PKG-INFO
+yourfather.egg-info/SOURCES.txt
+yourfather.egg-info/dependency_links.txt
+yourfather.egg-info/top_level.txt
