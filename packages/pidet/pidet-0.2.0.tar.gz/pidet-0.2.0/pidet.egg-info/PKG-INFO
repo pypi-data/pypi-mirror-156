@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pidet
+Version: 0.2.0
+Summary: Performance Ingest Data Extraction Tool
+Home-page: https://github.com/jokke-ilujo/pidet
+Author: Erno Kuvaja
+Author-email: ekuvaja@redhat.com
+License: Apache-2
+Project-URL: Bug Tracker, https://github.com/jokke-ilujo/pidet/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: System :: Benchmark
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+
+Python client for bringing perf data into InfluxDB2
