@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: soxaitool
+Version: 0.0.5
+Summary: A new tool for soxai research
+Project-URL: Bug Tracker, https://soxai.co.jp/
+Project-URL: Homepage, https://soxai.co.jp/
+Author-email: Jiabin Wang <wjbthu@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# SOXAI Research
+
+For more information:
+visit https://soxai.co.jp/
