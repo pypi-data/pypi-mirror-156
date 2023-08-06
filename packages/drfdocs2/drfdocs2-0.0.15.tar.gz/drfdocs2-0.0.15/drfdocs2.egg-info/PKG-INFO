@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: drfdocs2
+Version: 0.0.15
+Summary: Documentation for Web APIs made with Django 3.0 & 4.0 and DRF
+Home-page: http://www.drfdocs.com
+Author: Pavlo Komarov
+Author-email: pavlo.komarov@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
