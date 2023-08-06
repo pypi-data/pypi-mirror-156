@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ghicon/__init__.py
+ghicon/ghicon.py
+ghicon.egg-info/PKG-INFO
+ghicon.egg-info/SOURCES.txt
+ghicon.egg-info/dependency_links.txt
+ghicon.egg-info/requires.txt
+ghicon.egg-info/top_level.txt
