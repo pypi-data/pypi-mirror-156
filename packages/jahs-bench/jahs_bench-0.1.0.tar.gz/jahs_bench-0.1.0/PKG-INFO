@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: jahs-bench
+Version: 0.1.0
+Summary: The first collection of surrogate benchmarks for Joint Architecture and Hyperparameter Search.
+Home-page: https://github.com/automl/jahs_bench
+License: MIT
+Keywords: Joint Architecture and Hyperparameter Search,Neural Architecture Search,Hyperparameter Optimization,Benchmark,Deep Learning
+Author: Archit Bansal
+Author-email: bansala@cs.uni-freiburg.de
+Requires-Python: >=3.7.1,<=3.10
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: ConfigSpace (>=0.4.0,<0.5.0)
+Requires-Dist: joblib (>=1.1.0,<1.2.0)
+Requires-Dist: numpy (>=1.21.0,<1.22.0)
+Requires-Dist: pandas (>=1.3.0,<1.4.0)
+Requires-Dist: pyyaml (>=5,<6)
+Requires-Dist: requests (>=2.28.0,<3.0.0)
+Requires-Dist: scikit-learn (>=1.0.2,<1.1.0)
+Requires-Dist: xgboost (>=1.5.0,<1.6.0)
+Requires-Dist: yacs (>=0.1.8,<0.2.0)
+Project-URL: Documentation, https://automl.github.io/jahs_bench/
+Project-URL: Repository, https://github.com/automl/jahs_bench
+Description-Content-Type: text/markdown
+
+# JAHS-Bench-201
+
+The first collection of surrogate benchmarks for Joint Architecture and Hyperparameter Search (JAHS), built to also support and
+facilitate research on multi-objective, cost-aware and (multi) multi-fidelity optimization algorithms.
+
+
+![Python versions](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-informational)
+[![License](https://img.shields.io/badge/license-MIT-informational)](LICENSE)
+
+Please see our [documentation here](https://automl.github.io/jahs_bench_201/).
+
+
+## Installation
+
+Using pip
+
+```bash
+pip install git+https://github.com/automl/jahs_bench_201.git
+```
+
+Optionally, you can download the data required to use the surrogate benchmark ahead of time with
+```bash
+python -m jahs_bench.download --target surrogates
+```
+
+To test if the installation was successful, you can, e.g, run a minimal example with
+```bash
+python -m jahs_bench_examples.minimal
+```
+This should randomly sample a configuration, and display both the sampled configuration and the result of querying the
+surrogate for that configuration.
+
+## Using the Benchmark
+
+### Creating Configurations
+
+Configurations in our Joint Architecture and Hyperparameter (JAHS) space are represented as dictionaries, e.g.,:
+
+```python
+config = {
+    'Optimizer': 'SGD',
+    'LearningRate': 0.1,
+    'WeightDecay': 5e-05,
+    'Activation': 'Mish',
+    'TrivialAugment': False,
+    'Op1': 4,
+    'Op2': 1,
+    'Op3': 2,
+    'Op4': 0,
+    'Op5': 2,
+    'Op6': 1,
+    'N': 5,
+    'W': 16,
+    'Resolution': 1.0,
+}
+```
+
+For a full description on the search space and configurations see our [documentation](https://automl.github.io/jahs_bench_201/search_space).
+
+
+### Evaluating Configurations
+
+```python
+import jahs_bench
+
+benchmark = jahs_bench.Benchmark(task="cifar10", download=True)
+
+# Query a random configuration
+config = benchmark.sample_config()
+results = benchmark(config, nepochs=200)
+
+# Display the outputs
+print(f"Config: {config}")  # A dict
+print(f"Result: {results}")  # A dict
+```
+
+
+### More Evaluation Options
+
+The API of our benchmark enables users to either query a surrogate model (the default) or the tables of performance data, or train a
+configuration from our search space from scratch using the same pipeline as was used by our benchmark.
+However, users should note that the latter functionality requires the installation of `jahs_bench_201` with the
+optional `data_creation` component and its relevant dependencies. The relevant data can be automatically downloaded by
+our API. See our [documentation](https://automl.github.io/jahs_bench_201/usage) for details.
+
+## Benchmark Data
+
+We provide [documentation for the performance dataset](https://automl.github.io/jahs_bench_201/performance_dataset) used to train our surrogate models and [further information on our surrogate models](https://automl.github.io/jahs_bench_201/surrogate).
+
+
+## Experiments and Evaluation Protocol
+
+See [our experiments repository](https://github.com/automl/jahs_bench_201_experiments) and our [documentation](https://automl.github.io/jahs_bench_201/evaluation_protocol).
+
+## Leaderboards
+
+We maintain [leaderboards](https://automl.github.io/jahs_bench_201/leaderboards) for several optimization tasks and algorithmic frameworks.
+
