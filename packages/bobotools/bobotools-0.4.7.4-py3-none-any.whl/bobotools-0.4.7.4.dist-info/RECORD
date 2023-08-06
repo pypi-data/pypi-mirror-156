@@ -1,0 +1,11 @@
+bobotools/__init__.py,sha256=csZffLfQjvOcS4ABbw5Tbmi0JbEXCe5up_xWQLn1exw,75
+bobotools/com.py,sha256=4V_yAiGrzpwhZnGY6nJ9Vrw-1x9YgcCAWQLmXAyr_Ek,1898
+bobotools/img_tools.py,sha256=oVaeMJWNwQo448m1sNunfGH3UCe7oI2urxOko3Ty1z0,6556
+bobotools/list_tools.py,sha256=LPYPQ2hAeNFnVdrGZSVZAcex4tRdMH9TR1f6ICOR7rY,648
+bobotools/torch_tools.py,sha256=KBzFE5vKQdyd3CdWJCA1lA8fFVW78lzaaB7MQu_9Rsc,4029
+bobotools/txt_tools.py,sha256=3dB02QzyZEyeYW9oVzWvYWq7QkuZpdphjhn2kQ0dYCI,1478
+bobotools-0.4.7.4.dist-info/LICENSE,sha256=3n3ZS3JBYjXWCccQOXMWjXZ0v3GyN4gGsgtyQfAGAGE,1062
+bobotools-0.4.7.4.dist-info/METADATA,sha256=UupjI9y7jq1NvJeOAvrTuhAfJaMrcO0v-JxWGudL_xc,2079
+bobotools-0.4.7.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bobotools-0.4.7.4.dist-info/top_level.txt,sha256=upnCtb20Lo2Gu_Rq34j5Q10cd0GC2U4rscDzBNOZkuo,10
+bobotools-0.4.7.4.dist-info/RECORD,,
