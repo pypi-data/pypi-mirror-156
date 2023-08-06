@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: PYTHIG
+Version: 0.0.1
+Summary: Python made easy!
+Home-page: UNKNOWN
+Author: undefined
+Author-email: <ericmuzyk@icloud.com>
+License: UNKNOWN
+Keywords: python,made_easy,pythig
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Pythig makes python coding easier! Installs a range of packages for you, and does AI changes!
+
