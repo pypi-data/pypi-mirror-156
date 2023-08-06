@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: meteolib
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/cdruee/meteolib
+Author: Clemens Druee
+Author-email: druee@uni-trier.de
+License: EUPL-1.1
+Description: 
+            This module conatins standard equations, constants and conversions
+            for general use in meteorology. Values and methods herin are are either
+            adopted or recommended by the World meteorological Organization (WMO)
+            and similar bodies or backed by peer-reviewed literature and fully citable.
+        
+            Note: This module is in a stub state until publication of the corresponding paper
+            
+Keywords: meteorology
+Platform: UNKNOWN
