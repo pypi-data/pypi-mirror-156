@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: forcer
+Version: 0.0.1
+Summary: A library to use Brute Force methods
+Home-page: https://github.com/ju-dev-16
+Author: Jahid Uddin
+Author-email: jahidudd65@gmail.com
+License: MIT
+Keywords: brute force passwords dictionary ssh login
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+# PyForcer
+
+## ⛔ Disclaimer
+This library is not build for illegal activities. You have to make sure that all activities you do are legal. If your intentions are not correct, I ask you to not use this library. The only compatible library is paramiko.
+
+## 📄 Docs
+- **[SSHAuthentication](https://github.com/ju-dev-16/PyForce-Library/blob/main/docs/SSHAuthentication.md)**
+- **[GuessPasswordBy](https://github.com/ju-dev-16/PyForce-Library/blob/main/docs/GuessPasswordBy.md)**
+
+## 👨‍💻 About
+- 👨‍💻 **Contributor**: **[ju_dev](https://github.com/ju-dev-16)** | **[renaxdev](https://github.com/renaxdev)**
+- 👾 **Discord server**: **[Developer Forum DE](https://discord.gg/urvsvPqQ3T)**
+
+Change log
+==========
+
+0.0.1 (25/06/2022)
+------------------
+- First release
+
