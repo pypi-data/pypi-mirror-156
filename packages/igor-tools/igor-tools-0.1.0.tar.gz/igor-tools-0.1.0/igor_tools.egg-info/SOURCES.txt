@@ -1,0 +1,9 @@
+README.md
+setup.py
+igor_tools/__init__.py
+igor_tools/igor.py
+igor_tools.egg-info/PKG-INFO
+igor_tools.egg-info/SOURCES.txt
+igor_tools.egg-info/dependency_links.txt
+igor_tools.egg-info/requires.txt
+igor_tools.egg-info/top_level.txt
