@@ -1,0 +1,12 @@
+cloudconsolelink/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudconsolelink/clouds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudconsolelink/clouds/aws/__init__.py,sha256=01eiVh2F1HbESK-0kSkaKx2SndTAJNxNAvw1tFCyZYk,3703
+cloudconsolelink/clouds/aws/links.py,sha256=rofnjnj5OAZzldvBaj4n22WQBRfY122x7VS4Uzrmejo,31975
+cloudconsolelink/clouds/azure/__init__.py,sha256=Vn1lAtJPOZpimPaQGnMbGHUaeyzys9rC44pHnyp2gBU,1306
+cloudconsolelink/clouds/gcp/__init__.py,sha256=jNFj7z9OEDS3AiDc5m1t04yboDekRzfnqQfYDz3rvYU,6577
+cloudconsolelink/clouds/gcp/links.py,sha256=HhE3d7UtLc93leEQ-H3gWxegNSepgnNtIm03pGceGZ0,13205
+cloudconsolelink-1.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cloudconsolelink-1.0.3.dist-info/METADATA,sha256=DP8hsOGvYehnb7DNruynoGRO-8cR25vg1IzIh2qL0PA,3705
+cloudconsolelink-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cloudconsolelink-1.0.3.dist-info/top_level.txt,sha256=vqoTpldM3seUzENnjA_uc60cuS0HFhN_YuSWYC3qX2Y,17
+cloudconsolelink-1.0.3.dist-info/RECORD,,
