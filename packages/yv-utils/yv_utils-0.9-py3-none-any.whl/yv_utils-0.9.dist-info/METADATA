@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yv-utils
+Version: 0.9
+Summary: UNKNOWN
+Home-page: https://github.com/Varun221/yv_utils
+Author: Yerram Varun
+Author-email: yerram.varun@gmail.com
+License: MIT
+Keywords: utils package
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: tqdm
+Requires-Dist: pandas
+
+UNKNOWN
+
