@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+uitnlp/UITws_v1.py
+uitnlp/__init__.py
+uitnlp.egg-info/PKG-INFO
+uitnlp.egg-info/SOURCES.txt
+uitnlp.egg-info/dependency_links.txt
+uitnlp.egg-info/requires.txt
+uitnlp.egg-info/top_level.txt
