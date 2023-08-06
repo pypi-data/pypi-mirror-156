@@ -1,0 +1,5 @@
+setup.py
+src/academylibr.egg-info/PKG-INFO
+src/academylibr.egg-info/SOURCES.txt
+src/academylibr.egg-info/dependency_links.txt
+src/academylibr.egg-info/top_level.txt
