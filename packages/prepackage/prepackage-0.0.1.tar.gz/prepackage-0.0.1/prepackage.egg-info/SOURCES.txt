@@ -1,0 +1,8 @@
+README.md
+setup.py
+prepackage/__init__.py
+prepackage/prepackage.py
+prepackage.egg-info/PKG-INFO
+prepackage.egg-info/SOURCES.txt
+prepackage.egg-info/dependency_links.txt
+prepackage.egg-info/top_level.txt
