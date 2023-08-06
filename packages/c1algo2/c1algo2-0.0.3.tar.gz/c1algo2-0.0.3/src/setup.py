@@ -1,0 +1,1 @@
+packages = setuptools.find_packages()

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "c1algo2"
+version = "0.0.3"
+authors = [
+  { name="Isaac Shaha", email="ishaha@uvic.ca" },
+]
+description = "Company 1's Algorithm 2 Package for SENG 499 2022"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/seng499-company1/algorithm-2"
+"Bug Tracker" = "https://github.com/seng499-company1/algorithm-2/issues"
