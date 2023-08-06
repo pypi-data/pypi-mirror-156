@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rank-validation
+Version: 1.0.0
+Summary: creates a rank validation report
+Home-page: https://github.com/akashkdubey/ranking_validation
+Author: Akash Dubey
+Author-email: akashdubey826@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+License-File: LICENSE
+
+UNKNOWN
+
