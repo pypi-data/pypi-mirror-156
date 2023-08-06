@@ -1,0 +1,372 @@
+from __future__ import annotations
+import enum
+import struct
+
+from typing import Tuple, Deque, List, Final, Optional
+from spacepackets.log import get_console_logger
+
+SPACE_PACKET_HEADER_SIZE: Final = 6
+
+
+class PacketTypes(enum.IntEnum):
+    TM = 0
+    TC = 1
+
+
+class SequenceFlags(enum.IntEnum):
+    CONTINUATION_SEGMENT = 0b00
+    FIRST_SEGMENT = 0b01
+    LAST_SEGMENT = 0b10
+    UNSEGMENTED = 0b11
+
+
+class PacketSeqCtrl:
+    def __init__(self, seq_flags: SequenceFlags, seq_count: int):
+        if seq_count > pow(2, 14) - 1 or seq_count < 0:
+            raise ValueError(
+                f"Sequence count larger than allowed {pow(2, 14) - 1} or negative"
+            )
+        self.seq_flags = seq_flags
+        self.seq_count = seq_count
+
+    def __repr__(self):
+        return (
+            f"{self.__class__.__name__}(seq_flags={self.seq_flags!r}, "
+            f"seq_count={self.seq_count!r})"
+        )
+
+    def raw(self) -> int:
+        return self.seq_flags << 14 | self.seq_count
+
+
+class PacketId:
+    def __init__(self, ptype: PacketTypes, sec_header_flag: bool, apid: int):
+        if apid > pow(2, 11) - 1 or apid < 0:
+            raise ValueError(
+                f"Invalid APID, exceeds maximum value {pow(2, 11) - 1} or negative"
+            )
+        self.ptype = ptype
+        self.sec_header_flag = sec_header_flag
+        self.apid = apid
+
+    def __repr__(self):
+        return (
+            f"{self.__class__.__name__}(ptype={self.ptype!r}, "
+            f"sec_header_flag={self.sec_header_flag!r}, apid={self.apid!r})"
+        )
+
+    def raw(self) -> int:
+        return self.ptype << 12 | self.sec_header_flag << 11 | self.apid
+
+
+class SpacePacketHeader:
+    """This class encapsulates the space packet header.
+    Packet reference: Blue Book CCSDS 133.0-B-2"""
+
+    SEQ_FLAG_MASK = 0xC000
+
+    def __init__(
+        self,
+        packet_type: PacketTypes,
+        apid: int,
+        seq_count: int,
+        data_len: int,
+        sec_header_flag: bool = True,
+        seq_flags: SequenceFlags = SequenceFlags.UNSEGMENTED,
+        ccsds_version: int = 0b000,
+    ):
+        """Create a space packet header with the given field parameters
+
+        :param packet_type: 0 for Telemetery, 1 for Telecommands
+        :param apid: Application Process ID, should not be larger
+            than 11 bits, deciaml 2074 or hex 0x7ff
+        :param seq_count: Source sequence counter, should not be larger than 0x3fff or
+            decimal 16383
+        :param data_len: Contains a length count C that equals one fewer than the length of the
+            packet data field. Should not be larger than 65535 bytes
+        :param ccsds_version:
+        :param sec_header_flag: Secondary header flag, 1 or True by default
+        :param seq_flags:
+        :raises ValueError: On invalid parameters
+        """
+        if data_len > pow(2, 16) - 1 or data_len < 0:
+            raise ValueError(
+                f"Invalid data length value, exceeds maximum value of {pow(2, 16) - 1} or negative"
+            )
+        self.ccsds_version = ccsds_version
+        self.packet_id = PacketId(
+            ptype=packet_type, sec_header_flag=sec_header_flag, apid=apid
+        )
+        self.psc = PacketSeqCtrl(seq_flags=seq_flags, seq_count=seq_count)
+        self.data_len = data_len
+
+    @classmethod
+    def from_composite_fields(
+        cls,
+        packet_id: PacketId,
+        psc: PacketSeqCtrl,
+        data_length: int,
+        packet_version: int = 0b000,
+    ) -> SpacePacketHeader:
+        return SpacePacketHeader(
+            packet_type=packet_id.ptype,
+            ccsds_version=packet_version,
+            sec_header_flag=packet_id.sec_header_flag,
+            data_len=data_length,
+            seq_flags=psc.seq_flags,
+            seq_count=psc.seq_count,
+            apid=packet_id.apid,
+        )
+
+    def pack(self) -> bytearray:
+        """Serialize raw space packet header into a bytearray, using big endian for each
+        2 octet field of the space packet header"""
+        header = bytearray()
+        packet_id_with_version = self.ccsds_version << 13 | self.packet_id.raw()
+        header.extend(struct.pack("!H", packet_id_with_version))
+        header.extend(struct.pack("!H", self.psc.raw()))
+        header.extend(struct.pack("!H", self.data_len))
+        return header
+
+    @property
+    def packet_type(self):
+        return self.packet_id.ptype
+
+    @packet_type.setter
+    def packet_type(self, packet_type):
+        self.packet_id.ptype = packet_type
+
+    @property
+    def apid(self):
+        return self.packet_id.apid
+
+    @property
+    def sec_header_flag(self):
+        return self.packet_id.sec_header_flag
+
+    @sec_header_flag.setter
+    def sec_header_flag(self, value):
+        self.packet_id.sec_header_flag = value
+
+    @property
+    def seq_count(self):
+        return self.psc.seq_count
+
+    @property
+    def seq_flags(self):
+        return self.psc.seq_flags
+
+    @property
+    def header_len(self) -> int:
+        return SPACE_PACKET_HEADER_SIZE
+
+    @property
+    def packet_len(self) -> int:
+        """Retrieve the full space packet size when packed
+        :return: Size of the TM packet based on the space packet header data length field.
+        The space packet data field is the full length of data field minus one without
+        the space packet header.
+        """
+        return SPACE_PACKET_HEADER_SIZE + self.data_len + 1
+
+    @classmethod
+    def unpack(cls, space_packet_raw: bytes) -> SpacePacketHeader:
+        """Unpack a raw space packet into the space packet header instance
+        :raise ValueError: Raw packet length invalid
+        """
+        if len(space_packet_raw) < SPACE_PACKET_HEADER_SIZE:
+            logger = get_console_logger()
+            logger.warning("Packet size smaller than PUS header size!")
+            raise ValueError
+        packet_version = (space_packet_raw[0] >> 5) & 0b111
+        packet_type = PacketTypes((space_packet_raw[0] >> 4) & 0b1)
+        secondary_header_flag = (space_packet_raw[0] >> 3) & 0b1
+        apid = ((space_packet_raw[0] & 0b111) << 8) | space_packet_raw[1]
+        psc = struct.unpack("!H", space_packet_raw[2:4])[0]
+        sequence_flags = (psc & SpacePacketHeader.SEQ_FLAG_MASK) >> 14
+        ssc = psc & (~SpacePacketHeader.SEQ_FLAG_MASK)
+        return SpacePacketHeader(
+            packet_type=packet_type,
+            apid=apid,
+            sec_header_flag=bool(secondary_header_flag),
+            ccsds_version=packet_version,
+            data_len=struct.unpack("!H", space_packet_raw[4:6])[0],
+            seq_flags=SequenceFlags(sequence_flags),
+            seq_count=ssc,
+        )
+
+    def __repr__(self):
+        return (
+            f"{self.__class__.__name__}(packet_version={self.ccsds_version!r}, "
+            f"packet_type={self.packet_type!r}, apid={self.apid!r}, seq_cnt={self.seq_count!r}),"
+            f"data_len={self.data_len!r}, sec_header_flag={self.sec_header_flag!r},"
+            f"seq_flags={self.seq_flags!r}"
+        )
+
+
+class SpacePacket:
+    """Generic CCSDS space packet which consists of the primary header and can optionally include
+    a secondary header and a user data field.
+
+    If the secondary header flag in the primary header is set, the secondary header in mandatory.
+    If it is not set, the user data is mandatory."""
+
+    def __init__(
+        self,
+        sph: SpacePacketHeader,
+        secondary_header: Optional[bytes],
+        user_data_field: Optional[bytes],
+    ):
+        self.sph = sph
+        self.sec_header = secondary_header
+        self.user_data_field = user_data_field
+
+    def pack(self) -> bytearray:
+        """Pack the raw byte representation of the space packet
+        :raises ValueError: Mandatory fields were not supplied properly"""
+        packet = self.sph.pack()
+        if self.sph.sec_header_flag:
+            if self.sec_header is None:
+                raise ValueError(
+                    "Secondary header flag is set but no secondary header was supplied"
+                )
+            packet.extend(self.sec_header)
+        else:
+            if self.user_data_field is None:
+                raise ValueError(
+                    "Secondary header not present but no user data supplied"
+                )
+        if self.user_data_field is not None:
+            packet.extend(self.user_data_field)
+        return packet
+
+    @property
+    def apid(self):
+        return self.sph.apid
+
+    @property
+    def seq_count(self):
+        return self.sph.seq_count
+
+    @property
+    def sec_header_flag(self):
+        return self.sph.sec_header_flag
+
+
+def get_space_packet_id_bytes(
+    packet_type: PacketTypes,
+    secondary_header_flag: True,
+    apid: int,
+    version: int = 0b000,
+) -> Tuple[int, int]:
+    """This function also includes the first three bits reserved for the version.
+
+    :param version: Version field of the packet ID. Defined to be 0b000 in the space packet standard
+    :param packet_type: 0 for TM, 1 for TC
+    :param secondary_header_flag: Indicates presence of absence of a Secondary Header
+        in the Space Packet
+    :param apid: Application Process Identifier. Naming mechanism for managed data path, has 11 bits
+    :return:
+    """
+    byte_one = (
+        ((version << 5) & 0xE0)
+        | ((packet_type & 0x01) << 4)
+        | ((int(secondary_header_flag) & 0x01) << 3)
+        | ((apid & 0x700) >> 8)
+    )
+    byte_two = apid & 0xFF
+    return byte_one, byte_two
+
+
+def get_sp_packet_id_raw(
+    packet_type: PacketTypes, secondary_header_flag: bool, apid: int
+) -> int:
+    """Get packet identification segment of packet primary header in integer format"""
+    return PacketId(packet_type, secondary_header_flag, apid).raw()
+
+
+def get_sp_psc_raw(seq_flags: SequenceFlags, seq_count: int) -> int:
+    return PacketSeqCtrl(seq_flags=seq_flags, seq_count=seq_count).raw()
+
+
+def get_apid_from_raw_space_packet(raw_packet: bytes) -> int:
+    """Retrieve the APID from the raw packet.
+
+    :param raw_packet:
+    :raises ValueError: Passed bytearray too short
+    :return:
+    """
+    if len(raw_packet) < 6:
+        raise ValueError
+    return ((raw_packet[0] & 0x7) << 8) | raw_packet[1]
+
+
+def get_total_space_packet_len_from_len_field(len_field: int):
+    """Definition of length field is: C = (Octets in data field - 1).
+    Therefore, octets in data field in len_field plus one. The total space packet length
+    is therefore len_field plus one plus the space packet header size (6)"""
+    return len_field + SPACE_PACKET_HEADER_SIZE + 1
+
+
+def parse_space_packets(
+    analysis_queue: Deque[bytearray], packet_ids: Tuple[int]
+) -> List[bytearray]:
+    """Given a deque of bytearrays, parse for space packets. Any broken headers will be removed.
+    If a packet is detected and the
+    Any broken tail packets will be reinserted into the given deque
+    :param analysis_queue:
+    :param packet_ids:
+    :return:
+    """
+    tm_list = []
+    concatenated_packets = bytearray()
+    if not analysis_queue:
+        return tm_list
+    while analysis_queue:
+        # Put it all in one buffer
+        concatenated_packets.extend(analysis_queue.pop())
+    current_idx = 0
+    if len(concatenated_packets) < 6:
+        return tm_list
+    # Packet ID detected
+    while True:
+        if current_idx + 6 >= len(concatenated_packets):
+            break
+        current_packet_id = (
+            concatenated_packets[current_idx] << 8
+        ) | concatenated_packets[current_idx + 1]
+        if current_packet_id in packet_ids:
+            result, current_idx = __handle_packet_id_match(
+                concatenated_packets=concatenated_packets,
+                analysis_queue=analysis_queue,
+                current_idx=current_idx,
+                tm_list=tm_list,
+            )
+            if result != 0:
+                break
+        else:
+            # Keep parsing until a packet ID is found
+            current_idx += 1
+    return tm_list
+
+
+def __handle_packet_id_match(
+    concatenated_packets: bytearray,
+    analysis_queue: Deque[bytearray],
+    current_idx: int,
+    tm_list: List[bytearray],
+) -> (int, int):
+    next_packet_len_field = (
+        concatenated_packets[current_idx + 4] << 8
+    ) | concatenated_packets[current_idx + 5]
+    total_packet_len = get_total_space_packet_len_from_len_field(next_packet_len_field)
+    # Might be part of packet. Put back into analysis queue as whole
+    if total_packet_len > len(concatenated_packets):
+        analysis_queue.appendleft(concatenated_packets)
+        return -1, current_idx
+    else:
+        tm_list.append(
+            concatenated_packets[current_idx : current_idx + total_packet_len]
+        )
+        current_idx += total_packet_len
+    return 0, current_idx
