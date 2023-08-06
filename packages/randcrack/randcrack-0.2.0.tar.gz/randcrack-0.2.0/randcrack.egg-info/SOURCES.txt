@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+randcrack/__init__.py
+randcrack/randcrack.py
+randcrack.egg-info/PKG-INFO
+randcrack.egg-info/SOURCES.txt
+randcrack.egg-info/dependency_links.txt
+randcrack.egg-info/top_level.txt
