@@ -1,0 +1,202 @@
+Metadata-Version: 2.1
+Name: steel-seal
+Version: 0.0.4
+Summary: 简单、易用且支持防重放的签名工具
+Home-page: UNKNOWN
+Author: afeyer
+Author-email: afeyer@h5base.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+
+# steel-seal
+简单、易用且支持防重放的签名工具。
+
+### 安装模块
+
+在你的项目下执行下面命令进行安装:
+
+> pip install steel-seal
+
+
+### 快速开始
+
+#### 生成一个新的令牌
+为了便于使用，`steel_seal` 实现了 `generate_token` 函数用于生成一个新的令牌。
+
+```python
+from steel_seal import SteelSeal
+
+token = SteelSeal.generateToken()
+
+print(token) # 输出: 2sqlFObdoqqYRpUFAGiGQecCwJ3Qw9je
+```
+
+#### 对请求进行签名和验签
+`steel_seal`主要用于对 `Http/Https`请求进行签名和验签。为保证当前请求不被篡改，建议对请求的 `Query` 参数以及 `Body` 参数进行拼接后并使用 `signature` 或 `verify` 方法对数据进行签名和验签。
+
+1、对Get请求进行签名和验签
+
+示例：
+```js
+fetch("https://127.0.0.1:8080/api/message/list?self_only=0", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+  },
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+```
+
+签名（伪代码）：
+```python
+# 使用令牌初始化实例
+import json
+import requests
+from steel_seal import SteelSeal
+
+token = "2sqlFObdoqqYRpUFAGiGQecCwJ3Qw9je"
+steel_ins = SteelSeal(token)
+
+# ......
+
+# 把查询参数组装成Dict并序列化成JSON字符串
+query_str = dict(self_only=0)
+sig_data = json.dumps(query_str) # 输出：'{"self_only":0}
+
+# 使用 signature 方法对数据进行签名
+# 输出：
+#       {
+#         timestamp: 1655956125,
+#         nonce: '5yqXByu9',
+#         signature: '6465a0b2ff69712c00a3430b26f4e1089c3ff851'
+#       }
+sig_info = steel_ins.signature(sig_data)
+
+# 把签名对象内的timestamp、nonce、signature拼接到query参数内并向目标服务发起请求
+# 输出：https://127.0.0.1:8080/api/message/list?self_only=0&timestamp=1655956125&nonce=5yqXByu9&signature=6465a0b2ff69712c00a3430b26f4e1089c3ff851
+request_url = f'https://127.0.0.1:8080/api/message/list?self_only=0&timestamp={sig_info.timestamp}&nonce={sig_info.nonce}&signature={sig_info.signature}'
+result = requests.get(request_url)
+
+# TODO: 实现相关的业务逻辑
+print(result)
+```
+
+验签（伪代码）：
+```python
+# 使用令牌初始化实例
+import json
+from steel_seal import SteelSeal
+
+token = "2sqlFObdoqqYRpUFAGiGQecCwJ3Qw9je"
+steel_ins = SteelSeal(token)
+
+# ......
+
+# 从请求的query中解析timestamp、nonce、signature参数组装成签名对象,比如：
+sig_info = dict(
+    timestamp=1655956125,
+    nonce='5yqXByu9',
+    signature='6465a0b2ff69712c00a3430b26f4e1089c3ff851'
+)
+
+# 从请求的query中解析其它参数组装成Object并序列化成JSON字符串
+query_str = dict(self_only=0)
+sig_data = json.dumps(query_str) # 输出：{"self_only":0}
+
+# 使用 verify 方法对数据进行验签
+is_valid = steel_ins.verify(sig_data, sig_info)
+
+# 如果签名无效，则拒绝当前请求
+if not is_valid:
+    # TODO：拒绝请求
+    return
+
+# TODO: 实现具体的业务逻辑
+```
+
+2、对Post请求进行签名和验签
+
+示例：
+```js
+fetch("https://127.0.0.1:8080/api/message/modify", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+  }, 
+    "data": '{"id":1,"content":"hello, world"}',
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
+```
+
+签名（伪代码）：
+```python
+# 使用令牌初始化实例
+import json
+import requests
+from steel_seal import SteelSeal
+
+token = "2sqlFObdoqqYRpUFAGiGQecCwJ3Qw9je"
+steel_ins = SteelSeal(token)
+
+# ......
+
+# 把body参数组装成Dict并序列化成JSON字符串
+body_str = dict(id=1, content="hello, world")
+sig_data = json.dumps(body_str) # 输出：{"id":1,"content":"hello, world"}
+
+# 使用 signature 方法对数据进行签名
+# 输出：
+#       {
+#         timestamp: 1655956125,
+#         nonce: '5yqXByu9',
+#         signature: '6465a0b2ff69712c00a3430b26f4e1089c3ff851'
+#       }
+sig_info = steel_ins.signature(sig_data)
+
+# 把签名对象内的timestamp、nonce、signature拼接到query参数内并向目标服务发起请求
+# 输出：https://127.0.0.1:8080/api/message/modify?timestamp=1655956125&nonce=5yqXByu9&signature=6465a0b2ff69712c00a3430b26f4e1089c3ff851
+request_url = f'https://127.0.0.1:8080/api/message/modify?timestamp={sig_info.timestamp}&nonce={sig_info.nonce}&signature={sig_info.signature}'
+result = requests.post(request_url, data=body_str, headers={"Content-Type": "application/json;"})
+
+# TODO: 实现相关的业务逻辑
+print(result)
+```
+
+验签（伪代码）：
+```python
+# 使用令牌初始化实例
+import json
+from steel_seal import SteelSeal
+
+token = "2sqlFObdoqqYRpUFAGiGQecCwJ3Qw9je"
+steel_ins = SteelSeal(token)
+
+# ......
+
+# 从请求的query中解析timestamp、nonce、signature参数组装成签名对象,比如：
+sig_info = dict(
+    timestamp=1655956125,
+    nonce='5yqXByu9',
+    signature='6465a0b2ff69712c00a3430b26f4e1089c3ff851'
+)
+
+# 从请求中读取原始的raw_body并使用verify方法进行验签
+raw_body = "..."
+is_valid = steel_ins.verify(raw_body, sig_info)
+
+# 如果签名无效，则拒绝当前请求
+if not is_valid:
+    # TODO：拒绝请求相关逻辑
+    return
+
+# TODO: 实现具体的业务逻辑
+```
+
