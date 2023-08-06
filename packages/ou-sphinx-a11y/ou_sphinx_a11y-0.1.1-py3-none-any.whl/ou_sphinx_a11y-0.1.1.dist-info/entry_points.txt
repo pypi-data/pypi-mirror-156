@@ -1,0 +1,3 @@
+[sphinx.builders]
+a11ycheck=ou_sphinx_a11y
+
