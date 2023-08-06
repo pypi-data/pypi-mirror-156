@@ -1,0 +1,8 @@
+cellshape_cluster/__init__.py,sha256=Xpu4w4K078HhqfvGiLJqNY_LJWxknGTjlwJ8JDQ0eaw,87
+cellshape_cluster/clustering_layer.py,sha256=OSY-z8hzav8Bodoz0jm2tTIKbW-DHgFYPrrWdwxUGkA,1019
+cellshape_cluster/deep_embedded_clustering.py,sha256=ZVtVEYwVlsYKzo9bUF3Ktk8cvmfcs8lq5hDukuD_sx8,682
+cellshape_cluster/training_functions.py,sha256=6rNO-UCS58qUckaCIyiqfF62TWRgphZ1iWKIyCTdrNI,4099
+cellshape_cluster-0.0.5rc0.dist-info/METADATA,sha256=X84LGIfDR1-vw-PL-SiT2FTG53UlI6_VW6mgfFaXXbY,6446
+cellshape_cluster-0.0.5rc0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cellshape_cluster-0.0.5rc0.dist-info/top_level.txt,sha256=7sY5VUnUESnV-S12v6z03AdjcZ7oabfCnp5ksD0gK7A,18
+cellshape_cluster-0.0.5rc0.dist-info/RECORD,,
