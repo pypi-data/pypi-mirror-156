@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: st-speckmol
+Version: 0.0.2
+Summary: Streamlit component for for Speck molecule visualization.
+Home-page: https://github.com/avrabyt/Specklit
+Author: Avratanu Biswas
+Author-email: avrab.yt@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: streamlit (>=0.63)
+Requires-Dist: ipyspeck (==0.6.1)
+Requires-Dist: ipywidgets (==7.7.0)
+
+Streamlit component for visualizing SPECK molecules - https://github.com/wwwtyro/speck
