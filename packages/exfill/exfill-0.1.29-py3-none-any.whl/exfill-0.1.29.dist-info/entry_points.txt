@@ -1,0 +1,4 @@
+[console_scripts]
+script-run=exfill.extractor:main
+script-tests=tests.runtests:main
+
