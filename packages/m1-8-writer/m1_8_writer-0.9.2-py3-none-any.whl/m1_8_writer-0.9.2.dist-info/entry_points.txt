@@ -1,0 +1,3 @@
+[console_scripts]
+m18write = m18writer.writer:main
+
