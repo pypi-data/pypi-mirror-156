@@ -1,0 +1,6 @@
+README.md
+setup.py
+SpIn_FLiP.egg-info/PKG-INFO
+SpIn_FLiP.egg-info/SOURCES.txt
+SpIn_FLiP.egg-info/dependency_links.txt
+SpIn_FLiP.egg-info/top_level.txt

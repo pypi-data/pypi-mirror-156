@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: SpIn_FLiP
+Version: 1.0.0
+Summary: A Python package for spectra information
+Home-page: https://github.com/ericasaw/SpIn
+Author: Camila Angulo, Oscar Chávez, Erica Sawczynec
+Author-email: spin@spin.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
