@@ -1,0 +1,29 @@
+# --find-links https://girder.github.io/large_image_wheels GDAL
+datapane
+geedim>=1.2.0
+geemap>=0.14.0
+geopandas
+here-map-widget-for-jupyter
+ipynb-py-convert
+keplergl
+leafmap>=0.9.4
+localtileserver>=0.5.8
+mapclassify>=2.4.0
+mss
+netcdf4
+osmnx
+owslib
+palettable
+plotly
+pydeck
+rio-cogeo
+rioxarray
+voila
+# ipygany
+# ipyvtklink
+# laspy
+# panel
+# psycopg2
+# pyntcloud[LAS]
+# pyvista
+# sqlalchemy
