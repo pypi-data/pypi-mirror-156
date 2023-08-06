@@ -1,0 +1,8 @@
+gurobipy/__init__.py,sha256=paXoGzzB0Scc7jnJU2aHaO5OGE2iayIlyn97lPwBPeo,24
+gurobipy/gurobipy.cpython-39-aarch64-linux-gnu.so,sha256=Toe_WI7JkAeqLc6Ggvx7K9NOb6lkEhLEKCNbbmnYURI,4337624
+gurobipy/.libs/gurobi.lic,sha256=9UC_NsmlVglbynO2YJYRaYp1cyvNfr-pnOoasKV_pv0,89
+gurobipy/.libs/libgurobi95.so,sha256=hhd9A4Hu5w7ehHXNy_oJrWM34lakstgXDpRpNnms9Gk,9273136
+gurobipy-9.5.2b0.dist-info/METADATA,sha256=DJXwnfCify35girf50MXwRW7ZhcFo4SqRZCPJciAnqo,15676
+gurobipy-9.5.2b0.dist-info/WHEEL,sha256=De5nPnJvHAcC-85FE4rISa1wQGa20l5HSZyzykhosqM,112
+gurobipy-9.5.2b0.dist-info/top_level.txt,sha256=lI8imVf2_cKV2kVT6NVXJ4sH0ib8oAKeh06ysN_0_Bg,9
+gurobipy-9.5.2b0.dist-info/RECORD,,
