@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/geihdanepy/__init__.py
+src/geihdanepy/get.py
+src/geihdanepy/utils.py
+src/geihdanepy.egg-info/PKG-INFO
+src/geihdanepy.egg-info/SOURCES.txt
+src/geihdanepy.egg-info/dependency_links.txt
+src/geihdanepy.egg-info/requires.txt
+src/geihdanepy.egg-info/top_level.txt
+src/geihdanepy/txt_files/__init__.py
