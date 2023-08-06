@@ -1,0 +1,16 @@
+# MUMBAI TESTNET
+MUMBAI_CHAINID = 80001
+# old address - we keep it just in case!
+#GIT_FACTORY_ADDRESS = '0x38FF86F13806F4Fb5A15Ba3558Ff257875D2acd8'
+MUMBAI_GIT_FACTORY_ADDRESS = '0x9Af5B605f4c9833692DF8cCcF021d62C6Cc4df8F'
+MUMBAI_RPC_ADDRESS = 'https://matic-mumbai.chainstacklabs.com'
+MUMBAI_GAS_STATION='https://gasstation-mumbai.matic.today/v2'
+
+# NERVOS GODWOKEN TESTNET
+GODWOKEN_TESTNET_CHAINID = 71401
+GODWOKEN_TESTNET_GIT_FACTORY_ADDRESS = '0x9639eB95Ae2Ba325027006fb2D81f667e3ebFE18'
+GODWOKEN_TESTNET_RPC_ADDRESS = 'https://godwoken-testnet-v1.ckbapp.dev'
+# GODWOKEN_TESTNET_GAS_STATION='https://gasstation-mumbai.matic.today'
+
+IPFS_CONNECTION = '/dns4/ipfs.infura.io/tcp/5001/https'
+
