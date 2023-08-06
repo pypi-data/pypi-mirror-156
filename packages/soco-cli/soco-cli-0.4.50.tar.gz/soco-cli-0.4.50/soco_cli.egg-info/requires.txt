@@ -1,0 +1,13 @@
+tabulate
+rangehttpserver
+xmltodict
+
+[:python_version < "3.6"]
+soco==0.27.1
+
+[:python_version >= "3.6"]
+soco==0.28.0
+
+[:python_version >= "3.7"]
+fastapi
+uvicorn
