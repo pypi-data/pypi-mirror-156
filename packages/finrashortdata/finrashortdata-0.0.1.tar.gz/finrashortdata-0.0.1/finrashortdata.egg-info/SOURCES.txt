@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+finrashortdata/__init__.py
+finrashortdata.egg-info/PKG-INFO
+finrashortdata.egg-info/SOURCES.txt
+finrashortdata.egg-info/dependency_links.txt
+finrashortdata.egg-info/top_level.txt
+requirements/release.txt
