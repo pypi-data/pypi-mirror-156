@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+nbconvert_inline_artifacts/__init__.py
+nbconvert_inline_artifacts.egg-info/PKG-INFO
+nbconvert_inline_artifacts.egg-info/SOURCES.txt
+nbconvert_inline_artifacts.egg-info/dependency_links.txt
+nbconvert_inline_artifacts.egg-info/requires.txt
+nbconvert_inline_artifacts.egg-info/top_level.txt
+test/test_substitute_artifacts.py
