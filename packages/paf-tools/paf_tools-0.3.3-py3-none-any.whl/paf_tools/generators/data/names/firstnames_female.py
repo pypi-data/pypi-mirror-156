@@ -1,0 +1,10 @@
+return_data = ["Anna", "Martha", "Frieda", "Erna", "Gertrud", "Margarethe", "Elisabeth", "} else {", "Emma", "Helene",
+         "Maria", "Elsa", "Paula", "Luise", "Marie", "Berta", "Ella", "Clara", "Hertha", "Dora", "Käthe",
+         "Auguste", "Johanna", "Charlotte", "Hedwig", "Mia", "Hannah", "Sofia", "Emilia", "Lina", "Lena", "Mila",
+         "Emily", "Lea", "Leonie", "Amelie", "Sophie", "Luisa", "Lilly", "Laura", "Nele", "Lara", "Leni", "Maja",
+         "Mathilda", "Ida", "Pia", "Sarah", "Lia", "Lotta", "Greta", "Melina", "Julia", "Lisa", "Marlene", "Zoe",
+         "Alina", "Victoria", "Mira", "Elisa", "Isabella", "Helena", "Josefin", "Mara", "Isabell", "Nora",
+         "Nicole", "Anja", "Claudia", "Stefanie", "Andrea", "Tanja", "Katrin", "Susanne", "Petra", "Sabine",
+         "Sandra", "Kerstin", "Britta", "Martina", "Silke", "Birgit", "Christina", "Manuela", "Heike", "Katja",
+         "Alexandra", "Silvia", "Sonja", "Daniela", "Christine", "Bettina", "Astrid", "Michaela", "Ulrike",
+         "Maike", "Yvonne", "Kirsten", "Annette", "Simone", "Angela"]
