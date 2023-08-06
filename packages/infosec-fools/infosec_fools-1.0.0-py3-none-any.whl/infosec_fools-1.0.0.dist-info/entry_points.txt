@@ -1,0 +1,3 @@
+[console_scripts]
+infosec-fools=infosec_fools.main:app
+
