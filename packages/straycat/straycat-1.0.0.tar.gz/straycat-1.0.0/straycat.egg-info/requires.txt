@@ -1,0 +1,4 @@
+Sastrawi>=1.0.1
+nltk>=3.6.5
+pandas
+spacy>=3.3.1
