@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: vivit-for-pytorch
+Version: 1.0.0
+Summary: ViViT: Curvature access through the generalized Gauss-Newton\'s low-rank structure
+Home-page: https://github.com/f-dangel/vivit
+Author: Felix Dangel, Lukas Tatzel
+License: MIT
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE
+Requires-Dist: backpack-for-pytorch (<2.0.0,>=1.5.0)
+Requires-Dist: scipy (<2.0.0,>=1.7.1)
+Requires-Dist: tqdm (<5.0.0,>=4.61.0)
+Provides-Extra: docs
+Requires-Dist: matplotlib ; extra == 'docs'
+Requires-Dist: sphinx-gallery ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: functorch ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: mccabe ; extra == 'lint'
+Requires-Dist: pycodestyle ; extra == 'lint'
+Requires-Dist: pyflakes ; extra == 'lint'
+Requires-Dist: pep8-naming ; extra == 'lint'
+Requires-Dist: flake8-bugbear ; extra == 'lint'
+Requires-Dist: flake8-comprehensions ; extra == 'lint'
+Requires-Dist: flake8-tidy-imports ; extra == 'lint'
+Requires-Dist: darglint ; extra == 'lint'
+Requires-Dist: pydocstyle ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: coveralls ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# <img alt="ViViT" src="./docs/rtd/assets/vivit_logo.svg" height="90"> ViViT: Curvature access through the generalized Gauss-Newton's low-rank structure
+
+[![Python
+3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-370/)
+![tests](https://github.com/f-dangel/vivit/actions/workflows/test.yaml/badge.svg)
+
+ViViT is a collection of numerical tricks to efficiently access curvature from
+the generalized Gauss-Newton (GGN) matrix based on its low-rank structure.
+Provided functionality includes computing
+- GGN eigenvalues ([basic
+  example](https://vivit.readthedocs.io/en/latest/basic_usage/example_eigvalsh.html#computing-ggn-eigenvalues))
+- GGN eigenpairs (eigenvalues + eigenvector, [basic
+  example](https://vivit.readthedocs.io/en/latest/basic_usage/example_eigh.html#computing-ggn-eigenpairs))
+- 1ˢᵗ- and 2ⁿᵈ-order directional derivatives along GGN eigenvectors ([basic
+  example](https://vivit.readthedocs.io/en/latest/basic_usage/example_directional_derivatives.html#computing-directional-derivatives-along-ggn-eigenvectors))
+- Directionally damped Newton steps ([basic
+  example](https://vivit.readthedocs.io/en/latest/basic_usage/example_directional_damped_newton.html#computing-directionally-damped-newton-steps))
+
+These operations can also further approximate the GGN to reduce cost via
+sub-sampling, Monte-Carlo approximation, and block-diagonal approximation.
+- **Documentation:** https://vivit.readthedocs.io/en/latest/
+- **Bug reports & feature requests:** https://github.com/f-dangel/vivit/issues
+
+**How does it work?** ViViT uses and extends
+ [BackPACK](https://github.com/f-dangel/backpack) for
+ [PyTorch](https://github.com/pytorch/pytorch). The described functionality is
+ realized through a combination of existing and new BackPACK extensions and
+ hooks into its backpropagation.
+
+## Installation
+
+```bash
+pip install vivit-for-pytorch
+```
+
+## Examples
+
+Basic and advanced demos can be found in the
+[documentation](https://vivit.readthedocs.io/en/latest/basic_usage/index.html).
+
+## How to cite
+If you are using ViViT, consider citing the [paper](https://arxiv.org/abs/2106.02624)
+```
+@misc{dangel2022vivit,
+      title={{ViViT}: Curvature access through the generalized Gauss-Newton's low-rank structure},
+      author={Felix Dangel and Lukas Tatzel and Philipp Hennig},
+      year={2022},
+      eprint={2106.02624},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
+
+
