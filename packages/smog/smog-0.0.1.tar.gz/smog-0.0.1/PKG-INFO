@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: smog
+Version: 0.0.1
+Summary: simple media organizer
+Home-page: https://github.com/kr-g/smog
+Author: k. goger
+Author-email: k.r.goger+smog@gmail.com
+License: MIT
+Keywords: media organizer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Topic :: Multimedia
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+# smog 
+
+simple media organizer - organize media files (as of now only pictures)
+
+e.g. `20220202_093343.jpg`
+into a folder structure like 
+`~/media-repo/2022/02/20220202/20220202_093343.jpg`
+if possible exif metadata is used to determine the date,
+otherwise it's extracted from the name (experimental).
+
+
+# what's new ?
+
+Check
+[`CHANGELOG`](https://github.com/kr-g/smog/blob/main/CHANGELOG.md)
+for latest ongoing, or upcoming news.
+
+
+# limitations
+
+Check 
+[`BACKLOG`](https://github.com/kr-g/smog/blob/main/BACKLOG.md)
+for open development tasks and limitations.
+
+
+# how to use
+
+todo: documentation pending
+
+get cmd-line parameter with
+
+    phyton3 -m smog --help
+
+
+# platform
+
+tested on python3, and linux
+
+
+# development status
+
+alpha state, use on your own risk!
+
+
+# installation
+
+    phyton3 -m pip install smog
+    
+
+# license
+
+[`LICENSE`](https://github.com/kr-g/smog/blob/main/LICENSE.md)
+
+
+
