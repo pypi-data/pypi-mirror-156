@@ -1,0 +1,4 @@
+coloredlogs~=10.0
+yaspin~=2.1.0
+terminaltables~=3.1.10
+art~=5.6
