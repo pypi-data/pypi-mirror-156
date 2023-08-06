@@ -1,0 +1,14 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/icons">
+        <file alias="logo">icons/boxjelly_logo.svg</file>
+        <file alias="rename">icons/rename.png</file>
+        <file alias="split">icons/split.png</file>
+        <file alias="merge">icons/merge.png</file>
+        <file alias="delete">icons/delete.png</file>
+        <file alias="seek_beginning">icons/seek_beginning.png</file>
+        <file alias="seek_end">icons/seek_end.png</file>
+        <file alias="undo">icons/undo.png</file>
+        <file alias="redo">icons/redo.png</file>
+    </qresource>
+</RCC>
