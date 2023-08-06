@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.rst
+dokuwiki.py
+setup.py
+dokuwiki.egg-info/PKG-INFO
+dokuwiki.egg-info/SOURCES.txt
+dokuwiki.egg-info/dependency_links.txt
+dokuwiki.egg-info/top_level.txt
