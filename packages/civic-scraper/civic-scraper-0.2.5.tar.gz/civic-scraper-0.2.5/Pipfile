@@ -1,0 +1,38 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+bs4 = "*"
+click = "*"
+click-option-group = "*"
+feedparser = "*"
+scraper-legistar = "*"
+requests = "*"
+demjson3 = "*"
+
+[dev-packages]
+bumpversion = "*"
+watchdog = "*"
+flake8 = "*"
+tox = "*"
+coverage = "*"
+docutils = "*"
+pytest = "*"
+pytest-vcr = "*"
+vcrpy = "*"
+argh = "*"
+twine = "*"
+Sphinx = "*"
+pre-commit = "*"
+typing-extensions = "*"
+myst-parser = "*"
+sphinx-autobuild = "*"
+black = "*"
+setuptools-scm = "*"
+sphinxcontrib-napoleon = "*"
+pytz = "*"
+
+[requires]
+python_version = "3.7"
