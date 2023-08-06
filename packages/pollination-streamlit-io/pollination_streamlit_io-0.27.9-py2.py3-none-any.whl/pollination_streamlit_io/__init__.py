@@ -1,0 +1,143 @@
+import os
+import json
+import streamlit.components.v1 as components
+from typing import ( Optional, 
+    Union, List )
+
+_RELEASE = True
+
+if not _RELEASE:
+    _get_geometry = components.declare_component(
+        "get_geometry",
+        url="http://localhost:3000",
+    )
+else:
+    parent_dir = os.path.dirname(os.path.abspath(__file__))
+    build_dir = os.path.join(parent_dir, "./get_geometry/frontend/build")
+    _get_geometry = components.declare_component("get_geometry", path=build_dir)
+
+def get_geometry(key='foo'):
+    """Create a new instance of "get_geometry".
+
+    Parameters
+    ----------
+    key: str or None
+        An optional key that uniquely identifies this component. If this is
+        None, and the component's arguments are changed, the component will
+        be re-mounted in the Streamlit frontend and lose its current state.
+
+    Returns
+    -------
+    host: 'web' | 'rhino' | 'revit' | 'sketchup'
+    geometry: dictionary
+    """
+    
+    get_geometry = _get_geometry(key=key)
+
+    return get_geometry
+
+
+if not _RELEASE:
+    _get_hbjson = components.declare_component(
+        "get_hbjson",
+        url="http://localhost:3000",
+    )
+else:
+    parent_dir = os.path.dirname(os.path.abspath(__file__))
+    build_dir = os.path.join(parent_dir, "./get_hbjson/frontend/build")
+    _get_hbjson = components.declare_component("get_hbjson", path=build_dir)
+
+def get_hbjson(key='foo'):
+    """Create a new instance of "get_hbjson".
+
+    Parameters
+    ----------
+    key: str or None
+        An optional key that uniquely identifies this component. If this is
+        None, and the component's arguments are changed, the component will
+        be re-mounted in the Streamlit frontend and lose its current state.
+
+    Returns
+    -------
+    host: 'web' | 'rhino' | 'revit' | 'sketchup'
+    hbjson: dictionary
+    """
+    
+    get_hbjson = _get_hbjson(key=key)
+
+    return get_hbjson
+
+
+if not _RELEASE:
+    _send_geometry = components.declare_component(
+        "send_geometry",
+        url="http://localhost:3000",
+    )
+else:
+    parent_dir = os.path.dirname(os.path.abspath(__file__))
+    build_dir = os.path.join(parent_dir, "./send_geometry/frontend/build")
+    _send_geometry = components.declare_component("send_geometry", path=build_dir)
+
+def send_geometry(key='foo', *, geometry={}):
+    """Create a new instance of "send_geometry".
+
+    Parameters
+    ----------
+    key: str or None
+        An optional key that uniquely identifies this component. If this is
+        None, and the component's arguments are changed, the component will
+        be re-mounted in the Streamlit frontend and lose its current state.
+    geometry: dictionary
+
+    Returns
+    -------
+    host: 'web' | 'rhino' | 'revit' | 'sketchup'
+    """
+    
+    send_geometry = _send_geometry(geometry=geometry, key=key)
+
+    return send_geometry
+
+
+if not _RELEASE:
+    _send_hbjson = components.declare_component(
+        "send_hbjson",
+        url="http://localhost:3000",
+    )
+else:
+    parent_dir = os.path.dirname(os.path.abspath(__file__))
+    build_dir = os.path.join(parent_dir, "./send_hbjson/frontend/build")
+    _send_hbjson = components.declare_component("send_hbjson", path=build_dir)
+
+def send_hbjson(key='foo', *, hbjson={}):
+    """Create a new instance of "send_hbjson".
+
+    Parameters
+    ----------
+    key: str or None
+        An optional key that uniquely identifies this component. If this is
+        None, and the component's arguments are changed, the component will
+        be re-mounted in the Streamlit frontend and lose its current state.
+    hbjson: dictionary
+
+    Returns
+    -------
+    host: 'web' | 'rhino' | 'revit' | 'sketchup'
+    """
+    
+    send_hbjson = _send_hbjson(hbjson=hbjson, key=key)
+
+    return send_hbjson
+
+if not _RELEASE:
+    import streamlit as st
+
+    st.header("Hello Get Geometry!")
+
+    # Create an instance of our component with a constant `name` arg, and
+    # print its output value.
+    geometry = get_geometry('bar')
+    
+    st.json(geometry)
+
+    
