@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+qwertyasdfgh/__init__.py
+qwertyasdfgh/demo.py
+testmoltobello.egg-info/PKG-INFO
+testmoltobello.egg-info/SOURCES.txt
+testmoltobello.egg-info/dependency_links.txt
+testmoltobello.egg-info/top_level.txt
