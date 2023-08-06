@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+src/__init__.py
+src/destripegui.py
+src/destripegui.egg-info/PKG-INFO
+src/destripegui.egg-info/SOURCES.txt
+src/destripegui.egg-info/dependency_links.txt
+src/destripegui.egg-info/entry_points.txt
+src/destripegui.egg-info/requires.txt
+src/destripegui.egg-info/top_level.txt
