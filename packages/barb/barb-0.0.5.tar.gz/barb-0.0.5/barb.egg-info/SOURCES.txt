@@ -1,0 +1,13 @@
+README.md
+setup.py
+barb.egg-info/PKG-INFO
+barb.egg-info/SOURCES.txt
+barb.egg-info/dependency_links.txt
+barb.egg-info/entry_points.txt
+barb.egg-info/top_level.txt
+src/__init__.py
+src/cli.py
+src/hooks.py
+src/init.py
+src/install.py
+src/run.py
