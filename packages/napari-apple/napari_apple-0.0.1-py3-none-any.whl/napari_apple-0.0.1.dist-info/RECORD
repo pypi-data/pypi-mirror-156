@@ -1,0 +1,17 @@
+napari_apple/__init__.py,sha256=lm7ExajyEwCHiJXRe3677JVNUtgUb2J59s1X4M2hL2A,396
+napari_apple/_reader.py,sha256=4ChaneNMkShsgXj7zTpDiemurcdBl7Unp7BZDAKiGBk,2549
+napari_apple/_sample_data.py,sha256=ew60kn76B6nJGy-fQtmhOsapt3LSL0GJcp9nS5auf8o,391
+napari_apple/_widget.py,sha256=QEyZY8BBokoTA3ThExWOCfk_IMJIsXJonykbHaQEsQY,1419
+napari_apple/_writer.py,sha256=-HTwwSp7FsvSUTnFuPtqA2f8JAX4Z6zJ_gEDvH5LsHI,659
+napari_apple/napari.yaml,sha256=X56A7KG14FWxCad2WxqHv8VFWhdGiBxDvse5PM_mmlo,1827
+napari_apple/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_apple/_tests/test_reader.py,sha256=P1anvKZMel7tzPbjYU8wA4zJPA50lKth2WWO6BIg1_Y,1005
+napari_apple/_tests/test_sample_data.py,sha256=sBSZvPkXsdbiFrsT6mvIIUfyKD7YobDnHA-wkwDzYlo,110
+napari_apple/_tests/test_widget.py,sha256=KB8oM3viQdrhavj47fuzUh6-09dVFQ7zgyCqVf-91ks,1281
+napari_apple/_tests/test_writer.py,sha256=5YG2oBkeg073AG9LSTrQEkqHtKxbXaOCfm158ca_Jv8,128
+napari_apple-0.0.1.dist-info/LICENSE,sha256=OyzoQbeQmvIESLTBAQuxEB2xTpADN9GIwScp6UdwQP0,1516
+napari_apple-0.0.1.dist-info/METADATA,sha256=aKLjbKA45o2ige55UFJJIZrLKwLEtb91DeXvcGxZg-8,4148
+napari_apple-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_apple-0.0.1.dist-info/entry_points.txt,sha256=GEm7kpDhj6ms7qZ_zIDAIWb0gc7-UyBAup2iiYA7H5c,58
+napari_apple-0.0.1.dist-info/top_level.txt,sha256=Ox6Kqx8L8Drdxrq_0j7MC-7UgNU8IoWAy_Ral_2Sx7Y,13
+napari_apple-0.0.1.dist-info/RECORD,,
