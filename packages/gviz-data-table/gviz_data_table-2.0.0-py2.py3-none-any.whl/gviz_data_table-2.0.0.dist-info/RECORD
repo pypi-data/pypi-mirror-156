@@ -1,0 +1,13 @@
+docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/chart.py,sha256=m-dhoHNcmccwKs2NF8Uf_7MpkOQJSpfmp4IWFzzZLvk,1735
+docs/conf.py,sha256=zTUm7yoEd64rpEpuXnp-l9aajuF5NsXM5eCAuYIeM5w,8872
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gviz_data_table/__init__.py,sha256=o41j9nxQBQJ2yRpn-K55BcTUEXanOC4b5cJLbLEvDPk,351
+gviz_data_table/cell.py,sha256=dM3VQt702jR8tb2ilqAwQDtJLImC8XwRr0r6e6GQgUI,1508
+gviz_data_table/column.py,sha256=a7CD317RwKXayvAVlh9MIfVKy8HFAbaC8WXhDi22lDc,1744
+gviz_data_table/encoder.py,sha256=1xlzVygqyWaCQh5YuCXxwiNrivICpkpnYWx9Q5HP-fw,1112
+gviz_data_table/table.py,sha256=YBTRkJvFKNqtooIOd3v9s9Wo2YU78XBTy1NTXu2TGqQ,3701
+gviz_data_table-2.0.0.dist-info/METADATA,sha256=E3wZR7D5UWo4E6wR1ftsSU1Y-th_ZkpSErG5Xox-f-Q,3791
+gviz_data_table-2.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+gviz_data_table-2.0.0.dist-info/top_level.txt,sha256=sL9-AS1nNhLJRaO2VC-IyrvWBycrxiMlaKAhkRXYGBU,30
+gviz_data_table-2.0.0.dist-info/RECORD,,
