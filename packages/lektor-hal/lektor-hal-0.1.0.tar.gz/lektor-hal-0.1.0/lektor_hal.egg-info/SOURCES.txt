@@ -1,0 +1,8 @@
+README.md
+lektor_hal.py
+setup.py
+lektor_hal.egg-info/PKG-INFO
+lektor_hal.egg-info/SOURCES.txt
+lektor_hal.egg-info/dependency_links.txt
+lektor_hal.egg-info/entry_points.txt
+lektor_hal.egg-info/top_level.txt
