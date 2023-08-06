@@ -1,0 +1,10 @@
+License.txt
+setup.py
+packagedfd/__init__.py
+packagedfd/demo.py
+packagedfd/resolution_network.py
+packagedfd/solver.py
+packagedfd.egg-info/PKG-INFO
+packagedfd.egg-info/SOURCES.txt
+packagedfd.egg-info/dependency_links.txt
+packagedfd.egg-info/top_level.txt
