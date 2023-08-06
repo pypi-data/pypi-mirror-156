@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: yagls
+Version: 1.0.1
+Summary: Yet another Github Label Synchroniser
+Home-page: https://github.com/preeded/ygl
+License: MIT
+Author: preeded
+Author-email: 86511859+preeded@users.noreply.github.com
+Maintainer: preeded
+Maintainer-email: 86511859+preeded@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiohttp
+Project-URL: Repository, https://github.com/preeded/ygl
+Description-Content-Type: text/markdown
+
+# yagls
+Yet Another Github Label Synchroniser.
+## Inspiration
+I wanted to labeling well. But I'd no idea, so I found well-labeled project.
+
+Also I found another Github Label Synchroniser, but It wasn't fit to me.
+
+To me, that wasn't intuitive. That worked well, but I didn't like that.
+
+So I decided to make new Github Label Synchroniser.
+## Feather
+Just copy labels from repository and paste to repository.
