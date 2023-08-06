@@ -1,0 +1,12 @@
+adderlib/__init__.py,sha256=kqtqLgyNE6-WlH-hh7fviyjsEMkwKNwyahRUDm03wF8,95
+adderlib/adder.py,sha256=zk3U_7OGtKJsjW7beQ4-GCK8dl4D0ePOOiEwzAGnP9w,20483
+adderlib/channels.py,sha256=G4srUwDU-PBhhF1WYL5Zy8psePN2s0wx75faxmpo1dU,4243
+adderlib/devices.py,sha256=lUZDHTb4cQvhsHcWw6iVvdtSnVP8FTN2WsRAN8efMZI,10946
+adderlib/presets.py,sha256=x8ap4OUoFoHmDEHQ9NtBwEngLVW4y7yGl1midEiTz-w,2992
+adderlib/urlhandlers.py,sha256=0wP0NjmTG6SP2AdULjY09uHv7KyO5AUd7tof1AFK9pg,2716
+adderlib/users.py,sha256=tELQGVOcGOCBbFKZ6fG34Yxps4zwKpfdmsEcRUxNyvE,822
+adderlib-1.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+adderlib-1.0.3.dist-info/METADATA,sha256=_hfrpaweHi-ounA52tdcOd5QVVPWO9kJiTY8ZwiRee8,2476
+adderlib-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+adderlib-1.0.3.dist-info/top_level.txt,sha256=ROaARqCsvdZfIvH2DCDMucz--YMjAj-ji1Oe6DP-keA,9
+adderlib-1.0.3.dist-info/RECORD,,
