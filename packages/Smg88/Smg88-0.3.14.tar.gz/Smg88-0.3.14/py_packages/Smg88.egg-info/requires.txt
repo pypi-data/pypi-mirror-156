@@ -1,0 +1,10 @@
+
+[Smg88]
+smg88_requirements.txt
+
+[Smg88_Testing]
+flake8
+tox
+pytest
+pytest-cov
+mypy
