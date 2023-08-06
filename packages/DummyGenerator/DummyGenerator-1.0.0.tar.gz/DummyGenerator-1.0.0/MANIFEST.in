@@ -1,0 +1,3 @@
+include src/DummyGenerator/models/*.txt
+include src/DummyGenerator/models/*.prototxt
+include src/DummyGenerator/models/*.caffemodel

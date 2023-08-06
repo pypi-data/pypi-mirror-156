@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/DummyGenerator/DummyGenerator.py
+src/DummyGenerator/__init__.py
+src/DummyGenerator.egg-info/PKG-INFO
+src/DummyGenerator.egg-info/SOURCES.txt
+src/DummyGenerator.egg-info/dependency_links.txt
+src/DummyGenerator.egg-info/top_level.txt
+src/DummyGenerator/models/age_net.caffemodel
+src/DummyGenerator/models/deploy.prototxt.txt
+src/DummyGenerator/models/deploy_age.prototxt
+src/DummyGenerator/models/deploy_gender.prototxt
+src/DummyGenerator/models/gender_net.caffemodel
+src/DummyGenerator/models/res10_300x300_ssd_iter_140000_fp16.caffemodel

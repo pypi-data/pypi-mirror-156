@@ -1,0 +1,24 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "numpy==1.22.4",
+    "opencv-python-headless==4.6.0.66",
+    "requests==2.28.0",
+    "urllib3==1.26.9"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DummyGenerator"
+version = "1.0.0"
+authors = [
+  { name="Parick Sørensen", email="patricklykke@live.dk" },
+]
+description = "Create dummy people for testing"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
