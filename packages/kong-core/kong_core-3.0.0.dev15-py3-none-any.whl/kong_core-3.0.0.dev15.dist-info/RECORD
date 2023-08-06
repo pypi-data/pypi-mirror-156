@@ -1,0 +1,9 @@
+kong_core/__init__.py,sha256=dVY1AS_d4k4XPJD0tScZB7TGXdqm6cpCsnh_wDkJ_-o,49275
+kong_core/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+kong_core/_jsii/__init__.py,sha256=IIztEta10kl2enCVKrZvda1lrEhLJTOqz-m1ILMMTAc,365
+kong_core/_jsii/kong-core@3.0.0-dev.15.jsii.tgz,sha256=Qzo0GiMnrWUHOXk-mrMW4HMulNienKLhyTY_i6hrgQU,1162385
+kong_core-3.0.0.dev15.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+kong_core-3.0.0.dev15.dist-info/METADATA,sha256=QAHD0jp9ryReEZRHGFQTN61_S1KtNrCwN21J0zCJ64Q,3674
+kong_core-3.0.0.dev15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kong_core-3.0.0.dev15.dist-info/top_level.txt,sha256=d2bnJdFABjXwrwtRTjBn0H2j4SxygJsY7avXFkln1-4,10
+kong_core-3.0.0.dev15.dist-info/RECORD,,
