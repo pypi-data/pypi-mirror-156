@@ -1,0 +1,11 @@
+vsdehalo/__init__.py,sha256=YdN-YqDwbZsEUrQOJgClW6PXrXlfhlns3tcprgcau5k,129
+vsdehalo/alpha.py,sha256=4f114M_P1MxarCSQJCyyx51PPgYavuZJ2_fNS9-hXvs,9841
+vsdehalo/denoise.py,sha256=qsKAeynM92gawRtCI-qOX5QeRHH3Yr3PGSbSwk667PY,4433
+vsdehalo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsdehalo/utils.py,sha256=sRVanLjaUpW6SLAV36mRZG1gIdCcM9-HAtf92Sytowo,836
+vsdehalo/warp.py,sha256=chyUO2l4ng9yYbxUeKrBhFMYVHJqzrTO4H3mTkF1crw,3848
+vsdehalo-0.1.0.dist-info/LICENSE,sha256=5RjlHF8gmwvOIb-XRF3E1C6U_lL1RjedcdtkuqZWRwQ,1085
+vsdehalo-0.1.0.dist-info/METADATA,sha256=tX4TbYw7GhyGNm8IhGDtUUPFV5JVhwJs5FL6u_E1WfQ,1134
+vsdehalo-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vsdehalo-0.1.0.dist-info/top_level.txt,sha256=PHexh6X9G901WmmnDTL4aQXhdOUIuGZoPagKLUbz4vk,9
+vsdehalo-0.1.0.dist-info/RECORD,,
