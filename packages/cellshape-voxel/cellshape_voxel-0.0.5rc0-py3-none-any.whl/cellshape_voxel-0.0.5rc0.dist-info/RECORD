@@ -1,0 +1,10 @@
+cellshape_voxel/__init__.py,sha256=n43SeDSCDopxyJkiJ4qQ8Q2FX6D8avoJ-TBXCy3L6a0,59
+cellshape_voxel/losses.py,sha256=ehLl4PkhTNYQeopR6rwhy4XUk7ZJpOGer_Oj6Er5vsk,3941
+cellshape_voxel/training_functions.py,sha256=yV4xCbDJuAOqEA69TUAsIACBtqHYzS2ecOZog1E-LqI,1659
+cellshape_voxel/voxel_autoencoder.py,sha256=oUwecHvJD7IKadSUyx7HvRuQf5gLosHEKfiDNFnaGT0,2709
+cellshape_voxel/voxel_dataset.py,sha256=UFlMxnw_aTg-q5yYIPGZovQXIcEDQ0b59AYkVBFerlg,1758
+cellshape_voxel-0.0.5rc0.dist-info/LICENSE,sha256=IcqLTm0AgHp4dZnPlRa__1aEyqKMnIdhy7EJVqCdnp0,1521
+cellshape_voxel-0.0.5rc0.dist-info/METADATA,sha256=9u55QcolCNlIpT7v8bJAzzmv_tcutiBgUZOHQzUzRYs,6301
+cellshape_voxel-0.0.5rc0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cellshape_voxel-0.0.5rc0.dist-info/top_level.txt,sha256=oq13JDVQO_Jtbuea79Jt5f8SymLEMROL5laS_CnNu0A,16
+cellshape_voxel-0.0.5rc0.dist-info/RECORD,,
