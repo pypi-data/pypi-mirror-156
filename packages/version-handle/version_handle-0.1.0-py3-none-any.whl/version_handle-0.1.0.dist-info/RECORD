@@ -1,0 +1,10 @@
+version_handle/__init__.py,sha256=zmfFLzYhoH1zuZluBwwj6FVHj6RQYOfhaG0HjCKINm4,244
+version_handle/__version__.py,sha256=xdGerSOA0X5revijapBguy6Wv6_ta6X97GVstOzixOs,219
+version_handle/compare.py,sha256=KeHUGGfL195RS76MRtXhWo8tkZITAeHa2xxXMN39MO0,1087
+version_handle/generate.py,sha256=VQl8CJhadkFOtUsJc_eRxpOWiz8bhdMRBtn7v7jVa2k,309
+version_handle/python.py,sha256=XUmKLDwAbHPmZmvpVmTv1RI_D1hGF8FnObBTQDObQMo,206
+version_handle-0.1.0.dist-info/LICENSE,sha256=5mGKT-8JivLkYytFwVxN4KGDFE_yBq8WU3VdjGwRQ7k,1060
+version_handle-0.1.0.dist-info/METADATA,sha256=i3pFUa9thGgKv0gqO2WSJ4g-ZP_OHg1d_xVmhetF6a8,2619
+version_handle-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+version_handle-0.1.0.dist-info/top_level.txt,sha256=6--ZfqixD-HAzosUBpFsKt3YBekzlITIuASR192Nds4,15
+version_handle-0.1.0.dist-info/RECORD,,
