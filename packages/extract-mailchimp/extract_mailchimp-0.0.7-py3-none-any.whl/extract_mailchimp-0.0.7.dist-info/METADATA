@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: extract-mailchimp
+Version: 0.0.7
+Summary: Extract MailChimp data only by folder ID
+Author: Eunbin Park
+Author-email: parkeb417@gmail.com
+License: UNKNOWN
+Keywords: data,inflab,api,mailchimp
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv (==0.20.0)
+Requires-Dist: mailchimp-marketing (>=3.0.75)
+Requires-Dist: certifi (>=2017.4.17)
+Requires-Dist: python-dateutil (>=2.1)
+Requires-Dist: requests (>=2.23)
+Requires-Dist: six (>=1.10)
+Requires-Dist: urllib3 (>=1.23)
+
+## MailChimp Extractor by Directory ID
+---
+
+Download mailchimp campaign data by campaign directory (folder) id
+Origin by [mailchimp-marketing-python](https://github.com/mailchimp/mailchimp-marketing-python)
+
+### Requirements
+---
+Python 3.6+
+
+### Installation 
+#### pip install
+```python
+pip install  
+```
+
+### Endpoints
+
+|                Method                |     requirement      |    return     |
+|:------------------------------------:|:--------------------:|:-------------:|
+| `get_campaign_raw_data_by_folder_id` | {campaign_folder_id} |     JSON      |
+|    `get_campaign_id_by_folder_id`    | {campaign_folder_id} |     list      |
+|   `campaign_information_to_pandas`   |    {campaign_id}     | pd.DataFrame  |
+|      `click_details_to_pandas`       |    {campaign_id}     | pd.DataFrame  |
+
+### Usage
+
+you must make `.env` file with your mailchimp api key and server
+
+```python
+from extract_mailchimp import MailChimp
+
+if __name__ == "__main__":
+    campaign_folder_id = {campaign_folder_id}
+    mc = MailChimp()
+    print(mc.get_campaign_id_by_folder_id(campaign_folder_id))
+    # [['{campaign_id}', '{campaign_title}']]
+```
+
+
+
