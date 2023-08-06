@@ -1,0 +1,8 @@
+requests_sigv4/__init__.py,sha256=--3GF0ulKCzbOCcMq7Plf0JT7tqcCtBp72g9gzcG6YI,1056
+requests_sigv4/sigv4request.py,sha256=MY1ezDTQ04nkD1LwUVZe5tEfpjrja60ybh1Rq2hRss8,8952
+requests_sigv4/version.py,sha256=gJCJbWJlvephuW7anya3FFGYqKRiK6zkydQEVooUzzk,69
+requests_sigv4-0.1.6.dist-info/LICENSE,sha256=a3M9hYmpoSwt2T8nfwG6LvLZLpKT3svopgMv_fqq8gE,561
+requests_sigv4-0.1.6.dist-info/METADATA,sha256=aNjNv6oBZ0UdxGBBH-CnuyHcVt150HD_fxFbOZ0lZ1s,1058
+requests_sigv4-0.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+requests_sigv4-0.1.6.dist-info/top_level.txt,sha256=r7ncQBiivuhR96-3RonIN4707o4qhaSmYFjcsLLNzZk,15
+requests_sigv4-0.1.6.dist-info/RECORD,,
