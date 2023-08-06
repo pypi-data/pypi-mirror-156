@@ -1,0 +1,15 @@
+tinder/__init__.py,sha256=1fjRgNnpLAEZfsICcIECbYRQIhCR2l8BLrQJwuQpexc,339
+tinder/client.py,sha256=D81SiknjAd1RTZf55-jVJuTQK7mR7dV3x5sqerUUM6E,7726
+tinder/errors.py,sha256=HpG6mOur43Sp-M18Njbck1AXQ9EjPwzy-iWGTKL201U,648
+tinder/gateway.py,sha256=jd7mcKnMbl3w1rOZkqe01-uEorlObGeQadjDkhkqxXc,1055
+tinder/http.py,sha256=3q_hf4bjUynphiAMD-k5m4PyqqhqFwJAO9GOh4dnjII,8082
+tinder/models/__init__.py,sha256=_vQ0XjNZEww7GcB_QIm1TrhEPShfTntfwZGIu2z_aFE,60
+tinder/models/abc.py,sha256=CObdvK87sTZU3WFbTdsRvnFUWcPgMkdh6rwPlaPjTLU,1350
+tinder/models/asset.py,sha256=3_S3YsdDbesg-GodE7tstNJL1TUWm556nYBK0q5f6RM,1483
+tinder/models/user.py,sha256=onC2c80h9pwI9KefsWbkL1uG_b6AGCL5HdU_xHTUvD8,2009
+tinder/state.py,sha256=I0TGX8ypAAobR547vf9e5DUgLDpNRZ-aV8PRiM0b5No,816
+tinder/types.py,sha256=JfpV1OA-AEPY2UBpZRs92qQYxzHJJOUakfZqNEhUoso,84
+tinder/utils.py,sha256=8A80RV8tjnYcZTvjuqDohP2QfJZDwTMS5KYOFha6gbM,220
+tinder.py-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tinder.py-0.1.1.dist-info/METADATA,sha256=d1xSTRQtpHBeo-UPOnyfPCm2J3ZfaIwdy-PwuIATgKk,423
+tinder.py-0.1.1.dist-info/RECORD,,
