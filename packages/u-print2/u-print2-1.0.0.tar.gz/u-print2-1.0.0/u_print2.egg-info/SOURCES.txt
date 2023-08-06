@@ -1,0 +1,8 @@
+README.md
+setup.py
+u_print2/__init__.py
+u_print2/u_p1.zip.py
+u_print2.egg-info/PKG-INFO
+u_print2.egg-info/SOURCES.txt
+u_print2.egg-info/dependency_links.txt
+u_print2.egg-info/top_level.txt
