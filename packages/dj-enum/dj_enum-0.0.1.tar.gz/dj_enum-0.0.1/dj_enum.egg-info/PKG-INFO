@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dj-enum
+Version: 0.0.1
+Summary: A Django enum field
+Home-page: https://github.com/themrinalsinha/dj_enum
+Author: Mrinal Sinha
+Author-email: me@mrinal.xyz
+Keywords: dj_enum
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+
+# dj_enum
