@@ -1,0 +1,14 @@
+Examples/Example0/Example0.py,sha256=_HIGwsAOoF5kvtuCLsHV-UJWKFsKHhq1WiR3-VSbXqg,1094
+old_examples/clear_to_full.py,sha256=HTr7wniwXgiQE-5WlvBoEmUQJ0SfGacwL-mhcgXjPGc,1511
+old_examples/normal_testing.py,sha256=VvA-wqMjLhu1P6YyqIi4kL1BMOhsLhXRGWfPaU82wKo,398
+src/automata_lib/__init__.py,sha256=A55qhmv0sStk531OQNIcdnvQrkbpXT1iw8m2leB-PSw,314
+src/automata_lib/automata_class.py,sha256=HqLAUDY1cP5LoN3s8D-w7qofoGop8idUUui2teP2qsg,12315
+src/automata_lib/monotony.py,sha256=kOcanomOhThtWmiBX5rSAy69_C5lmqLQlj5Ibr032DU,6798
+src/automata_lib/text_automata_class.py,sha256=PrJxspFhXxVXeTOcvJCMW3V5z0dg0cerROblqvOkiTU,3781
+src/automata_lib/types.py,sha256=cq_Y_R4D_40KH0OTfwaQ22bMsqGqq4H5PwYbi3ykLQI,161
+src/automata_lib/types_linker.py,sha256=G8rNvh4LSJDYUF1veYOkzuQDfeJcCfx9Z2HdkNbY1KM,143
+restarting_automata-0.0.3.dist-info/METADATA,sha256=K9XR-IgvZk0rlcEnkN35Zyv_5jdqaYICLvQDEXXce3c,613
+restarting_automata-0.0.3.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+restarting_automata-0.0.3.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restarting_automata-0.0.3.dist-info/license_files/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+restarting_automata-0.0.3.dist-info/RECORD,,
