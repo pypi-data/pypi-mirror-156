@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: cosmic_profiles
+Version: 1.0.0
+Summary: Implements 3D point cloud algorithms for estimation and fitting of shape and density profiles
+Home-page: UNKNOWN
+Author: Tibor Dome
+Author-email: tibor.doeme@gmail.com
+License: MIT
+Project-URL: Documentation, https://cosmic-profiles.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/tibordome/cosmic_profiles
+Description: [![Documentation Status](https://readthedocs.org/projects/cosmic-shapes/badge/?version=latest)](https://cosmic-shapes.readthedocs.io/en/latest/?badge=latest) [![PyPI version](https://badge.fury.io/py/cosmic-shapes.svg)](https://badge.fury.io/py/cosmic-shapes)
+        
+        # The cosmic_shapes project
+        
+        This repository provides shape analysis tools for cosmological simulations (and beyond). Its features include
+        
+        - iterative shell-based shape determination algorithm for high-resolution halos/galaxies
+        - iterative ellipsoid-based shape determination algorithm for low-resolution halos/galaxies
+        - overall point cloud shape determination, shape profiles determination, velocity dispersion tensor eigenaxes determination
+        - wrapper to the Amiga Halo Finder (AHF) via `pynbody` to identify halos in a cosmological simulation
+        - mock point cloud generator
+        - mock log-normal universe generator
+        - example scripts.
+        
+        The documentation can be found [here](https://cosmic-shapes.readthedocs.io/en/latest/index.html).
+        
+        Contributions are welcome. Please raise a PR. Comments/recommendations/complaints can be sent [here](mailto:tibor.doeme@gmail.com).
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/markdown
