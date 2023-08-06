@@ -1,0 +1,9 @@
+efatfs/__init__.py,sha256=3nCEPZnC64DArGrgjlLrWSQaxStDDgos_1LDtDoHRng,149
+efatfs/diskio.py,sha256=L4Qpg7MzPG9IETEeamHJBEdziLozpzfoPsFkZcia4jQ,1716
+efatfs/version.py,sha256=46Yjk3fz9o8aTN8E95McnzpJcjGzVJmHmQqUZ5mXzfc,22
+efatfs/wrapper.cpython-310-darwin.so,sha256=RCGZ4Y--SD-xDWcnHfZnZXxbBTc6bBy037asHt6phH8,270202
+efatfs-0.0.9.dist-info/LICENSE.md,sha256=wKNdPRmo10626S178x3PXxYI8hj6Sdb-1Niae6yPd58,610
+efatfs-0.0.9.dist-info/METADATA,sha256=xCQeByIw7PLWMPz2sZhfbPY6nxHF212E6wZWC40eeZE,1092
+efatfs-0.0.9.dist-info/WHEEL,sha256=xBRw0o-jUJvuKe0FuacfvvaiffCdrJXjhTli9LcE-Dk,110
+efatfs-0.0.9.dist-info/top_level.txt,sha256=IdBG6BCoxlvFex3ch-wHLfXfF5tEc55mZn8tEE8_3m0,15
+efatfs-0.0.9.dist-info/RECORD,,
