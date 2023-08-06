@@ -1,0 +1,9 @@
+wtforms_bootstrap5/__init__.py,sha256=205SOQWwVDZeRO5jWEah_FrUZGLwd8ah7JbdGDxh8XY,305
+wtforms_bootstrap5/context.py,sha256=0serngcqJ_o00Ti6jqvqNZcKi1sq2N8w4S4de7nDjrc,4836
+wtforms_bootstrap5/helpers.py,sha256=BJUBf6MRUMWjd1e7i1njjXsxyW5-NG2Yi0wuUEpIkRY,805
+wtforms_bootstrap5/registry.py,sha256=SUBHPUxBUPKndn4wAAjrLzNdFVzjOnroP33_P_eeK1I,1824
+wtforms_bootstrap5/renderers.py,sha256=3yAF6aACn2dpn7QFZ-YC9LOw_e-ETWt8CHQz2vCdrxc,6044
+wtforms_bootstrap5-0.1.0.dist-info/LICENSE,sha256=X4IJzln-YxlUd6LFkyS8Jt4UK1C2HwlakIJ6GJLnokg,1072
+wtforms_bootstrap5-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+wtforms_bootstrap5-0.1.0.dist-info/METADATA,sha256=CGw78YjhSsf0C4fNQmqqKK79MgOfDc-7yd7NDV-Zb18,8263
+wtforms_bootstrap5-0.1.0.dist-info/RECORD,,
