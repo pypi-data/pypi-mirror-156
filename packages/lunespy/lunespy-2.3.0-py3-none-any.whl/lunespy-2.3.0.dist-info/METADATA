@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: lunespy
+Version: 2.3.0
+Summary: 📦 Library for communication with nodes in mainnet or testnet of the lunes-blockchain network Allows the automation of sending assets, issue end reissue tokens, leasing, registry, and create new wallet.
+Home-page: https://github.com/lunes-platform/
+License: Apache-2.0
+Keywords: cryptocurrency,lunes,blockchain,keccak-256
+Author: Lunes Platform
+Author-email: development@lunes.io
+Maintainer: Lucas Oliveira
+Maintainer-email: olivmath@protonmail.com
+Requires-Python: >=3.6.2,<4.0
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: base58 (>=2.1.0,<3.0.0)
+Requires-Dist: httpx (>=0.22.0,<0.23.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: pysha3 (>=1.0.2,<2.0.0)
+Requires-Dist: python-axolotl-curve25519 (>=0.4.1.post2,<0.5.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Documentation, https://lunes-platform.github.io/telescope/
+Project-URL: Repository, https://github.com/lunes-platform/lunespy.git
+Description-Content-Type: text/markdown
+
+# LunesPy
+
+📦 Library for communication with nodes in mainnet or testnet of the lunes-blockchain network Allows the automation of sending assets, issue end reissue tokens, leasing, registry, and create new wallet.
+
+[![CodeQL](https://github.com/lunes-platform/lunespy/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/lunes-platform/lunespy/actions/workflows/codeql-analysis.yml)
+[![Test](https://github.com/lunes-platform/lunespy/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/lunes-platform/lunespy/actions/workflows/test.yml)
+![PyPI](https://img.shields.io/pypi/v/lunespy)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lunespy)
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/lunespy)
+![GitHub last commit](https://img.shields.io/github/last-commit/lunes-platform/lunespy)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lunes-platform/lunespy)
+
+![PyPI - License](https://img.shields.io/pypi/l/lunespy)
+![Discord](https://img.shields.io/discord/958424925453058158)
+
+---
+
+## Table of Contents
+
+- [Credits](#credits)
+- [How to install](#how-to-install)
+- [How it works](#how-it-works)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Credits
+
+[![GitHub Contributors Image](https://contrib.rocks/image?repo=lunes-platform/lunespy)](https://github.com/lunes-platform/lunespy/graphs/contributors)
+
+## How to install
+
+```
+pip install lunespy
+```
+
+```
+poetry add lunespy
+```
+
+## How it works
+
+- see the docs: [Telescope](https://lunes-platform.github.io/telescope)
+
+## Contributing
+
+- Before read a code of conduct: **[CODE_OF_CONDUCT](CODE_OF_CONDUCT.md)**
+- Follow the guide of development: **[CONTRIBUTING](CONTRIBUTING.md)**
+
+## License
+
+[Apache v2.0](LICENSE)
+
