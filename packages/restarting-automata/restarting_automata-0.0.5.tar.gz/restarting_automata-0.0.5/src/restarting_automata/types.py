@@ -1,0 +1,9 @@
+from restarting_automata import BaseAutomaton
+
+
+class types:
+    def rrww(automaton: BaseAutomaton):
+        pass
+
+    def rlww(automaton: BaseAutomaton):
+        pass
