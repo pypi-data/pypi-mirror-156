@@ -1,0 +1,11 @@
+pydab/__init__.py,sha256=YFT-nfy1U86NhSJDH9NxlQY8YOdFenYPwf5jovaLRr0,95
+pydab/cli.py,sha256=xikcwpdK-8NKJmxwX8yXK4r5eoveinroanRYQOUEGD0,1051
+pydab/logging.yaml,sha256=3-FVayUlTh8Q8pMH55GrMxA7hwyf_1z8S21wXbqgCmY,351
+pydab/pydab.py,sha256=n-3jWWkKGJmxb__eaqubb_RTvCEZmYBu1-eMSnROBOU,4847
+pydab/util.py,sha256=D1iH80fs2Eshd5ZMlO4Ns4stI1rDA-DhD5JGUUdkBoI,291
+pydab-0.0.0.dev0.dist-info/LICENSE,sha256=KUWhlxi82N4ZRla_Lj3Uc6X6ZeFZGzOq8hZvdE4nbiQ,1069
+pydab-0.0.0.dev0.dist-info/METADATA,sha256=9tKK-ejj0yXCxhJBNOzPRqElQSBL4uQJED3Nix9zJiA,792
+pydab-0.0.0.dev0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydab-0.0.0.dev0.dist-info/entry_points.txt,sha256=r9KlUSkGUhQ8oYDRvJFCGMUts8Re43R3pHAcfAs6yjU,41
+pydab-0.0.0.dev0.dist-info/top_level.txt,sha256=UeVUf6NfRzfgyukXwvf3gIzNs2aQhPvcMBgnmdzrK7I,6
+pydab-0.0.0.dev0.dist-info/RECORD,,
