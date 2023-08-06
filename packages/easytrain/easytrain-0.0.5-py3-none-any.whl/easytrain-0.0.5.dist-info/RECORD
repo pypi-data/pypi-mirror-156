@@ -1,0 +1,12 @@
+easytrain/__init__.py,sha256=sCYHwPXZJmwt5nfZns83hmr7Cy2zeY0Js_ageDRqMNo,64
+easytrain/base.py,sha256=JcJ3dsElMsO1vVF3VPCeHpfk0CsQJ5H8AI5-uaKRSOI,8929
+easytrain/callbacks.py,sha256=apLv0sj2V1ycWwFlVJ3Ui9yq5pbmyWnsg37lGZdkQw8,5354
+easytrain/classifier.py,sha256=VrIWnhqJp-_b-4eGv7zy3ZlX9sDf8SUe0bP3DdNhaAc,11678
+easytrain/data.py,sha256=U2z8CII79kHF6FuZsN_wGYTu1rV6g5jUrtHomU_XvTk,3842
+easytrain/loss.py,sha256=82d2Eizu3_NN6NgmGt8EqdBPMHnMX25bpmMuynAVOiM,2455
+easytrain/metrics.py,sha256=z1vsy7EureYegUuW28eewlbgi3VCvkdK_kBRJm0zh8Q,466
+easytrain-0.0.5.dist-info/LICENSE,sha256=3GZv0suN1_xcUKUG753MBfwaWEOOv2t9jQ7f0V2JrRE,1063
+easytrain-0.0.5.dist-info/METADATA,sha256=NdjM3VjJ8CBYWjU4OFICOavxZcrmWSAVpEguiEsD7ng,428
+easytrain-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+easytrain-0.0.5.dist-info/top_level.txt,sha256=tujmYqTw-Avob3ePgTGvxIdaYvSiN7v9s3azhr7r7vk,10
+easytrain-0.0.5.dist-info/RECORD,,
