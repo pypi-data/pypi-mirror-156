@@ -1,0 +1,5 @@
+# MANIFEST.in
+
+include src/word2emoji/*.json
+include src/word2emoji/*.jsz2
+include src/word2emoji/*.txt
