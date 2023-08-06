@@ -1,0 +1,8 @@
+README.md
+setup.py
+jsxgraph-magic/__init__.py
+jsxgraph_magic.egg-info/PKG-INFO
+jsxgraph_magic.egg-info/SOURCES.txt
+jsxgraph_magic.egg-info/dependency_links.txt
+jsxgraph_magic.egg-info/requires.txt
+jsxgraph_magic.egg-info/top_level.txt
