@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+youtils/__init__.py
+youtils/command_line.py
+youtils.egg-info/PKG-INFO
+youtils.egg-info/SOURCES.txt
+youtils.egg-info/dependency_links.txt
+youtils.egg-info/entry_points.txt
+youtils.egg-info/not-zip-safe
+youtils.egg-info/requires.txt
+youtils.egg-info/top_level.txt

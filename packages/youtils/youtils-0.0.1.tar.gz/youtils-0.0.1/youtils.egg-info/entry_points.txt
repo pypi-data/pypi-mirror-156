@@ -1,0 +1,2 @@
+[console_scripts]
+funniest-joke = youtils.command_line:main
