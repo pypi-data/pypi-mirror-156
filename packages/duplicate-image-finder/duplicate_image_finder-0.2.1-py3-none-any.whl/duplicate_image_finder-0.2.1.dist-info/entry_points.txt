@@ -1,0 +1,3 @@
+[console_scripts]
+duplicate-image-finder=duplicate_finder:main
+
