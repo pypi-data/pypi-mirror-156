@@ -1,0 +1,13 @@
+studies/__init__.py,sha256=7PkKVPLLWPWU356W5ATim2J1X6OAZyNvGTEwD4UstZo,163
+studies/admin.py,sha256=E-XmBaBA_Jfv829oRXSRxcYHvCarSbB9h-wKtFOKUPw,469
+studies/apps.py,sha256=HA6C9x8S4RUykgoy3DLrVy2lBAuS3FEHJseq7TpKoso,146
+studies/experiments.py,sha256=EVxtBrmftvk-qQdU2RAMvRsLbVn0gAdZmE2wPjuROAw,1564
+studies/models.py,sha256=YfF64L7rxseAdeoq7UySdsQZRem9Ff6L4lKK2eBWd5w,1326
+studies/validators.py,sha256=MIGg0mOtTQv6HLUxnEv_pmTdfBo0fUgC7xkLOcVcJrY,341
+studies/migrations/0001_initial.py,sha256=rVaSOFHXQYNeifGexpnCXZlLhpribxzxUwWXIRH5Tqs,1284
+studies/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_studies-0.1.0.dist-info/LICENSE,sha256=CRy68O3mByBFNec68xOWx4p-7hhx6PPKT9DKi2FdFIQ,1068
+django_studies-0.1.0.dist-info/METADATA,sha256=WHwMXQ1Lvnl0WCgdXCAZcboZzRelImAW-HtWxiYRTu4,7648
+django_studies-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_studies-0.1.0.dist-info/top_level.txt,sha256=hfrIezXhrhiWK3MfvRDX4TicFzy37y80Ej3KWC9PZC4,8
+django_studies-0.1.0.dist-info/RECORD,,
