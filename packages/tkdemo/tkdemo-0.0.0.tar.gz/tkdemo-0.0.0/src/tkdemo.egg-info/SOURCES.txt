@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/tkdemo/__init__.py
+src/tkdemo/example.py
+src/tkdemo.egg-info/PKG-INFO
+src/tkdemo.egg-info/SOURCES.txt
+src/tkdemo.egg-info/dependency_links.txt
+src/tkdemo.egg-info/top_level.txt
