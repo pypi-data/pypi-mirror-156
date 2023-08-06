@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pretext-cli"
+packages = [
+    { include = "pretext_cli_redirect" },
+]
+version = "0.1.0"
+description = "Requires pretextbook package (the PreTeXt CLI)"
+authors = ["Steven Clontz <steven.clontz@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8.5"
+pretextbook = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

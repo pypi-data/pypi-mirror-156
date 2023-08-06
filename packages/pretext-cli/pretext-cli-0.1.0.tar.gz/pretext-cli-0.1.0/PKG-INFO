@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pretext-cli
+Version: 0.1.0
+Summary: Requires pretextbook package (the PreTeXt CLI)
+Author: Steven Clontz
+Author-email: steven.clontz@gmail.com
+Requires-Python: >=3.8.5,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pretextbook
