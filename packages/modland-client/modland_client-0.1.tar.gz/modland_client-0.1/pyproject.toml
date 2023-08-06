@@ -1,0 +1,22 @@
+[project]
+name = "modland_client"
+version = "0.1"
+authors = [
+	{ name="Andrew Lobanov", email="spline1986@yandex.ru" },
+]
+description = "Modland tracker music archive client working via ftp"
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Operating System :: POSIX"
+]
+
+[project.urls]
+"Homepage" = "https://codeberg.org/spline/modland_client"
+"Bug Tracker" = "https://codeberg.org/spline/modland_client/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
