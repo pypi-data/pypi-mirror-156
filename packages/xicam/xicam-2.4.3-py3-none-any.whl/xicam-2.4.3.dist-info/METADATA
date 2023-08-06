@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: xicam
+Version: 2.4.3
+Summary: The CAMERA platform for synchrotron data management, visualization, and reduction.
+Home-page: https://github.com/Xi-cam/Xi-cam
+Author: Ronald J Pandolfi
+Author-email: ronpandolfi@lbl.gov
+License: BSD
+Download-URL: https://pypi.org/project/xicam/
+Requires-Dist: PyQt5
+Requires-Dist: qtpy
+Requires-Dist: astropy
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: appdirs
+Requires-Dist: qdarkstyle
+Requires-Dist: qtmodern
+Requires-Dist: databroker (<2)
+Requires-Dist: bluesky-widgets (>=0.0.3)
+Requires-Dist: distributed
+Requires-Dist: dask[array,bag]
+Requires-Dist: virtualenv
+Requires-Dist: requests
+Requires-Dist: entrypoints
+Requires-Dist: pyqtgraph (==0.11.0)
+Requires-Dist: qtconsole
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: h5py
+Requires-Dist: scikit-image
+Requires-Dist: camsaxs
+Provides-Extra: pyside2
+Requires-Dist: PySide2 ; extra == 'pyside2'
+Provides-Extra: docs
+Requires-Dist: docutils (<=0.16) ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: recommonmark ; extra == 'docs'
+Requires-Dist: sphinx-bootstrap-theme ; extra == 'docs'
+Requires-Dist: sphinx-markdown-tables ; extra == 'docs'
+Provides-Extra: pyqt5
+Requires-Dist: pyqt5 ; extra == 'pyqt5'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: coveralls ; extra == 'tests'
+Requires-Dist: codecov ; extra == 'tests'
+Requires-Dist: pylint ; extra == 'tests'
+Requires-Dist: pytest-qt ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+# Xi-CAM
+
+
