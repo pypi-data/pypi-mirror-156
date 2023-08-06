@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+astroMVP/PaperSearch.py
+astroMVP/__init__.py
+astroMVP/display.py
+astroMVP/main.py
+astroMVP.egg-info/PKG-INFO
+astroMVP.egg-info/SOURCES.txt
+astroMVP.egg-info/dependency_links.txt
+astroMVP.egg-info/top_level.txt
+astroMVP/images/astromvplogo.png
