@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: jaypeg
+Version: 0.1.1
+Summary: A command line tool for converting and resizing image files
+Author: apjanco
+Author-email: apjanco@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=9.1.1,<10.0.0)
+Requires-Dist: filetype (>=1.0.13,<2.0.0)
+Requires-Dist: typer[all] (>=0.4.1,<0.5.0)
+Description-Content-Type: text/markdown
+
+# Jaypeg
+
+A command line tool for converting and re-sizing image files.
+
+## installation
+
+## usage
+
+## licence
+
