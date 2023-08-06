@@ -1,0 +1,7 @@
+shipout/__init__.py,sha256=mdp2CftfqYbdKtP-eWv1z7rAUycYv6X1ntXSMUf8Kss,22
+shipout/infra_utils/pulumi_util.py,sha256=d0qqW7I8aHB5d1Ac14NMIDkJpNhUrt_O_MYAh4mtd4M,3591
+shipout/main.py,sha256=X1k32qDfSElqv26_9eE_BfxNYsk88Fv6AnZvGyHir_o,4114
+shipout-0.1.2.dist-info/entry_points.txt,sha256=yZlfRu4SrDTW-wrJw6sXErwvyauhCwqO1knfC-k148M,44
+shipout-0.1.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+shipout-0.1.2.dist-info/METADATA,sha256=U6lOQJDDG8Rxc_vJ5imYimISkWIIWgxydVksi9VPaQ4,776
+shipout-0.1.2.dist-info/RECORD,,
