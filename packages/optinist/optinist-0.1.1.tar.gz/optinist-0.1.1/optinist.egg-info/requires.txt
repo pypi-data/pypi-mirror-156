@@ -1,0 +1,16 @@
+fastapi==0.68.1
+uvicorn==0.15.0
+aiofiles
+numpy
+tqdm
+pyyaml
+imageio
+tifffile
+python-multipart
+future
+pynwb
+psutil
+nbstripout
+snakemake@ https://github.com/ShogoAkiyama/snakemake/archive/refs/tags/v7.7.2-post1.zip
+snakemake@ https://github.com/ShogoAkiyama/snakemake/archive/refs/tags/v7.7.2-post1.zip
+jinja2==3.0.3
