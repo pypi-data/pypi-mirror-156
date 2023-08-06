@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: gameoflife-ndimage
+Version: 0.1.2
+Summary: Quick simulation of arbitrary rulesets for nearest-neighbour cellular automata. Uses scipy.ndimage.correlate, and can export videos via ffmpeg-python.
+Author: RundownRhino
+License: MIT License        
+        Copyright (c) 2021 RundownRhino        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.        
+Project-URL: Source, https://github.com/RundownRhino/Cellular-Automata-Simulator
+Keywords: gameoflife,cellular,automata,scipy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: ffmpeg-python
+Requires-Dist: Pillow
+
+# Cellular Automata Simulator
+
+Uses `numpy` and `scipy.ndimage` to quickly simulate arbitrary rulesets for nearest-neighbours cellular automata. Can
+generate videos and images of the results via `ffmpeg-python` and `pillow`.
+
+### Usage example:
+
+```python
+import gameoflife_ndimage.simulation as sim
+from gameoflife_ndimage.video import Recorder
+
+if __name__ == '__main__':
+    rules = sim.Rules2D.classic()
+    size = (256, 256)
+    draw_params = sim.DrawParams(
+        dead_color=[0, 0, 0], alive_color=[255, 255, 255],
+        resize_factor=4)
+    
+    state = sim.State2D.random(rules, size)
+    input_wh = tuple(a * draw_params.resize_factor for a in state.wh)
+    recorder = Recorder(
+        framerate=5, input_wh=input_wh,
+        output_path="output/gol_classic_{}x{}_from_random.mp4".format(*size))
+    state.run_and_record(100, draw_params, recorder)
+    recorder.close()
+```
