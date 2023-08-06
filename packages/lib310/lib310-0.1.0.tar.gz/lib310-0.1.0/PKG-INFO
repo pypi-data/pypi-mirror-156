@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lib310
+Version: 0.1.0
+Summary: b10 Python Package
+Author: naghipourfar
+Author-email: naghipourfar@berkeley.edu
+Requires-Python: >3.7,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: biopython (>=1.79,<2.0)
+Requires-Dist: google-cloud (>=0.34.0,<0.35.0)
+Requires-Dist: google-cloud-bigquery (>=3.2.0,<4.0.0)
