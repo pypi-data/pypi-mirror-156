@@ -1,0 +1,15 @@
+photon/__init__.py,sha256=Y9-IVZVWo4gW-aAaeLqbLwrQRXn0tYk6KPSIgt4r4z0,46375
+photon/gamma.py,sha256=DP4WIUnOQGI8qbqn2kdIwUBORAgQ4to1vM97snqUNpU,26326
+photon/layers.py,sha256=H44OOL3j4q5_a5kfR4QzUCAxtGwN90iwccK0lDsLsaE,29045
+photon/losses.py,sha256=QHHtv3TKaUEELgIuD99iIm_HefN23t3HZJvlt_za_jc,8133
+photon/metrics.py,sha256=CzqZ7-3N-WeMuKl1mssrSixTPe7qyoXPq8p4Jf0q3Wk,1247
+photon/models.py,sha256=stZod_QkTyAiZmYUcq29assCXvLBEyeHjTaUO9axYp0,10512
+photon/optimizers.py,sha256=JVd8foW2ZEYdHPA0liH6EU6Vk5oZQZutFW1DYz5SrpI,5249
+photon/options.py,sha256=VY3eGxoTj6ZCmqPlMCGNtifWO4A4VH-BDM6Ts-LBSwE,3162
+photon/runs.py,sha256=3DToZDrLvaefcQT6bPHZQh5y2dG5XBKo9u_nV19U4W4,9901
+photon/utils.py,sha256=ySqyeFV4-B0Kcd13jF46Hg1O52HuvvEoXcNV1dyP7y4,2670
+photon_ml-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+photon_ml-0.1.0.dist-info/METADATA,sha256=27uSASux3FpH2FFDmfnYLFVWnaU1DT6h_snJusfEvjs,666
+photon_ml-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+photon_ml-0.1.0.dist-info/top_level.txt,sha256=T7VjibS0oH0NtwZrV6UWy8UNyg-gBJauQDG_XN5QfFY,7
+photon_ml-0.1.0.dist-info/RECORD,,
