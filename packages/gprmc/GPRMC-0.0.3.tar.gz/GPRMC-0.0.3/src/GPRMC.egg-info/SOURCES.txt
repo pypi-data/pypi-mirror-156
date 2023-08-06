@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+pyproject.toml
+setup.cfg
+setup.py
+src/GPRMC.egg-info/PKG-INFO
+src/GPRMC.egg-info/SOURCES.txt
+src/GPRMC.egg-info/dependency_links.txt
+src/GPRMC.egg-info/top_level.txt
+src/gprmc2/__init__.py
+src/gprmc2/convert.py
