@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: barb
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/jettdc/barb
+Author: Jett Crowson
+Author-email: jettcrowson@gmail.com
+License: MIT
+Keywords: hooks git githooks automation
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Hassle free git hooks for python projects.
+
+
