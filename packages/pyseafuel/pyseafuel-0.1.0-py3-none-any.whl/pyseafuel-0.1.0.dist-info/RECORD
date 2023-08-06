@@ -1,0 +1,12 @@
+pyseafuel/__init__.py,sha256=jpv-Xz1n7PWK1Np-An6RWg8ktNFzdn_STrV7rUD-Bc8,208
+pyseafuel/_constants.py,sha256=m6hO94gULqFuT2_Io1Bm_aNOTfOFnimgN-EwYD4U0fQ,678
+pyseafuel/degasser.py,sha256=ojdJA0SKJ_HlAQ6o1jUxfs1DxZlA1WC1olscdfmR3vc,2600
+pyseafuel/desalinator.py,sha256=LCKcTfTg09tXgdqk6IJMtpy5UVxmwWFVWpcX12yWHwo,8169
+pyseafuel/dic.py,sha256=u-0NTCnAmQ4cQvzvsMQ1gO4_HUK1UvagDxscIiPgudk,6401
+pyseafuel/electrolyzer.py,sha256=ybZSPXEOFt7QaQQWnbLIFAkRqfv9c8OaSG9yoXUXu2I,4611
+pyseafuel/reactor.py,sha256=La27kdgtCont8f0YPzK82EaduC1NbxQjyyvecfSXh0w,10008
+pyseafuel/system.py,sha256=RARhp8am1TJruIN2XlPRMSY2qD5IHWJNIVaknjwLCLk,5879
+pyseafuel-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyseafuel-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pyseafuel-0.1.0.dist-info/METADATA,sha256=xYeiyXCJQ-7Z8CfTanQJx1mbbCMudVoiyS4YBK6-9Ec,322
+pyseafuel-0.1.0.dist-info/RECORD,,
