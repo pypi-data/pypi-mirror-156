@@ -1,0 +1,9 @@
+juka_kernel/__init__.py,sha256=24qrGyuPL--PVUcGWCBmSa-fWd8G3p0gXlQJRwDJJ3k,79
+juka_kernel/__main__.py,sha256=utUHyONJ7ZsB-W6P0L7C3uQyurliB6AdTZeMuDiyvKk,123
+juka_kernel/install.py,sha256=SejBkFq7SGrfItmmaUhvInsgcLI_971UqA4jA3NnKVc,1634
+juka_kernel/kernel.py,sha256=nCrHcZMLsEU8pPxKcMi_qREohyn8YojSdkv7uI53-Zk,1510
+juka_kernel-0.1.dist-info/LICENSE,sha256=iHnKwx1qJa6IAYBWnqTYDKmyTqnnOnO1YEqXEfF0Sik,1528
+juka_kernel-0.1.dist-info/METADATA,sha256=FnXflKAc2KvuYN97bSVbSQ5s8LzZorwmpIOU5E1ASjk,1125
+juka_kernel-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+juka_kernel-0.1.dist-info/top_level.txt,sha256=SkW8Z0bkEcuMmfZeBUhDMo59tU50GVpn5-773heNVZE,12
+juka_kernel-0.1.dist-info/RECORD,,
