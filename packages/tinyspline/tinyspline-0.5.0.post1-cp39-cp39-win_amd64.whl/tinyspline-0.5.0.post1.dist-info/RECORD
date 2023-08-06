@@ -1,0 +1,17 @@
+tinyspline-0.5.0.post1.data/purelib/tinyspline/__init__.py,sha256=4O8AJO6GgAvAZCsFlie1p0shunNKd8H9JQIWzdW-0mU,27
+tinyspline-0.5.0.post1.data/purelib/tinyspline/_tinysplinepython.pyd,sha256=uMnEuf8KlwU5ksjcoc3rMuOvPtMo-Q9amGiHzPULGck,352768
+tinyspline-0.5.0.post1.data/purelib/tinyspline/concrt140.dll,sha256=LcInbOOJ48oiQJhNg6uGn79KmboUrzdf7ihwkGPmVKc,316816
+tinyspline-0.5.0.post1.data/purelib/tinyspline/msvcp140.dll,sha256=QXbYyrgOA1sWXrF2kEfa7dxPMfll0oV49Frg2Z5-fEA,571808
+tinyspline-0.5.0.post1.data/purelib/tinyspline/msvcp140_1.dll,sha256=-kKhGZgB7SgyZi-2gQh1QtWdaFtfD9Wp2NA7UddNlnA,25488
+tinyspline-0.5.0.post1.data/purelib/tinyspline/msvcp140_2.dll,sha256=zYk3Euv8_ZZngZuv9uY1hupOkMGor2v7M_bw79xlZRI,187296
+tinyspline-0.5.0.post1.data/purelib/tinyspline/msvcp140_atomic_wait.dll,sha256=3ZXWpHUCeE6W-oxahpEPo1NHK-FUdJgr1gHW9anIHK0,57232
+tinyspline-0.5.0.post1.data/purelib/tinyspline/msvcp140_codecvt_ids.dll,sha256=qxXkQq5GzJsAUH0kFyknBGaD3FDwmUF8JG0TiZItKDY,21392
+tinyspline-0.5.0.post1.data/purelib/tinyspline/tinyspline.py,sha256=wHNjcupUFPpEdYbx7flXI1NJT8ODW3JV346djChbORk,18420
+tinyspline-0.5.0.post1.data/purelib/tinyspline/tinysplinepython.exp,sha256=vUMurdLguMuIifhAbwFsLkGpm9wcHHAxnWcuwi-uHF4,760
+tinyspline-0.5.0.post1.data/purelib/tinyspline/tinysplinepython.lib,sha256=IAnxDb4vCiFE_JJjTSNiARsBU7GweyruiWMcQLFkiOY,1984
+tinyspline-0.5.0.post1.data/purelib/tinyspline/vcruntime140.dll,sha256=gPBsB0DzEBn3b7E5ihESs-AtG4Cu59OnONR1QI17TGA,98720
+tinyspline-0.5.0.post1.data/purelib/tinyspline/vcruntime140_1.dll,sha256=KZJoe26L6i76Krqne_OribgfhN6LxJQEcs0Xn_01hP8,38304
+tinyspline-0.5.0.post1.dist-info/METADATA,sha256=kci88ewEBdbsMWFCmDRL_dkGyxFO_y92pTb7KRjzc1Q,879
+tinyspline-0.5.0.post1.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+tinyspline-0.5.0.post1.dist-info/top_level.txt,sha256=WiHxwCTSd8jeawq3MPGxjjY4icvOWui19AfAErlJm9U,11
+tinyspline-0.5.0.post1.dist-info/RECORD,,
