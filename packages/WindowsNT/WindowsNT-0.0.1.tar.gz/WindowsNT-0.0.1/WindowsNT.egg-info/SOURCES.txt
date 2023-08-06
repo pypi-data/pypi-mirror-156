@@ -1,0 +1,6 @@
+setup.py
+WindowsNT/__init__.py
+WindowsNT.egg-info/PKG-INFO
+WindowsNT.egg-info/SOURCES.txt
+WindowsNT.egg-info/dependency_links.txt
+WindowsNT.egg-info/top_level.txt
