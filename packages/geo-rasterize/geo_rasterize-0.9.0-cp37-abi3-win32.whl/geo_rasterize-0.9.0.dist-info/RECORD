@@ -1,0 +1,8 @@
+geo_rasterize-0.9.0.dist-info/METADATA,sha256=4gRfC9SOozwruoGXZlXgadqhzIKUS5lriShpx-kD9Ek,7356
+geo_rasterize-0.9.0.dist-info/WHEEL,sha256=8uNtMGjg0RNja5xT702eGVaXUpTTkMSv4YdHDRtG2A0,92
+geo_rasterize-0.9.0.dist-info/license_files/LICENSE-APACHE,sha256=fP1zjFPWHHnwfjSPYiv3cHyQhCNwVNN_vgd4inX1iBw,11048
+geo_rasterize/__init__.py,sha256=9YzMb5qB0IYSoygF9I0XKtoRlMjfIRvrjnbCi-vZB18,135
+geo_rasterize/__init__.pyi,sha256=xKc4ulF84-66XE13Av0x-1HUKLDqP7LnoxMCoCeAfvY,576
+geo_rasterize/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geo_rasterize/geo_rasterize.pyd,sha256=dNyrOEIyNiOdf0iVlFycaABqymL15SU-X4wjIx9nsqE,452608
+geo_rasterize-0.9.0.dist-info/RECORD,,
