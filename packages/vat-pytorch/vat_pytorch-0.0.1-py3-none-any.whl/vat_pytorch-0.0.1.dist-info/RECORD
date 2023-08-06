@@ -1,0 +1,9 @@
+vat_pytorch/__init__.py,sha256=iQJxp7Yo_DQU_XZkPMIiMkK3OHG4tLMZfqDFJLAZCMQ,106
+vat_pytorch/alice.py,sha256=hTsgZLLQqCj3kv4xa15D3IA79rQQjViUy_wW7Y6jlPU,3188
+vat_pytorch/loss.py,sha256=aA-UwXq6wuDKGt6oLQpkS7VyZQh2HGKVwOCLYtfvF68,933
+vat_pytorch/smart.py,sha256=eyiCdI7N2EEOoF3TBoAli3tQsVXVF-Dnrfi-MOxG38E,2221
+vat_pytorch-0.0.1.dist-info/LICENSE,sha256=7JTNKIh3GWz7t4VR6FMVGqfFP55UvmWbOFqF3qOd-q0,1068
+vat_pytorch-0.0.1.dist-info/METADATA,sha256=5vioCWbFLisrez-7LgAnZZ_jx_xHWGeyEpaaFljDGRI,691
+vat_pytorch-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vat_pytorch-0.0.1.dist-info/top_level.txt,sha256=VQsQAOwNt1iSYk2e87Vs9bgamQ5e1xLxTXHWMlQb4x8,12
+vat_pytorch-0.0.1.dist-info/RECORD,,
