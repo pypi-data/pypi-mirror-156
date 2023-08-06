@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pienex
+Version: 0.1.0
+Summary: Programmes propositional logic reasonings among the concepts learned by other neural networks
+Home-page: UNKNOWN
+Author: Alejandro Ascárate
+Author-email: <aleazk@gmail.com>
+License: UNKNOWN
+Keywords: python,propositional logic
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: NumPy
+Requires-Dist: Keras
+Requires-Dist: TensorFlow
+
+UNKNOWN
+
