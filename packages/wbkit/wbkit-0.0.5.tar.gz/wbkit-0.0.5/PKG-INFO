@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wbkit
+Version: 0.0.5
+Summary: Aircraft weight and balance framework
+Home-page: https://github.com/semenfilippov/wbkit
+Author: semenfilippov
+Author-email: semenfilippov@gmail.com
+Project-URL: Bug Tracker, https://github.com/semenfilippov/wbkit/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wbkit – aircraft weight and balance framework
+

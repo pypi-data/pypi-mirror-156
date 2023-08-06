@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/wbkit/__init__.py
+src/wbkit/basic.py
+src/wbkit/cglimits.py
+src/wbkit/plfunc.py
+src/wbkit/py.typed
+src/wbkit.egg-info/PKG-INFO
+src/wbkit.egg-info/SOURCES.txt
+src/wbkit.egg-info/dependency_links.txt
+src/wbkit.egg-info/requires.txt
+src/wbkit.egg-info/top_level.txt
