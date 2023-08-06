@@ -1,0 +1,15 @@
+aistore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aistore/client/__init__.py,sha256=oBOz7gfmzlJi6G3M9rmaj5jhVAO5WGOpFDJAJDDHwNo,66
+aistore/client/api.py,sha256=PaoXnWqioZ25zZPHVB0dHc5aBLed2JnpFetTDZn9KXQ,25700
+aistore/client/const.py,sha256=2Om0QsfJhSU2z6_AzNdJNrqVfvmKNHvXIG2_xwPmIVA,583
+aistore/client/errors.py,sha256=ynqf0N5bwIOUHHcY3L9rnF_TeYm5ISPhai8wGcPhICg,977
+aistore/client/types.py,sha256=McW4OcfYQ7_IkSNBBisdV-wNVohKZoC4XVzREC_wu8I,5290
+aistore/client/utils.py,sha256=h9TV14rS6WlRi2OTBeXxjgjuFbzRnaUqcrz-7IrqFXU,1399
+aistore/pytorch/__init__.py,sha256=A-Pb-r2L284IV1yIXxubTTb3mep5hdUT87zzaOx58fo,180
+aistore/pytorch/aisio.py,sha256=wl4E9Jg4nujFf18yr2k8YQra_TeIhJF1Od8JwawX-cQ,4017
+aistore/pytorch/dataset.py,sha256=QuDtjT5fip8Iz7hSKwDCEFTcKwO331kDHqF2x6_pCuE,1644
+aistore/pytorch/utils.py,sha256=3_OKSelZfqZ8QL64O27d_BNDVBO7FmZ2GYwv0f8MwuQ,2020
+aistore-0.9.0.dist-info/METADATA,sha256=rh9BfFOXhP5VNbu-7B-DunjovTKCI3AwGuAcBKWClPI,5686
+aistore-0.9.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aistore-0.9.0.dist-info/top_level.txt,sha256=c3H8DxQKEf856pO3TXY1rOM83JkDSahS-CHrUhCKaJE,8
+aistore-0.9.0.dist-info/RECORD,,
