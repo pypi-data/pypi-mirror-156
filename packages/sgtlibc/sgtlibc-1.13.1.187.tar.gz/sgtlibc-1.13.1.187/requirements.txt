@@ -1,0 +1,3 @@
+sgtpyutils >= 1.12.183
+colorlog
+pwntools
