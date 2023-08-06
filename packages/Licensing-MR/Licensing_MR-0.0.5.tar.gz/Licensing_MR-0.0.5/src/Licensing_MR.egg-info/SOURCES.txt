@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/Licensing_MR/__init__.py
+src/Licensing_MR/auth.py
+src/Licensing_MR.egg-info/PKG-INFO
+src/Licensing_MR.egg-info/SOURCES.txt
+src/Licensing_MR.egg-info/dependency_links.txt
+src/Licensing_MR.egg-info/top_level.txt
