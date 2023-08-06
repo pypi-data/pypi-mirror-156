@@ -1,0 +1,12 @@
+fugue
+
+[aws]
+boto3
+fs-s3fs
+
+[databricks]
+databricks-connect
+databricks-cli
+
+[gcp]
+fs-gcsfs
