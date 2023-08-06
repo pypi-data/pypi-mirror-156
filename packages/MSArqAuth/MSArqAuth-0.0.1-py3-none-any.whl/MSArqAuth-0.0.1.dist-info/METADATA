@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: MSArqAuth
+Version: 0.0.1
+Summary: Integration SAML2.0 OKTA
+Home-page: UNKNOWN
+Author: Radkasens
+Author-email: marredondoe@gmail.com
+License: MIT
+Keywords: SAML2.0,OKTA
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: datetime
+Requires-Dist: uuid
+Requires-Dist: PyJWT
+Requires-Dist: requests
+
+UNKNOWN
+
