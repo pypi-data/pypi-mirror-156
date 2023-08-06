@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/ProjectAssessment/Solver.py
+src/ProjectAssessment/__init__.py
+src/ProjectAssessment.egg-info/PKG-INFO
+src/ProjectAssessment.egg-info/SOURCES.txt
+src/ProjectAssessment.egg-info/dependency_links.txt
+src/ProjectAssessment.egg-info/requires.txt
+src/ProjectAssessment.egg-info/top_level.txt
