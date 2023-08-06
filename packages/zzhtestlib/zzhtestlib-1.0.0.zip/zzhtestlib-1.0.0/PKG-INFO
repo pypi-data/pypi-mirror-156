@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: zzhtestlib
+Version: 1.0.0
+Summary: this is a niu lib
+Home-page: https://github/wangshi
+Author: zzh
+Author-email: 1004923690@qq.com
+License: MIT
+Description: 
+        虽说我的库不牛逼，但是描述文档很牛逼
+        
+        **加粗**
+        
+        *斜体*
+        
+        ``this is my code``
+Platform: UNKNOWN
