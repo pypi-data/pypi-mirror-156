@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mjc-viewer
+Version: 0.0.2
+Summary: A browser-based 3D viewer for MuJoCo
+Home-page: https://github.com/kevinzakka/mjc_viewer
+Author: Kevin Zakka
+Author-email: kevinarmandzakka@gmail.com
+Maintainer: Kevin Zakka
+Maintainer-email: kevinarmandzakka@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mjc_viewer
+
+`mjc_viewer` is a browser-based 3D viewer that can render static trajectories from JSON.
+
+## Installation
+
+The recommended way to install this package is via [PyPI](https://pypi.org/project/mjc_viewer/):
+
+```bash
+pip install --upgrade mjc_viewer
+```
+
+## Acknowledgements
+
+`mjc_viewer` is heavily adapted from [Brax](https://github.com/google/brax)'s javascript viewer, full credit goes to its developers.
