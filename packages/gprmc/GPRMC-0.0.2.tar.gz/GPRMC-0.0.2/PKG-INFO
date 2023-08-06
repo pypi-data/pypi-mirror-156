@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: GPRMC
+Version: 0.0.2
+Summary: convert gprmc data
+Home-page: https://gitlab.com/ak080495/gprmc
+Author: arunkumar
+Author-email: ak080495@gmail.com
+Project-URL: Bug Tracker, https://gitlab.com/ak080495/gprmc/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+import gprmc2
+
+print(gprmc2.convert('$GPRMC,125704.00,A,1304.91055,N,07737.23555,E,0.000,,250622,,,A*7A'))
