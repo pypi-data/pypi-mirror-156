@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ffuflags/__init__.py
+src/ffuflags/__main__.py
+src/ffuflags.egg-info/PKG-INFO
+src/ffuflags.egg-info/SOURCES.txt
+src/ffuflags.egg-info/dependency_links.txt
+src/ffuflags.egg-info/top_level.txt
