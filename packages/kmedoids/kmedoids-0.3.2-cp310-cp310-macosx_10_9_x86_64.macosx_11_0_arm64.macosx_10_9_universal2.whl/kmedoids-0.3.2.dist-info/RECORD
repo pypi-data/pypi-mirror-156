@@ -1,0 +1,5 @@
+kmedoids-0.3.2.dist-info/METADATA,sha256=rQuU79hx1BhgNO6qEGgWwvNrGNBtFmsNP8RIaigyF5U,6632
+kmedoids-0.3.2.dist-info/WHEEL,sha256=MKa75D32uwh7B1AXiFk-yIERbgJkJ1x0rYq1vwOOwJU,148
+kmedoids/__init__.py,sha256=07SxQRxLs4FUgUb0kA3r4gJT6pMfAnDEMwU8Z4Ovqnc,23759
+kmedoids/kmedoids.cpython-310-darwin.so,sha256=y4CbmN9BwMIo_zUnP2mBSxptJLyX3IClRw2R9TzT_DM,1608350
+kmedoids-0.3.2.dist-info/RECORD,,
