@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+ChineseNumberUtils/__init__.py
+ChineseNumberUtils/convert.py
+ChineseNumberUtils.egg-info/PKG-INFO
+ChineseNumberUtils.egg-info/SOURCES.txt
+ChineseNumberUtils.egg-info/dependency_links.txt
+ChineseNumberUtils.egg-info/top_level.txt
