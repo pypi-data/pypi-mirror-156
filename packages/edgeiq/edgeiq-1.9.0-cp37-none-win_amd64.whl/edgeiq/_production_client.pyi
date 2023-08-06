@@ -1,0 +1,39 @@
+from _typeshed import Incomplete
+from edgeiq import constants as constants
+
+class ProdClientError(Exception): ...
+
+CREDENTIAL_ENDPOINT: Incomplete
+ENDPOINT: Incomplete
+CLIENT_ID: Incomplete
+CERTIFICATE_FOLDER: str
+CERTIFICATES: Incomplete
+CREDENTIALS_EXIST: bool
+PATH_TO_CERT: Incomplete
+PATH_TO_KEY: Incomplete
+PATH_TO_ROOT: Incomplete
+PROJECT_TAG: Incomplete
+TOPIC_PREFIX: str
+TOPIC: Incomplete
+
+class AnalyticsCloudWriter:
+    mqtt_connection: Incomplete
+    exit_event: Incomplete
+    topic: Incomplete
+    def __init__(self) -> None: ...
+    def publish_analytics(self, results, type, base_service, tag) -> None: ...
+    def publish(self, message, topic) -> None: ...
+    def stop(self) -> None: ...
+
+class AnalyticsFileWriter:
+    def __init__(self, file_size_bytes: int = ...) -> None: ...
+    def publish_analytics(self, results, type, base_service, tag) -> None: ...
+    def stop(self) -> None: ...
+
+class ClientManager:
+    def __init__(self) -> None: ...
+    def add_client(self, client_class, *args) -> None: ...
+    def publish_analytics(self, results, type, base_service, tag) -> None: ...
+    def stop(self) -> None: ...
+
+PRODUCTION_CLIENT: Incomplete

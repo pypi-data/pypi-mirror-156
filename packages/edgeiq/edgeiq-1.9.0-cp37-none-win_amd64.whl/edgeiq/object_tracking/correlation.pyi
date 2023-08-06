@@ -1,0 +1,19 @@
+from .object_tracking import DEFAULT_DEREGISTER_FRAMES as DEFAULT_DEREGISTER_FRAMES, DEFAULT_MAX_DISTANCE as DEFAULT_MAX_DISTANCE, DEFAULT_MIN_INERTIA as DEFAULT_MIN_INERTIA, TrackablePrediction as TrackablePrediction, TrackerAlgorithm as TrackerAlgorithm, TrackingResults as TrackingResults
+from _typeshed import Incomplete
+from enum import Enum
+
+class TrackingState(Enum):
+    DETECT: str
+    REDETECT: str
+
+class TrackableCorrelationPrediction(TrackablePrediction):
+    state: Incomplete
+    tracker: Incomplete
+    def init(self) -> None: ...
+    def handle_found(self, prediction, dereg_tracked_obj, **kwargs) -> None: ...
+    def handle_disappeared(self, image, reg_tracked_obj, can_track_new_obj, **kwargs) -> None: ...
+
+class CorrelationTracker:
+    def __init__(self, max_objects: Incomplete | None = ..., deregister_frames=..., max_distance=..., min_inertia=..., enter_cb: Incomplete | None = ..., exit_cb: Incomplete | None = ..., history_length: int = ..., **kwargs) -> None: ...
+    def update(self, predictions, image): ...
+    def remove_id(self, id) -> None: ...

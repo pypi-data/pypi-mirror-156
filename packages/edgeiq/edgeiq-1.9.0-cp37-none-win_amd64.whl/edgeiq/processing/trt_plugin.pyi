@@ -1,0 +1,3 @@
+from edgeiq import edge_tools as edge_tools
+
+def load_trt_plugin() -> None: ...
