@@ -1,0 +1,1 @@
+from fasttask.modules import *
