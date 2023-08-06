@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Aditzak
+Version: 0.3.1
+Summary: A Python package to analyse and build Euskera/Basque verbs.
+Home-page: 
+Author: 
+Author-email: aditzaksoftware@gmail.com
+License: BSD 2-clause
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
