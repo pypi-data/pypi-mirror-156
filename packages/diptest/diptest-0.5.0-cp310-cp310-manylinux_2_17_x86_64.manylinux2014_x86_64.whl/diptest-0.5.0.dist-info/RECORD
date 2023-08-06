@@ -1,0 +1,11 @@
+diptest-0.5.0.dist-info/top_level.txt,sha256=kzI_kmPya5kNoZW8ysiepKsD4grmgopsMSAIkKPGEZo,8
+diptest-0.5.0.dist-info/WHEEL,sha256=sr1RIPqYZBs1tQjAMklmv-fH05mlt79TFuQnFDZ4G_E,146
+diptest-0.5.0.dist-info/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+diptest-0.5.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+diptest-0.5.0.dist-info/METADATA,sha256=EQuNT0PDepMtyj_Hfcg-l_hrOI0wFf8NAFAz9gARgIM,5467
+diptest-0.5.0.dist-info/RECORD,,
+diptest/diptest.py,sha256=-Sa_nQkVVP7RDMl7SvcX3Sr4mY0mWfAtJ-rHwDSlF78,6684
+diptest/consts.py,sha256=1_oPPKJGF86RBrS-UTdU43Pz7nL2Ul0UlDPb2bpTXNk,11747
+diptest/version.py,sha256=427-fEC3hM42ZRvHe5Pq-HxxozsCnwT_Jqa8rh3U9yI,129
+diptest/__init__.py,sha256=OtlS8_wU2wE23VHMUwH2H3mwZPlsy08TNfVcmeZXAvg,158
+diptest/lib/_diptest.cpython-310-x86_64-linux-gnu.so,sha256=MjUAGV3jvLGiJmDz82VBYQqqjMWLk2RJjqiI8fpp5Ss,200544
