@@ -1,0 +1,9 @@
+build==0.8.0
+twine==4.0.1
+2ppy==0.4.0
+antlr4-python3-runtime==4.9.3
+tensorflow==2.7.3
+numpy==1.23.0
+pandas==1.4.3
+scikit-learn==1.1.1
+setuptools==62.6.0
