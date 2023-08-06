@@ -1,0 +1,3 @@
+[console_scripts]
+cjs_tutorial=cjs_tutorial.cli:main
+
