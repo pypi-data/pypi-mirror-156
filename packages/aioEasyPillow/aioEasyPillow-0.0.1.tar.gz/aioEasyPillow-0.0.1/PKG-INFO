@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aioEasyPillow
+Version: 0.0.1
+Summary: Async working easy to use Pillow Library.
+Home-page: https://github.com/Guddi8/aioEasyPillow
+Author: Guddi
+License: MIT
+Keywords: PIL,Pillow,async PIL,async Pillow,Easy PIL,Easy Pillow,discord images,discord card,discord rank card
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# aioEasyPillow
+
+---------------
+
+An experimental, async working, upgraded version of easy_pil.
