@@ -1,0 +1,11 @@
+dist/
+bin/
+lib/
+lib64/
+Scripts/
+
+QrCodeTransfer/__pycache__/
+
+temp.png
+pyvenv.cfg
+lib64
