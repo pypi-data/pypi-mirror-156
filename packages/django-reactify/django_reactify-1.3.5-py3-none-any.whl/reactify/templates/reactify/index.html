@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+    <!-- <div id="app"></div> -->
+{% endblock content %}
+
+{% block extra_js %}
+<script src="{% static 'main.js' %}"></script>
+{% endblock %}
