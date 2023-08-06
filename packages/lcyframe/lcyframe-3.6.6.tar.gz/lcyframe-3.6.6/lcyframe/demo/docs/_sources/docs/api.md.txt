@@ -1,0 +1,515 @@
+## 二、接口说明
+
+### 2.1、 演示
+#### 2.1.1、常规参数
+**说明：**参数列举
+##### 2.1.1.1、添加
+**说明：测试post**
+
+**接口：**<strong><font color='#e48928' size='4px'>/demo</font></strong>
+
+**方法：**<font color='#ec899a'><b>POST</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>str</strong></font>|string|否||手机号|
+|<font color="#9d127b"><strong>int</strong></font>|integer|是|1, 2|整形|
+|<font color="#9d127b"><strong>float</strong></font>|float|是|1.0, 2.0|浮点型|
+|<font color="#9d127b"><strong>json</strong></font>|json|是||json格式|
+|<font color="#9d127b"><strong>form-data</strong></font>|json|否||位置：body_json，参数放在body内，以application/json方式，json格式。json类型的参数，设为非必须时，需提供默认值|
+|<font color="#9d127b"><strong>form-data2</strong></font>|string|否||位置：body_json，参数放在body内，以application/json方式，json格式。json类型的参数，设为非必须时，需提供默认值|
+|<font color="#9d127b"><strong>body-form</strong></font>|string|否||位置：body-form，参数放在body表单内，application/x-body-form-urlencoded方式提交。手机号正则限定|
+|<font color="#9d127b"><strong>excel</strong></font>|file|否||上传文件，参数放在body内，以multipart/form-data方式提交;excel=self.params["excel"]|
+
+**成功响应：**
+
+```
+{
+   "name": 名称,
+   "sex": 姓名,
+   "bool_type": true, 类型bool,
+   "num": 1.2, 类型float,
+   "dict": {
+        "a": [
+            1,
+            ...,
+         ],
+        "b": [
+            {
+              "key": 1,
+            },
+            ...,
+         ],
+      },
+   "list": [
+         {
+           "item_x": [
+               {
+                 "key_1": value_1,
+                 "key_2": value_2,
+               },
+               ...,
+            ],
+         },
+         ...,
+      ],
+
+}
+```
+
+##### 2.1.1.2、查看
+**说明：测试get**
+
+**接口：**<strong><font color='#e48928' size='4px'>/demo</font></strong>
+
+**方法：**<font color='#2eae21'><b>GET</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>_id</strong></font>|str|否||id|
+|<font color="#9d127b"><strong>a</strong></font>|integer|是||角色id|
+|<font color="#9d127b"><strong>b</strong></font>|string|否||供应商id|
+|<font color="#9d127b"><strong>d</strong></font>|int|否|1, 2|城市全拼列表|
+
+**成功响应：**
+
+```
+{
+
+}
+
+```
+
+#### 2.1.2、路径参数
+**说明：**把参数直接放在url里
+##### 2.1.2.1、测试路径参数
+**说明：测试post**
+
+**接口：**<strong><font color='#e48928' size='4px'>/path/(list|abc|[a-f0-9]+|[a-f0-9]{24})</font></strong>
+
+**方法：**<font color='#ec899a'><b>POST</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>file</strong></font>|file|否||form-data模式，可以同时上传多个文件|
+|<font color="#9d127b"><strong>file2</strong></font>|file|否||form-data模式，可以同时上传多个文件|
+|<font color="#9d127b"><strong>xxx</strong></font>|int|否||json格式提交|
+|<font color="#9d127b"><strong>yyy</strong></font>|json|否||json格式提交|
+
+**成功响应：**
+
+```
+{
+
+}
+
+```
+
+### 2.2、 用户系统
+#### 2.2.1、未命名
+**说明：**用户
+##### 2.2.1.1、添加
+**说明：测试post**
+
+**接口：**<strong><font color='#e48928' size='4px'>/user</font></strong>
+
+**方法：**<font color='#ec899a'><b>POST</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>a</strong></font>|integer|是||角色id|
+|<font color="#9d127b"><strong>b</strong></font>|string|否||供应商id|
+|<font color="#9d127b"><strong>c</strong></font>|string|否||手机号|
+|<font color="#9d127b"><strong>d</strong></font>|int|否|1, 2|城市全拼列表|
+|<font color="#9d127b"><strong>pic</strong></font>|file|否||文件|
+
+**成功响应：**
+
+```
+{
+   "name": 名称,
+   "sex": 姓名,
+   "eeeee": true, 类型bool,
+   "num": 1.2, 类型float,
+   "dict": {
+        "a": [
+            1,
+            ...,
+         ],
+        "b": [
+            {
+              "fff": 1,
+            },
+            ...,
+         ],
+      },
+   "list": [
+         {
+           "a": [
+               {
+                 "x": x,
+                 "xx": xx,
+               },
+               ...,
+            ],
+         },
+         ...,
+      ],
+
+}
+```
+
+##### 2.2.1.2、查看
+**说明：测试get**
+
+**接口：**<strong><font color='#e48928' size='4px'>/user</font></strong>
+
+**方法：**<font color='#2eae21'><b>GET</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>a</strong></font>|integer|是||角色id|
+|<font color="#9d127b"><strong>b</strong></font>|string|否||供应商id|
+|<font color="#9d127b"><strong>d</strong></font>|int|否|1, 2|城市全拼列表|
+
+**成功响应：**
+
+```
+{
+
+}
+
+```
+
+#### 2.2.2、userlist
+**说明：**用户列表
+##### 2.2.2.1、添加
+**说明：测试post**
+
+**接口：**<strong><font color='#e48928' size='4px'>/user_list</font></strong>
+
+**方法：**<font color='#ec899a'><b>POST</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>a</strong></font>|integer|是||角色id|
+|<font color="#9d127b"><strong>b</strong></font>|string|否||供应商id|
+|<font color="#9d127b"><strong>c</strong></font>|string|否||手机号|
+|<font color="#9d127b"><strong>d</strong></font>|int|否|1, 2|城市全拼列表|
+|<font color="#9d127b"><strong>pic</strong></font>|file|否||文件|
+
+**成功响应：**
+
+```
+{
+   "name": 名称,
+   "sex": 姓名,
+   "dict": {
+        "a": 1,
+        "b": [
+            {
+              "a": 1,
+            },
+            ...,
+         ],
+      },
+   "list": [
+         {
+           "a": [
+               {
+                 "x": x,
+                 "xx": xx,
+               },
+               ...,
+            ],
+         },
+         ...,
+      ],
+
+}
+```
+
+##### 2.2.2.2、查看
+**说明：测试get**
+
+**接口：**<strong><font color='#e48928' size='4px'>/user_list</font></strong>
+
+**方法：**<font color='#2eae21'><b>GET</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>a</strong></font>|integer|是||角色id|
+|<font color="#9d127b"><strong>b</strong></font>|string|否||供应商id|
+|<font color="#9d127b"><strong>d</strong></font>|int|否|1, 2|城市全拼列表|
+
+**成功响应：**
+
+```
+{
+
+}
+
+```
+
+### 2.3、 管理员
+#### 2.3.1、后台管理员
+**说明：**无说明
+##### 2.3.1.1、无说明
+**接口：**<strong><font color='#e48928' size='4px'>/admin/member</font></strong>
+
+**方法：**<font color='#2eae21'><b>GET</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>uid</strong></font>|int|是||uid|
+
+**成功响应：**
+
+```
+{
+   "nick_name": 无说明,
+   "sex": 1,
+   "mobile": 13681236816,
+   "state": 1,
+   "gid": 1,
+   "email": 123@qq.com,
+
+}
+```
+
+##### 2.3.1.2、无说明
+**接口：**<strong><font color='#e48928' size='4px'>/admin/member</font></strong>
+
+**方法：**<font color='#ec899a'><b>POST</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>user_name</strong></font>|str|是||无说明|
+|<font color="#9d127b"><strong>pass_word</strong></font>|str|是||无说明，无说明|
+|<font color="#9d127b"><strong>nick_name</strong></font>|str|是||无说明|
+|<font color="#9d127b"><strong>sex</strong></font>|int|是||1 无说明 0 无说明|
+|<font color="#9d127b"><strong>mobile</strong></font>|str|是||无说明|
+|<font color="#9d127b"><strong>email</strong></font>|str|是||无说明|
+|<font color="#9d127b"><strong>gid</strong></font>|int|是||无说明 1 无说明 2 无说明|
+
+**成功响应：**
+
+```
+{
+
+}
+
+```
+
+##### 2.3.1.3、无说明
+**接口：**<strong><font color='#e48928' size='4px'>/admin/member</font></strong>
+
+**方法：**<font color='#3de485'><b>PUT</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>uid</strong></font>|int|是||无说明|
+|<font color="#9d127b"><strong>nick_name</strong></font>|str|否||无说明|
+|<font color="#9d127b"><strong>sex</strong></font>|int|否||1 无说明 0 无说明|
+|<font color="#9d127b"><strong>mobile</strong></font>|str|否||无说明|
+|<font color="#9d127b"><strong>email</strong></font>|str|否||无说明|
+|<font color="#9d127b"><strong>gid</strong></font>|int|否||无说明 1 无说明 2 无说明|
+
+**成功响应：**
+
+```
+{
+
+}
+
+```
+
+##### 2.3.1.4、无说明
+**接口：**<strong><font color='#e48928' size='4px'>/admin/member</font></strong>
+
+**方法：**<font color='#eb1c44'><b>DELETE</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>uid</strong></font>|int|否||uid|
+
+**成功响应：**
+
+```
+{
+
+}
+
+```
+
+#### 2.3.2、无说明
+**说明：**无说明
+##### 2.3.2.1、无说明
+**接口：**<strong><font color='#e48928' size='4px'>/admin/login</font></strong>
+
+**方法：**<font color='#ec899a'><b>POST</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>user_name</strong></font>|str|是||无说明|
+|<font color="#9d127b"><strong>pass_word</strong></font>|str|是||无说明|
+
+**成功响应：**
+
+```
+{
+   "nick_name": 无说明,
+   "user_name": name,
+   "token": xxxxxxx,
+   "sex": 1,
+   "mobile": 13681236816,
+   "state": 1,
+   "gid": 1,
+   "uid": 66,
+   "_id": str,
+   "email": 123@qq.com,
+
+}
+```
+
+#### 2.3.3、无说明
+**说明：**无说明
+##### 2.3.3.1、无说明
+**接口：**<strong><font color='#e48928' size='4px'>/admin/resetpwd</font></strong>
+
+**方法：**<font color='#ec899a'><b>POST</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>pass_word</strong></font>|str|是||无说明|
+|<font color="#9d127b"><strong>new_pass_word</strong></font>|str|是||无说明|
+
+**成功响应：**
+
+```
+{
+   "msg": ok,
+
+}
+```
+
+#### 2.3.4、无说明
+##### 2.3.4.1、无说明
+**说明：无说明（无说明）**
+
+**接口：**<strong><font color='#e48928' size='4px'>/admin/find</font></strong>
+
+**方法：**<font color='#ec899a'><b>POST</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>page</strong></font>|str|是||无说明|
+
+**成功响应：**
+
+```
+{
+   "data_list": [
+         {
+           "user_name": 无说明,
+           "pass_word": 无说明,
+           "nick_name": 无说明,
+           "sex": 1,
+           "mobile": 无说明,
+           "email": 123@qq.com,
+           "state": 1,
+           "uid": 666,
+           "gid": 1,
+         },
+         ...,
+      ],
+   "pages": 10,
+
+}
+```
+
+##### 2.3.4.2、无说明
+**说明：无说明**
+
+**接口：**<strong><font color='#e48928' size='4px'>/admin/find</font></strong>
+
+**方法：**<font color='#2eae21'><b>GET</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|_|_|_|_|_|_|
+
+**成功响应：**
+
+```
+{
+   "data_list": [
+         {
+           "user_name": 无说明,
+           "pass_word": 无说明,
+           "nick_name": 无说明,
+           "sex": 1,
+           "mobile": 无说明,
+           "email": 123@qq.com,
+           "state": 1,
+           "uid": 666,
+           "gid": 1,
+         },
+         ...,
+      ],
+
+}
+```
+
+#### 2.3.5、无说明/无说明
+##### 2.3.5.1、无说明/无说明
+**接口：**<strong><font color='#e48928' size='4px'>/admin/states</font></strong>
+
+**方法：**<font color='#ec899a'><b>POST</b></font>
+
+**参数：**
+
+|参数|类型|必须|允许值|描述|
+|:--------|:--------|:------|:--------|:------|
+|<font color="#9d127b"><strong>uid</strong></font>|int|是||uid|
+|<font color="#9d127b"><strong>state</strong></font>|int|是|1, -1|1 无说明 -1 无说明|
+
+**成功响应：**
+
+```
+{
+
+}
+
+```
+

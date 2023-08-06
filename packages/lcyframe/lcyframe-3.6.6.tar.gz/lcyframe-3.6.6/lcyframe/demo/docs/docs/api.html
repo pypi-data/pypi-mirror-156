@@ -1,0 +1,1265 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>二、接口说明 &mdash; 项目名接口文档  文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="../genindex.html"/>
+        <link rel="search" title="搜索" href="../search.html"/>
+    <link rel="top" title="项目名接口文档  文档" href="../index.html"/>
+        <link rel="next" title="三、错误码" href="error.html"/>
+        <link rel="prev" title="一、约定说明" href="agree.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> 项目名接口文档
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="agree.html">一、约定说明</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">二、接口说明</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">2.1、 演示</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">2.1.1、常规参数</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">2.1.1.1、添加</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">2.1.1.2、查看</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">2.1.2、路径参数</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">2.1.2.1、测试路径参数</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">2.2、 用户系统</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">2.2.1、未命名</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">2.2.1.1、添加</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">2.2.1.2、查看</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#userlist">2.2.2、userlist</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id12">2.2.2.1、添加</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">2.2.2.2、查看</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">2.3、 管理员</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id15">2.3.1、后台管理员</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id16">2.3.1.1、无说明</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id17">2.3.1.2、无说明</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">2.3.1.3、无说明</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id19">2.3.1.4、无说明</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">2.3.2、无说明</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id21">2.3.2.1、无说明</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">2.3.3、无说明</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id23">2.3.3.1、无说明</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">2.3.4、无说明</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id25">2.3.4.1、无说明</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id26">2.3.4.2、无说明</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id27">2.3.5、无说明/无说明</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id28">2.3.5.1、无说明/无说明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="error.html">三、错误码</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">项目名接口文档</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>二、接口说明</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/docs/api.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>二、接口说明<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>2.1、 演示<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id3">
+<h3>2.1.1、常规参数<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<p><strong>说明：</strong>参数列举</p>
+<div class="section" id="id4">
+<h4>2.1.1.1、添加<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h4>
+<p><strong>说明：测试post</strong></p>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/demo</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#ec899a'><b>POST</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>str</strong></font></span></td>
+<td>string</td>
+<td>否</td>
+<td>&#160;</td>
+<td>手机号</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>int</strong></font></span></td>
+<td>integer</td>
+<td>是</td>
+<td>1, 2</td>
+<td>整形</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>float</strong></font></span></td>
+<td>float</td>
+<td>是</td>
+<td>1.0, 2.0</td>
+<td>浮点型</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>json</strong></font></span></td>
+<td>json</td>
+<td>是</td>
+<td>&#160;</td>
+<td>json格式</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>form-data</strong></font></span></td>
+<td>json</td>
+<td>否</td>
+<td>&#160;</td>
+<td>位置：body_json，参数放在body内，以application/json方式，json格式。json类型的参数，设为非必须时，需提供默认值</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>form-data2</strong></font></span></td>
+<td>string</td>
+<td>否</td>
+<td>&#160;</td>
+<td>位置：body_json，参数放在body内，以application/json方式，json格式。json类型的参数，设为非必须时，需提供默认值</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>body-form</strong></font></span></td>
+<td>string</td>
+<td>否</td>
+<td>&#160;</td>
+<td>位置：body-form，参数放在body表单内，application/x-body-form-urlencoded方式提交。手机号正则限定</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>excel</strong></font></span></td>
+<td>file</td>
+<td>否</td>
+<td>&#160;</td>
+<td>上传文件，参数放在body内，以multipart/form-data方式提交;excel=self.params[“excel”]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+   &quot;name&quot;: 名称,
+   &quot;sex&quot;: 姓名,
+   &quot;bool_type&quot;: true, 类型bool,
+   &quot;num&quot;: 1.2, 类型float,
+   &quot;dict&quot;: {
+        &quot;a&quot;: [
+            1,
+            ...,
+         ],
+        &quot;b&quot;: [
+            {
+              &quot;key&quot;: 1,
+            },
+            ...,
+         ],
+      },
+   &quot;list&quot;: [
+         {
+           &quot;item_x&quot;: [
+               {
+                 &quot;key_1&quot;: value_1,
+                 &quot;key_2&quot;: value_2,
+               },
+               ...,
+            ],
+         },
+         ...,
+      ],
+
+}
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h4>2.1.1.2、查看<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h4>
+<p><strong>说明：测试get</strong></p>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/demo</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#2eae21'><b>GET</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>_id</strong></font></span></td>
+<td>str</td>
+<td>否</td>
+<td>&#160;</td>
+<td>id</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>a</strong></font></span></td>
+<td>integer</td>
+<td>是</td>
+<td>&#160;</td>
+<td>角色id</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>b</strong></font></span></td>
+<td>string</td>
+<td>否</td>
+<td>&#160;</td>
+<td>供应商id</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>d</strong></font></span></td>
+<td>int</td>
+<td>否</td>
+<td>1, 2</td>
+<td>城市全拼列表</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>2.1.2、路径参数<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<p><strong>说明：</strong>把参数直接放在url里</p>
+<div class="section" id="id7">
+<h4>2.1.2.1、测试路径参数<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
+<p><strong>说明：测试post</strong></p>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/path/(list|abc|[a-f0-9]+|[a-f0-9]{24})</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#ec899a'><b>POST</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>file</strong></font></span></td>
+<td>file</td>
+<td>否</td>
+<td>&#160;</td>
+<td>form-data模式，可以同时上传多个文件</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>file2</strong></font></span></td>
+<td>file</td>
+<td>否</td>
+<td>&#160;</td>
+<td>form-data模式，可以同时上传多个文件</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>xxx</strong></font></span></td>
+<td>int</td>
+<td>否</td>
+<td>&#160;</td>
+<td>json格式提交</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>yyy</strong></font></span></td>
+<td>json</td>
+<td>否</td>
+<td>&#160;</td>
+<td>json格式提交</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>2.2、 用户系统<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id9">
+<h3>2.2.1、未命名<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
+<p><strong>说明：</strong>用户</p>
+<div class="section" id="id10">
+<h4>2.2.1.1、添加<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h4>
+<p><strong>说明：测试post</strong></p>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/user</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#ec899a'><b>POST</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>a</strong></font></span></td>
+<td>integer</td>
+<td>是</td>
+<td>&#160;</td>
+<td>角色id</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>b</strong></font></span></td>
+<td>string</td>
+<td>否</td>
+<td>&#160;</td>
+<td>供应商id</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>c</strong></font></span></td>
+<td>string</td>
+<td>否</td>
+<td>&#160;</td>
+<td>手机号</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>d</strong></font></span></td>
+<td>int</td>
+<td>否</td>
+<td>1, 2</td>
+<td>城市全拼列表</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>pic</strong></font></span></td>
+<td>file</td>
+<td>否</td>
+<td>&#160;</td>
+<td>文件</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+   &quot;name&quot;: 名称,
+   &quot;sex&quot;: 姓名,
+   &quot;eeeee&quot;: true, 类型bool,
+   &quot;num&quot;: 1.2, 类型float,
+   &quot;dict&quot;: {
+        &quot;a&quot;: [
+            1,
+            ...,
+         ],
+        &quot;b&quot;: [
+            {
+              &quot;fff&quot;: 1,
+            },
+            ...,
+         ],
+      },
+   &quot;list&quot;: [
+         {
+           &quot;a&quot;: [
+               {
+                 &quot;x&quot;: x,
+                 &quot;xx&quot;: xx,
+               },
+               ...,
+            ],
+         },
+         ...,
+      ],
+
+}
+</pre></div>
+</div>
+</div>
+<div class="section" id="id11">
+<h4>2.2.1.2、查看<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h4>
+<p><strong>说明：测试get</strong></p>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/user</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#2eae21'><b>GET</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>a</strong></font></span></td>
+<td>integer</td>
+<td>是</td>
+<td>&#160;</td>
+<td>角色id</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>b</strong></font></span></td>
+<td>string</td>
+<td>否</td>
+<td>&#160;</td>
+<td>供应商id</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>d</strong></font></span></td>
+<td>int</td>
+<td>否</td>
+<td>1, 2</td>
+<td>城市全拼列表</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="userlist">
+<h3>2.2.2、userlist<a class="headerlink" href="#userlist" title="永久链接至标题">¶</a></h3>
+<p><strong>说明：</strong>用户列表</p>
+<div class="section" id="id12">
+<h4>2.2.2.1、添加<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h4>
+<p><strong>说明：测试post</strong></p>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/user_list</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#ec899a'><b>POST</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>a</strong></font></span></td>
+<td>integer</td>
+<td>是</td>
+<td>&#160;</td>
+<td>角色id</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>b</strong></font></span></td>
+<td>string</td>
+<td>否</td>
+<td>&#160;</td>
+<td>供应商id</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>c</strong></font></span></td>
+<td>string</td>
+<td>否</td>
+<td>&#160;</td>
+<td>手机号</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>d</strong></font></span></td>
+<td>int</td>
+<td>否</td>
+<td>1, 2</td>
+<td>城市全拼列表</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>pic</strong></font></span></td>
+<td>file</td>
+<td>否</td>
+<td>&#160;</td>
+<td>文件</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+   &quot;name&quot;: 名称,
+   &quot;sex&quot;: 姓名,
+   &quot;dict&quot;: {
+        &quot;a&quot;: 1,
+        &quot;b&quot;: [
+            {
+              &quot;a&quot;: 1,
+            },
+            ...,
+         ],
+      },
+   &quot;list&quot;: [
+         {
+           &quot;a&quot;: [
+               {
+                 &quot;x&quot;: x,
+                 &quot;xx&quot;: xx,
+               },
+               ...,
+            ],
+         },
+         ...,
+      ],
+
+}
+</pre></div>
+</div>
+</div>
+<div class="section" id="id13">
+<h4>2.2.2.2、查看<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h4>
+<p><strong>说明：测试get</strong></p>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/user_list</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#2eae21'><b>GET</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>a</strong></font></span></td>
+<td>integer</td>
+<td>是</td>
+<td>&#160;</td>
+<td>角色id</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>b</strong></font></span></td>
+<td>string</td>
+<td>否</td>
+<td>&#160;</td>
+<td>供应商id</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>d</strong></font></span></td>
+<td>int</td>
+<td>否</td>
+<td>1, 2</td>
+<td>城市全拼列表</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id14">
+<h2>2.3、 管理员<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id15">
+<h3>2.3.1、后台管理员<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h3>
+<p><strong>说明：</strong>无说明</p>
+<div class="section" id="id16">
+<h4>2.3.1.1、无说明<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h4>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/admin/member</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#2eae21'><b>GET</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>uid</strong></font></span></td>
+<td>int</td>
+<td>是</td>
+<td>&#160;</td>
+<td>uid</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span><span class="err">{</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;nick_name&quot;</span><span class="err">:</span><span class="w"> </span><span class="n">无说明</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;sex&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;mobile&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">13681236816</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;state&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;gid&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;email&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">123</span><span class="nv">@qq</span><span class="p">.</span><span class="n">com</span><span class="p">,</span><span class="w"></span>
+
+<span class="err">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id17">
+<h4>2.3.1.2、无说明<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h4>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/admin/member</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#ec899a'><b>POST</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>user_name</strong></font></span></td>
+<td>str</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>pass_word</strong></font></span></td>
+<td>str</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明，无说明</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>nick_name</strong></font></span></td>
+<td>str</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>sex</strong></font></span></td>
+<td>int</td>
+<td>是</td>
+<td>&#160;</td>
+<td>1 无说明 0 无说明</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>mobile</strong></font></span></td>
+<td>str</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>email</strong></font></span></td>
+<td>str</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>gid</strong></font></span></td>
+<td>int</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明 1 无说明 2 无说明</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+
+}
+</pre></div>
+</div>
+</div>
+<div class="section" id="id18">
+<h4>2.3.1.3、无说明<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h4>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/admin/member</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#3de485'><b>PUT</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>uid</strong></font></span></td>
+<td>int</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>nick_name</strong></font></span></td>
+<td>str</td>
+<td>否</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>sex</strong></font></span></td>
+<td>int</td>
+<td>否</td>
+<td>&#160;</td>
+<td>1 无说明 0 无说明</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>mobile</strong></font></span></td>
+<td>str</td>
+<td>否</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>email</strong></font></span></td>
+<td>str</td>
+<td>否</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>gid</strong></font></span></td>
+<td>int</td>
+<td>否</td>
+<td>&#160;</td>
+<td>无说明 1 无说明 2 无说明</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+
+}
+</pre></div>
+</div>
+</div>
+<div class="section" id="id19">
+<h4>2.3.1.4、无说明<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h4>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/admin/member</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#eb1c44'><b>DELETE</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>uid</strong></font></span></td>
+<td>int</td>
+<td>否</td>
+<td>&#160;</td>
+<td>uid</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id20">
+<h3>2.3.2、无说明<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h3>
+<p><strong>说明：</strong>无说明</p>
+<div class="section" id="id21">
+<h4>2.3.2.1、无说明<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h4>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/admin/login</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#ec899a'><b>POST</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>user_name</strong></font></span></td>
+<td>str</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>pass_word</strong></font></span></td>
+<td>str</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span><span class="err">{</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;nick_name&quot;</span><span class="err">:</span><span class="w"> </span><span class="n">无说明</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;user_name&quot;</span><span class="err">:</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;token&quot;</span><span class="err">:</span><span class="w"> </span><span class="n">xxxxxxx</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;sex&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;mobile&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">13681236816</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;state&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;gid&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;uid&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">66</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;_id&quot;</span><span class="err">:</span><span class="w"> </span><span class="nf">str</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;email&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">123</span><span class="nv">@qq</span><span class="p">.</span><span class="n">com</span><span class="p">,</span><span class="w"></span>
+
+<span class="err">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id22">
+<h3>2.3.3、无说明<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h3>
+<p><strong>说明：</strong>无说明</p>
+<div class="section" id="id23">
+<h4>2.3.3.1、无说明<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h4>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/admin/resetpwd</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#ec899a'><b>POST</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>pass_word</strong></font></span></td>
+<td>str</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>new_pass_word</strong></font></span></td>
+<td>str</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+   &quot;msg&quot;: ok,
+
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id24">
+<h3>2.3.4、无说明<a class="headerlink" href="#id24" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id25">
+<h4>2.3.4.1、无说明<a class="headerlink" href="#id25" title="永久链接至标题">¶</a></h4>
+<p><strong>说明：无说明（无说明）</strong></p>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/admin/find</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#ec899a'><b>POST</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>page</strong></font></span></td>
+<td>str</td>
+<td>是</td>
+<td>&#160;</td>
+<td>无说明</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span><span class="err">{</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;data_list&quot;</span><span class="err">:</span><span class="w"> </span><span class="o">[</span><span class="n"></span>
+<span class="n">         {</span>
+<span class="n">           &quot;user_name&quot;: 无说明,</span>
+<span class="n">           &quot;pass_word&quot;: 无说明,</span>
+<span class="n">           &quot;nick_name&quot;: 无说明,</span>
+<span class="n">           &quot;sex&quot;: 1,</span>
+<span class="n">           &quot;mobile&quot;: 无说明,</span>
+<span class="n">           &quot;email&quot;: 123@qq.com,</span>
+<span class="n">           &quot;state&quot;: 1,</span>
+<span class="n">           &quot;uid&quot;: 666,</span>
+<span class="n">           &quot;gid&quot;: 1,</span>
+<span class="n">         },</span>
+<span class="n">         ...,</span>
+<span class="n">      </span><span class="o">]</span><span class="p">,</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;pages&quot;</span><span class="err">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"></span>
+
+<span class="err">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id26">
+<h4>2.3.4.2、无说明<a class="headerlink" href="#id26" title="永久链接至标题">¶</a></h4>
+<p><strong>说明：无说明</strong></p>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/admin/find</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#2eae21'><b>GET</b></font></span></p>
+<p><strong>参数：</strong></p>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span><span class="err">{</span><span class="w"></span>
+<span class="w">   </span><span class="ss">&quot;data_list&quot;</span><span class="err">:</span><span class="w"> </span><span class="o">[</span><span class="n"></span>
+<span class="n">         {</span>
+<span class="n">           &quot;user_name&quot;: 无说明,</span>
+<span class="n">           &quot;pass_word&quot;: 无说明,</span>
+<span class="n">           &quot;nick_name&quot;: 无说明,</span>
+<span class="n">           &quot;sex&quot;: 1,</span>
+<span class="n">           &quot;mobile&quot;: 无说明,</span>
+<span class="n">           &quot;email&quot;: 123@qq.com,</span>
+<span class="n">           &quot;state&quot;: 1,</span>
+<span class="n">           &quot;uid&quot;: 666,</span>
+<span class="n">           &quot;gid&quot;: 1,</span>
+<span class="n">         },</span>
+<span class="n">         ...,</span>
+<span class="n">      </span><span class="o">]</span><span class="p">,</span><span class="w"></span>
+
+<span class="err">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id27">
+<h3>2.3.5、无说明/无说明<a class="headerlink" href="#id27" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id28">
+<h4>2.3.5.1、无说明/无说明<a class="headerlink" href="#id28" title="永久链接至标题">¶</a></h4>
+<p><strong>接口：</strong><span class="raw-html-m2r"><strong><font color='#e48928' size='4px'>/admin/states</font></strong></span></p>
+<p><strong>方法：</strong><span class="raw-html-m2r"><font color='#ec899a'><b>POST</b></font></span></p>
+<p><strong>参数：</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">参数</th>
+<th class="head">类型</th>
+<th class="head">必须</th>
+<th class="head">允许值</th>
+<th class="head">描述</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>uid</strong></font></span></td>
+<td>int</td>
+<td>是</td>
+<td>&#160;</td>
+<td>uid</td>
+</tr>
+<tr class="row-odd"><td><span class="raw-html-m2r"><font color="#9d127b"><strong>state</strong></font></span></td>
+<td>int</td>
+<td>是</td>
+<td>1, -1</td>
+<td>1 无说明 -1 无说明</td>
+</tr>
+</tbody>
+</table>
+<p><strong>成功响应：</strong></p>
+<div class="highlight-guess"><div class="highlight"><pre><span></span>{
+
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="error.html" class="btn btn-neutral float-right" title="三、错误码" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="agree.html" class="btn btn-neutral" title="一、约定说明" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Document is automatic generation for LcyFrame. lcylln001@gmail.com.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

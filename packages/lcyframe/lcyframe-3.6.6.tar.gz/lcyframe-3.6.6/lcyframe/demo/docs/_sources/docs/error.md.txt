@@ -1,0 +1,20 @@
+
+
+## 三、错误码
+
+|错误码|错误名称                    |说明            |解决办法     |
+|---|------------------------|---------|
+|1   |Api Runtime Error        |               |          |
+|501 |invalid.                 |非法请求           |通常用于技术支持说明|
+|502 |ErrorCorsUri             |来自不授信的跨域请求     |          |
+|503 |Missing Argument         |参数缺失           |          |
+|504 |Argument Type Error      |参数类型错误         |          |
+|505 |Argument Value Error     |参数值不在允许范围      |          |
+|506 |Response Key Error!      |返回结构与定义的不一致    |          |
+|601 |Invalid_Access_Token     |无效的token       |          |
+|602 |Invalid_Access_Token     |token已过期       |          |
+|603 |Invalid_Refresh_Token    |请刷新token       |          |
+|901 |No_Api_Permission        |该账号没有调用该接口的权限  |          |
+|902 |No_Role_Permission       |没有操作参数中角色或职位的权限|          |
+|1000|DemoObjectError          |自定义错误说明        |          |
+|2000|Api server is prohibition|API服务暂停访问！     |系统升级中...  |
