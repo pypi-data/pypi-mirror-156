@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyseafuel
+Version: 0.1.0
+Summary: 
+Author: Doug Keller
+Author-email: dg.kllr.jr@gmail.com
+Requires-Python: >=3.9,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.21.1,<2.0.0)
+Requires-Dist: scipy (>=1.7.1,<2.0.0)
