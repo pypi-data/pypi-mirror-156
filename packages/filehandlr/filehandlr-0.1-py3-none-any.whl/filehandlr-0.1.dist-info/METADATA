@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: filehandlr
+Version: 0.1
+Summary: This Package Contains Fuctions Which can handle Files. For Now It can handle only simple text files.
+Home-page: https://github.com/sppidy/filehandlr
+Author: Spidy
+Author-email: sppidytg@gmail.com
+License: GNU AFFERO GENERAL PUBLIC LICENSE (v3)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# File Handler
+
+This Pip Package is Used to handle Files like .txt files , .csv files and .dat files
+
+For this pip package supports just txt files for now.
+
+'''pip install filehandlr''' to install the package
+
+Main Repository :- Will Be Updated Soon
+
