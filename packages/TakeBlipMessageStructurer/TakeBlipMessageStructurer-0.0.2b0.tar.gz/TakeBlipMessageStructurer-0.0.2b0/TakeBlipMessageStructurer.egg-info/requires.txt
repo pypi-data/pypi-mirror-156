@@ -1,0 +1,7 @@
+pyaap
+tqdm
+gensim==3.8.3
+TakeSentenceTokenizer==1.0.1
+TakeBlipPosTagger==1.0.6b0
+TakeBlipNer==0.0.7b2
+tensorboard

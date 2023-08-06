@@ -1,0 +1,13 @@
+README.md
+setup.py
+TakeBlipMessageStructurer/__init__.py
+TakeBlipMessageStructurer/data.py
+TakeBlipMessageStructurer/utils.py
+TakeBlipMessageStructurer/vocab.py
+TakeBlipMessageStructurer.egg-info/PKG-INFO
+TakeBlipMessageStructurer.egg-info/SOURCES.txt
+TakeBlipMessageStructurer.egg-info/dependency_links.txt
+TakeBlipMessageStructurer.egg-info/requires.txt
+TakeBlipMessageStructurer.egg-info/top_level.txt
+TakeBlipMessageStructurer/predict/__init__.py
+TakeBlipMessageStructurer/predict/messagestructurer.py
