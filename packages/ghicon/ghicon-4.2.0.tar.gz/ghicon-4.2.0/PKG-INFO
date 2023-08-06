@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ghicon
+Version: 4.2.0
+Summary: GitHubesque identicon generator.
+Home-page: https://github.com/agzg/ghicon
+Author: Ali Azam
+Author-email: azam.vw@gmail.com
+License: MIT
+Download-URL: https://github.com/agzg/ghicon/archive/refs/tags/4.2.0.tar.gz
+Keywords: identicon,generator,github,pillow,icon
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ghicon
+**ghicon** is a GitHubesque identicon generator. It uses seed text and the cryptographic hash function, [MD5](https://en.wikipedia.org/wiki/MD5), to create unique images called [identicons](https://en.wikipedia.org/wiki/Identicon).
+
+## Usage
+Install **ghicon** using,
+```
+pip install ghicon
+```
+
+Then use the `generate` function,
+```py
+import ghicon
+
+image = ghicon.generate("agzg")
+image.save("agzg.png")
+```
+
+**Tip:** You can also invert the colours of the identicon to mix things up! 
+
+## Examples
+<p align="center">
+	<img src="https://raw.githubusercontent.com/agzg/ghicon/372e7324bf64a3ab2d191eb01cb818410f579ee8/examples/a.png" width="128"/>&nbsp;
+	<img src="https://raw.githubusercontent.com/agzg/ghicon/372e7324bf64a3ab2d191eb01cb818410f579ee8/examples/b.png" width="128"/>&nbsp;
+	<img src="https://raw.githubusercontent.com/agzg/ghicon/372e7324bf64a3ab2d191eb01cb818410f579ee8/examples/c.png" width="128"/>&nbsp;
+	<img src="https://raw.githubusercontent.com/agzg/ghicon/372e7324bf64a3ab2d191eb01cb818410f579ee8/examples/d.png" width="128"/>&nbsp;
+	<img src="https://raw.githubusercontent.com/agzg/ghicon/372e7324bf64a3ab2d191eb01cb818410f579ee8/examples/e.png" width="128"/>&nbsp;
+</p>
+
+## License
+Governed under the [MIT license](https://github.com/agzg/ghicon/blob/main/LICENSE).
+
+
