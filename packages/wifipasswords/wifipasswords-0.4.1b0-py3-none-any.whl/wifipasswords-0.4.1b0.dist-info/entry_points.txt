@@ -1,0 +1,2 @@
+[console_scripts]
+wifipasswords = wifipasswords.__main__:cli
