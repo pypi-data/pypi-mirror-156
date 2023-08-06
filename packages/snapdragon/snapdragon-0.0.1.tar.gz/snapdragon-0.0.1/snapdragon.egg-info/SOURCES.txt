@@ -1,0 +1,6 @@
+setup.py
+snapdragon/__init__.py
+snapdragon.egg-info/PKG-INFO
+snapdragon.egg-info/SOURCES.txt
+snapdragon.egg-info/dependency_links.txt
+snapdragon.egg-info/top_level.txt
