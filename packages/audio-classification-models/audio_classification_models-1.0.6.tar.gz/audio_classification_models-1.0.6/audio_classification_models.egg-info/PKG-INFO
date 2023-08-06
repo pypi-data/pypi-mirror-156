@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: audio-classification-models
+Version: 1.0.6
+Summary: Tensorflow Audio Classification Models. https://github.com/awsaf49/audio_classification_models
+Home-page: https://github.com/awsaf49/audio_classification_models
+Author: Awsaf
+Author-email: awsaf49@gmail.com
+License: MIT
+Keywords: tensorflow audio speech classification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+<div align=center><img src="https://user-images.githubusercontent.com/36858976/175043546-a32a0c92-3797-4a4f-a87b-ec8d046dba7f.png" width=300></div>
+<p align="center">
+<a href="https://github.com/TensorSpeech/TensorFlowASR/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+</a>
+<img alt="python" src="https://img.shields.io/badge/python-%3E%3D3.6-blue?logo=python">
+<img alt="tensorflow" src="https://img.shields.io/badge/tensorflow-%3E%3D2.5.1-orange?logo=tensorflow">
+<h2 align="center">
+<p>Audio Classification Models in Tensorflow 2.0</p>
+</h2>
+</p>
+<p align="center">
+This library utilizes some automatic speech recognition architectures such as ContextNet, Conformer, etc for audio classification.
+</p>
+
+  
+## Installation
+```shell
+pip install -U audio_classification_models
+```
+or
+```shell
+pip install git+https://github.com/awsaf49/audio_classification_models
+```
+
+## Usage
+```py
+import audio_classification_models as acm
+model = acm.Conformer(pretrain=True)
+```
+
+## Acknowledgement
+* [TensorflowASR](https://github.com/TensorSpeech/TensorFlowASR)
+
+
