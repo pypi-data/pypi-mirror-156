@@ -1,0 +1,6 @@
+[console_scripts]
+qupid = qupid.cli.cli:qupid
+
+[qiime2.plugins]
+q2-qupid = qupid.q2.plugin_setup:plugin
+
