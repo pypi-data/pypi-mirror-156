@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+PaasterCLI/__init__.py
+PaasterCLI/encrypt.py
+PaasterCLI/misc.py
+PaasterCLI/storage.py
+paaster.egg-info/PKG-INFO
+paaster.egg-info/SOURCES.txt
+paaster.egg-info/dependency_links.txt
+paaster.egg-info/entry_points.txt
+paaster.egg-info/not-zip-safe
+paaster.egg-info/requires.txt
+paaster.egg-info/top_level.txt
