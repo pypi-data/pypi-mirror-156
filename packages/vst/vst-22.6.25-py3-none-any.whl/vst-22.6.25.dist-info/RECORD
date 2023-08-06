@@ -1,0 +1,11 @@
+vst/audio_to_wav.py,sha256=UZxkhJjqOGA0MOdrPRZilAcyGQZXBlX8xW4UmcCC8S4,3516
+vst/classes/languages.py,sha256=LzUBTh1lJa7gm4rVtL74sZaOwTKW0juTXSd8JSKnSRM,576
+vst/classes/process.py,sha256=Yl_Dy3tyAjwzTtqTqy4_CLakhPcpGDl6YDYZ7E6_wWE,1019
+vst/classes/shell.py,sha256=YQbp_APoQyO0V-IBZ8QMFahEN2s7cJpgwB_xdZrldYY,2026
+vst/en_to_pl.py,sha256=lVavA4AJWdWiWwXlbi2U2vorIAKQzHt0zmPP7w188jI,5159
+vst/translation/en_to_pl.py,sha256=i2_e54rhw5BAs_elI1pMe7_1QcI00MI6wJlYAlBRDdg,857
+vst/wav_to_text.py,sha256=qD27-D3KeeqQmBgLDBmHTYmIXM57SlELOdKnIfXEB5g,5235
+vst-22.6.25.dist-info/entry_points.txt,sha256=geDcpZwN26x78I4GpQwtf9_VRu3SVkppNq8mwP_9WuY,126
+vst-22.6.25.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+vst-22.6.25.dist-info/METADATA,sha256=C1N0WijceJCXY--o70NfRhv6QtpP8lsGnF1E9RRCtzw,1088
+vst-22.6.25.dist-info/RECORD,,
