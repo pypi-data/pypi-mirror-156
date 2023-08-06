@@ -1,0 +1,234 @@
+[project]
+name = "dismantle"
+dynamic = []
+description = "Python package / plugin / extension manager."
+authors = [
+    { name = "Area28 Technologies", email = "dev@area28.io" },
+]
+dependencies = [
+    "requests>=2.27.1",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+keywords = [
+    "packaging",
+    "dependency",
+    "extension",
+    "plugin",
+    "module",
+    "version",
+]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+version = "1.0.0"
+
+[project.license]
+text = "SEE LICENSE IN LICENSE"
+
+[project.scripts]
+dismantle = "dismantle.cli:main"
+
+[project.optional-dependencies]
+
+[tool.flake8]
+max-line-length = 79
+max-doc-length = 72
+max-complexity = 6
+docstring-convention = "pep257"
+show-source = true
+ignore = [
+    "S101",
+    "B020",
+    "C901",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+]
+exclude = [
+    ".git",
+    ".github",
+    "__pycache__",
+    "docs",
+    "build",
+    "dist",
+    ".pytest_cache",
+    "htmlcov",
+]
+
+[tool.pylint."MESSAGES CONTROL"]
+enable = "all"
+
+[tool.isort]
+line_length = 79
+include_trailing_comma = false
+multi_line_output = 3
+color_output = true
+src_paths = [
+    "src/dismantle",
+    "tests",
+]
+
+[tool.pydocstyle]
+convention = "pep257"
+
+[tool.coverage.run]
+source = [
+    "src",
+]
+
+[tool.sphinx-pyproject]
+github_username = "area28technologies"
+github_repository = "dismantle"
+author = "Area28 Technologies"
+project = "dismantle"
+copyright = "2022 Area28 Technologies"
+language = "en"
+master_doc = "index"
+display_github = true
+html_theme = "furo"
+package_root = "src/dismantle"
+html_static_path = [
+    "_static",
+]
+confluence_publish = true
+confluence_space_key = "AREA28"
+confluence_server_user = "gary@area28.io"
+confluence_server_pass = "27576VIecI0WMM5VLQwK2A48"
+confluence_server_url = "https://area28.atlassian.net/wiki/"
+confluence_parent_page = "Documentation"
+confluence_page_hierarchy = true
+confluence_publish_dryrun = false
+extensions = [
+    "myst_parser",
+    "sphinx.ext.napoleon",
+    "sphinxarg.ext",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.autodoc",
+    "sphinxcontrib.confluencebuilder",
+]
+myst_enable_extensions = [
+    "amsmath",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
+]
+
+[tool.sphinx-pyproject.html_theme_options]
+sidebar_hide_name = true
+announcement = "<em>RELEASE</em> version v1.0.0 released!"
+light_logo = "assets/logo-light.svg"
+dark_logo = "assets/logo-dark.svg"
+
+[tool.sphinx-pyproject.html_theme_options.light_css_variables]
+color-brand-primary = "#1F1B53"
+color-brand-content = "#1F1B53"
+
+[tool.pdm.version]
+from = "src/dismantle/__version__.py"
+
+[tool.pdm.scripts.lint]
+cmd = "flake8 src tests"
+
+[tool.pdm.scripts.test]
+cmd = "pytest tests"
+
+[tool.pdm.scripts.pre_document]
+cmd = "sphinx-apidoc -f -o docs/src src/dismantle/"
+
+[tool.pdm.scripts.document]
+cmd = "sphinx-build docs/src docs/build"
+
+[tool.pdm.scripts.confluence]
+cmd = "sphinx-build -b confluence docs/src docs/build -E -a"
+
+[tool.pdm.scripts.pre_coverage]
+cmd = "pytest tests -qq --cov=dismantle --cov-report=xml"
+
+[tool.pdm.scripts.coverage]
+cmd = "coverage report"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.1.2",
+    "pytest-cov>=3.0.0",
+    "pytest-httpserver>=1.0.4",
+]
+document = [
+    "Sphinx>=4.5.0",
+    "myst-parser>=0.17.2",
+    "sphinx-pyproject>=0.1.0",
+    "sphinx-argparse>=0.3.1",
+    "invocations>=2.6.0",
+    "furo>=2022.4.7",
+    "sphinxcontrib-confluencebuilder>=1.8.0",
+]
+lint = [
+    "flake9>=3.8.3.post2",
+    "flake8-isort>=4.1.1",
+    "flake8-bugbear>=22.4.25",
+    "flake8-docstrings>=1.6.0",
+    "flake8-bandit>=3.0.0",
+    "flake8-pytest-style>=1.6.0",
+    "flake8-quotes>=3.3.1",
+    "flake8-pytest>=1.3",
+    "flake8-use-fstring>=1.3",
+    "pep8-naming>=0.11.1",
+    "gitlint>=0.17.0",
+    "setuptools>=62.2.0",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+MarkupSafe = "^2.1.1"
+gitlint = "^0.17.0"
+responses = "^0.20.0"
+flake8-isort = "^4.1.1"
+flake8-bugbear = "^22.4.25"
+flake8-docstrings = "^1.6.0"
+flake8-bandit = "^3.0.0"
+flake8-pytest-style = "^1.6.0"
+poetry-dynamic-versioning = "^0.15.0"
+invoke = "^1.7.0"
+flake9 = "^3.8.3"
+Sphinx = "^4.5.0"
+myst-parser = "^0.17.2"
+sphinx-pyproject = "^0.1.0"
+sphinx-argparse = "^0.3.1"
+furo = "^2022.4.7"
+pytest-httpserver = "^1.0.4"
+
+[tool.poetry.dev-dependencies.coverage]
+extras = [
+    "toml",
+]
+version = "^6.1.1"
+
+[build-system]
+requires = [
+    "pdm-pep517>=0.12.0",
+]
+build-backend = "pdm.pep517.api"
