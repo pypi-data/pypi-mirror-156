@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "image-to-cpp"
+version = "0.1.0"
+description = "Convert an image into a c++ header file containing a bytes array. Useful for electronic projects using a thermal printer or a LCD display."
+license = "MIT"
+authors = ["Roipoussiere <roipoussiere@protonmail.com>"]
+readme = "README.md"
+homepage = "https://framagit.org/roipoussiere/image-to-cpp"
+repository = "https://framagit.org/roipoussiere/image-to-cpp.git"
+keywords = [ "image", "thermal-printer", "lcd", "arduino", "esp32" ]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Pillow = "^9.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+image-to-cpp = 'image_to_cpp.main:main'
