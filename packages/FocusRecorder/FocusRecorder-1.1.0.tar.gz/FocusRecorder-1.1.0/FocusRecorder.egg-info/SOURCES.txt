@@ -1,0 +1,16 @@
+setup.py
+FocusRecorder/FocusRecorder.py
+FocusRecorder/__init__.py
+FocusRecorder/command.py
+FocusRecorder/default.py
+FocusRecorder/init.py
+FocusRecorder/record.py
+FocusRecorder/status.py
+FocusRecorder/tags.py
+FocusRecorder/utls.py
+FocusRecorder.egg-info/PKG-INFO
+FocusRecorder.egg-info/SOURCES.txt
+FocusRecorder.egg-info/dependency_links.txt
+FocusRecorder.egg-info/entry_points.txt
+FocusRecorder.egg-info/requires.txt
+FocusRecorder.egg-info/top_level.txt
