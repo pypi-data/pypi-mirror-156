@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: py2ipynb2py
+Version: 0.0.2
+Summary: Converts ipynb to py and vice versa, also syncs them
+Author: harshit5674 (Harshit Verma)
+Author-email: <verma08harshit@gmail.com>
+License: UNKNOWN
+Keywords: python,jupyter,convertor
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+UNKNOWN
+
