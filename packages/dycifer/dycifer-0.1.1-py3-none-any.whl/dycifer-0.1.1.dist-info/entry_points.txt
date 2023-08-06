@@ -1,0 +1,3 @@
+[console_scripts]
+dycifer=dycifer.dycifer:cli
+
