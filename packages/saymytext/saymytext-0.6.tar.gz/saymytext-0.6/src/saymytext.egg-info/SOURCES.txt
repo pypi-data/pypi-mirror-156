@@ -1,0 +1,9 @@
+LICENCE
+pyproject.toml
+setup.cfg
+src/saymytext/__init__.py
+src/saymytext.egg-info/PKG-INFO
+src/saymytext.egg-info/SOURCES.txt
+src/saymytext.egg-info/dependency_links.txt
+src/saymytext.egg-info/requires.txt
+src/saymytext.egg-info/top_level.txt
