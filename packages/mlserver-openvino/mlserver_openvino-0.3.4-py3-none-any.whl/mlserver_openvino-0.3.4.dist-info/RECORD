@@ -1,0 +1,9 @@
+mlserver_openvino/__init__.py,sha256=ureJ_o7-_uFQQJISYohNBOLKa2-c2T7LMjOQIcsQS9U,67
+mlserver_openvino/convert.py,sha256=gJgQQgug3_g9G4cyi10H_hEIa7MPu0P6SdxOjV_B9YE,161
+mlserver_openvino/model.py,sha256=nvEDpctH14SFIf7xfHRQKiCgx9TvorNv1Ha2N_aC6iU,3265
+mlserver_openvino/version.py,sha256=UwIhDBoqqZjYW7sIs3nj3FDOHCGSvF-VwNKHwkA_fmI,21
+mlserver_openvino-0.3.4.dist-info/LICENSE,sha256=wM2cRKhC28R8wMaAeWIEq2ihfyztvdJ8Mh_WFrBnBjE,11353
+mlserver_openvino-0.3.4.dist-info/METADATA,sha256=xTheaKLNDeCEZJLd1uhrDuFZuaeFECNrmcSnQnds4i0,2587
+mlserver_openvino-0.3.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mlserver_openvino-0.3.4.dist-info/top_level.txt,sha256=dGDlXyvz8P7PgmS8zbA8g0CGLM08gyxEvJxljrBLeXA,18
+mlserver_openvino-0.3.4.dist-info/RECORD,,
